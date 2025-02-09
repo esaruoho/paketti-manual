@@ -13,22 +13,34 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Add CSS link to each Markdown file in docs/
+      # Ensure docs directory exists
+      - name: Ensure docs directory exists
+        run: mkdir -p docs
+
+      # Add dark-mode.css link to Markdown files
       - name: Add dark-mode.css link to Markdown files
         run: |
-          for file in docs/*.md; do
-            # Check if the file already includes the CSS link to avoid duplicates
-            if ! grep -q 'dark-mode.css' "$file"; then
-              sed -i '1i <link rel="stylesheet" href="../dark-mode.css">' "$file"
-            fi
-          done
+          if ls docs/*.md 1> /dev/null 2>&1; then
+            for file in docs/*.md; do
+              # Check if the file already includes the CSS link to avoid duplicates
+              if ! grep -q 'dark-mode.css' "$file"; then
+                sed -i '1i <link rel="stylesheet" href="../dark-mode.css">' "$file"
+              fi
+            done
+          else
+            echo "No Markdown files found in docs/; skipping CSS injection."
+          fi
 
-      # Convert paketti_updates.md to changelog.html
+      # Convert paketti_updates.md to changelog.html if it exists
       - name: Generate Changelog HTML
         run: |
-          echo "<html><head><link rel='stylesheet' href='../dark-mode.css'></head><body><h1>Changelog</h1>" > docs/changelog.html
-          pandoc paketti_updates.md >> docs/changelog.html
-          echo "</body></html>" >> docs/changelog.html
+          if [ -f paketti_updates.md ]; then
+            echo "<html><head><link rel='stylesheet' href='../dark-mode.css'></head><body><h1>Changelog</h1>" > docs/changelog.html
+            pandoc paketti_updates.md >> docs/changelog.html
+            echo "</body></html>" >> docs/changelog.html
+          else
+            echo "paketti_updates.md not found; skipping changelog generation."
+          fi
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -36,4 +48,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-
