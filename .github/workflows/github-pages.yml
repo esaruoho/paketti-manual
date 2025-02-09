@@ -13,6 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Ensure required tools are installed
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
       # Ensure docs directory exists
       - name: Ensure docs directory exists
         run: mkdir -p docs
@@ -36,7 +40,7 @@ jobs:
         run: |
           if [ -f paketti_updates.md ]; then
             echo "<html><head><link rel='stylesheet' href='../dark-mode.css'></head><body><h1>Changelog</h1>" > docs/changelog.html
-            pandoc paketti_updates.md >> docs/changelog.html
+            pandoc paketti_updates.md -f markdown -t html >> docs/changelog.html
             echo "</body></html>" >> docs/changelog.html
           else
             echo "paketti_updates.md not found; skipping changelog generation."
