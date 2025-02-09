@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="dark-mode.css">
+
 | [Patreon Paketti](http://patreon.com/esaruoho) |
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
  [Discord Paketti](https://discord.gg/xNT6eH7W) |
@@ -85,6 +87,8 @@ Hence why it's useful if I can get as much support as I can to keep going at thi
 # Manual Organization TODO
 
 ## Automation
+
+
 
 ## MIDI
 
