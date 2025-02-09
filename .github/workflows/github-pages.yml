@@ -13,37 +13,32 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Ensure required tools are installed
+      # Install Pandoc (if missing)
       - name: Install Pandoc
         run: sudo apt-get update && sudo apt-get install -y pandoc
 
-      # Ensure docs directory exists
-      - name: Ensure docs directory exists
-        run: mkdir -p docs
-
-      # Add dark-mode.css link to Markdown files
-      - name: Add dark-mode.css link to Markdown files
+      # Add dark-mode.css link to Markdown files in root (if any)
+      - name: Add dark-mode.css link to Markdown files in root
         run: |
-          if ls docs/*.md 1> /dev/null 2>&1; then
-            for file in docs/*.md; do
-              # Check if the file already includes the CSS link to avoid duplicates
+          if ls *.md 1> /dev/null 2>&1; then
+            for file in *.md; do
               if ! grep -q 'dark-mode.css' "$file"; then
-                sed -i '1i <link rel="stylesheet" href="../dark-mode.css">' "$file"
+                sed -i '1i <link rel="stylesheet" href="./dark-mode.css">' "$file"
               fi
             done
           else
-            echo "No Markdown files found in docs/; skipping CSS injection."
+            echo "No Markdown files found in root. Skipping CSS injection."
           fi
 
-      # Convert paketti_updates.md to changelog.html if it exists
+      # Convert paketti_updates.md to changelog.html in root
       - name: Generate Changelog HTML
         run: |
           if [ -f paketti_updates.md ]; then
-            echo "<html><head><link rel='stylesheet' href='../dark-mode.css'></head><body><h1>Changelog</h1>" > docs/changelog.html
-            pandoc paketti_updates.md -f markdown -t html >> docs/changelog.html
-            echo "</body></html>" >> docs/changelog.html
+            echo "<html><head><link rel='stylesheet' href='./dark-mode.css'></head><body><h1>Changelog</h1>" > changelog.html
+            pandoc paketti_updates.md -f markdown -t html >> changelog.html
+            echo "</body></html>" >> changelog.html
           else
-            echo "paketti_updates.md not found; skipping changelog generation."
+            echo "paketti_updates.md not found. Skipping changelog generation."
           fi
 
       # Deploy to GitHub Pages
