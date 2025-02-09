@@ -23,9 +23,17 @@ jobs:
             fi
           done
 
+      # Convert paketti_updates.md to changelog.html
+      - name: Generate Changelog HTML
+        run: |
+          echo "<html><head><link rel='stylesheet' href='../dark-mode.css'></head><body><h1>Changelog</h1>" > docs/changelog.html
+          pandoc paketti_updates.md >> docs/changelog.html
+          echo "</body></html>" >> docs/changelog.html
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+
