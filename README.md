@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="dark-mode.css">
-GRAG GRAGRA GRAGA
+
 | [Patreon Paketti](http://patreon.com/esaruoho) |
 [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
 [Discord Paketti](https://discord.gg/xNT6eH7W) |
@@ -15,6 +15,7 @@ GRAG GRAGRA GRAGA
  9. [Old About](#old-about)
  10. [Credits](#credits)
  11. [Old Index](#index)
+ 12. [Changeslog](#changeslog)
 
 ## What is Paketti
 
