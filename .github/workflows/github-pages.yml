@@ -13,9 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Install Pandoc (if missing)
+      # Install Pandoc and confirm it is installed
       - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          echo "Checking Pandoc version..."
+          pandoc --version || echo "Pandoc installation failed!"
 
       # Add dark-mode.css link to Markdown files in root (if any)
       - name: Add dark-mode.css link to Markdown files in root
@@ -30,13 +34,18 @@ jobs:
             echo "No Markdown files found in root. Skipping CSS injection."
           fi
 
-      # Convert paketti_updates.md to changelog.html in root
+      # Convert paketti_updates.md to changelog.html in root (if Pandoc is installed)
       - name: Generate Changelog HTML
         run: |
           if [ -f paketti_updates.md ]; then
-            echo "<html><head><link rel='stylesheet' href='./dark-mode.css'></head><body><h1>Changelog</h1>" > changelog.html
-            pandoc paketti_updates.md -f markdown -t html >> changelog.html
-            echo "</body></html>" >> changelog.html
+            if command -v pandoc > /dev/null 2>&1; then
+              echo "<html><head><link rel='stylesheet' href='./dark-mode.css'></head><body><h1>Changelog</h1>" > changelog.html
+              pandoc paketti_updates.md -f markdown -t html >> changelog.html
+              echo "</body></html>" >> changelog.html
+            else
+              echo "Error: Pandoc is not installed or not found in PATH!"
+              exit 1
+            fi
           else
             echo "paketti_updates.md not found. Skipping changelog generation."
           fi
