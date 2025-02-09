@@ -192,7 +192,7 @@ Improvements: `Bypass all Effects on Channel` now shows status `Disabled all Tra
 Tweaked most Track DSP Device hiding shortcuts + menu entries to make mention of "External Editor"
 and added `"All open External Editors for Track DSP & Sample FX Chain Devices have been closed."`  and `"No Track DSP or Sample FX Chain Device External Editors were open, did nothing."` for informing the user what is going on.
 
-this show_status thing will need to be done for hundreds of functions so whenever you see one that doesn't tell you what it does, hit me up at <#1251962697298214922>  and i'll tweak it in. there's too many for it to be doable in one go.
+this show_status thing will need to be done for hundreds of functions so whenever you see one that doesn't tell you what it does, hit me up and i'll tweak it in. there's too many for it to be doable in one go.
 ![](attachments/2024-06-18_Screenshot_2024-06-18_at_23.29.19.png)
 
 ![](attachments/2024-06-18_Screenshot_2024-06-18_at_23.29.34.png)
@@ -292,7 +292,7 @@ EDIT: there's apparently some noisy devices there that have a really long name (
 ```
 721  Audio/Effects/LADSPA/lsp-plugins-ladspa.so:http://lsp-plug.in/plugins/ladspa/sc_mb_dyna_processor_stereo
 ```
-fun. but shoot me some screenshots + video on <#1251962697298214922> so i can pick up the pieces. seems to work anyway.
+fun. but shoot me some screenshots + video  so i can pick up the pieces. seems to work anyway.
 
 ---
 ### 2024-06-21 - esaruoho
@@ -2240,7 +2240,7 @@ result is a clicky kick. - mix this with "recursive dcoffset randomizer" shortcu
 ---
 ### 2024-08-22 - esaruoho
 
-Improvement: F3 will now correctly exit back to Sample Editor <-> Sample FX Chain loop .. even if you're in Phrase Editor, Keyzones or Modulation.
+Improvement: F3 will now correctly exit back to Sample Editor `<->` Sample FX Chain loop .. even if you're in Phrase Editor, Keyzones or Modulation.
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/442 & https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/418)
 
 ---
@@ -2717,11 +2717,6 @@ Improvement: The Randomized Theme randomizing is now run once, not twice, on loa
 ---
 ### 2024-08-31 - esaruoho
 
-hi, i've set up a <#1279388420422111326> channel for asking anything about Paketti, and renamed <#1251962664205291653> to <#1251654831047839876>
-
----
-### 2024-08-31 - esaruoho
-
 Improvement: Added "Mono->Stereo" & "Mono->Stereo (Blank L)" and "Mono->Stereo (Blank R)" to Audio Processing Dialog.
 ![](attachments/2024-08-31_Screenshot_2024-08-31_at_16.03.17.png)
 
@@ -3070,7 +3065,7 @@ Improvement: PitchStep Show/Hide will now allow for hiding the PitchStep if runn
 ---
 ### 2024-09-06 - esaruoho
 
-Plumbing: Paketti Manual has now been added to my account, and the first PR from <@840842258336841748> has been merged in.
+Plumbing: Paketti Manual has now been added to my account, and the first PR has been merged in.
 ( https://github.com/esaruoho/paketti-manual/ )
 
 ---
@@ -4599,9 +4594,9 @@ Improvement: Additional tweaks - all menus in menu entry now end with ".." and t
 ### 2024-10-27 - esaruoho
 
 Improvement: "Capture Nearest Instrument and Octave" has now received the following upgrades:
-1. After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
-2. If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
-3. If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
+32. After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
+33. If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
+34. If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
 (Related to some discussions at https://forum.renoise.com/t/sample-selection/20837, so 2007.. )
 
 ---
@@ -5727,10 +5722,10 @@ Feature: Expand Selection Twice, Shrink Selection Twice shortcuts
 update: out of 7361 threads from 2002 to may 2024 - i picked 1736. i also started processing through which tool discussions / tool ideas / tool releases are worth looking into and either hijacking if they're abandoned, or rewriting with Paketti in mind.
 
 also now that 7361->1736, i'll be working on sorting them into ~~three~~four distinct categories, aka
-1. already done and in Paketti
-2. not yet in Paketti, do
-3. not yet in Paketti, could be done but very complex (further down the todo stream)
-3. wait for API changes to allow the feature
+35. already done and in Paketti
+36. not yet in Paketti, do
+37. not yet in Paketti, could be done but very complex (further down the todo stream)
+38. wait for API changes to allow the feature
 
 ---
 ### 2024-12-15 - esaruoho
@@ -6356,7 +6351,7 @@ Improvement: In light of the above - I've removed all of the custom code + user-
 ---
 ### 2025-01-23 - esaruoho
 
-Feature: "Select Sample x[Knob]" will now kick you to the sample editor, and show you the sample you've selected. same for Select Sample Next & Select Sample Previous (both midi mappings and shortcuts).
+Feature: `Select Sample x[Knob]` will now kick you to the sample editor, and show you the sample you've selected. same for Select Sample Next & Select Sample Previous (both midi mappings and shortcuts).
 
 ---
 ### 2025-01-23 - esaruoho
@@ -6442,7 +6437,7 @@ Wipe All Effect Columns in All Tracks on Song
 Wipe All Effect Columns in Selected Track on Current Pattern
 Wipe All Effect Columns in Selected Track on Song
 Menu Entries + Shortcuts added.
-Closes <@840842258336841748> ticket https://github.com/esaruoho/paketti/issues/555
+Closes https://github.com/esaruoho/paketti/issues/555
 EDIT: (screenshots that mention "Delete" are outdated, i renamed to "Wipe" for easier discoverability
 ![](attachments/2025-01-25_Screenshot_2025-01-25_at_23.57.05.png)
 
@@ -6553,8 +6548,7 @@ Closes https://github.com/esaruoho/paketti/issues/738
 ---
 ### 2025-01-30 - esaruoho
 
-Improvement: the Dynamic Views now no longer forces Sample Recorder to be hidden while recording! And all the (instrument box, disk browser, adv. edit, pattern matrix, sample recorder stuff) can now be set to <change nothing> <show> <hide>
-another one for <@840842258336841748> 
+Improvement: the Dynamic Views now no longer forces Sample Recorder to be hidden while recording! And all the (instrument box, disk browser, adv. edit, pattern matrix, sample recorder stuff) can now be set to `<change nothing>`, `<show>`,  `<hide>`
 Closes https://github.com/esaruoho/paketti/issues/687 & https://github.com/esaruoho/paketti/issues/620
 this unfortunately means that your settings will need to be re-created.
 ![](attachments/2025-01-30_Screenshot_2025-01-31_at_0.03.46.png)
