@@ -30,9 +30,9 @@ jobs:
       - name: Append Changelog to README
         run: |
           if [ -f paketti_updates.md ]; then
-            echo -e "\n\n## Changelog\n" >> README.md
+            echo -e "\n\n## Changeslog\n" >> README.md
             cat paketti_updates.md >> README.md
-            echo "Changelog added to README.md"
+            echo "Changeslog added to README.md"
           else
             echo "paketti_updates.md not found. Skipping."
           fi
