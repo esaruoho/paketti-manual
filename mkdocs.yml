@@ -21,3 +21,4 @@ nav:
       - Pattern Editor: "04-PatternEditor.md"
       - Automation: "05-Automation.md"
       - Key Bindings: "22-KeyBindings.md"
+  - Changelog: "paketti_updates.md"
