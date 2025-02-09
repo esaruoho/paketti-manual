@@ -13,38 +13,36 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Ensure dark-mode.css is included in Markdown files
-      - name: Add dark-mode.css link to Markdown files in root
+      # Identify the main manual file
+      - name: Identify Manual File
         run: |
-          if ls *.md 1> /dev/null 2>&1; then
-            for file in *.md; do
-              if ! grep -q 'dark-mode.css' "$file"; then
-                sed -i '1i <link rel="stylesheet" href="./dark-mode.css">' "$file"
-              fi
-            done
+          MANUAL_FILE="index.md"  # Change this if your manual is a different file
+          echo "MANUAL_FILE=$MANUAL_FILE" >> $GITHUB_ENV
+
+      # Ensure dark-mode.css is included at the top of the manual
+      - name: Add Dark Mode CSS to Manual
+        run: |
+          if ! grep -q 'dark-mode.css' "$MANUAL_FILE"; then
+            echo '<link rel="stylesheet" href="dark-mode.css">' | cat - "$MANUAL_FILE" > temp && mv temp "$MANUAL_FILE"
+            echo "Added dark-mode.css to $MANUAL_FILE"
           else
-            echo "No Markdown files found in root. Skipping CSS injection."
+            echo "dark-mode.css already present in $MANUAL_FILE"
           fi
 
-      # Append paketti_updates.md to README.md
-      - name: Append Changelog to README
+      # Append paketti_updates.md to the manual file (NOT README.md)
+      - name: Append Changeslog to Manual File
         run: |
           if [ -f paketti_updates.md ]; then
-            echo -e "\n\n## Changeslog\n" >> README.md
-            cat paketti_updates.md >> README.md
-            echo "Changeslog added to README.md"
+            if ! grep -q '## Changeslog' "$MANUAL_FILE"; then
+              echo -e "\n\n## Changeslog\n" >> "$MANUAL_FILE"
+              cat paketti_updates.md >> "$MANUAL_FILE"
+              echo "Changeslog appended to $MANUAL_FILE"
+            else
+              echo "Changeslog already exists in $MANUAL_FILE. Skipping."
+            fi
           else
             echo "paketti_updates.md not found. Skipping."
           fi
-
-      # Commit the updated README.md so GitHub Pages rebuilds
-      - name: Commit Updated README
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update README.md with latest Changelog" || echo "No changes to commit"
-          git push
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
