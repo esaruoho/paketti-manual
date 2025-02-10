@@ -138,7 +138,6 @@ The Pattern Matrix Menu looks like this:
 ### Flip Automation Horizontally & Vertically
 The Shortcuts / MIDI Mappings for `Flip Automation Selection Horizontally` and `Flip Automation Selection Vertically` will do the same thing as `Flip` & `Mirror` buttons in the Automation Frame, but these Renoise-native features do not have MIDI Mappings available.
 ![](Flip_Automation_Horizontally_Vertically.png)
-
 ### MIDI Automation Curve Draw Selection
 This MIDI Mapping will read the Selection on your Selected Automation Parameter, and change the Automation Curve. With a regular Automation Envelope, this will cycle through 
 - Full Bottom
@@ -157,11 +156,9 @@ An example of usage:
 ### Select Automation Playmode
 The Shortcuts / MIDI Mappings for `Select Automation Playmode (Next)/(Previous)` and `01 Points`,  `02 Lines`,  `03 Curves` let you set the Selected Automation Parameter's Playmode states. 
 ![](Select_Automation_Playmode.png)
-
 ### Set Automation Range to Max, Middle, Min
 The Shortcuts and Midi Mappings for `Set Automation Range to Max (1.0)`, `Set Automation Range to Middle (0.5)` and `Set Automation Range to Min (0.0)` output to the currently selected Automation Parameter's currently selected row.
 ![](AutomationAssets/Shortcut_MIDI_Set_Automation_Range_to.png)
-
 ### Switch to Automation & Cycle through Automation Envelopes
 The Shortcut / Midi Mapping `Switch to Automation Dynamic` is a multi-function feature.
 ![](Switch_to_Automation_Show_Automated_Parameters.png)
@@ -176,7 +173,6 @@ An example of usage:
 
 These 128 MIDI Mappings will directly write to the Automation Parameter of the Selected Device. This will happen without the Automation Frame switching to showing the Parameter, so, if you know which Selected Device Parameter you wish to control, just map them and fire away.
 ![](Selected_Device_Automation_Parameter.png)
-
 ### Automation Selection Start & End with MIDI
 The following MIDI Mappings will let you use two knobs to set the Selection Start and Selection End of the currently selected Automation Envelope.
 ![](MIDI_Automation_Selection.png)
@@ -219,20 +215,20 @@ An example of usage:
 ![](Automation_Generate_Automation_Points_Example_of_Usage.png)
 ### Automation Selected Parameter Randomization
 The Shortcut/Midi Mapping `Randomize Automation Envelope` will take your currently selected Automation Parameter and Randomize it, or, if there is a selection, only Randomize the selection. 
-![](AutomationAssets/Automation Randomize Envelope.png)
+![](AutomationAssets/Automation_Randomize_Envelope.png)
 
 This same feature is also available from the Automation Menu:
 ![](Menu_Entry_-_Randomize_Automation_Envelope.png)
 
 An example of usage:
-![](AutomationAssets/Automation Randomize Selected Parameter.gif)
-![](AutomationAssets/_Write Automation Value 0.0-1.0#^CreateIfNotThere)
+![](AutomationAssets/Automation_Randomize_Selected_Parameter.gif)
+
 ### Automation Selected Device Randomize (All Parameters)
 
 The Shortcut/Midi Mapping `Randomize Automation Envelopes for Device` will insert Randomization to each and every parameter of the Selected Device.
 
 This will create a new Envelope per each Parameter, or overwrite the pre-existing one.
-![](AutomationAssets/Automation Randomize Envelope.png)
+![](AutomationAssets/Automation_Randomize_Envelope.png)
 
 This same feature is also available from the Automation Menu:
 ![](Menu_Entry_-_Randomize_Selected_Device_Parameters.png)
