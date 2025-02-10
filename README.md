@@ -22,13 +22,15 @@
 
 Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 4100 shortcuts, hundreds of menu entries and midimappings and close to 40 dialogs.
 
-It touches on the Pattern Editor, Sample Editor, Automation, Pattern Matrix, Mixer, Instrument Box, Sample FX, Sample Modulation, Instrument Settings, Sample Settings, Device & Sample management, Theme management, Pattern Sequencer, Phrase Editor, Sample Navigator, Midi Controls / Midi Mappings.. And a multitude of other things.
+It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
 Paketti introduces features from:
 - the famed C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
 - the legendary OctaMED by Teijo Kinnunen.
 - the awesome Impulse Tracker by Jeffrey Lim.
-- OpenMPT, MadTracker.. and PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
+- OpenMPT/MadTracker..
+- and..
+- PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
 ## What people say about Paketti
 
@@ -56,7 +58,7 @@ You can
 - Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
 - Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
-- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho.
+- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
 - Buy my music at [Bandcamp](http://lackluster.bandcamp.com/).
 
@@ -72,16 +74,175 @@ I'm also doing the same thing for the Renoise subforum `Beginners Questions` and
 
 The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised feature request.
 
-Please note:
+*Please note:*
 If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or leave an issue, so I'll focus on that.
 
-So to repeat, I'm adding features people have requested over the past 23 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them into PAketti.
+So to repeat, I'm adding features people have requested over the past 23 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them into Paketti.
 
-Hence why it's useful if I can get as much support as I can to keep going at this, it feels like this'll take at least over 5 years to cover everything.
+Hence why it's useful if I can get as much support as I can to keep going at this, it feels like this'll take at least 5-10 years to cover everything.
+
+Every time I do a 1-on-1 call, I get between 4 to 28 new ideas. 
 
 # Manual Organization
 
 ## Automation
+
+### Automation Selection Flood Fill
+The Shortcut/Midi Mapping `Flood Fill Automation Selection` lets you select a segment of Automation, and fill the rest of the Pattern with the selection.
+
+![[Shortcut & MIDI - Flood Fill Automation Selection.png]]
+
+An example of usage:
+![[Automation Flood Fill Selection Demo.gif]]
+
+This same feature is also available from the Automation Menu:
+![](Automation%20Flood%20Fill%20Selection.png)
+and the other in **Main Menu -> Tools -> Paketti.. -> Automation.. -> Flood Fill Automation Selection**.
+![[Menu Entry - Main Menu - Automation - Flood Fill Automation Selection.png]]
+### Write Automation Value 0.0-1.0
+The Shortcuts for `Write Automation Value 0.0` to `Write Automation Value 1.0` will output the Automation Value to the selected Automation Parameter.
+
+*Note: If there is no Automation Envelope created for the Selected Automation Parameter, an Automation Envelope will be automatically created.* 
+
+![[Shortcut - Write Automation Value.png]]
+### ALT-D Selection with Automation Frame Open
+The Shortcut `Impulse Tracker ALT-D Double Select w/ Automation` takes the original ALT-D Double Select feature from Scream Tracker 3 and Impulse Tracker 2 and adds additional logic into the mix.
+
+![](ALT-D%20with%20Automation.png)
+
+Meaning, if you have the Automation Frame displaying, the same Shortcut will also select the same rows in the Automation Frame. 
+
+An example of usage:
+![](alt-d%20with%20automation.gif)
+
+### Automation Across Multiple Patterns Using Pattern Matrix
+
+Menu Entries in the **Pattern Matrix** for creating Automation curves that start from the first selected Pattern and travel to the last selected Pattern for the Selected Track. 
+- Linear Up/Down
+- Exponential Up/Down
+- Linear Center->Top
+- Linear Top->Center
+- Linear Center->Bottom
+- Linear Bottom->Center
+- Exponential Center->Top
+- Exponential Top->Center
+- Exponential Center->Bottom
+- Exponential Bottom->Center
+![](Automation%20Multipattern.png)
+
+The Pattern Matrix Menu looks like this:
+![](Automation%20Pattern%20Matrix%20Selection.png)
+
+### Flip Automation Horizontally & Vertically
+The Shortcuts / MIDI Mappings for `Flip Automation Selection Horizontally` and `Flip Automation Selection Vertically` will do the same thing as `Flip` & `Mirror` buttons in the Automation Frame, but these Renoise-native features do not have MIDI Mappings available.
+![](Flip%20Automation%20Horizontally%20Vertically.png)
+
+### MIDI Automation Curve Draw Selection
+This MIDI Mapping will read the Selection on your Selected Automation Parameter, and change the Automation Curve. With a regular Automation Envelope, this will cycle through 
+- Full Bottom
+- Line Up
+- Exponential Up
+- Full Top
+- Line Down
+- Exponential Down
+![](MIDI%20Automation%20Curve%20Draw%20Selection.png)
+An example of usage:
+![](MIDI%20Automation%20Curve%20Draw.gif)
+If you have selected a Panning, PitchBend or similar (get in touch if you want more configurations), these will cycle through the following:
+
+An example of usage:
+![](Switch%20Curves%20panning.gif)
+### Select Automation Playmode
+The Shortcuts / MIDI Mappings for `Select Automation Playmode (Next)/(Previous)` and `01 Points`,  `02 Lines`,  `03 Curves` let you set the Selected Automation Parameter's Playmode states. 
+![](Select%20Automation%20Playmode.png)
+
+### Set Automation Range to Max, Middle, Min
+The Shortcuts and Midi Mappings for `Set Automation Range to Max (1.0)`, `Set Automation Range to Middle (0.5)` and `Set Automation Range to Min (0.0)` output to the currently selected Automation Parameter's currently selected row.
+![[Shortcut & MIDI Set Automation Range to.png]]
+![[_Write Automation Value 0.0-1.0#^CreateIfNotThere]]
+
+### Switch to Automation & Cycle through Automation Envelopes
+The Shortcut / Midi Mapping `Switch to Automation Dynamic` is a multi-function feature.
+![](Switch%20to%20Automation%20&%20Show%20Automated%20Parameters.png)
+If you're not in the Automation Frame, it will display the Automation Frame. (Hence the "Switch to Automation" part of the name).
+
+If you are already on the Automation Frame, pressing the same shortcut or midi button again, will result in you cycling through the parameters that have Automation Envelopes on them.
+
+An example of usage:
+![](Switch%20to%20Automation%20&%20Show%20Automated%20Parameters.gif)
+
+### Selected Device Automation Parameter 001...128
+
+These 128 MIDI Mappings will directly write to the Automation Parameter of the Selected Device. This will happen without the Automation Frame switching to showing the Parameter, so, if you know which Selected Device Parameter you wish to control, just map them and fire away.
+![](Selected%20Device%20Automation%20Parameter.png)
+
+### Automation Selection Start & End with MIDI
+The following MIDI Mappings will let you use two knobs to set the Selection Start and Selection End of the currently selected Automation Envelope.
+![](MIDI%20Automation%20Selection.png)
+An example of usage:
+![](automation%20selection%20start%20end.gif)
+### Automation Value Dialog
+The Shortcut/Midi Mapping `Show Automation Value Dialog...` will open up a simple and small Dialog that lets you write an Automation Value to the currently selected Automation Line.
+
+![[Shortcut & MIDI - Automation Value Dialog.png]]
+As you can see from the Dialog screenshot below, the textfield is autoselected. After opening the Dialog, you can simply input a value between 0.0 and 1.0, press enter, and the Dialog closes and the value is input.
+
+![[Automation Value Dialog.png]]
+An example of usage:
+![[Automation Value Dialog Example 1.gif]]
+
+There is also an additional feature, the EditStep follow, which lets you get jumped to the next EditStep value after you press Enter in the Value textfield.
+
+An example of usage:
+![[automation value dialog v2 editstep.gif]]
+With the EditStep set, the Dialog never closes.
+
+### Record Automation to Selected Parameter
+This MIDI Mapping will let you record Automation nodes to the Selected Automation Parameter.
+![](Record%20Automation%20to%20Selected%20Parameter.png)
+
+This will only record content to the Selected Parameter, if Edit Mode is on. Then it records to the whole selection. If you have a selection, it will change the value of the whole selection. 
+
+If you have **Follow Pattern** on, then it will record to changes to the playhead.
+
+An example of usage:
+![](Record%20Automation%20to%20Selected%20Parameter.gif)
+### Generate Automation Points from Notes in Selected Track
+The Shortcut/MidiMapping `Generate Automation Points from Notes in Selected Track` will output Automation Points to the selected Automation Parameter based on the notes you have in the Pattern Editor.
+![](Automation%20Generate%20Automation%20Points%20from%20Notes%20in%20Selected%20Track.png)
+
+This same feature is also available from the Automation Menu:
+![](Generate%20Automation%20Points%20from%20Notes%20in%20Selected%20Track.png)
+
+An example of usage:
+![](Automation%20Generate%20Automation%20Points%20Example%20of%20Usage.png)
+### Automation Selected Parameter Randomization
+The Shortcut/Midi Mapping `Randomize Automation Envelope` will take your currently selected Automation Parameter and Randomize it, or, if there is a selection, only Randomize the selection. 
+![[Automation Randomize Envelope.png]]
+
+This same feature is also available from the Automation Menu:
+![](Menu%20Entry%20-%20Randomize%20Automation%20Envelope.png)
+
+An example of usage:
+![[Automation Randomize Selected Parameter.gif]]
+![[_Write Automation Value 0.0-1.0#^CreateIfNotThere]]
+### Automation Selected Device Randomize (All Parameters)
+
+The Shortcut/Midi Mapping `Randomize Automation Envelopes for Device` will insert Randomization to each and every parameter of the Selected Device.
+
+This will create a new Envelope per each Parameter, or overwrite the pre-existing one.
+![[Automation Randomize Envelope.png]]
+
+This same feature is also available from the Automation Menu:
+![](Menu%20Entry%20-%20Randomize%20Selected%20Device%20Parameters.png)
+
+### Automation Selection Flip & Mirror
+TODO
+
+
+
+
+
 
 
 
