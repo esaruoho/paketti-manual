@@ -13,37 +13,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Create a .nojekyll file to disable Jekyll
-      - name: Disable Jekyll
-        run: touch .nojekyll
-
-      # Modify README.md for deployment
+      # Modify README.md for deployment (Inject Dark Mode)
       - name: Prepare README for Deployment
         run: |
           cp README.md README_DEPLOY.md  # Keep original file safe
 
-          # Add dark-mode.css link at the top
-          echo '<link rel="stylesheet" href="dark-mode.css">' | cat - README_DEPLOY.md > temp && mv temp README_DEPLOY.md
-          echo "Added dark-mode.css to README_DEPLOY.md"
-          
-          # Append paketti_updates.md under "## Changeslog" if not already present
-          if [ -f paketti_updates.md ]; then
-            if ! grep -q '## Changeslog' README_DEPLOY.md; then
-              echo -e "\n\n## Changeslog\n" >> README_DEPLOY.md
-              cat paketti_updates.md >> README_DEPLOY.md
-              echo "Changeslog appended to README_DEPLOY.md"
-            else
-              echo "Changeslog already exists in README_DEPLOY.md. Skipping."
-            fi
+          # Inject dark-mode.css at the top if it's not already there
+          if ! grep -q 'dark-mode.css' README_DEPLOY.md; then
+            echo '<link rel="stylesheet" href="/dark-mode.css">' | cat - README_DEPLOY.md > temp && mv temp README_DEPLOY.md
+            echo "Injected dark-mode.css into README_DEPLOY.md"
           else
-            echo "paketti_updates.md not found. Skipping."
+            echo "Dark mode CSS already exists in README_DEPLOY.md. Skipping injection."
           fi
 
-      # Deploy to GitHub Pages
+          echo "========== DEBUG: Final README_DEPLOY.md =========="
+          cat README_DEPLOY.md
+          echo "=========================================="
+
+      # Deploy README_DEPLOY.md to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          exclude: "README.md"  # Don't deploy the unmodified README
-          include: "README_DEPLOY.md .nojekyll"  # Use the modified version and disable Jekyll
+          enable_jekyll: true  # Ensure Markdown is converted properly
