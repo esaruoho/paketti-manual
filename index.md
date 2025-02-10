@@ -620,7 +620,6 @@ By right-clicking the Instrument Box (by default, located on the right corner of
 
 ## Changeslog
 
-{% raw %}
 # Paketti Updates Changelog
 
 ### 2024-06-16 - esaruoho
@@ -7370,4 +7369,4 @@ Feature: Delete (=Hide) Unused Columns (Note Columns / Effect Columns)
 ---
 ### 2025-02-09 - esaruoho
 
-Improvement: "Isolate Selected Sample to New Instrument" now sets the instrument name to sample name, for better discoverability. (it used to be `instrumentname (selected samplename)` ){% endraw %}
+Improvement: "Isolate Selected Sample to New Instrument" now sets the instrument name to sample name, for better discoverability. (it used to be `instrumentname (selected samplename)` )
