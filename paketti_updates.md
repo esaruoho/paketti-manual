@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./dark-mode.css">
 # Paketti Updates Changelog
 
 ### 2024-06-16 - esaruoho
