@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/dark-mode.css">
+<link rel="stylesheet" href="dark-mode.css">
 <link rel="stylesheet" href="dark-mode.css">
 
 | [Patreon Paketti](http://patreon.com/esaruoho) |
@@ -88,6 +88,8 @@ Hence why it's useful if I can get as much support as I can to keep going at thi
 # Manual Organization TODO
 
 ## Automation
+
+
 
 ## MIDI
 
@@ -613,8 +615,6 @@ By right-clicking the Instrument Box (by default, located on the right corner of
 | `Clean Render Selected Track or Group` | Works like the "Freeze and Flatten" option in some other DAWs. It renders the current (source) track into a new instrument and automatically places a C-4 on the first line of a new track. After that, the source track is automatically muted and collapsed. Useful to share your .xrns without fearing plugin dependencies, to free up CPU or maybe just to support your resampling needs. | |
 | `Record to Current Track` | | |
 | `Start Sampling (Record)` | | |
-
-
 
 ## Changeslog
 
@@ -6342,10 +6342,10 @@ Feature: Expand Selection Twice, Shrink Selection Twice shortcuts
 update: out of 7361 threads from 2002 to may 2024 - i picked 1736. i also started processing through which tool discussions / tool ideas / tool releases are worth looking into and either hijacking if they're abandoned, or rewriting with Paketti in mind.
 
 also now that 7361->1736, i'll be working on sorting them into ~~three~~four distinct categories, aka
-35. already done and in Paketti
-36. not yet in Paketti, do
-37. not yet in Paketti, could be done but very complex (further down the todo stream)
-38. wait for API changes to allow the feature
+1. already done and in Paketti
+2. not yet in Paketti, do
+3. not yet in Paketti, could be done but very complex (further down the todo stream)
+4. wait for API changes to allow the feature
 
 ---
 ### 2024-12-15 - esaruoho
