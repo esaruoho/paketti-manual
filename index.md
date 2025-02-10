@@ -615,8 +615,6 @@ By right-clicking the Instrument Box (by default, located on the right corner of
 | `Start Sampling (Record)` | | |
 
 
-## Changeslog
-
 
 ## Changeslog
 

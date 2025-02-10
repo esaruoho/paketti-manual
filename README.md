@@ -613,5 +613,3 @@ By right-clicking the Instrument Box (by default, located on the right corner of
 | `Record to Current Track` | | |
 | `Start Sampling (Record)` | | |
 
-
-## Changeslog
