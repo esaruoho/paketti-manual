@@ -7316,7 +7316,7 @@ Improvement: Introduced Changeslog to http://esaruoho.github.io/paketti-manual/ 
 
 Feature: Added Transpose +3 -3 +4 -4 +7 -7 +11 -11 to ChordsPlus as Menu Entries + Shortcuts. This will transpose the current row, or the selection.
 
-![[ChordsPlus-Transposer-Shortcuts.png]]
-![[ChordsPlus-Transposer-MenuEntries.png]]
+![](Screenshots/ChordsPlus-Transposer-Shortcuts.png)
+![](Screenshots/ChordsPlus-Transposer-MenuEntries.png)
 
 ---
