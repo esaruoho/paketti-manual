@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="dark-mode.css">
 | [Patreon Paketti](http://patreon.com/esaruoho) |
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
  [Discord Paketti](https://discord.gg/xNT6eH7W) |
