@@ -13,27 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Modify README.md for deployment (Inject Dark Mode)
-      - name: Prepare README for Deployment
+      # Ensure dark-mode.css is included in Markdown files
+      - name: Add dark-mode.css link to Markdown files in root
         run: |
-          cp README.md README_DEPLOY.md  # Keep original file safe
-
-          # Inject dark-mode.css at the top if it's not already there
-          if ! grep -q 'dark-mode.css' README_DEPLOY.md; then
-            echo '<link rel="stylesheet" href="/dark-mode.css">' | cat - README_DEPLOY.md > temp && mv temp README_DEPLOY.md
-            echo "Injected dark-mode.css into README_DEPLOY.md"
+          if ls *.md 1> /dev/null 2>&1; then
+            for file in *.md; do
+              if ! grep -q 'dark-mode.css' "$file"; then
+                sed -i '1i <link rel="stylesheet" href="./dark-mode.css">' "$file"
+              fi
+            done
           else
-            echo "Dark mode CSS already exists in README_DEPLOY.md. Skipping injection."
+            echo "No Markdown files found in root. Skipping CSS injection."
           fi
 
-          echo "========== DEBUG: Final README_DEPLOY.md =========="
-          cat README_DEPLOY.md
-          echo "=========================================="
-
-      # Deploy README_DEPLOY.md to GitHub Pages
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          enable_jekyll: true  # Ensure Markdown is converted properly
