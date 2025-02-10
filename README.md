@@ -28,6 +28,7 @@ Paketti introduces features from:
 - the legendary OctaMED by Teijo Kinnunen.
 - the awesome Impulse Tracker by Jeffrey Lim.
 - OpenMPT, MadTracker.. and PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
+
 ## What people say about Paketti
 
 - *"It's like it's Renoise+"*
@@ -7305,3 +7306,12 @@ Improvement: "Isolate Selected Sample to New Instrument" now sets the instrument
 ### 2025-02-10 - esaruoho
 
 Improvement: Introduced Changeslog to http://esaruoho.github.io/paketti-manual/ and moved the whole repository to be editable via Obsidian.
+
+---
+### 2025-02-10 - esaruoho
+
+Feature: Added Transpose +3 -3 +4 -4 +7 -7 +11 -11 to ChordsPlus as Menu Entries + Shortcuts. This will transpose the current row, or the selection.
+![[ChordsPlus-Transposer-Shortcuts.png]]
+![[ChordsPlus-Transposer-MenuEntries.png]]
+
+---
