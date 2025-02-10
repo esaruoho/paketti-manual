@@ -15,7 +15,7 @@
  7. [Roadmap](#roadmap)
  8. [Old About](#old-about)
  9. [Credits](#credits)
- 10. [Old Index](#index)
+ 10. [Old Indexes](#index)
  11. [Changeslog](#changeslog)
 
 ## What is Paketti
