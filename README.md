@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="dark-mode.css">
+`<link rel="stylesheet" href="dark-mode.css">`
 | [Patreon Paketti](http://patreon.com/esaruoho) |
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
  [Discord Paketti](https://discord.gg/xNT6eH7W) |
@@ -57,6 +57,7 @@ You can
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho.
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
+- Buy my music at [Bandcamp](http://lackluster.bandcamp.com/).
 
 # Roadmap
 
@@ -70,16 +71,18 @@ I'm also doing the same thing for the Renoise subforum `Beginners Questions` and
 
 The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised feature request.
 
-NOTE Well:
+Please note:
 If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or leave an issue, so I'll focus on that.
 
 So to repeat, I'm adding features people have requested over the past 23 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them into PAketti.
 
 Hence why it's useful if I can get as much support as I can to keep going at this, it feels like this'll take at least over 5 years to cover everything.
 
-# Manual Organization TODO
+# Manual Organization
 
 ## Automation
+
+
 
 ## MIDI
 
@@ -7311,6 +7314,7 @@ Improvement: Introduced Changeslog to http://esaruoho.github.io/paketti-manual/ 
 ### 2025-02-10 - esaruoho
 
 Feature: Added Transpose +3 -3 +4 -4 +7 -7 +11 -11 to ChordsPlus as Menu Entries + Shortcuts. This will transpose the current row, or the selection.
+
 ![[ChordsPlus-Transposer-Shortcuts.png]]
 ![[ChordsPlus-Transposer-MenuEntries.png]]
 
