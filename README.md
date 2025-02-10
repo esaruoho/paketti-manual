@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="dark-mode.css">
 
 | [Patreon Paketti](http://patreon.com/esaruoho) |
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
@@ -20,31 +19,28 @@
 
 ## What is Paketti
 
-Paketti has been called a firmware update or a framework for Renoise. It introduces thousands of shortcuts, hundreds of midimappings, over 30 dialogs and multiple multiple tweaks to Renoise. 
+Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 4100 shortcuts, hundreds of menu entries and midimappings and close to 40 dialogs.
 
+It touches on the Pattern Editor, Sample Editor, Automation, Pattern Matrix, Mixer, Instrument Box, Sample FX, Sample Modulation, Instrument Settings, Sample Settings, Device & Sample management, Theme management, Pattern Sequencer, Phrase Editor, Sample Navigator, Midi Controls / Midi Mappings.. And a multitude of other things.
+
+Paketti introduces features from:
+- the famed C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
+- the legendary OctaMED by Teijo Kinnunen.
+- the awesome Impulse Tracker by Jeffrey Lim.
+- OpenMPT, MadTracker.. and PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 ## What people say about Paketti
 
-*"It's like it's Renoise+"*
-
-*"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
-
-*"Your tool is really well thought out - most well thought out Renoise tool I've come across actually. Functions I even didn't think about and it's already inside your tool. Speaking of dedication."*
-
-*"I was mostly in awe and started immediately imagining new ways to use renoise"*
-
-*"This is by far the most thought out tool ever. Why is this not natively implemented?"*
-
-*"every renoise user should know and use paketti, without it renoise is not so fun"*
-
-*"got to be one of the most (if not the most) organized set of tools ive ever seen for Renoise."*
-
-*"I found Paketti to be the most versatile and flexible in its development direction. It has made Renoise very useful and enjoyable to use. Thank you."*
-
-*"You are essentially writing... a completely new framework over the engine."*
-
-*"I have no doubt that you are the most important person in the various Renoise Tools developers."*
-
-*"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
+- *"It's like it's Renoise+"*
+- *"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
+- *"Your tool is really well thought out - most well thought out Renoise tool I've come across actually. Functions I even didn't think about and it's already inside your tool. Speaking of dedication."*
+- *"I was mostly in awe and started immediately imagining new ways to use renoise"*
+- *"This is by far the most thought out tool ever. Why is this not natively implemented?"*
+- *"every renoise user should know and use paketti, without it renoise is not so fun"*
+- *"got to be one of the most (if not the most) organized set of tools ive ever seen for Renoise."*
+- *"I found Paketti to be the most versatile and flexible in its development direction. It has made Renoise very useful and enjoyable to use. Thank you."*
+- *"You are essentially writing... a completely new framework over the engine."*
+- *"I have no doubt that you are the most important person in the various Renoise Tools developers."*
+- *"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
 
 ## Where to say things about Paketti
 
@@ -63,32 +59,26 @@ You can
 
 # Roadmap
 
-As of end of 2024, I've processed and filtered through all the 7361 `Ideas and Suggestions` threads (2002 to May 2024), and have picked 1736 of them for keeping. This chunk of PDFs can be divided into four different segments.
+Take a look at the open tickets on GitHub at [this link](http://github.com/esaruoho/paketti/issues). I have also filtered through the 7361 Renoise Forum posts in the subforum `Ideas and Suggestions` ( From 2002 to 2024 ), and have picked over a thousand of them for being scripted. 
 
-1. Already in Paketti
-2. Can be added to Paketti
-3. Complex but could be done, maybe
-4. Blocked by API - will keep these and process through them after there's new API functions. Kind of like the [blockeyByAPI label](https://github.com/esaruoho/paketti/issues?q=is%3Aissue+label%3AblockedByAPI) that already exists for the Paketti issues
+I'm also constantly and consistently doing 1-on-1 calls with people to find out what hinders their workflow, what would boost their quality-of-life (QoL) using Renoise, and what they wish Renoise had - based on what other trackers have.
 
-I have also downloaded all the threads from the same time-period for `Beginners Questions`, `Tool Announcements` & `Tool Discussions`. 
+Whenever there's a new API version, I snoop through all the functions to see if I can reopen old closed tickets (**BlockedByAPI** label which I use on my GitHub - [check here](https://github.com/esaruoho/paketti/issues?q=is%3Aissue%20label%3AblockedByAPI)) and re-do them.
 
-The objective here is to find abandoned tools, tool ideas, and questions from beginners, which might actually turn out to be clever feature requests in disguise - a lot of people ask for things that make sense to them, at the start of moving to a new music making app, only to be told "doesn't exist here". The Beginners Questions was around 5000+ posts.
+I'm also doing the same thing for the Renoise subforum `Beginners Questions` and `Tool Discussion` & `Tool Announcements`. 
 
-After I've filtered up a list of things I can do, it's time to turn them into tickets. 
+The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised feature request.
 
-I'm also running through contacting people and asking for more details, trying to get more ideas of their issues with Renoise or trackers.. And one thing leads to another.
+NOTE Well:
+If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or leave an issue, so I'll focus on that.
 
-If there's anything in the manual here, that feels obscure or requires more explaining, please send me a message or leave an issue, and I'll try to flesh it out and write it more clearly.
+So to repeat, I'm adding features people have requested over the past 23 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them into PAketti.
 
-So to repeat, I'm adding features people have requested over the past 22 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them.
-
-Hence why it's useful if I can get as much support as I can to keep going at this, it feels like this'll take 5-7 years to cover everything. 
+Hence why it's useful if I can get as much support as I can to keep going at this, it feels like this'll take at least over 5 years to cover everything.
 
 # Manual Organization TODO
 
 ## Automation
-
-
 
 ## MIDI
 
@@ -119,8 +109,7 @@ Hence why it's useful if I can get as much support as I can to keep going at thi
 
 # Brickwall
 
-Paketti introduces improvements to the Pattern Editor, Sample Editor, Automation, Pattern Matrix, Instrument Box, Mixer, Device & Sample management, Theme management, Phrase Editor... etc.
-The tool tries to circumvent some of the most painful points of Renoise, and replace them with better, easier, faster, more user-friendly solutions. Quality-of-Life & Workflow improvements over "multiple mouse clicks".
+Paketti tries to circumvent some of the most painful points of Renoise, and replace them with better, easier, faster, more user-friendly solutions. Quality-of-Life & Workflow improvements over "multiple mouse clicks".
 
 ### Loading Samples
 
@@ -130,10 +119,8 @@ The Windows Explorer and macOS Finder are far more robust and stronger solutions
 
 For that, you just use the `Paketti PitchBend Multiple Sample Loader` & `Paketti PitchBend Drumkit Loader` shortcuts. These will load a sample (or multiple samples), and immediately initialize it with:
 - 8 Macros (PitchBend, Cutoff, Resonance, Cutoff LFO Frequency, Cutoff LFO Amp (4+5 are used for autofilter like features), OverDrive, Parallel Compression, PitchBend Glide/Inertia) (set it to max, and your regular midicontroller pitchbend input will be very slow, set it to minimum, pitchbending will be immediate). For these, there's a Default XRNI instrument being used, which comes with Paketti. you can of course replace it with a completely different XRNI - which will then get it's sample overwritten on every load.
-
 <img width="1022" alt="Screenshot 2024-11-07 at 16 10 24" src="https://github.com/user-attachments/assets/f7d2371a-5d71-4437-9afc-7df3afa29e1e">
 - Paketti Preferences "Paketti Loader" preferences, such as using your preferred loopmode, autofade, autoseek, oneshot, interpolation, New Note Action, selected FilterType. 
-
 <img width="1216" alt="Screenshot 2024-11-07 at 15 47 33" src="https://github.com/user-attachments/assets/3959fcfd-4146-4d9b-9eb8-5760982f6e5c">
 
 If you pay close attention, you'll also see a checkbox for setting the AHDSR Envelope. Yes, the Default .XRNI Instrument of Paketti also comes in with some Sample FX Chain settings. There's a:
@@ -303,7 +290,8 @@ There's dozens of impulsetracker/screamtracker3 shortcuts for pattern editing an
 ### Dynamic Views for cycling through with shortcuts.
 
 The Dynamic Views let you have a max of 8 shortcuts which cycle through the view settings that you have picked. each of the 8 shortcuts can have max 8 different cycles. 
-<img width="1468" alt="Screenshot 2024-10-23 at 15 46 33" src="https://github.com/user-attachments/assets/246e911d-9522-4ed0-8e06-e0c57e31370e">
+![[Dynamic_Views.png]]
+
 so you have maximum control over "view presets" but they're much more powerful than the 8 that renoise allows you to have, because they remember their state. You could, for instance, cycle, with one shortcut, from Pattern Editor to Sample Editor + show Sample Recorder, then press the same shortcut to hit Mixer, show Disk Browser + Pattern Matrix + Instrument Box, then again to only show Pattern Editor and Automation.
 
 ### MIDI Populator
@@ -365,7 +353,9 @@ there's a replicate at cursor shortcut, which enables this kind of stuff:
 
 https://www.loom.com/share/a437d74618934e9db634ceb41b1c5b9a?sid=ead6a274-1a6a-4ea1-a068-344fed4aef23
 
-there's a "Set Repeater Value" Knob midimapping which will either 1) add repeater and activate it 2)detect repeater exists and modify the parameters, allowing for stuff like this:
+there's a "Set Repeater Value" Knob midimapping which will either 1) add Repeater and activate it 2) detect Repeater exists and modify the parameters, allowing for stuff like this:
+
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/f4f94d05045a4df49896d52202d3adf7?sid=e3999014-729a-4653-a962-ee8bfa45862d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/f4f94d05045a4df49896d52202d3adf7?sid=9c7c6c79-005d-48f4-ba21-ac06475b5bfc
 
@@ -398,58 +388,106 @@ Create Identical Track - takes the Note Columns / Effect Columns & Visible Colum
 For a selection in sample editor, you can press a shortcut to "create new instrument & loop". there's "mute or solo selection in pattern",  expand/shrink selection content shortcuts, set selection to selected instrument.. bypass all effects in track, or enable.. show all parameters of all devices in track
 
 Oblique Strategies Dialog / Loader - it will randomly pick one Oblique Strategy from a list on the status whenever you save or load a song or restart Renoise
+
 Paketti Midi Mappings - it shows some of the Paketti MidiMappings and if you have Midi Mapping "Learn" mode on, you can actually pick them yourself and assign them easily. for better discoverability
+
 Output Routings dialog that shows all the tracks and lets you set the Output Routings in case you have a multi-out soundcard
+
 Shortcuts for setting each track, or the Master, to a specific output routing channel (01-64) for those with multi-out soundcards
+
 Track Renamer - select a bunch of tracks with selection-in-pattern and rename them all in one go, one track at a time
+
 Phrase Doubler / Halver (takes the content of the Phrase and increases the size or decreases the size
+
 Set Phrase Length to 001-004-006-008-012-016-024-032-048-064-096-128-192-256-384-512
+
 Set Phrase LPB 1-256
-same for pattern LPB
+
+Set Pattern LPB 1-256
+
 Print current BPM & LPB to Master track of Pattern - so can modify the tempo in another pattern -good for `LPB*2` i.e. increasing resolution
+
 Keep Sequence Sorted True/False/Toggle
+
 15 frame fade in fade out for reducing clicks
+
 Duplicate sample, maximize audio, turn to 16bit, save as wav or flac (in case you want to deliver them or post them somewhere)
+
 Flip Sample - this allows for 1/2 1/4 1/8 1/16 flipping/rotating of a sample, good for beats if you wanna flip it or any other type of sample
-select first half of sample buffer shortcut - and second half too. midimappings for select sample buffer start and end, so you can just use two knobs to select the length and modify
-set loop mode off, forward, pingpong, backwards
-copy note-on sample to note-off at transpose 0, +12, +24, -12, -24 meaning when you hit a note off on a bassnote, the same basenote can play an octave higher or lower - good for octave basses
-jump to first track in next group / jump to first track in previous group
 
-midimappings for select instrument, select track, keyboard octave, editstep 0-64 and 1-64, double editstep halve editstep, beatsync line control / double beatsync / halve beatsync
+Select first half of sample buffer shortcut - and second half too. midimappings for select sample buffer start and end, so you can just use two knobs to select the length and modify
+
+Set loop mode off, forward, pingpong, backwards
+
+Copy note-on sample to note-off at transpose 0, +12, +24, -12, -24 meaning when you hit a note off on a bassnote, the same basenote can play an octave higher or lower - good for octave basses
+
+Jump to first track in next group / jump to first track in previous group
+
+Midimappings for select instrument, select track, keyboard octave, editstep 0-64 and 1-64, double editstep halve editstep, beatsync line control / double beatsync / halve beatsync
 8 midimappings for controlling the macros of the current instrument. meaning, you use the 8 midimappings on any track and you can control macro knobs without having to assign them to a specific instrument. i.e. they're "free" / "dynamic" for lack of a better word
-Interval generator. shortcuts for adding +1 to +12 to the current note - adds a new note column, moves to it and adds a note that is +x or -x higher/lower than the original basenote. also midimappings for selecting multiple chord intervals 
-good for experimenting with basenotes and writing intervals in and seeing what happens. couple that with the Paketti Gater and you can go wherever you please really.
-Wipe Effects from selection in pattern
-shortcuts for showing a specific number of note columns, or effect columns
-expose / hide note columns or effect columns - this replaces the Renoise "add new note column" by actually exposing it AND selecting it. much more intuitive
-direct shortcuts for writing Axx to Zxx effects and their content (+1 -1 +10 -10) to selection or row
-match delay column to current row  (or panning, or volume).. means you have a row you've selected, run the shortcut, every row in the pattern gets the same delay, or panning, or volume setting
-Note Interpolation (entering notes from beginning to end of selection so c-1 at 00 and c-5 at 64? every step has an interpolated value based on math
-randomize delay, panning and volume value for selected tracks and their columns
-flood fill with selection - takes your selection and fills the pattern with it in a loop
-shortcuts for setting visible columns (vol,pan,delay,samplefx) for all tracks globally
-clear/delete track dsp effects from current track
-bpm increase +0.1 -0.1 +0.5 -0.5 +1 -1 +5 -5 
-bypass all devices on all tracks
-bypass all devices on selected track
 
-set master output volume in dB to -INF or 0 or -0.1 +0.1 -1 +1 for better control
-midi mappings for setting global groove control 1,2,3,4
-multi-combos like "shortcut for toggling play, record, follow pattern, metronome on/off" or "toggle play,record,followpattern on/off, or record+followpattern on/off
-hide open track dsp device + sample fx device external editors
-shortcuts + menu entries for adding sample modulation devices (all available for volume, pan, cutoff, resonance, overdrive, pitch) 
-shortcut for adding and opening formula device
-direct shortcut for exposing the pitchstep device external editor, which is included in all Paketti-loaded samples so you can immediately start pitching it up and around for extra randomness
-visual editmode for highlighting which track is selected, for those with aged eyes and who have grown tired of trying to figure out which track they've selected
-volume, panning, delay dialog with 16 sliders - basically another step control for setting specific settings, again 16 steps but can be reduced to 1-16 steps for each, so they can be offset
-shortcuts for starting playback at a specific row (000-512)..
-shortcuts for starting playback at a random line of the pattern, or random 2nd or 4th or 8th row (in order to be able to step across it in a stair/stepped way
-play current line and step forwards, play current line and step backwards, for those who want to use renoise as a.. musical box? @tkna how would you describe this with words?
-shortcuts for selecting a specific track i.e. 1-32, you set the shortcut and it jumps you there
-sample fx group + mod group shortcuts for modifying them, same with mute groups
-show/hide selected track's device 1 to 64, another external editor shower/hider
-a mode to enter where if you're in effect column, it'll jump you to the next row in that track that has a note. so you can enter effects to where the notes are
+Interval generator. shortcuts for adding +1 to +12 to the current note - adds a new note column, moves to it and adds a note that is +x or -x higher/lower than the original basenote. also midimappings for selecting multiple chord intervals - good for experimenting with basenotes and writing intervals in and seeing what happens. couple that with the Paketti Gater and you can go wherever you please really.
+
+Wipe Effects from selection in pattern
+
+Shortcuts for showing a specific number of note columns, or effect columns
+
+Expose / hide note columns or effect columns - this replaces the Renoise "add new note column" by actually exposing it AND selecting it. much more intuitive
+
+Direct shortcuts for writing Axx to Zxx effects and their content (+1 -1 +10 -10) to selection or row
+
+Match delay column to current row  (or panning, or volume).. means you have a row you've 
+
+Selected, run the shortcut, every row in the pattern gets the same delay, or panning, or volume setting
+
+Note Interpolation (entering notes from beginning to end of selection so c-1 at 00 and c-5 at 64? every step has an interpolated value based on math
+
+Randomize delay, panning and volume value for selected tracks and their columns
+
+Flood fill with selection - takes your selection and fills the pattern with it in a loop
+
+Shortcuts for setting visible columns (vol,pan,delay,samplefx) for all tracks globally
+clear/delete track dsp effects from current track
+
+BPM increase +0.1 -0.1 +0.5 -0.5 +1 -1 +5 -5 
+
+Bypass all devices on all tracks
+
+Bypass all devices on selected track
+
+Set master output volume in dB to -INF or 0 or -0.1 +0.1 -1 +1 for better control
+
+Midi mappings for setting global groove control 1,2,3,4
+
+Midi Mappings for setting Global Groove 2 & 4 (downbeat?)
+
+Multi-combos like "shortcut for toggling play, record, follow pattern, metronome on/off" or "toggle play,record,followpattern on/off, or record+followpattern on/off
+
+Hide open track dsp device + sample fx device external editors
+
+Shortcuts + menu entries for adding sample modulation devices (all available for volume, pan, cutoff, resonance, overdrive, pitch) 
+
+Shortcut for adding and opening formula device
+
+Direct shortcut for exposing the pitchstep device external editor, which is included in all Paketti-loaded samples so you can immediately start pitching it up and around for extra randomness
+
+Visual editmode for highlighting which track is selected, for those with aged eyes and who have grown tired of trying to figure out which track they've selected
+
+Volume, panning, delay dialog with 16 sliders - basically another step control for setting specific settings, again 16 steps but can be reduced to 1-16 steps for each, so they can be offset
+
+Shortcuts for starting playback at a specific row (000-512)..
+
+Shortcuts for starting playback at a random line of the pattern, or random 2nd or 4th or 8th row (in order to be able to step across it in a stair/stepped way)
+
+Play current line and step forwards, play current line and step backwards, for those who want to use renoise as a.. musical box?
+
+Shortcuts for selecting a specific track i.e. 1-32, you set the shortcut and it jumps you there
+
+Sample fx group + mod group shortcuts for modifying them, same with mute groups
+
+Show/hide selected track's device 1 to 64, another external editor shower/hider
+
+ A mode to enter where if you're in effect column, it'll jump you to the next row in that track that has a note. so you can enter effects to where the notes are
 
 okay.. just realized i completely neglected to talk about the "Paketti Automation" setup.
 
@@ -467,7 +505,7 @@ Paketti is a multipurpose Renoise tool. Working like an expansion pack, it deliv
 
 It is far too complex to sum up in just a few words. However, some notable changes include:
 
-* Over three thousand new keybinds covering multiple areas of Renoise;
+* Over ~~three~~ four thousand new keybinds covering multiple areas of Renoise;
 * Default XRNI functionality - each loaded instrument or drumkit has Pitchbend, Glide Amount, Cutoff, Resonance, Cutoff LFO Amount, Cutoff LFO Frequency, Overdrive, Parallel Compression.
 * Automatically load multiple samples into sequential instrument slots;
 * Device parameter randomizer;
@@ -507,19 +545,19 @@ For better comprehension, this manual is divided into sections. Each chapter cor
 
 Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This menu also includes some shortcuts for useful features:
 
-| Item | Description | Index |
-| --- | --- | --- |
-| `Preferences` | Shows Paketti Preferences window. | [1.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#11---preferences) |
-| `Instruments` | Contains sample and drumkit loaders, plus shortcuts for beatsync and pitchbend. | [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments) |
-| `Pattern Editor` | Random BPM, FX Cheat Sheet, Collapse/Uncollapse All, Double/Halve Pattern | [1.3](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#13---pattern-editor) |
-| `Plugin/Devices` | Multiple Plugin/Device functionalities. | [1.4](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#14---pluginsdevices) |
-| `Show New Song Dialog` | Allows you to start a new song with the option to keep the same Patterns/Instruments/etc | - |
-| `∿ Squigly Sinewave to Clipboard` | Copy this symbol to easily find Paketti in the Keys window (under Renoise Preferences). | - |
-| `Paketti MIDI Populator` | Automatically fills current Project with Tracks, Instruments, Sends and Macros for External MIDI Controllers. | [1.5](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#15---midi-populator) |
-| `Clean Render Selected Track or Group` | Automatically bypasses FX in Track/Group before resampling. | - |
-| `Catch Octave` | (NEEDS EXPLAINING) | - |
-| `Clone Current Sequence` | Self-explanatory. | - |
-| `Track Routings Dialog` | Displays a pop-up window containing all track audio device routings. | - |
+| Item                                   | Description                                                                                                   | Index                                                                                                                 |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `Preferences`                          | Shows Paketti Preferences window.                                                                             | [1.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#11---preferences)    |
+| `Instruments`                          | Contains sample and drumkit loaders, plus shortcuts for beatsync and pitchbend.                               | [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments)    |
+| `Pattern Editor`                       | Random BPM, FX Cheat Sheet, Collapse/Uncollapse All, Double/Halve Pattern                                     | [1.3](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#13---pattern-editor) |
+| `Plugin/Devices`                       | Multiple Plugin/Device functionalities.                                                                       | [1.4](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#14---pluginsdevices) |
+| `Show New Song Dialog`                 | Allows you to start a new song with the option to keep the same Patterns/Instruments/etc                      | -                                                                                                                     |
+| `∿ Squigly Sinewave to Clipboard`      | Copy this symbol to easily find Paketti in the Keys window (under Renoise Preferences).                       | -                                                                                                                     |
+| `Paketti MIDI Populator`               | Automatically fills current Project with Tracks, Instruments, Sends and Macros for External MIDI Controllers. | [1.5](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#15---midi-populator) |
+| `Clean Render Selected Track or Group` | Automatically bypasses FX in Track/Group before resampling.                                                   | -                                                                                                                     |
+| `Catch Octave`                         | (NEEDS EXPLAINING)                                                                                            | -                                                                                                                     |
+| `Clone Current Sequence`               | Self-explanatory.                                                                                             | -                                                                                                                     |
+| `Track Routings Dialog`                | Displays a pop-up window containing all track audio device routings.                                          | -                                                                                                                     |
 
 ### 1.1 - Preferences
 
@@ -561,7 +599,7 @@ Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This 
 ### 1.3.1 - Effect Column CheatSheet Dialog
 
 Please note: the Effect Column CheatSheet also features sliders for the Volume, Pan, Delay, SampleFX and Effect Columns. Moving a slider places the correspondent value in the highlighted row or selection in pattern. It is very effective for manually programming intricate modulations: pick an effect, move the slider, move to next line, and so on. It's also the perfect companion for Renoise newcomers who still haven't learned the most important commands.
-<img width="587" alt="Screenshot 2024-09-05 at 21 07 59" src="https://github.com/user-attachments/assets/30f3622b-39ce-47b4-a3c9-3e77007577f2">
+![[PakettiCheatsheet.png]]
 
 ### 1.4 - Plugins/Devices
 
@@ -575,7 +613,6 @@ Please note: the Effect Column CheatSheet also features sliders for the Volume, 
 | `Bypass/Enable All Devices on Track` | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track. | |
 | `Load AU/VST/VST3 Plugins Dialog` | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences. | See [1.4.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#142---load-auvstvst3-plugins-dialog). | 
 | `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible. | |
-
 ### 1.4.1 - Expose/Hide Selected Device Parameters in Mixer
 
 ### 1.4.2 - Load AU/VST/VST3 Plugins Dialog
@@ -588,9 +625,9 @@ For users who do not have external hardware sequencers, a good use case for the 
 
 ### 1.5.1 - MIDI Populator Quickstart
 
-1. Select MIDI inputs and outputs.
-2. Manually pick a plugin for each MIDI channel or use the `Randomize VST3 Plugin Selection` to randomly pick instruments.
-3. Configure the remaining options, which range from number of note columns to automatic Send devices.
+3. Select MIDI inputs and outputs.
+4. Manually pick a plugin for each MIDI channel or use the `Randomize VST3 Plugin Selection` to randomly pick instruments.
+5. Configure the remaining options, which range from number of note columns to automatic Send devices.
 
 Paketti will then generate a new track for each plugin, with automatic MIDI In/Out configuration and Send population (if enabled), and also `#Line-In Device` placement for all tracks, in case the objective is to use audio inputs..
 
@@ -625,9 +662,10 @@ Improvement: Effect Column CheatSheet Dialog now either outputs to selected_row 
 
 ---
 ### 2024-06-16 - esaruoho
+Paketti Effect CheatSheet Dialog
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/29043519c0a548a1a30fd696560f580f?sid=4e0836bb-95a1-46e4-9016-0c0a8fbfc9a7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/29043519c0a548a1a30fd696560f580f?sid=b2bd3dc7-8647-4294-b3d3-01545f44be5b
-[Embedded Link](https://www.loom.com/share/29043519c0a548a1a30fd696560f580f?sid=b2bd3dc7-8647-4294-b3d3-01545f44be5b)
 
 
 ---
@@ -664,7 +702,6 @@ Improvement: "Wipe Song Retain Sample" now no longer errors if the Instrument yo
 WIP Improvement: Instrument Box Menu Entries are better organized
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_15.56.29.png)
 
-
 ---
 ### 2024-06-16 - esaruoho
 
@@ -676,13 +713,11 @@ Improvement: Wipe & Slice no longer shoots an error if there is no sample in the
 Improvement: Wipe & Slice will tell you how many slices have been added to the instrument, and reference the sample name.
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.09.35.png)
 
-
 ---
 ### 2024-06-16 - esaruoho
 
 Improvement: Wipe & Slice will tell you when you've wiped all slices
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.12.28.png)
-
 
 ---
 ### 2024-06-16 - esaruoho
@@ -690,13 +725,11 @@ Improvement: Wipe & Slice will tell you when you've wiped all slices
 Improvement: LoopBlock "2nd binds" made available with matching naming convention to what Renoise provides
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.52.53.png)
 
-
 ---
 ### 2024-06-16 - esaruoho
 
 Improvement: Enable / Bypass EFX in Pattern now uses the right commands to bypass the first 8 effects, or enable the first 8 effects. (Meaning: now compatible with Renoise 3)
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.56.27.png)
-
 
 ---
 ### 2024-06-16 - esaruoho
@@ -714,7 +747,6 @@ Improvement: Whenever saving a script, or saving a song, or loading a new song, 
 Improvement to ImpulseTracker "ALT-L *2" functionality. Now, if you are on Send or Master, and press ALT-L, it will select the content of the Send or Master track. when you press ALT-L again, it will select all of the pattern data (including sends + masters). instead of "only the tracks and not sends + masters".
 ![](attachments/2024-06-17_ALT-L_logic_improvement.gif)
 
-
 ---
 ### 2024-06-17 - esaruoho
 
@@ -726,12 +758,11 @@ Fixed: when using Pattern Doubler to double a 256 row pattern to 512 - and the p
 Improvement: Sample Navigator now has the "Mono to Stereo" & "Mono to Left, Right Blank" & "Mono to Right, Left Blank" entries and they're sorted correctly
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.05.35.png)
 
-
+---
 ### 2024-06-17 - esaruoho
 
 improvement: tweaked the naming convention of "Bypass EFX (Write to Pattern)" and "Enable EFX (Write to Pattern)".
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.41.12.png)
-
 
 ---
 ### 2024-06-17 - esaruoho
@@ -744,7 +775,6 @@ Improvement: Paketti PitchBend DrumKit Loader now correctly sets LoopMode + Samp
 Improvement: Bypass EFXs are now grouped together
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.57.12.png)
 
-
 ---
 ### 2024-06-17 - esaruoho
 
@@ -753,7 +783,6 @@ Improvement: had to switch from vb:switch for loop release to vb:checkbox -  - b
 this Loop Release mode, coupled with Backward - means that whenever you let go of the playing slice, it will start playing backwards until the beginning of the sample is reached.
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_14.47.41.png)
 
-
 ---
 ### 2024-06-17 - esaruoho
 
@@ -761,13 +790,11 @@ Feature: "Jump to First Track in Next Group" & "Jump to First Track in Previous 
 pretty much does what it says on the tin - if there are no groups, then it doesn't do anything.
 ![](attachments/2024-06-17_jump_to_next_previous_track.gif)
 
-
 ---
 ### 2024-06-17 - esaruoho
 
 Improvement: 24st_pitchbend, 36st_pitchbend, 48st_pitchbend, 64st_pitchbend, 96st_pitchbend loaders updated with macros set up .. these init instruments were lagging behind from 12st_pitchbend which had all the goodies
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_22.51.58.png)
-
 
 ---
 ### 2024-06-17 - esaruoho
@@ -776,8 +803,7 @@ Improvement: Pattern Editor Cheat Sheet: added "0Yxx" (Maybe), "0Zxx" (Trigger P
 more tweaks incoming later (additional efx, grouping)
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_23.42.27.png)
 
-[Embedded Link](https://forum.renoise.com/t/effect-commands-cheat-sheet/45512)
-
+[Effect Commands Cheatsheet (Renoise Forum post, printable PDF by someone else)](https://forum.renoise.com/t/effect-commands-cheat-sheet/45512)
 
 ---
 ### 2024-06-18 - esaruoho
@@ -873,7 +899,6 @@ NOTE: if there are apps out there that can't handle 32bit wavefiles, please tell
 Improvement: If you try to save sample or samples to a Smart Folder that is not set - an error is shown on the status and the Smart Folder GUI opens up
 ![](attachments/2024-06-21_Screenshot_2024-06-21_at_15.29.54.png)
 
-
 ---
 ### 2024-06-21 - esaruoho
 
@@ -887,9 +912,10 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/208
 ---
 ### 2024-06-21 - esaruoho
 
-Feature: Randomize Selected Device Parameters: https://www.loom.com/share/52748313bf284544976bf7f90b62e6c6?sid=b3198df4-229b-47e0-a5ce-465ca11f90e6
-[Embedded Link](https://www.loom.com/share/52748313bf284544976bf7f90b62e6c6?sid=b3198df4-229b-47e0-a5ce-465ca11f90e6)
+Feature: Randomize Selected Device Parameters:
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/52748313bf284544976bf7f90b62e6c6?sid=a2142966-d532-49d2-adbc-2aca8bd751fa" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+https://www.loom.com/share/52748313bf284544976bf7f90b62e6c6?sid=b3198df4-229b-47e0-a5ce-465ca11f90e6
 
 ---
 ### 2024-06-21 - esaruoho
@@ -901,7 +927,6 @@ Feature: Randomize Selected Instrument (All) Plugin Parameters .. but since it r
 
 Improvement: Randomize Selected Device Parameters now shows the name of the device that was randomized.
 ![](attachments/2024-06-21_Screenshot_2024-06-21_at_20.37.29.png)
-
 
 ---
 ### 2024-06-21 - esaruoho
@@ -924,8 +949,7 @@ usecase: make a way to fade in a sound by adding a gainer device to the track an
 
 ![](attachments/2024-06-21_Screenshot_2024-06-22_at_0.41.31.png)
 
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/171)
-
+https://github.com/esaruoho/paketti/issues/171
 
 ---
 ### 2024-06-22 - esaruoho
@@ -940,13 +964,11 @@ Improvement: Moved "Jump to First Track in Next Group" & "Jump to First Track in
 Improvement: Added "Create Identical Track" to Tools->Paketti.. -> Pattern Editor
 ![](attachments/2024-06-22_Screenshot_2024-06-22_at_16.06.14.png)
 
-
 ---
 ### 2024-06-22 - esaruoho
 
 Improvement: Added "Randomize Selected Instrument Plugin Parameters" &."Randomize Selected Device Parameters" to Tools->Paketti..->Plugins/Devices
 ![](attachments/2024-06-22_Screenshot_2024-06-22_at_16.09.14.png)
-
 
 ---
 ### 2024-06-22 - esaruoho
@@ -956,7 +978,6 @@ this means that you can be in the slice itself, and adjust the slice visually wi
 ![](attachments/2024-06-22_Screenshot_2024-06-22_at_22.16.32.png)
 
 ![](attachments/2024-06-22_move_slice.gif)
-
 
 ---
 ### 2024-06-22 - esaruoho
@@ -988,7 +1009,6 @@ Feature: Solo Selected Track in Group using Note Column Mute:
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/106
 ![](attachments/2024-06-23_column_mute_on_group_tracks.gif)
 
-
 ---
 ### 2024-06-23 - esaruoho
 
@@ -997,40 +1017,34 @@ Improvement: +300/-300 +500/-500 for both Slice Start & Slice End:
 
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_10.52.33.png)
 
-
 ---
 ### 2024-06-23 - esaruoho
 
 Improvement: Midi Mapping Sample FX Column knob now shows the Sample FX Column, for better visibility.
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_14.49.28.png)
 
-
 ---
 ### 2024-06-23 - esaruoho
 
 Improvement: Midi Change 01 Volume Column Value / 02 Panning Column Value / 03 Delay Column Value / 04 Sample FX Value: 
 if you have nothing selected, it'll output to current_line row. if columns are not visible, they are made visible. if you have a selection, then the whole selection will be changed by midi knobs.
+
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/3af37cfeac9a4aa78834d7b6c74b7f36?sid=8448be8d-8f03-469a-a7a2-12df1888add2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f
-[Embedded Link](https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f)
-
-
 ---
 ### 2024-06-23 - esaruoho
 
 Feature: Selected Device Parameter Randomizer Dialog.
 Offers a slider for controlling percentage of randomization
 auto-updates to new device if you select a new device.
-
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6358542ad6db449daf581421653548fa?sid=710584ec-3e0c-47ae-9e3b-9da0abecefba" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/6358542ad6db449daf581421653548fa?sid=aee4ccb0-2738-4214-933d-0bd5c50eb163
-[Embedded Link](https://www.loom.com/share/6358542ad6db449daf581421653548fa?sid=aee4ccb0-2738-4214-933d-0bd5c50eb163)
-
-
 ---
 ### 2024-06-23 - esaruoho
 
 Improvement: BPM +0.1 / BPM -0.1 (in addition to +1/+5/-5/-1 already being there since 14 years ago in Paketti.) this is ripped straight from the ModPlugTracker playbook:
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_15.27.23.png)
-
 
 ---
 ### 2024-06-23 - esaruoho
@@ -1042,7 +1056,6 @@ Improvement: Randomize Selected Device Parameters Dialog now updates if no Devic
 
 Feature: "Duplicate Effect Column Content to Pattern"
 ![](attachments/2024-06-24_duplicate_effect_column_content_to_whole_pattern.gif)
-
 
 ---
 ### 2024-06-24 - esaruoho
@@ -1069,13 +1082,11 @@ Feature: Effect Column Interpolation for Selection or Pattern.
 Feature: Flood Fill Selection or Track with Instrument + Note:
 ![](attachments/2024-06-24_floodfill.gif)
 
-
 ---
 ### 2024-06-24 - esaruoho
 
 Improvement: now all Plugin parameters can be randomized, or all plugins in the whole song can be randomized.  same GUI as Selected Track Device & All Devices on Selected Track.
 ![](attachments/2024-06-24_Screenshot_2024-06-25_at_0.33.40.png)
-
 
 ---
 ### 2024-06-25 - esaruoho
@@ -1085,13 +1096,11 @@ If there are no plugins in the song, then Randomize All Plugins will show_status
 and visual update: the fourth column now has empty space before the "Randomization intensity (%)" line to better line up.
 ![](attachments/2024-06-25_Screenshot_2024-06-25_at_23.30.58.png)
 
-
 ---
 ### 2024-06-26 - esaruoho
 
 Feature: Impulse Tracker ALT-Left / ALT-Right (two flavors, one that Wraps (last track to first track.. or first track to last track), and another that doesn't wrap (press alt-left enough, and you'll be in first track but that's it.. same for alt-right)))
 ![](attachments/2024-06-26_impulsetracker_alt-left_alt-right_select_next_track_previous_track.gif)
-
 
 ---
 ### 2024-06-28 - esaruoho
@@ -1099,13 +1108,11 @@ Feature: Impulse Tracker ALT-Left / ALT-Right (two flavors, one that Wraps (last
 Feature: Impulse Tracker "Slide Content Up / Down". this takes Selected Track.. or Selected Note Column or Selected Effect Column. will slide it up and down.
 ![](attachments/2024-06-28_slide_selected_column_or_track.gif)
 
-
 ---
 ### 2024-06-28 - esaruoho
 
 Feature: Solo Tracks - if no pattern selection - then mute currently selected track. if current track is selected or has selection, mute that. draw selection around multiple tracks and run shortcut = all other tracks are muted. or unmuted.
 ![](attachments/2024-06-28_solo_tracks_hack.gif)
-
 
 ---
 ### 2024-06-28 - esaruoho
@@ -1113,20 +1120,17 @@ Feature: Solo Tracks - if no pattern selection - then mute currently selected tr
 Improvement: Note Interpolation now works on any note column on the track. same with selection. and.. if you have multiple note columns selected, and there's notes there at the start + end of pattern rows, the interpolation will happen. and if you have a selection within a track, the note interpolation will happen for the whole selection.
 ![](attachments/2024-06-28_note_interpolation_improvement.gif)
 
-
 ---
 ### 2024-06-28 - esaruoho
 
 Feature: ALT-Y "Swap Block" straight from ImpulseTracker2/SchismTracker/ScreamTracker3(?)
 ![](attachments/2024-06-28_alt-y.gif)
 
-
 ---
 ### 2024-06-28 - esaruoho
 
 Improvement: Alt-Y will now work with tracks that don't have "enough" note columns, they will be resized. and now this can be used for multiple note columns, and to the track you're at.
 ![](attachments/2024-06-28_alt-y_swap_block_improvements.gif)
-
 
 ---
 ### 2024-06-29 - esaruoho
@@ -1143,8 +1147,6 @@ both of these transposes actually go from C-9 to C-0 if you keep transposing.
 
 Feature: Duplicate Instrument and Reverse Sample -- this just takes your currently selected instrument, duplicates it below it, and reverses the samples in the instrument. (and selects the newly created reversed instrument)
 ![](attachments/2024-06-29_Screenshot_2024-06-30_at_0.42.10.png)
-
-
 ---
 ### 2024-06-30 - esaruoho
 
@@ -1156,20 +1158,17 @@ Improvement: F5 "Impulse Tracker Play" used to have a 0.4 second delay after Pan
 Feature: Paketti Renamer - shortcut + menu entry for renaming a track. opens a dialog with current name highlighted, you can type, press enter -> renaming done. works for master, send, group, track.
 ![](attachments/2024-07-01_Paketti_Renamer_.gif)
 
-
 ---
 ### 2024-07-01 - esaruoho
 
 Improvement: Now Paketti Track Renamer reads selection-in-pattern for multi-track renaming one at a time.
 ![](attachments/2024-07-01_paketti_renamer_improvement.gif)
 
-
 ---
 ### 2024-07-04 - esaruoho
 
 Improvement: "Wipe Plugins" added to CTRL-N, it will look through all the instruments and clear the plugins from the instruments.
 ![](attachments/2024-07-04_Screenshot_2024-07-04_at_15.36.13.png)
-
 
 ---
 ### 2024-07-05 - esaruoho
@@ -1233,10 +1232,8 @@ Feature: Send Populator for Selected Track or All Tracks.
 ### 2024-07-06 - esaruoho
 
 Feature: Flood Fill Note & Instrument with Edit Step - this takes the Edit Step and fits the currently selected line note + instrument to it, or if you have a multi-track selection, it will take the current row and fill the selection with the note+instrument using editstep.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=1e5f9784-6265-47de-b622-eb39cc463ab5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=081e5637-a092-4299-ac49-7433e90d344a
-[Embedded Link](https://www.loom.com/share/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=081e5637-a092-4299-ac49-7433e90d344a)
-
-
 ---
 ### 2024-07-06 - esaruoho
 
@@ -1264,7 +1261,6 @@ Improvement: Load VST3/AudioUnit Randomize Selection
 Improvement: Load VST3/VST/AudioUnit Plugins Randomize Selection:
 ![](attachments/2024-07-06_346273234-e6a90912-8e03-41ba-a60d-6acf7da55a36.png)
 
-
 ---
 ### 2024-07-06 - esaruoho
 
@@ -1275,7 +1271,6 @@ Improvement: Plaidzap gift now uses the macros (pitchbend,cutoff,resonance,cutof
 
 Feature: Unison Generator.. creates 6 samples  and finetunes them by -1 +1 -2 +2 -3 +3 and adjusts the sample startpoint by fractions (1/8 to 7/8) so they're slightly offset
 ![](attachments/2024-07-06_Screenshot_2024-07-06_at_16.47.39.png)
-
 
 ---
 ### 2024-07-08 - esaruoho
@@ -1289,8 +1284,6 @@ if anyone's into IRs, please DM me and I'll send a build and we can continue loo
 Improvement: There's now a connection between 0G01 loader and Paketti PitchBend Multiple Sample Loader - if 0G01 loader is set to On, then new tracks will be created per each loaded sample, and each track will cleanly have a instr automation device added, so there's no longer a flood of instr automation devices for the track you were on, i.e. you load 36 samples and there's 36 instr automation devices on selected_track.
 
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191)
-
 
 ---
 ### 2024-07-10 - esaruoho
@@ -1298,13 +1291,11 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191
 Improvement: Export / Import Convolver IR file feature now offers a GUI for also importing to convolver or exporting from convolver, and the gui allows for using shortcuts while open, so you can select a new sample to be imported to a Convolver of your choice. it also will update when you select a different sample, it allows you to add a Convolver to the start of the Track DSP Chain or the end of it, and you can import or export from any of them.
 ![](attachments/2024-07-10_Screenshot_2024-07-10_at_18.25.14.png)
 
-
 ---
 ### 2024-07-10 - esaruoho
 
 Feature: Set Master Track Output Routings 00...32 - this changes the Master Track Output.
 ![](attachments/2024-07-10_Screenshot_2024-07-10_at_22.36.25.png)
-
 
 ---
 ### 2024-07-10 - esaruoho
@@ -1317,7 +1308,6 @@ Selected Track Output Routing is now 0...63
 
 Feature: MidiMapping Knob 0...127 for Selected Track Output Routing, and Master Track Output Routing:
 ![](attachments/2024-07-11_midimapping_for_selected_track_output_or_master_track_output.gif)
-
 
 ---
 ### 2024-07-12 - esaruoho
@@ -1333,8 +1323,6 @@ Feature: MidiMapping Buttons for Selected Track Output Routing, and Master Track
 
 Feature: a brand new donation dialog with buttons for donating via ko-fi, bandcamp or PayPal, and with a list of people who donated, how much, and links to their pages as promotion.
 ![](attachments/2024-07-13_Screenshot_2024-07-13_at_18.25.17.png)
-
-
 ---
 ### 2024-07-14 - esaruoho
 
@@ -1412,8 +1400,6 @@ Improvement: Unison Generator -> sets the selected instrument selected sample lo
 Improvement: Unison Generator now both makes a copy of the original instrument, and loads 12st_Pitchbend.xrni instrument, for macros.
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/274)
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_7.28.14.png)
-
-
 ---
 ### 2024-07-19 - esaruoho
 
@@ -1444,7 +1430,6 @@ Update: Paketti Donations list updated with URL button added to newest donator -
 Improvement: Unison Generator now reads this brand new (still WIP) setting in Paketti Preferences:  .. i.e. if it is set to ON, then the Unison Generated Instrument will have AHDSR envelope enabled instead of disabled. default is disabled.
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_8.42.15.png)
 
-
 ---
 ### 2024-07-19 - esaruoho
 
@@ -1472,7 +1457,6 @@ Improvement: Default XRNI Loader now has a dropdown menu in Paketti Preferences:
 this lets me also collaborate with other people who want to make a default XRNI available, and want to contribute it to Paketti
 ![](attachments/2024-07-20_Screenshot_2024-07-20_at_8.58.28.png)
 
-
 ---
 ### 2024-07-22 - esaruoho
 
@@ -1484,11 +1468,11 @@ Plumbing: Paketti has KeyBindings.xml files inside the script itself, I've moved
 Feature: PlayerPro Transpose Selection or Row +1/-1/+12/-12
 ![](attachments/2024-07-22_Screenshot_2024-07-22_at_11.48.16.png)
 
-
 ---
 ### 2024-07-23 - esaruoho
 
 Feature: Paketti Theme Selector Dialog.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2289acd190614b388a93edc2e7f3507a?sid=ff453d9e-81db-49ea-be24-3592a85b2f6a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a
 
 - 453 themes added within Paketti (from Renoise Theme Thread, and private sendings) - if you want your theme added, please shoot me a DM.
@@ -1499,9 +1483,6 @@ https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a
 - Open Themes Path - should work on Windows, Linux and macOS - opens the Themes path so you can update
 - Refresh for refreshing the dropdown menu.
 ![](attachments/2024-07-23_Screenshot_2024-07-23_at_9.28.59.png)
-
-[Embedded Link](https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a)
-
 
 ---
 ### 2024-07-23 - esaruoho
@@ -1612,15 +1593,12 @@ Improvement: EditMode Signaler now no longer shoots an error, if you had editmod
 
 Improvement: "Isolate Slices to New Instruments" now also adds the Default XRNI Instrument for each isolated slice to new instrument - meaning, your slices now have cutoff, resonance, pitchbend inertia, overdrive, parallel compression and cutoff LFO Amount & cutoff LFO Freq. 
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/295 )
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/295)
-
 
 ---
 ### 2024-07-27 - esaruoho
 
-Improvement: "Wipe Song & Retain Sample" now retains the name of the Instrument and the name of the Sample in the new song.  (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294 )
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294)
-
+Improvement: "Wipe Song & Retain Sample" now retains the name of the Instrument and the name of the Sample in the new song. 
+(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294 )
 
 ---
 ### 2024-07-27 - esaruoho
@@ -1796,19 +1774,19 @@ some screenshot examples:
 ### 2024-08-01 - esaruoho
 
 Feature: Flood Fill with Selection.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/147fab8a865e4b87af4850185620aae3?sid=c52b301d-7084-4074-80ce-44a77210c1bf" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/147fab8a865e4b87af4850185620aae3?sid=191b0f48-7985-4603-b218-c77abbd84d87
 select anything, effect columns, note columns, run flood fill with selection = result = pattern filled with content.
-[Embedded Link](https://www.loom.com/share/147fab8a865e4b87af4850185620aae3?sid=191b0f48-7985-4603-b218-c77abbd84d87)
-
 
 ---
 ### 2024-08-01 - esaruoho
 
 Feature: Selected Row to / Selection In Pattern Start  -> circular rotate to first row.
 this means, if your cursor is on say row 6 and you trigger the shortcut, row6 becomes row1 and everything in row1-row5 goes to the end of the pattern. or if you have a selection, such as a couple of note columns and a couple of effect columns, and trigger the shortcut, then the first row in the selection is moved to the first row of the pattern.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/a3f55137bb4d46de9ccd81e76296fc60?sid=a7902e6e-86ac-45fb-86cf-2def38563cbc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/a3f55137bb4d46de9ccd81e76296fc60?sid=b7c8a4f5-9d76-46b9-9034-5bbbc5c73500
-[Embedded Link](https://www.loom.com/share/a3f55137bb4d46de9ccd81e76296fc60?sid=b7c8a4f5-9d76-46b9-9034-5bbbc5c73500)
 
 
 ---
@@ -1826,10 +1804,9 @@ this fetches a random line from the official Oblique Strategies list and shows i
 ### 2024-08-02 - esaruoho
 
 Feature: Paketti Dater & Titler - (Save Song As replacement)
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6d1b8cf98ee0471cb67156b6a98fa383?sid=6373355d-068c-46fc-b1c1-028d0d5074df" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f96-a538-264f67a18239
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_10.23.43.png)
-
-[Embedded Link](https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f96-a538-264f67a18239)
 
 
 ---
@@ -1837,16 +1814,12 @@ https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f
 
 Improvement: Mixer: Load Native Device menu entry now shows both the renoise native devices and renoise hidden devices - instead of there being two menus (one with the name "Load Native Device" and the other "Load Native Device ")
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/335
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/335)
-
 
 ---
 ### 2024-08-02 - esaruoho
 
 Improvement: "Duplicate and Reverse Instrument" is now available in the Instrument Box, Sample Editor and Pattern Editor
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331)
-
 
 ---
 ### 2024-08-02 - esaruoho
@@ -1855,16 +1828,12 @@ Improvement: "Paketti Save sample as FLAC / WAV" now says that the file was succ
 closes  https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_13.36.08.png)
 
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329)
-
 
 ---
 ### 2024-08-02 - esaruoho
 
 Improvement: If you were in F4 view ( MIDI or Plugin frame ) and pressed F3  , nothing happened. fixed.
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/323
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/323)
-
 
 ---
 ### 2024-08-02 - esaruoho
@@ -1873,8 +1842,6 @@ Improvement: Naming of Delay +1 -1 +10 -10 - discoverability improvement:
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_14.20.19.png)
 
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333)
-
 
 ---
 ### 2024-08-02 - esaruoho
@@ -1882,8 +1849,6 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333
 Improvement: Double Beatsync Line & Halve Beatsync Line now has a total of 4 shortcuts. both for selected sample, and for all slices, or all samples. if there are slices, the 1st (original sample slot) will not be touched. if there's only samples, (all) will apply for all.
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_22.11.29.png)
-
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51)
 
 
 ---
@@ -1901,13 +1866,11 @@ Feature: Paketti KeyBindings Dialog.
 Shows all the KeyBindings with Paketti. 
 sort by path (Global, Sample Editor)
 can filter "unshortcutted"
-menu entry in main menu tools paketti.. but also in every instance (right-click on Mixer for instance to go to Paketti..: Show Keybindings
+menu entry in main menu tools paketti.. but also in every instance (right-click on Mixer for instance to go to **Paketti..: Show Keybindings**
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/308
 ![](attachments/2024-08-03_Screenshot_2024-08-03_at_9.41.28.png)
 
 ![](attachments/2024-08-03_Screenshot_2024-08-03_at_9.41.37.png)
-
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/308)
 
 
 ---
@@ -1938,7 +1901,6 @@ search is fuzzier (for both Renoise + Paketti KeyBindings dialogs)
 padding has been introduced to make it better looking.
 ![](attachments/2024-08-04_Screenshot_2024-08-04_at_9.51.44.png)
 
-
 ---
 ### 2024-08-04 - esaruoho
 
@@ -1946,7 +1908,6 @@ Improvement: Paketti KeyBindings Dialog:
 fuzzy search
 padding for better readability
 ![](attachments/2024-08-04_Screenshot_2024-08-04_at_9.52.21.png)
-
 
 ---
 ### 2024-08-05 - esaruoho
@@ -1959,8 +1920,6 @@ Improvement: 0G01 Loader no longer triggers every time you load a sample, even i
 Improvement: I've tweaked all the Midi Mappings to no longer fluctuate wildly ("Global:Paketti:Name" // "Global:Tools:Paketti:Name" // "Tools:Paketti:Name" // "Tools:Name" //). now they're either Paketti:Name or Context:Paketti:Name.
 
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/342
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/342)
-
 
 ---
 ### 2024-08-07 - esaruoho
@@ -1994,15 +1953,11 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/350
 Feature: Paketti Midi Mappings dialog.
 This shows all the Midi Mappings created by Paketti. if you also open the CMD-M Midi Mappings Dialog and enter the Extended mode, clicking on the button selects the Midi Mapping and you can press a button, twist a knob or move a slider to assign that. fastest way to onboard yourself into the features Paketti introduces.
 I've also tweaked the namings of all the midimappings, and grouped them accordingly.
-
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/ad75ebed54234085965675a1c4649726?sid=868e331a-ee92-43de-90cc-f8f343b509e7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/ad75ebed54234085965675a1c4649726?sid=7ad37178-855d-4b9e-af35-7594afdc09fe
 
 Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/262
 ![](attachments/2024-08-07_Screenshot_2024-08-07_at_22.44.41.png)
-
-[Embedded Link](https://www.loom.com/share/ad75ebed54234085965675a1c4649726?sid=7ad37178-855d-4b9e-af35-7594afdc09fe)
-
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/262)
 
 
 ---
@@ -2015,8 +1970,6 @@ Improvement: "Duplicate Instrument and Reverse" would break if instrument had sl
 
 Improvement: "Duplicate Instrument and Reverse" now handles each slice setting separately and works.
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/332
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/332)
-
 
 ---
 ### 2024-08-08 - esaruoho
@@ -2082,8 +2035,6 @@ Improvement: EditStep Halve + EditStep Double added to Paketti MidiMappings dial
 
 Improvement: now all Plugin, VST, VST3, AudioUnit, Native Device loaders will work properly with Midi Mapping - meaning, a pad will trigger it once - instead of loading the same thing twice (!)
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/173
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/173)
-
 
 ---
 ### 2024-08-08 - esaruoho
@@ -2278,8 +2229,6 @@ wipes Track DSP devices from all tracks, groups, sends, master.
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/249
 ![](attachments/2024-08-10_ctrl-n_track_dsp_clear.gif)
 
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/249)
-
 
 ---
 ### 2024-08-10 - esaruoho
@@ -2294,7 +2243,6 @@ shortcut + menu entry
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/232
 ![](attachments/2024-08-10_Screenshot_2024-08-11_at_0.21.56.png)
 
-
 ---
 ### 2024-08-11 - esaruoho
 
@@ -2304,14 +2252,11 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336
 
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.06.57.png)
 
-
 ---
 ### 2024-08-11 - esaruoho
 
 Improvement: if you're in Mixer with TrackDSP displaying and run "F12", it used to kick you from TrackDSP to Automation - now it correctly goes to Mixer, Master, TrackDSP. same with if you're in Sample Editor, Sample FX Chain, or Instrument pages (f3, f3, f4, f4)
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/344
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/344)
-
 
 ---
 ### 2024-08-11 - esaruoho
@@ -2346,8 +2291,6 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/354
 Feature: Recursive DC Offset - one shortcut that wrecks the sample, the other that runs it random amounts (1-50 times)
 https://www.loom.com/share/3b67650f0d8242f8ad7d08c6640207fc?sid=b4996356-c5b1-4cf6-a66b-1f9a56952d82
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_15.11.28.png)
-
-[Embedded Link](https://www.loom.com/share/3b67650f0d8242f8ad7d08c6640207fc?sid=b4996356-c5b1-4cf6-a66b-1f9a56952d82)
 
 
 ---
@@ -2527,10 +2470,10 @@ Feature: Paketti Dialogs Dialog. This should in theory show all the dialogs in P
 Improvement: Forgot "Paketti Preferences" from the Dialog 🙂
 
 here's a demo of opening all the dialogs
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/830634bae9f544bcacc6867d74ee5a6c?sid=1cbcd58f-a70b-4612-b910-9a19566b6305" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/830634bae9f544bcacc6867d74ee5a6c?sid=e771626f-c8e7-4f10-b840-a99e1b408c0f
 ![](attachments/2024-08-15_Screenshot_2024-08-15_at_18.18.11.png)
-
-[Embedded Link](https://www.loom.com/share/830634bae9f544bcacc6867d74ee5a6c?sid=e771626f-c8e7-4f10-b840-a99e1b408c0f)
 
 
 ---
@@ -2942,6 +2885,8 @@ Improvement: Paketti Gater now has Panning for Panning Column or Effect Column 4
 ### 2024-08-23 - esaruoho
 
 Feature: Multi-pattern Automation Drawing (Curve Up, Curve Down, Line Up, Line Down)  - this reads the selection in Pattern Matrix and imprints
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2642b8a5ab7f4afe9328ddff90aba7bf?sid=7c90e800-2600-4cbc-9255-54cdf28c9a75" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/2642b8a5ab7f4afe9328ddff90aba7bf?sid=c94130c3-5274-4e7a-abb2-b4322398aa70
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/57)
 
@@ -2949,6 +2894,8 @@ https://www.loom.com/share/2642b8a5ab7f4afe9328ddff90aba7bf?sid=c94130c3-5274-4e
 ### 2024-08-23 - esaruoho
 
 Improvement: Multi-pattern Automation Drawing now has Center->Top, Top->Center, Center-> Bottom, Bottom->Center in both Exp + Lin form.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6d851711aa52451eb41cbedd631d61cc?sid=6ce5efe5-2c77-4def-9c7e-c2193d2374c8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/6d851711aa52451eb41cbedd631d61cc?sid=77630b42-cef3-4ff7-a4e2-9c0192000dc4
 ![](attachments/2024-08-23_multipattern_panning_linear_automation.gif)
 
@@ -3129,8 +3076,6 @@ Improvement: About Paketti/Donations dialog can now be closed with "OK" or "Canc
 
 Improvement: Pattern Effect CheatSheet will now correctly write to current row SampleFX Column if no selection in pattern exists - instead of erroring.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/475 )
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/475)
-
 
 ---
 ### 2024-08-27 - esaruoho
@@ -3279,6 +3224,8 @@ Improvement: Flood Fill Note and Instrument every 1-64 step now also captures Vo
 
 Feature: Replicate at Cursor (0, +1, -1, +12, -12). this will replicate everything that is above the cursor to below the cursor until pattern runs out.
 this is from PollyTracker, JohnPlayer and QuantumSoundTracker.
+<div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/66b956cf80d24ad2a72ed5abe590b84a?sid=eb84ac98-249e-4ab1-9bda-47e3fc75d6ce" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/66b956cf80d24ad2a72ed5abe590b84a?sid=fae3b7e0-359f-472b-b059-5a4c9ab9a683
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/460)
 ![](attachments/2024-08-28_Screenshot_2024-08-28_at_15.13.36.png)
@@ -3290,12 +3237,12 @@ https://www.loom.com/share/66b956cf80d24ad2a72ed5abe590b84a?sid=fae3b7e0-359f-47
 Improvement: Added "Replicate Selected Track at Cursor" to the above.
 
 quick demo.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2df6c536454041128e2d38aff6c4dcd3?sid=a2603636-8c75-4cf8-907b-560d12f3f9e0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/2df6c536454041128e2d38aff6c4dcd3?sid=8c2ce261-ce79-45a3-a9c9-02efb6ecb432
 ![](attachments/2024-08-28_Screenshot_2024-08-28_at_15.45.01.png)
 
 ![](attachments/2024-08-28_Screenshot_2024-08-28_at_15.45.17.png)
-
-[Embedded Link](https://www.loom.com/share/2df6c536454041128e2d38aff6c4dcd3?sid=8c2ce261-ce79-45a3-a9c9-02efb6ecb432)
 
 
 ---
@@ -3359,6 +3306,7 @@ these are not yet configured for anything since I'm trying to find usecases for 
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/150)
 
 Here's a little video of how it works:
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/f24ab48833aa47aab640aa3a79350b16?sid=891d6b7d-f83b-48a6-a43e-dcd256bb2a0e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/f24ab48833aa47aab640aa3a79350b16?sid=c6c8c08d-1aae-49f8-86e2-8b15e1a31c2e
 ![](attachments/2024-08-31_Screenshot_2024-08-31_at_17.41.00.png)
 
@@ -3576,9 +3524,8 @@ Improvement: Paketti Automation now has 2 Doofers. the Doofer2 has "EditMode" & 
 
 Improvement: 2nd Doofer now has "LoopEnd" for Selected Sample. 
 example:
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/acbb53d9d5b34f04b9dc11f9274fb794?sid=6d95d0b5-f339-4800-a6d8-20bab7cca78e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/acbb53d9d5b34f04b9dc11f9274fb794?sid=2e88e830-5ecc-4be4-a72e-8614873b4423
-[Embedded Link](https://www.loom.com/share/acbb53d9d5b34f04b9dc11f9274fb794?sid=2e88e830-5ecc-4be4-a72e-8614873b4423)
-
 
 ---
 ### 2024-09-03 - esaruoho
@@ -3738,8 +3685,8 @@ Improvement: Added missing Silence + Beginning Silence threshold text info to Pa
 ### 2024-09-06 - esaruoho
 
 Improvement: Paketti Transpose +1 -1 +12 -12 and Note Column Transposes now 
-1. no longer transpose "OFF" note to B-9 or C-0 (both)
-2. no longer exit transposing if first column selected is an effect column (Note Column Transpose)
+6. no longer transpose "OFF" note to B-9 or C-0 (both)
+7. no longer exit transposing if first column selected is an effect column (Note Column Transpose)
 (1. Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/524)
 
 ---
@@ -3815,8 +3762,8 @@ Improvement: Added "Save as Textfile" to Paketti KeyBindings - saves a textfile 
 ---
 ### 2024-09-08 - esaruoho
 
-Improvement: I've added a new file to the paketti-manual; https://github.com/esaruoho/paketti-manual/blob/main/Documentation/22-KeyBindings.md
-it is a direct print from the Paketti KeyBindings.
+~~Improvement: I've added a new file to the paketti-manual; https://github.com/esaruoho/paketti-manual/blob/main/Documentation/22-KeyBindings.md
+it is a direct print from the Paketti KeyBindings.~~
 (Closes https://github.com/esaruoho/paketti-manual/issues/5)
 ![](attachments/2024-09-08_Screenshot_2024-09-08_at_22.19.44.png)
 
@@ -3876,9 +3823,9 @@ Improvement: Player Pro Note Dialog will now also follow editstep when changing 
 ---
 ### 2024-09-11 - esaruoho
 
-Feature: "Record Automation to Selected Parameter" - pick a parameter in Automation View (Lower Frame), twist the knob assigned to this midimapping - whichever parameter you have selected in Automation, is the one that gets automated. https://www.loom.com/share/5b46a1dd7d5e4d82b87ff145fc38c3cb?sid=a70c3095-f7b8-4909-a664-6b449baecb23
-[Embedded Link](https://www.loom.com/share/5b46a1dd7d5e4d82b87ff145fc38c3cb?sid=a70c3095-f7b8-4909-a664-6b449baecb23)
-
+Feature: "Record Automation to Selected Parameter" - pick a parameter in Automation View (Lower Frame), twist the knob assigned to this midimapping - whichever parameter you have selected in Automation, is the one that gets automated. 
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/5b46a1dd7d5e4d82b87ff145fc38c3cb?sid=47d167d0-2442-4251-a87b-f9a407fb528a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+https://www.loom.com/share/5b46a1dd7d5e4d82b87ff145fc38c3cb?sid=a70c3095-f7b8-4909-a664-6b449baecb23
 
 ---
 ### 2024-09-11 - esaruoho
@@ -4156,9 +4103,10 @@ Sidequest: In case you're wondering about the drop-off on updates on this channe
 ---
 ### 2024-09-20 - esaruoho
 
-Another sidequest: I've received permission from Martblek to take his "Simple Beat Detector" tool, which uses a lowpass filter to detect low-end beats and create slices, and modify it. I've been working on it, and now it has both lowpass and highpass filters for detecting beats, and therefore it now detects hihats too, not only bassdrums. It's still a work in progress, though - I want it to be better than the Renoise transient detection, before I will ship it in Paketti. Here's a rudimentary video. https://www.loom.com/share/8908487817cc4c888ce00657afed9d8b?sid=629daeb8-01d8-4e97-ae84-a6837371556d
-[Embedded Link](https://www.loom.com/share/8908487817cc4c888ce00657afed9d8b?sid=629daeb8-01d8-4e97-ae84-a6837371556d)
+Another sidequest: I've received permission from Martblek to take his "Simple Beat Detector" tool, which uses a lowpass filter to detect low-end beats and create slices, and modify it. I've been working on it, and now it has both lowpass and highpass filters for detecting beats, and therefore it now detects hihats too, not only bassdrums. It's still a work in progress, though - I want it to be better than the Renoise transient detection, before I will ship it in Paketti. Here's a rudimentary video. 
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/8908487817cc4c888ce00657afed9d8b?sid=6f669599-25be-4631-9d81-a93692891d2e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+https://www.loom.com/share/8908487817cc4c888ce00657afed9d8b?sid=629daeb8-01d8-4e97-ae84-a6837371556d
 
 ---
 ### 2024-09-20 - esaruoho
@@ -4473,37 +4421,37 @@ Improvement: Player Pro Note Dialog is now a Global shortcut and takes you to th
 ### 2024-09-28 - esaruoho
 
 Plumbing: in preparation for making it possible to set a user-defined key for closing a dialog, I've modified the following dialogs to follow the forthcoming user-defined key:
-1. Paketti Preferences
-2. Paketti Theme Selector
-3. eSpeak
-4. Dialog of Dialogs
-5. About/Donations
-6. Paketti Gater
-7. Paketti Phrase Init Dialog
-8. Oblique Strategies
-9. Track Dater & Titler
-10. Track Routings
-11. Select or Add Convolver Device
-12. User Preferences for Show/Hide Slots
-13. ImpulseTracker New Song CTRL-N
-14. Effect Column CheatSheet
-15. Midi Populator
-16. OctaMED Pick/Put Dialog
-17. Paketti KeyBindings
-18. Renoise KeyBindings
-19. Paketti Midi Mappings
-20. Paketti Track Renamer
-21. Paketti Coluga YT-DLP
-22. Beat Detector Dialog
-23. Launch App Selection
-24. Player Pro Note Dialog
-25. Load Devices (VST,VST3,AU,Native,LADSPA,DSSI)
-26. Load Plugins (VST,VST3,AU,LADSPA,DSSI) 
-27. Debug: Available Plugin Information
-28. Debug: Available Device Information
-29. Audio Processing Tools Dialog
-30. Player Pro Effects Dialog
-31. Player Pro Tools Dialog
+8. Paketti Preferences
+9. Paketti Theme Selector
+10. eSpeak
+11. Dialog of Dialogs
+12. About/Donations
+13. Paketti Gater
+14. Paketti Phrase Init Dialog
+15. Oblique Strategies
+16. Track Dater & Titler
+17. Track Routings
+18. Select or Add Convolver Device
+19. User Preferences for Show/Hide Slots
+20. ImpulseTracker New Song CTRL-N
+21. Effect Column CheatSheet
+22. Midi Populator
+23. OctaMED Pick/Put Dialog
+24. Paketti KeyBindings
+25. Renoise KeyBindings
+26. Paketti Midi Mappings
+27. Paketti Track Renamer
+28. Paketti Coluga YT-DLP
+29. Beat Detector Dialog
+30. Launch App Selection
+31. Player Pro Note Dialog
+32. Load Devices (VST,VST3,AU,Native,LADSPA,DSSI)
+33. Load Plugins (VST,VST3,AU,LADSPA,DSSI) 
+34. Debug: Available Plugin Information
+35. Debug: Available Device Information
+36. Audio Processing Tools Dialog
+37. Player Pro Effects Dialog
+38. Player Pro Tools Dialog
 
 ---
 ### 2024-09-30 - esaruoho
@@ -4677,9 +4625,10 @@ Improvement: while eSpeak dialog is open, and *no textfield is selected*, pressi
 
 Feature: Dynamic MidiMapping for Compressor (Threshold, Ratio, Release, Makeup), RingMod (Note, Transpose, Dry/Wet), CombFilter (Note, Transpose, Feedback, Dry/Wet)
 meaning, once you bind them, you can modify them no matter where they are in the Selected Track.
+<div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/e7360634fec44795bd8ace4ebafccc01?sid=20736f6a-786e-4c1a-881f-6d210c54f008" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/e7360634fec44795bd8ace4ebafccc01?sid=4b7073bb-4bfa-4654-8fde-a26700fa35a9
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/410)
-<@1269041439833329756> here's, finally, your request 👍
 
 ---
 ### 2024-10-02 - esaruoho
@@ -4837,14 +4786,12 @@ Improvement: more alterations to API5 Older build, this should now evade certain
 
 Feature: Paketti Groovebox 8120. this is a 8 row groovebox, 16 steps per row. each step count can be modified between 1-16. it will, in realtime, output to the pattern editor. youcan load instruments into it using Browse - meaning, one instrument can have max 120 samples. so you can load 120 kicks, 120 snares, 120 hihats, 120 claps, 120 rimshots, 120 rides, 120 toms and 120 randompercs in, and use the Selection Slider or Random button to immediately change to one of them. there's also direct routing for automating pitchbend / cutoff / the Paketti Macro works. there's a Random Gate which will fill the 16 steps across all 8 rows in such a way that only one of the 8 instruments will be playde on that row. there's Global Groove controls. there's mute buttons for muting them. there's a Random Fill which will modify the Step counts and fill randomly. you can control bpm, play, follow pattern. when you move Select or Random slider, it shows the Sample Editor. when you click on Step-count of on Follow or Play, or a checkbox in the stepsequencer, it shows the pattern editor. when you click on Random Groove, or enable Global Groove, or Global Groove sliders, it shows you the Global groove. when you click on Show Automation, it shows you the automation.
 Here's a little video demo of it:
+<div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/a6866eb0d331409ab092a7c13c5b357e?sid=048d1e35-7b62-484c-bdd2-d10d1754dae6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 https://www.loom.com/share/a6866eb0d331409ab092a7c13c5b357e?sid=2d20a67e-0d3b-4c63-810b-903ad21f1c99
 
 I'm still improving on this, but this is the thing i've been working on for 3-4 days. Will keep cracking away at it until it does everything I want and when using it in a jam session type deal, i don't get any additional ideas. I'm open to any suggestions, out of interest, but let's please not blow this out of proportion by demanding lots of more rows etc.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/448)
-[Embedded Link](https://www.loom.com/share/a6866eb0d331409ab092a7c13c5b357e?sid=2d20a67e-0d3b-4c63-810b-903ad21f1c99)
-
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/448))
-
 
 ---
 ### 2024-10-14 - esaruoho
@@ -5213,9 +5160,9 @@ Improvement: Additional tweaks - all menus in menu entry now end with ".." and t
 ### 2024-10-27 - esaruoho
 
 Improvement: "Capture Nearest Instrument and Octave" has now received the following upgrades:
-32. After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
-33. If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
-34. If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
+39. After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
+40. If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
+41. If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
 (Related to some discussions at https://forum.renoise.com/t/sample-selection/20837, so 2007.. )
 
 ---
@@ -5292,7 +5239,7 @@ Improvement: "Show External Editor for Selected Plugin" now also shows an inform
 ### 2024-10-31 - esaruoho
 
 Improvement: Track Titler now has different date formats for those who want them:
-(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/657) ping <@304689324790775818>
+(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/657) 
 ![](attachments/2024-10-31_Screenshot_2024-10-31_at_22.21.42.png)
 
 
@@ -5318,7 +5265,7 @@ so if you have a situation where you absolutely must quickly run from pattern ed
 ### 2024-10-31 - esaruoho
 
 Improvement: Paketti Groovebox 8120 now has a slider for Yxx probability, a Randomize for each row's Yxx, and a Randomize all Yxx.
-(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/623) ping <@840842258336841748>
+(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/623) 
 ![](attachments/2024-10-31_yxx_probability_slider_randomize_randomize_all.gif)
 
 
@@ -5343,7 +5290,7 @@ Improvement: added MPReverb 2 controls (dynamic midimappings that find where the
 ### 2024-11-01 - esaruoho
 
 Improvement: the Paketti Edit Mode Signaler no longer reverts "Song Set Track Blend Values" for all tracks to off, if EditMode Signaler is set to "None" and you toggle Edit Mode on or off..
-(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/386) <@1109221186124140594>
+(Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/386)
 
 ---
 ### 2024-11-01 - esaruoho
@@ -5360,6 +5307,7 @@ Plumbing: I've removed 30 duplicate themes (different namings) and added grymmja
 ### 2024-11-01 - esaruoho
 
 Feature: "Load new sample with current slice markers". select a sample with slice markers. run it via shortcut, or two menu entries (sample editor, or instrument box). prompt comes up, for loading the sample. load the sample -> markers from previous sample are applied to it. if there's less sampleframes, only the markers that fit inside the sample length are applied.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/f8a4d31abb1643459ca58389357fc78a?sid=ffe72a17-f359-4618-802e-0ad79eb7ccf2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/f8a4d31abb1643459ca58389357fc78a?sid=546bd950-8176-45fc-b9a7-2617e349cf49
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/668)
 
@@ -5375,6 +5323,7 @@ Feature: Duplicate Selection with padding & Move Cursor 1 & 2:
 select 4 rows. press shortcut. introduces 4 rows of silence, duplicates the 4 rows, another 4 rows of silence, and moves the cursor accordingly. will also resize pattern if you're at the end of the pattern.
 
 video only of "padding clearing" flavor (1) 
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/7dc5d7710ad844f081e4af89a8d85af8?sid=77436d53-6c74-416e-9b46-f21f78b7c1ca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/7dc5d7710ad844f081e4af89a8d85af8?sid=d601b232-ea0e-44f5-a508-24a8023416ca
 ![](attachments/2024-11-02_Screenshot_2024-11-02_at_15.42.04.png)
 
@@ -5382,7 +5331,6 @@ https://www.loom.com/share/7dc5d7710ad844f081e4af89a8d85af8?sid=d601b232-ea0e-44
 
 ![](attachments/2024-11-02_duplicate_selection_with_padding_and_move_cursor.gif)
 
-[Embedded Link](https://www.loom.com/share/7dc5d7710ad844f081e4af89a8d85af8?sid=d601b232-ea0e-44f5-a508-24a8023416ca)
 
 
 ---
@@ -5393,9 +5341,8 @@ you're on a pattern. you have a bunch of muted tracks. you maybe have some autom
 you run the shortcut.
 now, below the selected pattern, there's a newly created (and selected)  pattern, with the muted tracks(notes+automation) cleared, the pattern matrix mutes retained.  and if the pattern had a name, then the name is repeated, with `(mutes cleared)` added, and if the pattern had no name, then the name is printed as `pattern <number> (mutes cleared)` 
 got the suggestion from a thread in Trackercorps Discord.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/d5a591475e7c407ea25d43ebce1d9d9b?sid=b67df2d9-ecee-45c9-ab61-2d0fadd73c65" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/d5a591475e7c407ea25d43ebce1d9d9b?sid=20ff4b86-2014-4edc-b141-b64d84d6f946
-[Embedded Link](https://www.loom.com/share/d5a591475e7c407ea25d43ebce1d9d9b?sid=20ff4b86-2014-4edc-b141-b64d84d6f946)
-
 
 ---
 ### 2024-11-03 - esaruoho
@@ -5526,8 +5473,6 @@ Feature: Sample Offset (dialog and shortcuts)
 requested on https://forum.renoise.com/t/gain-offset-in-sample-editor/74279/
 ![](attachments/2024-11-06_offset_dialog.gif)
 
-[Embedded Link](https://forum.renoise.com/t/gain-offset-in-sample-editor/74279/)
-
 
 ---
 ### 2024-11-06 - esaruoho
@@ -5579,8 +5524,8 @@ Column Cycle Keyjazz 2 digits instead of 1
 
 Feature: Switch to Automation Dynamic
 Yes. this will cycle through the Automation envelopes that exist in your track.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/dbc1113a5c4b45a1a8f66b6381f72808?sid=ee610eba-28b6-441a-aa18-31cd197cb363" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/dbc1113a5c4b45a1a8f66b6381f72808?sid=926aeaea-d037-4f10-99f7-2a820dd54c66
-[Embedded Link](https://www.loom.com/share/dbc1113a5c4b45a1a8f66b6381f72808?sid=926aeaea-d037-4f10-99f7-2a820dd54c66)
 
 
 ---
@@ -5752,6 +5697,7 @@ Improvement: added Duplicate Selected Sample to +12 +24 -12 -24 to Sample Mappin
 ### 2024-11-14 - esaruoho
 
 Feature: GlobalGainer - adds a `GlobalGainer` to each track - and the same midi knob that controls the volume of each GlobalGainer device.  and if you add more tracks, the same midi knob will add more GlobalGainers to the new tracks.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/41c362b9a8c44ff79bd869f49cbbdab1?sid=b139a6df-f1b8-4d23-a9db-c8b6f19967b7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/41c362b9a8c44ff79bd869f49cbbdab1?sid=e1d0548a-28bb-4633-a000-e8ba7deef9fc
 as requested by [Patreon subscriber](https://www.patreon.com/esaruoho) number two
 
@@ -5759,6 +5705,7 @@ as requested by [Patreon subscriber](https://www.patreon.com/esaruoho) number tw
 ### 2024-11-14 - esaruoho
 
 Feature: A/B Shortcuts for adding A or B - Gainer device to selected track -- and a midiknob that does a crossfade between A & B.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/4d19d732f7f643c69da83c50dc402103?sid=a0d975ad-61ee-4019-a373-08f7f3dbae10" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/4d19d732f7f643c69da83c50dc402103?sid=c7dd1de9-206a-4f22-b894-a4c97a69f832
 as requested by [Patreon subscriber](https://www.patreon.com/c/esaruoho) number one
 
@@ -5768,6 +5715,7 @@ as requested by [Patreon subscriber](https://www.patreon.com/c/esaruoho) number 
 ### 2024-11-14 - esaruoho
 
 Feature: Load 1.. or 32.. random samples from any subfolder in selected folder.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/fe011e3d56d441918a9eb70659c22c79?sid=74a0dd92-eb94-4bf5-809e-31f113dfe994" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44b1-b163-db983fd51631
 [Embedded Link](https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44b1-b163-db983fd51631)
 
@@ -5790,19 +5738,14 @@ repost since gif added
 
 Feature: Load 32 random samples from user-defined folder. (One sample per instrument)
 
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/fe011e3d56d441918a9eb70659c22c79?sid=482a730a-a58a-4e61-b8fc-35e679d8cf38" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44b1-b163-db983fd51631
 (Closes https://github.com/esaruoho/paketti/issues/701 )
-[Embedded Link](https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44b1-b163-db983fd51631)
-
-[Embedded Link](https://github.com/esaruoho/paketti/issues/701)
-
 
 ---
 ### 2024-11-15 - esaruoho
 
-Feature: https://www.loom.com/share/bc51e32c638e4f7797267493d35e194d
-loade 12 random samples to new instrument. Video has audio.
-[Embedded Link](https://www.loom.com/share/bc51e32c638e4f7797267493d35e194d)
+Feature: load 12 random samples to new instrument.
 
 
 ---
@@ -5810,9 +5753,9 @@ loade 12 random samples to new instrument. Video has audio.
 
 Feature: load 120 random samples as a drumkit
 Video with some audio:
-
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/9dba2e74146c45dfa1299b9af6cb6686?sid=7453fb29-8618-4805-9ddc-a92dd015fa96" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/9dba2e74146c45dfa1299b9af6cb6686?sid=80a48602-e0d3-4b47-b22c-c922b7c2ef88
-[Embedded Link](https://www.loom.com/share/9dba2e74146c45dfa1299b9af6cb6686?sid=80a48602-e0d3-4b47-b22c-c922b7c2ef88)
+[Embedded Link](https://www.loom.com/share/9dba2e74146c45dfa1299b9af6cb6686?sid=80a
 
 
 ---
@@ -5946,10 +5889,10 @@ Improvement: Clear All Tracks Below Current Row
 ### 2024-11-24 - esaruoho
 
 Feature: XY Audio Mixer for 4 AKWF + 4 random samples in same instrument
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/7ed3c942a53241b58a43fceabb932dc2?sid=532ca7ad-bbaa-4457-8aee-6c5f3416e1be" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/7ed3c942a53241b58a43fceabb932dc2
 ![](attachments/2024-11-24_Screenshot_2024-11-24_at_12.05.18.png)
 
-[Embedded Link](https://www.loom.com/share/7ed3c942a53241b58a43fceabb932dc2)
 
 
 ---
@@ -6294,8 +6237,8 @@ Improvement: tweaked the naming so `Isolate Slices to New Instrument as Samples`
 ### 2024-12-09 - esaruoho
 
 Feature: Automatically Open Selected Track's Devices if they have External Editors. - close them when changing to the next track - and open that one's devices.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/5f55296e885e42b3825f7a4a840516d5?sid=b5625d2d-70c1-44b9-8936-c69a63bb8799" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/5f55296e885e42b3825f7a4a840516d5?sid=472e4800-95a5-4394-aa73-da074420d6f5
-[Embedded Link](https://www.loom.com/share/5f55296e885e42b3825f7a4a840516d5?sid=472e4800-95a5-4394-aa73-da074420d6f5)
 
 
 ---
@@ -6341,10 +6284,10 @@ Feature: Expand Selection Twice, Shrink Selection Twice shortcuts
 update: out of 7361 threads from 2002 to may 2024 - i picked 1736. i also started processing through which tool discussions / tool ideas / tool releases are worth looking into and either hijacking if they're abandoned, or rewriting with Paketti in mind.
 
 also now that 7361->1736, i'll be working on sorting them into ~~three~~four distinct categories, aka
-1. already done and in Paketti
-2. not yet in Paketti, do
-3. not yet in Paketti, could be done but very complex (further down the todo stream)
-4. wait for API changes to allow the feature
+42. already done and in Paketti
+43. not yet in Paketti, do
+44. not yet in Paketti, could be done but very complex (further down the todo stream)
+45. wait for API changes to allow the feature
 
 ---
 ### 2024-12-15 - esaruoho
@@ -6417,8 +6360,6 @@ Feature: Volume Interpolation, Delay Interpolation, Panning Interpolation. selec
 
 Feature: Move Track Left / Move Track Right - these are global shortcut that work everywhere
 (Closes https://github.com/esaruoho/paketti/issues/753 )
-[Embedded Link](https://github.com/esaruoho/paketti/issues/753)
-
 
 ---
 ### 2024-12-19 - esaruoho
@@ -6450,9 +6391,9 @@ Feature: Duplicate All Samples at -36 -24 -12 +12 +24 +36 Transpose
 menu entries + shortcuts added. this will read the current keymappings of the selected instrument, duplicate the slots, and pitch the duplicated slots by the amount you picked.
 EDIT: added protection so that it does not duplicate the already duplicated samples, creating a feedback loop
 EDIT: added volume controls so it will drop the volume slowly so you don't get blaring sounds
-
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/5f55296e885e42b3825f7a4a840516d5?sid=b5625d2d-70c1-44b9-8936-c69a63bb8799" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/15e01283dd5843869ece3c3e1b2d3891?sid=2374bdee-801f-4ebc-97f9-be3fe7a06b5e
-[Embedded Link](https://www.loom.com/share/15e01283dd5843869ece3c3e1b2d3891?sid=2374bdee-801f-4ebc-97f9-be3fe7a06b5e)
+
 
 
 ---
@@ -6489,12 +6430,10 @@ Let's you reduce the instrument or sample+slice volumes as you need.
 
 Feature: Paketti Tuplet Generator - a very WIP feature based on the tuplet calculator website. http://tridentloop.com/renoisecalc/ still needs some more work. but here's a little video + gif 
 (the gif is pretty outdated, check the video)
-and https://www.loom.com/share/454f3cdb1ccf402dbbc15fda6e7c508b
+
+ <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/454f3cdb1ccf402dbbc15fda6e7c508b?sid=f211f6ca-cfe6-48f0-9371-6f86ff55c3a4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+ https://www.loom.com/share/454f3cdb1ccf402dbbc15fda6e7c508b
 ![](attachments/2024-12-22_tuplet_generator.gif)
-
-[Embedded Link](http://tridentloop.com/renoisecalc/)
-
-[Embedded Link](https://www.loom.com/share/454f3cdb1ccf402dbbc15fda6e7c508b)
 
 
 ---
@@ -6566,13 +6505,12 @@ Feature: Paketti Timestretch Dialog
 - can render the timestretched result
 ![](attachments/2024-12-26_Recording_at_2024-12-26_10.23.24-00.00.09.717-00.01.00.320-optimised.mov)
 
-
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/e7189db45e514446aa90de4742c3bf61?sid=e3799ce5-d2ea-4c8b-ad76-0f574ec85546" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/e7189db45e514446aa90de4742c3bf61?sid=e8dca846-9fd3-4ca1-b682-d3e74df42b35
-[Embedded Link](https://www.loom.com/share/e7189db45e514446aa90de4742c3bf61?sid=e8dca846-9fd3-4ca1-b682-d3e74df42b35)
 
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6ead19c0c7384a81977f2e5d664a5ee6?sid=c1e372b6-276d-4dc1-ad93-304c05cb6d01" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/6ead19c0c7384a81977f2e5d664a5ee6?sid=ee2d3f62-285d-4cc4-81ce-d9908ab22b72
-[Embedded Link](https://www.loom.com/share/6ead19c0c7384a81977f2e5d664a5ee6?sid=ee2d3f62-285d-4cc4-81ce-d9908ab22b72)
 
 
 (No text)
@@ -6774,8 +6712,6 @@ Improvement: I've added "Send Selected Sample" to the Main Menu Entries  and fin
 Improvement: Saw this request for "Menu Entry for Randomize Device Parameters in Mixer" at [here](https://forum.renoise.com/t/idea-device-randomizer-tool/36980/14) so here it is:
 ![](attachments/2025-01-11_Screenshot_2025-01-11_at_15.35.21.png)
 
-[Embedded Link](https://forum.renoise.com/t/idea-device-randomizer-tool/36980/14)
-
 
 ---
 ### 2025-01-12 - esaruoho
@@ -6852,7 +6788,6 @@ so one instrument per track, or 12 instruments per track.
 (Closes https://github.com/esaruoho/paketti/issues/769)
 ![](attachments/2025-01-15_Screenshot_2025-01-15_at_8.57.36.png)
 
-[Embedded Link](https://github.com/esaruoho/paketti/issues/769))
 
 
 ---
@@ -6915,8 +6850,6 @@ these focus on being able to clear or wipe a specific column, track, selected tr
 Feature: Step by EditStep (Forwards / Backwards)
 https://forum.renoise.com/t/editstep-jumping/75076/2
 ![](attachments/2025-01-20_step_by_editstep.gif)
-
-[Embedded Link](https://forum.renoise.com/t/editstep-jumping/75076/2)
 
 
 ---
@@ -7367,3 +7300,8 @@ Feature: Delete (=Hide) Unused Columns (Note Columns / Effect Columns)
 ### 2025-02-09 - esaruoho
 
 Improvement: "Isolate Selected Sample to New Instrument" now sets the instrument name to sample name, for better discoverability. (it used to be `instrumentname (selected samplename)` )
+
+---
+### 2025-02-10 - esaruoho
+
+Improvement: Introduced Changeslog to http://esaruoho.github.io/paketti-manual/ and moved the whole repository to be editable via Obsidian.
