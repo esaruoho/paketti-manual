@@ -146,8 +146,10 @@ This MIDI Mapping will read the Selection on your Selected Automation Parameter,
 - Full Top
 - Line Down
 - Exponential Down
+- 
 ![](AutomationAssets/MIDI_Automation_Curve_Draw_Selection.png)
 An example of usage:
+
 ![](AutomationAssets/MIDI_Automation_Curve_Draw.gif)
 If you have selected a Panning, PitchBend or similar (get in touch if you want more configurations), these will cycle through the following:
 
@@ -172,11 +174,14 @@ An example of usage:
 ### Selected Device Automation Parameter 001...128
 
 These 128 MIDI Mappings will directly write to the Automation Parameter of the Selected Device. This will happen without the Automation Frame switching to showing the Parameter, so, if you know which Selected Device Parameter you wish to control, just map them and fire away.
+
 ![](AutomationAssets/Selected_Device_Automation_Parameter.png)
 ### Automation Selection Start & End with MIDI
 The following MIDI Mappings will let you use two knobs to set the Selection Start and Selection End of the currently selected Automation Envelope.
+
 ![](AutomationAssets/MIDI_Automation_Selection.png)
 An example of usage:
+
 ![](AutomationAssets/automation_selection_start_end.gif)
 ### Automation Value Dialog
 The Shortcut/Midi Mapping `Show Automation Value Dialog...` will open up a simple and small Dialog that lets you write an Automation Value to the currently selected Automation Line.
@@ -185,7 +190,9 @@ The Shortcut/Midi Mapping `Show Automation Value Dialog...` will open up a simpl
 As you can see from the Dialog screenshot below, the textfield is autoselected. After opening the Dialog, you can simply input a value between 0.0 and 1.0, press enter, and the Dialog closes and the value is input.
 
 ![](AutomationAssets/Automation_Value_Dialog.png)
+
 An example of usage:
+
 ![](AutomationAssets/Automation_Value_Dialog_Example_1.gif)
 
 There is also an additional feature, the EditStep follow, which lets you get jumped to the next EditStep value after you press Enter in the Value textfield.
@@ -212,6 +219,7 @@ This same feature is also available from the Automation Menu:
 ![](AutomationAssets/Generate_Automation_Points_from_Notes_in_Selected_Track.png)
 
 An example of usage:
+
 ![](AutomationAssets/Automation_Generate_Automation_Points_Example_of_Usage.png)
 ### Automation Selected Parameter Randomization
 The Shortcut/Midi Mapping `Randomize Automation Envelope` will take your currently selected Automation Parameter and Randomize it, or, if there is a selection, only Randomize the selection. 
