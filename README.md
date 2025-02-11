@@ -14,9 +14,8 @@
  6. [Rewrite Soon](#rewrite-soon)
  7. [Roadmap](#roadmap)
  8. [Old About](#old-about)
- 9. [Credits](#credits)
- 10. [Old Indexes](#index)
- 11. [Changeslog](#changeslog)
+ 9. [Old Indexes](#index)
+ 10. [Changeslog](#changeslog)
 
 ## What is Paketti
 
@@ -699,12 +698,6 @@ It is far too complex to sum up in just a few words. However, some notable chang
 * Control Sample Buffer start / endSelection via MidiMappings
 * And much much more!
 
-# Credits
-
-The original Paketti Manual projects was started by @untilde, thanks a lot for that. He donated it to me, @esaruoho - and I started tweaking it a bit.
-
-Paketti is a project by Esa Ruoho, a.k.a Lackluster (@esaruoho). More information [here](https://github.com/esaruoho/paketti/blob/master/README.md#thanks).
-
 
 # Index
 
@@ -732,18 +725,18 @@ Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This 
 
 ### 1.1 - Preferences
 
-| Item | Description | Notes |
-| --- | --- | --- |
-| `Upper Frame` | Enables/Disables upper frame control when using Impulse Tracker key commands. | See [insert IT topic - to be written]. |
-| `0G01 Loader` | Automatically enables the 0G01 hack for samples inserted using the Paketti loaders. | See [2 - Instrument Box](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/2%20-%20Instrument%20Box.md) to better understand the 0G01 hack. |
-| `Random BPM` | (NEEDS EDITING) | - |
-| `Pale Green Theme` | Loads Paketti color theme for Renoise. | - |
-| `Gifts: Plaid Zap Load` | Insert a special XRNI instrument made from Plaid samples. | See [forum post](https://forum.renoise.com/t/plaidzap-xrni-gift/32521). |
-| `Create New Instrument & Loop from Selection` | Quite Self-Explanatory. Works on the Sample Editor (right-click). | - |
-| `Paketti Loader Settings` | Changes default settings for Paketti Drumkit/Multisample loaders. | See [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments) for more details. |
-| `Wipe & Slices Settings` | Determines default settings for slices generated via Paketti (under the Sampler window and Instrument Box): Slice Loop Mode, Beatsync, Autoseek, etc. | See [2 - Instrument Box](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/2%20-%20Instrument%20Box.md).
-| `Render Settings` | Determines sample rate and bit depth for Paketti resampling procedures. | - |
-| `Edit Mode Colouring` | Highlights the track you're currently editing, all tracks or none. | - |
+| Item                                          | Description                                                                                                                                           | Notes                                                                                                                      |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `Upper Frame`                                 | Enables/Disables upper frame control when using Impulse Tracker key commands.                                                                         | See [insert IT topic - to be written].                                                                                     |
+| `0G01 Loader`                                 | Automatically enables the 0G01 hack for samples inserted using the Paketti loaders.                                                                   | See **Instrument Box** to better understand the 0G01 hack.                                                                 |
+| `Random BPM`                                  | (NEEDS EDITING)                                                                                                                                       | -                                                                                                                          |
+| `Pale Green Theme`                            | Loads Paketti color theme for Renoise.                                                                                                                | -                                                                                                                          |
+| `Gifts: Plaid Zap Load`                       | Insert a special XRNI instrument made from Plaid samples.                                                                                             | See [forum post](https://forum.renoise.com/t/plaidzap-xrni-gift/32521).                                                    |
+| `Create New Instrument & Loop from Selection` | Quite Self-Explanatory. Works on the Sample Editor (right-click).                                                                                     | -                                                                                                                          |
+| `Paketti Loader Settings`                     | Changes default settings for Paketti Drumkit/Multisample loaders.                                                                                     | See [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments) for |
+| `Wipe & Slices Settings`                      | Determines default settings for slices generated via Paketti (under the Sampler window and Instrument Box): Slice Loop Mode, Beatsync, Autoseek, etc. | See **Instrument Box**                                                                                                     |
+| `Render Settings`                             | Determines sample rate and bit depth for Paketti resampling procedures.                                                                               | -                                                                                                                          |
+| `Edit Mode Colouring`                         | Highlights the track you're currently editing, all tracks or none.                                                                                    | -                                                                                                                          |
 
 ### 1.2 - Instruments
 
@@ -774,16 +767,16 @@ Please note: the Effect Column CheatSheet also features sliders for the Volume, 
 
 ### 1.4 - Plugins/Devices
 
-| Item | Description | Notes |
-| --- | --- | --- |
-| `Debug` | Different plugin related utilities for debugging. Can be ignored by the average user. | |
-| `Switch Plugin AutoSuspend OFF` | Quickly Enables/Disables the AutoSuspend function in Renoise. From the [user manual](https://tutorials.renoise.com/wiki/Plugin): "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage." | |
-| `Expose/Hide Selected Device Parameters in Mixer` | Display plugin parameters in the mixer as sliders. It's the default behavior for some native devices, such as the Compressor and Mixer EQ. | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |
-| `Expose/Hide Selected Track ALL Device Parameters` | Same as above, but applies to all devices in the selected track. | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |
-| `Hide Track DSP Devices for All Tracks` | If External Editors for any devices on Track DSP are visible, this will hide their External Editors. | | 
-| `Bypass/Enable All Devices on Track` | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track. | |
-| `Load AU/VST/VST3 Plugins Dialog` | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences. | See [1.4.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#142---load-auvstvst3-plugins-dialog). | 
-| `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible. | |
+| Item                                               | Description                                                                                                                                                                                                                                                                               | Notes                                                                                                                                                         |     |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| `Debug`                                            | Different plugin related utilities for debugging. Can be ignored by the average user.                                                                                                                                                                                                     |                                                                                                                                                               |     |
+| `Switch Plugin AutoSuspend OFF`                    | Quickly Enables/Disables the AutoSuspend function in Renoise. From the [user manual](https://tutorials.renoise.com/wiki/Plugin): "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage." |                                                                                                                                                               |     |
+| `Expose/Hide Selected Device Parameters in Mixer`  | Display plugin parameters in the mixer as sliders. It's the default behavior for some native devices, such as the Compressor and Mixer EQ.                                                                                                                                                | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |     |
+| `Expose/Hide Selected Track ALL Device Parameters` | Same as above, but applies to all devices in the selected track.                                                                                                                                                                                                                          | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |     |
+| `Hide Track DSP Devices for All Tracks`            | If External Editors for any devices on Track DSP are visible, this will hide their External Editors.                                                                                                                                                                                      |                                                                                                                                                               |     |
+| `Bypass/Enable All Devices on Track`               | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track.                                                                                                                                                       |                                                                                                                                                               |     |
+| `Load AU/VST/VST3 Plugins Dialog`                  | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences.                                                                                                                      | See [1.4.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#142---load-auvstvst3-plugins-dialog).                  |     |
+| `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible.                                                                                                                                                                                                            |                                                                                                                                                               |     |
 ### 1.4.1 - Expose/Hide Selected Device Parameters in Mixer
 
 ### 1.4.2 - Load AU/VST/VST3 Plugins Dialog
@@ -7495,5 +7488,11 @@ Added the Automation features to the Paketti Manual - Not necessarily all, but i
 ---
 ### 2025-02-11 - esaruoho
 Improvement: I've fixed the AutomationAssets so all the animated .gifs and Automation-related screenshots are fully displayed.
+EDIT: and also fixed the text / image line feeds so they no longer collide.
 
 ---
+
+## End
+
+You are right at the end of this manual now. Welcome!
+
