@@ -129,6 +129,7 @@ Menu Entries in the **Pattern Matrix** for creating Automation curves that start
 - Exponential Top->Center
 - Exponential Center->Bottom
 - Exponential Bottom->Center
+
 ![](AutomationAssets/Automation_Multipattern.png)
 
 The Pattern Matrix Menu looks like this:
@@ -145,8 +146,9 @@ This MIDI Mapping will read the Selection on your Selected Automation Parameter,
 - Full Top
 - Line Down
 - Exponential Down
-- 
+
 ![](AutomationAssets/MIDI_Automation_Curve_Draw_Selection.png)
+
 An example of usage:
 
 ![](AutomationAssets/MIDI_Automation_Curve_Draw.gif)
@@ -179,6 +181,7 @@ These 128 MIDI Mappings will directly write to the Automation Parameter of the S
 The following MIDI Mappings will let you use two knobs to set the Selection Start and Selection End of the currently selected Automation Envelope.
 
 ![](AutomationAssets/MIDI_Automation_Selection.png)
+
 An example of usage:
 
 ![](AutomationAssets/automation_selection_start_end.gif)
