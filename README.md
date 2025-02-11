@@ -7480,8 +7480,12 @@ Feature: Added Transpose +3 -3 +4 -4 +7 -7 +11 -11 to ChordsPlus as Menu Entries
 
 ---
 
-### 2025-01-20 - esaruoho
+### 2025-02-10 - esaruoho
 Added the Automation features to the Paketti Manual - Not necessarily all, but it's a good start.
 ![](Screenshots/Automation_Obsidian_Start.png)
+
+---
+### 2025-02-11 - esaruoho
+Improvement: I've fixed the AutomationAssets so all the animated .gifs and Automation-related screenshots are fully displayed.
 
 ---
