@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="dark-mode.css">
+`<link rel="stylesheet" href="dark-mode.css">`
 
 | [Patreon Paketti](http://patreon.com/esaruoho) |
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
@@ -7505,8 +7505,31 @@ Improvement: I've fixed the AutomationAssets so all the animated .gifs and Autom
 EDIT: and also fixed the text / image line feeds so they no longer collide.
 
 ---
+### 2025-02-11 - esaruoho
+Improvement: `Set Selected Sample Velocity Range to 7F` will now tell you, with an informative message of
+`The Velocity Range of this Sample is already set to 0-127.` - if there is nothing to do.
 
-## End
+Feature: `Global:Paketti:Set All Samples Velocity Range 00` introduced - this will set all the Samples in the Selected Instrument to Velocity Range 0-0.
+
+Improvement: `Global:Paketti:Set All Samples Velocity Range 7F` now correctly sets all of the samples in the Selected Instrument to 0-127.
+
+---
+### 2025-02-11 - esaruoho
+Feature: `Decrease All Track Volumes by 3dB` / `Increase All Track Volumes by 3dB`
+These are available as Shortcuts, Menu Entries for Mixer, Pattern Editor and on the Main Menu.
+
+---
+### 2025-02-11 - esaruoho
+Feature: `Global:Paketti:Shift Notes Left` - this will shift all the notes in the selection to the left, or if no selection, then all the notes on the current row, to the left. 
+Improvement: `Global:Paketti:Shift Notes Right` - this will also now shift all the notes in the selection to the right, and if no selection, then all notes on the current row.
+![](Screenshots/shiftnotesleftright.gif)
+---
+
+
+---
+# End
+
+
 
 You are right at the end of this manual now. Welcome!
 
