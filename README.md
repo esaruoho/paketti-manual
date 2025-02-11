@@ -238,7 +238,7 @@ An example of usage:
 The Shortcut/Midi Mapping `Randomize Automation Envelopes for Device` will insert Randomization to each and every parameter of the Selected Device.
 
 This will create a new Envelope per each Parameter, or overwrite the pre-existing one.
-![](AutomationAssets/AutomationAssets/Automation_Randomize_Envelope.png)
+![](AutomationAssets/Automation_Randomize_Envelope.png)
 
 This same feature is also available from the Automation Menu:
 ![](AutomationAssets/Menu_Entry_-_Randomize_Selected_Device_Parameters.png)
@@ -246,8 +246,11 @@ This same feature is also available from the Automation Menu:
 ### Automation Selection Flip & Mirror
 TODO
 
+---
+### Wipe Automation from Current Track in Current Pattern, all Tracks in Current Pattern, Current Track in whole Song and All Tracks in whole Song
+TODO
 
-
+---
 
 
 
@@ -280,7 +283,7 @@ TODO
 ## Sample Recorder
 
 
-# Brickwall
+# Sample Management
 
 Paketti tries to circumvent some of the most painful points of Renoise, and replace them with better, easier, faster, more user-friendly solutions. Quality-of-Life & Workflow improvements over "multiple mouse clicks".
 
@@ -366,31 +369,6 @@ You'll see there is also a way of sending a selected sample to a specific app! T
 
 ***Note well, Bitwig developers: Your app does not support sending files to it via `bitwig.app file.wav`. Please fix.***
 
-### Loading Devices and Plugins
-
-Another step in the abandoning / circumventing of Native Renoise loading methods, is the doing away with the usage of the Track DSP Device Loading.
-
-Instead, Paketti introduces Keyboard Shortcuts, MidiMappings for loading your preferred VST,VST3,AU,LADSPA,DSSI,Native devices to both Track DSP Chains and Sample FX Chains. 
-
-There are also Menu Entries for loading your Native devices (including the Hidden / Legacy effects), if you're mouse inclined.
-
-By going to **Tools -> Paketti.. -> Plugins/Devices.. -> Load Devices Dialog...** and ticking your favorites, clicking on the `Add Device(s) as Shortcut(s) & MidiMappings` button will result in, from now on, the selected devices being available in Keybinds and MidiMappings. Set them up, and away you go!
-
-<img width="932" alt="Screenshot 2024-11-07 at 15 58 27" src="https://github.com/user-attachments/assets/3972b25f-45f0-4411-b76c-9b0bdddd439f">
-
-This means that you can, for instance, (in my usecase) press `shift-q e r t z a v`  and out come 7 devices to the selected track. Same with midibuttons, after selecting your favorites, you can use the midi mappings to set up midi controls for loading your desired device onto your selected track. Trust me, it's fast, fluid and just feels natural. Set them like you want to, and throw in your devices.
-
-There are some additional details, such as: the external Devices are loaded in minimized mode, so they don't take up extra space. The Renoise Native devices are not loaded in minimized mode, because the parameters are displayed there.
-
-And the more important detail: the External Editor is automatically opened!
-
-The same thing exists for loading Plugins, go to **Tools -> Paketti.. -> Plugins/Devices.. -> Load Plugins Dialog...**
-
-<img width="382" alt="Screenshot 2024-11-07 at 16 01 24" src="https://github.com/user-attachments/assets/566fb9e6-3778-47b4-87bb-2cd7de0a5bd4">
-
-Same logic. Pick the ones you want, add them to the Paketti Preferences - they'll always be there.
-
-The extra logic with Plugins, is, that it wouldn't make much sense if they overwrote the current instrument - so, a new instrument slot is added, every time you load a plugin. And the External Editor is made visible. So you can just start tweaking away.
 
 ### Wipe & Slice
 
@@ -419,7 +397,40 @@ And here's a little .gif of what it looks like:
 ### Isolate Slices
 
 While we're on the Slice topic, there's also `Isolate Slices to New Instruments`, which takes all the Slices in your Instrument, and creates new Instruments below it. And if you were on, say the Slice that was a Snare - isolate slices, you'll still be on the Snare.
+
 Of course, the Paketti Default .XRNI instrument is introduced for each slice.
+
+You can also `Isolate Selected Sample to a New Instrument` - which takes the selected Sample or Slice, and creates a new Instrument, with the Paketti Default .XRNI Instrument introduced.
+
+There's also `Isola
+
+## Plugin / Device Management
+### Loading Devices and Plugins
+
+Another step in the abandoning / circumventing of Native Renoise loading methods, is the doing away with the usage of the Track DSP Device Loading.
+
+Instead, Paketti introduces Keyboard Shortcuts, MidiMappings for loading your preferred VST,VST3,AU,LADSPA,DSSI,Native devices to both Track DSP Chains and Sample FX Chains. 
+
+There are also Menu Entries for loading your Native devices (including the Hidden / Legacy effects), if you're mouse inclined.
+
+By going to **Tools -> Paketti.. -> Plugins/Devices.. -> Load Devices Dialog...** and ticking your favorites, clicking on the `Add Device(s) as Shortcut(s) & MidiMappings` button will result in, from now on, the selected devices being available in Keybinds and MidiMappings. Set them up, and away you go!
+
+<img width="932" alt="Screenshot 2024-11-07 at 15 58 27" src="https://github.com/user-attachments/assets/3972b25f-45f0-4411-b76c-9b0bdddd439f">
+
+This means that you can, for instance, (in my usecase) press `shift-q e r t z a v`  and out come 7 devices to the selected track. Same with midibuttons, after selecting your favorites, you can use the midi mappings to set up midi controls for loading your desired device onto your selected track. Trust me, it's fast, fluid and just feels natural. Set them like you want to, and throw in your devices.
+
+There are some additional details, such as: the external Devices are loaded in minimized mode, so they don't take up extra space. The Renoise Native devices are not loaded in minimized mode, because the parameters are displayed there.
+
+And the more important detail: the External Editor is automatically opened!
+
+The same thing exists for loading Plugins, go to **Tools -> Paketti.. -> Plugins/Devices.. -> Load Plugins Dialog...**
+
+<img width="382" alt="Screenshot 2024-11-07 at 16 01 24" src="https://github.com/user-attachments/assets/566fb9e6-3778-47b4-87bb-2cd7de0a5bd4">
+
+Same logic. Pick the ones you want, add them to the Paketti Preferences - they'll always be there.
+
+The extra logic with Plugins, is, that it wouldn't make much sense if they overwrote the current instrument - so, a new instrument slot is added, every time you load a plugin. And the External Editor is made visible. So you can just start tweaking away.
+
 
 # Rewrite Soon
 
