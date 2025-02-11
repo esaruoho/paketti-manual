@@ -7522,9 +7522,34 @@ These are available as Shortcuts, Menu Entries for Mixer, Pattern Editor and on 
 ### 2025-02-11 - esaruoho
 Feature: `Global:Paketti:Shift Notes Left` - this will shift all the notes in the selection to the left, or if no selection, then all the notes on the current row, to the left. 
 Improvement: `Global:Paketti:Shift Notes Right` - this will also now shift all the notes in the selection to the right, and if no selection, then all notes on the current row.
+(Closes https://github.com/esaruoho/paketti/issues/787)
 ![](Screenshots/shiftnotesleftright.gif)
----
 
+---
+### 2025-02-11 - esaruoho
+Improvement: Create Identical Track has been modified to 
+- duplicate the notes on the track
+- duplicate the track dsps on the track
+I have also added it as a shortcut to the Mixer and to Pattern Editor.
+(Fixes https://github.com/esaruoho/paketti/issues/815)
+
+---
+### 2025-02-11 - esaruoho
+Improvement: Chordsplus Transposer now has a "Row Only" flavor in addition to the "Row/Seletion" flavor.
+
+![](Screenshots/chordsplus-transposer-rowflavor.png)
+
+---
+### 2025-02-11 - esaruoho
+Feature: Replace `FCxx` with `0Lxx` across the whole song, for those that need this conversion to be done.
+
+![](Screenshots/FC00_to_0L00_replacer.gif)
+
+---
+### 2025-02-
+
+---
+### 2025-02-
 
 ---
 # End
