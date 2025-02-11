@@ -110,12 +110,12 @@ The Shortcuts for `Write Automation Value 0.0` to `Write Automation Value 1.0` w
 ### ALT-D Selection with Automation Frame Open
 The Shortcut `Impulse Tracker ALT-D Double Select w/ Automation` takes the original ALT-D Double Select feature from Scream Tracker 3 and Impulse Tracker 2 and adds additional logic into the mix.
 
-![](ALT-D_with_Automation.png)
+![](AutomationAssets/ALT-D_with_Automation.png)
 
 Meaning, if you have the Automation Frame displaying, the same Shortcut will also select the same rows in the Automation Frame. 
 
 An example of usage:
-![](alt-d_with_automation.gif)
+![](AutomationAssets/alt-d_with_automation.gif)
 
 ### Automation Across Multiple Patterns Using Pattern Matrix
 
@@ -130,14 +130,14 @@ Menu Entries in the **Pattern Matrix** for creating Automation curves that start
 - Exponential Top->Center
 - Exponential Center->Bottom
 - Exponential Bottom->Center
-![](Automation_Multipattern.png)
+![](AutomationAssets/Automation_Multipattern.png)
 
 The Pattern Matrix Menu looks like this:
-![](Automation_Pattern_Matrix_Selection.png)
+![](AutomationAssets/Automation_Pattern_Matrix_Selection.png)
 
 ### Flip Automation Horizontally & Vertically
 The Shortcuts / MIDI Mappings for `Flip Automation Selection Horizontally` and `Flip Automation Selection Vertically` will do the same thing as `Flip` & `Mirror` buttons in the Automation Frame, but these Renoise-native features do not have MIDI Mappings available.
-![](Flip_Automation_Horizontally_Vertically.png)
+![](AutomationAssets/Flip_Automation_Horizontally_Vertically.png)
 ### MIDI Automation Curve Draw Selection
 This MIDI Mapping will read the Selection on your Selected Automation Parameter, and change the Automation Curve. With a regular Automation Envelope, this will cycle through 
 - Full Bottom
@@ -146,38 +146,38 @@ This MIDI Mapping will read the Selection on your Selected Automation Parameter,
 - Full Top
 - Line Down
 - Exponential Down
-![](MIDI_Automation_Curve_Draw_Selection.png)
+![](AutomationAssets/MIDI_Automation_Curve_Draw_Selection.png)
 An example of usage:
-![](MIDI_Automation_Curve_Draw.gif)
+![](AutomationAssets/MIDI_Automation_Curve_Draw.gif)
 If you have selected a Panning, PitchBend or similar (get in touch if you want more configurations), these will cycle through the following:
 
 An example of usage:
-![](Switch_Curves_panning.gif)
+![](AutomationAssets/Switch_Curves_panning.gif)
 ### Select Automation Playmode
 The Shortcuts / MIDI Mappings for `Select Automation Playmode (Next)/(Previous)` and `01 Points`,  `02 Lines`,  `03 Curves` let you set the Selected Automation Parameter's Playmode states. 
-![](Select_Automation_Playmode.png)
+![](AutomationAssets/Select_Automation_Playmode.png)
 ### Set Automation Range to Max, Middle, Min
 The Shortcuts and Midi Mappings for `Set Automation Range to Max (1.0)`, `Set Automation Range to Middle (0.5)` and `Set Automation Range to Min (0.0)` output to the currently selected Automation Parameter's currently selected row.
 ![](AutomationAssets/Shortcut_MIDI_Set_Automation_Range_to.png)
 ### Switch to Automation & Cycle through Automation Envelopes
 The Shortcut / Midi Mapping `Switch to Automation Dynamic` is a multi-function feature.
-![](Switch_to_Automation_Show_Automated_Parameters.png)
+![](AutomationAssets/Switch_to_Automation_Show_Automated_Parameters.png)
 If you're not in the Automation Frame, it will display the Automation Frame. (Hence the "Switch to Automation" part of the name).
 
 If you are already on the Automation Frame, pressing the same shortcut or midi button again, will result in you cycling through the parameters that have Automation Envelopes on them.
 
 An example of usage:
-![](Switch_to_Automation_Show_Automated_Parameters.gif)
+![](AutomationAssets/Switch_to_Automation_Show_Automated_Parameters.gif)
 
 ### Selected Device Automation Parameter 001...128
 
 These 128 MIDI Mappings will directly write to the Automation Parameter of the Selected Device. This will happen without the Automation Frame switching to showing the Parameter, so, if you know which Selected Device Parameter you wish to control, just map them and fire away.
-![](Selected_Device_Automation_Parameter.png)
+![](AutomationAssets/Selected_Device_Automation_Parameter.png)
 ### Automation Selection Start & End with MIDI
 The following MIDI Mappings will let you use two knobs to set the Selection Start and Selection End of the currently selected Automation Envelope.
-![](MIDI_Automation_Selection.png)
+![](AutomationAssets/MIDI_Automation_Selection.png)
 An example of usage:
-![](automation_selection_start_end.gif)
+![](AutomationAssets/automation_selection_start_end.gif)
 ### Automation Value Dialog
 The Shortcut/Midi Mapping `Show Automation Value Dialog...` will open up a simple and small Dialog that lets you write an Automation Value to the currently selected Automation Line.
 
@@ -196,29 +196,29 @@ With the EditStep set, the Dialog never closes.
 
 ### Record Automation to Selected Parameter
 This MIDI Mapping will let you record Automation nodes to the Selected Automation Parameter.
-![](Record_Automation_to_Selected_Parameter.png)
+![](AutomationAssets/Record_Automation_to_Selected_Parameter.png)
 
 This will only record content to the Selected Parameter, if Edit Mode is on. Then it records to the whole selection. If you have a selection, it will change the value of the whole selection. 
 
 If you have **Follow Pattern** on, then it will record to changes to the playhead.
 
 An example of usage:
-![](Record_Automation_to_Selected_Parameter.gif)
+![](AutomationAssets/Record_Automation_to_Selected_Parameter.gif)
 ### Generate Automation Points from Notes in Selected Track
 The Shortcut/MidiMapping `Generate Automation Points from Notes in Selected Track` will output Automation Points to the selected Automation Parameter based on the notes you have in the Pattern Editor.
-![](Automation_Generate_Automation_Points_from_Notes_in_Selected_Track.png)
+![](AutomationAssets/Automation_Generate_Automation_Points_from_Notes_in_Selected_Track.png)
 
 This same feature is also available from the Automation Menu:
-![](Generate_Automation_Points_from_Notes_in_Selected_Track.png)
+![](AutomationAssets/Generate_Automation_Points_from_Notes_in_Selected_Track.png)
 
 An example of usage:
-![](Automation_Generate_Automation_Points_Example_of_Usage.png)
+![](AutomationAssets/Automation_Generate_Automation_Points_Example_of_Usage.png)
 ### Automation Selected Parameter Randomization
 The Shortcut/Midi Mapping `Randomize Automation Envelope` will take your currently selected Automation Parameter and Randomize it, or, if there is a selection, only Randomize the selection. 
 ![](AutomationAssets/Automation_Randomize_Envelope.png)
 
 This same feature is also available from the Automation Menu:
-![](Menu_Entry_-_Randomize_Automation_Envelope.png)
+![](AutomationAssets/Menu_Entry_-_Randomize_Automation_Envelope.png)
 
 An example of usage:
 ![](AutomationAssets/Automation_Randomize_Selected_Parameter.gif)
@@ -228,10 +228,10 @@ An example of usage:
 The Shortcut/Midi Mapping `Randomize Automation Envelopes for Device` will insert Randomization to each and every parameter of the Selected Device.
 
 This will create a new Envelope per each Parameter, or overwrite the pre-existing one.
-![](AutomationAssets/Automation_Randomize_Envelope.png)
+![](AutomationAssets/AutomationAssets/Automation_Randomize_Envelope.png)
 
 This same feature is also available from the Automation Menu:
-![](Menu_Entry_-_Randomize_Selected_Device_Parameters.png)
+![](AutomationAssets/Menu_Entry_-_Randomize_Selected_Device_Parameters.png)
 
 ### Automation Selection Flip & Mirror
 TODO
@@ -1195,6 +1195,7 @@ if you have nothing selected, it'll output to current_line row. if columns are n
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/3af37cfeac9a4aa78834d7b6c74b7f36?sid=8448be8d-8f03-469a-a7a2-12df1888add2" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f
+
 ---
 ### 2024-06-23 - esaruoho
 
