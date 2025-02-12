@@ -7439,7 +7439,7 @@ same for +1 +5 +10 -1 -5 -10 - no longer error on master,send,group
 ---
 ### 2025-02-07 - esaruoho
 
-Improvement: Groove Controls / Randomize Groove now no longer force you to Mixer view - in case you wanted to be in Pattern Editor view.
+Improvement: Paketti Groovebox 8120's Groove Controls / Randomize Groove now no longer force you to Mixer view - in case you wanted to be in Pattern Editor view.
 (Closes https://github.com/esaruoho/paketti/issues/799)
 
 ---
@@ -7550,12 +7550,65 @@ Feature: Replace `FCxx` with `0Lxx` across the whole song, for those that need t
 Feature: Clever Note Off (Right After/Half Before/Right Before)
 This inserts Note Off commands to each of the note columns on the selected track - in case they have notes on them. 
 The Right After will put a Note Off right after each note. Half Before, will put a Note Off right in the middle of "played note" & "next note". The Right Before, puts a Note Off right before the next note plays.
+(Closes https://github.com/esaruoho/paketti/issues/812)
 ![](Screenshots/rightafter_halfbefore_rightbefore.gif)
 ![](Screenshots/rightafter_halfbefore_rightbefore.png)
 
 
 ---
-### 2025-02-
+### 2025-02-12 - esaruoho
+
+Feature: Bypass/Enable all Sample FX Chain Devices in current Instrument
+Feature: Bypass/Enable all Sample FX Chain Devices in all Instrument in Song
+(Closes https://github.com/esaruoho/paketti/issues/784)
+![](Screenshots/bypass_enable_all_samplefx_devices.png)
+![](Screenshots/bypass_enable_all_samplefx_devices_shortcuts.png)
+
+### 2025-02-12 - esaruoho
+
+Feature: Match EditStep to Notes
+This will change the EditStep so that every time you input a note, it will jump to the row with the next note.
+(Closes https://github.com/esaruoho/paketti/issues/592)
+
+![](Screenshots/match_note_columns_to_note.gif)
+
+---
+### 2025-02-12 - esaruoho
+Feature: Reset every PitchStep on Playback Stop (Impulse Tracker F8), on Playback Start (Impulse Tracker F7&Impulse Tracker F5)
+There's also an extra shortcut + menu entry for this use
+(Closes https://github.com/esaruoho/paketti/issues/536)
+![](Screenshots/resetpitchstepper_shortcut.png)
+![](Screenshots/resetpitchstepper_menu_entry.png)
+
+---
+### 2025-02-12 - esaruoho
+Improvement: Fixed "Reverse Notes in Selection" to work properly across multiple tracks
+(Closes https://github.com/esaruoho/paketti/issues/298)
+![](Screenshots/reverse_selection_content_fix.gif)
+
+---
+### 2025-02-12 - esaruoho
+Improvement: Paketti Groovebox 8120: Each of the 8 stepsequencers can be set to max 64 steps, with 16 steps containing checkboxes aka playable notes, and when they get played, then if you have it set to 64 steps, there will be 48 steps of silence until replay happens again. This is good for offsetting things and maintaining a kind of "shape" of stepsequences repeating over the course of time.
+(Closes https://github.com/esaruoho/paketti/issues/648)
+
+---
+### 2025-02-12 - esaruoho
+
+
+---
+### 2025-02-12 - esaruoho
+
+
+---
+### 2025-02-12 - esaruoho
+
+
+---
+### 2025-02-12 - esaruoho
+
+
+---
+
 
 ---
 # End
