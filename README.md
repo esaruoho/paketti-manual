@@ -7546,7 +7546,11 @@ Feature: Replace `FCxx` with `0Lxx` across the whole song, for those that need t
 ![](Screenshots/FC00_to_0L00_replacer.gif)
 
 ---
-### 2025-02-
+### 2025-02-12 - esaruoho
+Feature: Clever Note Off (Right After/Half Before/Right Before)
+This inserts Note Off commands to each of the note columns on the selected track - in case they have notes on them. 
+The Right After will put a Note Off right after each note. Half Before, will put a Note Off right in the middle of "played note" & "next note". The Right Before, puts a Note Off right before the next note plays.
+![](Screenshots/rightafter_halfbefore_rightbefore.gif)
 
 ---
 ### 2025-02-
