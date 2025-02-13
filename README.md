@@ -7551,6 +7551,7 @@ Feature: Clever Note Off (Right After/Half Before/Right Before)
 This inserts Note Off commands to each of the note columns on the selected track - in case they have notes on them. 
 The Right After will put a Note Off right after each note. Half Before, will put a Note Off right in the middle of "played note" & "next note". The Right Before, puts a Note Off right before the next note plays.
 (Closes https://github.com/esaruoho/paketti/issues/812)
+
 ![](Screenshots/rightafter_halfbefore_rightbefore.gif)
 ![](Screenshots/rightafter_halfbefore_rightbefore.png)
 
@@ -7577,38 +7578,61 @@ This will change the EditStep so that every time you input a note, it will jump 
 Feature: Reset every PitchStep on Playback Stop (Impulse Tracker F8), on Playback Start (Impulse Tracker F7&Impulse Tracker F5)
 There's also an extra shortcut + menu entry for this use
 (Closes https://github.com/esaruoho/paketti/issues/536)
+
 ![](Screenshots/resetpitchstepper_shortcut.png)
 ![](Screenshots/resetpitchstepper_menu_entry.png)
 
 ---
 ### 2025-02-12 - esaruoho
 Improvement: Fixed "Reverse Notes in Selection" to work properly across multiple tracks
+
 (Closes https://github.com/esaruoho/paketti/issues/298)
+
 ![](Screenshots/reverse_selection_content_fix.gif)
 
 ---
 ### 2025-02-12 - esaruoho
 Improvement: Paketti Groovebox 8120: Each of the 8 stepsequencers can be set to max 64 steps, with 16 steps containing checkboxes aka playable notes, and when they get played, then if you have it set to 64 steps, there will be 48 steps of silence until replay happens again. This is good for offsetting things and maintaining a kind of "shape" of stepsequences repeating over the course of time.
+
 (Closes https://github.com/esaruoho/paketti/issues/648)
 
 ---
-### 2025-02-12 - esaruoho
-
-
----
-### 2025-02-12 - esaruoho
-
-
----
-### 2025-02-12 - esaruoho
-
+### 2025-02-13 - esaruoho
+Feature: Clear Selected Track Below Current Row / Clear All Tracks Below Current Row
+Clear Selected Track Above Current Row / Clear All Tracks Above Current Row
+I've made these available as Menu Entries, Shortcuts and Midi Mappings.
+![](Screenshots/clear_track_or_all_tracks_above_below.png)
+![](Screenshots/clear_above_below.gif)
+(Closes https://github.com/esaruoho/paketti/issues/584)
 
 ---
-### 2025-02-12 - esaruoho
-
+### 2025-02-13 - esaruoho
+Feature: Insert Random Device (AU/Native), Insert Random Device (All), Insert Random Plugin (AU), Insert Random Plugin (All)
+The inserted device's or plugin's External Editor will be opened, if available. The inserted device, if not a Native device, will be opened in minimized mode.
+(Closes https://github.com/esaruoho/paketti/issues/711)
+![](Screenshots/insert_random_device_plugin.png)
 
 ---
+### 2025-02-13 - esaruoho
+Feature: Generate Delay Value on Note Columns
+This will read the amount of Note Columns and fit the delay values so they play evenly.
 
+(Closes https://github.com/esaruoho/paketti/issues/811)
+![](Screenshots/generatedelayvalues.gif)
+
+---
+### 2025-02-13 - esaruoho
+Improvement: "Switch Note Dialog" now has a "Whole Song" version which will change the note instrument across all patterns in the song.
+
+(Closes https://github.com/esaruoho/paketti/issues/776)
+
+![](Screenshots/switchnotewholesong.png)
+
+---
+### 2025-02-13 - esaruoho
+Improvement: PlayerPro Effect Column Dialog now shows both the hexadecimal and the decimal values.
+(Closes https://github.com/esaruoho/paketti/issues/813)
+![](Screenshots/playerpro_hexaanddecimal.png)
 
 ---
 # End
