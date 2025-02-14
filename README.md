@@ -7635,6 +7635,102 @@ Improvement: PlayerPro Effect Column Dialog now shows both the hexadecimal and t
 ![](Screenshots/playerpro_hexaanddecimal.png)
 
 ---
+### 2025-02-14 - esaruoho
+Feature: Slice DrumKit (Percussion) / Slice DrumKit (Texture)
+These shortcuts + menu entries do the following thing:
+Original Sample:
+1. Set BeatSync On
+2. Set BeatSync Mode to Percussion OR Texture
+3. Set Forward Loop On
+4. Set Autoseek On
+5. Set Mute Group 1
+
+Slices:
+1. Disable BeatSync
+2. Enable One-Shot
+3. Set Autofade on
+4. Set Mute Group 1
+
+(Closes https://github.com/esaruoho/paketti/issues/565)
+![](Screenshots/slicedrumkitpercussiontexture.png)
+
+---
+### 2025-02-14 - esaruoho
+Feature: Normalize Selected Slice or Sample
+This is a follow-up to the "Reverse Selected Slice or Sample" - it just hits the Slice (or Sample) and normalizes it.
+Available on the Sample Editor, Sample Navigator and as Midi Mappings + Shortcuts (same for Reverse Selected Slice or Sample, so, slight improvements there)
+![](Screenshots/normalize_selected_sample_or_slice.png)
+
+---
+### 2025-02-14 - esaruoho
+Improvement: Both Normalize & Reverse Selected Slice or Sample now correctly reverse or normalize the last slice.
+
+---
+### 2025-02-14 - esaruoho
+Improvement: Edit Mode Blend Value is now settable via the Paketti Preferences
+(Closes https://github.com/esaruoho/paketti/issues/425)
+![](Screenshots/editmode_blend_paketti_preferences.gif)
+
+
+---
+### 2025-02-14 - esaruoho
+Feature: Note Off with EditStep
+(Closes https://github.com/esaruoho/paketti/issues/806)
+![](Screenshots/editstep_withstep.png)
+![](Screenshots/editstep_step.gif)
+
+---
+### 2025-02-14 - esaruoho
+Improvement: `Impulse Tracker Home*2` and `End*2` functionality for Phrase Editor **V3.5 Only**
+These detect if you're in the Phrase Editor and then run the same functionality (go to the top of the current note column, if pressed again, go to the first note column.. and.. go to the end of the current note column, if pressed again, go to the last note column.)
+(Closes https://github.com/esaruoho/paketti/issues/819)
+
+---
+### 2025-02-14 - esaruoho
+Feature: Phrase Follow Pattern Hack **V3.5 Only**
+This tries to follow the pattern, but in the phrase. i.e. if phrase is 64rows and LPB4, and pattern is 64 rows and LPB4 - it will detect: oh, pattern is playing, let's adjust the selected phrase line index of the phrase.
+
+This is considered highly experimental and might not work at all. Waiting for V3.5 access.
+
+
+---
+### 2025-02-14 - esaruoho
+Improvement: Audio Processing Dialog should be openable and reopenable
+(Closes https://github.com/esaruoho/paketti/issues/595)
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+### 2025-02-14 - esaruoho
+
+---
+
+---
 # End
 
 
