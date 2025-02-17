@@ -7782,22 +7782,40 @@ Available in Pattern Editor + Mixer as Shortcut & Menu Entry
 ![](Screenshots/creategroup_movedsps_shortcuts.png)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Feature: Move DSPs to Next / Previous Track
+This will move the current track's Track DSP Devices to the Next or the Previous Track.
+Improvement: Can move DSPs between Tracks, Groups, Master.. and Sends. Also remembers Maximized/Minimized status.
+![](Screenshots/movetrackdsps_v2.gif)
+![](Screenshots/movedsps_adjacent.png)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Feature: Flood Fill within Selection with Arp
+This will create a Delay Value, and then read the current row's Chord, replicate it to the rest of the Selection, and then alter the Voicing, and sort it ascending / descending, resulting in, well, arpeggios.
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Improvement: Sort Notes (Ascending) / (Descending) now no longer changes the Delay Values around, if it detects that you've been using Generate Delay Values within ChordPlus.
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Improvement: ChordsPlus now has a "Random Chord" Midi Mapping, Menu Entry + Shortcut.
+![](Screenshots/chordsplus_randomchord.png)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Improvement: Move "Selected Track DSP Device" to Next / Previous Track
+![](Screenshots/move_selected_device.gif)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-17 - esaruoho
+Improvement: Renamed "Randomize Phrasing for Notes in Row/Selection" to "Randomize Voicings for Notes in Row/Selection" since it is Voicing, not Phrasing. Sorry.
+
+---
+### 2025-02-18 - esaruoho
+Feature: ChordsPlus Extract Bassline to Next Track
+![](Screenshots/extract_bassline.png)
 
 ---
 ### 2025-02-xx - esaruoho
