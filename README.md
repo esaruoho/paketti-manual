@@ -723,34 +723,34 @@ For better comprehension, this manual is divided into sections. Each chapter cor
 
 Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This menu also includes some shortcuts for useful features:
 
-| Item                                   | Description                                                                                                   | Index                                                                                                                 |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `Preferences`                          | Shows Paketti Preferences window.                                                                             | [1.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#11---preferences)    |
-| `Instruments`                          | Contains sample and drumkit loaders, plus shortcuts for beatsync and pitchbend.                               | [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments)    |
-| `Pattern Editor`                       | Random BPM, FX Cheat Sheet, Collapse/Uncollapse All, Double/Halve Pattern                                     | [1.3](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#13---pattern-editor) |
-| `Plugin/Devices`                       | Multiple Plugin/Device functionalities.                                                                       | [1.4](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#14---pluginsdevices) |
-| `Show New Song Dialog`                 | Allows you to start a new song with the option to keep the same Patterns/Instruments/etc                      | -                                                                                                                     |
-| `∿ Squigly Sinewave to Clipboard`      | Copy this symbol to easily find Paketti in the Keys window (under Renoise Preferences).                       | -                                                                                                                     |
-| `Paketti MIDI Populator`               | Automatically fills current Project with Tracks, Instruments, Sends and Macros for External MIDI Controllers. | [1.5](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#15---midi-populator) |
-| `Clean Render Selected Track or Group` | Automatically bypasses FX in Track/Group before resampling.                                                   | -                                                                                                                     |
-| `Catch Octave`                         | (NEEDS EXPLAINING)                                                                                            | -                                                                                                                     |
-| `Clone Current Sequence`               | Self-explanatory.                                                                                             | -                                                                                                                     |
-| `Track Routings Dialog`                | Displays a pop-up window containing all track audio device routings.                                          | -                                                                                                                     |
+| Item                                   | Description                                                                                                   | Index |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----- |
+| `Preferences`                          | Shows Paketti Preferences window.                                                                             | 1.1   |
+| `Instruments`                          | Contains sample and drumkit loaders, plus shortcuts for beatsync and pitchbend.                               | 1.2   |
+| `Pattern Editor`                       | Random BPM, FX Cheat Sheet, Collapse/Uncollapse All, Double/Halve Pattern                                     | 1.3   |
+| `Plugin/Devices`                       | Multiple Plugin/Device functionalities.                                                                       | 1.4   |
+| `Show New Song Dialog`                 | Allows you to start a new song with the option to keep the same Patterns/Instruments/etc                      | -     |
+| `∿ Squigly Sinewave to Clipboard`      | Copy this symbol to easily find Paketti in the Keys window (under Renoise Preferences).                       | -     |
+| `Paketti MIDI Populator`               | Automatically fills current Project with Tracks, Instruments, Sends and Macros for External MIDI Controllers. | 1.5   |
+| `Clean Render Selected Track or Group` | Automatically bypasses FX in Track/Group before resampling.                                                   | -     |
+| `Catch Octave`                         | (NEEDS EXPLAINING)                                                                                            | -     |
+| `Clone Current Sequence`               | Self-explanatory.                                                                                             | -     |
+| `Track Routings Dialog`                | Displays a pop-up window containing all track audio device routings.                                          | -     |
 
 ### 1.1 - Preferences
 
-| Item                                          | Description                                                                                                                                           | Notes                                                                                                                      |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `Upper Frame`                                 | Enables/Disables upper frame control when using Impulse Tracker key commands.                                                                         | See [insert IT topic - to be written].                                                                                     |
-| `0G01 Loader`                                 | Automatically enables the 0G01 hack for samples inserted using the Paketti loaders.                                                                   | See **Instrument Box** to better understand the 0G01 hack.                                                                 |
-| `Random BPM`                                  | (NEEDS EDITING)                                                                                                                                       | -                                                                                                                          |
-| `Pale Green Theme`                            | Loads Paketti color theme for Renoise.                                                                                                                | -                                                                                                                          |
-| `Gifts: Plaid Zap Load`                       | Insert a special XRNI instrument made from Plaid samples.                                                                                             | See [forum post](https://forum.renoise.com/t/plaidzap-xrni-gift/32521).                                                    |
-| `Create New Instrument & Loop from Selection` | Quite Self-Explanatory. Works on the Sample Editor (right-click).                                                                                     | -                                                                                                                          |
-| `Paketti Loader Settings`                     | Changes default settings for Paketti Drumkit/Multisample loaders.                                                                                     | See [1.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#12---instruments) for |
-| `Wipe & Slices Settings`                      | Determines default settings for slices generated via Paketti (under the Sampler window and Instrument Box): Slice Loop Mode, Beatsync, Autoseek, etc. | See **Instrument Box**                                                                                                     |
-| `Render Settings`                             | Determines sample rate and bit depth for Paketti resampling procedures.                                                                               | -                                                                                                                          |
-| `Edit Mode Colouring`                         | Highlights the track you're currently editing, all tracks or none.                                                                                    | -                                                                                                                          |
+| Item                                          | Description                                                                                                                                           | Notes                                                                   |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `Upper Frame`                                 | Enables/Disables upper frame control when using Impulse Tracker key commands.                                                                         | See [insert IT topic - to be written].                                  |
+| `0G01 Loader`                                 | Automatically enables the 0G01 hack for samples inserted using the Paketti loaders.                                                                   | See **Instrument Box** to better understand the 0G01 hack.              |
+| `Random BPM`                                  | (NEEDS EDITING)                                                                                                                                       | -                                                                       |
+| `Pale Green Theme`                            | Loads Paketti color theme for Renoise.                                                                                                                | -                                                                       |
+| `Gifts: Plaid Zap Load`                       | Insert a special XRNI instrument made from Plaid samples.                                                                                             | See [forum post](https://forum.renoise.com/t/plaidzap-xrni-gift/32521). |
+| `Create New Instrument & Loop from Selection` | Quite Self-Explanatory. Works on the Sample Editor (right-click).                                                                                     | -                                                                       |
+| `Paketti Loader Settings`                     | Changes default settings for Paketti Drumkit/Multisample loaders.                                                                                     | See 1.2 for                                                             |
+| `Wipe & Slices Settings`                      | Determines default settings for slices generated via Paketti (under the Sampler window and Instrument Box): Slice Loop Mode, Beatsync, Autoseek, etc. | See **Instrument Box**                                                  |
+| `Render Settings`                             | Determines sample rate and bit depth for Paketti resampling procedures.                                                                               | -                                                                       |
+| `Edit Mode Colouring`                         | Highlights the track you're currently editing, all tracks or none.                                                                                    | -                                                                       |
 
 ### 1.2 - Instruments
 
@@ -764,15 +764,15 @@ Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This 
 
 ### 1.3 - Pattern Editor
 
-| Item | Description | Notes |
-| --- | --- | --- |
-| `Random BPM` | Picks a random BPM value for the project. | |
-| `Write Current BPM&LPB to Master column` | This writes both the current BPM and the LPB to the Master Track. Useful when you change LPB / BPM across the song patterns. | |
-| `Effect Column CheatSheet Dialog` | A pop-up window containg all pattern commands available in Renoise. | See [1.3.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#131---effect-column-cheatsheet-dialog). |
-| `Collapse/Uncollapse All Tracks` | Collapses (minimizes) or Uncollapses (maximizes) all the Tracks, Groups, Master and Sends. | |
-| `Pattern Doubler` | Doubles the current pattern size while also duplicating its contents accordingly (notes, volume, panning, delay, samplefx columns and effect columns, and automation. | |
-| `Pattern Halver` | Sets the pattern to 1/2 current size. Works *differently* from the native keybind `CTRL+F8`, as it *does not adapt pattern content* to fit the new length. Simply put: pattern length is changed to half, but notes/commands remain in place. | |
-| `Global Visible Column (All)` | Expands all columns in all tracks: Volume, Pan, Delay and SampleFX.| |
+| Item                                     | Description                                                                                                                                                                                                                                   | Notes     |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| `Random BPM`                             | Picks a random BPM value for the project.                                                                                                                                                                                                     |           |
+| `Write Current BPM&LPB to Master column` | This writes both the current BPM and the LPB to the Master Track. Useful when you change LPB / BPM across the song patterns.                                                                                                                  |           |
+| `Effect Column CheatSheet Dialog`        | A pop-up window containg all pattern commands available in Renoise.                                                                                                                                                                           | See 1.3.1 |
+| `Collapse/Uncollapse All Tracks`         | Collapses (minimizes) or Uncollapses (maximizes) all the Tracks, Groups, Master and Sends.                                                                                                                                                    |           |
+| `Pattern Doubler`                        | Doubles the current pattern size while also duplicating its contents accordingly (notes, volume, panning, delay, samplefx columns and effect columns, and automation.                                                                         |           |
+| `Pattern Halver`                         | Sets the pattern to 1/2 current size. Works *differently* from the native keybind `CTRL+F8`, as it *does not adapt pattern content* to fit the new length. Simply put: pattern length is changed to half, but notes/commands remain in place. |           |
+| `Global Visible Column (All)`            | Expands all columns in all tracks: Volume, Pan, Delay and SampleFX.                                                                                                                                                                           |           |
 
 ### 1.3.1 - Effect Column CheatSheet Dialog
 
@@ -781,16 +781,16 @@ Please note: the Effect Column CheatSheet also features sliders for the Volume, 
 
 ### 1.4 - Plugins/Devices
 
-| Item                                               | Description                                                                                                                                                                                                                                                                               | Notes                                                                                                                                                         |     |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| `Debug`                                            | Different plugin related utilities for debugging. Can be ignored by the average user.                                                                                                                                                                                                     |                                                                                                                                                               |     |
-| `Switch Plugin AutoSuspend OFF`                    | Quickly Enables/Disables the AutoSuspend function in Renoise. From the [user manual](https://tutorials.renoise.com/wiki/Plugin): "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage." |                                                                                                                                                               |     |
-| `Expose/Hide Selected Device Parameters in Mixer`  | Display plugin parameters in the mixer as sliders. It's the default behavior for some native devices, such as the Compressor and Mixer EQ.                                                                                                                                                | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |     |
-| `Expose/Hide Selected Track ALL Device Parameters` | Same as above, but applies to all devices in the selected track.                                                                                                                                                                                                                          | See [1.4.1](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#141---exposehide-selected-device-parameters-in-mixer). |     |
-| `Hide Track DSP Devices for All Tracks`            | If External Editors for any devices on Track DSP are visible, this will hide their External Editors.                                                                                                                                                                                      |                                                                                                                                                               |     |
-| `Bypass/Enable All Devices on Track`               | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track.                                                                                                                                                       |                                                                                                                                                               |     |
-| `Load AU/VST/VST3 Plugins Dialog`                  | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences.                                                                                                                      | See [1.4.2](https://github.com/esaruoho/paketti-manual/blob/main/Documentation/1%20-%20Tools%20menu.md#142---load-auvstvst3-plugins-dialog).                  |     |
-| `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible.                                                                                                                                                                                                            |                                                                                                                                                               |     |
+| Item                                               | Description                                                                                                                                                                                                                                                                               | Notes     |     |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --- |
+| `Debug`                                            | Different plugin related utilities for debugging. Can be ignored by the average user.                                                                                                                                                                                                     |           |     |
+| `Switch Plugin AutoSuspend OFF`                    | Quickly Enables/Disables the AutoSuspend function in Renoise. From the [user manual](https://tutorials.renoise.com/wiki/Plugin): "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage." |           |     |
+| `Expose/Hide Selected Device Parameters in Mixer`  | Display plugin parameters in the mixer as sliders. It's the default behavior for some native devices, such as the Compressor and Mixer EQ.                                                                                                                                                | See 1.4.1 |     |
+| `Expose/Hide Selected Track ALL Device Parameters` | Same as above, but applies to all devices in the selected track.                                                                                                                                                                                                                          | See 1.4.1 |     |
+| `Hide Track DSP Devices for All Tracks`            | If External Editors for any devices on Track DSP are visible, this will hide their External Editors.                                                                                                                                                                                      |           |     |
+| `Bypass/Enable All Devices on Track`               | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track.                                                                                                                                                       |           |     |
+| `Load AU/VST/VST3 Plugins Dialog`                  | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences.                                                                                                                      | See 1.4.2 |     |
+| `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible.                                                                                                                                                                                                            |           |     |
 ### 1.4.1 - Expose/Hide Selected Device Parameters in Mixer
 
 ### 1.4.2 - Load AU/VST/VST3 Plugins Dialog
@@ -4247,8 +4247,8 @@ Improvement: Loop Set Texture / Loop Set Percussion now sets Mute Group 1.
 
 Feature: Smart BeatSync from Selection
 This reads selection in pattern and imprints it on selected sample beatsync.
-meaning: select 4 rows, run shortcut - sample beatsync lines is now 4.
-select 64 rows, run shortcut - sample beatsync line is now 64.
+meaning: select 4 rows, run shortcut - sample BeatSync lines is now 4.
+select 64 rows, run shortcut - sample BeatSync line is now 64.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/561)
 
 ---
@@ -5436,7 +5436,7 @@ Feature: Midi Mapping for changing Selected Instrument Transpose
 Improvement: I've added 8 midiknobs that fit the 0...127 values into 1...8 for cycling through the Dynamic Views. if there's only two cycles configured for a dynamic view - then 0-64 will change to cycle1, and 65-127 to cycle2.
 this means, you can configure a max of 8 different dynamic view states as per one Dynamic View number, and use one knob  to switch between these views.
 so if you have a situation where you absolutely must quickly run from pattern editor to sample editor to sample editor with sample recorder showing to mixer to pattern editor with automation, to.. sample phrases.. to.. something - you can do it with the twist of a knob.
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/656) ping <@304689324790775818>
+(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/656) 
 ![](attachments/2024-10-31_Screenshot_2024-10-31_at_23.09.28.png)
 
 
@@ -6493,7 +6493,7 @@ so far, so good. just need to work it into getting it directly into readme.md on
 ---
 ### 2024-12-17 - esaruoho
 
-Update: I've also done a 2 hour Twitch stream of the new feature Paketti Stacker, which I'm slowly finetuning and working out the kinks to make it work even faster and in a more userfriendly way. I have a long todo-list of things to do for this, it's a pretty big feature.
+Update: I've also done a 2 hour Twitch stream of the new feature **Paketti Stacker**, which I'm slowly finetuning and working out the kinks to make it work even faster and in a more userfriendly way. I have a long todo-list of things to do for this, it's a pretty big feature.
 
 ---
 ### 2024-12-17 - esaruoho
@@ -7271,7 +7271,7 @@ Improvement: Column Cycle Keyjazz (Special) will fill the current track with not
 ---
 ### 2025-01-29 - esaruoho
 
-Improvement: eSpeak now has "Don't Pakettify" for those who need it ( looking at you, <@840842258336841748> )
+Improvement: eSpeak now has "Don't Pakettify" for those who need it
 Closes https://github.com/esaruoho/paketti/issues/738
 ![](attachments/2025-01-29_Screenshot_2025-01-29_at_23.01.32.png)
 
@@ -7535,7 +7535,7 @@ I have also added it as a shortcut to the Mixer and to Pattern Editor.
 
 ---
 ### 2025-02-11 - esaruoho
-Improvement: Chordsplus Transposer now has a "Row Only" flavor in addition to the "Row/Seletion" flavor.
+Improvement: Chordsplus Transposer now has a "Row Only" flavor in addition to the "Row/Selection" flavor.
 
 ![](Screenshots/chordsplus-transposer-rowflavor.png)
 
@@ -7699,34 +7699,120 @@ Improvement: Audio Processing Dialog should be openable and reopenable
 (Closes https://github.com/esaruoho/paketti/issues/595)
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-15 - esaruoho
+Improvement: OctaMED Pick/Put Dialog now reads Selection in Pattern in Selected Track and writes to Selection, while following EditStep.
+![](Screenshots/octamed_paste_to_selection.gif)
+
 
 ---
 ### 2025-02-14 - esaruoho
+Feature: Cycle Chord Inversion Down / Up
+This will take either current row, or selection in Pattern, and modify, per each row, the lowest note to be lifted an octave higher - and then re-organizes the notes by ascending order (lowest first, highest last) 
+![](inversion_try_v2.gif)
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-15 - esaruoho
+Improvement: Note Sorter (Ascending) / (Descending) now also follow the "Change Selection if exists, otherwise only current row" thinking.
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-15 - esaruoho
+Improvement: Tweaked "Randomize Phrasing for Notes on Current Row" to actually be "Randomize Phrasing for Notes in Row/Selection" - this means the Menu + Shortcut + MidiMapping have been renamed and should be re-assigned. 
+Also, it now reads the selection in pattern, or if no selection, then just current row.
+And no longer randomizes between -3 octaves and +3 octaves, instead -2 octaves and +2 octaves.
+![](Screenshots/phrasing_fix.png)
+
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+Improvement: Fixed 12st_Pitchbend.xrni so that it uses `*` instead of `+` for AHDSR device, for less buggy / blaring Envelopes.
+![](Screenshots/12st_pitchbend_ahdsr_fix.png)
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+
+Am going through a ChangesLog I was maintaining and realized I've neglected to mention bunches of things I've done last year. Here's a catchup:
+
+Feature: Set Quantization to 01...32 (Global, Pattern Editor, Phrase Editor)
+![](Screenshots/quantization_set.png)
+
+Feature: XLN Audio XO opener - checks where XO is in the track, VST,VST3,AudioUnit - if it is found, opens the External Editor. If not, loads it to a new instrument and opens. If already showing external editor, closes it. Reason for being? because you can alt-drag a selected drum into renoise (!!!) and load it.
+
+Improvement: If "Replicate at Cursor All Above Current Track", and you're on the first row, then it defaults to repeating that low.
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+Continuing with the "Didn't I talk to anyone about this??" changeslog:
+The **Paketti Stacker**.
+This loads a sample, then lets you divide it mathematically into slices, then stacks them into a new instrument with velocity controlling which slice is played, then you can output a rising ramp (first to last), downwards ramp (last to first), then random ramp (any hit). 
+
+To make this more sensible, I've added "Expand + Flood Fill" & "Shrink + Flood Fill", Pitch Stepper controls (-24, -12, 0, +12, +24), and Instrument Pitching, Loop Modes to the Dialog.
+
+This enables you to scretch valid loops into little pieces and have them tick tick tick tick through the pattern.
+![](Screenshots/pakettiStacker.png)
+Give it a try.
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/00fbe479717044cfb96dd8abdd60ef8a?sid=b92dc5b0-a9f8-4cfa-88b8-bd67afea0e7c" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+Feature: Set All Instruments All Samples Autoseek Off / On
+This queries all the Instruments - and sets all samples in each Instrument Autoseek state On or Off.
+
+Feature: Set All Instruments All Samples Autofade Off/On
+Same as Autoseek
+![](Screenshots/set_all_autofade_autoseek.png)
+![](Screenshots/set_all_autofade_autoseek_mainmenu.png)
+
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+Feature: Insert Random Note-Offs in Empty Rows
+Feature: Randomize Note-Offs in Selection
+(Closes https://github.com/esaruoho/paketti/issues/820)
+![](Screenshots/random_note_offs.gif)
+![](Screenshots/randomize_note_offs_positions.gif)
+![](Screenshots/random_noteoffs.png)
 
 ---
-### 2025-02-14 - esaruoho
+### 2025-02-16 - esaruoho
+Feature: Create Group & Move DSPs.. 
+This inserts the current Track into a Group, and moves the Track DSPs of the Track to the Group, and inserts a new Track and selects the new Track within the Group.
+Available in Pattern Editor + Mixer as Shortcut & Menu Entry
+![](Screenshots/group_track_move_dsps.gif)
+![](Screenshots/creategroup_movedsps.png)
+![](Screenshots/creategroup_movedsps_shortcuts.png)
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+### 2025-02-xx - esaruoho
+
+---
+
 
 ---
 
