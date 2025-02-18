@@ -7818,21 +7818,49 @@ Feature: ChordsPlus Extract Bassline to Next Track
 ![](Screenshots/extract_bassline.png)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-18 - esaruoho
+Feature: ChordsPlus Extract Highest Note to Next Track
+![](Screenshots/chordsplus_extract_highest.png)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-18 - esaruoho
+Plumbing: Native Device loading / VST/AU/LADSPA/DSSI loading can now change the name of the device and load a specific preset (XML format)
+(Closes https://github.com/esaruoho/paketti/issues/622)
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-18 - esaruoho
+Improvement: When loading the ValhallaDelay AU - it will now boot up with LowCut at 200Hz.
 
 ---
-### 2025-02-xx - esaruoho
+### 2025-02-18 - esaruoho
+Feature: Load Random IR from folder set in Paketti IR Folder Settings in Paketti Preferences This will add a Convolver to the Track if there is no such device, or, modify the current Convolver device with a random IR from user-defined folder.
+(Closes https://github.com/esaruoho/paketti/issues/824)
+![](Screenshots/RandomConvolverSetting.png)
+![](Screenshots/randomConvolverMenu.png)
 
 ---
-
+### 2025-02-18 - esaruoho
+Improvement: Plaid Zap (gift) update: Now has a deactivated DC Offset at the end of the Sample FX Chain, and I've added Autofade / Sinc Interpolation + Oversampling to the last sample, which was missing it.
+(Closes https://github.com/esaruoho/paketti/issues/814)
 
 ---
+### 2025-02-18 - esaruoho
+Feature:  M00/MFF control - this sets the individual Note Column Sample Effect Column, for selected Note Column, to MFF, and the rest to M00 - meaning, the others don't play, but the selected Note Column does play.
+(Closes https://github.com/esaruoho/paketti/issues/766)
+![](Screenshots/M00MFF.png)
+
+---
+### 2025-02-18 - esaruoho
+Improvement: "Hide Current and Select Previous Column" would error out if you try to hide the Effect Column of a Group, Master of Send Track. No longer happens.
+
+---
+### 2025-02-18 - esaruoho
+Improvement: Added a "Notes Only" version for Generate Delay Value, meaning, the Delay Values will be added only to the notes, to fit the note content onto delay, not based on Note Column amount, but based on Note amount.
+![](Screenshots/generatedelayvaluenotes.png)
+
+---
+### 2025-02-19 - esaruoho
+Improvement: When loading the ValhallaShimmer AU - it will now boot up with LowCut at 200Hz.
 
 ---
 # End
