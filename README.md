@@ -7863,6 +7863,25 @@ Improvement: Added a "Notes Only" version for Generate Delay Value, meaning, the
 Improvement: When loading the ValhallaShimmer AU - it will now boot up with LowCut at 200Hz.
 
 ---
+### 2025-02-19 - esaruoho
+Feature: "Duplicate Track & Duplicate Instrument"
+this handles:
+visible note columns, effect columns, visible delay,panning,volume,sample effects columns
+whether instrument external editor is visible or not
+and duplicates the track in mixer, pattern editor or pattern matrix - and selects the new instrument and the new track.
+(Closes https://github.com/esaruoho/paketti/issues/809)
+
+---
+### 2025-02-19 - esaruoho
+Feature: "Save Unused Samples"
+This will save the unused samples as wav and unused instruments as .XRNI. and if the instruments have unused samples, those are saved too.
+(Closes https://github.com/esaruoho/paketti/issues/800)
+
+---
+
+
+
+
 # End
 
 
