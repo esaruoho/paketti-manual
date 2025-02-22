@@ -7878,10 +7878,63 @@ This will save the unused samples as wav and unused instruments as .XRNI. and if
 (Closes https://github.com/esaruoho/paketti/issues/800)
 
 ---
+### 2025-02-20 - esaruoho
+Feature: "Save All Samples to Folder"
+Prompts for a folder and then saves all the samples in the whole song to the folder.
+Added to Sample Navigator, Instrument Box, and Main Menu.
 
+---
+### 2025-02-20 - esaruoho
+Improvement: When loading D16 Repeater, it will now boot up with Mix volume at 0dB (i.e. no reduction), and Left Mix & Right Mix percentage at 15%.
+![](Screenshots/d16_repeater.png)
 
+---
+### 2025-02-21 - esaruoho
+Added "Save Unused Samples" & "Save All Samples" to Main Menu: File:
+![](Screenshots/file_saveunused_saveall.png)
 
+---
+### 2025-02-21 - esaruoho
+Improvement: Added "Analog Filter" (Type,Cutoff,Resonance,Drive) to Midi Mappings. Search for "Selected Track Dev Analog Filter". The idea here is: If you're on a track with an Analog Filter on it, the specific Midi Knobs will change the settings of these specific parameters, no matter where the Analog Filter is.
+EDIT: Also added Inertia, and the "Filter Type" (which required XML injection to work)
+![](Screenshots/midi_analogfilter_.png)
 
+---
+### 2025-02-21 - esaruoho
+Feature: OctaMED Note Echo 
+(Closes [https://github.com/esaruoho/paketti/issues/454](https://github.com/esaruoho/paketti/issues/454 "https://github.com/esaruoho/paketti/issues/454"))
+![](Screenshots/octamed-note-echo.png)
+
+---
+### 2025-02-22 - esaruoho
+Feature: OctaMED NumPad Mute/Unmute Shortcuts
+For tracks 1...16
+https://forum.renoise.com/t/numpad-to-control-track-on-off/13334
+![](Screenshots/octamed-numpad.png)
+
+---
+### 2025-02-22 - esaruoho
+Feature: Dialog DSP Device List with Dropdown Menu
+(Closes https://github.com/esaruoho/paketti/issues/773)
+![](Screenshots/dsp-dropdown01.png)
+![](Screenshots/dsp-dropdown02.png)
+![](Screenshots/dsp-dropdown03.png)
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
 # End
 
 
