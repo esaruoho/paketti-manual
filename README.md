@@ -7923,7 +7923,7 @@ Feature: Dialog DSP Device List with Dropdown Menu
 ---
 ### 2025-02-23 - esaruoho
 Improvement: the "App Selection & Backup Folder" dialog can now be opened and closed with the same shortcut (i.e. the same shortcut no longer opens multiple dialogs), and "OK" will no longer error - instead will close as expected.
-	(Closes https://github.com/esaruoho/paketti/issues/827)
+(Closes https://github.com/esaruoho/paketti/issues/827)
 
 ---
 ### 2025-02-23 - esaruoho
@@ -7998,6 +7998,54 @@ Feature: Write 0Sxx via Midi Mapping to Pattern Selection or Current Row - Modif
 ### 2025-02-25 - esaruoho
 Improvement: Random Slice/Offset now works faster, never hits S00 (always S01 until S(slicecount)), and has a shortcut.
 ![](Screenshots/randomslice.gif)
+
+---
+### 2025-02-25 - esaruoho
+Improvement: Paketti Pattern Editor CheatSheet will now read, on dialog-open, the Max Value to be Slicecount. And if using Randomize, the SliceCount 01-SliceCount will be applied automatically.
+Improvement: "Only Write to Rows with Effects"
+(Addresses https://github.com/esaruoho/paketti/issues/317)
+![](Screenshots/onlywritetorowswitheffects.png)
+
+---
+### 2025-02-25 - esaruoho
+Feature: Insert Mono to each Track (Track, Group, Send, Master)
+![](Screenshots/insertmono.png)
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
 
 ---
 # End
