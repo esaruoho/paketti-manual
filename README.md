@@ -7946,7 +7946,7 @@ Improvement: Paketti Rotate Sample Buffer Fine / Coarse - in the Paketti Prefere
 ### 2025-02-24 - esaruoho
 Improvement: Strip Silence / Move Silence will show the currently selected sample, so you can see what the settings you are making are gonna look like for the example sample.
 (Closes https://github.com/esaruoho/paketti/issues/789)
-![](Screenshot%202025-02-24%20at%2016.41.28.png)
+![](Screenshots/stripsilence_shower.png)
 
 ---
 ### 2025-02-24 - esaruoho
