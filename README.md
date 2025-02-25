@@ -7921,19 +7921,84 @@ Feature: Dialog DSP Device List with Dropdown Menu
 ![](Screenshots/dsp-dropdown03.png)
 
 ---
+### 2025-02-23 - esaruoho
+Improvement: the "App Selection & Backup Folder" dialog can now be opened and closed with the same shortcut (i.e. the same shortcut no longer opens multiple dialogs), and "OK" will no longer error - instead will close as expected.
+	(Closes https://github.com/esaruoho/paketti/issues/827)
+
 ---
+### 2025-02-23 - esaruoho
+Improvement: Paketti Stacker dialog can now be opened and closed with the same dialog, and the same shortcut / Menu Entry no longer opens multiple dialogs.
+
 ---
+### 2025-02-23 - esaruoho
+Feature: Paketti Action List
+This dialog dynamically creates all the Shortcuts / Menu Entries into a dialog with a dropdown menu (50 slots) - so you can boot up the Paketti Action List and pick your favorite Paketti features and click "Run" next to them.
+(Closes https://github.com/esaruoho/paketti/issues/273)
+![](Screenshots/paketti_action_list.png)
+
 ---
+### 2025-02-24 - esaruoho
+Improvement: Paketti Rotate Sample Buffer Fine / Coarse - in the Paketti Preferences Settings
+(Closes https://github.com/esaruoho/paketti/issues/385)
+![](Screenshots/RotateSampleBufferFineCoarseSetting.png)
+
 ---
+### 2025-02-24 - esaruoho
+Improvement: Strip Silence / Move Silence will show the currently selected sample, so you can see what the settings you are making are gonna look like for the example sample.
+(Closes https://github.com/esaruoho/paketti/issues/789)
+![](Screenshot%202025-02-24%20at%2016.41.28.png)
+
 ---
+### 2025-02-24 - esaruoho
+Improvement: Clean Render Selected Group/Track now introduces DC Offset - if chosen from Paketti Preferences. It is added to the Group or the Track, and then removed post-render.
+(Closes https://github.com/esaruoho/paketti/issues/469)
+![](Screenshots/RenderDCOffset.png)
+
 ---
+### 2025-02-24 - esaruoho
+Improvement: The Clean Render Selected Group/Track will now also unmute all the tracks, when rendering a Group, instead of leaving "the rest of the tracks" muted.
+(Closes https://github.com/esaruoho/paketti/issues/828)
+
 ---
+### 2025-02-24 - esaruoho
+Improvement: Phrase Follow Pattern Hack **V3.5 Only** now fully integrated to `Record+Follow Toggle` so if you are in Phrase Editor, pressing the shortcut will start following the Pattern Editor while in the Phrase Editor. If elsewhere, kicks the user to the Pattern Editor.
+
 ---
+### 2025-02-25 - esaruoho
+Improvement: Added "Width" to mpReverb2 MIDI controls
+![](Screenshots/mpreverb-width.png)
+
 ---
+### 2025-02-25 - esaruoho
+Improvement: Added Phaser 2 parameters for `Selected Track Dev` - Ceiling, Depth, Feedback, Floor, Rate, Stages
+![](Screenshots/SelectedTrackDev_Phaser.png)
+
 ---
+### 2025-02-25 - esaruoho
+Improvement: Added LofiMat 2 parameters for `Selected Track Dev` - Bit Crunch, Dry Mix, Noise, Rate, Wet Mix
+![](Screenshots/lofimat-selected-track-dev.png)
+
 ---
+### 2025-02-25 - esaruoho
+Improvement: Added Delay parameters for `Selected Track Dev` - L Delay, L Feedb., L Sync Time, R Delay, R Feedb., R Sync Time, Send
+![](Screenshots/delay-midi.png)
+
 ---
+### 2025-02-25 - esaruoho
+Feature: Write ZLxx via Midi Mapping to Pattern Selection or Current Row.
+(Closes https://github.com/esaruoho/paketti/issues/795)
+![](Screenshots/midi_lpb_write_v3.gif)
+
 ---
+### 2025-02-25 - esaruoho
+Feature: Write 0Sxx via Midi Mapping to Pattern Selection or Current Row - Modifies to Slices 0...127 if Slices exist, otherwise stays at S00 to SFF.
+![](Screenshots/write_0sxx_slices.png)
+
+---
+### 2025-02-25 - esaruoho
+Improvement: Random Slice/Offset now works faster, never hits S00 (always S01 until S(slicecount)), and has a shortcut.
+![](Screenshots/randomslice.gif)
+
 ---
 # End
 
