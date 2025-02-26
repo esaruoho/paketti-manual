@@ -16,6 +16,7 @@
  8. [Old About](#old-about)
  9. [Old Indexes](#index)
  10. [Changeslog](#changeslog)
+ 11. [End](#end)
 
 ## What is Paketti
 
@@ -8012,7 +8013,15 @@ Feature: Insert Mono to each Track (Track, Group, Send, Master)
 ![](Screenshots/insertmono.png)
 
 ---
+### 2025-02-25 - esaruoho
+Feature: Set All Tracks Hard Left / Hard Right
+![](Screenshots/panning_hard_left_hard_right.png)
+
 ---
+###2025-02-25 - esaruoho
+Improvement: Paketti Pattern Effect Command Cheatsheet now has a "Rows with Notes Only" for Randomize
+![](Screenshots/Cheatsheet_Notes_Only.png)
+
 ---
 ---
 ---
@@ -8050,7 +8059,12 @@ Feature: Insert Mono to each Track (Track, Group, Send, Master)
 ---
 # End
 
-
-
 You are right at the end of this manual now. Welcome!
 
+If you liked what you saw, please consider supporting
+- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
+- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
+- Send me a donation via [PayPal](http://paypal.me/esaruoho). 
+- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
+- Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
+- Buy my music at [Bandcamp](http://lackluster.bandcamp.com/).
