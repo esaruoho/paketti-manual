@@ -8029,6 +8029,13 @@ Improvement: 0G00/0D00 & 0G00/0U00 will no longer overwrite the 2nd row Dxx or U
 (Closes https://github.com/esaruoho/paketti/issues/839)
 
 ---
+### 2025-02-27 - esaruoho
+Improvement: Paketti Gater respects the step valueboxes correctly again, fixing a regression.
+Improvement: Paketti Gater does not wipe Retrig column content, if Receiving from Playback.
+Improvement: Paketti Gater now auto-receives current track content when opening the Dialog.
+(Closes https://github.com/esaruoho/paketti/issues/838 & 
+https://github.com/esaruoho/paketti/issues/837)
+
 ---
 ---
 ---
