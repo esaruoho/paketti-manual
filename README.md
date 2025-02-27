@@ -6106,6 +6106,7 @@ Plumbing: "Load Devices" now writes to the correct preferences file, not a secon
 
 Plumbing: Dynamic Views are no longer overwritten when being given local builds - you just gotta save your current dynamic views, and load them in after reinstalling new Paketti version - this should now help.
 
+---
 ### 2024-11-26 - esaruoho
 
 Feature: Automation Selection Flood Fill. 
@@ -8018,11 +8019,15 @@ Feature: Set All Tracks Hard Left / Hard Right
 ![](Screenshots/panning_hard_left_hard_right.png)
 
 ---
-###2025-02-25 - esaruoho
+### 2025-02-25 - esaruoho
 Improvement: Paketti Pattern Effect Command Cheatsheet now has a "Rows with Notes Only" for Randomize
 ![](Screenshots/Cheatsheet_Notes_Only.png)
 
 ---
+### 2025-02-27 - esaruoho
+Improvement: 0G00/0D00 & 0G00/0U00 will no longer overwrite the 2nd row Dxx or Uxx effect value.
+(Closes https://github.com/esaruoho/paketti/issues/839)
+
 ---
 ---
 ---
