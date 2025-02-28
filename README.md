@@ -8065,7 +8065,12 @@ This will write to the current Track. Perfect for checking out "Random DrumKit L
 ![](Screenshots/write%20notes%20fill.png)
 
 ---
+### 2025-02-28 - esaruoho
+Feature: "Show All Instrument Properties" / "Hide All Instrument Properties" **V3.5 Only**
+(Closes https://github.com/esaruoho/paketti/issues/833)
+
 ---
+
 ---
 ---
 ---
