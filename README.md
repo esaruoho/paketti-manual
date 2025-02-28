@@ -7994,6 +7994,7 @@ Feature: Write ZLxx via Midi Mapping to Pattern Selection or Current Row.
 ---
 ### 2025-02-25 - esaruoho
 Feature: Write 0Sxx via Midi Mapping to Pattern Selection or Current Row - Modifies to Slices 0...127 if Slices exist, otherwise stays at S00 to SFF.
+
 ![](Screenshots/write_0sxx_slices.png)
 
 ---
@@ -8037,8 +8038,32 @@ Improvement: Paketti Gater now auto-receives current track content when opening 
 https://github.com/esaruoho/paketti/issues/837)
 
 ---
+### 2025-02-28 - esaruoho
+Improvement: Paketti Volume/Delay/Pan Slider Controls Dialog will now
+- Automatically grab the Volume/Delay/Pan information and update the sliders
+- Automatically write the Slider changes without needing a Print
+- Has a `<<` and `>>` for Global use
+(Closes https://github.com/esaruoho/paketti/issues/836 & https://github.com/esaruoho/paketti/issues/835)
+![](Screenshots/vpd.png)
+
 ---
+### 2025-02-28 - esaruoho
+Improvement: Paketti Gater Optimizations
+- Introduced `<<` and `>>` for Global Moving
+- Introduced "Global Randomize" for randomizing all the four different Gaters
+- Introduced "Global Clear" for clearing all the four different Gaters.
+- `<` and `>` rotation of individual Gaters are noticeably faster
+- "Clear" Gaters are now noticeably faster
+- "Random" Gaters are now noticeably faster
+- "Auto-Grab" will now grab the track's contents and update accordingly.
+
 ---
+### 2025-02-28 - esaruoho
+Feature: Write Notes Ascending / Descending / Random
+This will write to the current Track. Perfect for checking out "Random DrumKit Loader" for instance.
+(Closes https://github.com/esaruoho/paketti/issues/834)
+![](Screenshots/write%20notes%20fill.png)
+
 ---
 ---
 ---
