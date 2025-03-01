@@ -8070,12 +8070,41 @@ Feature: "Show All Instrument Properties" / "Hide All Instrument Properties" **V
 (Closes https://github.com/esaruoho/paketti/issues/833)
 
 ---
+### 2025-03-01 - esaruoho
+Improvement: The Paketti PitchBend Drumkit Sample Loader (Random) is now fully random.
 
 ---
+### 2025-03-01 - esaruoho
+Improvement: "Move Beginning Silence to End of All Samples" used to ruin the keymappings. Now it no longer does so. Also optimized the speed of it so it first detects minimum 50 frames of silence, and only out of those, moves the Beginning Silence to the End.
+![](Screenshots/deteted_moved.png)
+
 ---
+### 2025-03-01 - esaruoho
+Feature: "Save Unused Instruments (.XRNI)" Saves Unused Instruments to a user-specified folder in XRNI format.
+![](Screenshots/saveunusedxrni.png)
+
 ---
+### 2025-03-01 - esaruoho
+Feature: Show Largest Samples (Top 30)
+![](Screenshots/showlargestsamples.png)
+
 ---
+### 2025-03-01 - esaruoho
+Improvement: Write Notes Ascending/Descending/Random now only write the notes that exist in the sample mapping, instead of C-0 to B-9 even though no samples from "last sample of instrument" onwards till B-9.
+Also reports in Status bar how many were written and what the last row is.
+
 ---
+### 2025-03-01 - esaruoho
+Improvement: Added "Hide All Effect Columns" to Main Menu:Tools:Paketti..:Pattern Editor..:Visible Columns..
+and Main Menu:View:Visible Columns..
+![](Screenshots/hidealleffect_menu.png)
+
+---
+### 2025-03-02 - esaruoho
+Feature: Toggle Sample Selection Info
+This shows the samples/frame count and the millisecond count of the selection in the Sample Editor.
+![](Screenshots/selection_frame-ms.gif)
+
 ---
 ---
 ---
