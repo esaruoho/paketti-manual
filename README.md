@@ -8106,6 +8106,10 @@ This shows the samples/frame count and the millisecond count of the selection in
 ![](Screenshots/selection_frame-ms.gif)
 
 ---
+### 2025-03-02 - esaruoho
+Improvement: Unison Generator will now retain Phrases
+Improvement: Pakettify Instrument will now retain Phrases, and remove the last "Placeholder sample" slot from the Instrument.
+(Closes https://github.com/esaruoho/paketti/issues/843 &)
 ---
 ---
 ---
