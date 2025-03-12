@@ -8116,25 +8116,186 @@ Improvement: Pakettify Instrument will now retain Phrases, and remove the last "
 Improvement: Toggle Sample Selection Info now also shows beats and divisions
 ![](Screenshots/sampleselectioninfo_v2.png)
 
+---
+### 2025-03-03 - esaruoho
+Improvement: Tweaked the Sample Editor Menu Entries for better discoverability
+![](Screenshots/sample_editor_menu_entries.png)
 
 ---
+### 2025-03-03 - esaruoho
+Feature: Delete Unused Instruments
+![](Screenshots/unused_instrument_delete.png)
+
 ---
+### 2025-03-03 - esaruoho
+Feature: Delete Unused Samples
+This will delete Instruments that aren't in use, but also samples that aren't in use in drumkit instruments, and if you have a velocity mapped instrument, the unused velocity samples will be deleted.
+![](Screenshots/unusedsamp_01.png)
+![](Screenshots/unusedsamp_02.png)
+![](Screenshots/unusedsamp_03.png)
+
 ---
+### 2025-03-03 - esaruoho
+Feature: Find Free KeyBindings
+(Closes https://github.com/esaruoho/paketti/issues/309)
+![](Screenshots/findfreekeybindings.png)
+
 ---
+### 2025-03-04 - esaruoho
+Improvement: Largest Sample Finder now has a method for showing which samples are not used, and a button for removing the Unused Samples with a single button.
+![](Screenshots/sample_largest_samples.jpeg)
+
 ---
+### 2025-03-04 - esaruoho
+Feature: Shortcut that detects where the LFO is, and modifies the Shape:
+![](Screenshots/lfo-shape-changer.png)
+![](Screenshots/lfoshapechanger.gif)
+
 ---
+### 2025-03-04 - esaruoho
+Feature: Rename Tracks by Played Samples
+This takes the tracks that have notes in them, and reads which samples are in use on the notes, and names the tracks accordingly.
+(Closes https://github.com/esaruoho/paketti/issues/845)
+![](Screenshots/renametracks01.png)
+![](Screenshots/renametracks02.png)
+
 ---
+### 2025-03-05 - esaruoho
+Feature: Sample Loop Have / Sample Loop Double
+![](Screenshots/sampleloopdouble_halve.png)
+
 ---
+### 2025-03-05 - esaruoho
+Improvement: "Create Group and Move DSPs" will now reliably retain the minimized state of devices.
+
 ---
+### 2025-03-05 - esaruoho
+Improvement: Replicate at Cursor in Phrase **V3.5 Only**
+(Closes https://github.com/esaruoho/paketti/issues/844)
+
 ---
+### 2025-03-05 - esaruoho
+Improvement: Phrase Follow Pattern Hack should now be able to follow 512 rows of a phrase with triggers coming from a 64 row pattern.  **V3.5 Only**
+(Closes https://github.com/esaruoho/paketti/issues/846)
+
 ---
+### 2025-03-06 - esaruoho
+Improvement: Inspect Selected Device (Debug -> Terminal)
+This will output the parameter names, and the values, of each of the parameters of the selected device, to the Terminal.
+
 ---
+### 2025-03-06 - esaruoho
+Improvement: Renoise Native Repeater with Hold Off
+(Closes https://github.com/esaruoho/paketti/issues/569)
+![](Screenshots/repeaterholdoff.png)
+
 ---
+### 2025-03-06 - esaruoho
+Feature: Dialog Close Key
+(Closes https://github.com/esaruoho/paketti/issues/519)
+![](Screenshots/keyclosedialog.png)
+
 ---
+### 2025-03-07 - esaruoho
+Feature: Midi Knob for Selected Phrase LPB control (1...127), 1-64, powers of 2.
+![](Screenshots/selected_phrase_LPB_Control.png)
+
 ---
+### 2025-03-08 - esaruoho
+Improvement: Dialog Close Key no longer has `Shift` but instead `Dontdonothing` - which will make sure that nothing ever closes the dialog, no keypress, that is.
+
 ---
+### 2025-03-08 - esaruoho
+Improvement: I've added Paketti TimeStretch, Automation Value Dialog, Set EditStep&Enter, Global Instrument / Sample Volume Adjustment to follow keyhandlers and therefore Dialog Close Key.
+
 ---
+### 2025-03-08 - esaruoho
+Improvement: Re-wrote the Formula "Manual", included some forum links where there is discussion of the device, and added Inertial slider + Spring Slider and a Placeholder for another.
+![](Screenshots/formulamanual.png)
+
 ---
+### 2025-03-08 - esaruoho
+Improvement: Updated the Formula Device Manual with more functions from the Help
+![](Screenshots/formuladevice_v2.png)
+
+---
+### 2025-03-09 - esaruoho
+Improvement: Added a brand new Formula Device to the Formula Device Manual, it's called "Playcount/Silentcount/Tremolo" - It will let the current track play audio for a specific amount of Beats, and then be silent for a specific amount of Beats. You can also use the C-slider to switch it to an experimental Tremolo mode.
+<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/0926f554443b4e18bf4309bee1df942d?sid=78891081-6fd5-460e-9696-aeac13c505a8" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
+---
+### 2025-03-09 - esaruoho
+Improvement: Added "Input Inertia" Formula Device preset as Shortcut + Menu Entry for Main Menu & Mixer.
+![](Screenshots/formula_device_input_inertia.png)
+
+---
+### 2025-03-09 - esaruoho
+Improvement: Tweaked "Play/Silent/Tremolo" device to automatically hook up to Mixer Volume so it's ready to go.
+![](Screenshots/formuladevice_playsilenttremolo_v2.png)
+
+---
+### 2025-03-09 - esaruoho
+Improvement: Modified the Formula Device Dialog so it is less wide
+![](Screenshots/formula-device-width-removal.png)
+
+---
+### 2025-03-10 - esaruoho
+Improvement: Added Wipe&Slice 256 slices since FF is the maximum.
+
+---
+### 2025-03-10 - esaruoho
+Improvement: Added Formula "Presets" such as:
+"Input Line Quantize" (by danoise, originally), "LFO Beat Sync", "LFO Chaotic", "Mixer Equal Weight" to Formula Dialog presets
+Improvement: Made the correct amount of sliders visible in the Mixer View
+![](Screenshots/formuladevice_mixershow.gif)
+
+
+---
+### 2025-03-11 - esaruoho
+Improvement: Added more Formula "Presets" such as: `kRAkEn/gORe The Stepper`, `Cas Super Formula` , `Martblek Lorenz LFO`, `Bit_Arts Meta Modulator`,  `Cas Sample & Hold`. and `Afta8 Slew Limiter`
+![](Screenshots/formuladevice_presets_v3.png)
+
+
+---
+### 2025-03-12 - esaruoho
+Improvement: Added "Paketti Fadeout (Instant)" & "Paketti Fadeout (Manual)" to Formula Device Manual.
+<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/a40199c9d7914fc88093ccb81ffe7be9?sid=fc17bfb5-e499-4421-9d4b-2e08d5fed46d" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ---
 
 ---
