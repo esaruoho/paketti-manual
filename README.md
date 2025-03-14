@@ -6832,10 +6832,12 @@ Improvement: tweaked all Clean Render menu entries to be inside `Pattern Editor.
 
 Feature: Normalize Slices Independently
 (apparently this was a feature in Propellerheads ReCycle - aka Normalize Each Slice)
-![](attachments/2025-01-07_image.png)
+Before:
+
+![](Screenshots/normalize_slices_independently_before.png)
+After:
 
 ![](attachments/2025-01-07_image.png)
-
 
 ---
 ### 2025-01-08 - esaruoho
@@ -6960,7 +6962,6 @@ for recording max 12 new instruments per track, and auto-inputs the instrument a
 i've got two more improvements for this on my todo-list, after which it's video-time.
 ![](attachments/2025-01-14_Screenshot_2025-01-15_at_0.27.11.png)
 
-
 ---
 ### 2025-01-15 - esaruoho
 
@@ -6968,8 +6969,6 @@ Improvement: Overdub now has a 12 note column per track and 1 note column per tr
 so one instrument per track, or 12 instruments per track.
 (Closes https://github.com/esaruoho/paketti/issues/769)
 ![](attachments/2025-01-15_Screenshot_2025-01-15_at_8.57.36.png)
-
-
 
 ---
 ### 2025-01-15 - esaruoho
@@ -6982,7 +6981,6 @@ and also cuts the sample by 3500frames so that it definitely loops
 
 Feature: Tempo Calculator for IT2/ST3/Schism etc stuff
 ![](attachments/2025-01-16_tempocalc.gif)
-
 
 ---
 ### 2025-01-17 - esaruoho
@@ -7148,7 +7146,6 @@ Feature: Realign Samples
 Closes https://github.com/esaruoho/paketti/issues/650
 this is a menu entry that adds some extra spaces to match the "Chain" icon for better readability
 ![](attachments/2025-01-24_Screenshot_2025-01-24_at_16.50.59.png)
-
 
 ---
 ### 2025-01-24 - esaruoho
@@ -7452,7 +7449,6 @@ if the notes in the selection already have 0B00, then the 0B00 is removed.
 (Closes https://github.com/esaruoho/paketti/issues/807)
 ![](attachments/2025-02-07_Screenshot_2025-02-07_at_22.47.48.png)
 
-
 ---
 ### 2025-02-07 - esaruoho
 
@@ -7710,7 +7706,7 @@ Improvement: OctaMED Pick/Put Dialog now reads Selection in Pattern in Selected 
 ### 2025-02-14 - esaruoho
 Feature: Cycle Chord Inversion Down / Up
 This will take either current row, or selection in Pattern, and modify, per each row, the lowest note to be lifted an octave higher - and then re-organizes the notes by ascending order (lowest first, highest last) 
-![](inversion_try_v2.gif)
+![](Screenshots/inversion_try_v2.gif)
 
 ---
 ### 2025-02-15 - esaruoho
@@ -7752,6 +7748,7 @@ To make this more sensible, I've added "Expand + Flood Fill" & "Shrink + Flood F
 This enables you to scretch valid loops into little pieces and have them tick tick tick tick through the pattern.
 ![](Screenshots/pakettiStacker.png)
 Give it a try.
+
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/00fbe479717044cfb96dd8abdd60ef8a?sid=b92dc5b0-a9f8-4cfa-88b8-bd67afea0e7c" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ---
@@ -8240,6 +8237,13 @@ Improvement: Modified the Formula Device Dialog so it is less wide
 ![](Screenshots/formula-device-width-removal.png)
 
 ---
+### 2025-03-09 - esaruoho
+Improvement: Added "Input Inertia" shortcut.
+(Closes [https://github.com/esaruoho/paketti/issues/848](https://github.com/esaruoho/paketti/issues/848 "https://github.com/esaruoho/paketti/issues/848"))
+
+![](Screenshots/formula_inputinertiashortcut.png)
+
+---
 ### 2025-03-10 - esaruoho
 Improvement: Added Wipe&Slice 256 slices since FF is the maximum.
 
@@ -8260,17 +8264,48 @@ Improvement: Added more Formula "Presets" such as: `kRAkEn/gORe The Stepper`, `C
 ---
 ### 2025-03-12 - esaruoho
 Improvement: Added "Paketti Fadeout (Instant)" & "Paketti Fadeout (Manual)" to Formula Device Manual.
+(Closes https://github.com/esaruoho/paketti/issues/849)
+![](Screenshots/pakettifadeout.png)
+
 <div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/a40199c9d7914fc88093ccb81ffe7be9?sid=fc17bfb5-e499-4421-9d4b-2e08d5fed46d" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
----
 
 ---
+### 2025-03-13 - esaruoho
+Feature: LFO Automation Parameter Writer WIP
+This takes a specific LFO which is modulated by another LFO's Amp+Freq settings, and writes the LFO Amp to the selected automation parameter.
+![](Screenshots/lfo-automation-writer-shortcut.png)
+![](Screenshots/lfo-automation-write_20fps.gif)
+<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/17b18654e56742a794e3975b4517a0bc?sid=a6f6db2c-7e9a-4031-8cfb-0ecc9f45feea" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ---
+### 2025-03-13 - esaruoho
+Improvement: Fixed the GitHub Release pipelines + tagging + local deployment for easier Paketti Releases at http://github.com/esaruoho/paketti/releases
 
 ---
+### 2025-03-13 - esaruoho
+Feature: LFO Write to Effect Column
+This will create a LFO, patch it to another LFO, make the required elements visible in the Master Track, and let you write to the currently selected track's effect column.
+There are S00, Y00, R00, U00, D00, G00 flavors and a 00 flavor that doesn't write anything to the Effect Number, only to the Effect Value.
+![](Screenshots/lfo_write_effect_column.png)
+![](Screenshots/lfo_writer_effect.png)
 
 ---
+### 2025-03-14 - esaruoho
+Improvement: Added "Toggle Note Off on All Tracks in current row / Selected track / Selected Column" to MidiMappings as buttons.
+Improvement: Added "KapsLock Note Off (With Step / Without Step)" to Midi Mappings as buttons.
+![](Screenshots/noteoff_midi_mappings.png)
+
+
+---
+### 2025-03-14 - esaruoho
+Improvement: Renamed all of the LFO Write -specific hack tools into `LFO Write` for easier discoverability.
+![](Screenshots/lfo_write_new_shortcut_namings.png)
+
+---
+### 2025-03-14 - esaruoho
+Improvement: Wipe/Clear/Delete Row, Current Note Column, Current Note Column with EditStep, and Current Row and Current Row without EditStep now available as Midi Mappings and as Shortcuts, and have been renamed to match the format.
+![](Screenshots/delete-clear-wipe-all-4-flavors.png)
 
 ---
 
