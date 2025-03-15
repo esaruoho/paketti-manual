@@ -8308,10 +8308,22 @@ Improvement: Wipe/Clear/Delete Row, Current Note Column, Current Note Column wit
 ![](Screenshots/delete-clear-wipe-all-4-flavors.png)
 
 ---
+### 2025-03-15 - esaruoho
+Improvement: LFO Writer Delete/Keep Preference added to Paketti Preferences - this will keep the devices existing, or delete them, if so desired.
+![](Screenshots/lfowriter_preferences.png)
 
 ---
+### 2025-03-15 - esaruoho
+Improvement: LFO Writer Single Parameter Write to Automation - Initializes a singular LFO device, which's Amplitude directly writes to a selected automation parameter. This for those who don't have a midicontroller available, or desire to just quickly draw some automation.
+![](Screenshots/single_lfo_writer.gif)
 
 ---
+### 2025-03-15 - esaruoho
+Improvement: LFO Writer for Selected Phrase LPB - this modifies the LPB of the selected phrase - allowing for, well, madness. Enjoy.
+
+---
+### 2025-03-15 - esaruoho
+Improvement: Separated LFO Writer Single Parameter from the trio of "LFO Writer for Selected Phrase LPB", "LFO Writer for Automation Parameter" and "LFO for Effect Column" so these two flavors can peacefully coexist.
 
 ---
 
