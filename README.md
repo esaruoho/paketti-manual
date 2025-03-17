@@ -8326,6 +8326,10 @@ Improvement: LFO Writer for Selected Phrase LPB - this modifies the LPB of the s
 Improvement: Separated LFO Writer Single Parameter from the trio of "LFO Writer for Selected Phrase LPB", "LFO Writer for Automation Parameter" and "LFO for Effect Column" so these two flavors can peacefully coexist.
 
 ---
+### 2025-03-16 - esaruoho
+Feature: Paketti .XRNS Probe
+This will show the Midi Input, Midi Output, Plugin, Sample, Sample FX Chain, Track Devices of the currently open track. You can also save it as a textfile.
+![](Screenshots/xrnsprobe.png)
 
 ---
 
