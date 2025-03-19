@@ -20,15 +20,15 @@
 
 ## What is Paketti
 
-Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 4100 shortcuts, hundreds of menu entries and midimappings and close to 40 dialogs.
+Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 5100 shortcuts, over a thousand menu entries and hundreds and hundreds of midi mappings and over 45 dialogs.
 
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
 Paketti introduces features from:
 - the famed C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
-- the legendary OctaMED by Teijo Kinnunen.
-- the awesome Impulse Tracker by Jeffrey Lim.
-- OpenMPT/MadTracker..
+- the legendary OctaMED by Teijo Kinnunen on the one and only Amiga.
+- the awesome Impulse Tracker by Jeffrey Lim, running on DOS.
+- OpenMPT/MadTracker, Windows..
 - and..
 - PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
@@ -49,8 +49,8 @@ Paketti introduces features from:
 ## Where to say things about Paketti
 
 - Join the [Paketti Discord](https://discord.gg/Qex7k5j4wG)
-- Leave issues here on [GitHub](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues)
-- Hit the mostly dead [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-paketti-now-compatible-with-renoise-v3-v3-4-4/35848)
+- Leave issues here on [GitHub](https://github.com/esaruoho/paketti/issues)
+- Hit the mostly inactive [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-3-4-paketti-a-suite-of-scripts-for-automation-sample-editor-midi-pattern-editor-phrase-editor-mixer/35848)
 
 # How to Support
 
@@ -66,7 +66,7 @@ You can
 
 Take a look at the open tickets on GitHub at [this link](http://github.com/esaruoho/paketti/issues). I have also filtered through the 7361 Renoise Forum posts in the subforum `Ideas and Suggestions` ( From 2002 to 2024 ), and have picked over a thousand of them for being scripted. 
 
-I'm also constantly and consistently doing 1-on-1 calls with people to find out what hinders their workflow, what would boost their quality-of-life (QoL) using Renoise, and what they wish Renoise had - based on what other trackers have.
+I'm also constantly and consistently doing 1-on-1 calls with people to find out what hinders their workflow, what would boost their quality-of-life (QoL) using Renoise, and what they wish Renoise had - based on what other trackers have, or their own experiences with using trackers.
 
 Whenever there's a new API version, I snoop through all the functions to see if I can reopen old closed tickets (**BlockedByAPI** label which I use on my GitHub - [check here](https://github.com/esaruoho/paketti/issues?q=is%3Aissue_label%3AblockedByAPI)) and re-do them.
 
@@ -75,7 +75,7 @@ I'm also doing the same thing for the Renoise subforum `Beginners Questions` and
 The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised feature request.
 
 *Please note:*
-If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or leave an issue, so I'll focus on that.
+If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or [leave an issue](http://github.com/esaruoho/issues/new), so I'll focus on that.
 
 So to repeat, I'm adding features people have requested over the past 23 years, I'm adding features from other trackers, and also tweaking abandoned tools and making them work again, but the Paketti way, and adding them into Paketti.
 
@@ -8332,16 +8332,33 @@ This will show the Midi Input, Midi Output, Plugin, Sample, Sample FX Chain, Tra
 ![](Screenshots/xrnsprobe.png)
 
 ---
+### 2025-03-17 - esaruoho
+Improvement: "Query Missing Device Parameters"
+This Menu Entry & Shortcut will show you the Device Parameters for a missing Device. They are outputted to the Scripting Terminal & Editor, and formatted so that they're ready to be pasted to the next Device you select, which might or might not be 100% compatible.
+![](Screenshots/query_missing.png)
 
 ---
+### 2025-03-17 - esaruoho
+Improvement: Legacy plugin OhmForce Hematohm will now initialize with 50% mix and phase 0.00 instead of auto-pitched.
+Improvement: Legacy plugin OhmForce Predatohm will now initialize without full-on blast of distortion, instead allowing you to dial in the dial in the distortion you want.
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Renamed Paketti PitchBend instrument + drumkit "GlideInertia" Knob/Device to "PB Inertia" for better discoverability.
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Organized Instrument Box Menu Entries for better discoverability
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Random AKWF Wavetable now works even without a loop (the whole sample becomes a loop instead of doing nothing), and the Sample + Instrument names are correctly set.
+![](Screenshots/akwf_wavetable_name.png)
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Reinstated Paketti Default Instrument & Drumkit choosers
+![](Screenshots/pakettidefaultinstrument_reinstatement.png)
 
 ---
 
