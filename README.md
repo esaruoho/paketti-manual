@@ -8361,10 +8361,41 @@ Improvement: Reinstated Paketti Default Instrument & Drumkit choosers
 ![](Screenshots/pakettidefaultinstrument_reinstatement.png)
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Lots of Windows Paketti Default XRNI / Drumkit tweaks to make them load reliably.
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: All "Chordsplus" shortcuts + menu entries re-titled as "ChordsPlus"
 
 ---
+### 2025-03-19 - esaruoho
+Improvement: Single LFO Writer & LFO Writer to Selected Automation Parameter both move you to Mixer & Automation frames.
+
+---
+### 2025-03-19 - esaruoho
+Improvement: Fixed the LFO Write Device Delete Off/On setting to work again.
+
+---
+### 2025-03-19 - esaruoho
+Feature: Explode Notes to New Tracks
+(Closes https://github.com/esaruoho/paketti/issues/852)
+![](Screenshots/explode-notes-to-new-tracks.png)
+
+---
+### 2025-03-19 - esaruoho
+Feature: Find Note (Next/Previous) (Track/Pattern)
+(Closes https://github.com/esaruoho/paketti/issues/831)
+![](Screenshots/goto_note.gif)
+
+---
+### 2025-03-19 - esaruoho
+Improvement: Random AKWF Wavetable Loader now has a Paketti PitchBend Default Instrument ingested.
+![](Screenshots/akwf_random_defaultxrni.png)
+
+---
+### 2025-03-20 - esaruoho
+Improvement: Hide Notepad load shortcut from nonv3.5 Renoise.
 
 ---
 # End
