@@ -8398,6 +8398,92 @@ Improvement: Random AKWF Wavetable Loader now has a Paketti PitchBend Default In
 Improvement: Hide Notepad load shortcut from nonv3.5 Renoise.
 
 ---
+### 2025-03-21 - esaruoho
+Improvement: Added more AKWF Loader content to the Instrument Box Context Menu
+![](Screenshot%202025-03-21%20at%2022.58.03.png)
+
+---
+### 2025-03-21 - esaruoho
+Improvement: Load Random AKWF Samples features now obey the Paketti Loader settings, so if you have Autofade set to On, and Oversampling set to On, and Interpolation sent to Sinc (or anything) - the samples you load will also have the same settings.
+
+---
+### 2025-03-21 - esaruoho
+Improvement: AutoFade -> Autofade everywhere.
+Improvement: Beatsync -> BeatSync everywhere.
+This might mean that you need to re-bind some shortcuts.
+
+---
+### 2025-03-22 - esaruoho
+Improvement: Capture Nearest Instrument & Octave (jump) will now jump from Pattern Editor to Phrase Editor and then back to Pattern Editor - if a Phrase exists. If you are in the Sample Editor, and there are no notes on the Selected Track, the same shortcut will jump you to Phrase Editor, and then back to Pattern Editor.
+
+---
+### 2025-03-22 - esaruoho
+Improvement: Random AKWF & Random AKWF Wavetable Loaders will now also apply the same 
+"Minor flurry" randomized PitchStep each time you load an AKWF.
+![](Screenshots/akwf_minor_flurry.png)
+
+---
+### 2025-03-22 - esaruoho
+Improvement: Selection in Pattern Matrix to Group now works as expected.
+(Fixes https://github.com/esaruoho/paketti/issues/853 & https://github.com/esaruoho/paketti/issues/752)
+
+---
+### 2025-03-22 - esaruoho
+Feature: Fill Empty Sample Slots (Random)
+This will read the current instrument's empty note ranges and fill them with randomly selected samples - prompting the user for a folder.
+Before/After:
+![](Screenshots/fill_empty_sample_slots_before.png)
+![](Screenshots/fill_empty_sample_slots_after.png)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
