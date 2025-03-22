@@ -8436,10 +8436,16 @@ Before/After:
 ![](Screenshots/fill_empty_sample_slots_after.png)
 
 ---
+### 2025-03-22 - esaruoho
+Improvement: Delete Unused Samples will now reliably delete the correct amount of unused samples and not wreck the sample mapping order.
 
 ---
+### 2025-03-22 - esaruoho
+Improvement: Record+Follow Toggle will now automatically detect if you're not-in Pattern Editor, and send you to Pattern Editor with Record = On and Follow = On.
 
 ---
+### 2025-03-22 - esaruoho
+Feature: Flip Device 1&2 On/Off - if Device1=On, Device2=Off, then it'll flip their active state. If both devices are on, Dev2 will be flipped Off. If both devices are off, Dev1, will be flipped On.
 
 ---
 
