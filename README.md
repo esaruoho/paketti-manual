@@ -8482,12 +8482,22 @@ Feature: Paketti Preferences setting for Load Device First or Last
 ![](Screenshots/PakettiLoaderFirstOrLast.png)
 
 ---
+### 2025-03-26 - esaruoho
+Feature: Snapshot Device Parameters to Automation
 
 ---
+### 2025-03-26 - esaruoho
+Feature: FX Column Device Parameter Automation to Automation
 
 ---
+### 2025-03-26 - esaruoho
+Improvement: Automation Format settings for FX Column + Snapshot, Lines, Points, Curves.
+![](Screenshots/Automation_Points_Lines_Curves_Writing.png)
 
 ---
+### 2025-03-26 - esaruoho
+Improvement: Automation Wipe after Switch setting: Keep / Clear
+![](Screenshots/automationwipe-or-keep.png)
 
 ---
 
