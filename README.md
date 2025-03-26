@@ -8400,7 +8400,7 @@ Improvement: Hide Notepad load shortcut from nonv3.5 Renoise.
 ---
 ### 2025-03-21 - esaruoho
 Improvement: Added more AKWF Loader content to the Instrument Box Context Menu
-![](Screenshot%202025-03-21%20at%2022.58.03.png)
+![](Screenshots/instrument_box_akwf_improvements.png)
 
 ---
 ### 2025-03-21 - esaruoho
@@ -8429,7 +8429,7 @@ Improvement: Selection in Pattern Matrix to Group now works as expected.
 
 ---
 ### 2025-03-22 - esaruoho
-Feature: Fill Empty Sample Slots (Random)
+Feature: Fill Empty Sample Slots (Randomized Folder)
 This will read the current instrument's empty note ranges and fill them with randomly selected samples - prompting the user for a folder.
 Before/After:
 ![](Screenshots/fill_empty_sample_slots_before.png)
@@ -8448,18 +8448,38 @@ Improvement: Record+Follow Toggle will now automatically detect if you're not-in
 Feature: Flip Device 1&2 On/Off - if Device1=On, Device2=Off, then it'll flip their active state. If both devices are on, Dev2 will be flipped Off. If both devices are off, Dev1, will be flipped On.
 
 ---
+### 2025-03-23 - esaruoho
+Improvement: Flip Gainers A/B shortcut
+This will simply switch Gainer A to -INF and Gainer B to 0.0dB - and if run again, it'll switch B to -INF and A to 0.0dB.
+So no longer will your Gainer devices hit maximum volume (too loud).
 
 ---
+### 2025-03-23 - esaruoho
+Improvement: Gainer Crossfade A/B MidiMapping now also maps between -INF and 0.0dB, instead of -INF + max.
 
 ---
+### 2025-03-23 - esaruoho
+Improvement: Fill Empty Sample Slots (Randomized Folder) now available as a shortcut too.
 
 ---
+### 2025-03-23 - esaruoho
+Improvement: Replicate Note Column at Cursor added
+![](Screenshots/replicate_note_column.png)
 
 ---
+### 2025-03-24 - esaruoho
+Improvement: Added "Delete Unused Samples..." to Sample Navigator + Sample Mappings.
 
 ---
+### 2025-03-25 - esaruoho
+Improvement: Organized Sample Modulation Matrix menu entries to include PitchStepper devices organized in a better way.
+![](Screenshots/sample_modulation_matrix_menu_entry_improvements.png)
 
 ---
+### 2025-03-26 - esaruoho
+Feature: Paketti Preferences setting for Load Device First or Last
+(Closes https://github.com/esaruoho/paketti/issues/670)
+![](Screenshots/PakettiLoaderFirstOrLast.png)
 
 ---
 
