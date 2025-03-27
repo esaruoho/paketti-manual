@@ -8500,6 +8500,9 @@ Feature: Volume Interpolation Looper dialog
 ![](Screenshots/volume_interpolation_looper_dialog2.png)
 
 ---
+### 2025-03-27 - esaruoho
+Improvement: Volume Interpolation Looper is now Value Interpolation Looper - controlling Volume, Panning and Delay.
+![](Screenshots/value_interpolation_looper_dialog.png)
 
 ---
 
