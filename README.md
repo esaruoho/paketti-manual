@@ -8505,6 +8505,9 @@ Improvement: Volume Interpolation Looper is now Value Interpolation Looper - con
 ![](Screenshots/value_interpolation_looper_dialog.png)
 
 ---
+### 2025-03-27 - esaruoho
+Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapping to Activate, Release to Deactivate for Native Devices
+(Starts https://github.com/esaruoho/paketti/issues/535)
 
 ---
 
