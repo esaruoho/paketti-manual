@@ -8484,22 +8484,20 @@ Feature: Paketti Preferences setting for Load Device First or Last
 ---
 ### 2025-03-26 - esaruoho
 Feature: Snapshot Device Parameters to Automation
-
----
-### 2025-03-26 - esaruoho
 Feature: FX Column Device Parameter Automation to Automation
-
----
-### 2025-03-26 - esaruoho
 Improvement: Automation Format settings for FX Column + Snapshot, Lines, Points, Curves.
 ![](Screenshots/Automation_Points_Lines_Curves_Writing.png)
-
----
-### 2025-03-26 - esaruoho
 Improvement: Automation Wipe after Switch setting: Keep / Clear
 ![](Screenshots/automationwipe-or-keep.png)
+<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/ab7e6b01f1744212926fe3ac5b215800?sid=4202c434-d528-47e6-92df-db8933efc853" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ---
+### 2025-03-27 - esaruoho
+Feature: Volume Interpolation Looper dialog
+(Closes [https://github.com/esaruoho/paketti/issues/494](https://github.com/esaruoho/paketti/issues/494 "https://github.com/esaruoho/paketti/issues/494"))
+
+![](Screenshots/volume_interpolation_looper_dialog.png)
+![](Screenshots/volume_interpolation_looper_dialog2.png)
 
 ---
 
