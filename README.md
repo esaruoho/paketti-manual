@@ -8510,6 +8510,10 @@ Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapp
 (Starts https://github.com/esaruoho/paketti/issues/535)
 
 ---
+### 2025-03-28 - esaruoho
+Feature: Paketti Fuzzy Search Track
+This lets you search for a trackname or a snippet of a trackname, and in case of singular result, it gets selected, and in case of more than one result, use cursor keys + enter to select.
+![](Screenshots/fuzzy_search_names_v3.gif)
 
 ---
 
