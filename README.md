@@ -8516,6 +8516,67 @@ This lets you search for a trackname or a snippet of a trackname, and in case of
 ![](fuzzy_search_names_v354.gif)
 
 ---
+### 2025-03-28 - esaruoho
+Improvement: Paketti Groovebox 8120 will now correctly initialize the correct amount of tracks (and no longer, f.ex., sends, if you're not on track1), will name them accordingly (8120_01 to 8120_02), and the tracks will be collapsed.
+![](Screenshots/8120_track_creation_rename.png)
+
+---
+### 2025-03-28 - esaruoho
+Improvement: Paketti Groovebox 8120 "Random" button will now also update the Sample Selection Slider - thus easier to continue and control.
+Improvement: "Fill Empty Steps" percentage will no longer resize the Dialog window.
+Improvement: Paketti Groovebox 8120: Output Delay, Random Fill, Probability, Sample Selection mini-arrows left and right on Sliders will now add +1 or -1, thus working as expected.
+Improvement: Added "RandomLoad" for each part, which will prompt the user for a folder, load 120 random samples from the folder and all it's subfolders.
+Improvement: Global Groove percentages are now listed with Bold & Strong font. Same for "Fill Empty Steps"
+Improvement: Heavily optimized Global Step Count modification so the update is much faster. Also added 24, 32, 48, 64 as buttons.
+Improvement: Optimized "Random Gate", "Randomize All" so they run faster.
+Improvement: Renamed "Show Automation" to "Automation"
+Improvement: Added "Macros" for taking you to Sample Editor to view Macros
+Improvement: StepCount maximum is now 512. So 16 steps will only be played once in a 512 row pattern.
+Improvement: Added 128, 192, 256, 384, 512 buttons for setting Global StepCounts
+Improvement: Random Gate will no longer fill the same steps for beat triggering AND probability - instead separated.
+
+---
+### 2023-03-29 - esaruoho
+Improvement: Impulse Tracker CTRL-N Dialog will now correctly close, if triggered again while dialog is open.
+
+---
+### 2023-03-29 - esaruoho
+Improvement: 8120: Added "Reset Output Delay" which resets all the Output Delays.
+Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.
+Improvement: 8120: Moved "Random All" / "Randomize All" / "Reverse All" / "Randomize all Yxx" / "Reset Output Delay" to their own separate row.
+Improvement: 8120: Added some spacing between all parts, for better readability. Removed "Print to Pattern" for readability, since nobody uses it :)
+Improvement: 8120: If you're already viewing an Automation Frame, opening the Groovebox no longer kicks you to 1st track and to "some other automation".
+Improvement: 8120: When clicking on Automation, immediately takes you to Pitchbend automation.
+Improvement: 8120: When clicking on Macros, focuses the correct instrument and correct sample.
+![](Screenshots/8120_gui.png)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
