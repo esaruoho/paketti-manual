@@ -8582,6 +8582,7 @@ Improvement: Modified "Record+Follow Toggle" so that if playback is on, and foll
 ### 2025-03-31 - esaruoho
 Improvement: 8120: When clicking on Sample, the correct Track is selected.
 Improvement: 8120: When changing Stepcounts, the track title is modified - and then, the titles are used to fetch the Stepcounts when opening the dialog. This saves them in the best possible way (simplest way, too)
+Improvement: 8120: When changing a Sample (Slider or Valuebox), the correct Track is selected.
 ![](Screenshots/8120_stepcount.png)
 
 ---
