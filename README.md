@@ -8586,26 +8586,50 @@ Improvement: 8120: When changing a Sample (Slider or Valuebox), the correct Trac
 ![](Screenshots/8120_stepcount.png)
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Added "Set All Beatsync values for Instrument" & renamed "Set Beatsync Value for Selected Sample"
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: "Random 12" will now result in an Instrument named "12 Random Samples"
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Moved certain WIP/Experimental tools under the Xperimental/Work in Progress -subfolder.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Paketti TimeStretch "Reverse" button no longer overwrites notes, instead only flips the Sxx commands. Even at 512 rows.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Selected Track Dev MidiMappings no longer force the Middle Frame to Pattern Editor.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Retitled the Wipe&Slice numbers so they are 002-256 instead of 2-256. You will need to re-bind your keybinds.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Fixed Track Dater & Titler to correctly open from Dialog.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Added Doofer to Selected Track Dev MidiMappings.
+![](Screenshots/doofer_macros.gif)
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: EQ10 and Mixer EQ are now automatically set to -9dB to 9dB visualization.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Menu Entries for Transpose Shift -12 to +12 for All Instruments or Current Instrument are now better organized for easier discoverability:
+![](Screenshots/transpose_shift_menu_fix.png)
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
 
 ---
 
