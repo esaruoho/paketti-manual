@@ -8542,7 +8542,7 @@ Improvement: Impulse Tracker CTRL-N Dialog will now correctly close, if triggere
 ---
 ### 2023-03-29 - esaruoho
 Improvement: 8120: Added "Reset Output Delay" which resets all the Output Delays.
-Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.
+~~Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.~~
 Improvement: 8120: Moved "Random All" / "Randomize All" / "Reverse All" / "Randomize all Yxx" / "Reset Output Delay" to their own separate row.
 Improvement: 8120: Added some spacing between all parts, for better readability. Removed "Print to Pattern" for readability, since nobody uses it :)
 Improvement: 8120: If you're already viewing an Automation Frame, opening the Groovebox no longer kicks you to 1st track and to "some other automation".
@@ -8551,16 +8551,38 @@ Improvement: 8120: When clicking on Macros, focuses the correct instrument and c
 ![](Screenshots/8120_gui.png)
 
 ---
+### 2025-03-29 - esaruoho
+Improvement: Tweaked Valhalla VintageVerb Reverb Dry/Wet to be 30.4% instead of 47.4%.
 
 ---
+### 2025-03-29 - esaruoho
+Improvement: Moved "Show" right next to Automation & Macros, for easier discoverability.
+Improvement: Merged "Show" and "Macros" to "Sample" for better discoverability.
+![](Screenshots/8120_gui_improv.png)
 
 ---
+### 2025-03-30 - esaruoho
+Improvement: 8120: Sequential Load will let you select max 120 samples per part, manually, instead of Randomly.
+Improvement: 8120: Random & Slider for selecting sample will now select the last sample instead of only the second last.
+Improvement: 8120: Sample Slider will now correctly select the 120th sample too
+Improvement: 8120: Upon opening the Dialog, the Sample Slider will be correctly set to the correct sample.
+Improvement: 8120: Global Groove Control Sliders will now correctly set 99% to 99% in Global Groove settings in the song, instead of 99% = 100%.
+![](Screenshots/8120_sequential_load.png)
 
 ---
+### 2025-03-30 - esaruoho
+Improvement: 8120: Tweaked the interface once more - reintroduced the missing global steps controls and made sure there is no extra spacer at the end of the interface.
+![](Screenshots/8120_gui_tweak2.png)
 
 ---
+### 2025-03-30 - esaruoho
+Improvement: Modified "Record+Follow Toggle" so that if playback is on, and follow pattern is on, pressing the shortcut will turn editmode back on.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: 8120: When clicking on Sample, the correct Track is selected.
+Improvement: 8120: When changing Stepcounts, the track title is modified - and then, the titles are used to fetch the Stepcounts when opening the dialog. This saves them in the best possible way (simplest way, too)
+![](Screenshots/8120_stepcount.png)
 
 ---
 
