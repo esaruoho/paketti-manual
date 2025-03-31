@@ -8632,6 +8632,60 @@ Improvement: Menu Entries for Transpose Shift -12 to +12 for All Instruments or 
 Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
 
 ---
+### 2025-03-31 - esaruoho
+Improvement: Paketti Pattern Effect Command CheatSheet will no longer error out if you try to randomize values above 80 on Volume and Panning columns.
+
+---
+### 2025-03-31 - esaruoho
+Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 1...127 knob to control which row of the pattern you are on.
+![](Screenshots/midi_patternrowposition.png)
+
+---
+### 2025-03-31 - esaruoho
+Improvement: Paketti Gater will now resume Lxx volume of Selected Track to "Regular volume" if you switch from L00 to C00.
+
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 
 
