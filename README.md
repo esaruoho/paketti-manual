@@ -6,19 +6,20 @@
  [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) |
  [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
- 1. [What is Paketti](#what-is-paketti)
- 2. [What people say about Paketti](#what-people-say-about-paketti)
- 3. [Where to say things about Paketti](#where-to-say-things-about-paketti)
- 4. [How to Support](#how-to-support)
- 5. [Brickwall](#brickwall)
- 6. [Rewrite Soon](#rewrite-soon)
- 7. [Roadmap](#roadmap)
- 8. [Old About](#old-about)
- 9. [Old Indexes](#index)
- 10. [Changeslog](#changeslog)
- 11. [End](#end)
+ 1. [What](#what)
+ 2. [Feedback](#feedback)
+ 3. [Where](#where)
+ 4. [Support](#support)
+ 5. [Roadmap](#roadmap)
+ 6. [ManualOrganization](#manualorganization)
+ 7. [Automation](#automation)
+ 8. [SampleManagement](#SampleManagement)
+ 9. [RewriteSoon](#RewriteSoon)
+ 10. [Oldabout](#oldabout)
+ 11. [Changeslog](#changeslog)
+ 12. [End](#end)
 
-## What is Paketti
+## What
 
 Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 5100 shortcuts, over a thousand menu entries and hundreds and hundreds of midi mappings and over 45 dialogs.
 
@@ -32,7 +33,7 @@ Paketti introduces features from:
 - and..
 - PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
-## What people say about Paketti
+## Feedback
 
 - *"It's like it's Renoise+"*
 - *"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
@@ -46,13 +47,13 @@ Paketti introduces features from:
 - *"I have no doubt that you are the most important person in the various Renoise Tools developers."*
 - *"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
 
-## Where to say things about Paketti
+## Where
 
 - Join the [Paketti Discord](https://discord.gg/Qex7k5j4wG)
 - Leave issues here on [GitHub](https://github.com/esaruoho/paketti/issues)
-- Hit the mostly inactive [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-3-4-paketti-a-suite-of-scripts-for-automation-sample-editor-midi-pattern-editor-phrase-editor-mixer/35848)
+- Hit the [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-3-4-paketti-a-suite-of-scripts-for-automation-sample-editor-midi-pattern-editor-phrase-editor-mixer/35848)
 
-# How to Support
+# Support
 
 You can 
 - Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
@@ -83,7 +84,7 @@ Hence why it's useful if I can get as much support as I can to keep going at thi
 
 Every time I do a 1-on-1 call, I get between 4 to 28 new ideas. 
 
-# Manual Organization
+# ManualOrganization
 
 ## Automation
 
@@ -284,7 +285,7 @@ TODO
 ## Sample Recorder
 
 
-# Sample Management
+# SampleManagement
 
 Paketti tries to circumvent some of the most painful points of Renoise, and replace them with better, easier, faster, more user-friendly solutions. Quality-of-Life & Workflow improvements over "multiple mouse clicks".
 
@@ -433,7 +434,7 @@ Same logic. Pick the ones you want, add them to the Paketti Preferences - they'l
 The extra logic with Plugins, is, that it wouldn't make much sense if they overwrote the current instrument - so, a new instrument slot is added, every time you load a plugin. And the External Editor is made visible. So you can just start tweaking away.
 
 
-# Rewrite Soon
+# RewriteSoon
 
 ### Freeze & Flatten a.k.a. Clean Render Selected Track or Group.
 
@@ -466,8 +467,12 @@ Example:
 
 ### Paketti Groovebox 8120
 
-There's a 8 part 16 step stepsequencer which writes directly to the Pattern Editor. You can load 120 samples into each part, pick your preferred sound, and use checkboxes to make them play. Probability checkboxes to modify how likely the step per part is to play, can draw automation directly by clicking on Show Automation (leveraging the 8 macros introduced on every Sample Load) and use buttons to randomize step sequencer content, select a random sample for all parts, or selecting random samples for each part, reverse any of the part or all part samples.. and you can limit the steps from 16 to 1 at will.
+There's a 8 part 16 step stepsequencer which writes directly to the Pattern Editor. You can load 120 samples into each part, pick your preferred sound, and use checkboxes to make them play. Probability checkboxes to modify how likely the step per part is to play, can draw automation directly by clicking on Automation (leveraging the 8 macros introduced on every Sample Load) and use buttons to randomize step sequencer content, select a random sample for all parts, or selecting random samples for each part, reverse any part or all part samples.. and you can limit the steps from 16 to 1 at will. Or increase steps till 512 - meaning, 16 steps will play, and x amount of silence until 16 steps play again.
+
 a brief demo at **SO HEY TWITCH DELETES STREAMS SO ITS GONE** // TODO I need to make a new one.
+Here's a March 2025 screenshot:
+![](Screenshots/8120_groovebox_image.png)
+
 
 There's dozens of ImpulseTracker/ScreamTracker3 shortcuts for pattern editing and modification, some of which have been recently supercharged to also allow for selecting automation, gif here meaning when you select something using paketti shortcuts, it will also select the automation, if automation is visible. this can be combined with the midiknobs for drawing automation curves easily.
 ![alt-d alt-u with automation](https://github.com/user-attachments/assets/d58d4e85-d79a-4593-b738-2712dae5e098)
@@ -508,14 +513,13 @@ The send and multiband send shortcuts load the native devices "correctly" aka "K
 
 ## Automation
 I have written midimappings for directly inputting automation points to the currently selected automation parameter 
-And also a shortcut for opening a dialog for writing automation points to exactly which pattern row u r on
+And also a shortcut for opening a dialog for writing automation points to exactly which pattern row you are on
 And also randomize selected automation parameter
 And randomize all automation parameters of selected device
 And multipattern automation curve drawing
 And midimapping for select start and end of automation and also mapping for changing selection curve up down exp Linear etc
 And also flood fill of selection in automation parameter to end of pattern
-[21.56]esaruoho: And a shortcut for cycling through all automation parameters that have been defined by user (written to)
-
+And a shortcut for cycling through all automation parameters that have been defined by user (written to)
 
 ### 0G01 Loader
 
@@ -558,17 +562,26 @@ one thing i keep forgetting is the Launch App Selection. you can define 6 apps, 
 
 I've also built two dialogs for showing keybindings - with fuzzy search. one shows Paketti shortcuts only, the other shows all Renoise KeyBindings but can be filtered with tools or without tools, etc.
 
-then there's tiny audio tools such as "strip silence", "move beginning silence to the end".. shortcuts for invert left channel, invert right channel (or invert both channels). audio rotators, so moving the beginning to the left until it crosses over to the end, i.e. "nudge audio left / right", then there's rotation for moving the audio waveform up and down for extreme dcoffset and clippy distortion. then there's a DC Offset kick generator,  "Selection in pattern to group" (turn selected tracks into one group), 
+then there's tiny audio tools such as "strip silence", "move beginning silence to the end".. shortcuts for invert left channel, invert right channel (or invert both channels). audio rotators, so moving the beginning to the left until it crosses over to the end, i.e. "nudge audio left / right", then there's rotation for moving the audio waveform up and down for extreme dcoffset and clippy distortion. then there's a DC Offset kick generator,  "Selection in pattern to group" (turn selected tracks into one group)..
+
 midimappings for toggling effects on and off. midimappings + shortcuts for displaying the external editor on Master or selected track, of a specific track. i.e. if you use renoise for mastering and always have certain types of effects on master, you can show/hide that specifically named effect, no matter where it is in the effect chain. and if it's not in the track dsp chain, then it will be loaded and added in.
+
 uncollapse/collapse all tracks for clearing up visual clutter
+
 Convolver IR export and IR import - when you export the selected IR, it opens up in the sample editor, so you can modify it, then import it back in.
+
 Switch Plugin Auto-Suspend On/Off
+
 "Save All Samples to Backup Folder 1...3" - all samples in the song will be saved to your preferred folder
+
 Unison Generator, takes a chipsound and makes 8 identical copies of it, shifts each of them left by 1/8 to 7/8 - modifies the volume, randomizes finetune, randomizes panning, and drops the overall volume (and includes the instrument macros in the copy) - for a nicer chipsound
+
 there's hundreds of Section/Sequence/Selection shortcuts for queueing what plays next, or skipping to the next section or previous section or "what's next in the queue" and wiping the queue
-there's a global shortcut for Clone Current Sequence, 
+
+A Global shortcut for Clone Current Sequence
+
 Resize all non-empty patterns to 96 rows..  and Resize all non-empty patterns to `current pattern` rows
-Create Identical Track - takes the Note Columns / Effect Columns & Visible Columns&copies
+**Create Identical Track** - takes the Note Columns / Effect Columns & Visible Columns&copies
 
 For a selection in sample editor, you can press a shortcut to "create new instrument & loop". there's "mute or solo selection in pattern",  expand/shrink selection content shortcuts, set selection to selected instrument.. bypass all effects in track, or enable.. show all parameters of all devices in track
 
@@ -586,9 +599,8 @@ Phrase Doubler / Halver (takes the content of the Phrase and increases the size 
 
 Set Phrase Length to 001-004-006-008-012-016-024-032-048-064-096-128-192-256-384-512
 
-Set Phrase LPB 1-256
-
 Set Pattern LPB 1-256
+Set Phrase LPB 1-256
 
 Print current BPM & LPB to Master track of Pattern - so can modify the tempo in another pattern -good for `LPB*2` i.e. increasing resolution
 
@@ -613,7 +625,7 @@ Midimappings for select instrument, select track, keyboard octave, editstep 0-64
 
 Interval generator. shortcuts for adding +1 to +12 to the current note - adds a new note column, moves to it and adds a note that is +x or -x higher/lower than the original basenote. also midimappings for selecting multiple chord intervals - good for experimenting with basenotes and writing intervals in and seeing what happens. couple that with the Paketti Gater and you can go wherever you please really.
 
-Wipe Effects from selection in pattern
+Wipe Effects from Selection in Pattern
 
 Shortcuts for showing a specific number of note columns, or effect columns
 
@@ -684,13 +696,13 @@ the reason why there's LPB + BPM control is that the BPM in Renoise Master track
 
 i think the reason why i forgot to mention this was that i have had a tough time finding anyone to tell me what else could be done. i did experiments of using automation to change lower frame, middle frame, upper frame views, for instance. basically any script can be run like this. but i couldn't get anyone to talk to me about what they wanted and gave up and forgot about it
 
-# Old About
+# Oldabout
 
 Paketti is a multipurpose Renoise tool. Working like an expansion pack, it delivers hundreds of new functionalities to the app, ranging from Quality-of-Life (QoL) improvements to new advanced features inspired by Impulse Tracker, Schism Tracker, ModPlugTracker, Player Pro, John Player/Quantum SoundTracker/PollyTracker, OctaMED and many others. It also addresses multiple community requests from the Renoise Forum that were not yet considered by the developers. 
 
 It is far too complex to sum up in just a few words. However, some notable changes include:
 
-* Over ~~three~~ four thousand new keybinds covering multiple areas of Renoise;
+* Over ~~three~~ ~~four~~ five thousand new keybinds covering multiple areas of Renoise;
 * Default XRNI functionality - each loaded instrument or drumkit has Pitchbend, Glide Amount, Cutoff, Resonance, Cutoff LFO Amount, Cutoff LFO Frequency, Overdrive, Parallel Compression.
 * Automatically load multiple samples into sequential instrument slots;
 * Device parameter randomizer;
@@ -713,127 +725,9 @@ It is far too complex to sum up in just a few words. However, some notable chang
 * Control Sample Buffer start / endSelection via MidiMappings
 * And much much more!
 
+# Changeslog
 
-# Index
-
-For better comprehension, this manual is divided into sections. Each chapter corresponds to a different Renoise screen/tab and can be accessed from the list below:
-
-## Global
-
-## 1 - 'Tools' Menu
-
-Settings for Paketti can be found under `Main Menu -> Tools -> Paketti..`. This menu also includes some shortcuts for useful features:
-
-| Item                                   | Description                                                                                                   | Index |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----- |
-| `Preferences`                          | Shows Paketti Preferences window.                                                                             | 1.1   |
-| `Instruments`                          | Contains sample and drumkit loaders, plus shortcuts for beatsync and pitchbend.                               | 1.2   |
-| `Pattern Editor`                       | Random BPM, FX Cheat Sheet, Collapse/Uncollapse All, Double/Halve Pattern                                     | 1.3   |
-| `Plugin/Devices`                       | Multiple Plugin/Device functionalities.                                                                       | 1.4   |
-| `Show New Song Dialog`                 | Allows you to start a new song with the option to keep the same Patterns/Instruments/etc                      | -     |
-| `∿ Squigly Sinewave to Clipboard`      | Copy this symbol to easily find Paketti in the Keys window (under Renoise Preferences).                       | -     |
-| `Paketti MIDI Populator`               | Automatically fills current Project with Tracks, Instruments, Sends and Macros for External MIDI Controllers. | 1.5   |
-| `Clean Render Selected Track or Group` | Automatically bypasses FX in Track/Group before resampling.                                                   | -     |
-| `Catch Octave`                         | (NEEDS EXPLAINING)                                                                                            | -     |
-| `Clone Current Sequence`               | Self-explanatory.                                                                                             | -     |
-| `Track Routings Dialog`                | Displays a pop-up window containing all track audio device routings.                                          | -     |
-
-### 1.1 - Preferences
-
-| Item                                          | Description                                                                                                                                           | Notes                                                                   |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `Upper Frame`                                 | Enables/Disables upper frame control when using Impulse Tracker key commands.                                                                         | See [insert IT topic - to be written].                                  |
-| `0G01 Loader`                                 | Automatically enables the 0G01 hack for samples inserted using the Paketti loaders.                                                                   | See **Instrument Box** to better understand the 0G01 hack.              |
-| `Random BPM`                                  | (NEEDS EDITING)                                                                                                                                       | -                                                                       |
-| `Pale Green Theme`                            | Loads Paketti color theme for Renoise.                                                                                                                | -                                                                       |
-| `Gifts: Plaid Zap Load`                       | Insert a special XRNI instrument made from Plaid samples.                                                                                             | See [forum post](https://forum.renoise.com/t/plaidzap-xrni-gift/32521). |
-| `Create New Instrument & Loop from Selection` | Quite Self-Explanatory. Works on the Sample Editor (right-click).                                                                                     | -                                                                       |
-| `Paketti Loader Settings`                     | Changes default settings for Paketti Drumkit/Multisample loaders.                                                                                     | See 1.2 for                                                             |
-| `Wipe & Slices Settings`                      | Determines default settings for slices generated via Paketti (under the Sampler window and Instrument Box): Slice Loop Mode, Beatsync, Autoseek, etc. | See **Instrument Box**                                                  |
-| `Render Settings`                             | Determines sample rate and bit depth for Paketti resampling procedures.                                                                               | -                                                                       |
-| `Edit Mode Colouring`                         | Highlights the track you're currently editing, all tracks or none.                                                                                    | -                                                                       |
-
-### 1.2 - Instruments
-
-| Item | Description | Notes |
-| --- | --- | --- |
-| `PitchBend Drumkit Sample Loader` | Automatically generates a drumkit from selected samples. Includes some macros. Samples are adjusted according the your Paketti Loader Settings (see 1.1 above). | |
-| `PitchBend Multiple Sample Loader` | Automatically generates one instrument for each selected sample. Sample are also adjusted according to Loader Settings. | |
-| `Start Sampling (Record)` | Pops up the Renoise Sampler Recorder and starts playback. Objective for usage is to set "Pattern" mode, and record multi-pattern length content. | |
-| `Beat Sync Lines Halve/Double` | Adjusts the Beatsync time for all slices in the Selected Instrument. Does not affect the first/main sample. | |
-| `Xst PitchBend Instrument Init` | Inserts an empty instrument containing several useful macros: PitchBend, Cutoff, Resonance, Cutoff LFOAmp, Cutoff LFOFreq, Overdrive, Parallel Compression and PitchBend Glide Inertia. | |
-
-### 1.3 - Pattern Editor
-
-| Item                                     | Description                                                                                                                                                                                                                                   | Notes     |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `Random BPM`                             | Picks a random BPM value for the project.                                                                                                                                                                                                     |           |
-| `Write Current BPM&LPB to Master column` | This writes both the current BPM and the LPB to the Master Track. Useful when you change LPB / BPM across the song patterns.                                                                                                                  |           |
-| `Effect Column CheatSheet Dialog`        | A pop-up window containg all pattern commands available in Renoise.                                                                                                                                                                           | See 1.3.1 |
-| `Collapse/Uncollapse All Tracks`         | Collapses (minimizes) or Uncollapses (maximizes) all the Tracks, Groups, Master and Sends.                                                                                                                                                    |           |
-| `Pattern Doubler`                        | Doubles the current pattern size while also duplicating its contents accordingly (notes, volume, panning, delay, samplefx columns and effect columns, and automation.                                                                         |           |
-| `Pattern Halver`                         | Sets the pattern to 1/2 current size. Works *differently* from the native keybind `CTRL+F8`, as it *does not adapt pattern content* to fit the new length. Simply put: pattern length is changed to half, but notes/commands remain in place. |           |
-| `Global Visible Column (All)`            | Expands all columns in all tracks: Volume, Pan, Delay and SampleFX.                                                                                                                                                                           |           |
-
-### 1.3.1 - Effect Column CheatSheet Dialog
-
-Please note: the Effect Column CheatSheet also features sliders for the Volume, Pan, Delay, SampleFX and Effect Columns. Moving a slider places the correspondent value in the highlighted row or selection in pattern. It is very effective for manually programming intricate modulations: pick an effect, move the slider, move to next line, and so on. It's also the perfect companion for Renoise newcomers who still haven't learned the most important commands.
-![](Screenshots/PakettiCheatsheet.png)
-
-### 1.4 - Plugins/Devices
-
-| Item                                               | Description                                                                                                                                                                                                                                                                               | Notes     |     |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --- |
-| `Debug`                                            | Different plugin related utilities for debugging. Can be ignored by the average user.                                                                                                                                                                                                     |           |     |
-| `Switch Plugin AutoSuspend OFF`                    | Quickly Enables/Disables the AutoSuspend function in Renoise. From the [user manual](https://tutorials.renoise.com/wiki/Plugin): "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage." |           |     |
-| `Expose/Hide Selected Device Parameters in Mixer`  | Display plugin parameters in the mixer as sliders. It's the default behavior for some native devices, such as the Compressor and Mixer EQ.                                                                                                                                                | See 1.4.1 |     |
-| `Expose/Hide Selected Track ALL Device Parameters` | Same as above, but applies to all devices in the selected track.                                                                                                                                                                                                                          | See 1.4.1 |     |
-| `Hide Track DSP Devices for All Tracks`            | If External Editors for any devices on Track DSP are visible, this will hide their External Editors.                                                                                                                                                                                      |           |     |
-| `Bypass/Enable All Devices on Track`               | Self-explanatory. Useful to check pre/post processing. In other words, how the FX chain is affecting signals in a particular track.                                                                                                                                                       |           |     |
-| `Load AU/VST/VST3 Plugins Dialog`                  | A pop-up window to quickly load instrument plugins or add them as keyboard shortcuts. These plugin shortcuts can be found under the Keys tab in Renoise Preferences.                                                                                                                      | See 1.4.2 |     |
-| `Open Visible Pages to Fit Plugin Parameter Count` | Fully expands a plugin/device window so all the parameter sliders are visible.                                                                                                                                                                                                            |           |     |
-### 1.4.1 - Expose/Hide Selected Device Parameters in Mixer
-
-### 1.4.2 - Load AU/VST/VST3 Plugins Dialog
-
-### 1.5 - MIDI Populator
-
-The Paketti MIDI Populator is a powerful tool to automate project configuration for external MIDI controllers and/or sequencers. It allows the user to pick MIDI inputs/outputs and quickly insert plugin instruments (up to 16), including an option to randomize the VSTi selection. A new track is generated for every selected instrument - and outputs set accordingly. These tracks can be configured for automatic Send devices and number of Volume/Pan/Delay/FX columns. 
-
-For users who do not have external hardware sequencers, a good use case for the MIDI Populator is to receive MIDI information from applications such as VCV Rack and Pure Data. However, a third party virtual MIDI server such as LoopBe1 may be necessary to connect these applications to Renoise. This way, you can build sequences in VCV Rack, for instance, and have audio output from VST plugins inside Renoise. Speaking of audio... a virtual audio cable (VAC) could also be used to simultaneously stream audio from VCV Rack (and other applications) to Renoise.
-
-### 1.5.1 - MIDI Populator Quickstart
-
-3. Select MIDI inputs and outputs.
-4. Manually pick a plugin for each MIDI channel or use the `Randomize VST3 Plugin Selection` to randomly pick instruments.
-5. Configure the remaining options, which range from number of note columns to automatic Send devices.
-
-Paketti will then generate a new track for each plugin, with automatic MIDI In/Out configuration and Send population (if enabled), and also `#Line-In Device` placement for all tracks, in case the objective is to use audio inputs..
-
-## Instrument Box
-
-By right-clicking the Instrument Box (by default, located on the right corner of the screen) another set of Paketti features is available:
-
-| Item | Description | Subtopic |
-| --- | --- | --- |
-| `Initialize...` | Creates a new empty instrument which includes pre-configured macros for common modulations: PitchBend, Filter Cutoff, Amp Envelope, Drive, etc. If the 0G01 hack is enabled, a new track is created and the command placed in the first line of current pattern alongside the C-4 note. This will be further explained later in the current chapter, so bear with me. | 2.1 |
-| `Launch App...` | Sends the selected samples to desired applications. Can be used to bounce stems into another DAW or to export files into a sample manager, such as Sononym. | 2.2 |
-| `Smart Folders...` | | |
-| `Wipe & Slice...` | Clears all slice markers in the selected instrument. It can also replace the current slices with a new set of equally distributed slices (2/4/8/16/32/64/128). In vanilla Renoise the slices have to be manually removed in the Sampler window - so this option automates this process. | |
-| `Duplicate and Select New Instrument` | Self-explanatory. | |
-| `Switch Plugin AutoSuspend Off` | Quickly Enables/Disables the AutoSuspend function in Renoise. From the user manual: "Auto Suspend: When enabled, Renoise will completely shut off the plugin when it is no longer producing sound. This is mainly done to reduce CPU usage". This option is also available in the Tools menu. | |
-| `Create Phrase` | Self-explanatory. | |
-| `PitchBend Drumkit Sample Loader` | Automatically generates a drumkit from selected samples. Includes some macros. Samples are adjusted according the your Paketti Loader Settings (see 1.1 above). This option is also available in the Tools menu. | |
-| `PitchBend Multiple Sample Loader` | Automatically generates one instrument for each selected sample. Sample are also adjusted according to Loader Settings. This option is also available in the Tools menu. | |
-| `Save Selected Sample .WAV/.FLAC` | Self-explanatory. | |
-| `Wipe Song Retain Sample` | Self-explanatory. | |
-| `Clean Render Selected Track or Group` | Works like the "Freeze and Flatten" option in some other DAWs. It renders the current (source) track into a new instrument and automatically places a C-4 on the first line of a new track. After that, the source track is automatically muted and collapsed. Useful to share your .xrns without fearing plugin dependencies, to free up CPU or maybe just to support your resampling needs. | |
-| `Record to Current Track` | | |
-| `Start Sampling (Record)` | | |
-
-## Changeslog
-
-# Paketti Updates Changelog
+## Paketti Updates Changelog
 
 ### 2024-06-16 - esaruoho
 
@@ -8668,8 +8562,13 @@ Improvement: When running the Stack Slices, the Instr Macro device will be remov
 Improvement: 8120: Fixed an issue with 512 row pattern and automation finding.
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Normalize Selected Sample or Slice - if there's a selection, then normalize that, if no selection, then selected sample or slice.
+![](Screenshots/normalize_selection_and_slice.png)
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Edited the manual page somewhat and updated the Table of Content hierarchy to work again - which meant renaming some of the titles heavily. Also removed outdated information.
 
 ---
 
