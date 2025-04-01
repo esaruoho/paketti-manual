@@ -8644,16 +8644,28 @@ Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 
 ### 2025-03-31 - esaruoho
 Improvement: Paketti Gater will now resume Lxx volume of Selected Track to "Regular volume" if you switch from L00 to C00.
 
+---
+### 2025-04-01 - esaruoho
+Improvement: Combined BPM&LPB related content into a BPM&LPB subfolder in Pattern Editor and Main Menu Paketti.
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Added "Toggle Automatically Open Selected Track Device Editors ON/OFF" to Mixer, Pattern Matrix and better discoverability on Main Menu.
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Removed shortcuts + menu entries for "24st Pitchbend" to "96st Pitchbend" Default XRNI Instruments since they no longer worked (the .xrni files have been renamed).
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Paketti Stacker will now correctly and accurately print a 128 part sample into 128 rows. (Slice at 128).
+Improvement: Paketti Stacker will no longer error out if trying to print 128 rows into a 64 row pattern.
+Improvement: The RampUp / RampDown / RampRandom will write to selected Note Column, or the first Note Column if you're on an Effect Column.
+Improvement: When running the Stack Slices, the Instr Macro device will be removed and re-added so it will control the current Slices.
 
 ---
-
----
+### 2025-04-01 - esaruoho
+Improvement: 8120: Fixed an issue with 512 row pattern and automation finding.
 
 ---
 
