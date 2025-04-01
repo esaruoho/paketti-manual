@@ -8571,6 +8571,8 @@ Improvement: Normalize Selected Sample or Slice - if there's a selection, then n
 Improvement: Edited the manual page somewhat and updated the Table of Content hierarchy to work again - which meant renaming some of the titles heavily. Also removed outdated information.
 
 ---
+### 2025-04-01 - esaruoho
+Improvement: Reverse Selected Sample or Slice or Selection in Sample or Slice now works.
 
 ---
 
