@@ -8577,14 +8577,13 @@ Improvement: Reverse Selected Sample or Slice or Selection in Sample or Slice no
 ---
 ### 2025-04-03 - esaruoho
 Feature: Paketti REX Import.
-This rewrites, from scratch, the REX Import tool originally available for Renoise V2.8 only, which has been abandoned for the past 14 years or so, and adds features that should have been there from the start.
+This rewrites, from scratch, the REX Import tool originally available for Renoise V2.8 only, which has been abandoned for the past 14 years or so, and adds additional features.
 - The REX filename you loaded, is printed to the Instrument Name and to the Sample Name and to the Sample FX Chain & Sample Modulation Chain names.
-- If you are on an Instrument that is not empty, a new Instrument is created and loaded, instead of destructively overwriting.
+- Will always add a new Instrument instead of dangerously overwriting the currently selected Instrument.
 - The REX Headers before each Slice are cleanly removed. 
 - Pakettify the instrument (introduces 8 macros, PitchBend, Cutoff, Resonance, cutoff LFO Amp, cutoff LFO Freq, Overdrive, Parallel Compression, Glide PitchBend.)
-- The `*Instr. Macros` device will have the instrument slot number in hex and the name of the imported REX file. so `1F 507_COOK.REX` will be it's name.
+- The `*Instr. Macros` device will have the instrument slot number in hex and the name of the imported REX file. so `1F 507_COOK.REX` will be the name.
 - User specified Paketti Loader defaults will be applied (Autofade, Autoseek, Loop, Interpolation, Oversampling, etc)
-
 
 ---
 
