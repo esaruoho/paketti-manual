@@ -8576,7 +8576,7 @@ Improvement: Reverse Selected Sample or Slice or Selection in Sample or Slice no
 
 ---
 ### 2025-04-03 - esaruoho
-Feature: Paketti REX Import.
+Feature: Paketti REX Import ***NOTE: this is .REX not .RX2***
 This rewrites, from scratch, the REX Import tool originally available for Renoise V2.8 only, which has been abandoned for the past 14 years or so, and adds additional features.
 - The REX filename you loaded, is printed to the Instrument Name and to the Sample Name and to the Sample FX Chain & Sample Modulation Chain names.
 - Will always add a new Instrument instead of dangerously overwriting the currently selected Instrument.
@@ -8586,16 +8586,24 @@ This rewrites, from scratch, the REX Import tool originally available for Renois
 - User specified Paketti Loader defaults will be applied (Autofade, Autoseek, Loop, Interpolation, Oversampling, etc)
 
 ---
+Improvement: Paketti Loader Preferences now has a "Skip Automation Device", if you set it to On, the `*Instr. Macros` device will not be added for Paketti PitchBend DrumKit Loader, Multiple Sample Loader, Render, etc.
 
 ---
+Improvement: Always Open Selected Track TrackDSPs added as a Paketti Preference - if you set it on, and go to the next track, it's Track DSP External Editors will be opened. Next track? Close previous Track DSPs, open current track TrackDSPs.
 
 ---
+Improvement: Wipe Exploded Track -> If exploding a track, the original track content is wiped. Or kept, depending on the Paketti Preference.
+Improvement: Wipe Exploded Track -> if exploding a track with multiple same-notes on the same row but different note columns, correctly add note columns to newly created same-note track.
+Improvement: Wipe Exploded Track -> Edit Mode Color Blend will be off during track creation, and then set back on, if originally on.
 
 ---
+Improvement: The shortcut for Paketti eSpeak Text-to-Speech Dialog has been renamed to "Paketti eSpeak Text-to-Speech Dialog..." - you will have to re-bind it.
 
 ---
+Improvement: If the sample you are using to run Unison Generator on is larger than 500000 frames, the fractional shifting will not be done on it.
 
 ---
+Improvement: Replicate at cursor, above cursor, selected track or whole pattern functions are now optimized to be faster.
 
 ---
 
