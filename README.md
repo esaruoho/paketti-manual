@@ -8627,6 +8627,8 @@ Much like the .REX Import, this will also:
 - User specified Paketti Loader defaults will be applied (Autofade, Autoseek, Loop, Interpolation, Oversampling, etc)
 
 ---
+### 2025-04-04 - esaruoho
+Improvement: .PTI Import will now, based on two examples of sliced instruments, work with both examples.
 
 ---
 
