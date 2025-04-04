@@ -8586,28 +8586,45 @@ This rewrites, from scratch, the REX Import tool originally available for Renois
 - User specified Paketti Loader defaults will be applied (Autofade, Autoseek, Loop, Interpolation, Oversampling, etc)
 
 ---
+### 2025-04-03 - esaruoho
 Improvement: Paketti Loader Preferences now has a "Skip Automation Device", if you set it to On, the `*Instr. Macros` device will not be added for Paketti PitchBend DrumKit Loader, Multiple Sample Loader, Render, etc.
 
 ---
+### 2025-04-03 - esaruoho
 Improvement: Always Open Selected Track TrackDSPs added as a Paketti Preference - if you set it on, and go to the next track, it's Track DSP External Editors will be opened. Next track? Close previous Track DSPs, open current track TrackDSPs.
 
 ---
+### 2025-04-03 - esaruoho
 Improvement: Wipe Exploded Track -> If exploding a track, the original track content is wiped. Or kept, depending on the Paketti Preference.
 Improvement: Wipe Exploded Track -> if exploding a track with multiple same-notes on the same row but different note columns, correctly add note columns to newly created same-note track.
 Improvement: Wipe Exploded Track -> Edit Mode Color Blend will be off during track creation, and then set back on, if originally on.
 
 ---
+### 2025-04-03 - esaruoho
 Improvement: The shortcut for Paketti eSpeak Text-to-Speech Dialog has been renamed to "Paketti eSpeak Text-to-Speech Dialog..." - you will have to re-bind it.
 
 ---
-Improvement: If the sample you are using to run Unison Generator on is larger than 500000 frames, the fractional shifting will not be done on it.
+### 2025-04-03 - esaruoho
+Improvement: If the sample you are using to run Unison Generator on is larger than 500000 frames, the fractional shifting will not be done on it, because it is too slow on large samples.
 
 ---
+### 2025-04-03 - esaruoho
 Improvement: Replicate at cursor, above cursor, selected track or whole pattern functions are now optimized to be faster.
 
 ---
+### 2025-04-04 - esaruoho
+Improvement: Load Random (12) & (4) will now also input an Instrument name instead of leaving it empty. 
+![](Screenshots/load_random_12_naming.png)
 
 ---
+### 2025-04-04 - esaruoho
+Feature: .PTI Import (PolyEnd Tracker Instrument).
+Much like the .REX Import, this will also:
+- The PTI filename you loaded, is printed to the Instrument Name and to the Sample Name and to the Sample FX Chain & Sample Modulation Chain names.
+- Will always add a new Instrument instead of dangerously overwriting the currently selected Instrument.
+- Pakettify the instrument (introduces 8 macros, PitchBend, Cutoff, Resonance, cutoff LFO Amp, cutoff LFO Freq, Overdrive, Parallel Compression, Glide PitchBend.)
+- The `*Instr. Macros` device will have the instrument slot number in hex and the name of the imported PTI file. so `1F test.pti` will be the name.
+- User specified Paketti Loader defaults will be applied (Autofade, Autoseek, Loop, Interpolation, Oversampling, etc)
 
 ---
 
