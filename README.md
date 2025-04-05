@@ -8631,10 +8631,11 @@ Much like the .REX Import, this will also:
 Improvement: .PTI Import will now, based on two examples of sliced instruments, work with both examples.
 
 ---
-### 2025-04-04 - esaruoho
+### 2025-04-05 - esaruoho
 Improvement: .PTI Import now successfully and correctly sets Forward, Reverse or PingPong Loop and uses the correct Start and End points.
 Improvement: .PTI Import now recognizes if there's 50% audio and 50% silence - then trims the sample and rescales the slices. This fixes PTIBreaks loading.
 Improvement: .PTI Wavetable support (detects window, position, reads position markers and adjusts loop to that, and trims the beginning of the sample until the start of the loop.
+Improvement: .PTI Wavetable Support now trims the end of the sample to the end of the loop. And creates Position Count amount of sample slots at 00-7F for the selected position, and 00-00 velocity for the rest of them. You can then cycle through them using the Random 7F or +/- 7F shortcuts.
 
 ---
 
