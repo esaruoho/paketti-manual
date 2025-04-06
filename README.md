@@ -8638,8 +8638,12 @@ Improvement: .PTI Wavetable support (detects window, position, reads position ma
 Improvement: .PTI Wavetable Support now trims the end of the sample to the end of the loop. And creates Position Count amount of sample slots at 00-7F for the selected position, and 00-00 velocity for the rest of them. You can then cycle through them using the Random 7F or +/- 7F shortcuts.
 
 ---
+### 2025-04-06 - esaruoho
+Improvement: Added "Show Sample Selection" as a setting in Paketti Preferences - meaning that if you set it to On, then Sample Editor will show you the details of the selection automatically without having to toggle it on continually.
 
 ---
+### 2025-04-06 - esaruoho
+Improvement: .PTI Wavetable detection will now also print the full sample as sample slot 1, thus allowing for accessing the full waveform instead of only the window size chunks.
 
 
 
