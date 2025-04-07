@@ -8645,6 +8645,26 @@ Improvement: Added "Show Sample Selection" as a setting in Paketti Preferences -
 ### 2025-04-06 - esaruoho
 Improvement: .PTI Wavetable detection will now also print the full sample as sample slot 1, thus allowing for accessing the full waveform instead of only the window size chunks.
 
+---
+### 2025-04-07 - esaruoho
+Improvement: Paketti Stretch Step Size Slider is now between 1-64, instead of a limited table.
+Improvement: Paketti Stretch **512 pattern size** checkbox will now, when unchecked, resize pattern back to 256 rows.
+Improvement: Paketti Stretch **Fill All** checkbox will now fill each row with the same Sample Offset as the Step Size count has.
+Improvement:  "Enable Envelopes" / "Scale" / "Release" checkboxes + sliders now find the `Volume AHDSR` device dynamically (it was hardcoded previously). 
+Improvement: When Pakettifying an instrument, the selected view (Pattern Editor, Sample Editor, Modulation Mappings) will be retained insted of transported to a different middle frame.
+Improvement: When opening the dialog on a pre-populated track, the note does not get destructively re-rendered as C-4.
+Improvement: When there are multiple different notes in the track, then enable "Record notes below cursor" automatically.
+Improvement: When there are multiple different notes in the track, and user clicks on Fill All, the previous notes are used.
+
+![](Screenshots/timestretch_example_01.png)
+![](Screenshots/timestretch_example_02.png)
+
+
+---
+### 2025-04-07 - esaruoho
+Improvement: Duplicate and Reverse Instrument will no longer attempt to duplicate and reverse an instrument with no sample. And "Placeholder sample" is cleanly removed.
+
+----
 
 
 ---
