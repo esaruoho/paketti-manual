@@ -8670,6 +8670,34 @@ Improvement: Duplicate and Reverse Instrument will no longer attempt to duplicat
 Feature: Added taktik's Process Slicer script so that large tasks that make the script time out, can be split.
 
 ---
+### 2025-04-07 - esaruoho
+Improvement: Paketti TimeStretch Dialog will now open and close with the same shortcut, instead of spawning endless amounts of copies.
+
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 
 
 
