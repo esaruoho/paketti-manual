@@ -8655,6 +8655,7 @@ Improvement: When Pakettifying an instrument, the selected view (Pattern Editor,
 Improvement: When opening the dialog on a pre-populated track, the note does not get destructively re-rendered as C-4.
 Improvement: When there are multiple different notes in the track, then enable "Record notes below cursor" automatically.
 Improvement: When there are multiple different notes in the track, and user clicks on Fill All, the previous notes are used.
+Improvement: Toggling **Fill All** off should now clear the notes that have been added between Step Sizes.
 
 ![](Screenshots/timestretch_example_01.png)
 ![](Screenshots/timestretch_example_02.png)
