@@ -8666,6 +8666,11 @@ Improvement: Toggling **Fill All** off should now clear the notes that have been
 Improvement: Duplicate and Reverse Instrument will no longer attempt to duplicate and reverse an instrument with no sample. And "Placeholder sample" is cleanly removed.
 
 ----
+### 2025-04-07 - esaruoho
+Feature: Added taktik's Process Slicer script so that large tasks that make the script time out, can be split.
+
+---
+
 
 
 ---
