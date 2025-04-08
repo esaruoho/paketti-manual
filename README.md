@@ -8673,8 +8673,9 @@ Feature: Added taktik's Process Slicer script so that large tasks that make the 
 ### 2025-04-07 - esaruoho
 Improvement: Paketti TimeStretch Dialog will now open and close with the same shortcut, instead of spawning endless amounts of copies.
 
-
 ---
+### 2025-04-07 - esaruoho
+Improvement: Select Specific Track 01-16 will now select the nearest instrument if in Sample Editor - allowing for easily jumping across playing samples across tracks.
 
 ---
 
