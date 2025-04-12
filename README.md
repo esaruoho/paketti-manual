@@ -8678,27 +8678,67 @@ Improvement: Paketti TimeStretch Dialog will now open and close with the same sh
 Improvement: Select Specific Track 01-16 will now select the nearest instrument if in Sample Editor - allowing for easily jumping across playing samples across tracks.
 
 ---
+### 2025-04-08 - esaruoho
+Improvement: Paketti MIDI Populator will not error out if you select no MIDI Input Device.
+Improvement: Paketti MIDI Populator Instrument naming changed, so:
+`TR01 InputDeviceName:InputChannel> (PluginName) >OutputDeviceName:OutputChannel`
+![](Screenshots/midi_populator_naming.png)
 
 ---
+### 2025-04-08 - esaruoho
+Improvement: Paketti 8120 Groovebox will now do Sequential RandomLoad using the taktik Process Slicer - meaning you can pick 8 folders, then watch the dialog update and load all 960 samples without "Script becoming unresponsive" and requiring you to press "No" to not stop but to continue.
+![](Screenshots/8120_sequential_load_example.png)
 
 ---
+### 2025-04-08 - esaruoho
+Improvement: Capture Nearest Instrument & Octave with Jump to Sample Editor -> will now also accept and find the sample with 00-7F velocity.
 
 ---
+### 2025-04-08 - esaruoho
+Improvement: Delete Unused Samples will now correctly delete any samples with velocity at 00 - meaning, they never trigger. So just wipe them.
+Improvement: taktik Process Slicer applied to Delete Unused Samples so that the process will finish deleting without requiring you to click "No, please don't stop the Script".
 
 ---
+### 2025-04-09 - esaruoho
+Paketti Groovebox 8120 tweaks:
+Improvement: When clicking on a step, select the track, but don't move to Pattern Editor.
+Improvement: When changing StepCount, select the track.
+Improvement: When clicking on Automation, the notes are automatically added to the PitchBend Automation Envelope, for easier visibility.
+Improvement: Clicking on **Clear**, **Random Steps**, and multiple other buttons  will no longer force you to the Pattern Editor.
+Improvement: If you're in the Sample Editor and click on a checkbox to enter a step trigger for another instrument and it's sample, get transported directly to that sample.
+Improvement: The 1-16 buttons above each part's stepsequencers can now be used to set the StepCount for that part.
+Improvement: Pitch knob added (-36 to +36) to the left of each part
+![](Screenshots/8120_pitch_rotary.png)
 
 ---
+### 2025-04-09 - esaruoho
+Improvement: The Polyend Tracker Instrument .PTI format will now correctly import a Stereo sample, too.
 
 ---
+### 2025-04-09 - esaruoho
+Improvement: 8120: Clicking on a Yxx probability checkbox while in Sample Editor will also display the selected track, instrument and sample.
 
 ---
+### 2025-04-10 - esaruoho
+Improvement: 8120: Mute button moved to be below the Pitch knob
+![](Screenshots/8120_mutebutton.png)
 
 ---
+### 2025-04-10 - esaruoho
+Improvement: 8120: If clicking on "Random Samples" while only having 1 instrument slot, gracefully error out with a message to the user.
 
 ---
+### 2025-04-10 - esaruoho
+Improvement: Added "Reverse Selected Sample or Slice" to Sample Keyzones
+Improvement: Added "Delete Unused Samples" to Sample Keyzones
 
 ---
+### 2025-04-10 - esaruoho
+Improvement: 8120: Pressing Random Steps no longer forcibly takes you to Pattern Editor.
 
+---
+### 2025-04-12 - esaruoho
+Feature: Very rudimentary + Alpha state .SF2 import. Please send feedback.
 
 
 
