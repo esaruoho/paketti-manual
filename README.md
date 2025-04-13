@@ -8740,7 +8740,22 @@ Improvement: 8120: Pressing Random Steps no longer forcibly takes you to Pattern
 ### 2025-04-12 - esaruoho
 Feature: Very rudimentary + Alpha state .SF2 import. Please send feedback.
 
+---
+### 2025-04-13 - esaruoho
+Improvement: The shortcut for Select Nearest Instrument & Octave will now (again) correctly create a Phrase if you're in the Phrase Editor and have no Phrase.
 
+---
+### 2025-04-13 - esaruoho
+Improvement: Extract Bassline  to New Track will now correctly create a new track instead of overwriting "the next track"
+Improvement: Extract Highest notes to New Track will now correctly create a new track instead of overwriting "the next track"
+
+---
+### 2025-04-13 - esaruoho
+Feature: Extract Bassline to New Track with Duplicated Instrument
+Feature: Extract Bassline to New Track with Selected Instrument
+Feature: Extract Highest Notes to New Track with Duplicated Instrument
+Feature: Extract Highest Notes to New Track with Selected Instrument
+(Closes https://github.com/esaruoho/paketti/issues/856)
 
 ---
 # End
