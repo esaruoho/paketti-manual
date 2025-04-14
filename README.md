@@ -8789,6 +8789,7 @@ Improvement: Midi EditStep 0-64 + 1-64, Selected Instrument Macro 1-8 should now
 
 ---
 ### 2025-04-14 - esaruoho
+Improvement: `*XY Pad` 
 
 ---
 ### 2025-04-14 - esaruoho
