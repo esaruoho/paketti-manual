@@ -8789,13 +8789,40 @@ Improvement: Midi EditStep 0-64 + 1-64, Selected Instrument Macro 1-8 should now
 
 ---
 ### 2025-04-14 - esaruoho
-Improvement: `*XY Pad` 
+Improvement: `*XY Pad` X-axis Y-Axis "Find device, set parameter" Midi Mapping
+Improvement: `*XY Pad` X-Axis Y-Axis Selected Device Midi Mapping
 
 ---
 ### 2025-04-14 - esaruoho
+Improvement: Normalize All Samples in Instrument uses Process Slicing.
+Improvement: Normalize all Slices Individually uses Process Slicing.
 
 ---
 ### 2025-04-14 - esaruoho
+Improvement: Midi Mappings for Global Groove settings (1, 2, 3, 4, 2&4) should now work with both Absolute and Relative values.
+
+---
+### 2025-04-14 - esaruoho
+Improvement: More tweaks for Normalize processing, optimizations, and break out of peak checking if volume 1 is found (maximum peak)
+
+---
+### 2025-04-14 - esaruoho
+Feature: Change All Samples Device Chain (Direct & Scaled)
+Feature: Change Selected Sample Device Chain (Direct & Scaled)
+These are both Absolute and Relative (0..127 or -63 +63/incremental). These will let you change the Sample FX Chain of the selected sample or the whole instrument.
+![](Screenshots/midi_sample_device_chain.png)
+
+---
+### 2025-04-14 - esaruoho
+Improvement: Midi Mapping for Computer Keyboard Velocity now responds to both absolute and relative values.
+Improvement: Midi Mappings for `Change Selected Sample Volume` and `Delay Column (DEPRECATED) x[Slider]` now respond to both absolute + relative values.
+
+---
+### 2025-04-14 - esaruoho
+Improvement: Stereo to Mono (keep Left) & Stereo to Mono (keep Right) added to Menu Entries + shortcuts.
+![](Screenshots/convert_stereo_to_mono_left_right.png)
+
+---
 
 
 ---
