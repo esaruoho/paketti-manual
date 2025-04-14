@@ -8829,7 +8829,7 @@ Improvement: Stereo to Mono (Keep Left & Right) added to Menu Entries & Shortcut
 
 ----
 ### 2025-04-15 - esaruoho
-
+Improvement: Stereo to Mono (Mixdown Left&Right) added to Menu Entries & Shortcuts.
 
 ----
 ### 2025-04-15 - esaruoho
