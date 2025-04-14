@@ -8780,9 +8780,13 @@ Improvement: eSpeak now cleanly deletes the "Placeholder sample" sampleslot from
 
 ---
 ### 2025-04-14 - esaruoho
+Feature: Midi Change Pattern Row Position Direct - this one will not try to fit the pattern length to the knob, instead, if you have a 64 row pattern, only 0..64 will be read, etc.
+![](Screenshots/midi_direct_pattern_row_knob.png)
 
 ---
 ### 2025-04-14 - esaruoho
+Improvement: Midi EditStep 0-64 + 1-64, Selected Instrument Macro 1-8 should now work with absolute and relative values (one is 0..127, the other is -63 to +63). Experimental for now.
+
 ---
 ### 2025-04-14 - esaruoho
 
