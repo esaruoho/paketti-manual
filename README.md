@@ -8407,7 +8407,7 @@ Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapp
 ### 2025-03-28 - esaruoho
 Feature: Paketti Fuzzy Search Track
 This lets you search for a trackname or a snippet of a trackname, and in case of singular result, it gets selected, and in case of more than one result, use cursor keys + enter to select.
-![](fuzzy_search_names_v354.gif)
+![](Screenshots/fuzzy_search_names_v354.gif)
 
 ---
 ### 2025-03-28 - esaruoho
@@ -8756,6 +8756,42 @@ Feature: Extract Bassline to New Track with Selected Instrument
 Feature: Extract Highest Notes to New Track with Duplicated Instrument
 Feature: Extract Highest Notes to New Track with Selected Instrument
 (Closes https://github.com/esaruoho/paketti/issues/856)
+
+---
+### 2025-04-13 - esaruoho
+Improvement: eSpeak will no longer error out if path to it has spaces in it (looking at you, Windows)
+(Closes https://github.com/esaruoho/paketti/issues/825)
+
+---
+### 2025-04-13 - esaruoho
+Improvement: You can now drag a textfile to Renoise, and eSpeak will render it to a sample.
+
+---
+### 2025-04-13 - esaruoho
+Improvement: eSpeak now follows the same taktik process slicer, so no longer asks you to continue the work or stop the work if "script becomes unresponsive" - instead keeps doing it until finished without erroring out.
+
+---
+### 2025-04-13 - esaruoho
+Improvement: Normalize Selected Slice or Sample now uses process slicer for better functionality and faster responsetimes.
+
+---
+### 2025-04-14 - esaruoho
+Improvement: eSpeak now cleanly deletes the "Placeholder sample" sampleslot from the Instrument.
+
+---
+### 2025-04-14 - esaruoho
+
+---
+### 2025-04-14 - esaruoho
+---
+### 2025-04-14 - esaruoho
+
+---
+### 2025-04-14 - esaruoho
+
+---
+### 2025-04-14 - esaruoho
+
 
 ---
 # End
