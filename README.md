@@ -8789,14 +8789,17 @@ Improvement: Midi EditStep 0-64 + 1-64, Selected Instrument Macro 1-8 should now
 
 ---
 ### 2025-04-14 - esaruoho
-Improvement: `*XY Pad` 
+Improvement: `*XY Pad` X-axis Y-Axis "Find device, set parameter" Midi Mapping
+Improvement: `*XY Pad` X-Axis Y-Axis Selected Device Midi Mapping
 
 ---
 ### 2025-04-14 - esaruoho
+Improvement: Normalize All Samples in Instrument uses Process Slicing.
+Improvement: Normalize all Slices Individually uses Process Slicing.
 
 ---
 ### 2025-04-14 - esaruoho
-
+Improvement: Midi Mappings for Global Groove settings (1, 2, 3, 4, 2&4) should now work with both Absolute and Relative values.
 
 ---
 # End
