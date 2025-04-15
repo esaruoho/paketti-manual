@@ -8824,12 +8824,16 @@ Improvement: Stereo to Mono (keep Left) & Stereo to Mono (keep Right) added to M
 
 ---
 ### 2025-04-14 - esaruoho
-Improvement: Stereo to Mono (Keep Left & Right) added to Menu Entries & Shortcuts.
+Improvement: Stereo to Mono (Mixdown Left&Right) added to Menu Entries & Shortcuts.
 ![](Screenshots/convert_stereo_to_mono_mixdown.png)
+
+---
+### 2025-04-14 - esaruoho
+Improvement: Conversion to 8bit 16bit 24bit of selected sample or all samples in selected Instrument.
 
 ----
 ### 2025-04-15 - esaruoho
-Improvement: Stereo to Mono (Mixdown Left&Right) added to Menu Entries & Shortcuts.
+
 
 ----
 ### 2025-04-15 - esaruoho
