@@ -8832,8 +8832,11 @@ Improvement: Stereo to Mono (Mixdown Left&Right) added to Menu Entries & Shortcu
 Improvement: Conversion to 8bit 16bit 24bit of selected sample or all samples in selected Instrument.
 
 ----
-### 2025-04-15 - esaruoho
-
+### 2025-04-16 - esaruoho
+Feature: .RX2 ReCycle Import.
+This will let you drag in a .RX2 format file into Windows or macOS Renoise. Linux is not supported due to ReCycle SDK not being available for Linux, yet (I have requested it).
+Unfortunately the addition of **rex2decoder_mac**, **rex2decoder_win.exe**, **REX Shared Library.bundle**, **REX Shared Library.dll**, **REX Shared Library.lib** adds a total of 16.5mb to the size of the tool, meaning that I can no longer ship to the Renoise Tool forum due to it's size limitations.
+There are certain .RX2 files that still refuse to render, possibly due to volume issues in the .RX2 settings, but please get in touch if you have a .RX2 that should work but doesn't, mail it to me via Discord or send via wetransfer to my email. Thanks!
 
 ----
 ### 2025-04-15 - esaruoho
