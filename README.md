@@ -4,6 +4,7 @@
  [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
  [Discord Paketti](https://discord.gg/xNT6eH7W) |
  [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) |
+ [GitHub Sponsors](http://github.com/sponsors/esaruoho) |
  [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
  1. [What](#what)
@@ -57,7 +58,7 @@ Paketti introduces features from:
 
 You can 
 - Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
-- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
+- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho).
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
@@ -73,7 +74,7 @@ Whenever there's a new API version, I snoop through all the functions to see if 
 
 I'm also doing the same thing for the Renoise subforum `Beginners Questions` and `Tool Discussion` & `Tool Announcements`. 
 
-The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised feature request.
+The objective for those specific subforums is to find abandoned tools, suggestions for tools, and questions from beginners. When a beginner sees Renoise, they don't know what's there, and they might ask for something that *should* be there, but *isn't*. So it's a cleverly disguised accidental feature request.
 
 *Please note:*
 If there's something in the manual here, that feels hard to comprehend or you feel requires better explanations, please send me a message or [leave an issue](http://github.com/esaruoho/issues/new), so I'll focus on that.
@@ -8829,7 +8830,7 @@ Improvement: Stereo to Mono (Mixdown Left&Right) added to Menu Entries & Shortcu
 
 ---
 ### 2025-04-14 - esaruoho
-Improvement: Conversion to 8bit 16bit 24bit of selected sample or all samples in selected Instrument.
+Improvement: Conversion to 8-bit 16-bit 24-bit of selected sample or all samples in selected Instrument. (bit rate / bit depth)
 
 ----
 ### 2025-04-16 - esaruoho
@@ -8839,71 +8840,67 @@ Unfortunately the addition of **rex2decoder_mac**, **rex2decoder_win.exe**, **RE
 There are certain .RX2 files that still refuse to render, possibly due to volume issues in the .RX2 settings, but please get in touch if you have a .RX2 that should work but doesn't, mail it to me via Discord or send via wetransfer to my email. Thanks!
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+Improvement: .RX2 import now works with Linux, using WINE.
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+Improvement: Normalize will now tell in the Status Bar "Found Peak value of 0.999969 or higher, doing nothing." If there is a Peak in the sample. It will no longer say "Normalized Selection" - because obviously, the normalization process was cancelled.
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+Feature: Select First Instrument Box Slot - this will select the first Instrument Index, and show the name of the Instrument in the Status Bar:
+![](Screenshots/select_first_instrument_box_slot.png)
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+Feature: Cycle through All Track Columns, or Selected Track Columns - Midi Mappings for Absolute or Relative Midi controls.
+![](Screenshots/midi_cycle_through_available_columns.png)
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+Improvement: the Impulse Tracker Speed & BPM counter now gives accurate results, and has a button for changing the current BPM to the counted BPM.
+![](Screenshots/speed_bpm_writer.png)
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
+
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-16 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
-### 2025-04-15 - esaruoho
-
-----
-### 2025-04-15 - esaruoho
-
-----
-### 2025-04-15 - esaruoho
-
-----
-### 2025-04-15 - esaruoho
-
-----
-### 2025-04-15 - esaruoho
-
 
 ---
 # End
