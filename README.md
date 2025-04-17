@@ -8867,10 +8867,13 @@ Improvement: the Impulse Tracker Speed & BPM counter now gives accurate results,
 Improvement: .SF2 import now correctly detects the keyrange, the finetuning and the coarse tuning (transpose) of the samples. This means that multi-sample instruments that are an octave each, for instance, work properly.
 
 ----
-### 2025-04-16 - esaruoho
+### 2025-04-17 - esaruoho
+Feature: Increase current Pattern length by +8 (Shortcut)
+Feature: Decrease current Pattern length by -8 (Shortcut)
+
 
 ----
-### 2025-04-16 - esaruoho
+### 2025-04-17 - esaruoho
 
 ----
 ### 2025-04-16 - esaruoho
