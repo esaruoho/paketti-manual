@@ -8875,10 +8875,14 @@ Feature: Set Pattern Length Dialog
 ### 2025-04-17 - esaruoho
 Feature: Increase current Pattern length by +8 (Shortcut)
 Feature: Decrease current Pattern length by -8 (Shortcut)
+Feature: Increase current Pattern length by +LPB (Shortcut)
+Feature: Decrease current Pattern length by -LPB (Shortcut)
 ![](Screenshots/patternlength_increase_decrease_and_lpb.png)
 
 ----
 ### 2025-04-16 - esaruoho
+Improvement: Player Pro Transpose Selection or Note Column +1/-1/+12/-12 Shortcuts
+![](Screenshots/playerpro_transpose_selection_or_note_column.png)
 
 ----
 ### 2025-04-17 - esaruoho
