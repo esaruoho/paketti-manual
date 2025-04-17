@@ -8868,12 +8868,14 @@ Improvement: .SF2 import now correctly detects the keyrange, the finetuning and 
 
 ----
 ### 2025-04-17 - esaruoho
-Feature: Increase current Pattern length by +8 (Shortcut)
-Feature: Decrease current Pattern length by -8 (Shortcut)
-
+Feature: Set Pattern Length Dialog
+![](Screenshots/patternsetlengthdialog.gif)
 
 ----
 ### 2025-04-17 - esaruoho
+Feature: Increase current Pattern length by +8 (Shortcut)
+Feature: Decrease current Pattern length by -8 (Shortcut)
+![](Screenshots/patternlength_increase_decrease_and_lpb.png)
 
 ----
 ### 2025-04-16 - esaruoho
