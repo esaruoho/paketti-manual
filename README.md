@@ -8880,16 +8880,23 @@ Feature: Decrease current Pattern length by -LPB (Shortcut)
 ![](Screenshots/patternlength_increase_decrease_and_lpb.png)
 
 ----
-### 2025-04-16 - esaruoho
+### 2025-04-17 - esaruoho
 Improvement: Player Pro Transpose Selection or Note Column +1/-1/+12/-12 Shortcuts
 ![](Screenshots/playerpro_transpose_selection_or_note_column.png)
 
 ----
 ### 2025-04-17 - esaruoho
+Feature: Paketti Keyzone Distributor - this allows for distributing the samples in the instrument by a specific amount of keys, and the basenote can be set to original, lowest note, middle note, highest note. There's also quick set buttons.
+
+![](Screenshots/keyzonedistributor_v2.gif)
+![](Screenshots/keyzone_distributor_dialog_update.png)
 
 ----
+### 2025-04-18 - esaruoho
+Feature: Set selection forward loop by Hex Offset, 10, 20, 40, 80
+This will set a selection loop for each of the samples, or each of the slices, in the selected instrument, by 10, 20, 40 or 80 (or any user-input number.)
+![](Screenshots/selection_by_hex.png)
 
-### 2025-04-17 - esaruoho
 
 ----
 ### 2025-04-17 - esaruoho
