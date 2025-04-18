@@ -8899,7 +8899,9 @@ This will set a selection loop for each of the samples, or each of the slices, i
 
 
 ----
-### 2025-04-17 - esaruoho
+### 2025-04-18 - esaruoho
+Improvement: Volume/Delay/Pan Slider dialog can now be closed with the same shortcut as it is opened.
+
 
 ----
 ### 2025-04-17 - esaruoho
