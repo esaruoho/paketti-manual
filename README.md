@@ -8903,12 +8903,13 @@ This will set a selection loop for each of the samples, or each of the slices, i
 Improvement: Volume/Delay/Pan Slider dialog can now be closed with the same shortcut as it is opened with
 Improvement: Volume/Delay Pan Slider dialog will now say "Volume" "Panning" or "Delay" in capital first letters instead of lowercase.
 
+----
+### 2025-04-19 - esaruoho
+Improvement: GitHub Releases will from now on also include the timestamp (yyyy-mm-dd_hh-mm-ss) in the filename for an easier life.
 
 ----
-### 2025-04-17 - esaruoho
-
-----
-### 2025-04-17 - esaruoho
+### 2025-04-19 - esaruoho
+Improvement: eSpeak normalize + yt-dlp normalize will now correctly call the correct function instead of erroring out.
 
 ----
 ### 2025-04-17 - esaruoho
