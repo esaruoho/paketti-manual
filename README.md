@@ -8917,6 +8917,7 @@ Improvement: .SF2 import will now no longer error out if Basenote tries to becom
 
 ----
 ### 2025-04-19 - esaruoho
+Improvement: eSpeak + yt-dlp finding executables should work better now on Linux.
 
 ----
 ### 2025-04-19 - esaruoho
