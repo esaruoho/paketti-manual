@@ -8912,13 +8912,14 @@ Improvement: GitHub Releases will from now on also include the timestamp (yyyy-m
 Improvement: eSpeak normalize + yt-dlp normalize will now correctly call the correct function instead of erroring out.
 
 ----
-### 2025-04-17 - esaruoho
+### 2025-04-19 - esaruoho
+Improvement: .SF2 import will now no longer error out if Basenote tries to become 122, capped to 108 instead.
 
 ----
-### 2025-04-17 - esaruoho
+### 2025-04-19 - esaruoho
 
 ----
-### 2025-04-17 - esaruoho
+### 2025-04-19 - esaruoho
 
 ----
 
