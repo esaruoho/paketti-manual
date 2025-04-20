@@ -11,7 +11,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background-color: #1e1e1e; /* Dark background for table */
-    color: #ffffff; /* White text for readability */
+    color: #ffffff;            /* White text for readability */
 }
 
 th, td {
@@ -31,34 +31,76 @@ td {
 
 /* Optional: Alternate row colors */
 tr:nth-child(even) td {
-    background-color: #2a2a2a; /* Slightly lighter dark background for alternate rows */
+    background-color: #2a2a2a; /* Slightly lighter dark for alternate rows */
 }
 
-/* Link styling in tables and throughout */
+/* Link styling */
 a {
     color: #bb86fc;
     text-decoration: none;
 }
-
 a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
 
-/* Code block styling for dark mode */
+/* ============================
+   CODE BLOCK & INLINE-CODE
+   ============================ */
+
+/* 1) Generic <pre> and <code> */
 pre, code {
     background-color: #1e1e1e !important;
-    color: #f0f0f0 !important;
+    color: #f0f0f0            !important;
     font-family: Menlo, Consolas, monospace;
-    border-radius: 4px;
-    padding: 0.5em;
-    overflow-x: auto;
 }
 
-/* Highlighter library fallbacks (e.g., Highlight.js, Prism.js) */
-div.highlight pre,
+/* 2) Block code (displayed) */
+pre {
+    border-radius: 4px;
+    padding: 0.75em;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+/* 3) Inline code */
+code:not(pre code) {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+/* 4) Jekyll/Liquid “highlight” -->
+div.highlight, div.highlight pre,
+.highlight pre, .highlight code {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+}
+
+/* 5) PrismJS */
 pre[class*="language-"],
 code[class*="language-"] {
     background-color: #1e1e1e !important;
-    color: #f0f0f0 !important;
+    color: #f0f0f0            !important;
 }
+
+/* 6) Highlight.js */
+.hljs {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #6a9955           !important;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #c586c0           !important;
+}
+.hljs-function .hljs-title,
+.hljs-class .hljs-title {
+    color: #dcdcaa           !important;
+}
+/* (add more .hljs-… overrides if your highlighter theme is still too bright) */
