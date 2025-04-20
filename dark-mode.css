@@ -21,7 +21,7 @@ th, td {
 
 th {
     background-color: #2a2a2a; /* Slightly darker background for header cells */
-    color: #bb86fc; /* Light purple for header text */
+    color: #bb86fc;           /* Light purple for header text */
     font-weight: bold;
 }
 
@@ -43,4 +43,21 @@ a {
 a:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+
+/* Code block styling for dark mode */
+pre, code {
+    background-color: #1e1e1e;  /* Dark gray background */
+    color: #f0f0f0;            /* Light gray text */
+    border-radius: 4px;
+    padding: 0.5em;
+    overflow-x: auto;
+    font-family: Menlo, Consolas, monospace;
+}
+
+/* If using PrismJS or Highlight.js, target their classes too */
+pre[class*="language-"],
+code[class*="language-"] {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0 !important;
 }
