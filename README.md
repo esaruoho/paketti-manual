@@ -8920,7 +8920,10 @@ Improvement: .SF2 import will now no longer error out if Basenote tries to becom
 Improvement: eSpeak + yt-dlp finding executables should work better now on Linux.
 
 ----
-### 2025-04-19 - esaruoho
+### 2025-04-20 - esaruoho
+Improvement: eSpeak + yt-dlp will no longer error out when overwriting current instrument with a new sample and normalizing.
+Improvement: eSpeak will correctly rename the instrument + sample after successful eSpeak render.
+
 
 ----
 
