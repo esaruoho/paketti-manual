@@ -755,6 +755,7 @@ Note: "Mixpaste" is still not working, i started work on it but somehow couldn't
 
 Improvement: Effect Column writers (shortcuts) now either outputs to selected_row if no selection, or to the selection
 their naming has been tweaked also for better discoverability
+
 ![](attachments/2024-06-16_efc.gif)
 
 
@@ -873,7 +874,7 @@ Improvement: 24st_pitchbend, 36st_pitchbend, 48st_pitchbend, 64st_pitchbend, 96s
 ---
 ### 2024-06-17 - esaruoho
 
-Improvement: Pattern Editor Cheat Sheet: added "0Yxx" (Maybe), "0Zxx" (Trigger Phrase) - tweaked order of effects so they match https://forum.renoise.com/t/effect-commands-cheat-sheet/45512 .. 
+Improvement: Pattern Editor Cheat Sheet: added "0Yxx" (Maybe), "0Zxx" (Trigger Phrase) - tweaked order of effects so they match ["Effect Command Cheatsheet on Renoise Forum"](https://forum.renoise.com/t/effect-commands-cheat-sheet/45512) .. 
 more tweaks incoming later (additional efx, grouping)
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_23.42.27.png)
 
@@ -930,6 +931,7 @@ Feature: `Bypass All Other Track DSP Devices (Toggle)` as a keyshortcut, menu en
 ### 2024-06-19 - esaruoho
 
 Improvement: "Jump to First Track in Next Group" & "Jump to First Track in Previous Group" shortcuts added to Pattern Matrix -- as requested by icasiino
+
 ![](attachments/2024-06-19_groupjumper_pattern_matrix.gif)
 
 
@@ -953,7 +955,7 @@ Improvement: "Mono to Stereo" "Mono to Left with Right Blank", "Mono to Right wi
 ---
 ### 2024-06-21 - esaruoho
 
-Improvement: if 0G01 Loader is ON and you Wipe&Slice - new tracks are no longer created for slicecount (if you sliced a sample to 128 slices, you'd get 128 tracks) now you no longer need to protect yourself by disabling 0G01 Loader in order to wipe&slice and then re-enable 0G01 Loader -- the wipe&slicer just does the ad-hoc disable at the start of wiping&slicing, and then just re-enables it, if it was enabled. (this closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/183 )
+Improvement: if 0G01 Loader is ON and you Wipe&Slice - new tracks are no longer created for slicecount (if you sliced a sample to 128 slices, you'd get 128 tracks) now you no longer need to protect yourself by disabling 0G01 Loader in order to wipe&slice and then re-enable 0G01 Loader -- the wipe&slicer just does the ad-hoc disable at the start of wiping&slicing, and then just re-enables it, if it was enabled. (this closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/183)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/183] )
 
 ---
 ### 2024-06-21 - esaruoho
@@ -963,14 +965,14 @@ I've also removed `sox` usage for adjusting 32bit samples to 24bit samples, whic
 
 NOTE: if there are apps out there that can't handle 32bit wavefiles, please tell me which ones they are, so i can try them out and add "adjust to 16bit" "adjust to 24bit" next to the Smart Folder path buttons.
 
-(this closes  https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/161 )
+(this closes  (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/161)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/161] )
 ![](attachments/2024-06-21_Screenshot_2024-06-21_at_15.17.26.png)
-
 
 ---
 ### 2024-06-21 - esaruoho
 
 Improvement: If you try to save sample or samples to a Smart Folder that is not set - an error is shown on the status and the Smart Folder GUI opens up
+
 ![](attachments/2024-06-21_Screenshot_2024-06-21_at_15.29.54.png)
 
 ---
@@ -1016,14 +1018,13 @@ fun. but shoot me some screenshots + video  so i can pick up the pieces. seems t
 ### 2024-06-21 - esaruoho
 
 Improvement: Gainer Exponential Curve Up, Gainer Exponential Curve Down now goes from 0.0dB to INF or from INF to 0.0dB - instead of to "12.5dB" - thus boosting the input signal by +12dB.
-fixes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/171
+fixes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/171)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/171]
 
 usecase: make a way to fade in a sound by adding a gainer device to the track and fading sound in or sound out.
 ![](attachments/2024-06-21_Screenshot_2024-06-22_at_0.41.24.png)
 
 ![](attachments/2024-06-21_Screenshot_2024-06-22_at_0.41.31.png)
 
-https://github.com/esaruoho/paketti/issues/171
 
 ---
 ### 2024-06-22 - esaruoho
@@ -1080,7 +1081,7 @@ Improvement: if no AU, VST or VST3 plugins found on computer, display a sensible
 ### 2024-06-23 - esaruoho
 
 Feature: Solo Selected Track in Group using Note Column Mute:
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/106
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/106)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/106]
 ![](attachments/2024-06-23_column_mute_on_group_tracks.gif)
 
 ---
@@ -1105,7 +1106,7 @@ if you have nothing selected, it'll output to current_line row. if columns are n
 
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/3af37cfeac9a4aa78834d7b6c74b7f36?sid=8448be8d-8f03-469a-a7a2-12df1888add2" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f
+(https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f)[https://www.loom.com/share/3af37cfeac9a4aa78834d7b6c74b7f36?sid=0285c5a2-1d7b-4c83-820c-e9e07f40a52f]
 
 ---
 ### 2024-06-23 - esaruoho
@@ -1114,11 +1115,13 @@ Feature: Selected Device Parameter Randomizer Dialog.
 Offers a slider for controlling percentage of randomization
 auto-updates to new device if you select a new device.
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6358542ad6db449daf581421653548fa?sid=710584ec-3e0c-47ae-9e3b-9da0abecefba" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-https://www.loom.com/share/6358542ad6db449daf581421653548fa?sid=aee4ccb0-2738-4214-933d-0bd5c50eb163
+(https://www.loom.com/share/6358542ad6db449daf581421653548fa?sid=aee4ccb0-2738-4214-933d-0bd5c50eb163)[https://www.loom.com/share/6358542ad6db449daf581421653548fa?sid=aee4ccb0-2738-4214-933d-0bd5c50eb163]
+
 ---
 ### 2024-06-23 - esaruoho
 
 Improvement: BPM +0.1 / BPM -0.1 (in addition to +1/+5/-5/-1 already being there since 14 years ago in Paketti.) this is ripped straight from the ModPlugTracker playbook:
+
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_15.27.23.png)
 
 ---
@@ -1130,6 +1133,7 @@ Improvement: Randomize Selected Device Parameters Dialog now updates if no Devic
 ### 2024-06-24 - esaruoho
 
 Feature: "Duplicate Effect Column Content to Pattern"
+
 ![](attachments/2024-06-24_duplicate_effect_column_content_to_whole_pattern.gif)
 
 ---
@@ -1148,13 +1152,14 @@ Feature: "Randomize Effect Column Parameters for Pattern or Selection"
 ### 2024-06-24 - esaruoho
 
 Feature: Effect Column Interpolation for Selection or Pattern.
-![](attachments/2024-06-24_effect_column_interpolation.gif)
 
+![](attachments/2024-06-24_effect_column_interpolation.gif)
 
 ---
 ### 2024-06-24 - esaruoho
 
 Feature: Flood Fill Selection or Track with Instrument + Note:
+
 ![](attachments/2024-06-24_floodfill.gif)
 
 ---
@@ -1181,6 +1186,7 @@ Feature: Impulse Tracker ALT-Left / ALT-Right (two flavors, one that Wraps (last
 ### 2024-06-28 - esaruoho
 
 Feature: Impulse Tracker "Slide Content Up / Down". this takes Selected Track.. or Selected Note Column or Selected Effect Column. will slide it up and down.
+	
 ![](attachments/2024-06-28_slide_selected_column_or_track.gif)
 
 ---
@@ -1222,6 +1228,7 @@ both of these transposes actually go from C-9 to C-0 if you keep transposing.
 
 Feature: Duplicate Instrument and Reverse Sample -- this just takes your currently selected instrument, duplicates it below it, and reverses the samples in the instrument. (and selects the newly created reversed instrument)
 ![](attachments/2024-06-29_Screenshot_2024-06-30_at_0.42.10.png)
+
 ---
 ### 2024-06-30 - esaruoho
 
@@ -1276,6 +1283,7 @@ available in Sample Editor, Sample Navigator, Sample Mappings and Instrument Box
 ### 2024-07-05 - esaruoho
 
 Feature: Reverse Notes in Selection
+
 ![](attachments/2024-07-05_reverse_notes.gif)
 
 
@@ -1308,11 +1316,13 @@ Feature: Send Populator for Selected Track or All Tracks.
 
 Feature: Flood Fill Note & Instrument with Edit Step - this takes the Edit Step and fits the currently selected line note + instrument to it, or if you have a multi-track selection, it will take the current row and fill the selection with the note+instrument using editstep.
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=1e5f9784-6265-47de-b622-eb39cc463ab5" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-https://www.loom.com/share/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=081e5637-a092-4299-ac49-7433e90d344a
+(https://www.loom.com/share/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=081e5637-a092-4299-ac49-7433e90d344a)[https://www.loom.com/share/2dc0c84c97dc4dcc9c5125671e6b1da2?sid=081e5637-a092-4299-ac49-7433e90d344a]
+
 ---
 ### 2024-07-06 - esaruoho
 
 Improvement: Load Native Devices Dialog now has "Randomize Selection" as a possibility.  it will clear the current selection, and then select a random amount of devices.
+
 ![](attachments/2024-07-06_Screenshot_2024-07-06_at_11.12.43.png)
 
 
@@ -1345,6 +1355,7 @@ Improvement: Plaidzap gift now uses the macros (pitchbend,cutoff,resonance,cutof
 ### 2024-07-06 - esaruoho
 
 Feature: Unison Generator.. creates 6 samples  and finetunes them by -1 +1 -2 +2 -3 +3 and adjusts the sample startpoint by fractions (1/8 to 7/8) so they're slightly offset
+
 ![](attachments/2024-07-06_Screenshot_2024-07-06_at_16.47.39.png)
 
 ---
@@ -1358,7 +1369,7 @@ if anyone's into IRs, please DM me and I'll send a build and we can continue loo
 
 Improvement: There's now a connection between 0G01 loader and Paketti PitchBend Multiple Sample Loader - if 0G01 loader is set to On, then new tracks will be created per each loaded sample, and each track will cleanly have a instr automation device added, so there's no longer a flood of instr automation devices for the track you were on, i.e. you load 36 samples and there's 36 instr automation devices on selected_track.
 
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191]
 
 ---
 ### 2024-07-10 - esaruoho
@@ -1473,14 +1484,14 @@ Improvement: Unison Generator -> sets the selected instrument selected sample lo
 ### 2024-07-19 - esaruoho
 
 Improvement: Unison Generator now both makes a copy of the original instrument, and loads 12st_Pitchbend.xrni instrument, for macros.
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/274)
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/274)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/274])
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_7.28.14.png)
 ---
 ### 2024-07-19 - esaruoho
 
 Improvement: "Save Selected Sample" & "Save All Samples" to Smart/Backup Folder menu entries added for Sample Navigator (Selected+All), Sample Editor (Selected) and Instrument Box (All)
 EDIT: typo fix, "All Sample" -> "All Samples" for each menu entry 🙂
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/245 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/245)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/245] )
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_7.39.57.png)
 
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_7.40.05.png)
@@ -1490,7 +1501,7 @@ EDIT: typo fix, "All Sample" -> "All Samples" for each menu entry 🙂
 ### 2024-07-19 - esaruoho
 
 Improvement: Transpose +1/-1/+12/-12 now work with 1) selection only if selection in pattern 2) each note column in track if no selection in pattern.
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/174)
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/174)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/174]
 
 ---
 ### 2024-07-19 - esaruoho
@@ -1548,7 +1559,7 @@ Feature: PlayerPro Transpose Selection or Row +1/-1/+12/-12
 
 Feature: Paketti Theme Selector Dialog.
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/2289acd190614b388a93edc2e7f3507a?sid=ff453d9e-81db-49ea-be24-3592a85b2f6a" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a
+(https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a)[https://www.loom.com/share/2289acd190614b388a93edc2e7f3507a]
 
 - 453 themes added within Paketti (from Renoise Theme Thread, and private sendings) - if you want your theme added, please shoot me a DM.
 - A dropdown menu that shows you the whole list. +/- and Randomize functions.
@@ -1602,7 +1613,7 @@ Improvement: 12st_Pitchbend now has
 
 NOTE: this modifies the Instr Control device usage, should not touch X_Pitchbend but instead Pitchbend in Automation lane. 
 this closes
-https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/286
+(https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/286)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/286]
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_9.22.22.png)
 
 
@@ -1610,6 +1621,7 @@ https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/286
 ### 2024-07-25 - esaruoho
 
 (regards 12st_Pitchbend)
+
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_9.32.50.png)
 
 
@@ -1650,6 +1662,7 @@ Improvement: "Pitchbend" is now part of the "start from center" brigade for draw
 ### 2024-07-25 - esaruoho
 
 Improvement: added `*Instr. MIDI Control`, `*Instr. Automation` and `*Instr. Macros` to blacklist of SampleFX Chain - so they can no longer be added even if you have them shortcutted - meaning that no error will be shot but a warning will be shot on the show_status.
+
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_23.53.10.png)
 
 
@@ -1667,13 +1680,13 @@ Improvement: EditMode Signaler now no longer shoots an error, if you had editmod
 ### 2024-07-27 - esaruoho
 
 Improvement: "Isolate Slices to New Instruments" now also adds the Default XRNI Instrument for each isolated slice to new instrument - meaning, your slices now have cutoff, resonance, pitchbend inertia, overdrive, parallel compression and cutoff LFO Amount & cutoff LFO Freq. 
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/295 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/295)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/295] )
 
 ---
 ### 2024-07-27 - esaruoho
 
 Improvement: "Wipe Song & Retain Sample" now retains the name of the Instrument and the name of the Sample in the new song. 
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/294] )
 
 ---
 ### 2024-07-27 - esaruoho
@@ -1685,7 +1698,7 @@ also, added the feature to Sample Navigator & Sample Editor menus.
 ### 2024-07-27 - esaruoho
 
 Improvement: "Load Renoise Native" menu entries now also list the Hidden devices (deprecated devices)
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/292 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/292)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/292] )
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_7.30.00.png)
 
 
@@ -1702,6 +1715,7 @@ Improvement: Added Hidden / deprecated devices as shortcuttable devices:
 ### 2024-07-27 - esaruoho
 
 Improvement: the Load Native Devices dialog, for loading, or adding to shortcuts+ midimappings, now also shows the Hidden/deprecated devices:
+
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_7.46.01.png)
 
 
@@ -1722,7 +1736,7 @@ Improvement: Paketti Pattern Effect Cheat Sheet now correctly outputs `0Y` into 
 
 Improvement: Paketti Pattern Effect Cheat Sheet now has dialog improvements: you can open and close it with the same shortcut.
 the Delay, Panning and Volume sliders now will turn the tracks within selection in pattern to visible, if they aren't already.
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/300 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/300)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/300] )
 ![](attachments/2024-07-27_pattern_effect_cheatsheet_improvement.gif)
 
 
@@ -1730,7 +1744,7 @@ the Delay, Panning and Volume sliders now will turn the tracks within selection 
 ### 2024-07-27 - esaruoho
 
 Feature: Paketti About page:
-( closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/291 )
+( closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/291)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/291] )
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_14.20.01.png)
 
 
@@ -1738,13 +1752,13 @@ Feature: Paketti About page:
 ### 2024-07-27 - esaruoho
 
 Improvement: If you're on Modulation tab and run a shortcut to add a VST,VST3,AudioUnit,Native Device or LADSPA/DSSI device, then the view will change to Sample FX Tab.
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/284
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/284)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/284]
 
 ---
 ### 2024-07-27 - esaruoho
 
 Improvement: "Isolate Slices to New Instruments" is now "Isolate Slices or Samples to New Instruments" -> meaning if your instrument has multiple samples, you can dump them to new instruments, with the Default XRNI instrument applied to each instrument.
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/246
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/246)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/246]
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_15.39.46.png)
 
 
@@ -1757,7 +1771,7 @@ Improvement: Paketti Coluga Downloader  will now automatically focus the "URL" t
 ### 2024-07-28 - esaruoho
 
 Improvement: It seems they lowered minimum BPM from 32 to 20.. So BPM +1/-1/+0.1/-0.1 will now go to 20BPM. 
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/306
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/306)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/306]
 
 ---
 ### 2024-07-28 - esaruoho
@@ -1809,10 +1823,8 @@ tweaked the copywriting to conform to what FX dropdown says
 
 Improvement: Cheatsheet modified with.. randomize functions.
 hopefully this video will shed some light as to what is going on:
-https://www.loom.com/share/978e659e038e432d873272b8a819b96c?sid=df8061c5-fef7-45a0-bb43-aa0333bbe66a
+(https://www.loom.com/share/978e659e038e432d873272b8a819b96c?sid=df8061c5-fef7-45a0-bb43-aa0333bbe66a)[https://www.loom.com/share/978e659e038e432d873272b8a819b96c?sid=df8061c5-fef7-45a0-bb43-aa0333bbe66a]
 ![](attachments/2024-07-29_Screenshot_2024-07-29_at_15.33.13.png)
-
-[Embedded Link](https://www.loom.com/share/978e659e038e432d873272b8a819b96c?sid=df8061c5-fef7-45a0-bb43-aa0333bbe66a)
 
 
 ---
@@ -1824,7 +1836,7 @@ Improvement: CheatSheet randomize functions improvements:
 - Fill All checkbox replaced with 0% to 100% Slider - Slider at 100% ? fill all. Slider at 10%? Fill Probability will be 10%.
 - fixed ZTxx and Txx effects so the min + max are properly used, instead of erraneously introduced default values.
 
-(closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/313 )
+(closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/313)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/313] )
 ![](attachments/2024-07-30_Screenshot_2024-07-30_at_8.15.15.png)
 
 
@@ -1851,7 +1863,7 @@ some screenshot examples:
 Feature: Flood Fill with Selection.
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/147fab8a865e4b87af4850185620aae3?sid=c52b301d-7084-4074-80ce-44a77210c1bf" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-https://www.loom.com/share/147fab8a865e4b87af4850185620aae3?sid=191b0f48-7985-4603-b218-c77abbd84d87
+(https://www.loom.com/share/147fab8a865e4b87af4850185620aae3?sid=191b0f48-7985-4603-b218-c77abbd84d87)[https://www.loom.com/share/147fab8a865e4b87af4850185620aae3?sid=191b0f48-7985-4603-b218-c77abbd84d87]
 select anything, effect columns, note columns, run flood fill with selection = result = pattern filled with content.
 
 ---
@@ -1869,6 +1881,7 @@ https://www.loom.com/share/a3f55137bb4d46de9ccd81e76296fc60?sid=b7c8a4f5-9d76-46
 
 Feature: Oblique Strategies 
 this fetches a random line from the official Oblique Strategies list and shows it either in a dialog, or on the statusbar.
+
 ![](attachments/2024-08-01_Screenshot_2024-08-02_at_0.56.51.png)
 
 ![](attachments/2024-08-01_Screenshot_2024-08-02_at_0.57.26.png)
@@ -1880,7 +1893,7 @@ this fetches a random line from the official Oblique Strategies list and shows i
 
 Feature: Paketti Dater & Titler - (Save Song As replacement)
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/6d1b8cf98ee0471cb67156b6a98fa383?sid=6373355d-068c-46fc-b1c1-028d0d5074df" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f96-a538-264f67a18239
+(https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f96-a538-264f67a18239)[https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f96-a538-264f67a18239]
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_10.23.43.png)
 
 
@@ -1888,19 +1901,19 @@ https://www.loom.com/share/6d1b8cf98ee0471cb67156b6a98fa383?sid=73e989d0-b7ff-4f
 ### 2024-08-02 - esaruoho
 
 Improvement: Mixer: Load Native Device menu entry now shows both the renoise native devices and renoise hidden devices - instead of there being two menus (one with the name "Load Native Device" and the other "Load Native Device ")
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/335
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/335)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/335]
 
 ---
 ### 2024-08-02 - esaruoho
 
 Improvement: "Duplicate and Reverse Instrument" is now available in the Instrument Box, Sample Editor and Pattern Editor
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331]
 
 ---
 ### 2024-08-02 - esaruoho
 
 Improvement: "Paketti Save sample as FLAC / WAV" now says that the file was successfully saved, and where
-closes  https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329
+closes  (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329]
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_13.36.08.png)
 
 
@@ -1908,13 +1921,13 @@ closes  https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329
 ### 2024-08-02 - esaruoho
 
 Improvement: If you were in F4 view ( MIDI or Plugin frame ) and pressed F3  , nothing happened. fixed.
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/323
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/323)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/323]
 
 ---
 ### 2024-08-02 - esaruoho
 
 Improvement: Naming of Delay +1 -1 +10 -10 - discoverability improvement:
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333]
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_14.20.19.png)
 
 
@@ -1922,7 +1935,7 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/333
 ### 2024-08-02 - esaruoho
 
 Improvement: Double Beatsync Line & Halve Beatsync Line now has a total of 4 shortcuts. both for selected sample, and for all slices, or all samples. if there are slices, the 1st (original sample slot) will not be touched. if there's only samples, (all) will apply for all.
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51]
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_22.11.29.png)
 
 
@@ -1930,9 +1943,7 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/51
 ### 2024-08-03 - esaruoho
 
 Improvement: Wipe Song & Retain Sample now supports Selected Slice -> if you select a slice and run the script, a new song is created with that slice retained. 
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/304
-[Embedded Link](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/304)
-
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/304)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/304]
 
 ---
 ### 2024-08-03 - esaruoho
@@ -1942,7 +1953,8 @@ Shows all the KeyBindings with Paketti.
 sort by path (Global, Sample Editor)
 can filter "unshortcutted"
 menu entry in main menu tools paketti.. but also in every instance (right-click on Mixer for instance to go to **Paketti..: Show Keybindings**
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/308
+
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/308)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/308]
 ![](attachments/2024-08-03_Screenshot_2024-08-03_at_9.41.28.png)
 
 ![](attachments/2024-08-03_Screenshot_2024-08-03_at_9.41.37.png)
