@@ -2205,6 +2205,7 @@ all Columnizers
 also renamed the Columnizers for better discoverability
 
 also fixed Columnizer Effect Amount / Effect Number Increase Decrease to not error out if you're on Note Column instead of Effect Column.
+
 ![](attachments/2024-08-09_Screenshot_2024-08-09_at_10.21.22.png)
 
 
@@ -2260,6 +2261,7 @@ Improvement: renamed these and added -INF dB. they now more clearly say it's all
 ### 2024-08-10 - esaruoho
 
 Feature: Set Selected Instrument Volume 0.0dB / -INF dB.
+
 ![](attachments/2024-08-10_set_selected_instrument_db_0_inf.gif)
 
 
@@ -2274,7 +2276,7 @@ Feature: Set Selected Instrument Volume +0.01dB / -0.01dB
 ### 2024-08-10 - esaruoho
 
 Feature: Set Selected Sample Volume to 0.0dB and others to -INF dB
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/371
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/371)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/371]
 ![](attachments/2024-08-10_Screenshot_2024-08-10_at_16.43.54.png)
 
 
@@ -2304,7 +2306,7 @@ Improvement: Set Selected Sample Volume 0.0dB, others -INF now has an informativ
 
 Feature: "Paketti Save Selected Sample Range .FLAC / .WAV" - basically just saves the selection in sample editor to a wav or flac using macOS Finder or Windows Explorer prompts.  available in midimapping, keybinding and menu entry flavors.
 
-p.s. the genesis of this is FastTracker 2 !https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/233
+p.s. the genesis of this is FastTracker 2! (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/233)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/233]
 ![](attachments/2024-08-10_Screenshot_2024-08-10_at_22.22.28.png)
 
 
@@ -2313,7 +2315,7 @@ p.s. the genesis of this is FastTracker 2 !https://github.com/esaruoho/org.lackl
 
 Improvement: CTRL-N  "New Song Dialog" now has Track DSP Wipe/Keep.
 wipes Track DSP devices from all tracks, groups, sends, master.
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/249
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/249)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/249]
 ![](attachments/2024-08-10_ctrl-n_track_dsp_clear.gif)
 
 
@@ -2327,14 +2329,14 @@ Improvements: Paketti Midi Mappings Dialog has been updated with additional twea
 
 Feature: "FT2 Minimize Selected Sample" -> another FT2 port - this will remove the rest of the sample after LoopEnd.
 shortcut + menu entry
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/232
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/232)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/232]
 ![](attachments/2024-08-10_Screenshot_2024-08-11_at_0.21.56.png)
 
 ---
 ### 2024-08-11 - esaruoho
 
 Improvement: Paketti DrumKit default instrument now has ParallelCompression and Glide Inertia
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336]
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.06.46.png)
 
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.06.57.png)
@@ -2343,7 +2345,7 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336
 ### 2024-08-11 - esaruoho
 
 Improvement: if you're in Mixer with TrackDSP displaying and run "F12", it used to kick you from TrackDSP to Automation - now it correctly goes to Mixer, Master, TrackDSP. same with if you're in Sample Editor, Sample FX Chain, or Instrument pages (f3, f3, f4, f4)
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/344
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/344)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/344]
 
 ---
 ### 2024-08-11 - esaruoho
@@ -2354,7 +2356,7 @@ Improvement: if you're in Mixer without Upper Frame visible, pressing F3 would d
 ### 2024-08-11 - esaruoho
 
 Improvement: All Plugin & Device loader dialogs now say "Add as Shortcut(s) & MidiMappings".
-closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/347
+closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/347)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/347]
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.46.54.png)
 
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.46.28.png)
@@ -8936,6 +8938,9 @@ Improvement: eSpeak + yt-dlp finding executables should work better now on Linux
 Improvement: eSpeak + yt-dlp will no longer error out when overwriting current instrument with a new sample and normalizing.
 Improvement: eSpeak will correctly rename the instrument + sample after successful eSpeak render.
 
+---
+### 2025-04-20 - esaruoho
+Improvement: Paketti Manual now has darkmode codeblocks so no longer white-on-white.
 
 ----
 
