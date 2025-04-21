@@ -8943,6 +8943,8 @@ Improvement: eSpeak will correctly rename the instrument + sample after successf
 Improvement: Paketti Manual now has darkmode codeblocks so no longer white-on-white.
 
 ----
+### 2025-04-21 - esaruoho
+Improvement: Working on YT-DLP to add more Process Slicing. Also Search textfield will now trigger a search by pressing Enter. Also made the Dialog shorter so it does not take up too much screen height on smaller screens (looking at you, Ubuntu VM running in UTM)
 
 ---
 # End
