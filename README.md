@@ -8960,6 +8960,38 @@ Paketti File Import Tool is now it's own separate tool that has the same feature
 Feature: Merge Instruments
 This will merge Source Instrument's samples with Target Instrument's samples, creating sampleslots.
 Closes (https://github.com/esaruoho/paketti/issues/860)[https://github.com/esaruoho/paketti/issues/860]
+![](Screenshots/merge_instruments.png)
+
+---
+### 2025-04-22 - esaruoho
+Improvement: .SF2 import now supports velocity ranges!
+![](Screenshots/sf2_velocityrange.png)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 # End
