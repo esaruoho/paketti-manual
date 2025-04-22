@@ -8947,6 +8947,21 @@ Improvement: Paketti Manual now has darkmode codeblocks so no longer white-on-wh
 Improvement: Working on YT-DLP to add more Process Slicing. Also Search textfield will now trigger a search by pressing Enter. Also made the Dialog shorter so it does not take up too much screen height on smaller screens (looking at you, Ubuntu VM running in UTM)
 
 ---
+### 2025-04-22 - esaruoho
+Improvement: Paketti Sample Selection preference will now automatically always work if you set it to On - instead of toggling off every time you restart Renoise.
+
+---
+### 2025-04-22 - esaruoho
+Paketti File Import Tool is now it's own separate tool that has the same features as Paketti, but is for those who cannot stomach the whole Paketti. 
+(https://github.com/esaruoho/paketti-importer/releases)[https://github.com/esaruoho/paketti-importer/releases]
+
+---
+### 2025-04-22 - esaruoho
+Feature: Merge Instruments
+This will merge Source Instrument's samples with Target Instrument's samples, creating sampleslots.
+Closes (https://github.com/esaruoho/paketti/issues/860)[https://github.com/esaruoho/paketti/issues/860]
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
