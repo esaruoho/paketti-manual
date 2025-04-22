@@ -8968,6 +8968,8 @@ Improvement: .SF2 import now supports velocity ranges!
 ![](Screenshots/sf2_velocityrange.png)
 
 ---
+### 2025-04-22 - esaruoho
+Improvement: .SF2 import now correctly initializes the first sample instead of it being shown as 2 frames and bugging out when duplicating.
 
 ---
 
