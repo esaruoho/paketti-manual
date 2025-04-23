@@ -8972,6 +8972,8 @@ Improvement: .SF2 import now supports velocity ranges!
 Improvement: .SF2 import now correctly initializes the first sample instead of it being shown as 2 frames and bugging out when duplicating.
 
 ---
+### 2025-04-23 - esaruoho
+Improvement: Increase EditStep by +1 +2 +4 +8, Decrease EditStep by -1 -2 -4 -8, Double EditStep, Halve EditStep added as shortcuts
 
 ---
 
