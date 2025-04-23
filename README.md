@@ -8976,6 +8976,9 @@ Improvement: .SF2 import now correctly initializes the first sample instead of i
 Improvement: Increase EditStep by +1 +2 +4 +8, Decrease EditStep by -1 -2 -4 -8, Double EditStep, Halve EditStep added as shortcuts
 
 ---
+### 2025-04-23 - esaruoho
+Improvement: Loading 01 Volume AHDSR device will initialize the settings to
+![](Screenshots/ahdsr_parameters.png)
 
 ---
 
