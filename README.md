@@ -8981,8 +8981,13 @@ Improvement: Loading 01 Volume AHDSR device will initialize the settings to
 ![](Screenshots/ahdsr_parameters.png)
 
 ---
+### 2025-04-24 - esaruoho
+Improvement: Show Length Dialog will now let you edit Pattern or Phrase length.
+Improvement: Added Length + LPB changing for Phrase Editor.
+Improvement: Added "Play Current Line" without Advancing by EditStep shortcut.
 
 ---
+### 2025-04-24 - esaruoho
 
 ---
 
