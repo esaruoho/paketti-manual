@@ -730,80 +730,59 @@ It is far too complex to sum up in just a few words. However, some notable chang
 
 ## Paketti Updates Changelog
 
-### 2024-06-16 - esaruoho
-
-Improvement: Effect Column CheatSheet Dialog now either outputs to selected_row if no selection, or to the selection.
+### 2024-06-16 - Improvement: Effect Column CheatSheet Dialog now either outputs to selected_row if no selection, or to the selection.
 
 ---
-### 2024-06-16 - esaruoho
-Paketti Effect CheatSheet Dialog
+### 2024-06-16 - Paketti Effect CheatSheet Dialog
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/29043519c0a548a1a30fd696560f580f?sid=4e0836bb-95a1-46e4-9016-0c0a8fbfc9a7" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 https://www.loom.com/share/29043519c0a548a1a30fd696560f580f?sid=b2bd3dc7-8647-4294-b3d3-01545f44be5b
 
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Impulse Tracker shortcuts have been renamed to reference `Impulse Tracker` for easier discoverability. No more guessing. 
+### 2024-06-16 - Improvement: Impulse Tracker shortcuts have been renamed to reference `Impulse Tracker` for easier discoverability. 
+No more guessing. 
 Note: "Mixpaste" is still not working, i started work on it but somehow couldn't get it going, will hopefully look at that later
 ![](attachments/2024-06-16_Impulse_Tracker_Shortcuts.gif)
 
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Effect Column writers (shortcuts) now either outputs to selected_row if no selection, or to the selection
+### 2024-06-16 - Improvement: Effect Column writers (shortcuts) now either outputs to selected_row if no selection, or to the selection
 their naming has been tweaked also for better discoverability
 
 ![](attachments/2024-06-16_efc.gif)
 
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Been working a bunch on making Menu Entries better and more organized, here's Keyzones
+### 2024-06-16 - Improvement: Been working a bunch on making Menu Entries better and more organized, here's Keyzones
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_15.51.23.png)
 
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: "Wipe Song Retain Sample" now no longer errors if the Instrument you selected has no sample.
+### 2024-06-16 - Improvement: "Wipe Song Retain Sample" now no longer errors if the Instrument you selected has no sample.
 
 ---
-### 2024-06-16 - esaruoho
-
-WIP Improvement: Instrument Box Menu Entries are better organized
+### 2024-06-16 - WIP Improvement: Instrument Box Menu Entries are better organized
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_15.56.29.png)
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Wipe & Slice no longer shoots an error if there is no sample in the instrument.  - instead shows a status "No samples available in the selected instrument".
+### 2024-06-16 - Improvement: Wipe & Slice no longer shoots an error if there is no sample in the instrument.  - instead shows a status "No samples available in the selected instrument".
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Wipe & Slice will tell you how many slices have been added to the instrument, and reference the sample name.
+### 2024-06-16 - Improvement: Wipe & Slice will tell you how many slices have been added to the instrument, and reference the sample name.
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.09.35.png)
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Wipe & Slice will tell you when you've wiped all slices
+### 2024-06-16 - Improvement: Wipe & Slice will tell you when you've wiped all slices
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.12.28.png)
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: LoopBlock "2nd binds" made available with matching naming convention to what Renoise provides
+### 2024-06-16 - Improvement: LoopBlock "2nd binds" made available with matching naming convention to what Renoise provides
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.52.53.png)
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Enable / Bypass EFX in Pattern now uses the right commands to bypass the first 8 effects, or enable the first 8 effects. (Meaning: now compatible with Renoise 3)
+### 2024-06-16 - Improvement: Enable / Bypass EFX in Pattern now uses the right commands to bypass the first 8 effects, or enable the first 8 effects.
+(Meaning: now compatible with Renoise 3)
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.56.27.png)
 
 ---
@@ -812,42 +791,32 @@ Improvement: Enable / Bypass EFX in Pattern now uses the right commands to bypas
 Backend Improvement: there's now a global function for giving a XML Preset and loading it directly to a plugin. which'll be useful in the future for loading XML content into active_preset_data for a plugin or a device.
 
 ---
-### 2024-06-16 - esaruoho
-
-Improvement: Whenever saving a script, or saving a song, or loading a new song, or creating a new song, or loading a sample, the view_preset1 would be forcibly shown. I've removed that since it benefits no-one - the viewport should stay the same no matter what
+### 2024-06-16 - Improvement: Whenever saving a script, or saving a song, or loading a new song, or creating a new song, or loading a sample, the view_preset1 would be forcibly shown. 
+I've removed that since it benefits no-one - the viewport should stay the same no matter what
 
 ---
-### 2024-06-17 - esaruoho
-
-Improvement to ImpulseTracker "ALT-L *2" functionality. Now, if you are on Send or Master, and press ALT-L, it will select the content of the Send or Master track. when you press ALT-L again, it will select all of the pattern data (including sends + masters). instead of "only the tracks and not sends + masters".
+### 2024-06-17 - Improvement to ImpulseTracker `ALT-L *2` functionality. 
+Now, if you are on Send or Master, and press ALT-L, it will select the content of the Send or Master track. when you press ALT-L again, it will select all of the pattern data (including sends + masters). instead of "only the tracks and not sends + masters".
 ![](attachments/2024-06-17_ALT-L_logic_improvement.gif)
 
 ---
-### 2024-06-17 - esaruoho
-
-Fixed: when using Pattern Doubler to double a 256 row pattern to 512 - and the pattern has automation, there used to be an error shot. now no error is shot no more and the automation works as expected.
+### 2024-06-17 - Fixed: when using Pattern Doubler to double a 256 row pattern to 512 - and the pattern has automation, there used to be an error shot.
+now no error is shot no more and the automation works as expected.
 
 ---
-### 2024-06-17 - esaruoho
-
-Improvement: Sample Navigator now has the "Mono to Stereo" & "Mono to Left, Right Blank" & "Mono to Right, Left Blank" entries and they're sorted correctly
+### 2024-06-17 - Improvement: Sample Navigator now has the "Mono to Stereo" & "Mono to Left, Right Blank" & "Mono to Right, Left Blank" entries
+And they're sorted correctly
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.05.35.png)
 
 ---
-### 2024-06-17 - esaruoho
-
-improvement: tweaked the naming convention of "Bypass EFX (Write to Pattern)" and "Enable EFX (Write to Pattern)".
+### 2024-06-17 - improvement: tweaked the naming convention of "Bypass EFX (Write to Pattern)" and "Enable EFX (Write to Pattern)"
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.41.12.png)
 
 ---
-### 2024-06-17 - esaruoho
-
-Improvement: Paketti PitchBend DrumKit Loader now correctly sets LoopMode + Sample Interpolation for each of the samples loaded into the drumkit.
+### 2024-06-17 - Improvement: Paketti PitchBend DrumKit Loader now correctly sets LoopMode + Sample Interpolation for each of the samples loaded into the drumkit.
 
 ---
-### 2024-06-17 - esaruoho
-
-Improvement: Bypass EFXs are now grouped together
+### 2024-06-17 - Improvement: Bypass EFXs are now grouped together
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_13.57.12.png)
 
 ---
@@ -866,9 +835,8 @@ pretty much does what it says on the tin - if there are no groups, then it doesn
 ![](attachments/2024-06-17_jump_to_next_previous_track.gif)
 
 ---
-### 2024-06-17 - esaruoho
-
-Improvement: 24st_pitchbend, 36st_pitchbend, 48st_pitchbend, 64st_pitchbend, 96st_pitchbend loaders updated with macros set up .. these init instruments were lagging behind from 12st_pitchbend which had all the goodies
+### 2024-06-17 - Improvement: 24st_pitchbend, 36st_pitchbend, 48st_pitchbend, 64st_pitchbend, 96st_pitchbend loaders updated with macros set up
+these init instruments were lagging behind from 12st_pitchbend which had all the goodies
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_22.51.58.png)
 
 ---
@@ -4147,9 +4115,7 @@ Improvement: eSpeak now has "Generate Row 00-32" shortcuts. 00 will generate all
 
 
 ---
-### 2024-09-17 - esaruoho
-
-Improvement: Loop Set Texture / Loop Set Percussion now sets Mute Group 1.
+### 2024-09-17 - Improvement: Loop Set Texture / Loop Set Percussion now set Mute Group 1.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/564)
 
 ---
@@ -4162,9 +4128,8 @@ select 64 rows, run shortcut - sample BeatSync line is now 64.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/561)
 
 ---
-### 2024-09-19 - esaruoho
-
-Feature: "Change Selected Instrument (Next / Previous)" added to MidiMappings. it's a +1 -1 effort.
+### 2024-09-19 - Feature: "Change Selected Instrument (Next / Previous)" added to MidiMappings.
+it's a +1 -1 effort.
 ![](attachments/2024-09-19_Screenshot_2024-09-19_at_15.01.00.png)
 
 
@@ -5212,9 +5177,7 @@ Added 7F/00 switcher to Keyzones tab
 
 
 ---
-### 2024-10-24 - esaruoho
-
-Feature: Set Interpolation to None,Linear,Cubic,Sinc across the whole song (each sample, each slice) shortcuts added
+### 2024-10-24 - Feature: Set Interpolation to None,Linear,Cubic,Sinc across the whole song (each sample, each slice) shortcuts
 (Mentioned in https://forum.renoise.com/t/set-interpolation-of-every-sample-in-song-to-none/74220)
 ![](attachments/2024-10-24_Screenshot_2024-10-24_at_23.10.05.png)
 
@@ -5222,12 +5185,12 @@ Feature: Set Interpolation to None,Linear,Cubic,Sinc across the whole song (each
 
 
 ---
-### 2024-10-25 - esaruoho
+### 2024-10-25 - Improvement: Paketti Donation / About dialog buttons open URLs again
 
 Improvement: the Paketti Donation / About dialog buttons for opening urls now.. open the url again.
 
 ---
-### 2024-10-25 - esaruoho
+### 2024-10-25 - Improvement: OctaMED Pick/Put Dialog keybindings with correct paths
 
 Improvement: OctaMED Pick / Put Dialog keybindings are now under "Paketti:" instead of "Paketti..:" for better discoverability
 
@@ -5246,12 +5209,10 @@ Improvement: Additional tweaks - all menus in menu entry now end with ".." and t
 
 
 ---
-### 2024-10-27 - esaruoho
-
-Improvement: "Capture Nearest Instrument and Octave" has now received the following upgrades:
-39. After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
-40. If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
-41. If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
+### 2024-10-27 - Improvement: "Capture Nearest Instrument and Octave" 
+- After selecting the nearest instrument, if you run the script again, it shows the Sample Editor.
+- If you're already in the nearest instrument, and Sample Editor is showing, then back to Pattern Editor and Automation
+- If you're already in the nearest instrument, and Pattern Editor and Automation are showing, then show Track DSPs.
 (Related to some discussions at https://forum.renoise.com/t/sample-selection/20837, so 2007.. )
 
 ---
@@ -5260,7 +5221,7 @@ Improvement: "Capture Nearest Instrument and Octave" has now received the follow
 I pretty much ended up using most of today trying to get the Paketti Manual GitHub page working, didn't make much headway, the markdown is not correctly parsed. but also filtered through tons of Renoise Threads
 
 ---
-### 2024-10-29 - esaruoho
+### 2024-10-29 - Improvement: Midi Mapping cleanup
 
 Improvement: Moved the path of these so there's no "Global:Paketti" for MidiMappings, instead Paketti: for these
 ![](attachments/2024-10-29_Screenshot_2024-10-29_at_21.42.20.png)
@@ -5456,9 +5417,8 @@ good for doubling up a sample.
 
 
 ---
-### 2024-11-03 - esaruoho
-
-Improvement: Duplicate Pattern & Clear Muted Tracks now has an Above and a Below flavor - the Above will place the duplicate+muted track above the original pattern, and the Below will paste it below.
+### 2024-11-03 - Improvement: Duplicate Pattern & Clear Muted Tracks now has an Above and a Below flavor
+the Above will place the duplicate+muted track above the original pattern, and the Below will paste it below.
 ![](attachments/2024-11-03_Screenshot_2024-11-03_at_14.59.17.png)
 
 
@@ -5470,9 +5430,7 @@ Improvement: Nudge Paste now has two flavors, one that moves the selection, and 
 
 
 ---
-### 2024-11-03 - esaruoho
-
-Improvement: Load new sample with current slice markers now also loads sample settings and all slice settings to the new one.
+### 2024-11-03 - Improvement: Load new sample with current slice markers now also loads sample settings and all slice settings to the new one.
 
 ---
 ### 2024-11-03 - esaruoho
@@ -5564,39 +5522,27 @@ requested on https://forum.renoise.com/t/gain-offset-in-sample-editor/74279/
 
 
 ---
-### 2024-11-06 - esaruoho
-
-Improvement: "Select Instrument" numbering is now 00 instead of "0" - allowing for better discoverability.
+### 2024-11-06 - Improvement: "Select Instrument" numbering is now 00 instead of "0" - allowing for better discoverability.
 ![](attachments/2024-11-06_Screenshot_2024-11-06_at_22.29.20.png)
 
 
 ---
-### 2024-11-06 - esaruoho
-
-Improvement: "select specific track" numbering is now 01 instead of 1 - better discoverability.
+### 2024-11-06 - Improvement: "select specific track" numbering is now 01 instead of 1 - better discoverability.
 ![](attachments/2024-11-06_Screenshot_2024-11-06_at_22.31.35.png)
 
 
 ---
-### 2024-11-06 - esaruoho
-
-Improvement: Nudge Slice 01-32 is now 01-32 instead of 1-32 , better discoverability
+### 2024-11-06 - Improvement: Nudge Slice 01-32 is now 01-32 instead of 1-32 , better discoverability
 ![](attachments/2024-11-06_Screenshot_2024-11-06_at_22.32.22.png)
 
-
 ---
-### 2024-11-06 - esaruoho
-
-Improvement: Set Global LPB is now 001 instead of 1 onwards - better discoverability
+### 2024-11-06 - Improvement: Set Global LPB is now 001 instead of 1 onwards - better discoverability
 ![](attachments/2024-11-06_Screenshot_2024-11-06_at_22.34.00.png)
 
 
 ---
-### 2024-11-06 - esaruoho
-
-Improvement: Set Phrase LPB is now 3 digits instead of 1, for better discoverability
+### 2024-11-06 - Improvement: Set Phrase LPB is now 3 digits instead of 1, for better discoverability
 ![](attachments/2024-11-06_Screenshot_2024-11-06_at_22.36.24.png)
-
 
 ---
 ### 2024-11-06 - esaruoho
@@ -5810,9 +5756,7 @@ https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44
 
 
 ---
-### 2024-11-14 - esaruoho
-
-Improvement: Added 2nd midibinds of the 8 Selected Instrument macros and the selected automation parameter writer.
+### 2024-11-14 - Improvement: Added 2nd midibinds of the 8 Selected Instrument macros and the selected automation parameter writer.
 
 ---
 ### 2024-11-15 - esaruoho
@@ -5823,24 +5767,17 @@ repost since gif added
 
 
 ---
-### 2024-11-15 - esaruoho
-
-Feature: Load 32 random samples from user-defined folder. (One sample per instrument)
+### 2024-11-15 - Feature: Load 32 random samples from user-defined folder. (One sample per instrument)
 
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/fe011e3d56d441918a9eb70659c22c79?sid=482a730a-a58a-4e61-b8fc-35e679d8cf38" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/fe011e3d56d441918a9eb70659c22c79?sid=bd9dc155-1f9d-44b1-b163-db983fd51631
 (Closes https://github.com/esaruoho/paketti/issues/701 )
 
 ---
-### 2024-11-15 - esaruoho
-
-Feature: load 12 random samples to new instrument.
-
+### 2024-11-15 - Feature: load 12 random samples to new instrument.
 
 ---
-### 2024-11-15 - esaruoho
-
-Feature: load 120 random samples as a drumkit
+### 2024-11-15 - Feature: load 120 random samples as a drumkit
 Video with some audio:
 <div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/9dba2e74146c45dfa1299b9af6cb6686?sid=7453fb29-8618-4805-9ddc-a92dd015fa96" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 https://www.loom.com/share/9dba2e74146c45dfa1299b9af6cb6686?sid=80a48602-e0d3-4b47-b22c-c922b7c2ef88
@@ -6933,25 +6870,19 @@ these focus on being able to clear or wipe a specific column, track, selected tr
 
 
 ---
-### 2025-01-20 - esaruoho
-
-Feature: Step by EditStep (Forwards / Backwards)
+### 2025-01-20 - Feature: Step by EditStep (Forwards / Backwards)
 https://forum.renoise.com/t/editstep-jumping/75076/2
 ![](attachments/2025-01-20_step_by_editstep.gif)
 
 
 ---
-### 2025-01-20 - esaruoho
-
-Improvement: Unison Generator fixes.
+### 2025-01-20 - Improvement: Unison Generator fixes.
 - if you used the Unison Generator on a sample that's already been Unison Generator'd up, the panning was all wrong (not center, 50L, 50R, 50L, 50R, 50L, 50R, 50L - instead, all over the place)
 - If you Unison Generator a Unison Generator'd sample, the naming used to go wrong. (think `New Sample 02 (Unison 7 [-2] (50R)) (Unison 7 [-2] (50L)) (Unison 7 [7] (50L))` etc and other such mess) - now, no longer.
 Fixes https://github.com/esaruoho/paketti/issues/748
 
 ---
-### 2025-01-20 - esaruoho
-
-Improvement: Pakettify Current Instrument  has been added as a menu entry to Instrument Box and Sample Navigator.
+### 2025-01-20 - Improvement: Pakettify Current Instrument  has been added as a menu entry to Instrument Box and Sample Navigator.
 
 ---
 ### 2025-01-20 - esaruoho
@@ -7090,9 +7021,7 @@ Closes https://github.com/esaruoho/paketti/issues/746
 
 
 ---
-### 2025-01-26 - esaruoho
-
-Improvement: Flood Fill Note and Instrument now:
+### 2025-01-26 - Improvement: Flood Fill Note and Instrument
 - doesn't error if you're in effect column, instead errors gracefully in the statusbar
 - now also floodfills the volume, panning, delay and samplefx columns, if they happen to contain data.
 
@@ -7931,12 +7860,11 @@ Improvement: Paketti Pattern Effect Command Cheatsheet now has a "Rows with Note
 ![](Screenshots/Cheatsheet_Notes_Only.png)
 
 ---
-### 2025-02-27 - esaruoho
-Improvement: 0G00/0D00 & 0G00/0U00 will no longer overwrite the 2nd row Dxx or Uxx effect value.
+### 2025-02-27 - Improvement: 0G00/0D00 & 0G00/0U00 will no longer overwrite the 2nd row Dxx or Uxx effect value.
 (Closes https://github.com/esaruoho/paketti/issues/839)
 
 ---
-### 2025-02-27 - esaruoho
+### 2025-02-27 - Improvement: Paketti Gater improvements
 Improvement: Paketti Gater respects the step valueboxes correctly again, fixing a regression.
 Improvement: Paketti Gater does not wipe Retrig column content, if Receiving from Playback.
 Improvement: Paketti Gater now auto-receives current track content when opening the Dialog.
@@ -7953,8 +7881,7 @@ Improvement: Paketti Volume/Delay/Pan Slider Controls Dialog will now
 ![](Screenshots/vpd.png)
 
 ---
-### 2025-02-28 - esaruoho
-Improvement: Paketti Gater Optimizations
+### 2025-02-28 - Improvement: Paketti Gater Optimizations
 - Introduced `<<` and `>>` for Global Moving
 - Introduced "Global Randomize" for randomizing all the four different Gaters
 - Introduced "Global Clear" for clearing all the four different Gaters.
@@ -8018,31 +7945,26 @@ Improvement: Pakettify Instrument will now retain Phrases, and remove the last "
 (Closes https://github.com/esaruoho/paketti/issues/843)
 
 ---
-### 2025-03-02 - esaruoho
-Improvement: Toggle Sample Selection Info now also shows beats and divisions
+### 2025-03-02 - Improvement: Toggle Sample Selection Info now also shows beats and divisions
 ![](Screenshots/sampleselectioninfo_v2.png)
 
 ---
-### 2025-03-03 - esaruoho
-Improvement: Tweaked the Sample Editor Menu Entries for better discoverability
+### 2025-03-03 - Improvement: Tweaked the Sample Editor Menu Entries for better discoverability
 ![](Screenshots/sample_editor_menu_entries.png)
 
 ---
-### 2025-03-03 - esaruoho
-Feature: Delete Unused Instruments
+### 2025-03-03 - Feature: Delete Unused Instruments
 ![](Screenshots/unused_instrument_delete.png)
 
 ---
-### 2025-03-03 - esaruoho
-Feature: Delete Unused Samples
+### 2025-03-03 - Feature: Delete Unused Samples
 This will delete Instruments that aren't in use, but also samples that aren't in use in drumkit instruments, and if you have a velocity mapped instrument, the unused velocity samples will be deleted.
 ![](Screenshots/unusedsamp_01.png)
 ![](Screenshots/unusedsamp_02.png)
 ![](Screenshots/unusedsamp_03.png)
 
 ---
-### 2025-03-03 - esaruoho
-Feature: Find Free KeyBindings
+### 2025-03-03 - Feature: Find Free KeyBindings
 (Closes https://github.com/esaruoho/paketti/issues/309)
 ![](Screenshots/findfreekeybindings.png)
 
@@ -8052,67 +7974,56 @@ Improvement: Largest Sample Finder now has a method for showing which samples ar
 ![](Screenshots/sample_largest_samples.jpeg)
 
 ---
-### 2025-03-04 - esaruoho
-Feature: Shortcut that detects where the LFO is, and modifies the Shape:
+### 2025-03-04 - Feature: Shortcut that detects where the LFO is, and modifies the Shape:
 ![](Screenshots/lfo-shape-changer.png)
 ![](Screenshots/lfoshapechanger.gif)
 
 ---
-### 2025-03-04 - esaruoho
-Feature: Rename Tracks by Played Samples
+### 2025-03-04 - Feature: Rename Tracks by Played Samples
 This takes the tracks that have notes in them, and reads which samples are in use on the notes, and names the tracks accordingly.
 (Closes https://github.com/esaruoho/paketti/issues/845)
 ![](Screenshots/renametracks01.png)
 ![](Screenshots/renametracks02.png)
 
 ---
-### 2025-03-05 - esaruoho
-Feature: Sample Loop Have / Sample Loop Double
+### 2025-03-05 - Feature: Sample Loop Halve / Sample Loop Double
 ![](Screenshots/sampleloopdouble_halve.png)
 
 ---
-### 2025-03-05 - esaruoho
-Improvement: "Create Group and Move DSPs" will now reliably retain the minimized state of devices.
+### 2025-03-05 - Improvement: "Create Group and Move DSPs" will now reliably retain the minimized state of devices.
 
 ---
-### 2025-03-05 - esaruoho
-Improvement: Replicate at Cursor in Phrase **V3.5 Only**
+### 2025-03-05 - Improvement: Replicate at Cursor in Phrase **V3.5 Only**
 (Closes https://github.com/esaruoho/paketti/issues/844)
 
 ---
-### 2025-03-05 - esaruoho
-Improvement: Phrase Follow Pattern Hack should now be able to follow 512 rows of a phrase with triggers coming from a 64 row pattern.  **V3.5 Only**
+### 2025-03-05 - Improvement: Phrase Follow Pattern Hack should now be able to follow 512 rows of a phrase with triggers coming from a 64 row pattern.  **V3.5 Only**
 (Closes https://github.com/esaruoho/paketti/issues/846)
 
 ---
-### 2025-03-06 - esaruoho
-Improvement: Inspect Selected Device (Debug -> Terminal)
+### 2025-03-06 - Improvement: Inspect Selected Device (Debug -> Terminal)
 This will output the parameter names, and the values, of each of the parameters of the selected device, to the Terminal.
 
 ---
-### 2025-03-06 - esaruoho
-Improvement: Renoise Native Repeater with Hold Off
+### 2025-03-06 - Improvement: Renoise Native Repeater with Hold Off
 (Closes https://github.com/esaruoho/paketti/issues/569)
 ![](Screenshots/repeaterholdoff.png)
 
 ---
-### 2025-03-06 - esaruoho
-Feature: Dialog Close Key
+### 2025-03-06 - Feature: Dialog Close Key
 (Closes https://github.com/esaruoho/paketti/issues/519)
 ![](Screenshots/keyclosedialog.png)
 
 ---
-### 2025-03-07 - esaruoho
-Feature: Midi Knob for Selected Phrase LPB control (1...127), 1-64, powers of 2.
+### 2025-03-07 - Feature: Midi Knob for Selected Phrase LPB control (1...127), 1-64, powers of 2.
 ![](Screenshots/selected_phrase_LPB_Control.png)
 
 ---
-### 2025-03-08 - esaruoho
-Improvement: Dialog Close Key no longer has `Shift` but instead `Dontdonothing` - which will make sure that nothing ever closes the dialog, no keypress, that is.
+### 2025-03-08 - Improvement: Dialog Close Key no longer has `Shift` but instead `Dontdonothing`
+which will make sure that nothing ever closes the dialog, no keypress, that is.
 
 ---
-### 2025-03-08 - esaruoho
-Improvement: I've added Paketti TimeStretch, Automation Value Dialog, Set EditStep&Enter, Global Instrument / Sample Volume Adjustment to follow keyhandlers and therefore Dialog Close Key.
+### 2025-03-08 - Improvement: I've added Paketti TimeStretch, Automation Value Dialog, Set EditStep&Enter, Global Instrument / Sample Volume Adjustment to follow keyhandlers and therefore Dialog Close Key.
 
 ---
 ### 2025-03-08 - esaruoho
@@ -8270,24 +8181,19 @@ Improvement: Reinstated Paketti Default Instrument & Drumkit choosers
 ![](Screenshots/pakettidefaultinstrument_reinstatement.png)
 
 ---
-### 2025-03-19 - esaruoho
-Improvement: Lots of Windows Paketti Default XRNI / Drumkit tweaks to make them load reliably.
+### 2025-03-19 - Improvement: Lots of Windows Paketti Default XRNI / Drumkit tweaks to make them load reliably.
 
 ---
-### 2025-03-19 - esaruoho
-Improvement: All "Chordsplus" shortcuts + menu entries re-titled as "ChordsPlus"
+### 2025-03-19 - Improvement: All "Chordsplus" shortcuts + menu entries re-titled as "ChordsPlus"
 
 ---
-### 2025-03-19 - esaruoho
-Improvement: Single LFO Writer & LFO Writer to Selected Automation Parameter both move you to Mixer & Automation frames.
+### 2025-03-19 - Improvement: Single LFO Writer & LFO Writer to Selected Automation Parameter both move you to Mixer & Automation frames.
 
 ---
-### 2025-03-19 - esaruoho
-Improvement: Fixed the LFO Write Device Delete Off/On setting to work again.
+### 2025-03-19 - Improvement: Fixed the LFO Write Device Delete Off/On setting to work again.
 
 ---
-### 2025-03-19 - esaruoho
-Feature: Explode Notes to New Tracks
+### 2025-03-19 - Feature: Explode Notes to New Tracks
 (Closes https://github.com/esaruoho/paketti/issues/852)
 ![](Screenshots/explode-notes-to-new-tracks.png)
 
@@ -8298,13 +8204,11 @@ Feature: Find Note (Next/Previous) (Track/Pattern)
 ![](Screenshots/goto_note.gif)
 
 ---
-### 2025-03-19 - esaruoho
-Improvement: Random AKWF Wavetable Loader now has a Paketti PitchBend Default Instrument ingested.
+### 2025-03-19 - Improvement: Random AKWF Wavetable Loader now has a Paketti PitchBend Default Instrument ingested.
 ![](Screenshots/akwf_random_defaultxrni.png)
 
 ---
-### 2025-03-20 - esaruoho
-Improvement: Hide Notepad load shortcut from nonv3.5 Renoise.
+### 2025-03-20 - Improvement: Hide Notepad load shortcut from nonv3.5 Renoise.
 
 ---
 ### 2025-03-21 - esaruoho
@@ -8337,16 +8241,15 @@ Improvement: Selection in Pattern Matrix to Group now works as expected.
 (Fixes https://github.com/esaruoho/paketti/issues/853 & https://github.com/esaruoho/paketti/issues/752)
 
 ---
-### 2025-03-22 - esaruoho
-Feature: Fill Empty Sample Slots (Randomized Folder)
+### 2025-03-22 - Feature: Fill Empty Sample Slots (Randomized Folder)
 This will read the current instrument's empty note ranges and fill them with randomly selected samples - prompting the user for a folder.
 Before/After:
 ![](Screenshots/fill_empty_sample_slots_before.png)
 ![](Screenshots/fill_empty_sample_slots_after.png)
 
 ---
-### 2025-03-22 - esaruoho
-Improvement: Delete Unused Samples will now reliably delete the correct amount of unused samples and not wreck the sample mapping order.
+### 2025-03-22 - Improvement: Delete Unused Samples
+will now reliably delete the correct amount of unused samples and not wreck the sample mapping order.
 
 ---
 ### 2025-03-22 - esaruoho
@@ -8371,8 +8274,7 @@ Improvement: Gainer Crossfade A/B MidiMapping now also maps between -INF and 0.0
 Improvement: Fill Empty Sample Slots (Randomized Folder) now available as a shortcut too.
 
 ---
-### 2025-03-23 - esaruoho
-Improvement: Replicate Note Column at Cursor added
+### 2025-03-23 - Improvement: Replicate Note Column at Cursor added
 ![](Screenshots/replicate_note_column.png)
 
 ---
@@ -8385,8 +8287,7 @@ Improvement: Organized Sample Modulation Matrix menu entries to include PitchSte
 ![](Screenshots/sample_modulation_matrix_menu_entry_improvements.png)
 
 ---
-### 2025-03-26 - esaruoho
-Feature: Paketti Preferences setting for Load Device First or Last
+### 2025-03-26 - Feature: Paketti Preferences setting for Load Device First or Last
 (Closes https://github.com/esaruoho/paketti/issues/670)
 ![](Screenshots/PakettiLoaderFirstOrLast.png)
 
@@ -8947,28 +8848,26 @@ Improvement: Paketti Manual now has darkmode codeblocks so no longer white-on-wh
 Improvement: Working on YT-DLP to add more Process Slicing. Also Search textfield will now trigger a search by pressing Enter. Also made the Dialog shorter so it does not take up too much screen height on smaller screens (looking at you, Ubuntu VM running in UTM)
 
 ---
-### 2025-04-22 - esaruoho
+### 2025-04-22 - Improvement: Paketti Sample Selection preference in Paketti Preferences works instead of bugging.
 Improvement: Paketti Sample Selection preference will now automatically always work if you set it to On - instead of toggling off every time you restart Renoise.
 
 ---
-### 2025-04-22 - esaruoho
+### 2025-04-22 - Paketti File Format Import Tool as separate tool
 Paketti File Import Tool is now it's own separate tool that has the same features as Paketti, but is for those who cannot stomach the whole Paketti. 
 (https://github.com/esaruoho/paketti-importer/releases)[https://github.com/esaruoho/paketti-importer/releases]
 
 ---
-### 2025-04-22 - esaruoho
-Feature: Merge Instruments
+### 2025-04-22 - Feature: Merge Instruments
 This will merge Source Instrument's samples with Target Instrument's samples, creating sampleslots.
 Closes (https://github.com/esaruoho/paketti/issues/860)[https://github.com/esaruoho/paketti/issues/860]
 ![](Screenshots/merge_instruments.png)
 
 ---
-### 2025-04-22 - esaruoho
-Improvement: .SF2 import now supports velocity ranges!
+### 2025-04-22 - Improvement: .SF2 import now supports velocity ranges.
 ![](Screenshots/sf2_velocityrange.png)
 
 ---
-### 2025-04-22 - esaruoho
+### 2025-04-22 - Improvement: .SF2 importing fully shows first sample instead of "2 frames"
 Improvement: .SF2 import now correctly initializes the first sample instead of it being shown as 2 frames and bugging out when duplicating.
 
 ---
@@ -8976,24 +8875,23 @@ Improvement: .SF2 import now correctly initializes the first sample instead of i
 Improvement: Increase EditStep by +1 +2 +4 +8, Decrease EditStep by -1 -2 -4 -8, Double EditStep, Halve EditStep added as shortcuts
 
 ---
-### 2025-04-23 - esaruoho
-Improvement: Loading 01 Volume AHDSR device will initialize the settings to
+### 2025-04-23 - Improvement: Loading 01 Volume AHDSR device will initialize the settings to a specific AHDSR
 ![](Screenshots/ahdsr_parameters.png)
 
 ---
-### 2025-04-24 - esaruoho
+### 2025-04-24 - Improvement: Length Dialog & Phrase Editor Length fixes
 Improvement: Show Length Dialog will now let you edit Pattern or Phrase length.
 Improvement: Added Length + LPB changing for Phrase Editor.
-Improvement: Added "Play Current Line" without Advancing by EditStep shortcut.
 
 ---
-### 2025-04-24 - esaruoho
-Feature: Toggle Volume, Panning, Delay, Sample Effects Columns On/Off (Hiding all others)
+### 2025-04-24 - Improvement: Added "Play Current Line" without Advancing by EditStep shortcut.
+
+---
+### 2025-04-24 - Feature: Toggle Volume, Panning, Delay, Sample Effects Columns On/Off (Hiding all others)
 ![](Screenshots/visible.gif)
 
 ---
-### 2025-04-24 - esaruoho
-Improvement: Toggle All Visible, or Toggle All but Sample Effects Column Visible
+### 2025-04-24 - Improvement: Toggle All Visible, or Toggle All but Sample Effects Column Visible
 ![](Screenshots/toggle_all_columns_or_all_but_samplecolumns.gif)
 
 ---
