@@ -8988,8 +8988,13 @@ Improvement: Added "Play Current Line" without Advancing by EditStep shortcut.
 
 ---
 ### 2025-04-24 - esaruoho
+Feature: Toggle Volume, Panning, Delay, Sample Effects Columns On/Off (Hiding all others)
+![](Screenshots/visible.gif)
 
 ---
+### 2025-04-24 - esaruoho
+Improvement: Toggle All Visible, or Toggle All but Sample Effects Column Visible
+![](Screenshots/toggle_all_columns_or_all_but_samplecolumns.gif)
 
 ---
 
