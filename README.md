@@ -8895,18 +8895,68 @@ Improvement: Added Length + LPB changing for Phrase Editor.
 ![](Screenshots/toggle_all_columns_or_all_but_samplecolumns.gif)
 
 ---
+### 2025-04-26 - Improvement: Pattern Matrix Menu Entry organization
+Moved Clone & Duplicate menu entries to be next to eachother for better discoverability
+Also moved Automation Curve drawing related menu entries to the **Automation Curves..** submenu
+![](Screenshots/patternmatrix_menu_entry_clone_and_duplicate_organization.png)
+![](Screenshots/patternmatrix_menu_entry_automation_curves_organization.png)
 
+
+---
+### 2025-04-26 - Improvement: Disk Browser menu entry additions
+Added ReCycle .RX2 Import, ReCycle .REX Import, Polyend Tracker Instrument .PTI import, Soundfont .SF2 Import, AKWF loaders, Paketti Stacker Dialog and previously missing Paketti PitchBend Loaders, including Fill Empty Sample Slots, and of course User-Defined Sample Folders...
+![](Screenshots/disk_browser_files_menuentry_improvements.png)
+
+---
+### 2025-04-26 - Improvement: Pattern Sequencer menu entry additions
+Added missing Section, Sequence and Selection menu entries, further organizing.
+![](Screenshots/pattern_sequencer_menu_entry_improvements.png)
+
+---
+### 2025-04-26 - Improvement: Paketti Phrase Init Dialog changes
+Added Looping as a setting
+Changed the widths of LPB + Phrase length valueboxes
+
+---
+### 2025-04-26 - Improvement: Sample Navigator & Sample Editor & Sample Mappings "Process.." subfolder parity
+They are now identical and organized in the same way - with no sample processes missing from Sample Navigator or from Sample Mappings.
+
+---
+### 2025-04-26 - Improvement: Keyzone Distributor added to Sample Navigator & Sample Mappings
+for better discoverability
+
+---
+### 2025-04-26 - Improvement: All mentions of BeatSync renamed to Beatsync. Same for AutoSeek -> Autoseek
+
+---
+### 2025-04-26 - Improvement: More Column Visibility content added to View -> Paketti.. -> Visible Columns.. submenu
+![](Screenshots/mainmenu_view_visiblecolumns.png)
+
+---
+### 2025-04-26 - Improvement: Value Interpolation Looper Dialog renamed and added to Mixer, Pattern Matrix menus
+
+---
+### 2025-04-26 - Improvement: Track Output Routings dialog will now open and close with the same shortcut / menu entry, instead of endlessly opening on every click.
+Also tweaked the dialog design
+![](Screenshots/output_routings_dialog.png)
+
+---
+### 2025-04-26 - Improvement: Started work on Dialog of Dialogs update.
+---
+### 2025-04-27 - Improvement: PitchStep Demo can now be closed with the user-set closer key (Esc, Tab, etc.., whichever you set it to from the Paketti Preferences list.)
+
+---
+### 2025-04-27 - Improvement: Find Free KeyBindings Dialog works and opens correctly again.
+
+---
+### 2025-04-27 - Improvement: Paketti .XRNS probe dialog optimizations
+![](Screenshots/pakettixrnsprobe_report_optimization.png)
 ---
 
 ---
 
 ---
 
----
-
----
-
----
 
 ---
 # End
