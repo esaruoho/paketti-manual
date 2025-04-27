@@ -8951,7 +8951,10 @@ Also tweaked the dialog design
 ---
 ### 2025-04-27 - Improvement: Paketti .XRNS probe dialog optimizations
 ![](Screenshots/pakettixrnsprobe_report_optimization.png)
+
 ---
+### 2025-04-27 Improvement: Dialog of Dialogs now has 50 dialogs
+![](Screenshots/dialog_of_dialogs_50.png)
 
 ---
 
