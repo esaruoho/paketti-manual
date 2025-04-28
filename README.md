@@ -8973,6 +8973,10 @@ Set Selection by Hex Offset, Paketti Tuplet Writer, Speed and Tempo to BPM, AKWF
 ### 2025-04-28 Improvement: Speed and Tempo BPM, Set Selection by Hex Offset, Tuplet Writer + Debug dialogs can be closed and opened with the same menu entry or shortcut.
 
 ---
+### 2025-04-28 Improvement: Dialog of Dialogs title shows Dialog count
+![](Screenshots/dialog_of_dialogs_dialog_count.png)
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
