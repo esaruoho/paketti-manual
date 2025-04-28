@@ -8965,6 +8965,14 @@ BeatDetector Modified, OctaMED Note Echo, OctaMED Pick/Put Row, PlayerPro Note D
 ![](Screenshots/dialog_of_dialogs_dialog_new_entries.png)
 
 ---
+### 2025-04-28 Improvement: Added more menu entries to Dialog of Dialogs
+Set Selection by Hex Offset, Paketti Tuplet Writer, Speed and Tempo to BPM, AKWF Load 04 Samples (XY), Debug tools: Available Plugin Information, Plugin Details, Effect Details
+![](Screenshots/dialog_of_dialogs_even_more_dialogs.png)
+
+---
+### 2025-04-28 Improvement: Speed and Tempo BPM, Set Selection by Hex Offset, Tuplet Writer + Debug dialogs can be closed and opened with the same menu entry or shortcut.
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
