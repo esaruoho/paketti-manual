@@ -8953,28 +8953,69 @@ Also tweaked the dialog design
 ![](Screenshots/pakettixrnsprobe_report_optimization.png)
 
 ---
-### 2025-04-27 Improvement: Dialog of Dialogs now has 50 dialogs
+### 2025-04-27 - Improvement: Dialog of Dialogs now has 50 dialogs
 ![](Screenshots/dialog_of_dialogs_50.png)
 
 ---
-### 2025-04-28 Improvement: Player Pro Main Dialog can now be opened and closed multiple times without errors
+### 2025-04-28 - Improvement: Player Pro Main Dialog can now be opened and closed multiple times without errors
 
 ---
-### 2025-04-28 Improvement: Added more menu entries to Dialog of Dialogs
+### 2025-04-28 - Improvement: Added more menu entries to Dialog of Dialogs
 BeatDetector Modified, OctaMED Note Echo, OctaMED Pick/Put Row, PlayerPro Note Dialog, PlayerPro Main Dialog, PlayerPro Effect Dialog.
 ![](Screenshots/dialog_of_dialogs_dialog_new_entries.png)
 
 ---
-### 2025-04-28 Improvement: Added more menu entries to Dialog of Dialogs
+### 2025-04-28 - Improvement: Added more menu entries to Dialog of Dialogs
 Set Selection by Hex Offset, Paketti Tuplet Writer, Speed and Tempo to BPM, AKWF Load 04 Samples (XY), Debug tools: Available Plugin Information, Plugin Details, Effect Details
 ![](Screenshots/dialog_of_dialogs_even_more_dialogs.png)
 
 ---
-### 2025-04-28 Improvement: Speed and Tempo BPM, Set Selection by Hex Offset, Tuplet Writer + Debug dialogs can be closed and opened with the same menu entry or shortcut.
+### 2025-04-28 - Improvement: Speed and Tempo BPM, Set Selection by Hex Offset, Tuplet Writer + Debug dialogs can be closed and opened with the same menu entry or shortcut.
 
 ---
-### 2025-04-28 Improvement: Dialog of Dialogs title shows Dialog count
+### 2025-04-28 - Improvement: Dialog of Dialogs title shows Dialog count
 ![](Screenshots/dialog_of_dialogs_dialog_count.png)
+
+---
+### 2025-04-28 - Plumbing: Almost all the dialogs now use a single keyhandler function instead of a separate one for each.
+
+---
+### 2025-04-28 - Improvement: Show/Hide VolumeStep & CutoffStep & DriveStep & ResonanceStep on Selected Instrument
+This will show the 16 step External Editors for Volume Stepper, Cutoff Stepper, Drive Stepper, Resonance Stepper, just like the Show/Hide PitchStep shows the Pitch Stepper.
+Also added the required shortcuts for showing them.
+(Closes (https://github.com/esaruoho/paketti/issues/508)[https://github.com/esaruoho/paketti/issues/508])
+![](Screenshots/pitchsteppers_total.png)
+
+---
+### 2025-04-28 - Improvement: Paketti 12st PitchBend + Paketti DrumKit now all have VolumeStep, CutoffStep, DriveStep, ResonanceStep and PanStep.
+
+---
+### 2025-04-28 - Paketti Clean Render Selected Track / Group (Just .WAV)
+This will no longer collapse + mute the original track.
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+### 2025-04-28 
+
+---
+
 
 ---
 # End
