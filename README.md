@@ -8957,9 +8957,12 @@ Also tweaked the dialog design
 ![](Screenshots/dialog_of_dialogs_50.png)
 
 ---
+### 2025-04-28 Improvement: Player Pro Main Dialog can now be opened and closed multiple times without errors
 
 ---
-
+### 2025-04-28 Improvement: Added more menu entries to Dialog of Dialogs
+BeatDetector Modified, OctaMED Note Echo, OctaMED Pick/Put Row, PlayerPro Note Dialog, PlayerPro Main Dialog, PlayerPro Effect Dialog.
+![](Screenshots/dialog_of_dialogs_dialog_new_entries.png)
 
 ---
 # End
