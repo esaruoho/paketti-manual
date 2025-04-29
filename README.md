@@ -47,6 +47,8 @@ Paketti introduces features from:
 - *"You are essentially writing... a completely new framework over the engine."*
 - *"I have no doubt that you are the most important person in the various Renoise Tools developers."*
 - *"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
+- *"Paketti is like a massive Swiss army knife in the world of Renoise tools."*
+- 
 
 ## Where
 
@@ -8990,29 +8992,29 @@ Also added the required shortcuts for showing them.
 ### 2025-04-28 - Improvement: Paketti 12st PitchBend + Paketti DrumKit now all have VolumeStep, CutoffStep, DriveStep, ResonanceStep and PanStep.
 
 ---
-### 2025-04-28 - Paketti Clean Render Selected Track / Group (Just .WAV)
+### 2025-04-28 - Feature: Paketti Clean Render Selected Track / Group (Just .WAV)
 This will no longer collapse + mute the original track.
 
 ---
-### 2025-04-28 
+### 2025-04-29 - Improvement: Clean Render Track will cleanly remove the DC Offset
 
 ---
-### 2025-04-28 
+### 2025-04-29 -
 
 ---
-### 2025-04-28 
+### 2025-04-29 - 
 
 ---
-### 2025-04-28 
+### 2025-04-29 - 
 
 ---
-### 2025-04-28 
+### 2025-04-29 - 
 
 ---
-### 2025-04-28 
+### 2025-04-29 - 
 
 ---
-### 2025-04-28 
+### 2025-04-29 - 
 
 ---
 
