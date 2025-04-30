@@ -9019,7 +9019,7 @@ and prints `Global Groove 0&1: 60% (66), 2&3: 44% (4C), 4&5: 17% (1D), 6&7: 49% 
 ![](Screenshots/add_setselectedsampleloopmode_sampleeditor.png)
 
 ---
-### 2025-04-30 - 
+### 2025-04-30 - Improvement: Global Groove to Delay Value works on LPB8 too.
 
 ---
 
