@@ -9003,6 +9003,7 @@ This will no longer collapse + mute the original track.
 
 ---
 ### 2025-04-30 - Improvement: Replicate at Note Column / FX Column now works on FX Column without erroring.
+![](Screenshots/replicate_note_fx_column.gif)
 
 ---
 ### 2025-04-30 - Improvement: Convert Global Groove to Delay on Selected Track Midi Mapping now works without an error.
@@ -9010,13 +9011,15 @@ This will no longer collapse + mute the original track.
 and prints `Global Groove 0&1: 60% (66), 2&3: 44% (4C), 4&5: 17% (1D), 6&7: 49% (53) -> Track 01 (Rendered)`
 
 ---
-### 2025-04-29 - 
+### 2025-04-30 - Feature: BPM to MS Delay Calculator Dialog added
+![](Screenshots/bpm_to_ms_dialog.gif)
 
 ---
-### 2025-04-29 - 
+### 2025-04-30 - Added Set Selected Sample Loop Mode shortcuts to Sample Editor
+![](Screenshots/add_setselectedsampleloopmode_sampleeditor.png)
 
 ---
-### 2025-04-29 - 
+### 2025-04-30 - 
 
 ---
 
