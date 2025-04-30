@@ -9002,10 +9002,10 @@ This will no longer collapse + mute the original track.
 ### 2025-04-29 - Improvement: Renamed the "Convert Global Groove to Delay on Selected Track" and added a KeyBind and a Midi Mapping for it.
 
 ---
-### 2025-04-29 - 
+### 2025-04-30 - Improvement: Replicate at Note Column / FX Column now works on FX Column without erroring.
 
 ---
-### 2025-04-29 - 
+### 2025-04-30 - Improvement: Convert Global Groove to Delay on Selected Track Midi Mapping now works without an error.
 
 ---
 ### 2025-04-29 - 
