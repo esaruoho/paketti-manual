@@ -9026,9 +9026,30 @@ and prints `Global Groove 0&1: 60% (66), 2&3: 44% (4C), 4&5: 17% (1D), 6&7: 49% 
 ![](Screenshots/globalgroove_delay_lpb8_multitrack_group.png)
 
 ---
-### 2025-05-02 - Improvement: Global Groove to Delay Value will now safely error out with an informative message if trying to run it on Master or Send track.
+### 2025-05-02 - Improvement: Global Groove to Delay Value will now safely error out with an informative message if trying to run it on Master or Send Track.
+Also if you are on a Group Tracks with no Tracks, it will no longer error out.
 
 ---
+### 2025-05-02 - Improvement: Clone Current Sequence added as shortcut to Pattern Sequencer + names Pattern accordingly
+![](Screenshots/clonecurrentsequencerename.png)
+
+---
+### 2025-05-02 - Feature: Create Section from Selection
+This will create a Section in the Pattern Sequencer, from the Selection.
+
+---
+### 2025-05-02 - Improvement: Phrase Init Settings will automatically select "Set Name" checkbox if user changes the Phrase Name textfield.
+
+---
+### 2025-05-02 - Improvement: Paketti Sequencer Settings Dialog
+This is used for Clone Current Sequence + Clone Selected Sequences:
+![](Screenshots/pakettisequencersettingsdialog.png)
+
+---
+### 2025-05-02 - Improvement: User-Defined Folder sample loaders now load even if folders have spaces or `&`.
+
+---
+### 2025-05-03 - Improvement: Reset All Steppers will reset Volume Stepper to 1 instead of 0.
 
 
 ---
