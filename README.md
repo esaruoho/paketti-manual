@@ -9020,9 +9020,13 @@ and prints `Global Groove 0&1: 60% (66), 2&3: 44% (4C), 4&5: 17% (1D), 6&7: 49% 
 
 ---
 ### 2025-04-30 - Improvement: Global Groove to Delay Value works on LPB8 too.
+
 ---
 ### 2025-05-01 - Improvement: Global Groove to Delay Value now reads if you're on a Group track, and writes to all the tracks inside the Group.
 ![](Screenshots/globalgroove_delay_lpb8_multitrack_group.png)
+
+---
+### 2025-05-02 - Improvement: Global Groove to Delay Value will now safely error out with an informative message if trying to run it on Master or Send track.
 
 ---
 
