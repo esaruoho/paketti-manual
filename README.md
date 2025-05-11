@@ -8440,16 +8440,13 @@ Improvement: Menu Entries for Transpose Shift -12 to +12 for All Instruments or 
 ![](Screenshots/transpose_shift_menu_fix.png)
 
 ---
-### 2025-03-31 - esaruoho
-Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
+### 2025-03-31 - Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
 
 ---
-### 2025-03-31 - esaruoho
-Improvement: Paketti Pattern Effect Command CheatSheet will no longer error out if you try to randomize values above 80 on Volume and Panning columns.
+### 2025-03-31 - Improvement: Paketti Pattern Effect Command CheatSheet will no longer error out if you try to randomize values above 80 on Volume and Panning columns.
 
 ---
-### 2025-03-31 - esaruoho
-Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 1...127 knob to control which row of the pattern you are on.
+### 2025-03-31 - Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 1...127 knob to control which row of the pattern you are on.
 ![](Screenshots/midi_patternrowposition.png)
 
 ---
@@ -8518,16 +8515,13 @@ Improvement: Wipe Exploded Track -> if exploding a track with multiple same-note
 Improvement: Wipe Exploded Track -> Edit Mode Color Blend will be off during track creation, and then set back on, if originally on.
 
 ---
-### 2025-04-03 - esaruoho
-Improvement: The shortcut for Paketti eSpeak Text-to-Speech Dialog has been renamed to "Paketti eSpeak Text-to-Speech Dialog..." - you will have to re-bind it.
+### 2025-04-03 - Improvement: The shortcut for Paketti eSpeak Text-to-Speech Dialog has been renamed to "Paketti eSpeak Text-to-Speech Dialog..." - you will have to re-bind it.
 
 ---
-### 2025-04-03 - esaruoho
-Improvement: If the sample you are using to run Unison Generator on is larger than 500000 frames, the fractional shifting will not be done on it, because it is too slow on large samples.
+### 2025-04-03 - Improvement: If the sample you are using to run Unison Generator on is larger than 500000 frames, the fractional shifting will not be done on it, because it is too slow on large samples.
 
 ---
-### 2025-04-03 - esaruoho
-Improvement: Replicate at cursor, above cursor, selected track or whole pattern functions are now optimized to be faster.
+### 2025-04-03 - Improvement: Replicate at cursor, above cursor, selected track or whole pattern functions are now optimized to be faster.
 
 ---
 ### 2025-04-04 - esaruoho
@@ -9050,6 +9044,18 @@ This is used for Clone Current Sequence + Clone Selected Sequences:
 
 ---
 ### 2025-05-03 - Improvement: Reset All Steppers will reset Volume Stepper to 1 instead of 0.
+
+---
+### 2025-05-08 - Feature: Select Random Instrument (Sample,Plugin,MIDI)
+This Keybind and Menu Entry will pick any Random Instrument (except the current one), which either has Samples, a Plugin or MIDI Output properties.
+
+---
+### 2025-05-08 - Feature: Paketti Simple Sample Tuning Calculator.
+One button "Set Pitch" to set the finetune + note. Another to Calculate or to Recalculate.
+![](Screenshots/pakettiSimpleSampleTuningCalculator.png)
+
+---
+### 2025-05-11 - Improvement: Panning Stepper is correctly found by the Pan Stepper shortcuts
 
 
 ---
