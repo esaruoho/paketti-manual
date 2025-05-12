@@ -9057,6 +9057,14 @@ One button "Set Pitch" to set the finetune + note. Another to Calculate or to Re
 ---
 ### 2025-05-11 - Improvement: Panning Stepper is correctly found by the Pan Stepper shortcuts
 
+---
+### 2025-05-12 - Feature: Double / Halve Slice Count
+if you got 0 slices, it'll slice in half. if you try to halve slice count when there's only 1 slice, then it'll just clear the slices. can easily go from 2 slices to 256 slices.
+![](Screenshots/double_halve_slicecount.gif)
+
+---
+### 2025-05-12 - Feature: Slice Count from Selection
+![](Screenshots/countslice_from_selection.gif)
 
 ---
 # End
