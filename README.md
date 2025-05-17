@@ -9067,6 +9067,30 @@ if you got 0 slices, it'll slice in half. if you try to halve slice count when t
 ![](Screenshots/countslice_from_selection.gif)
 
 ---
+### 2025-05-13 - Feature: ChordsPlus Distribute
+Distribute Always Next Row, Even 2, Even 4, Uneven, Across Selection (Even, Even2, Even4, Uneven)
+![](Screenshots/chordsplus_distribute_v3.gif)
+
+---
+### 2025-05-13 - Improvement: Reset All Steppers now does not reset CutoffStep, ResonanceStep, DriveStep to middle (CutoffStep should be 1, ResonanceStep 0, DriveStep 0 instead) - there's a different flavor of Reset All Steppers that will do that, but otherwise just reset to first step (keeping playback consistent)
+
+---
+### 2025-05-17 - Improvement: Show Largest Samples Dialog now uses the same keyhandler as all the other dialogs - therefore focus is returned to Renoise instead of being eaten up by the dialog.
+
+--- 
+### 2025-05-17 - Improvement: Main Menu -> File menu entries organized with easier discoverability
+![](Screenshots/file_menuentry_tweaks.png)
+
+---
+### 2025-05-17 - Improvement: Added "Toggle Automatically Show Selected Track DSPs On/Off" to the Main Menu -> Options menu.
+![](Screenshots/options_menu_entries.png)
+
+---
+### 2025-05-17 - Feature: Amigo Embedded Sample to Renoise import
+When you have an Amigo Plugin loaded, and the sample is Embedded (Embed is selected within the plugin interface), you are able to export it to Renoise, and it'll be injected with the 8 Macro Knobs and other details (such as Pitch, Volume, Panning, Drive, Cutoff, Resonance Steppers, PitchBend control etc). 
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
