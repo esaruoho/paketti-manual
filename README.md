@@ -9089,6 +9089,15 @@ Distribute Always Next Row, Even 2, Even 4, Uneven, Across Selection (Even, Even
 ### 2025-05-17 - Feature: Amigo Embedded Sample to Renoise import
 When you have an Amigo Plugin loaded, and the sample is Embedded (Embed is selected within the plugin interface), you are able to export it to Renoise, and it'll be injected with the 8 Macro Knobs and other details (such as Pitch, Volume, Panning, Drive, Cutoff, Resonance Steppers, PitchBend control etc). 
 
+---
+### 2025-05-18 - Feature: Signed/Unsigned process
+This flips the sample in that very specific "ALT-A Convert Signed to/from Unsigned samples", for that nice little crunchy mayhem. There are three shortcuts + menu entries. One that wrap-signs, one that wrap-unsigns, and one that toggles the signing/unsigning state.
+![](Screenshots/paketti_unsigned_signed_switcher.gif)
+
+---
+### 2025-05-18 - Feature: .EXE import hook.
+IYKYK.
+![](Screenshots/import_hook_exe.png)
 
 ---
 # End
