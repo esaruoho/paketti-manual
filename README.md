@@ -9097,7 +9097,12 @@ This flips the sample in that very specific "ALT-A Convert Signed to/from Unsign
 ---
 ### 2025-05-18 - Feature: .EXE import hook.
 IYKYK.
+Improvement: added .dll .dylib .sys .bin.
 ![](Screenshots/import_hook_exe.png)
+
+---
+### 2025-05-18 - Feature: .IFF Import hook
+This lets you load the legacy .IFF samples such as OctaMED or ProTracker/SoundTracker samples. If you come across any files that don't work, let me know. There's also a "Load Random 128 .IFFs" menu entry in the Instrument Box.
 
 ---
 # End
