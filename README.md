@@ -9103,6 +9103,7 @@ Improvement: added .dll .dylib .sys .bin.
 ---
 ### 2025-05-18 - Feature: .IFF Import hook
 This lets you load the legacy .IFF samples such as OctaMED or ProTracker/SoundTracker samples. If you come across any files that don't work, let me know. There's also a "Load Random 128 .IFFs" menu entry in the Instrument Box.
+Also added .8svx + .16sv support
 
 ---
 # End
