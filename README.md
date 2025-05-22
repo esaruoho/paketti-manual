@@ -22,17 +22,16 @@
 
 ## What
 
-Paketti is an add-on to Renoise, scripted with the LUA language. Also sometimes called a XRNX or a Tool. However, Paketti is not a "does one thing" type affair, as it introduces over 5100 shortcuts, over a thousand menu entries and hundreds and hundreds of midi mappings and over 45 dialogs.
+Paketti - or, Tracker Convergence Project (tm) provides over 5000 shortcuts, 1000+ menu entries, 1000+ midi mappings and 64 dialogs.
 
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
-Paketti introduces features from:
-- the famed C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
+It introduces features from:
+- the C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
 - the legendary OctaMED by Teijo Kinnunen on the one and only Amiga.
 - the awesome Impulse Tracker by Jeffrey Lim, running on DOS.
 - OpenMPT/MadTracker, Windows..
-- and..
-- PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
+- and.. PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
 ## Feedback
 
@@ -48,7 +47,6 @@ Paketti introduces features from:
 - *"I have no doubt that you are the most important person in the various Renoise Tools developers."*
 - *"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
 - *"Paketti is like a massive Swiss army knife in the world of Renoise tools."*
-- 
 
 ## Where
 
@@ -64,7 +62,7 @@ You can
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
-- Buy my music at [Bandcamp](http://lackluster.bandcamp.com/).
+- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/).
 
 # Roadmap
 
@@ -263,6 +261,22 @@ TODO
 
 ## MIDI
 
+### 8 Macro Knobs for controlling Paketti Instrument Macros
+
+I think one of the most consistent points of pleasure that Paketti can provide for those with MIDI devices is this:
+![](Screenshots/midimacros.png)
+What you're seeing are 8 pre-configured macro knobs. And two versions of the macro knobs for controlling the Selected Instrument settings.
+This means that after you're done configuring Macro2: Cutoff, Macro3: Resonance, Macro4: Cutoff LfoAmp, Macro5: Cutoff LfoFreq, Macro6: Drive, Macro7: ParallelComp Macro8: Pitchbend Inertia -- every time you're on any single Paketti Instrument, your 8 knob midicontroller will let you control these settings. 
+
+So, basically, set and forget. 
+
+Set Cutoff + Resonance, and any instrument you're on, your two knobs will change the Cutoff and the Resonance. Or any of those others.
+
+This is what Paketti is all about, workflow improvements that "make sense (tm)" and improve the quality of life.
+
+Also, every Paketti instrument comes in pre-baked with Pitchbend support - so you don't have to set it up yourself. Just load a sample using Paketti (or Clean Render, or Unison Generate, or eSpeak generate, or yt-dlp download, or .RX2 / .REX / .PTI / .IFF / .SF2 import), and you're already ready to control that specific instrument's macro knobs.
+
+
 ## Pattern Editor
 
 ## Mixer
@@ -282,6 +296,8 @@ TODO
 ## Sample Navigator
 
 ## Dialogs
+
+
 
 ## Global View Presets
 
@@ -306,24 +322,36 @@ For that, you just use the `Paketti PitchBend Multiple Sample Loader` & `Paketti
 
 If you pay close attention, you'll also see a checkbox for setting the AHDSR Envelope. Yes, the Default .XRNI Instrument of Paketti also comes in with some Sample FX Chain settings. There's a:
 
-- Deactivated Mono device (Sample FX)
-- AHDSR Modulation device
-- PitchStep Modulation device
+### Sample FX devices
+- Deactivated Mono device
+- Deactivated DC Offset device
+#### Modulation devices
+- Volume AHDSR
+- Volume Stepper
+- Volume LFO
+- Pitch Stepper
+- Panning Stepper
+- Panning LFO
+- Cutoff Stepper
+- Resonance Stepper
+- Drive Stepper
 
 Some examples below:
+![](attachments/paketti_samplefx_chains.png)
 
-<img width="1015" alt="Screenshot 2024-11-07 at 16 11 45" src="https://github.com/user-attachments/assets/1922b251-d5ad-4de0-a7bf-30ed7d616b91">
-
-<img width="955" alt="Screenshot 2024-11-07 at 16 11 59" src="https://github.com/user-attachments/assets/69aca855-8a02-4276-b862-16e95999b033">
-
-<img width="784" alt="Screenshot 2024-11-07 at 16 12 14" src="https://github.com/user-attachments/assets/a484ac3f-4c7c-4d2b-8ded-b92a3aec30a9">
+![](attachments/modulation_volume.png)
+![](attachments/modulation_panning.png)
+![](attachments/modulation_pitch.png)
+![](attachments/modulation_cutoff.png)
+![](attachments/modulation_resonance.png)
+![](attachments/modulation_drive.png)
 
 Why a Pitch Stepper? Because there are also shortcuts for opening the External Editor of the Pitch Stepper.
+![](attachments/modulation_pitchstep_keybinds.png)
 
-<img width="337" alt="Screenshot 2024-11-07 at 16 12 46" src="https://github.com/user-attachments/assets/e5e0f0c5-a909-40cc-9ccf-e686cc69d5be">
 
 Go wild with the drawings!
-<img width="1512" alt="Screenshot 2024-11-07 at 16 13 04" src="https://github.com/user-attachments/assets/58183986-1d79-44e2-8a96-75f4643fc1f4">
+![](attachments/modulation_pitchstep_external_editor.png)
 
 The other shortcuts do these:
 - Octave Up & Octave Down
@@ -368,12 +396,10 @@ The dialog where you get to select the Backup Folders is the "Launch App Selecti
 
 If you carefully look at the following dialog:
 
-<img width="902" alt="Screenshot 2024-11-07 at 15 54 28" src="https://github.com/user-attachments/assets/d5a33681-c2cd-402d-9776-c5a34d381f8a">
-
+![](attachments/LaunchAppSelection.png)
 You'll see there is also a way of sending a selected sample to a specific app! This means, you can set your preferred programs, and Renoise / Paketti will save the selected sample to a temporary folder, and start the app and load the sample. 
 
 ***Note well, Bitwig developers: Your app does not support sending files to it via `bitwig.app file.wav`. Please fix.***
-
 
 ### Wipe & Slice
 
@@ -393,8 +419,7 @@ But Slices aren't always precise. So there are methods for adjusting the Start a
 
 Here are the shortcuts - and examples of how it could be done.
 
-<img width="1119" alt="Screenshot 2024-11-07 at 16 07 46" src="https://github.com/user-attachments/assets/a05989e7-9cfb-4c86-8ad7-41996c7ee0e6">
-
+![](attachments/movesliceleft_right.png)
 And here's a little .gif of what it looks like:
 
 ![move slice](https://github.com/user-attachments/assets/c44aed7a-6734-4b72-b85c-33749d3542e8)
@@ -430,7 +455,7 @@ And the more important detail: the External Editor is automatically opened!
 
 The same thing exists for loading Plugins, go to **Tools -> Paketti.. -> Plugins/Devices.. -> Load Plugins Dialog...**
 
-<img width="382" alt="Screenshot 2024-11-07 at 16 01 24" src="https://github.com/user-attachments/assets/566fb9e6-3778-47b4-87bb-2cd7de0a5bd4">
+![](attachments/dialog_loadplugins.png)
 
 Same logic. Pick the ones you want, add them to the Paketti Preferences - they'll always be there.
 
@@ -9104,6 +9129,33 @@ Improvement: added .dll .dylib .sys .bin.
 ### 2025-05-18 - Feature: .IFF Import hook
 This lets you load the legacy .IFF samples such as OctaMED or ProTracker/SoundTracker samples. If you come across any files that don't work, let me know. There's also a "Load Random 128 .IFFs" menu entry in the Instrument Box.
 Also added .8svx + .16sv support
+
+---
+### 2025-05-20 - Feature: Load .MOD as sample
+This will load a .MOD as sample and sign it so you can get both the header and the samples. Also strips the header from the start
+![](Screenshots/import_mod_wavetable_strip_header.png)
+
+---
+### 2025-05-20 - Feature: Load .MOD as samples
+This will load a .MOD - analyze it's settings, and load each sample, with the loop content, as a new instrument, with the Paketti default instrument.
+
+---
+### 2025-05-20 - Feature: Crossfade whole sample / Crossfade Loop
+These menu entries will do a mirror effect of a sample to create a loop, or just hit LoopStart + LoopEnd to create a loop
+![](Screenshots/crossfade.png)
+Example of whistle sample crossfaded, Before & After:
+
+![](Screenshots/crossfade_flute.png)
+![](Screenshots/crossfade_flute2.png)
+---
+### 2025-05-20 - Feature: Copy Above Command / Copy Above Command Increase Value / Copy Above Command Decrease Value
+![](Screenshots/copyabovecmd.png)
+
+---
+### 2025-05-22 - Improvement: Import Samples from .MOD now in Main Menu, Sample Editor, Sample Navigator and Instrument Box Menu Entries.
+
+---
+
 
 ---
 # End
