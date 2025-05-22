@@ -9155,6 +9155,11 @@ Example of whistle sample crossfaded, Before & After:
 ### 2025-05-22 - Improvement: Import Samples from .MOD now in Main Menu, Sample Editor, Sample Navigator and Instrument Box Menu Entries.
 
 ---
+### 2025-05-22 - Improvement: Crossfade Sample (Loop & Whole Sample) now in Sample Editor -> Paketti -> Process & Sample Editor -> Paketti menus.
+
+---
+### 2025-05-22 - Improvement: Flood Fill Column with Row by EditStep - this will fill the pattern till the end of the pattern using EditStep for setting when the row repeats.
+![](Screenshots/floodfill_editstep.gif)
 
 
 ---
