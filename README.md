@@ -9161,6 +9161,11 @@ Example of whistle sample crossfaded, Before & After:
 ### 2025-05-22 - Improvement: Flood Fill Column with Row by EditStep - this will fill the pattern till the end of the pattern using EditStep for setting when the row repeats.
 ![](Screenshots/floodfill_editstep.gif)
 
+---
+### 2025-05-22 - Improvement: Smart Beatsync from Selection now exists as a menu entry.
+
+---
+###  2025-05-23 - Improvement: There's now a .PTI Export shortcut + menu entry that saves a .PTI out of the sample you have. But with the Polyend Tracker limitations of 48 slices max.
 
 ---
 # End
