@@ -9168,6 +9168,29 @@ Example of whistle sample crossfaded, Before & After:
 ###  2025-05-23 - Improvement: There's now a .PTI Export shortcut + menu entry that saves a .PTI out of the sample you have. But with the Polyend Tracker limitations of 48 slices max.
 
 ---
+### 2025-05-23 - Feature: Toggle Loop Range (Selection)
+This simple feature replaces the Renoise Native one by making it a toggle. If you've got no loop, but have a selection range, then Forward Loop is set, Loop Mode is set On, and that's the selection. If you now run the shortcut again, then Loop Mode is set to Off. If some other range is selected, and you select a new range, then that new range is looped with Forward + LoopMode On.
+![](Screenshots/loopmodetoggle.png)
+
+---
+### 2025-05-23 - Improvement: Load Native shortcut will now Show a "Loaded x to y" Show Status.
+Examples:
+![](Screenshots/loadnative_showstatus1.png)
+![](Screenshots/loadnative_showstatus2.png)
+
+---
+### 2025-05-23 - Improvement: Unmark Sample Editor Selection Shortcut
+This will unmark the selection range, thus clearing it. Same logic as with Unmark ALT-U in Pattern and Phrase Editors.
+
+---
+### 2025-05-23 - Improvement: Column Cycle Keyjazz will now correctly turn off if turned off.
+
+---
+### 2025-05-23 - Improvement: "Load Random AKWF Samples" now uses a randomized seed that is really truly random and continually randomized so that there's a random seed randomizing the seed randomizing the seed.
+
+---
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
