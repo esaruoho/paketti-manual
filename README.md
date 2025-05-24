@@ -9189,6 +9189,15 @@ This will unmark the selection range, thus clearing it. Same logic as with Unmar
 ### 2025-05-23 - Improvement: "Load Random AKWF Samples" now uses a randomized seed that is really truly random and continually randomized so that there's a random seed randomizing the seed randomizing the seed.
 
 ---
+### 2025-05-23 - Improvement: Paketti Steppers Dialog
+This will  let you choose which Stepper to view (Volume, Panning, Pitch, Cutoff, Resonance, Drive), and also reads and updates to how long the stepsize is (16, 32, 64, 128, 256)
+![](Screenshots/pakettistepperdialog.gif)
+
+---
+### 2025-05-24 - Feature: Toggle Mute/Unmute for Selected Track, Track01 to Track16 shortcuts + midimappings added.
+![](Screenshots/mute_unmutetoggle.png)
+
+
 
 ---
 # End
