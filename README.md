@@ -9197,6 +9197,42 @@ This will  let you choose which Stepper to view (Volume, Panning, Pitch, Cutoff,
 ### 2025-05-24 - Feature: Toggle Mute/Unmute for Selected Track, Track01 to Track16 shortcuts + midimappings added.
 ![](Screenshots/mute_unmutetoggle.png)
 
+---
+### 2025-05-25 - Feature: Convert .RX2 to .PTI
+This prompts for a .RX2 and then prompts for the name & folder of the .PTI to save.
+
+---
+### 2025-05-26 - Improvement: Show/Hide Pattern Matrix Midi Mapping now works instead of doing nothing.
+
+---
+### 2025-05-26 - Plumbing: I've gone through a previous version of Paketti (2018) and found six or so features I'm gonna rework into 2025 Paketti
+
+---
+### 2025-05-26 - Feature: Switch Middle Frames
+This shortcut runs through 1...9 of Middle Frames. They are: Pattern Editor, Mixer, Phrase Editor, Sample Keyzones, Sample Editor, Sample Modulation, Sample Effects, Plugin Editor, Midi Editor.
+![](Screenshots/middleframeswitch.png)
+
+---
+### 2025-05-26 - Feature: Map Sample to C-0 - B-9
+![](Screenshots/mapsample_to_all_notes.png)
+
+---
+### 2025-05-26 - Feature: Phrase Editor: Delay Column Increase Decrease -1 -10 +1 +10
+This is V3.5 only - will start working for everyone when Public V3.5 is out. Based on API 6.2 updates listed on the Renoise Definitions GitHub.
+
+---
+### 2025-05-26 - Feature: F4 Shift Midi Immediately
+This shortcut cycles between Pattern Editor and Midi Editor.
+![](Screenshots/midi_shiftimmediately.png)
+
+---
+### 2025-05-26 - Feature: CapsLockChassis
+This is an old Paketti method I wrote for creating a specific type of Body of Note Offs.
+![](Screenshots/capslockchassis_01.png)
+
+---
+### 2025-05-26 - Feature: Set Sample to One-Shot + NNA to Continue
+![](Screenshots/nna-trigger.gif)
 
 
 ---
