@@ -9244,6 +9244,9 @@ Successfully loads a mono .RX2 instead of showing silence.
 Successfully retains a 24bit .RX2 as 24bit instead of forcing it to 16bit.
 Gives you a nice status bar message if you are trying to load a .RX2 with more slices than 256 (Renoise limit is 256 slices per Instrument)
 
+---
+### 2025-05-27 - Improvement: Paketti Preferences: Instrument Properties show yes/no
+![](Screenshots/instrumentprop_pakettipreferences.png)
 
 ---
 # End
