@@ -9234,6 +9234,16 @@ This is an old Paketti method I wrote for creating a specific type of Body of No
 ### 2025-05-26 - Feature: Set Sample to One-Shot + NNA to Continue
 ![](Screenshots/nna-trigger.gif)
 
+---
+### 2025-05-26 - Feature: Note-Off Paste (from Selection)
+![](Screenshots/noteoffpastefromselection.png)
+
+---
+### 2025-05-27 - Improvement: .RX2 import
+Successfully loads a mono .RX2 instead of showing silence.
+Successfully retains a 24bit .RX2 as 24bit instead of forcing it to 16bit.
+Gives you a nice status bar message if you are trying to load a .RX2 with more slices than 256 (Renoise limit is 256 slices per Instrument)
+
 
 ---
 # End
