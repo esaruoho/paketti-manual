@@ -9265,7 +9265,7 @@ Tweaked the general design and sizes of the dialogs
 ![](Screenshots/playerpro_dialogs.png)
 
 ---
-### 2025-05-28 - Improvement: Better naming convention for Snapshotters.
+### 2025-05-28 - Improvement: Better naming convention for Snapshotters. Added "Snapshot Selected Device to Automation"
 ![](Screenshots/automationsnapshot.png)
 
 ---
