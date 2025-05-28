@@ -9254,8 +9254,21 @@ Extracts the original wavefile instead of combining slices (thus no longer causi
 Adjusts for latency, so slices are exactly where they should be.
 
 ---
-### 2025-05-28 - Improvement: Player Pro Tools
+### 2025-05-28 - Improvement: Player Pro Tools Dialog performance
 Player Pro Main Dialog will now open and close with the same shortcut
+Added EditStep to Main Dialog
+Added Notifiers to both Note Dialog & Main Dialog that follow manual Instrument changes
+EditStep is now taken into consideration with the 00-80 Volume controls and 00-FF Effect controls.
+Added all Renoise-specific Effect commands to Dropdown menu
+Tweaked the general design and sizes of the dialogs
+![](Screenshots/playerpro_dialog_selection_updates.gif)
+![](Screenshots/playerpro_dialogs.png)
+
+---
+### 2025-05-28 - Improvement: Better naming convention for Snapshotters.
+![](Screenshots/automationsnapshot.png)
+
+---
 
 
 ---
