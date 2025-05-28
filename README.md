@@ -9249,6 +9249,14 @@ Gives you a nice status bar message if you are trying to load a .RX2 with more s
 ![](Screenshots/instrumentprop_pakettipreferences.png)
 
 ---
+### 2025-05-27 - Improvement: .RX2 import
+Extracts the original wavefile instead of combining slices (thus no longer causing data loss and clicks)
+Adjusts for latency, so slices are exactly where they should be.
+
+---
+### 2025-05-28 - Improvement: Player Pro Tools
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
