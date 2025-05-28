@@ -9255,6 +9255,8 @@ Adjusts for latency, so slices are exactly where they should be.
 
 ---
 ### 2025-05-28 - Improvement: Player Pro Tools
+Player Pro Main Dialog will now open and close with the same shortcut
+
 
 ---
 # End
