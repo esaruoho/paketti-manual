@@ -9269,7 +9269,14 @@ Tweaked the general design and sizes of the dialogs
 ![](Screenshots/automationsnapshot.png)
 
 ---
+### 2025-05-28 - Improvement: Show Sample Details + LFO Write Preferences are now correctly read and re-applied
 
+---
+### 2025-05-29 - Improvement: Added "Simple Sample Tuning" to Dialog of Dialogs
+
+---
+### 2025-05-29 - Improvement: Added a MidiMapping for PlayerPro Main Dialog "Effect Column Lowest Digit"
+![](Screenshots/playerpro_effect_column_lowest.png)
 
 ---
 # End
