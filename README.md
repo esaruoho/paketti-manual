@@ -9279,6 +9279,8 @@ Tweaked the general design and sizes of the dialogs
 ![](Screenshots/playerpro_effect_column_lowest.png)
 
 ---
+### 2025-05
+---
 # End
 
 You are right at the end of this manual now. Welcome!
