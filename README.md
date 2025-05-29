@@ -9279,7 +9279,10 @@ Tweaked the general design and sizes of the dialogs
 ![](Screenshots/playerpro_effect_column_lowest.png)
 
 ---
-### 2025-05
+### 2025-05-29 - Improvement: ~ fix for random IR loader Paketti Preferences
+
+---
+
 ---
 # End
 
