@@ -22,7 +22,7 @@
 
 ## What
 
-Paketti - or, Tracker Convergence Project (tm) provides over 5000 shortcuts, 1000+ menu entries, 1000+ midi mappings and 64 dialogs.
+Paketti - or, Tracker Convergence Project (tm) provides over 5000 shortcuts, 1000+ menu entries, 1000+ midi mappings and 66 dialogs.
 
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
@@ -9280,6 +9280,12 @@ Tweaked the general design and sizes of the dialogs
 
 ---
 ### 2025-05-29 - Improvement: ~ fix for random IR loader Paketti Preferences
+
+---
+### 2025-05-29 - Improvement: "Inspect Selected Device" debug tool will now also output the Active Preset Data in XML format for further debugging.
+
+---
+### 2025-05-30 - Improvement: .PTI export now correctly sets zoom, LoopEnd and sample END length.
 
 ---
 
