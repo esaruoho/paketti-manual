@@ -9288,6 +9288,28 @@ Tweaked the general design and sizes of the dialogs
 ### 2025-05-30 - Improvement: .PTI export now correctly sets zoom, LoopEnd and sample END length.
 
 ---
+### 2025-05-31 - Feature: Added Custom LFO Envelope storing (16 slots) and reloading.
+This is for those who use LFO with Custom Envelope, you can now store and carry them with your installation of Paketti.
+
+---
+### 2025-05-31 - Improvement: Paketti Steppers Dialog changes
+Added more Step sizes (4, 8), added buttons for setting specific types of "envelopes" for the External Editor
+Added Flip, Mirror and Humanize, too.
+![](Screenshots/pakettistepper_ext_editor_dialog.gif)
+![](Screenshots/pakettisteppers_dialog_added_buttons.png)
+
+---
+### 2025-05-31 - Improvement: Drumkit XRNI now has Volume Stepper
+
+---
+### 2025-05-31 - Improvement: Added "Humanize", "Flip", "Mirror" to Paketti Steppers Dialog.
+![](Screenshots/pakettisteppersdialoghumanizeflipmirror.png)
+
+---
+### 2025-05-31 - Improvement: Added "Write Notes with EditStep Ascending/Descending/Random"
+![](Screenshots/pattern_writenotes.png)
+
+---
 
 ---
 # End
