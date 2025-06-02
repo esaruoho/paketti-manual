@@ -9310,6 +9310,16 @@ Added Flip, Mirror and Humanize, too.
 ![](Screenshots/pattern_writenotes.png)
 
 ---
+### 2025-06-02 - Improvement: Unison Generator will no longer create multiple tracks if 0G01 Loader mode is on - instead disable the Loader during the process, and then set it back on again.
+
+---
+### 2025-06-02 - Improvement: Pakettify Current Instrument added to Sample Editor Ruler
+![](Screenshots/paketti_sampleruler.png)
+
+---
+### 2025-06-02 - Improvement: Added "Replace Current Instrument during Pakettification" to Paketti Preferences
+So if you Pakettify an instrument, it will no longer create a new instrument.
+![](Screenshots/pakettipreferences_replace_current_while_pakettify.png)
 
 ---
 # End
