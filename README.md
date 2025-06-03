@@ -9322,6 +9322,14 @@ So if you Pakettify an instrument, it will no longer create a new instrument.
 ![](Screenshots/pakettipreferences_replace_current_while_pakettify.png)
 
 ---
+### 2025-06-02 - Improvement: Added "Scale 50% / Scale 150%" to Stepper Dialog, and a Offset slider
+
+
+----
+### 2025-06-02 - Feature: Hide all Unused Columns
+This hides  Volume, Panning, Delay, Sample FX, Effect Columns and unused Note Columns.
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
