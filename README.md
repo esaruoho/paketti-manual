@@ -9330,6 +9330,22 @@ So if you Pakettify an instrument, it will no longer create a new instrument.
 This hides  Volume, Panning, Delay, Sample FX, Effect Columns and unused Note Columns.
 
 ---
+### 2025-06-02 - Feature: Wipe&Slice&Write
+This will read the Pattern length (let's say, 64), and divide the selected sample to 64 slices, and then write the slices to the selected track.
+
+---
+### 2025-06-03 - Feature: Convert 3 Note Chord to Arpeggio
+As requested on the Renoise Forum - this will convert a 3 note chord into an arpeggio. First it'll sort notes by ascending, then wipe the 2nd and 3rd note (with Note Off), and output `0AXY` to the first Effect Column. If the 2nd or 3rd note is higher than `F` then there will be a clean error.
+![](Screenshots/arpeggio_01_before.png)
+![](Screenshots/arpeggio_02_after.png)
+
+---
+### 2025-06-03 - Feature: Sample Editor: Select Center
+Added to Sample Editor Ruler menu entry + shortcut.
+![](Screenshots/sampleeditor_select-center.png)
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
