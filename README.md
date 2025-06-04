@@ -9344,6 +9344,9 @@ As requested on the Renoise Forum - this will convert a 3 note chord into an arp
 Added to Sample Editor Ruler menu entry + shortcut.
 ![](Screenshots/sampleeditor_select-center.png)
 
+---
+### 2025-06-03 
+
 
 ---
 # End
