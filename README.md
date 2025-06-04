@@ -9345,8 +9345,13 @@ Added to Sample Editor Ruler menu entry + shortcut.
 ![](Screenshots/sampleeditor_select-center.png)
 
 ---
-### 2025-06-03 
+### 2025-06-05 - Feature: Device Values
+four shortcuts (Decrease, Increase, Next Parameter, Previous Parameter) for controlling exposed-in-Mixer parameters
+MAJOR thanks to ptdc for the original idea, i just did my thing to add additional logic and protections
+![](Screenshots/parama_param.png)
+![](Screenshots/devicevalues_v2.gif)
 
+---
 
 ---
 # End
