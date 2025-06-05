@@ -9364,6 +9364,29 @@ This lets you run a -128 to +127 modulation on the sample, just like in the Prot
 ![](Screenshots/filemenuentries.png)
 
 ---
+### 2025-05-05 - Improvement: Print Free Keybindings to Terminal used to save an empty textfile - now it saves an actual textfile with content.
+(Fixes https://github.com/esaruoho/paketti/issues/870)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 
 ---
 # End
