@@ -9368,6 +9368,10 @@ This lets you run a -128 to +127 modulation on the sample, just like in the Prot
 (Fixes https://github.com/esaruoho/paketti/issues/870)
 
 ---
+### 2025-05-05 - Feature: Group Samples by Name to New Instruments
+This will take samples that are of a similar name, and group them into new instruments. So if you load in a break and name the separate samples Kick, Snare, Hihat etc - these are the instruments that are grouped together.
+![](Screenshots/groupsamples_01.png)
+![](Screenshots/groupsamples_02.png)
 
 ---
 
