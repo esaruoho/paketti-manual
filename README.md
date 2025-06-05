@@ -9374,6 +9374,9 @@ This will take samples that are of a similar name, and group them into new instr
 ![](Screenshots/groupsamples_02.png)
 
 ---
+### 2025-05-05 - Improvement: Three Note Chord to Arpeggio 
+will now write till it sees a note on any note column of selected track, thus enabling:
+![](Screenshots/3notearpeggio.png)
 
 ---
 
