@@ -9351,10 +9351,17 @@ MAJOR thanks to ptdc for the original idea, i just did my thing to add additiona
 ![](Screenshots/parama_param.png)
 ![](Screenshots/devicevalues_v2.gif)
 
-load iff menu entry
-protracker mod
-protracker mod fixes
+---
+### 2025-05-04 - Improvement: "Load .IFF Menu Entry"
+This opens up a File Browser for loading an .IFF, .8SVX or .16SV
 
+---
+### 2025-05-04 - Feature: Protracker Sample Modulation feature
+This lets you run a -128 to +127 modulation on the sample, just like in the Protracker Edit Op.
+
+---
+### 2025-05-05 - Improvement: File Menu now contains more Paketti features such as CTRL-N Paketti New Song Dialog
+![](Screenshots/filemenuentries.png)
 
 ---
 
