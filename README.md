@@ -9371,8 +9371,8 @@ This lets you run a -128 to +127 modulation on the sample, just like in the Prot
 ### 2025-05-05 - Feature: Group Samples by Name to New Instruments
 This will take samples that are of a similar name, and group them into new instruments. So if you load in a break and name the separate samples Kick, Snare, Hihat etc - these are the instruments that are grouped together.
 ![](Screenshots/groupsamples_01.png)
-![](Screenshots/groupsamples_02.png)
 
+![](Screenshots/groupsamples_02.png)
 ---
 ### 2025-05-05 - Improvement: Three Note Chord to Arpeggio 
 will now write till it sees a note on any note column of selected track, thus enabling:
