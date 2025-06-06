@@ -9382,8 +9382,12 @@ will now write till it sees a note on any note column of selected track, thus en
 ### 2025-05-06 - Improvement: .RX2 import - if Inst00 is empty, just import there
 
 ---
+### 2025-05-06 - Improvement: .SF2 import, loop no longer starts 1 frame earlier
 
 ---
+### 2025-05-06 - Feature: Paketti Sample Adjust Dialog
+![](Screenshots/pakettisampleadjustdialog01.png)
+![](Screenshots/pakettisampleadjustdialog02.png)
 
 ---
 
