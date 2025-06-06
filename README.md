@@ -9390,8 +9390,18 @@ will now write till it sees a note on any note column of selected track, thus en
 ![](Screenshots/pakettisampleadjustdialog02.png)
 
 ---
-### 2025-05-06 
+### 2025-05-06 - Improvement: Global Groove is not automatically enabled on every song - no longer causes an undo step at the beginning of the song.
 ---
+### 2025-05-06 - Improvement: Global Keyhandler has had a function fixed so no longer shoots an error when closing dialog
+
+---
+### 2025-05-06 - Group Samples by Name to New Instruments now properly adds _all_ samples of that name, and has "instrumentname (samplecount)" shown in the Instrument Box.
+
+---
+### 2025-05-06 - Paketti Preferences: Global Groove Enabled/Disabled is introduced as a default
+
+---
+
 
 ---
 
