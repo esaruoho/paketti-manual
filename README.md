@@ -9379,6 +9379,7 @@ will now write till it sees a note on any note column of selected track, thus en
 ![](Screenshots/3notearpeggio.png)
 
 ---
+### 2025-05-06 - Improvement: .RX2 import - if Inst00 is empty, just import there
 
 ---
 
