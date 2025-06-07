@@ -9345,63 +9345,63 @@ Added to Sample Editor Ruler menu entry + shortcut.
 ![](Screenshots/sampleeditor_select-center.png)
 
 ---
-### 2025-06-05 - Feature: Device Values
+### 2025-06-04 - Feature: Device Values
 four shortcuts (Decrease, Increase, Next Parameter, Previous Parameter) for controlling exposed-in-Mixer parameters
 MAJOR thanks to ptdc for the original idea, i just did my thing to add additional logic and protections
 ![](Screenshots/parama_param.png)
 ![](Screenshots/devicevalues_v2.gif)
 
 ---
-### 2025-05-04 - Improvement: "Load .IFF Menu Entry"
+### 2025-06-04 - Improvement: "Load .IFF Menu Entry"
 This opens up a File Browser for loading an .IFF, .8SVX or .16SV
 
 ---
-### 2025-05-04 - Feature: Protracker Sample Modulation feature
+### 2025-06-04 - Feature: Protracker Sample Modulation feature
 This lets you run a -128 to +127 modulation on the sample, just like in the Protracker Edit Op.
 
 ---
-### 2025-05-05 - Improvement: File Menu now contains more Paketti features such as CTRL-N Paketti New Song Dialog
+### 2025-06-05 - Improvement: File Menu now contains more Paketti features such as CTRL-N Paketti New Song Dialog
 ![](Screenshots/filemenuentries.png)
 
 ---
-### 2025-05-05 - Improvement: Print Free Keybindings to Terminal used to save an empty textfile - now it saves an actual textfile with content.
+### 2025-06-05 - Improvement: Print Free Keybindings to Terminal used to save an empty textfile - now it saves an actual textfile with content.
 (Fixes https://github.com/esaruoho/paketti/issues/870)
 
 ---
-### 2025-05-05 - Feature: Group Samples by Name to New Instruments
+### 2025-06-05 - Feature: Group Samples by Name to New Instruments
 This will take samples that are of a similar name, and group them into new instruments. So if you load in a break and name the separate samples Kick, Snare, Hihat etc - these are the instruments that are grouped together.
 ![](Screenshots/groupsamples_01.png)
 
 ![](Screenshots/groupsamples_02.png)
 ---
-### 2025-05-05 - Improvement: Three Note Chord to Arpeggio 
+### 2025-06-05 - Improvement: Three Note Chord to Arpeggio 
 will now write till it sees a note on any note column of selected track, thus enabling:
 ![](Screenshots/3notearpeggio.png)
 
 ---
-### 2025-05-06 - Improvement: .RX2 import - if Inst00 is empty, just import there
+### 2025-06-06 - Improvement: .RX2 import - if Inst00 is empty, just import there
 
 ---
-### 2025-05-06 - Improvement: .SF2 import, loop no longer starts 1 frame earlier
+### 2025-06-06 - Improvement: .SF2 import, loop no longer starts 1 frame earlier
 
 ---
-### 2025-05-06 - Feature: Paketti Sample Adjust Dialog
+### 2025-06-06 - Feature: Paketti Sample Adjust Dialog
 ![](Screenshots/pakettisampleadjustdialog01.png)
 ![](Screenshots/pakettisampleadjustdialog02.png)
 
 ---
-### 2025-05-06 - Improvement: Global Groove is not automatically enabled on every song - no longer causes an undo step at the beginning of the song.
+### 2025-06-06 - Improvement: Global Groove is not automatically enabled on every song - no longer causes an undo step at the beginning of the song.
 ---
-### 2025-05-06 - Improvement: Global Keyhandler has had a function fixed so no longer shoots an error when closing dialog
+### 2025-06-06 - Improvement: Global Keyhandler has had a function fixed so no longer shoots an error when closing dialog
 
 ---
-### 2025-05-06 - Group Samples by Name to New Instruments now properly adds _all_ samples of that name, and has "instrumentname (samplecount)" shown in the Instrument Box.
+### 2025-06-06 - Group Samples by Name to New Instruments now properly adds _all_ samples of that name, and has "instrumentname (samplecount)" shown in the Instrument Box.
 
 ---
-### 2025-05-06 - Paketti Preferences: Global Groove Enabled/Disabled is introduced as a default
+### 2025-06-06 - Paketti Preferences: Global Groove Enabled/Disabled is introduced as a default
 
 ---
-
+### 2025-06-06 - Improvement: "Convert IFF to WAV" menu entry + shortcut - converts an IFF to WAV without loading it into Renoise.
 
 ---
 
