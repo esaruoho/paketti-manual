@@ -9406,6 +9406,12 @@ will now write till it sees a note on any note column of selected track, thus en
 ---
 ### 2025-06-07 - Feature: Create Pattern Sequencer Patterns based on Slice Count with Automatic Slice Printing
 This will take the Slices in the current Instrument and start outputting them to a new pattern per slice.
+https://www.loom.com/share/e06f2d3ee5414a9d8e6600eff1b01d30
+
+
+--- 
+### 2025-06-08 - Plumbing: Menu Entry organization for Instrument Box & Pattern Matrix et al
+This will eventually provide a lot of usefulness when finished, it's just a lot of plumbing to get through first.
 
 ---
 
