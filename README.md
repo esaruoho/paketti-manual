@@ -9404,6 +9404,8 @@ will now write till it sees a note on any note column of selected track, thus en
 ### 2025-06-06 - Improvement: "Convert IFF to WAV" menu entry + shortcut - converts an IFF to WAV without loading it into Renoise.
 
 ---
+### 2025-06-07 - Feature: Create Pattern Sequencer Patterns based on Slice Count with Automatic Slice Printing
+This will take the Slices in the current Instrument and start outputting them to a new pattern per slice.
 
 ---
 
