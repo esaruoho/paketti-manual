@@ -9433,7 +9433,26 @@ Basically wipes the Pattern Sequence part of the song.
 ### 2025-06-09 - Feature: Auto-Slice according to First Slice
 
 ---
-### 2025-06-09 - Improvement: GitHub Manual minor updates with refreshed screenshots
+### 2025-06-10 - Improvement: GitHub Manual minor updates with refreshed screenshots
+
+---
+### 2025-06-10 - Feature: Slice to Pattern Sequencer Dialog
+This lets you prepare a sample (slice at 1, slice at end of sample) and then start modifying BPM, LPB, Pattern Length so that you're able to find 4 bars or 8 bars, and then continuously slice it up and write one slice per pattern until end of slices
+![](Screenshots/paketti_slice_to_patternsequencer_dialog.png)
+
+---
+
+
+---
+
+---
+
+---
+
+---
+
+---
+
 
 ---
 # End
