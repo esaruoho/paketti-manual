@@ -9449,8 +9449,11 @@ Now no longer errors out, instead works as expected.
 Now no longer errors out, instead works as expected.
 
 ---
+### 2025-06-11 - Improvement: "Convert All Samples to (Bit Depth)"
+It used to quit the conversion if it found a sample of that Bit Depth. Now it continues till the end.
 
 ---
+### 2025-06-11 - Improvement: "Convert All Samples to 32-bit" added
 
 ---
 
