@@ -9441,9 +9441,12 @@ This lets you prepare a sample (slice at 1, slice at end of sample) and then sta
 ![](Screenshots/paketti_slice_to_patternsequencer_dialog.png)
 
 ---
-
+### 2025-06-11 - Improvement: Normalize All Samples in Current Instrument
+Now no longer errors out, instead works as expected.
 
 ---
+### 2025-06-11 - Improvement: "Convert All Samples to Mono"
+Now no longer errors out, instead works as expected.
 
 ---
 
