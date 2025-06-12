@@ -9456,6 +9456,7 @@ It used to quit the conversion if it found a sample of that Bit Depth. Now it co
 ### 2025-06-11 - Improvement: "Convert All Samples to 32-bit" added
 
 ---
+### 2025-06-12 - Improvement: Midi Mappings for "Jump Forward / Backward within Pattern/Song by X" & "Jump Forward / Backward Random" fixed so they also work while Follow Pattern is on
 
 ---
 
