@@ -9459,7 +9459,13 @@ It used to quit the conversion if it found a sample of that Bit Depth. Now it co
 ### 2025-06-12 - Improvement: Midi Mappings for "Jump Forward / Backward within Pattern/Song by X" & "Jump Forward / Backward Random" fixed so they also work while Follow Pattern is on
 
 ---
+### 2025-06-12 - Improvement: Simple Sample Tuner Dialog
+will no longer error out when trying to set a pitch that goes outside of Renoise limits
+will no longer print `D#-7`, instead `D#7`
+And there was a faulty reference to the wrong middle frame name.
 
+---
+### 2025-06-12 - 
 
 ---
 # End
