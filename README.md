@@ -54,6 +54,7 @@ It introduces features from:
 - *"paketti itself deserves a lifetime movie about star-crossed lovers who have obscure script needs"*
 - *"I just set up Renoise as the Sample Editor for Ableton, got a few breaks up and quantized, THEN used the Paketti save all samples to backup folder. I've been trying for literally YEARS at this point to figure this out, THANK YOU."*
 - *"Man, Paketti is awesome. Been using Renoise for a while but never used your tool. The best thing I learned from the manual: the G01 trick. Finally free from the grid! I never realized that this is possible. That's a true game changer. Thanks a million!"*
+- *"For Paketti you deserve some kind of award, a medal. So many years to keep it alive, constantly adding new features. Respect."*
 
 ## Where
 
@@ -9465,7 +9466,45 @@ will no longer print `D#-7`, instead `D#7`
 And there was a faulty reference to the wrong middle frame name.
 
 ---
-### 2025-06-12 - 
+### 2025-06-12 - Improvement: Largest Sample Dialog
+Will no longer suggest that an Instrument with Samples, used in an Instrument, has unused samples and is deletable
+
+---
+### 2025-06-12 - Improvement: Speed and BPM to Tempo Dialog
+Will no longer error out if going lower than 20bpm or higher than 999bpm.
+![](Screenshots/bpm_speed_dialog.png)
+
+---
+### 2025-06-13 - Feature: "Vowel Filter" based on Chorus 2
+![](Screenshots/chorus2_vowelfilter.png)
+
+---
+### 2025-06-14 - Improvement: Expand Selection Replicate / Shrink Selection Replicate Midi Mappings
+
+---
+### 2025-06-14 - Improvement: Expand Selection Replicate / Shrink Selection Replicate Midi Mappings for tracks 1-8 (so 16 in total)
+
+---
+### 2025-06-14 - Improvement: Midi Instrument 01 ... 08 Transpose (-64-+64) for specific instrument transposition control.
+
+---
+### 2025-06-14 - Improvement: Paketti Groovebox 8120 updates
+Pitch Rotaries now go up to -64 and +64 Transpose instead of erroring out - thus matching the transpose of the Instrument. 
+Pitch Rotaries can be controlled via Midi Mapping, and they update the interface.
+Selected Sample can be controlled via Midi Mapping, and they update the interface
+Expand + Shrink Midi Mappings will both expand or shrink, and update the interface, and select the track AND pick the instrument
+Pitch Midi Mappings will change the selected Instrument and selected Track
+Midi Mappings introduced for changing 8120 Instrument selected Sample
+
+---
+### 2025-06-14 - Paketti Steppers Dialog now opens with a Midi Mapping
+
+---
+### 2025-06-14 - Track01-Track08 Repeater Midi Mappings added
+Both Name Tracks + regular versions, and 2nd Midi Mappings binds for both. They also change the selected instrument to match the track number.
+
+---
+
 
 ---
 # End
