@@ -9511,7 +9511,9 @@ Both Name Tracks + regular versions, and 2nd Midi Mappings binds for both. They 
 ### 2025-06-15 - Corrected Paketti Drumkit C0 default instrument so it fully works with v3.4.4
 
 ---
-
+### 2025-06-16 - Feature: BPM from Sample Length
+This sets the Beatsync, LPB and BPM by calculating the length based on length of sample + LPB and Beatsync value.
+![](Screenshots/bpm_length_counter.png)
 
 
 ---
