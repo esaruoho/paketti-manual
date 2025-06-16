@@ -9476,7 +9476,7 @@ Will no longer error out if going lower than 20bpm or higher than 999bpm.
 
 ---
 ### 2025-06-13 - Feature: "Vowel Filter" based on Chorus 2
-![](Screenshots/chorus2_vowelfilter.png)
+![](Screenshots/pakettivowelfilter_tweaks.png)
 
 ---
 ### 2025-06-14 - Improvement: Expand Selection Replicate / Shrink Selection Replicate Midi Mappings
@@ -9504,6 +9504,14 @@ Midi Mappings introduced for changing 8120 Instrument selected Sample
 Both Name Tracks + regular versions, and 2nd Midi Mappings binds for both. They also change the selected instrument to match the track number.
 
 ---
+### 2025-06-14 - Added Snapshot menu entries to Automation submenu
+![](Screenshots/automationsnapshotmenuentries.png)
+
+---
+### 2025-06-15 - Corrected Paketti Drumkit C0 default instrument so it fully works with v3.4.4
+
+---
+
 
 
 ---
