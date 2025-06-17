@@ -9515,6 +9515,17 @@ Both Name Tracks + regular versions, and 2nd Midi Mappings binds for both. They 
 This sets the Beatsync, LPB and BPM by calculating the length based on length of sample + LPB and Beatsync value.
 ![](Screenshots/bpm_length_counter.png)
 
+---
+### 2025-06-17 - Improvement: Paketti Gater
+No longer force-switches you to Pattern Editor, if you're in Sample Editor or Phrase Editor
+Added 32 steps (0-16 are filled, 16-32 are silence)
+Added "Print Once" which prints the stepcount amount of each of them, then nothing else
+Added "Selection Only" which only prints the content to the selection across patterns.
+![](gater_printonce.png)
+![](Screenshots/gater_selection_only.png)
+
+---
+
 
 ---
 # End
