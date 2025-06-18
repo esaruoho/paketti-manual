@@ -9521,7 +9521,7 @@ No longer force-switches you to Pattern Editor, if you're in Sample Editor or Ph
 Added 32 steps (0-16 are filled, 16-32 are silence)
 Added "Print Once" which prints the stepcount amount of each of them, then nothing else
 Added "Selection Only" which only prints the content to the selection across patterns.
-![](gater_printonce.png)
+![](Screenshots/gater_printonce.png)
 ![](Screenshots/gater_selection_only.png)
 
 ---
