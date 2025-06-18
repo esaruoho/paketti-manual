@@ -9525,7 +9525,12 @@ Added "Selection Only" which only prints the content to the selection across pat
 ![](Screenshots/gater_selection_only.png)
 
 ---
-
+### 2025-06-18 - Improvement: BPM from Sample Length dialog updates
+Added buttons for changing LPB, for updating Beatsync, for converting Beatsync to Pitch
+Added Calculated BPM for Beatsync and calculated BPM for pitch
+Added elements for controlling Transpose and Finetune -> which update the BPM calculation
+Other minor tweaks
+![](Screenshots/bpm_calculator.gif)
 
 ---
 # End
