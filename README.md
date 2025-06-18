@@ -9533,6 +9533,12 @@ Other minor tweaks
 ![](Screenshots/bpm_calculator.gif)
 
 ---
+### 2025-06-18 - Improvement: Snapshot (Selected Device / All Devices on Track) added to Mixer, Pattern Matrix, Track DSP Device
+
+---
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
