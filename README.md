@@ -9546,7 +9546,8 @@ This lets you set up a Polyend Tracker path, which, when Refreshed, and the Poly
 Both .PTI and .RX2->.PTI Export will now correctly set to Beat Slice instead of 1-Shot.
 
 ---
-
+### 2025-06-18 - Improvement: Keyzone Distributor
+No longer tries to hit over Renoise limits (B-9 note), fixed.
 
 ---
 # End
