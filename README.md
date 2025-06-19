@@ -9533,9 +9533,17 @@ Other minor tweaks
 ![](Screenshots/bpm_calculator.gif)
 
 ---
-### 2025-06-18 - Improvement: Snapshot (Selected Device / All Devices on Track) added to Mixer, Pattern Matrix, Track DSP Device
+### 2025-06-18 - Improvement: Snapshot (Selected Device / All Devices on Track) added to Mixer, Pattern Matrix, Track DSP Device Menu Entries
 
 ---
+### 2025-06-18 - Feature: Polyend Buddy
+This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder.
+
+---
+### 2025-06-18 - Improvement. .PTI Export
+.PTI Export now no longer saves a -inf dB volume setting and Hard Left Pan setting. Instead, 0.0dB volume and Center Pan. 
+.PTI Export will name the .PTI instrument name as filename-you-save-it-as (so `002_try.pti` instead of `originalsamplename`)
+Both .PTI and .RX2->.PTI Export will now correctly set to Beat Slice instead of 1-Shot.
 
 
 ---
