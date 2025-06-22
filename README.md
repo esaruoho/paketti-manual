@@ -9536,10 +9536,6 @@ Other minor tweaks
 ### 2025-06-18 - Improvement: Snapshot (Selected Device / All Devices on Track) added to Mixer, Pattern Matrix, Track DSP Device Menu Entries
 
 ---
-### 2025-06-18 - Feature: Polyend Buddy
-This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder. And a Browse bar for Computer PTI - with Dump button so selected PTI gets dumped from Computer to Polyend, and Analyze for Polyend Tracker PTI and Computer PTI selected files. and Dump to Device which lets you select any PTI from your computer (file browse dialog) and save it anywhere on the Polyend. And a Drumkit (mono) / (stereo) maker that takes 48 samples, sets bitdepth, samplerate and channel to same, merges the files together and outputs a PTI with 48 slices each triggering one of the 48 drums.
-
----
 ### 2025-06-18 - Improvement. .PTI Export
 .PTI Export now no longer saves a -inf dB volume setting and Hard Left Pan setting. Instead, 0.0dB volume and Center Pan. 
 .PTI Export will name the .PTI instrument name as filename-you-save-it-as (so `002_try.pti` instead of `originalsamplename`)
@@ -9548,6 +9544,92 @@ Both .PTI and .RX2->.PTI Export will now correctly set to Beat Slice instead of 
 ---
 ### 2025-06-18 - Improvement: Keyzone Distributor
 No longer tries to hit over Renoise limits (B-9 note), fixed.
+
+---
+### 2025-06-20 - Improvement: Menu Entries errors squashed - unfinished Akai import stuff hidden away, will be re-shown when Akai import stuff has been fixed and finished.
+
+---
+### 2025-06-20 - Improvement: Menu Entry Subcategories were never supposed to have `..` at the end, removed
+
+---
+### 2025-06-22 - Improvement: Sample Pitch Modifier Dialog now has a toggle for making the dialog smaller, or larger:
+![](Screenshots/samplepitchmodifierdialog_01.png)
+![](Screenshots/samplepitchmodifierdialog_02.png)
+![](Screenshots/samplepitchmodifierdialog_03.png)
+
+---
+### 2025-06-22 - Improvement: Updated Dialog of Dialogs
+Now 75 dialogs deep:
+![](Screenshots/dialogofdialogsjuneupdate.png)
+
+---
+### 2025-06-22 - Improvement: Merge Instruments Dialog will now close if triggered while open
+
+---
+### 2025-06-22 - Improvement: Paketti Track DSP Device & Instrument Loader Dialog will now close if triggered while open.
+
+
+---
+### 2025-06-22 - Improvement: Paketti Global Volume Adjustment Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Free Keybindings Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Paketti Formula Device Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: EQ10 XY Pad Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: EditStep Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Beat Structure Editor Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Switch Note Instrument Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Largest Samples Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Convolver Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Randomize Plugins/Devices Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Paketti Track Renamer Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Track Dater/Titler Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Squiggler Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Paketti Groovebox 8120 Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: BeatDetector Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: OctaMED Note Echo Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: Paketti Sequencer Settings Dialog will now close if triggered while open.
+
+---
+### 2025-06-22 - Improvement: PlayerPro Main Dialog now opens correctly again, and PlayerPro Effect Dialog no longer inputs 00-FF show_status messages thus delaying the opening of the Dialog.
+
+---
+### 2025-06-22: Improvement: Paketti Dynamic Views 1-4 & 5-8 will now close if triggered while open.
+
+---
+### under the radar stuff (forthcoming, still under works)
+### Feature: Polyend Buddy
+This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder. And a Browse bar for Computer PTI - with Dump button so selected PTI gets dumped from Computer to Polyend, and Analyze for Polyend Tracker PTI and Computer PTI selected files. and Dump to Device which lets you select any PTI from your computer (file browse dialog) and save it anywhere on the Polyend. And a Drumkit (mono) / (stereo) maker that takes 48 samples, sets bitdepth, samplerate and channel to same, merges the files together and outputs a PTI with 48 slices each triggering one of the 48 drums.
 
 ---
 # End
