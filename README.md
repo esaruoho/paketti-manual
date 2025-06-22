@@ -9552,6 +9552,10 @@ No longer tries to hit over Renoise limits (B-9 note), fixed.
 ### 2025-06-20 - Improvement: Menu Entry Subcategories were never supposed to have `..` at the end, removed
 
 ---
+### 2025-06-21 - Feature: Hotelsinus Stepsequencer
+I've improved and tweaked this dialog quite a bit ever since Hotelsinus sent it my way. It now supporst 16 steps and 32 steps. If there's interest, I can continue tweaking it further. 
+
+---
 ### 2025-06-22 - Improvement: Sample Pitch Modifier Dialog now has a toggle for making the dialog smaller, or larger:
 ![](Screenshots/samplepitchmodifierdialog_01.png)
 ![](Screenshots/samplepitchmodifierdialog_02.png)
