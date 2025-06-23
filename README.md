@@ -9641,6 +9641,10 @@ Now 75 dialogs deep:
 
 ---
 ### under the radar stuff (forthcoming, still under works)
+
+### Feature: AKAI Import
+This is a bit of a complex deal with S900 S3000 S6000 MPCLive etc formats and PGM SND S P AKP formats, i had something working but have hidden it for now until i can figure out the best logic for this.
+
 ### Feature: Polyend Buddy
 This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder. And a Browse bar for Computer PTI - with Dump button so selected PTI gets dumped from Computer to Polyend, and Analyze for Polyend Tracker PTI and Computer PTI selected files. and Dump to Device which lets you select any PTI from your computer (file browse dialog) and save it anywhere on the Polyend. And a Drumkit (mono) / (stereo) maker that takes 48 samples, sets bitdepth, samplerate and channel to same, merges the files together and outputs a PTI with 48 slices each triggering one of the 48 drums.
 
