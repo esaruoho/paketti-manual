@@ -9638,6 +9638,13 @@ Now 75 dialogs deep:
 ![](Screenshots/quickrandom01.png)
 
 ---
+### 2025-06-23 - Feature: Hotelsinus Stepsequencer I've improved and tweaked this dialog quite a bit ever since @hotelsinus sent it my way. It now supporst 16 steps and 32 steps. If there's interest, I can continue tweaking it further.
+
+![](Screenshot%202025-06-26%20at%2023.50.10.png)
+
+---
+### 2025-06-26 - Feature: Delete Slices in Selection
+![](Screenshots/deleteslicesinselection.gif)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
