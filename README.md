@@ -9647,6 +9647,10 @@ Now 75 dialogs deep:
 ![](Screenshots/deleteslicesinselection.gif)
 
 ---
+### 2025-06-27 - Improvement: Pakettify Current Instrument
+Now correctly duplicates, clears slices without erroring, and reinstates the slices - and names the instrument + sample slices accordingly.
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
