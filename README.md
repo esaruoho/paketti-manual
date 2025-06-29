@@ -9651,6 +9651,23 @@ Now 75 dialogs deep:
 Now correctly duplicates, clears slices without erroring, and reinstates the slices - and names the instrument + sample slices accordingly.
 
 ---
+### 2025-06-27 - Improvement: Hex Number to Loop Length
+Now has "05" and "OFF" as possibilities
+Now has a slider for controlling 0-100%
+Now has a LFO Writer for controlling the looplength
+
+---
+### 2025-06-27 - Improvement: Paketti Stacker
+Added "Auto Stack from Pattern" - this means, if you've used slices to create sequences, and suddenly want to transpose the slices, you can turn them from Slices into a Stacked instrument, and the selected track will be duplicated but written with velocity stacking.
+
+---
+### 2025-06-27 - Feature: Isolate Slices - Play All Together
+This will take a sliced instrument and create a new Instrument where all the slices play together C-0 to B-9.
+
+---
+
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
