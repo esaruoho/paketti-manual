@@ -9665,7 +9665,14 @@ Added "Auto Stack from Pattern" - this means, if you've used slices to create se
 This will take a sliced instrument and create a new Instrument where all the slices play together C-0 to B-9.
 
 ---
+### 2025-06-29 - Feature: Tuning System
+![](Screenshots/editstep_0_system.gif)
+![](Screenshots/editstep_tuningsystem.png)
 
+---
+### 2025-06-29 - Feature: .OT Import
+This seems to recognize slices - but I'm very interested in finding out what else this should know how to do.
+![](Screenshots/ot_import_trials01.png)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
