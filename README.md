@@ -9640,7 +9640,7 @@ Now 75 dialogs deep:
 ---
 ### 2025-06-23 - Feature: Hotelsinus Stepsequencer I've improved and tweaked this dialog quite a bit ever since @hotelsinus sent it my way. It now supporst 16 steps and 32 steps. If there's interest, I can continue tweaking it further.
 
-![](Screenshot%202025-06-26%20at%2023.50.10.png)
+![](Screenshots/hotelsinus_step_32steps.png)
 
 ---
 ### 2025-06-26 - Feature: Delete Slices in Selection
@@ -9675,13 +9675,27 @@ This seems to recognize slices - but I'm very interested in finding out what els
 ![](Screenshots/ot_import_trials01.png)
 
 ---
+### 2025-06-30 - Themes: Added all catppuccin themes
+
+---
+
+
+---
 ### under the radar stuff (forthcoming, still under works)
+
+### Feature: .OT Import / Export
+Still working on improving the Export
 
 ### Feature: AKAI Import
 This is a bit of a complex deal with S900 S3000 S6000 MPCLive etc formats and PGM SND S P AKP formats, i had something working but have hidden it for now until i can figure out the best logic for this.
 
 ### Feature: Polyend Buddy
 This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder. And a Browse bar for Computer PTI - with Dump button so selected PTI gets dumped from Computer to Polyend, and Analyze for Polyend Tracker PTI and Computer PTI selected files. and Dump to Device which lets you select any PTI from your computer (file browse dialog) and save it anywhere on the Polyend. And a Drumkit (mono) / (stereo) maker that takes 48 samples, sets bitdepth, samplerate and channel to same, merges the files together and outputs a PTI with 48 slices each triggering one of the 48 drums.
+
+Refresh Dropdown Menus when Save WAV, Save PTI, Dump to Device, etc - basically in all sample saving situations, you should refresh the dropdown menus
+Improved the Save to SaveFolder (WAV + PTI) so Statusbar shows where it was saved and what was saved
+Fix the Sorting of Dropdownmenus so "FromRenoise" and "fromRenoise" are shown close to eachother instead of "capital letters first, then lowercase letters" sorting which looks like a bug
+
 
 ---
 # End
