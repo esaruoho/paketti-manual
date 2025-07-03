@@ -9678,13 +9678,21 @@ This seems to recognize slices - but I'm very interested in finding out what els
 ### 2025-06-30 - Themes: Added all catppuccin themes
 
 ---
+### 2025-07-01 - Improvement: .OT Export
+Can now export 64 drumchain kit where each slice plays till the end of the sample
 
+---
+### 2025-07-01 - Improvement: OctaCycle
+This allows for resampling a oneshot sample to fit 7 octaves and export .OT out of it
+
+---
+### 2025-07-02 - Improvement: Paketti Steppers Dialog can now globally change all the Steppers to 256, or any other size.
+![](Screenshots/pakettisteppersdialog_globalstep.png)
+
+---
 
 ---
 ### under the radar stuff (forthcoming, still under works)
-
-### Feature: .OT Import / Export
-Still working on improving the Export
 
 ### Feature: AKAI Import
 This is a bit of a complex deal with S900 S3000 S6000 MPCLive etc formats and PGM SND S P AKP formats, i had something working but have hidden it for now until i can figure out the best logic for this.
