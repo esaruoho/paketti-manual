@@ -1,4 +1,3 @@
-
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
  1. [What](#what)
@@ -118,6 +117,7 @@ The Shortcut `Impulse Tracker ALT-D Double Select w/ Automation` takes the origi
 Meaning, if you have the Automation Frame displaying, the same Shortcut will also select the same rows in the Automation Frame. 
 
 An example of usage:
+
 ![](AutomationAssets/alt-d_with_automation.gif)
 
 ### Automation Across Multiple Patterns Using Pattern Matrix
@@ -159,6 +159,7 @@ An example of usage:
 If you have selected a Panning, PitchBend or similar (get in touch if you want more configurations), these will cycle through the following:
 
 An example of usage:
+
 ![](AutomationAssets/Switch_Curves_panning.gif)
 ### Select Automation Playmode
 The Shortcuts / MIDI Mappings for `Select Automation Playmode (Next)/(Previous)` and `01 Points`,  `02 Lines`,  `03 Curves` let you set the Selected Automation Parameter's Playmode states. 
@@ -169,11 +170,13 @@ The Shortcuts and Midi Mappings for `Set Automation Range to Max (1.0)`, `Set Au
 ### Switch to Automation & Cycle through Automation Envelopes
 The Shortcut / Midi Mapping `Switch to Automation Dynamic` is a multi-function feature.
 ![](AutomationAssets/Switch_to_Automation_Show_Automated_Parameters.png)
+
 If you're not in the Automation Frame, it will display the Automation Frame. (Hence the "Switch to Automation" part of the name).
 
 If you are already on the Automation Frame, pressing the same shortcut or midi button again, will result in you cycling through the parameters that have Automation Envelopes on them.
 
 An example of usage:
+
 ![](AutomationAssets/Switch_to_Automation_Show_Automated_Parameters.gif)
 
 ### Selected Device Automation Parameter 001...128
@@ -193,6 +196,7 @@ An example of usage:
 The Shortcut/Midi Mapping `Show Automation Value Dialog...` will open up a simple and small Dialog that lets you write an Automation Value to the currently selected Automation Line.
 
 ![](AutomationAssets/Shortcut_MIDI_-_Automation_Value_Dialog.png)
+
 As you can see from the Dialog screenshot below, the textfield is autoselected. After opening the Dialog, you can simply input a value between 0.0 and 1.0, press enter, and the Dialog closes and the value is input.
 
 ![](AutomationAssets/Automation_Value_Dialog.png)
@@ -204,11 +208,13 @@ An example of usage:
 There is also an additional feature, the EditStep follow, which lets you get jumped to the next EditStep value after you press Enter in the Value textfield.
 
 An example of usage:
+
 ![](AutomationAssets/automation_value_dialog_v2_editstep.gif)
 With the EditStep set, the Dialog never closes.
 
 ### Record Automation to Selected Parameter
 This MIDI Mapping will let you record Automation nodes to the Selected Automation Parameter.
+
 ![](AutomationAssets/Record_Automation_to_Selected_Parameter.png)
 
 This will only record content to the Selected Parameter, if Edit Mode is on. Then it records to the whole selection. If you have a selection, it will change the value of the whole selection. 
@@ -216,9 +222,11 @@ This will only record content to the Selected Parameter, if Edit Mode is on. The
 If you have **Follow Pattern** on, then it will record to changes to the playhead.
 
 An example of usage:
+
 ![](AutomationAssets/Record_Automation_to_Selected_Parameter.gif)
 ### Generate Automation Points from Notes in Selected Track
 The Shortcut/MidiMapping `Generate Automation Points from Notes in Selected Track` will output Automation Points to the selected Automation Parameter based on the notes you have in the Pattern Editor.
+
 ![](AutomationAssets/Automation_Generate_Automation_Points_from_Notes_in_Selected_Track.png)
 
 This same feature is also available from the Automation Menu:
@@ -235,6 +243,7 @@ This same feature is also available from the Automation Menu:
 ![](AutomationAssets/Menu_Entry_-_Randomize_Automation_Envelope.png)
 
 An example of usage:
+
 ![](AutomationAssets/Automation_Randomize_Selected_Parameter.gif)
 
 ### Automation Selected Device Randomize (All Parameters)
@@ -372,6 +381,7 @@ The `*Instr. Macros` device which is also added to the track you are on, allows 
 Meaning, you would load a sample using Paketti, input a few notes to the pattern editor, and immediately be able to start drawing automation for any of the 8 macro controls. So you could for instance put in a drumloop, and start drawing a cutoff automation curve directly to modulate the cutoff parameter.
 
 The 8 Macros are also available as a Midi Mapping like this:
+
 ![](attachments/383985142-13f28014-3411-4de0-8b32-db85b52c9a55.png)
 
 
@@ -492,6 +502,7 @@ Each of these rows have their own steps, min 1 max 16. so if you have a 512 row 
 ![](attachments/pakettigater.png)
 
 Example:
+
 ![gater improvement updates](https://github.com/user-attachments/assets/97b3dc3e-6e06-4991-99d6-e9bb42fd00d6)
 
 ### Paketti Groovebox 8120
@@ -526,6 +537,7 @@ This allows you to set your Phrase Preferences - i.e., when you use the Paketti 
 ### eSpeak Text-to-Speech speechsynthesizer
 
 This uses `espeak-ng` for creating spoken word samples using text-to-speech synthesis.
+
 ![](attachments/espeak_dialog.png)
 
 there's randomizers for parameters of selected device, a mono-device which can be added or toggled on/off from the channel for quickly monoing
