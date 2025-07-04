@@ -13,6 +13,72 @@
 
 ## Paketti Updates Changelog
 
+<div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
+  <strong>📅 Sort by date:</strong>
+  <button onclick="sortEntries('oldest')" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Oldest First</button>
+  <button onclick="sortEntries('newest')" style="margin-left: 5px; padding: 5px 10px; background: #2196F3; color: white; border: none; border-radius: 3px; cursor: pointer;">Newest First</button>
+  <span id="sortStatus" style="margin-left: 10px; font-style: italic; color: #666;">Currently: Oldest First</span>
+</div>
+
+<script>
+function sortEntries(order) {
+  // Find all h3 elements that match the date pattern
+  const headers = Array.from(document.querySelectorAll('h3')).filter(h3 => 
+    h3.textContent.match(/^\d{4}-\d{2}-\d{2} - /)
+  );
+  
+  if (headers.length === 0) return;
+  
+  // Create entry objects with header and content
+  const entries = headers.map(header => {
+    const entry = { header, content: [] };
+    let nextElement = header.nextElementSibling;
+    
+    // Collect content until next h3 or end
+    while (nextElement && nextElement.tagName !== 'H3') {
+      entry.content.push(nextElement);
+      nextElement = nextElement.nextElementSibling;
+    }
+    
+    return entry;
+  });
+  
+  // Sort by date
+  entries.sort((a, b) => {
+    const dateA = a.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
+    const dateB = b.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
+    
+    if (order === 'newest') {
+      return dateB.localeCompare(dateA);
+    } else {
+      return dateA.localeCompare(dateB);
+    }
+  });
+  
+  // Find the parent container and reorder
+  const container = headers[0].parentElement;
+  const insertPoint = headers[0]; // We'll insert before the first header
+  
+  // Remove all entries from DOM
+  entries.forEach(entry => {
+    entry.header.remove();
+    entry.content.forEach(el => el.remove());
+  });
+  
+  // Add them back in sorted order
+  entries.forEach(entry => {
+    container.insertBefore(entry.header, insertPoint);
+    entry.content.forEach(el => {
+      container.insertBefore(el, insertPoint);
+    });
+  });
+  
+  // Update status
+  document.getElementById('sortStatus').textContent = 
+    order === 'newest' ? 'Currently: Newest First' : 'Currently: Oldest First';
+}
+</script>
+
 ### 2024-06-16 - Improvement: Effect Column CheatSheet Dialog now either outputs to selected_row if no selection, or to the selection.
 
 ---
