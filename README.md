@@ -1,11 +1,4 @@
----
-title: "Paketti Manual - Renoise LUA Framework"
-description: "Complete manual for Paketti - a powerful LUA-scripted framework providing 5000+ shortcuts, 1000+ menu entries, 900+ MIDI mappings and 70+ dialogs for Renoise"
-image: "https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png"
----
-
 <link rel="stylesheet" href="dark-mode.css">
-
 
 
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |

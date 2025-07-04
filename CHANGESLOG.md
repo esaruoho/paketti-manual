@@ -1,11 +1,5 @@
 <link rel="stylesheet" href="dark-mode.css">
 
----
-title: "Paketti Changelog - Latest Updates & Features"
-description: "Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework"
-image: "https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png"
----
-
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
 # Changeslog

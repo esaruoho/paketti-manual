@@ -13,12 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.2
-          bundler-cache: true
-
       # Ensure dark-mode.css is included in Markdown files
       - name: Add dark-mode.css link to Markdown files in root
         run: |
@@ -32,21 +26,9 @@ jobs:
             echo "No Markdown files found in root. Skipping CSS injection."
           fi
 
-      - name: Install Jekyll and dependencies
-        run: |
-          gem install jekyll bundler
-          bundle init
-          echo 'gem "jekyll", "~> 4.3"' >> Gemfile
-          echo 'gem "jekyll-seo-tag"' >> Gemfile
-          echo 'gem "minima"' >> Gemfile
-          bundle install
-
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build
-
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: .
