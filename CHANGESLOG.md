@@ -22,50 +22,46 @@
 
 <script>
 function sortChangelog(order) {
-  // Get the content div that contains all the changelog entries
-  const content = document.body;
+  console.log('Sort function called with order:', order);
   
-  // Find all ### headers that start with a date pattern YYYY-MM-DD
-  const allHeaders = content.querySelectorAll('h3');
-  const dateHeaders = [];
+  // Find all h3 elements with date pattern
+  const allH3s = document.querySelectorAll('h3');
+  const dateEntries = [];
   
-  allHeaders.forEach(header => {
-    const text = header.textContent.trim();
-    if (/^\d{4}-\d{2}-\d{2} - /.test(text)) {
-      dateHeaders.push(header);
-    }
-  });
-  
-  if (dateHeaders.length === 0) return;
-  
-  // Create entry objects with header and all content until next date header
-  const entries = [];
-  
-  dateHeaders.forEach((header, index) => {
-    const entry = {
-      header: header,
-      content: [],
-      date: header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1]
-    };
+  allH3s.forEach(h3 => {
+    const text = h3.textContent.trim();
+    const dateMatch = text.match(/^(\d{4}-\d{2}-\d{2}) - (.+)$/);
     
-    let currentElement = header.nextElementSibling;
-    const nextHeader = dateHeaders[index + 1];
-    
-    // Collect all content until we hit the next date header
-    while (currentElement && currentElement !== nextHeader) {
-      if (currentElement.tagName === 'H3' && 
-          currentElement.textContent.includes('under the radar')) {
-        break; // Stop at "under the radar" section
+    if (dateMatch) {
+      // Collect all elements after this h3 until next date h3
+      const elements = [h3];
+      let nextEl = h3.nextElementSibling;
+      
+      while (nextEl) {
+        // Stop at next date header or "under the radar"
+        if (nextEl.tagName === 'H3') {
+          const nextText = nextEl.textContent.trim();
+          if (/^\d{4}-\d{2}-\d{2} - /.test(nextText) || nextText.includes('under the radar')) {
+            break;
+          }
+        }
+        elements.push(nextEl);
+        nextEl = nextEl.nextElementSibling;
       }
-      entry.content.push(currentElement);
-      currentElement = currentElement.nextElementSibling;
+      
+      dateEntries.push({
+        date: dateMatch[1],
+        elements: elements
+      });
     }
-    
-    entries.push(entry);
   });
   
-  // Sort entries by date
-  entries.sort((a, b) => {
+  console.log('Found', dateEntries.length, 'date entries');
+  
+  if (dateEntries.length === 0) return;
+  
+  // Sort by date
+  dateEntries.sort((a, b) => {
     if (order === 'newest') {
       return b.date.localeCompare(a.date);
     } else {
@@ -73,30 +69,34 @@ function sortChangelog(order) {
     }
   });
   
-  // Remove all entries from their current positions
-  entries.forEach(entry => {
-    entry.header.remove();
-    entry.content.forEach(el => el.remove());
+  // Find insertion point (after sort buttons)
+  const sortDiv = document.querySelector('div[style*="background-color: rgba(240,240,240,0.7)"]');
+  if (!sortDiv) {
+    console.error('Could not find sort div');
+    return;
+  }
+  
+  // Remove all elements from DOM
+  dateEntries.forEach(entry => {
+    entry.elements.forEach(el => el.remove());
   });
   
-  // Find where to insert - after the sort buttons
-  const sortDiv = document.querySelector('div[style*="margin-bottom: 20px"]');
+  // Insert sorted entries back
   let insertAfter = sortDiv;
-  
-  // Re-insert entries in sorted order
-  entries.forEach(entry => {
-    insertAfter.parentNode.insertBefore(entry.header, insertAfter.nextSibling);
-    insertAfter = entry.header;
-    
-    entry.content.forEach(contentEl => {
-      insertAfter.parentNode.insertBefore(contentEl, insertAfter.nextSibling);
-      insertAfter = contentEl;
+  dateEntries.forEach(entry => {
+    entry.elements.forEach(el => {
+      insertAfter.parentNode.insertBefore(el, insertAfter.nextSibling);
+      insertAfter = el;
     });
   });
   
-  // Update status text
-  document.getElementById('sortStatus').textContent = 
-    order === 'newest' ? 'Currently: Newest First' : 'Currently: Oldest First';
+  // Update status
+  const statusEl = document.getElementById('sortStatus');
+  if (statusEl) {
+    statusEl.textContent = order === 'newest' ? 'Currently: Newest First' : 'Currently: Oldest First';
+  }
+  
+  console.log('Sorting completed');
 }
 </script>
 
@@ -7716,11 +7716,11 @@ Improvement: Added 128, 192, 256, 384, 512 buttons for setting Global StepCounts
 Improvement: Random Gate will no longer fill the same steps for beat triggering AND probability - instead separated.
 
 ---
-### 2023-03-29 - esaruoho
+### 2025-03-29 - esaruoho
 Improvement: Impulse Tracker CTRL-N Dialog will now correctly close, if triggered again while dialog is open.
 
 ---
-### 2023-03-29 - esaruoho
+### 2025-03-29 - esaruoho
 Improvement: 8120: Added "Reset Output Delay" which resets all the Output Delays.
 ~~Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.~~
 Improvement: 8120: Moved "Random All" / "Randomize All" / "Reverse All" / "Randomize all Yxx" / "Reset Output Delay" to their own separate row.
