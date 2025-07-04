@@ -32,11 +32,31 @@ jobs:
 
       - name: Convert Markdown to HTML
         run: |
-          # Convert README.md to index.html
-          npx marked README.md > index.html
+          # Convert README.md to index.html with proper HTML structure
+          echo '<!DOCTYPE html>' > index.html
+          echo '<html lang="en">' >> index.html
+          echo '<head>' >> index.html
+          echo '<meta charset="UTF-8">' >> index.html
+          echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' >> index.html
+          echo '<link rel="stylesheet" href="dark-mode.css">' >> index.html
+          echo '</head>' >> index.html
+          echo '<body>' >> index.html
+          npx marked README.md >> index.html
+          echo '</body>' >> index.html
+          echo '</html>' >> index.html
           
-          # Convert CHANGESLOG.md to CHANGESLOG.html  
-          npx marked CHANGESLOG.md > CHANGESLOG.html
+          # Convert CHANGESLOG.md to CHANGESLOG.html with proper HTML structure
+          echo '<!DOCTYPE html>' > CHANGESLOG.html
+          echo '<html lang="en">' >> CHANGESLOG.html
+          echo '<head>' >> CHANGESLOG.html
+          echo '<meta charset="UTF-8">' >> CHANGESLOG.html
+          echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' >> CHANGESLOG.html
+          echo '<link rel="stylesheet" href="dark-mode.css">' >> CHANGESLOG.html
+          echo '</head>' >> CHANGESLOG.html
+          echo '<body>' >> CHANGESLOG.html
+          npx marked CHANGESLOG.md >> CHANGESLOG.html
+          echo '</body>' >> CHANGESLOG.html
+          echo '</html>' >> CHANGESLOG.html
 
       # Inject meta tags into HTML head
       - name: Inject social media meta tags
