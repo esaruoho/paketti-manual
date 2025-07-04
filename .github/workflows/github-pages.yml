@@ -40,7 +40,7 @@ jobs:
           <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Paketti Manual - Tool/Firmware update for Renoise">
+              <title>Paketti Manual - Tool/Firmware update for Renoise</title>
               <meta name="description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
               <meta name="keywords" content="Renoise, Paketti, Tracker, Music Production, Shortcuts, MIDI, Automation, Sample Editor, Pattern Editor">
               <meta name="author" content="esaruoho">
