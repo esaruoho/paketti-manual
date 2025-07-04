@@ -1,16 +1,18 @@
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
  1. [What](#what)
+ 
  2. [Feedback](#feedback)
  3. [Where](#where)
  4. [Support](#support)
- 5. [Roadmap](#roadmap)
- 6. [ManualOrganization](#manualorganization)
- 7. [Automation](#automation)
- 8. [SampleManagement](#SampleManagement)
- 9. [RewriteSoon](#RewriteSoon)
- 10. [Oldabout](#oldabout)
- 11. [Changeslog](CHANGESLOG.html)
+ 5. [GettingStarted](#gettingstarted)
+ 6. [Roadmap](#roadmap)
+ 7. [ManualOrganization](#manualorganization)
+ 8. [Automation](#automation)
+ 9. [SampleManagement](#SampleManagement)
+ 10. [RewriteSoon](#RewriteSoon)
+ 11. [Oldabout](#oldabout)
+ 12. [Changeslog](CHANGESLOG.html)
 
 ## What
 
@@ -57,12 +59,63 @@ It introduces features from:
 # Support
 
 You can 
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
+- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 10€ to 300€.
 - Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho).
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
 - Buy my music on [Bandcamp](http://lackluster.bandcamp.com/). Or this music here on this [Bandcamp](http://hler.bandcamp.com/)
+
+# GettingStarted
+
+Yes, there's a learning curve.
+Paketti introduces over 5000 shortcuts, over 1000 menu entries, over 950 midi mappings, and over 77 dialogs.
+
+I've often been told, there's too much! I'm only gonna use this or that. 
+
+Well, good news! 
+
+Just use the ones you feel you need to use. You can study the rest later. Or, never study at all, ask questions on the Discord, and I'll answer them to the best of my abilities.
+
+Now, I'd absolutely love to be able to "list the top 5 features of Paketti", but the way Paketti has been built is that most features will bleed into other features.
+
+It _seems_ that the best way would be to split this into smaller pieces by categories.
+
+## Sample Editor
+
+TODO
+
+## Pattern Editor
+
+TODO
+
+## Phrase Editor
+
+TODO
+
+## Automation
+
+TODO
+
+## Mixer
+
+TODO
+
+## Disk Browser
+
+TODO
+
+## Pattern Matrix
+
+TODO
+
+## Import Formats
+
+TODO
+
+## Export Formats
+
+TODO
 
 # Roadmap
 
