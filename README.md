@@ -759,3 +759,9 @@ It is far too complex to sum up in just a few words. However, some notable chang
 * Control Automation start / endSelection via MidiMappings
 * Control Sample Buffer start / endSelection via MidiMappings
 * And much much more!
+
+# Changeslog
+
+📝 **View the complete changelog**: [CHANGESLOG.md](CHANGESLOG.md)
+
+I've decided to move the full changelog with all the improvements, features and plumbing updates to a separate file, so that it is easier to maintain this fledgling document.
