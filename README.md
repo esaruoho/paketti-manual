@@ -1,5 +1,37 @@
-<link rel="stylesheet" href="dark-mode.css">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paketti - Renoise Tracker Convergence Project Manual</title>
+    <meta name="description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
+    <meta name="keywords" content="Renoise, Paketti, Tracker, Music Production, Shortcuts, MIDI, Automation, Sample Editor, Pattern Editor">
+    <meta name="author" content="esaruoho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://esaruoho.github.io/paketti-manual/">
+    <meta property="og:title" content="Paketti - Renoise Tracker Convergence Project Manual">
+    <meta property="og:description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from legendary trackers including C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
+    <meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://esaruoho.github.io/paketti-manual/">
+    <meta property="twitter:title" content="Paketti - Renoise Tracker Convergence Project Manual">
+    <meta property="twitter:description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from legendary trackers.">
+    <meta property="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="dark-mode.css">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/">
+</head>
+<body>
 
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
@@ -101,7 +133,7 @@ An example of usage:
 ![](AutomationAssets/Automation_Flood_Fill_Selection_Demo.gif)
 
 This same feature is also available from the Automation Menu:
-![](Automation_Flood_Fill_Selection.png)
+![](AutomationAssets/Automation_Flood_Fill_Selection.png)
 and the other in **Main Menu -> Tools -> Paketti.. -> Automation.. -> Flood Fill Automation Selection**.
 ![](AutomationAssets/Menu_Entry_-_Main_Menu_-_Automation_-_Flood_Fill_Automation_Selection.png)
 
@@ -761,3 +793,6 @@ It is far too complex to sum up in just a few words. However, some notable chang
 📝 **View the complete changelog**: [CHANGESLOG.md](CHANGESLOG.md)
 
 I've decided to move the full changelog with all the improvements, features and plumbing updates to a separate file, so that it is easier to maintain this fledgling document.
+
+</body>
+</html>

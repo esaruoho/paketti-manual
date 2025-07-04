@@ -1,4 +1,37 @@
-<link rel="stylesheet" href="dark-mode.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paketti Updates Changelog - Renoise Tracker Convergence Project</title>
+    <meta name="description" content="Complete changelog of Paketti updates for Renoise. Track all improvements, new features, shortcuts, MIDI mappings, and bug fixes for the Tracker Convergence Project.">
+    <meta name="keywords" content="Paketti, Changelog, Updates, Renoise, Tracker, Music Production, Bug fixes, New features">
+    <meta name="author" content="esaruoho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
+    <meta property="og:title" content="Paketti Updates Changelog - Renoise Tracker Convergence Project">
+    <meta property="og:description" content="Complete changelog of Paketti updates for Renoise. Track all improvements, new features, shortcuts, MIDI mappings, and bug fixes.">
+    <meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
+    <meta property="twitter:title" content="Paketti Updates Changelog - Renoise Tracker Convergence Project">
+    <meta property="twitter:description" content="Complete changelog of Paketti updates for Renoise. Track all improvements, new features, shortcuts, MIDI mappings, and bug fixes.">
+    <meta property="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="dark-mode.css">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
+</head>
+<body>
 
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
@@ -9108,3 +9141,6 @@ If you liked what you saw, please consider supporting
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
 - Buy my music at [Bandcamp](http://lackluster.bandcamp.com/).
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-name: Deploy Paketti GitHub Pages with Dark Mode
+name: Deploy Paketti GitHub Pages
 
 on:
   push:
@@ -13,91 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Ensure dark-mode.css is included in Markdown files
-      - name: Add dark-mode.css link to Markdown files in root
+      # Simply copy the markdown files as HTML since they already have HTML structure
+      - name: Copy markdown files with HTML structure
         run: |
-          if ls *.md 1> /dev/null 2>&1; then
-            for file in *.md; do
-              if ! grep -q 'dark-mode.css' "$file"; then
-                sed -i '1i <link rel="stylesheet" href="./dark-mode.css">' "$file"
-              fi
-            done
-          else
-            echo "No Markdown files found in root. Skipping CSS injection."
-          fi
-
-      # Build HTML from markdown
-      - name: Install marked locally
-        run: npm install --save-dev marked
-
-      - name: Convert Markdown to HTML
-        run: |
-          # Convert README.md to index.html with proper HTML structure
-          echo '<!DOCTYPE html>' > index.html
-          echo '<html lang="en">' >> index.html
-          echo '<head>' >> index.html
-          echo '<meta charset="UTF-8">' >> index.html
-          echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' >> index.html
-          echo '<link rel="stylesheet" href="dark-mode.css">' >> index.html
-          echo '</head>' >> index.html
-          echo '<body>' >> index.html
-          npx marked README.md >> index.html
-          echo '</body>' >> index.html
-          echo '</html>' >> index.html
+          # Copy README.md to index.html (GitHub Pages default)
+          cp README.md index.html
           
-          # Convert CHANGESLOG.md to CHANGESLOG.html with proper HTML structure
-          echo '<!DOCTYPE html>' > CHANGESLOG.html
-          echo '<html lang="en">' >> CHANGESLOG.html
-          echo '<head>' >> CHANGESLOG.html
-          echo '<meta charset="UTF-8">' >> CHANGESLOG.html
-          echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">' >> CHANGESLOG.html
-          echo '<link rel="stylesheet" href="dark-mode.css">' >> CHANGESLOG.html
-          echo '</head>' >> CHANGESLOG.html
-          echo '<body>' >> CHANGESLOG.html
-          npx marked CHANGESLOG.md >> CHANGESLOG.html
-          echo '</body>' >> CHANGESLOG.html
-          echo '</html>' >> CHANGESLOG.html
-
-      # Inject meta tags into HTML head
-      - name: Inject social media meta tags
-        run: |
-          # Define meta tags for README/index.html
-          META_TAGS_INDEX='
-          <title>Paketti Manual - Renoise LUA Framework</title>
-          <meta name="description" content="Complete manual for Paketti - a powerful LUA-scripted framework providing 5000+ shortcuts, 1000+ menu entries, 900+ MIDI mappings and 70+ dialogs for Renoise">
-          <meta property="og:title" content="Paketti Manual - Renoise LUA Framework">
-          <meta property="og:description" content="Complete manual for Paketti - a powerful LUA-scripted framework providing 5000+ shortcuts, 1000+ menu entries, 900+ MIDI mappings and 70+ dialogs for Renoise">
-          <meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">
-          <meta property="og:url" content="https://esaruoho.github.io/paketti-manual/">
-          <meta property="og:type" content="website">
-          <meta name="twitter:card" content="summary_large_image">
-          <meta name="twitter:title" content="Paketti Manual - Renoise LUA Framework">
-          <meta name="twitter:description" content="Complete manual for Paketti - a powerful LUA-scripted framework providing 5000+ shortcuts, 1000+ menu entries, 900+ MIDI mappings and 70+ dialogs for Renoise">
-          <meta name="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">'
+          # Copy CHANGESLOG.md to CHANGESLOG.html
+          cp CHANGESLOG.md CHANGESLOG.html
           
-          # Define meta tags for CHANGESLOG.html
-          META_TAGS_CHANGELOG='
-          <title>Paketti Changelog - Latest Updates & Features</title>
-          <meta name="description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-          <meta property="og:title" content="Paketti Changelog - Latest Updates & Features">
-          <meta property="og:description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-          <meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">
-          <meta property="og:url" content="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
-          <meta property="og:type" content="website">
-          <meta name="twitter:card" content="summary_large_image">
-          <meta name="twitter:title" content="Paketti Changelog - Latest Updates & Features">
-          <meta name="twitter:description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-          <meta name="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">'
-          
-          # Inject meta tags into index.html head (after <head> tag)
-          awk -v meta="$META_TAGS_INDEX" '/<head>/ {print; print meta; next} 1' index.html > tmp && mv tmp index.html
-          
-          # Inject meta tags into CHANGESLOG.html head (after <head> tag)  
-          awk -v meta="$META_TAGS_CHANGELOG" '/<head>/ {print; print meta; next} 1' CHANGESLOG.html > tmp && mv tmp CHANGESLOG.html
-
-      # Disable Jekyll processing
-      - name: Disable Jekyll
-        run: touch .nojekyll
+          # Ensure .nojekyll exists to disable Jekyll processing
+          touch .nojekyll
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -105,3 +31,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
+          force_orphan: true
