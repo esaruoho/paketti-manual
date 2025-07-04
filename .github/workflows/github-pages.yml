@@ -70,10 +70,10 @@ jobs:
           <meta name="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">'
           
           # Inject meta tags into index.html head (after <head> tag)
-          sed -i "/<head>/a\\$META_TAGS_INDEX" index.html
+          awk -v meta="$META_TAGS_INDEX" '/<head>/ {print; print meta; next} 1' index.html > tmp && mv tmp index.html
           
           # Inject meta tags into CHANGESLOG.html head (after <head> tag)  
-          sed -i "/<head>/a\\$META_TAGS_CHANGELOG" CHANGESLOG.html
+          awk -v meta="$META_TAGS_CHANGELOG" '/<head>/ {print; print meta; next} 1' CHANGESLOG.html > tmp && mv tmp CHANGESLOG.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
