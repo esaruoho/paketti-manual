@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="dark-mode.css">
 
 | [Patreon Paketti](http://patreon.com/esaruoho) |
- [GitHub Paketti](https://github.com/esaruoho/org.lackluster.Paketti.xrnx/) |
+ [GitHub Paketti](https://github.com/esaruoho/paketti) |
  [Discord Paketti](https://discord.gg/xNT6eH7W) |
  [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) |
  [GitHub Sponsors](http://github.com/sponsors/esaruoho) |
@@ -15,9 +15,9 @@
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
   <strong>📅 Sort by date:</strong>
-  <button onclick="sortChangelog('oldest')" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Oldest First</button>
+  <button onclick="sortChangelog('oldest')" style="margin-left: 10px; padding: 5px 10px; background: #666; color: white; border: none; border-radius: 3px; cursor: pointer;">Oldest First</button>
   <button onclick="sortChangelog('newest')" style="margin-left: 5px; padding: 5px 10px; background: #2196F3; color: white; border: none; border-radius: 3px; cursor: pointer;">Newest First</button>
-  <span id="sortStatus" style="margin-left: 10px; font-style: italic; color: #666;">Currently: Oldest First</span>
+  <span id="sortStatus" style="margin-left: 10px; font-style: italic; color: #666;">Currently: Newest First</span>
 </div>
 
 <script>
@@ -90,14 +90,52 @@ function sortChangelog(order) {
     });
   });
   
-  // Update status
+  // Update status and button styles
   const statusEl = document.getElementById('sortStatus');
+  const oldestBtn = document.querySelector('button[onclick*="oldest"]');
+  const newestBtn = document.querySelector('button[onclick*="newest"]');
+  
   if (statusEl) {
     statusEl.textContent = order === 'newest' ? 'Currently: Newest First' : 'Currently: Oldest First';
   }
   
+  // Update button styles to show active state
+  if (oldestBtn && newestBtn) {
+    if (order === 'newest') {
+      oldestBtn.style.backgroundColor = '#666';
+      newestBtn.style.backgroundColor = '#2196F3';
+    } else {
+      oldestBtn.style.backgroundColor = '#4CAF50';
+      newestBtn.style.backgroundColor = '#666';
+    }
+  }
+  
   console.log('Sorting completed');
 }
+
+function getInitialSortOrder() {
+  // Check URL parameters first
+  const urlParams = new URLSearchParams(window.location.search);
+  const sortParam = urlParams.get('sort');
+  
+  if (sortParam === 'oldest' || sortParam === 'newest') {
+    return sortParam;
+  }
+  
+  // Default to newest first
+  return 'newest';
+}
+
+// Auto-sort when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  const initialOrder = getInitialSortOrder();
+  console.log('Initial sort order:', initialOrder);
+  
+  // Wait a bit for the page to fully render
+  setTimeout(() => {
+    sortChangelog(initialOrder);
+  }, 100);
+});
 </script>
 
 ### 2024-06-16 - Improvement: Effect Column CheatSheet Dialog now either outputs to selected_row if no selection, or to the selection.
