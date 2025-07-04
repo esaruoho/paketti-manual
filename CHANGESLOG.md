@@ -15,74 +15,86 @@
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
   <strong>📅 Sort by date:</strong>
-  <button onclick="sortEntries('oldest')" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Oldest First</button>
-  <button onclick="sortEntries('newest')" style="margin-left: 5px; padding: 5px 10px; background: #2196F3; color: white; border: none; border-radius: 3px; cursor: pointer;">Newest First</button>
+  <button onclick="sortChangelog('oldest')" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Oldest First</button>
+  <button onclick="sortChangelog('newest')" style="margin-left: 5px; padding: 5px 10px; background: #2196F3; color: white; border: none; border-radius: 3px; cursor: pointer;">Newest First</button>
   <span id="sortStatus" style="margin-left: 10px; font-style: italic; color: #666;">Currently: Oldest First</span>
 </div>
 
 <script>
-function sortEntries(order) {
-  // Find all h3 elements that match EXACTLY the date pattern
-  const headers = Array.from(document.querySelectorAll('h3')).filter(h3 => {
-    const text = h3.textContent.trim();
-    return /^\d{4}-\d{2}-\d{2} - .+/.test(text);
+function sortChangelog(order) {
+  // Get the content div that contains all the changelog entries
+  const content = document.body;
+  
+  // Find all ### headers that start with a date pattern YYYY-MM-DD
+  const allHeaders = content.querySelectorAll('h3');
+  const dateHeaders = [];
+  
+  allHeaders.forEach(header => {
+    const text = header.textContent.trim();
+    if (/^\d{4}-\d{2}-\d{2} - /.test(text)) {
+      dateHeaders.push(header);
+    }
   });
   
-  if (headers.length === 0) {
-    console.log('No date-based headers found');
-    return;
-  }
+  if (dateHeaders.length === 0) return;
   
-  // Create entry objects with header and content
-  const entries = headers.map(header => {
-    const entry = { header, content: [] };
-    let nextElement = header.nextElementSibling;
+  // Create entry objects with header and all content until next date header
+  const entries = [];
+  
+  dateHeaders.forEach((header, index) => {
+    const entry = {
+      header: header,
+      content: [],
+      date: header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1]
+    };
     
-    // Collect content until next h3 with date pattern OR "under the radar" section
-    while (nextElement && nextElement.tagName !== 'H3') {
-      entry.content.push(nextElement);
-      nextElement = nextElement.nextElementSibling;
+    let currentElement = header.nextElementSibling;
+    const nextHeader = dateHeaders[index + 1];
+    
+    // Collect all content until we hit the next date header
+    while (currentElement && currentElement !== nextHeader) {
+      if (currentElement.tagName === 'H3' && 
+          currentElement.textContent.includes('under the radar')) {
+        break; // Stop at "under the radar" section
+      }
+      entry.content.push(currentElement);
+      currentElement = currentElement.nextElementSibling;
     }
     
-    // Stop if we hit "under the radar" section
-    if (nextElement && nextElement.textContent.includes('under the radar')) {
-      return entry;
-    }
-    
-    return entry;
+    entries.push(entry);
   });
   
-  // Sort by date (extract YYYY-MM-DD from beginning)
+  // Sort entries by date
   entries.sort((a, b) => {
-    const dateA = a.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
-    const dateB = b.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
-    
     if (order === 'newest') {
-      return dateB.localeCompare(dateA);
+      return b.date.localeCompare(a.date);
     } else {
-      return dateA.localeCompare(dateB);
+      return a.date.localeCompare(b.date);
     }
   });
   
-  // Find the insertion point (right after the sorting buttons)
-  const sortDiv = document.querySelector('div[style*="margin-bottom: 20px"]');
-  const insertPoint = sortDiv.nextElementSibling;
-  
-  // Remove all entries from DOM
+  // Remove all entries from their current positions
   entries.forEach(entry => {
     entry.header.remove();
     entry.content.forEach(el => el.remove());
   });
   
-  // Add them back in sorted order
+  // Find where to insert - after the sort buttons
+  const sortDiv = document.querySelector('div[style*="margin-bottom: 20px"]');
+  let insertAfter = sortDiv;
+  
+  // Re-insert entries in sorted order
   entries.forEach(entry => {
-    sortDiv.parentNode.insertBefore(entry.header, insertPoint);
-    entry.content.forEach(el => {
-      sortDiv.parentNode.insertBefore(el, insertPoint);
+    insertAfter.parentNode.insertBefore(entry.header, insertAfter.nextSibling);
+    insertAfter = entry.header;
+    
+    entry.content.forEach(contentEl => {
+      insertAfter.parentNode.insertBefore(contentEl, insertAfter.nextSibling);
+      insertAfter = contentEl;
     });
   });
   
-  // Update status
+  // Update status text
   document.getElementById('sortStatus').textContent = 
     order === 'newest' ? 'Currently: Newest First' : 'Currently: Oldest First';
 }
