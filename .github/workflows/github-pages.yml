@@ -27,16 +27,16 @@ jobs:
           fi
 
       # Build HTML from markdown
+      - name: Install marked locally
+        run: npm install --save-dev marked
+
       - name: Convert Markdown to HTML
         run: |
-          # Install markdown processor
-          npm install -g marked
-          
           # Convert README.md to index.html
-          marked README.md > index.html
+          npx marked README.md > index.html
           
           # Convert CHANGESLOG.md to CHANGESLOG.html  
-          marked CHANGESLOG.md > CHANGESLOG.html
+          npx marked CHANGESLOG.md > CHANGESLOG.html
 
       # Inject meta tags into HTML head
       - name: Inject social media meta tags
