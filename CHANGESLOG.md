@@ -4,8 +4,6 @@
 
 # Changeslog
 
-
-
 ← [Back to Main Manual](README.md)
 
 ## Paketti Updates Changelog
@@ -9080,6 +9078,9 @@ Now has a dropdown menu for adding CCizer textfiles from Paketti folder, and for
 Added dynamic Menu Entries that show the textfiles in question, and allows for writing to Selected Device - or creating a new device with the settings - fixed pagination too so the correct amount of pages are displayed.
 
 ---
+### 2025-07-04 - Paketti Manual Plumbing
+Now there's a method for sorting the Changeslog from oldest to newest, and from newest to oldest. There's also a split between README.md + CHANGESLOG.md - so that the small fledgling manual does not get destroyed by the huge (1 year) changeslog.
+
 
 ---
 ### under the radar stuff (forthcoming, still under works)
