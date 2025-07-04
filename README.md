@@ -11,7 +11,7 @@
  8. [SampleManagement](#SampleManagement)
  9. [RewriteSoon](#RewriteSoon)
  10. [Oldabout](#oldabout)
- 11. [Changeslog](CHANGESLOG.md)
+ 11. [Changeslog](CHANGESLOG.html)
 
 ## What
 
@@ -756,6 +756,6 @@ It is far too complex to sum up in just a few words. However, some notable chang
 
 # Changeslog
 
-📝 **View the complete changelog**: [CHANGESLOG.md](CHANGESLOG.md)
+📝 **View the complete changelog**: [CHANGESLOG.html](CHANGESLOG.html)
 
 I've decided to move the full changelog with all the improvements, features and plumbing updates to a separate file, so that it is easier to maintain this fledgling document.

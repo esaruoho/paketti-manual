@@ -4,7 +4,7 @@
 
 # Changeslog
 
-← [Back to Main Manual](README.md)
+← [Back to Main Manual](index.html)
 
 ## Paketti Updates Changelog
 
