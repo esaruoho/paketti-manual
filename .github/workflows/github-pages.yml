@@ -75,6 +75,10 @@ jobs:
           # Inject meta tags into CHANGESLOG.html head (after <head> tag)  
           awk -v meta="$META_TAGS_CHANGELOG" '/<head>/ {print; print meta; next} 1' CHANGESLOG.html > tmp && mv tmp CHANGESLOG.html
 
+      # Disable Jekyll processing
+      - name: Disable Jekyll
+        run: touch .nojekyll
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
