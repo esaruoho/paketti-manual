@@ -21,7 +21,7 @@ function sortChangelog(order) {
   const allH3s = document.querySelectorAll('h3');
   const dateEntries = [];
   
-  allH3s.forEach(h3 => {
+  allH3s.forEach((h3, index) => {
     const text = h3.textContent.trim();
     const dateMatch = text.match(/^(\d{4}-\d{2}-\d{2}) - (.+)$/);
     
@@ -44,7 +44,8 @@ function sortChangelog(order) {
       
       dateEntries.push({
         date: dateMatch[1],
-        elements: elements
+        elements: elements,
+        originalIndex: index
       });
     }
   });
@@ -53,13 +54,20 @@ function sortChangelog(order) {
   
   if (dateEntries.length === 0) return;
   
-  // Sort by date
+  // Sort by date, then by original index for same dates
   dateEntries.sort((a, b) => {
-    if (order === 'newest') {
-      return b.date.localeCompare(a.date);
-    } else {
-      return a.date.localeCompare(b.date);
+    const dateCompare = (order === 'newest') ? 
+      b.date.localeCompare(a.date) : 
+      a.date.localeCompare(b.date);
+    
+    // If dates are the same, sort by original index
+    if (dateCompare === 0) {
+      return (order === 'newest') ? 
+        b.originalIndex - a.originalIndex : 
+        a.originalIndex - b.originalIndex;
     }
+    
+    return dateCompare;
   });
   
   // Find insertion point (after sort buttons)
