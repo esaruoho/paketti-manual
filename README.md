@@ -9702,7 +9702,12 @@ There's also a detection for maximum 34 CCs, and added Pitchbend too.
 ![](Screenshots/paketticcizer_example.png)
 
 ---
+### 2025-07-04 - Improvement: Paketti MIDI Populator
+Now has a dropdown menu for adding CCizer textfiles from Paketti folder, and for browsing for new ones
 
+---
+### 2025-07-04 - Improvement: CCizer
+Added dynamic Menu Entries that show the textfiles in question, and allows for writing to Selected Device - or creating a new device with the settings - fixed pagination too so the correct amount of pages are displayed.
 
 ---
 
