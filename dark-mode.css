@@ -11,9 +11,6 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     padding: 10px;
-    margin: 0;
-    min-height: 100vh;
-    line-height: 1.6;
 }
 
 /* Header and navigation styling */
@@ -88,13 +85,11 @@ table {
     border-collapse: collapse;
     background-color: #1e1e1e; /* Dark background for table */
     color: #ffffff;            /* White text for readability */
-    margin: 1em 0;
 }
 
 th, td {
     padding: 10px;
     border: 1px solid #444444; /* Dark gray borders for separation */
-    text-align: left;
 }
 
 th {
@@ -116,7 +111,6 @@ tr:nth-child(even) td {
 a {
     color: #bb86fc;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 a:hover {
     color: #ffffff;
@@ -137,7 +131,7 @@ a[href*="patreon"], a[href*="github"], a[href*="discord"], a[href*="gumroad"], a
 pre, code {
     background-color: #1e1e1e !important;
     color: #f0f0f0            !important;
-    font-family: Menlo, Consolas, 'Courier New', monospace;
+    font-family: Menlo, Consolas, monospace;
 }
 
 /* 2) Block code (displayed) */
@@ -146,14 +140,12 @@ pre {
     padding: 0.75em;
     overflow-x: auto;
     margin: 1em 0;
-    border: 1px solid #444444;
 }
 
 /* 3) Inline code */
 code:not(pre code) {
     padding: 0.2em 0.4em;
     border-radius: 4px;
-    font-size: 0.9em;
 }
 
 /* 4) Jekyll/Liquid "highlight" -->
