@@ -9690,6 +9690,21 @@ This allows for resampling a oneshot sample to fit 7 octaves and export .OT out 
 ![](Screenshots/pakettisteppersdialog_globalstep.png)
 
 ---
+### 2025-07-03 - Feature: CCizer
+This loads a simple textfile with the format of
+```
+CC name
+CC name
+```
+in, and then creates an `*Instr. Midi Control` device and maps them.
+Added a Dialog for opening Paketti presets, or your own.
+There's also a detection for maximum 34 CCs, and added Pitchbend too.
+![](Screenshots/paketticcizer_example.png)
+
+---
+
+
+---
 
 ---
 ### under the radar stuff (forthcoming, still under works)
