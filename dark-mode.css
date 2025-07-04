@@ -1,0 +1,216 @@
+/* HTML Document Reset */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Base styling for dark mode */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header and navigation styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: #bb86fc;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+h2 {
+    color: #bb86fc;
+    font-size: 2em;
+    border-bottom: 2px solid #444444;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/* Paragraphs and text */
+p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+/* List styling */
+ul, ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #444444;
+    margin: 2em 0;
+}
+
+/* Blockquote styling */
+blockquote {
+    border-left: 4px solid #bb86fc;
+    margin: 1em 0;
+    padding-left: 1em;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Table styling for dark theme */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e; /* Dark background for table */
+    color: #ffffff;            /* White text for readability */
+    margin: 1em 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444444; /* Dark gray borders for separation */
+    text-align: left;
+}
+
+th {
+    background-color: #2a2a2a; /* Slightly darker background for header cells */
+    color: #bb86fc;            /* Light purple for header text */
+    font-weight: bold;
+}
+
+td {
+    background-color: #1e1e1e; /* Same dark background for data cells */
+}
+
+/* Optional: Alternate row colors */
+tr:nth-child(even) td {
+    background-color: #2a2a2a; /* Slightly lighter dark for alternate rows */
+}
+
+/* Link styling */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Navigation links at top */
+a[href*="patreon"], a[href*="github"], a[href*="discord"], a[href*="gumroad"], a[href*="ko-fi"] {
+    color: #64ffda;
+    font-weight: bold;
+}
+
+/* ============================
+   CODE BLOCK & INLINE-CODE
+   ============================ */
+
+/* 1) Generic <pre> and <code> */
+pre, code {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+    font-family: Menlo, Consolas, 'Courier New', monospace;
+}
+
+/* 2) Block code (displayed) */
+pre {
+    border-radius: 4px;
+    padding: 0.75em;
+    overflow-x: auto;
+    margin: 1em 0;
+    border: 1px solid #444444;
+}
+
+/* 3) Inline code */
+code:not(pre code) {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* 4) Jekyll/Liquid "highlight" -->
+div.highlight, div.highlight pre,
+.highlight pre, .highlight code {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+}
+
+/* 5) PrismJS */
+pre[class*="language-"],
+code[class*="language-"] {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+}
+
+/* 6) Highlight.js */
+.hljs {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0            !important;
+}
+.hljs-comment,
+.hljs-quote {
+    color: #6a9955           !important;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #c586c0           !important;
+}
+.hljs-function .hljs-title,
+.hljs-class .hljs-title {
+    color: #dcdcaa           !important;
+}
+/* (add more .hljs-… overrides if your highlighter theme is still too bright) */
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
