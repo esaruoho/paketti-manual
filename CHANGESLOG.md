@@ -22,28 +22,37 @@
 
 <script>
 function sortEntries(order) {
-  // Find all h3 elements that match the date pattern
-  const headers = Array.from(document.querySelectorAll('h3')).filter(h3 => 
-    h3.textContent.match(/^\d{4}-\d{2}-\d{2} - /)
-  );
+  // Find all h3 elements that match EXACTLY the date pattern
+  const headers = Array.from(document.querySelectorAll('h3')).filter(h3 => {
+    const text = h3.textContent.trim();
+    return /^\d{4}-\d{2}-\d{2} - .+/.test(text);
+  });
   
-  if (headers.length === 0) return;
+  if (headers.length === 0) {
+    console.log('No date-based headers found');
+    return;
+  }
   
   // Create entry objects with header and content
   const entries = headers.map(header => {
     const entry = { header, content: [] };
     let nextElement = header.nextElementSibling;
     
-    // Collect content until next h3 or end
+    // Collect content until next h3 with date pattern OR "under the radar" section
     while (nextElement && nextElement.tagName !== 'H3') {
       entry.content.push(nextElement);
       nextElement = nextElement.nextElementSibling;
     }
     
+    // Stop if we hit "under the radar" section
+    if (nextElement && nextElement.textContent.includes('under the radar')) {
+      return entry;
+    }
+    
     return entry;
   });
   
-  // Sort by date
+  // Sort by date (extract YYYY-MM-DD from beginning)
   entries.sort((a, b) => {
     const dateA = a.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
     const dateB = b.header.textContent.match(/^(\d{4}-\d{2}-\d{2})/)[1];
@@ -55,9 +64,9 @@ function sortEntries(order) {
     }
   });
   
-  // Find the parent container and reorder
-  const container = headers[0].parentElement;
-  const insertPoint = headers[0]; // We'll insert before the first header
+  // Find the insertion point (right after the sorting buttons)
+  const sortDiv = document.querySelector('div[style*="margin-bottom: 20px"]');
+  const insertPoint = sortDiv.nextElementSibling;
   
   // Remove all entries from DOM
   entries.forEach(entry => {
@@ -67,9 +76,9 @@ function sortEntries(order) {
   
   // Add them back in sorted order
   entries.forEach(entry => {
-    container.insertBefore(entry.header, insertPoint);
+    sortDiv.parentNode.insertBefore(entry.header, insertPoint);
     entry.content.forEach(el => {
-      container.insertBefore(el, insertPoint);
+      sortDiv.parentNode.insertBefore(el, insertPoint);
     });
   });
   
