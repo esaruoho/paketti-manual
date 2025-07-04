@@ -1,26 +1,16 @@
 <link rel="stylesheet" href="dark-mode.css">
 
+---
+title: "Paketti Changelog - Latest Updates & Features"
+description: "Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework"
+image: "https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png"
+---
+
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
 # Changeslog
 
-<!-- Social Media Meta Tags -->
-<meta property="og:title" content="Paketti Changelog - Latest Updates & Features">
-<meta property="og:description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-<meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">
-<meta property="og:url" content="https://esaruoho.github.io/paketti-manual/CHANGESLOG.md">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Paketti Manual">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Paketti Changelog - Latest Updates & Features">
-<meta name="twitter:description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-<meta name="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/8120_groovebox_image.png">
-
-
-<meta name="description" content="Complete changelog for Paketti - tracking all improvements, new features, and updates to the Renoise LUA framework">
-<meta name="keywords" content="Renoise, Paketti, changelog, updates, LUA, tracker, music production">
-<meta name="author" content="esaruoho">
 
 ← [Back to Main Manual](README.md)
 
