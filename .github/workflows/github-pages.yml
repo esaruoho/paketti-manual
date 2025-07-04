@@ -38,6 +38,7 @@ jobs:
           bundle init
           echo 'gem "jekyll", "~> 4.3"' >> Gemfile
           echo 'gem "jekyll-seo-tag"' >> Gemfile
+          echo 'gem "minima"' >> Gemfile
           bundle install
 
       - name: Build site with Jekyll
