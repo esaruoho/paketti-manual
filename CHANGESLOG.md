@@ -62,9 +62,13 @@ function sortChangelog(order) {
     
     // If dates are the same, sort by original index
     if (dateCompare === 0) {
-      return (order === 'newest') ? 
-        b.originalIndex - a.originalIndex : 
-        a.originalIndex - b.originalIndex;
+      if (order === 'newest') {
+        // For newest first: reverse document order within same date (3, 2, 1)
+        return b.originalIndex - a.originalIndex;
+      } else {
+        // For oldest first: document order within same date (1, 2, 3)
+        return a.originalIndex - b.originalIndex;
+      }
     }
     
     return dateCompare;
@@ -152,6 +156,7 @@ https://www.loom.com/share/29043519c0a548a1a30fd696560f580f?sid=b2bd3dc7-8647-42
 ### 2024-06-16 - Improvement: Impulse Tracker shortcuts have been renamed to reference `Impulse Tracker` for easier discoverability. 
 No more guessing. 
 Note: "Mixpaste" is still not working, i started work on it but somehow couldn't get it going, will hopefully look at that later
+
 ![](attachments/2024-06-16_Impulse_Tracker_Shortcuts.gif)
 
 
@@ -192,6 +197,7 @@ their naming has been tweaked also for better discoverability
 ---
 ### 2024-06-16 - Improvement: Enable / Bypass EFX in Pattern now uses the right commands to bypass the first 8 effects, or enable the first 8 effects.
 (Meaning: now compatible with Renoise 3)
+
 ![](attachments/2024-06-16_Screenshot_2024-06-16_at_16.56.27.png)
 
 ---
@@ -206,6 +212,7 @@ I've removed that since it benefits no-one - the viewport should stay the same n
 ---
 ### 2024-06-17 - Improvement to ImpulseTracker `ALT-L *2` functionality. 
 Now, if you are on Send or Master, and press ALT-L, it will select the content of the Send or Master track. when you press ALT-L again, it will select all of the pattern data (including sends + masters). instead of "only the tracks and not sends + masters".
+
 ![](attachments/2024-06-17_ALT-L_logic_improvement.gif)
 
 ---
@@ -253,6 +260,7 @@ these init instruments were lagging behind from 12st_pitchbend which had all the
 
 Improvement: Pattern Editor Cheat Sheet: added "0Yxx" (Maybe), "0Zxx" (Trigger Phrase) - tweaked order of effects so they match ["Effect Command Cheatsheet on Renoise Forum"](https://forum.renoise.com/t/effect-commands-cheat-sheet/45512) .. 
 more tweaks incoming later (additional efx, grouping)
+
 ![](attachments/2024-06-17_Screenshot_2024-06-17_at_23.42.27.png)
 
 [Effect Commands Cheatsheet (Renoise Forum post, printable PDF by someone else)](https://forum.renoise.com/t/effect-commands-cheat-sheet/45512)
@@ -359,6 +367,7 @@ Feature: Create Identical Track.
 if your track has X amount of Note Columns, Effect Columns, Panning, Delay, Volume, Sample FX Columns visible or the track is collapsed -- (or if none of these are visible or on), the "Create Identical Track" shortcut will create a Track that matches the track you were on.
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/208
 (as requested by ViZiON on the Renoise Forums in January2009)
+
 ![](attachments/2024-06-21_create_identical_track.gif)
 
 
@@ -414,6 +423,7 @@ Improvement: Moved "Jump to First Track in Next Group" & "Jump to First Track in
 ### 2024-06-22 - esaruoho
 
 Improvement: Added "Create Identical Track" to Tools->Paketti.. -> Pattern Editor
+
 ![](attachments/2024-06-22_Screenshot_2024-06-22_at_16.06.14.png)
 
 ---
@@ -465,6 +475,7 @@ closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/106)[http
 ### 2024-06-23 - esaruoho
 
 Improvement: +300/-300 +500/-500 for both Slice Start & Slice End:
+
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_10.52.30.png)
 
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_10.52.33.png)
@@ -473,6 +484,7 @@ Improvement: +300/-300 +500/-500 for both Slice Start & Slice End:
 ### 2024-06-23 - esaruoho
 
 Improvement: Midi Mapping Sample FX Column knob now shows the Sample FX Column, for better visibility.
+
 ![](attachments/2024-06-23_Screenshot_2024-06-23_at_14.49.28.png)
 
 ---
@@ -522,6 +534,7 @@ Improvement: "Duplicate Effect Column Content to Pattern or Selection" -> if som
 ### 2024-06-24 - esaruoho
 
 Feature: "Randomize Effect Column Parameters for Pattern or Selection"
+
 ![](attachments/2024-06-24_randomize_effect_column_parameters.gif)
 
 
@@ -557,6 +570,7 @@ and visual update: the fourth column now has empty space before the "Randomizati
 ### 2024-06-26 - esaruoho
 
 Feature: Impulse Tracker ALT-Left / ALT-Right (two flavors, one that Wraps (last track to first track.. or first track to last track), and another that doesn't wrap (press alt-left enough, and you'll be in first track but that's it.. same for alt-right)))
+
 ![](attachments/2024-06-26_impulsetracker_alt-left_alt-right_select_next_track_previous_track.gif)
 
 ---
@@ -570,6 +584,7 @@ Feature: Impulse Tracker "Slide Content Up / Down". this takes Selected Track.. 
 ### 2024-06-28 - esaruoho
 
 Feature: Solo Tracks - if no pattern selection - then mute currently selected track. if current track is selected or has selection, mute that. draw selection around multiple tracks and run shortcut = all other tracks are muted. or unmuted.
+
 ![](attachments/2024-06-28_solo_tracks_hack.gif)
 
 ---
@@ -582,6 +597,7 @@ Improvement: Note Interpolation now works on any note column on the track. same 
 ### 2024-06-28 - esaruoho
 
 Feature: ALT-Y "Swap Block" straight from ImpulseTracker2/SchismTracker/ScreamTracker3(?)
+
 ![](attachments/2024-06-28_alt-y.gif)
 
 ---
@@ -597,6 +613,7 @@ Improvement: Transpose +12 / -12 / +1 / -1  so that if nothing is selected in th
 Feature: Transpose +12/-12/+1/-1 for selection, or just current note column.
 
 both of these transposes actually go from C-9 to C-0 if you keep transposing.
+
 ![](attachments/2024-06-29_transpose_logic_additions.gif)
 
 
@@ -604,6 +621,7 @@ both of these transposes actually go from C-9 to C-0 if you keep transposing.
 ### 2024-06-29 - esaruoho
 
 Feature: Duplicate Instrument and Reverse Sample -- this just takes your currently selected instrument, duplicates it below it, and reverses the samples in the instrument. (and selects the newly created reversed instrument)
+
 ![](attachments/2024-06-29_Screenshot_2024-06-30_at_0.42.10.png)
 
 ---
@@ -633,6 +651,7 @@ Improvement: "Wipe Plugins" added to CTRL-N, it will look through all the instru
 ### 2024-07-05 - esaruoho
 
 Improvement: Added the Note-On to Note-Off (with transpose) copying to Sample Navigator, since i went there to try and run it and realized it's not there. it's now in sample editor, sample mappings, and sample navigator.
+
 ![](attachments/2024-07-05_Screenshot_2024-07-05_at_12.13.45.png)
 
 
@@ -714,6 +733,7 @@ Improvement: Load VST Devices Dialog also has "Randomize Selection"
 ### 2024-07-06 - esaruoho
 
 Improvement: Load VST3/AudioUnit Randomize Selection
+
 ![](attachments/2024-07-06_Screenshot_2024-07-06_at_15.08.04.png)
 
 
@@ -721,6 +741,7 @@ Improvement: Load VST3/AudioUnit Randomize Selection
 ### 2024-07-06 - esaruoho
 
 Improvement: Load VST3/VST/AudioUnit Plugins Randomize Selection:
+
 ![](attachments/2024-07-06_346273234-e6a90912-8e03-41ba-a60d-6acf7da55a36.png)
 
 ---
@@ -758,6 +779,7 @@ Improvement: Export / Import Convolver IR file feature now offers a GUI for also
 ### 2024-07-10 - esaruoho
 
 Feature: Set Master Track Output Routings 00...32 - this changes the Master Track Output.
+
 ![](attachments/2024-07-10_Screenshot_2024-07-10_at_22.36.25.png)
 
 ---
@@ -776,6 +798,7 @@ Feature: MidiMapping Knob 0...127 for Selected Track Output Routing, and Master 
 ### 2024-07-12 - esaruoho
 
 Feature: MidiMapping Buttons for Selected Track Output Routing, and Master Track Output Routing:  0...63
+
 ![](attachments/2024-07-12_Screenshot_2024-07-12_at_7.56.56.png)
 
 ![](attachments/2024-07-12_Screenshot_2024-07-12_at_7.57.02.png)
@@ -815,6 +838,7 @@ Supports:
 - Can select whether new instrument is rendered or sample.
 - User setting: every voice/language change will render a new sample / new instrument. (dropdownmenu & +/- changes for quickly changing the voice / language) -> means when you  hit +/- it'll render a new instrument every time.
 - Languages sorted alphabetically
+
 ![](attachments/2024-07-16_Screenshot_2024-07-16_at_20.41.04.png)
 
 
@@ -835,6 +859,7 @@ Feature: Resize & Fill. (available in Pattern Editor menu, Tools menu, and as a 
 if, however, you have a 512 row pattern and you press "resize&fill 032" - it will simply resize the pattern to 32 rows. and tell you accordingly.
 
 this is basically a controlled "Paketti Pattern Doubler".
+
 ![](attachments/2024-07-18_Screenshot_2024-07-18_at_12.49.36.png)
 
 
@@ -891,6 +916,7 @@ Update: Paketti Donations list updated with URL button added to newest donator -
 ### 2024-07-19 - esaruoho
 
 Improvement: Unison Generator now reads this brand new (still WIP) setting in Paketti Preferences:  .. i.e. if it is set to ON, then the Unison Generated Instrument will have AHDSR envelope enabled instead of disabled. default is disabled.
+
 ![](attachments/2024-07-19_Screenshot_2024-07-19_at_8.42.15.png)
 
 ---
@@ -929,6 +955,7 @@ Plumbing: Paketti has KeyBindings.xml files inside the script itself, I've moved
 ### 2024-07-22 - esaruoho
 
 Feature: PlayerPro Transpose Selection or Row +1/-1/+12/-12
+
 ![](attachments/2024-07-22_Screenshot_2024-07-22_at_11.48.16.png)
 
 ---
@@ -945,6 +972,7 @@ Feature: Paketti Theme Selector Dialog.
 - "Select a Random Favorite on Renoise Launch" checkbox - your Favorite list will be looked at, and a theme is randomly selected.
 - Open Themes Path - should work on Windows, Linux and macOS - opens the Themes path so you can update
 - Refresh for refreshing the dropdown menu.
+
 ![](attachments/2024-07-23_Screenshot_2024-07-23_at_9.28.59.png)
 
 ---
@@ -975,6 +1003,7 @@ Improvement: Paketti Theme Selector:
 - Tweaked the interface so it feels more optimized (+/- & randomize & add to favorite & remove favorite are on the same row as the dropdown menu)
 - made "Pick a Random Theme (Favorites)  properly work
 - Removed "Load Favorite Theme (Next)" & "Load Favorite Theme (Previous)".
+
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_8.39.54.png)
 
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_8.47.34.png)
@@ -1006,6 +1035,7 @@ this closes
 ### 2024-07-25 - esaruoho
 
 Improvement:  `*Key Tracker` & `*Velocity Tracker` can no longer be added from Menu Entry or shortcuts, to Send, Master or Group Tracks. instead of shooting an error (!!) there will be a show_status notification.
+
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_13.49.31.png)
 
 ![](attachments/2024-07-25_Screenshot_2024-07-25_at_13.49.40.png)
@@ -1083,6 +1113,7 @@ Improvement: "Load Renoise Native" menu entries now also list the Hidden devices
 ### 2024-07-27 - esaruoho
 
 Improvement: Added Hidden / deprecated devices as shortcuttable devices:
+
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_7.39.12.png)
 
 ![](attachments/2024-07-27_Screenshot_2024-07-27_at_7.39.19.png)
@@ -1183,6 +1214,7 @@ Improvement: Pattern Editor Cheat Sheet
 - If you have Group, Master or Send tracks in Selection In Pattern, the Delay,Volume,Panning sliders no longer shoot errors.
 - the cursor no longer jumps to the effect column, if you're on note column, instead writing to the effect column from the note column.
 - if the selection_in_pattern does not have any effect columns selected, and you press a button for inputting an effect, the first effect column will be used.
+
 ![](attachments/2024-07-29_Screenshot_2024-07-29_at_10.06.59.png)
 
 
@@ -1291,6 +1323,7 @@ closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/331)[http
 
 Improvement: "Paketti Save sample as FLAC / WAV" now says that the file was successfully saved, and where
 closes  (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/329]
+
 ![](attachments/2024-08-02_Screenshot_2024-08-02_at_13.36.08.png)
 
 
@@ -1347,6 +1380,7 @@ Improvement: Paketti KeyBindings Dialog:
 - Pattern Editor added to list of Menu_Entries (meaning, you can right click in a place such as sample editor, pattern editor, instrument box, mixer, pattern sequencer, pattern matrix.. and you'll see the available shortcuts in that Section because the dialog opens and selects that place
 - "and 0 are unassigned" would show in annoying places, fixed.
 - Show only Keybinds with Shortcuts set added
+
 ![](attachments/2024-08-03_Screenshot_2024-08-03_at_22.43.20.png)
 
 
@@ -1398,6 +1432,7 @@ Improvement: Impulse Tracker shortcut naming convention is now `Impulse Tracker 
 and "Set Selection to Instrument (Protman)" has been renamed to `Impulse Tracker ALT-S Set Selection to Instrument` for better discoverability. 
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/346
 and https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/345
+
 ![](attachments/2024-08-07_Screenshot_2024-08-07_at_22.23.47.png)
 
 ![](attachments/2024-08-07_Screenshot_2024-08-07_at_22.24.25.png)
@@ -1484,6 +1519,7 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/65
 
 Feature: MidiMapping for EditStep Double + Halve:
 closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/92
+
 ![](attachments/2024-08-08_editstep_halve_double_midimapping.gif)
 
 
@@ -1567,6 +1603,7 @@ Feature: NumPad SelectPlay 0-8 now works with MidiMappings (single trigger, not 
 ### 2024-08-09 - esaruoho
 
 Improvement: NumPad SelectPlay 0-8 will now warn the user to select a note column, if on effect column.
+
 ![](attachments/2024-08-09_Screenshot_2024-08-09_at_9.12.11.png)
 
 
@@ -1591,6 +1628,7 @@ also fixed Columnizer Effect Amount / Effect Number Increase Decrease to not err
 
 Improvement: added "Midi Paketti PitchBend Drumkit Loader" midimapping
 (and more "Trigger once only" things)
+
 ![](attachments/2024-08-09_Screenshot_2024-08-09_at_11.28.42.png)
 
 
