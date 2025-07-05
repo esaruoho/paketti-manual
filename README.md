@@ -81,6 +81,55 @@ Now, I'd absolutely love to be able to "list the top 5 features of Paketti", but
 
 It _seems_ that the best way would be to split this into smaller pieces by categories.
 
+## Import/Export Formats
+
+### Import
+
+#### Import PTI
+
+Polyend Tracker Instrument Import support
+
+#### Import OT
+
+Octatrack Instrument Import support
+
+#### Import REX AND RX2
+
+Propellerheads ReCycle v1.0 (.REX) & Propellerheads ReCycle v2.0 (.RX2) Import support
+
+#### Import SF2
+
+SoundFont V2.0 Import support
+
+#### Import IFF / 8SVX / 16SV
+
+OctaMed / Protracker IFF / 8SVX / 16SV Import support
+
+#### Import 4channel .MOD samples
+
+Both as separate instruments, and as "wavetable instrument" == all samples in one instrument, aka "sample chain".
+
+### Export
+
+#### Export PTI
+
+Polyend Tracker Instrument Export Support
+Extrabonus: Also with 48 slice drumkit support - meaning, Renoise can be used to create a 48 drum drumchain sample with slices, straight to .PTI
+
+#### Export OT
+
+Octatrack Instrument Export Support
+Extrabonus: Also with 64 slice drumkit support - meaning, Renoise can be used to create a 64 drum drumchain sample with slices, straight to .OT
+
+#### Export IFF
+
+Export samples to IFF format
+
+#### Export RX2 to PTI
+
+Load a RX2 and export directly to Polyend Tracker Instrument
+
+
 ## Sample Editor
 
 TODO
@@ -113,9 +162,7 @@ TODO
 
 TODO
 
-## Export Formats
 
-TODO
 
 # Roadmap
 

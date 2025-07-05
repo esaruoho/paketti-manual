@@ -1684,6 +1684,7 @@ Feature: Set Selected Instrument Volume 0.0dB / -INF dB.
 ### 2024-08-10 - esaruoho
 
 Feature: Set Selected Instrument Volume +0.01dB / -0.01dB
+
 ![](attachments/2024-08-10_Screenshot_2024-08-10_at_16.39.47.png)
 
 
@@ -1699,6 +1700,7 @@ closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/371)[http
 ### 2024-08-10 - esaruoho
 
 Improvement: better name
+
 ![](attachments/2024-08-10_Screenshot_2024-08-10_at_16.45.42.png)
 
 
@@ -1706,6 +1708,7 @@ Improvement: better name
 ### 2024-08-10 - esaruoho
 
 Improvement: Now references Global Volume name
+
 ![](attachments/2024-08-10_Screenshot_2024-08-10_at_16.51.18.png)
 
 
@@ -1751,7 +1754,9 @@ closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/232)[http
 ### 2024-08-11 - esaruoho
 
 Improvement: Paketti DrumKit default instrument now has ParallelCompression and Glide Inertia
+
 closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/336]
+
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.06.46.png)
 
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.06.57.png)
@@ -1772,6 +1777,7 @@ Improvement: if you're in Mixer without Upper Frame visible, pressing F3 would d
 
 Improvement: All Plugin & Device loader dialogs now say "Add as Shortcut(s) & MidiMappings".
 closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/347)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/347]
+
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.46.54.png)
 
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_8.46.28.png)
@@ -1794,6 +1800,7 @@ closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/354
 
 Feature: Recursive DC Offset - one shortcut that wrecks the sample, the other that runs it random amounts (1-50 times)
 https://www.loom.com/share/3b67650f0d8242f8ad7d08c6640207fc?sid=b4996356-c5b1-4cf6-a66b-1f9a56952d82
+
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_15.11.28.png)
 
 
@@ -1801,6 +1808,7 @@ https://www.loom.com/share/3b67650f0d8242f8ad7d08c6640207fc?sid=b4996356-c5b1-4c
 ### 2024-08-11 - esaruoho
 
 Feature: Load Device Chain shortcut - this is within Paketti. the first Device Chain Load command. If you have XRNTs you wanna share that are utility/utilitarian in essence, please hit me up with DMs.  This is only the beginning re: Device Chain uses / scope of where we're going with this
+
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_20.16.52.png)
 
 
@@ -1817,6 +1825,7 @@ Feature: Record,Follow,Jump to Pattern Editor & start playback with Metronome Pr
 
 Improvement: for better discoverability, midimapping names `Sample Buffer Selection 01 Start x[Knob]` & `Sample Buffer Selection 02 End x[Knob]` will be used from now on.
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/349)
+
 ![](attachments/2024-08-11_Screenshot_2024-08-11_at_22.27.52.png)
 
 
@@ -1856,6 +1865,7 @@ Feature: Invert Left Sample, Invert Right Sample, Invert whole sample - with pro
 
 Improvement: Re-added OverSampling + AutoFade to PakettiLoader - when loading multiple or single samples, or drumkit, these two are now applied.
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/360)
+
 ![](attachments/2024-08-12_Screenshot_2024-08-12_at_22.47.30.png)
 
 
