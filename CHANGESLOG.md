@@ -9135,6 +9135,9 @@ Added dynamic Menu Entries that show the textfiles in question, and allows for w
 ### 2025-07-04 - Paketti Manual Plumbing
 Now there's a method for sorting the Changeslog from oldest to newest, and from newest to oldest. There's also a split between README.md + CHANGESLOG.md - so that the small fledgling manual does not get destroyed by the huge (1 year) changeslog.
 
+---
+### 2025-07-05 - Improvement: About/Donations Dialog update
+I've made it dynamically create the donations-list, so I don't need to manually create another row every time. Thanks for keeping the donations coming in!
 
 ---
 ### under the radar stuff (forthcoming, still under works)
