@@ -9145,6 +9145,8 @@ This will 1. disable block loop 2. disable pattern loop 3. read the current patt
 Mad props to Phill Tew for asking for something like this, then me having a think about it and creating it the Paketti way. Thanks!
 
 ---
+### 2025-07-06 - Improvement: SlotShow Configuration Dialog now easier to find
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
