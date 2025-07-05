@@ -9146,6 +9146,7 @@ Mad props to Phill Tew for asking for something like this, then me having a thin
 
 ---
 ### 2025-07-06 - Improvement: SlotShow Configuration Dialog now easier to find
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
