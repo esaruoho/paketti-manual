@@ -9140,6 +9140,11 @@ Now there's a method for sorting the Changeslog from oldest to newest, and from 
 I've made it dynamically create the donations-list, so I don't need to manually create another row every time. Thanks for keeping the donations coming in!
 
 ---
+### 2025-07-05 - Feature: Additive Record Follow Pattern
+This will 1. disable block loop 2. disable pattern loop 3. read the current pattern length 4. create a brand new pattern with the same length below it 5. start playback of current pattern from row01, then enable follow pattern. when it hits the next pattern, a new pattern is created with the original pattern length applied. and so on, until you toggle the feature off.
+Mad props to Phill Tew for asking for something like this, then me having a think about it and creating it the Paketti way. Thanks!
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
