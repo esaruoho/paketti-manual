@@ -14,7 +14,7 @@
  11. [Oldabout](#oldabout)
  12. [Changeslog](CHANGESLOG.html)
 
-## What
+# What
 
 *Paketti is Finnish for Package*
 
@@ -29,7 +29,7 @@ It introduces features from:
 - OpenMPT/MadTracker, Windows..
 - and.. PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
-## Feedback
+# Feedback
 
 - *"It's like it's Renoise+"*
 - *"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
@@ -50,7 +50,7 @@ It introduces features from:
 - *"Man, Paketti is awesome. Been using Renoise for a while but never used your tool. The best thing I learned from the manual: the G01 trick. Finally free from the grid! I never realized that this is possible. That's a true game changer. Thanks a million!"*
 - *"For Paketti you deserve some kind of award, a medal. So many years to keep it alive, constantly adding new features. Respect."*
 
-## Where
+# Where
 
 - Join the [Paketti Discord](https://discord.gg/Qex7k5j4wG)
 - Leave issues here on [GitHub](https://github.com/esaruoho/paketti/issues)

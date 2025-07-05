@@ -72,7 +72,7 @@ jobs:
           EOF
           
           # Convert README.md to HTML and append to index.html
-          npx marked README.md >> index.html
+          npx marked README.md --gfm --headerIds >> index.html
           
           # Close HTML tags
           echo "</body>" >> index.html
@@ -117,7 +117,7 @@ jobs:
           EOF
           
           # Convert CHANGESLOG.md to HTML and append to CHANGESLOG.html
-          npx marked CHANGESLOG.md >> CHANGESLOG.html
+          npx marked CHANGESLOG.md --gfm --headerIds >> CHANGESLOG.html
           
           # Close HTML tags
           echo "</body>" >> CHANGESLOG.html
