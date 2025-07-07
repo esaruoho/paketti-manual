@@ -9148,6 +9148,14 @@ Mad props to Phill Tew for asking for something like this, then me having a thin
 ### 2025-07-06 - Improvement: SlotShow Configuration Dialog now easier to find
 
 ---
+### 2025-07-06 - Feature: Minimize Disk Browser on Load of song
+As pointed out by danoise originally - adopted into Paketti
+
+---
+### 2025-07-06 - Feature: Toggle Loop Block and Play / Select Next/Previous Loop Block / Set Loop Block to Position / Show Loop Block Info
+As pointed out by danoise originally - adopted into Paketti.
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
