@@ -9156,6 +9156,17 @@ As pointed out by danoise originally - adopted into Paketti
 As pointed out by danoise originally - adopted into Paketti.
 
 ---
+### 2025-07-07 - Load Multiple Files as Raw
+This will let you load multiple files as "EXE load", so Raw load.
+
+---
+### 2025-07-07 - Instrument MetaInfo Dialog + Status
+This lets you query the instrument for more details:
+![](Screenshots/instrumentmetainfo.png)
+### 2025-07-07 - Feature: Reset Basenote to Lowest Note in Range
+
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: AKAI Import
