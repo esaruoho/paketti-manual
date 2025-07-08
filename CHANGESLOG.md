@@ -9167,6 +9167,8 @@ This lets you query the instrument for more details:
 
 ---
 ### 2025-07-08 - Feature: Sononym Integration
+Sononymph - modified and rewritten with additional features and improvements.
+![](Screenshots/danoise_sononymph.png)
 
 ---
 ---
