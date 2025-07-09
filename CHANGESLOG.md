@@ -6580,9 +6580,7 @@ this unfortunately means that your settings will need to be re-created.
 
 
 ---
-### 2025-01-30 - esaruoho
-
-Feature: Metronome Volume Control **(V3.5 Only!)**
+### 2025-01-30 - Feature: Metronome Volume Control **(V3.5 Only!)**
 Closes https://github.com/esaruoho/paketti/issues/132
 this introduces midimappings + shortcuts for +1 -1 metronome volume, "default metronome volume" & "metronome volume OFF" and a midimapping for 0...127 knob control of metronome volume.
 This will be shipped with the current Paketti - but only available for those who are on V3.5 Beta (i'm not so i'm working in the blind here)
@@ -6593,9 +6591,7 @@ This will be shipped with the current Paketti - but only available for those who
 Updates: Due to v3.5 beta updates (which i still don't have access to, I've resurrected certain tickets which i had marked as `BlockedByAPI` and will be taking care of them due to the API updates.
 
 ---
-### 2025-02-02 - esaruoho
-
-Feature: Set Sync Mode to Internal/Midi Clock/Ableton Link/Jack **(V3.5 Only!)**
+### 2025-02-02 - Feature: Set Sync Mode to Internal/Midi Clock/Ableton Link/Jack **(V3.5 Only!)**
 This introduces menu entries + shortcuts for setting the Sync Mode to one of the four.
 This will be shipped with the current Paketti - but only available for those who are on V3.5 (Beta/Release) - I'm not, so I'm working in the blind here.
 
@@ -9169,6 +9165,26 @@ This lets you query the instrument for more details:
 ### 2025-07-08 - Feature: Sononym Integration
 Sononymph - modified and rewritten with additional features and improvements.
 ![](Screenshots/danoise_sononymph.png)
+
+---
+### 2025-07-09 - Improvement: Paketti Enhanced Phrase Generator graduated to "Paketti Gadgets" on Main Menu: Tools
+
+---
+### 2025-07-09 - Improvement: Sononymph moved within "Paketti Gadgets" - Sononymph subfolder moved to Tools:Paketti:Samples:Sononymph
+
+---
+### 2025-07-10 - Feature: Paketti Enhanced Phrase Generator Dialog.
+I've been toying with this and tweaking it slowly for a few months now.
+
+This started with "Oh yay, v3.5 has a Phrase Script Editor", followed by "But I don't want to use it. Can I script the script?". This is basically a system for creating, and always-rendering, the Phrase Script Editor output, and having it play, without needing to look at the Phrase Script Editor. It lets you decide how long the sequence of notes is, how many notes there are, and which scale the notes conform to, and what the note order is. When you drag the Length and Note Count sliders, new sequences are randomly created, new note orders, etc. Volume Range controls the minimum and maximum Velocity. Octave Range is, for the range of Octaves covered. You can Randomize the Voicings, Randomize the Velocity, or Randomize All. You're able to control the Instrument Transposition, the Shuffle, Step Size and LPB. And access all the Steppers dialogs. The Status bar will show you what you created, and it will automatically start playing. Experiment and enjoy!
+
+Here's what it looks like currently. 
+![](Screenshots/enhanced_phrase_generator.png)
+
+-------
+### 2025-07-10 - Feature: Midi Input Octave Control
+Shortcuts, Midi Mappings and Menu Entries.
+
 
 ---
 ---
