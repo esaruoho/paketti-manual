@@ -9204,6 +9204,13 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 ### 2025-07-10 - Improvement: Add Maximizer to Master shortcut
 
 
+-----
+### 2025-07-10 - Feature: Paketti Pattern Effect Cheatsheet Minimize Dialog
+![](Screenshots/cheatsheetminimize.gif)
+
+---
+### 2025-07-10 - Feature: Match Effect Column Forward / All Rows
+![](Screenshots/match_note_columns_to_note.gif)
 
 ---
 ---
