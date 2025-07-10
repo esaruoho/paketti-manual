@@ -9172,6 +9172,9 @@ Sononymph - modified and rewritten with additional features and improvements.
 ---
 ### 2025-07-09 - Improvement: Sononymph moved within "Paketti Gadgets" - Sononymph subfolder moved to Tools:Paketti:Samples:Sononymph
 
+------
+### 2025-07-09 - Improvement: Load Splitter added as a static shortcut
+
 ---
 ### 2025-07-10 - Feature: Paketti Enhanced Phrase Generator Dialog.
 I've been toying with this and tweaking it slowly for a few months now.
@@ -9184,6 +9187,22 @@ Here's what it looks like currently.
 -------
 ### 2025-07-10 - Feature: Midi Input Octave Control
 Shortcuts, Midi Mappings and Menu Entries.
+
+----
+### 2025-07-10 - Improvement: Steppers Dialog look
+![](Screenshots/pakettisteppersdialogupdate.png)
+I've also improved this so that this beams directly to the Enhanced Phrase Generator
+
+---
+### 2025-07-10 - Improvement: Paketti Enhanced Phrase Generator
+Uses the same Paketti Steppers code, so they stay in sync visually (I make a change to Paketti Steppers dialog, and the Phrase Generator dialog updates, too).
+Pressing Duplicate will now both duplicate the instrument, and create a new track, and arm the track for playback, AND set "Always Render"&"Play Until End" to ON - meaning you immediately hear the changes you make.
+When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the selected Track in Pattern Editor.
+
+
+----
+### 2025-07-10 - Improvement: Add Maximizer to Master shortcut
+
 
 
 ---
