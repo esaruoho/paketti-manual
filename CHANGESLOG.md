@@ -9213,6 +9213,8 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 ![](Screenshots/match_note_columns_to_note.gif)
 
 ---
+### 2025-07-12 - Feature: Keep Sequence Sorted 
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
