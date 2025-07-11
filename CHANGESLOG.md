@@ -9213,7 +9213,16 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 ![](Screenshots/match_note_columns_to_note.gif)
 
 ---
-### 2025-07-12 - Feature: Keep Sequence Sorted 
+### 2025-07-11 - Improvement: Added 4 themes Metal Amber Dread Blue (Garf) Dread Black (Garf) Dread Gray Grey Light (Garf)
+---
+### 2025-07-12 - Improvement: Keep Sequence Sorted On,Off,Toggle
+Now shows a Status Bar message to inform the user what happened. There's also a Menu Entry for all 3 features on the Pattern Matrix Menu.
+
+---
+### 2025-07-12 - Improvement: User-Defined Sample Folders Loader (Quick Load) Shortcuts now check the newly saved Folder instead of requiring a restart to load the new Folder from Preferences.
+
+----
+### 2025-07-12- Improvement: Pakettify Instrument can now handle multiple samples in the original instrument.
 
 ---
 ### under the radar stuff (forthcoming, still under works)
