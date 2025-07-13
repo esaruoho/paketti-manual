@@ -9224,6 +9224,15 @@ Now shows a Status Bar message to inform the user what happened. There's also a 
 ----
 ### 2025-07-12- Improvement: Pakettify Instrument can now handle multiple samples in the original instrument.
 
+------
+### 2025-07-12 - Improvement: Added `Ableton11Dark` theme to Theme Selector
+
+------
+### 2025-07-12 - Improvement: Enhanced Phrase Generator - Wrote protection against certain user-reported bugs so that it'd be even more stable
+
+-----
+### 2025-07-12 - 
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
