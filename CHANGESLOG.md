@@ -9235,7 +9235,9 @@ Now shows a Status Bar message to inform the user what happened. There's also a 
 ### 2025-07-13 - Improvement: Commented away the danoise-snippet "Open Disk Browser always" setting since it clashed with the Paketti Disk Browser "Always show/hide" function
 
 ---
-### 2025-07-14 - Experimental Feature:
+### 2025-07-14 - Experimental Feature: Canvas Device Parameter Editor
+This will read the currently selected device's parameters and display them on a single canvas, named accordingly. If you select a different device, the dialog will auto-update. You can also randomize parameters by percentage, can toggle External Editor on/off, can just draw to the Array aka create a completely new way of modifying parameters quickly.. Any ideas welcome.
+
 
 
 ---
