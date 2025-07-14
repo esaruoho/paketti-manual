@@ -281,7 +281,7 @@ function addNotificationSettings() {
         font-size: 11px;
         width: 100%;
       ">
-        ${Notification.permission === 'granted' ? 'Disable' : 'Enable'}
+        ${Notification.permission === 'granted' ? 'Enabled ✅' : 'Enable'}
       </button>
     </div>
   `;
