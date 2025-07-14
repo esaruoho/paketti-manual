@@ -9237,9 +9237,11 @@ Now shows a Status Bar message to inform the user what happened. There's also a 
 ---
 ### 2025-07-14 - Experimental Feature: Canvas Device Parameter Editor
 This will read the currently selected device's parameters and display them on a single canvas, named accordingly. If you select a different device, the dialog will auto-update. You can also randomize parameters by percentage, can toggle External Editor on/off, can just draw to the Array aka create a completely new way of modifying parameters quickly.. Any ideas welcome.
+![](Screenshot%202025-07-15%20at%200.03.21.png)
 
 ----
-### 2025-07-14 - Feature: Paketti PCM Writer
+### 2025-07-14 - Experimental Feature: Paketti Single Cycle Waveform Writer
+There's a dropdown menu with multiple waveforms - there's a randomizer for creating random waveforms, you can have Wave A and Wave B and crossfade between them, there's a Hex Editor there so you can input the code in yourself. You can save a .CSV and load a .CSV - you can drag in a .CSV into Renoise and it'll get loaded. There's a "Create 12 random instrument" -> meaning, an instrument will pop up with 12 randomized waveforms pre-loaded, and Pakettified. There's the usual simplistic Sample Tools, Invert, Normalize, Fade In, Fade Out, Reverse, Scale 150% Scale 50%. You can pick up the waveform on your current Selected Sample - or have a Live Pickup Mode - which means, whichever Selected Sample you pick, the minute you draw, it is beamed back to the Sample. And a few other things. Any ideas welcome.
 ![](Screenshots/pcmwriter.png)
 
 
