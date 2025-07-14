@@ -69,7 +69,7 @@ jobs:
               <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/">
               
               <!-- Web App Manifest -->
-              <link rel="manifest" href="/manifest.json">
+              <link rel="manifest" href="./manifest.json">
           </head>
           <body>
           EOF
@@ -133,7 +133,7 @@ jobs:
               <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
               
               <!-- Web App Manifest -->
-              <link rel="manifest" href="/manifest.json">
+              <link rel="manifest" href="./manifest.json">
           </head>
           <body>
           EOF

@@ -28,7 +28,7 @@
             if (Notification.permission === 'granted') {
                 new Notification('Test Notification', {
                     body: 'Notifications are working!',
-                    icon: '/favicon.ico'
+                    icon: './favicon.ico'
                 });
                 status.innerHTML = '✅ Notification sent';
             } else {
@@ -49,7 +49,7 @@
         
         // Test service worker registration
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/notification-worker.js')
+            navigator.serviceWorker.register('./notification-worker.js')
                 .then(registration => {
                     console.log('Service Worker registered:', registration);
                     document.getElementById('status').innerHTML = '✅ Service Worker registered';

@@ -40,7 +40,7 @@ class PakettiNotifications {
 
   async registerServiceWorker() {
     try {
-      this.registration = await navigator.serviceWorker.register('/notification-worker.js');
+      this.registration = await navigator.serviceWorker.register('./notification-worker.js');
       console.log('Service Worker registered successfully');
       
       // Listen for updates
@@ -203,7 +203,7 @@ class PakettiNotifications {
     if (this.hasPermission) {
       new Notification('Paketti Manual', {
         body: 'Notifications are now enabled! You\'ll receive updates when new changes are available.',
-        icon: '/favicon.ico',
+        icon: './favicon.ico',
         tag: 'paketti-test'
       });
     }

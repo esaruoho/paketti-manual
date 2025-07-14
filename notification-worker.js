@@ -7,10 +7,10 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/CHANGESLOG.html',
-        '/dark-mode.css'
+        './',
+        './index.html',
+        './CHANGESLOG.html',
+        './dark-mode.css'
       ]);
     })
   );
@@ -47,8 +47,8 @@ self.addEventListener('fetch', (event) => {
 self.addEventListener('push', (event) => {
   const options = {
     body: event.data ? event.data.text() : 'New updates available in Paketti Manual!',
-    icon: '/favicon.ico',
-    badge: '/favicon.ico',
+    icon: './favicon.ico',
+    badge: './favicon.ico',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -58,12 +58,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'view',
         title: 'View Updates',
-        icon: '/favicon.ico'
+        icon: './favicon.ico'
       },
       {
         action: 'close',
         title: 'Close',
-        icon: '/favicon.ico'
+        icon: './favicon.ico'
       }
     ]
   };
@@ -79,7 +79,7 @@ self.addEventListener('notificationclick', (event) => {
 
   if (event.action === 'view') {
     event.waitUntil(
-      clients.openWindow('/CHANGESLOG.html')
+      clients.openWindow('./CHANGESLOG.html')
     );
   }
 });
@@ -90,7 +90,7 @@ async function checkForUpdates() {
     console.log('Checking for updates...');
     
     // Fetch the current CHANGESLOG.html with cache-busting
-    const response = await fetch('/CHANGESLOG.html?t=' + Date.now());
+    const response = await fetch('./CHANGESLOG.html?t=' + Date.now());
     const html = await response.text();
     
     // Extract version/timestamp from HTML
@@ -110,8 +110,8 @@ async function checkForUpdates() {
         // Show notification about update
         self.registration.showNotification('Paketti Manual Updated!', {
           body: 'New changes have been added to the Paketti Manual changelog.',
-          icon: '/favicon.ico',
-          badge: '/favicon.ico',
+          icon: './favicon.ico',
+          badge: './favicon.ico',
           tag: 'paketti-update',
           requireInteraction: true,
           actions: [
