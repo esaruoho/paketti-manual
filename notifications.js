@@ -249,53 +249,124 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('- pakettiNotifications.getStatus() - check notification status');
 });
 
-// Add settings toggle to allow users to manage notifications
+// Add notification controls to CHANGESLOG page
 function addNotificationSettings() {
   // Only add if on CHANGESLOG page
   if (!window.location.pathname.includes('CHANGESLOG')) {
     return;
   }
 
-  const settingsHTML = `
+  const notificationHTML = `
     <div style="
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #34495e;
       color: white;
-      padding: 10px;
-      border-radius: 6px;
+      padding: 15px;
+      border-radius: 8px;
       font-family: Arial, sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      min-width: 200px;
     ">
-      <div style="margin-bottom: 8px;">📢 Update Notifications</div>
-      <button id="toggle-notifications" style="
-        background: #3498db;
-        color: white;
-        border: none;
-        padding: 6px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 11px;
-        width: 100%;
-      ">
-        ${Notification.permission === 'granted' ? 'Enabled ✅' : 'Enable'}
-      </button>
+      <div style="margin-bottom: 12px; font-weight: bold;">📢 Update Notifications</div>
+      <div style="margin-bottom: 10px; font-size: 12px; color: #bdc3c7;">
+        Get notified when this page is updated
+      </div>
+      
+      <div id="notification-status" style="margin-bottom: 12px; font-size: 12px;">
+        Status: <span id="status-text">Checking...</span>
+      </div>
+      
+      <div style="display: flex; gap: 8px; flex-direction: column;">
+        <button id="request-permission" style="
+          background: #3498db;
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 12px;
+          display: none;
+        ">Enable Notifications</button>
+        
+        <button id="test-notification" style="
+          background: #27ae60;
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 12px;
+          display: none;
+        ">Test Notification</button>
+        
+        <button id="check-updates" style="
+          background: #f39c12;
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 12px;
+        ">Check for Updates</button>
+      </div>
     </div>
   `;
 
-  document.body.insertAdjacentHTML('beforeend', settingsHTML);
+  document.body.insertAdjacentHTML('beforeend', notificationHTML);
 
-  document.getElementById('toggle-notifications').addEventListener('click', () => {
+  // Update status and button visibility
+  function updateNotificationStatus() {
+    const statusText = document.getElementById('status-text');
+    const requestBtn = document.getElementById('request-permission');
+    const testBtn = document.getElementById('test-notification');
+    
     if (Notification.permission === 'granted') {
-      // Can't programmatically revoke permission, show instructions
-      alert('To disable notifications, please go to your browser settings and block notifications for this site.');
+      statusText.textContent = 'Enabled ✅';
+      statusText.style.color = '#27ae60';
+      requestBtn.style.display = 'none';
+      testBtn.style.display = 'block';
+    } else if (Notification.permission === 'denied') {
+      statusText.textContent = 'Blocked ❌';
+      statusText.style.color = '#e74c3c';
+      requestBtn.style.display = 'none';
+      testBtn.style.display = 'none';
     } else {
-      window.pakettiNotifications.requestPermission();
+      statusText.textContent = 'Disabled';
+      statusText.style.color = '#95a5a6';
+      requestBtn.style.display = 'block';
+      testBtn.style.display = 'none';
+    }
+  }
+
+  // Event listeners
+  document.getElementById('request-permission').addEventListener('click', () => {
+    window.pakettiNotifications.requestPermission().then(() => {
+      updateNotificationStatus();
+    });
+  });
+
+  document.getElementById('test-notification').addEventListener('click', () => {
+    if (Notification.permission === 'granted') {
+      new Notification('Paketti Manual Test', {
+        body: 'Test notification is working! You\'ll receive updates when changes are made.',
+        icon: './favicon.ico'
+      });
     }
   });
+
+  document.getElementById('check-updates').addEventListener('click', () => {
+    window.pakettiNotifications.checkForUpdates();
+  });
+
+  // Initial status update
+  updateNotificationStatus();
+  
+  // Update status every 5 seconds
+  setInterval(updateNotificationStatus, 5000);
 }
 
 // Add settings when page loads
