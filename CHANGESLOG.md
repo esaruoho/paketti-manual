@@ -9232,7 +9232,7 @@ Now shows a Status Bar message to inform the user what happened. There's also a 
 ### 2025-07-12 - Improvement: Enhanced Phrase Generator - Wrote protection against certain user-reported bugs so that it'd be even more stable
 
 -----
-### 2025-07-12 - 
+### 2025-07-12 - Improvement: Changeslog improvement
 
 ---
 ### under the radar stuff (forthcoming, still under works)
