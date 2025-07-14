@@ -9235,11 +9235,6 @@ Now shows a Status Bar message to inform the user what happened. There's also a 
 ### 2025-07-13 - Improvement: Commented away the danoise-snippet "Open Disk Browser always" setting since it clashed with the Paketti Disk Browser "Always show/hide" function
 
 ---
-### 2025-07-14 - Improvement: Paketti Changeslog now allows you to subscribe for notifications, so you'll be notified when there are some.
-![](Screenshots/pakettimanualupdates01.png)
-![](Screenshots/pakettimanualupdates02.png)
-
----
 ### 2025-07-14 - Experimental Feature:
 
 
