@@ -9214,6 +9214,7 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 
 ---
 ### 2025-07-11 - Improvement: Added 4 themes Metal Amber Dread Blue (Garf) Dread Black (Garf) Dread Gray Grey Light (Garf)
+
 ---
 ### 2025-07-12 - Improvement: Keep Sequence Sorted On,Off,Toggle
 Now shows a Status Bar message to inform the user what happened. There's also a Menu Entry for all 3 features on the Pattern Matrix Menu.

@@ -67,12 +67,18 @@ jobs:
               
               <!-- Canonical URL -->
               <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/">
+              
+              <!-- Web App Manifest -->
+              <link rel="manifest" href="/manifest.json">
           </head>
           <body>
           EOF
           
           # Convert README.md to HTML and append to index.html
           npx marked README.md >> index.html
+          
+          # Add notification script before closing body tag
+          sed -i 's|</body>|<script src="notifications.js"></script></body>|g' index.html
           
           # Add anchor IDs to headings with simple sed
           sed -i 's/<h1>What<\/h1>/<h1 id="what">What<\/h1>/g' index.html
@@ -125,6 +131,9 @@ jobs:
               
               <!-- Canonical URL -->
               <link rel="canonical" href="https://esaruoho.github.io/paketti-manual/CHANGESLOG.html">
+              
+              <!-- Web App Manifest -->
+              <link rel="manifest" href="/manifest.json">
           </head>
           <body>
           EOF
@@ -132,12 +141,26 @@ jobs:
           # Convert CHANGESLOG.md to HTML and append to CHANGESLOG.html
           npx marked CHANGESLOG.md >> CHANGESLOG.html
           
+          # Add version timestamp for notification system
+          VERSION_TIMESTAMP=$(date +%Y%m%d%H%M%S)
+          sed -i "s|<body>|<body data-version=\"$VERSION_TIMESTAMP\">|g" CHANGESLOG.html
+          
+          # Add notification script before closing body tag
+          echo "<script src=\"notifications.js\"></script>" >> CHANGESLOG.html
+          
           # Close HTML tags
           echo "</body>" >> CHANGESLOG.html
           echo "</html>" >> CHANGESLOG.html
           
           # Ensure .nojekyll exists to disable Jekyll processing
           touch .nojekyll
+          
+          # Copy notification files to build output
+          cp notification-worker.js .
+          cp notifications.js .
+          cp manifest.json .
+          
+          # Note: test-notifications.html is excluded from deployment (dev only)
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
