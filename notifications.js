@@ -43,9 +43,21 @@ class PakettiNotifications {
       this.registration = await navigator.serviceWorker.register('./notification-worker.js');
       console.log('Service Worker registered successfully');
       
+      // Force service worker update check
+      this.registration.update();
+      
       // Listen for updates
       this.registration.addEventListener('updatefound', () => {
         console.log('Service Worker update found');
+        const newWorker = this.registration.installing;
+        
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'activated') {
+            console.log('New service worker activated, reloading...');
+            // Reload page to use new service worker
+            window.location.reload();
+          }
+        });
       });
       
       // Wait for service worker to be active, then check for updates

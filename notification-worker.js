@@ -1,18 +1,17 @@
 // Service Worker for Paketti Manual Update Notifications
-const CACHE_NAME = 'paketti-manual-v1';
+const CACHE_NAME = 'paketti-manual-v2'; // Updated to force cache refresh
 const VERSION_KEY = 'paketti-changeslog-version';
 
 // Install event - cache initial resources
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll([
-        './',
-        './index.html',
-        './CHANGESLOG.html',
-        './dark-mode.css'
-      ]);
-    })
+          caches.open(CACHE_NAME).then((cache) => {
+        return cache.addAll([
+          './',
+          './index.html',
+          './dark-mode.css'
+        ]);
+      })
   );
 });
 
@@ -36,6 +35,13 @@ self.addEventListener('activate', (event) => {
 
 // Handle fetch events
 self.addEventListener('fetch', (event) => {
+  // Never cache CHANGESLOG.html - always fetch fresh
+  if (event.request.url.includes('CHANGESLOG.html')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+  
+  // Cache other resources normally
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request);

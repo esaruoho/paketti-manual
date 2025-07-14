@@ -145,6 +145,9 @@ jobs:
           VERSION_TIMESTAMP=$(date +%Y%m%d%H%M%S)
           sed -i "s|<body>|<body data-version=\"$VERSION_TIMESTAMP\">|g" CHANGESLOG.html
           
+          # Add cache-busting meta tags to CHANGESLOG.html
+          sed -i "s|<head>|<head><meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\"><meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\">|g" CHANGESLOG.html
+          
           # Add notification script before closing body tag
           echo "<script src=\"notifications.js\"></script>" >> CHANGESLOG.html
           
