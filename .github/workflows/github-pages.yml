@@ -155,12 +155,8 @@ jobs:
           # Ensure .nojekyll exists to disable Jekyll processing
           touch .nojekyll
           
-          # Copy notification files to build output
-          cp notification-worker.js .
-          cp notifications.js .
-          cp manifest.json .
-          
-          # Note: test-notifications.html is excluded from deployment (dev only)
+          # Notification files are already in root directory, no need to copy
+          # Files: notification-worker.js, notifications.js, manifest.json are already present
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
