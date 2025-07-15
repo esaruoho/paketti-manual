@@ -9258,6 +9258,10 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ### 2025-07-15 - Improvement: Simple Sample Tuner now has shortcuts for "Quick Selected Sample Tune" & "Quick Selected Instrument Tune"
 
 ---
+### 2025-07-15 - Improvement: Paketti Sample Cycle Tuning Calculator (ex Simple Sample Tuner) now looks slightly more optimized.
+![](Screenshots/cycletunercalculator.png)
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
