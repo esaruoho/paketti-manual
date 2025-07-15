@@ -9249,6 +9249,12 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ![](Screenshots/cyclewaveformwriter.png)
 
 ---
+### 2025-07-15 - Improvement: Paketti Single Cycle Waveform Writer will now apply the pitching code when rendering, which will now match the pitch of regular A440.
+
+---
+### 2025-07-15 - Improvement: Removed "Original" pitch from Simple Sample Tuner - since Enhanced is better and more accurate.
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
