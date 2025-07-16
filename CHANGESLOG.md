@@ -9266,7 +9266,17 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 
 ---
 ### 2025-07-16 - Feature: Output Routings +1/-1 for Selected Track or Master
+(Closes https://github.com/esaruoho/paketti/issues/878)
 ![](Screenshots/output_routing_increase_decrease.png)
+
+---
+### 2025-07-16 - Improvement: Added `Unknown Pleasures (tkna).xrnc` to the Paketti Theme Selector
+
+----
+### 2025-07-16 - Feature: Humanize shortcut + Dialog
+![](Screenshots/humanizedialog.png)
+(Closes https://github.com/esaruoho/paketti/issues/311)
+![](Screenshots/humanizee.gif)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
