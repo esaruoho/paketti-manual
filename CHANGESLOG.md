@@ -9279,6 +9279,10 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ![](Screenshots/humanizee.gif)
 
 ---
+### 2025-07-16 - Feature: Manual Slice: Fit Slices to Longest Slice with Power of 2 Padding
+![](Screenshots/fitslicing.gif)
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
