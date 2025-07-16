@@ -9262,6 +9262,13 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ![](Screenshots/cycletunercalculator.png)
 
 ---
+### 2025-07-16 - Improvement: Play at Row will now toggle "Jack or Ableton Link" mode Off (separate shortcut)
+
+---
+### 2025-07-16 - Feature: Output Routings +1/-1 for Selected Track or Master
+![](Screenshots/output_routing_increase_decrease.png)
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
