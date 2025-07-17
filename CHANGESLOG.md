@@ -9283,6 +9283,13 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ![](Screenshots/fitslicing.gif)
 
 ---
+### 2025-07-16 - Improvement: Fit Slices to Longest Slice with Power of 2 Padding can now handle samples too - so 120 samples all mashed together into a single sample, with 8 extra silent slices so it's max 128 slices.
+
+---
+### 2025-07-16 - Feature: Double LFO Envelope Resolution
+![](Screenshots/doublelforesolution.gif)
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
