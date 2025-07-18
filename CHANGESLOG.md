@@ -9247,6 +9247,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ----
 ### 2025-07-14 -  Improvement: Paketti Single Cycle Waveform Writer will now remember if Hide Hex checkbox is checked
 ![](Screenshots/cyclewaveformwriter.png)
+![](Screenshots/pcm_scwriter.gif)
 
 ---
 ### 2025-07-15 - Improvement: Paketti Single Cycle Waveform Writer will now apply the pitching code when rendering, which will now match the pitch of regular A440.
