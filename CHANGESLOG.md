@@ -9298,11 +9298,20 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 This shortcut will detect whether the LFO Device has an External Editor available, and let you toggle showing it on&off.
 
 ---
-### 2025-07-18 Feature: Load LFO Custom with External Editor
+### 2025-07-18 - Feature: Load LFO Custom with External Editor
 Shortcut that loads LFO in Custom mode with External Editor exposed. If LFO Custom already exists, same shortcut will hide or expose the External Editor.
 
 ---
+### 2025-07-18 - Feature: "Halve LFO Envelope Resolution"
+![](Screenshots/double-halve.gif)
+
+---
 ### 2025-07-18 - Improvement: Inspect Device will now also output to Debug Terminal the list of exposed Parameters in Mixer.
+
+---
+### 2025-07-18 - Feature: Run Notepad.
+yes. you can now script within Notepad and run it.
+![](Screenshots/run_notepad.png)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
