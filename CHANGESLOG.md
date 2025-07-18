@@ -9290,6 +9290,11 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ![](Screenshots/doublelforesolution.gif)
 
 ---
+### 2025-07-18 - Improvement: "Load Maximizer to Master" will return back to the originally selected Track instead of moving you to Master.
+
+---
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
