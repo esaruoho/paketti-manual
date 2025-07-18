@@ -9294,6 +9294,15 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ### 2025-07-18 - Improvement: "Load Maximizer to Master" will return back to the originally selected Track instead of moving you to Master.
 
 ---
+### 2025-07-18 - Feature: Toggle LFO Custom External Editor
+This shortcut will detect whether the LFO Device has an External Editor available, and let you toggle showing it on&off.
+
+---
+### 2025-07-18 Feature: Load LFO Custom with External Editor
+Shortcut that loads LFO in Custom mode with External Editor exposed. If LFO Custom already exists, same shortcut will hide or expose the External Editor.
+
+---
+### 2025-07-18 - Improvement: Inspect Device will now also output to Debug Terminal the list of exposed Parameters in Mixer.
 
 ---
 ### under the radar stuff (forthcoming, still under works)
