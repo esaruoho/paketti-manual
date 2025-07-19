@@ -9313,6 +9313,10 @@ Shortcut that loads LFO in Custom mode with External Editor exposed. If LFO Cust
 yes. you can now script within Notepad and run it.
 ![](Screenshots/run_notepad.png)
 
+-----
+### 2025-07-19 - Feature: "Hipass (Preset++)" This loads up a Digital Filter, with Cutoff set to 0, and Filter set to Hipass. There's a shortcut + menu entry or few to do it. and Mixer parameter Cutoff is exposed
+![](Screenshots/presetplusplushipass.png)
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
