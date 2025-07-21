@@ -9334,6 +9334,8 @@ yes. you can now script within Notepad and run it.
 ### 2025-07-21 - Improvement: Fuzzy Memories (beatslaughter).xrnc added to Paketti Theme Selector
 
 ---
+### 2025-07-21 - Feature: Paketti LFO Envelope Editor
+![](Screenshots/paketticustomlfo_dialog.gif)
 
 
 ---
