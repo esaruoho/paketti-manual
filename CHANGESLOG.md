@@ -9290,7 +9290,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ### 2025-07-16 - Feature: Double LFO Envelope Resolution
 ![](Screenshots/doublelforesolution.gif)
 
----
+	---
 ### 2025-07-18 - Improvement: "Load Maximizer to Master" will return back to the originally selected Track instead of moving you to Master.
 
 ---
@@ -9316,6 +9316,25 @@ yes. you can now script within Notepad and run it.
 -----
 ### 2025-07-19 - Feature: "Hipass (Preset++)" This loads up a Digital Filter, with Cutoff set to 0, and Filter set to Hipass. There's a shortcut + menu entry or few to do it. and Mixer parameter Cutoff is exposed
 ![](Screenshots/presetplusplushipass.png)
+
+---
+### 2025-07-21 - Feature: .WT Wavetable import + Export
+
+---
+### 2025-07-21 - Feature: .WT Wavetable Import Dialog
+![](Screenshots/pakettiwtdialog.png)
+
+---
+### 2025-07-21 - Improvement: Removed umlaut-encoded themes (renamed to without umlauts and deleted the duplicates)
+
+---
+### 2025-07-21 - Feature: CTRL-O (from SchismTracker) - this feature will take the currently selected pattern, do nothing to any mutes or solos, and just record whatever is playing, in that pttern, to a new sample. so "pattern to sample".
+
+---
+### 2025-07-21 - Improvement: Fuzzy Memories (beatslaughter).xrnc added to Paketti Theme Selector
+
+---
+
 
 ---
 ### under the radar stuff (forthcoming, still under works)
