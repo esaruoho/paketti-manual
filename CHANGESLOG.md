@@ -9337,6 +9337,9 @@ yes. you can now script within Notepad and run it.
 ### 2025-07-21 - Feature: Paketti LFO Envelope Editor
 ![](Screenshots/paketticustomlfo_dialog.gif)
 
+---
+### 2025-07-21 - Feature: CustomLFOEnvelope (Preset++)
+![](Screenshot%202025-07-21%20at%2023.25.18.png)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
