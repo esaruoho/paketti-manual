@@ -9342,6 +9342,11 @@ yes. you can now script within Notepad and run it.
 ![](Screenshot%202025-07-21%20at%2023.25.18.png)
 
 ---
+### 2025-07-22 - Feature: Pattern Status Monitor
+Apparently this is a feature in ModPlugTracker.
+![](gif/statusmonitor_v2.gif)
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
