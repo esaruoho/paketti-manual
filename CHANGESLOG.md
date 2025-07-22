@@ -9339,7 +9339,7 @@ yes. you can now script within Notepad and run it.
 
 ---
 ### 2025-07-21 - Feature: CustomLFOEnvelope (Preset++)
-![](Screenshot%202025-07-21%20at%2023.25.18.png)
+![](Screenshots/presetpluspluscustomlfoenvelope.png)
 
 ---
 ### 2025-07-22 - Feature: Pattern Status Monitor
