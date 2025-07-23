@@ -9347,6 +9347,27 @@ Apparently this is a feature in ModPlugTracker.
 ![](gif/statusmonitor_v2.gif)
 
 ---
+### 2025-07-22 - Improvement: Paketti Theme Selector "Randomized Any Theme on Startup" is now fully randomized instead of "always the same random number on Renoise start"
+
+---
+### 2025-07-22 - Improvement: "Automatically Open Selected Track External Editors" will now correctly close all devices that are open on the Selected Track, when turning feature Off.
+
+---
+### 2025-07-22 - Improvement: "Isolate Slices to New Instrument" now retains the Slice Loop Settings.
+
+---
+### 2025-07-22 - Improvement: "Load New Sample with Current Slices" no longer errors out when trying to set Loop Points to Slice lengths that don't exist
+
+---
+### 2025-07-22 - Feature: "Octave Slammer" - this takes the currently selected sample, and copies it 3, 2, 1 octaves lower and 1, 2 and 3 octaves higher to the same Instrument.
+
+---
+### 2025-07-23 - Improvement: Octatrack 64kit drumkit generator optimized to be much much faster
+
+---
+### 2025-07-23 - Feature: Fit Sample Offset to Pattern
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
