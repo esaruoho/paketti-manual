@@ -9370,6 +9370,14 @@ Apparently this is a feature in ModPlugTracker.
 ---
 ### 2025-07-23 - Improvement: Paketti Groovebox8120 has an experimental 32 step mode.
 
+--- 
+### 2025-07-23 - Feature: BPM Randomizer on New Song
+This will detect that you're in a new fully empty song, and randomize the BPM across 60-220.
+![](Screenshots/bpmrandomizersetting.png)
+
+---
+
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
