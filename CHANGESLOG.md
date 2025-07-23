@@ -9387,6 +9387,12 @@ This will detect that you're in a new fully empty song, and randomize the BPM ac
 ### 2025-07-24 - Improvement: Paketti Preferences for Instrument Properties visibility now has "Do Nothing" in addition to Hide/Show
 
 ---
+### 2025-07-24 - Improvement: Added "surgemacros.txt" to CCizer
+![](gif/surgemacros.gif)
+
+---
+### 2025-07-24 - Improvement: Added CCizer feature to Load Plugins - therefore you can load a Plugin AND a CC Instr Device Control with one shortcut + midi mapping.
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
