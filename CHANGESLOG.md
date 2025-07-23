@@ -9376,7 +9376,15 @@ This will detect that you're in a new fully empty song, and randomize the BPM ac
 ![](Screenshots/bpmrandomizersetting.png)
 
 ---
+### 2025-07-23 - Improvement: Added "Disable / Enable Phrase Looping Globally for all Instruments"
 
+---
+
+
+### 2025-07-23 - Improvement: Paketti Preferences for Disk Browser visibility now has "Do Nothing" in addition to Hide/Show
+
+---
+### 2025-07-24 - Improvement: Paketti Preferences for Instrument Properties visibility now has "Do Nothing" in addition to Hide/Show
 
 ---
 ### under the radar stuff (forthcoming, still under works)
