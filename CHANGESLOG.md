@@ -9368,7 +9368,7 @@ Apparently this is a feature in ModPlugTracker.
 ### 2025-07-23 - Feature: Fit Sample Offset to Pattern
 
 ---
-
+### 2025-07-23 - Improvement: Paketti Groovebox8120 has an experimental 32 step mode.
 
 ---
 ### under the radar stuff (forthcoming, still under works)
