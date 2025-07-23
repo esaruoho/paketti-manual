@@ -9368,6 +9368,9 @@ Apparently this is a feature in ModPlugTracker.
 ### 2025-07-23 - Feature: Fit Sample Offset to Pattern
 
 ---
+
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
