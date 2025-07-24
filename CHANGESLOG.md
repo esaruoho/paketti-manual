@@ -9392,6 +9392,9 @@ This will detect that you're in a new fully empty song, and randomize the BPM ac
 
 ---
 ### 2025-07-24 - Improvement: Added CCizer feature to Load Plugins - therefore you can load a Plugin AND a CC Instr Device Control with one shortcut + midi mapping.
+
+---
+### 2025-07-24 - Improvement: Play Current Line&Step (Forwards/Backwards/Random) improved to use v6.2 API functions if available for better playback ("play selected line index")
 ---
 ### under the radar stuff (forthcoming, still under works)
 
