@@ -9395,6 +9395,23 @@ This will detect that you're in a new fully empty song, and randomize the BPM ac
 
 ---
 ### 2025-07-24 - Improvement: Play Current Line&Step (Forwards/Backwards/Random) improved to use v6.2 API functions if available for better playback ("play selected line index")
+
+---
+### 2025-07-25 - Canvas Parameter Editor now no longer forces track change
+
+---
+### 2025-07-25 - Dialog of Dialogs updated with previously missing dialogs
+
+------
+### 2025-07-25 - Plumbing: Nested Shortcut generation should now be faster 
+
+-----
+### 2025-07-25 - Add Mono + Hard Left / Hard Right to Selected Track or Master
+Closes https://github.com/esaruoho/paketti/issues/881
+
+![](gif/hardmonoleftright.gif)
+![](Screenshots/hardmonoleftright.png)
+
 ---
 ### under the radar stuff (forthcoming, still under works)
 
