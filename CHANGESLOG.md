@@ -6812,7 +6812,7 @@ These are available as Shortcuts, Menu Entries for Mixer, Pattern Editor and on 
 Feature: `Global:Paketti:Shift Notes Left` - this will shift all the notes in the selection to the left, or if no selection, then all the notes on the current row, to the left. 
 Improvement: `Global:Paketti:Shift Notes Right` - this will also now shift all the notes in the selection to the right, and if no selection, then all notes on the current row.
 (Closes https://github.com/esaruoho/paketti/issues/787)
-![](Screenshots/shiftnotesleftright.gif)
+![](gif/shiftnotesleftright.gif)
 
 ---
 ### 2025-02-11 - esaruoho
@@ -6841,7 +6841,7 @@ This inserts Note Off commands to each of the note columns on the selected track
 The Right After will put a Note Off right after each note. Half Before, will put a Note Off right in the middle of "played note" & "next note". The Right Before, puts a Note Off right before the next note plays.
 (Closes https://github.com/esaruoho/paketti/issues/812)
 
-![](Screenshots/rightafter_halfbefore_rightbefore.gif)
+![](gif/rightafter_halfbefore_rightbefore.gif)
 ![](Screenshots/rightafter_halfbefore_rightbefore.png)
 
 
@@ -6877,7 +6877,7 @@ Improvement: Fixed "Reverse Notes in Selection" to work properly across multiple
 
 (Closes https://github.com/esaruoho/paketti/issues/298)
 
-![](Screenshots/reverse_selection_content_fix.gif)
+![](gif/reverse_selection_content_fix.gif)
 
 ---
 ### 2025-02-12 - esaruoho
@@ -6891,7 +6891,7 @@ Feature: Clear Selected Track Below Current Row / Clear All Tracks Below Current
 Clear Selected Track Above Current Row / Clear All Tracks Above Current Row
 I've made these available as Menu Entries, Shortcuts and Midi Mappings.
 ![](Screenshots/clear_track_or_all_tracks_above_below.png)
-![](Screenshots/clear_above_below.gif)
+![](gif/clear_above_below.gif)
 (Closes https://github.com/esaruoho/paketti/issues/584)
 
 ---
@@ -6990,7 +6990,7 @@ Improvement: Audio Processing Dialog should be openable and reopenable
 ---
 ### 2025-02-15 - esaruoho
 Improvement: OctaMED Pick/Put Dialog now reads Selection in Pattern in Selected Track and writes to Selection, while following EditStep.
-![](Screenshots/octamed_paste_to_selection.gif)
+![](gif/octamed_paste_to_selection.gif)
 
 
 ---
@@ -7058,8 +7058,8 @@ Same as Autoseek
 Feature: Insert Random Note-Offs in Empty Rows
 Feature: Randomize Note-Offs in Selection
 (Closes https://github.com/esaruoho/paketti/issues/820)
-![](Screenshots/random_note_offs.gif)
-![](Screenshots/randomize_note_offs_positions.gif)
+![](gif/random_note_offs.gif)
+![](gif/randomize_note_offs_positions.gif)
 ![](Screenshots/random_noteoffs.png)
 
 ---
@@ -7288,7 +7288,7 @@ Feature: Write 0Sxx via Midi Mapping to Pattern Selection or Current Row - Modif
 ---
 ### 2025-02-25 - esaruoho
 Improvement: Random Slice/Offset now works faster, never hits S00 (always S01 until S(slicecount)), and has a shortcut.
-![](Screenshots/randomslice.gif)
+![](gif/randomslice.gif)
 
 ---
 ### 2025-02-25 - esaruoho
@@ -7389,7 +7389,7 @@ and Main Menu:View:Visible Columns..
 ### 2025-03-02 - esaruoho
 Feature: Toggle Sample Selection Info
 This shows the samples/frame count and the millisecond count of the selection in the Sample Editor.
-![](Screenshots/selection_frame-ms.gif)
+![](gif/selection_frame-ms.gif)
 
 ---
 ### 2025-03-02 - esaruoho
@@ -7588,7 +7588,7 @@ Improvement: LFO Writer Delete/Keep Preference added to Paketti Preferences - th
 ---
 ### 2025-03-15 - esaruoho
 Improvement: LFO Writer Single Parameter Write to Automation - Initializes a singular LFO device, which's Amplitude directly writes to a selected automation parameter. This for those who don't have a midicontroller available, or desire to just quickly draw some automation.
-![](Screenshots/single_lfo_writer.gif)
+![](gif/single_lfo_writer.gif)
 
 ---
 ### 2025-03-15 - esaruoho
@@ -7879,7 +7879,7 @@ Improvement: Fixed Track Dater & Titler to correctly open from Dialog.
 ---
 ### 2025-03-31 - esaruoho
 Improvement: Added Doofer to Selected Track Dev MidiMappings.
-![](Screenshots/doofer_macros.gif)
+![](gif/doofer_macros.gif)
 
 ---
 ### 2025-03-31 - esaruoho
@@ -8335,11 +8335,11 @@ Improvement: Added Length + LPB changing for Phrase Editor.
 
 ---
 ### 2025-04-24 - Feature: Toggle Volume, Panning, Delay, Sample Effects Columns On/Off (Hiding all others)
-![](Screenshots/visible.gif)
+![](gif/visible.gif)
 
 ---
 ### 2025-04-24 - Improvement: Toggle All Visible, or Toggle All but Sample Effects Column Visible
-![](Screenshots/toggle_all_columns_or_all_but_samplecolumns.gif)
+![](gif/toggle_all_columns_or_all_but_samplecolumns.gif)
 
 ---
 ### 2025-04-26 - Improvement: Pattern Matrix Menu Entry organization
@@ -8448,7 +8448,7 @@ This will no longer collapse + mute the original track.
 
 ---
 ### 2025-04-30 - Improvement: Replicate at Note Column / FX Column now works on FX Column without erroring.
-![](Screenshots/replicate_note_fx_column.gif)
+![](gif/replicate_note_fx_column.gif)
 
 ---
 ### 2025-04-30 - Improvement: Convert Global Groove to Delay on Selected Track Midi Mapping now works without an error.
@@ -8457,7 +8457,7 @@ and prints `Global Groove 0&1: 60% (66), 2&3: 44% (4C), 4&5: 17% (1D), 6&7: 49% 
 
 ---
 ### 2025-04-30 - Feature: BPM to MS Delay Calculator Dialog added
-![](Screenshots/bpm_to_ms_dialog.gif)
+![](gif/bpm_to_ms_dialog.gif)
 
 ---
 ### 2025-04-30 - Added Set Selected Sample Loop Mode shortcuts to Sample Editor
@@ -8511,16 +8511,16 @@ One button "Set Pitch" to set the finetune + note. Another to Calculate or to Re
 ---
 ### 2025-05-12 - Feature: Double / Halve Slice Count
 if you got 0 slices, it'll slice in half. if you try to halve slice count when there's only 1 slice, then it'll just clear the slices. can easily go from 2 slices to 256 slices.
-![](Screenshots/double_halve_slicecount.gif)
+![](gif/double_halve_slicecount.gif)
 
 ---
 ### 2025-05-12 - Feature: Slice Count from Selection
-![](Screenshots/countslice_from_selection.gif)
+![](gif/countslice_from_selection.gif)
 
 ---
 ### 2025-05-13 - Feature: ChordsPlus Distribute
 Distribute Always Next Row, Even 2, Even 4, Uneven, Across Selection (Even, Even2, Even4, Uneven)
-![](Screenshots/chordsplus_distribute_v3.gif)
+![](gif/chordsplus_distribute_v3.gif)
 
 ---
 ### 2025-05-13 - Improvement: Reset All Steppers now does not reset CutoffStep, ResonanceStep, DriveStep to middle (CutoffStep should be 1, ResonanceStep 0, DriveStep 0 instead) - there's a different flavor of Reset All Steppers that will do that, but otherwise just reset to first step (keeping playback consistent)
@@ -8617,7 +8617,7 @@ This will unmark the selection range, thus clearing it. Same logic as with Unmar
 ---
 ### 2025-05-23 - Improvement: Paketti Steppers Dialog
 This will  let you choose which Stepper to view (Volume, Panning, Pitch, Cutoff, Resonance, Drive), and also reads and updates to how long the stepsize is (16, 32, 64, 128, 256)
-![](Screenshots/pakettistepperdialog.gif)
+![](gif/pakettistepperdialog.gif)
 
 ---
 ### 2025-05-24 - Feature: Toggle Mute/Unmute for Selected Track, Track01 to Track16 shortcuts + midimappings added.
@@ -8721,7 +8721,7 @@ This is for those who use LFO with Custom Envelope, you can now store and carry 
 ### 2025-05-31 - Improvement: Paketti Steppers Dialog changes
 Added more Step sizes (4, 8), added buttons for setting specific types of "envelopes" for the External Editor
 Added Flip, Mirror and Humanize, too.
-![](Screenshots/pakettistepper_ext_editor_dialog.gif)
+![](gif/pakettistepper_ext_editor_dialog.gif)
 ![](Screenshots/pakettisteppers_dialog_added_buttons.png)
 
 ---
@@ -8948,7 +8948,7 @@ Added buttons for changing LPB, for updating Beatsync, for converting Beatsync t
 Added Calculated BPM for Beatsync and calculated BPM for pitch
 Added elements for controlling Transpose and Finetune -> which update the BPM calculation
 Other minor tweaks
-![](Screenshots/bpm_calculator.gif)
+![](gif/bpm_calculator.gif)
 
 ---
 ### 2025-06-18 - Improvement: Snapshot (Selected Device / All Devices on Track) added to Mixer, Pattern Matrix, Track DSP Device Menu Entries
@@ -9062,7 +9062,7 @@ Now 75 dialogs deep:
 
 ---
 ### 2025-06-26 - Feature: Delete Slices in Selection
-![](Screenshots/deleteslicesinselection.gif)
+![](gif/deleteslicesinselection.gif)
 
 ---
 ### 2025-06-27 - Improvement: Pakettify Current Instrument
@@ -9206,7 +9206,7 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 
 -----
 ### 2025-07-10 - Feature: Paketti Pattern Effect Cheatsheet Minimize Dialog
-![](Screenshots/cheatsheetminimize.gif)
+![](gif/cheatsheetminimize.gif)
 
 ---
 ### 2025-07-10 - Feature: Match Effect Column Forward / All Rows
@@ -9247,7 +9247,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ----
 ### 2025-07-14 -  Improvement: Paketti Single Cycle Waveform Writer will now remember if Hide Hex checkbox is checked
 ![](Screenshots/cyclewaveformwriter.png)
-![](Screenshots/pcm_scwriter.gif)
+![](gif/pcm_scwriter.gif)
 
 ---
 ### 2025-07-15 - Improvement: Paketti Single Cycle Waveform Writer will now apply the pitching code when rendering, which will now match the pitch of regular A440.
@@ -9277,7 +9277,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 ### 2025-07-16 - Feature: Humanize shortcut + Dialog
 ![](Screenshots/humanizedialog.png)
 (Closes https://github.com/esaruoho/paketti/issues/311)
-![](Screenshots/humanizee.gif)
+![](gif/humanizee.gif)
 
 ---
 ### 2025-07-16 - Feature: Manual Slice: Fit Slices to Longest Slice with Power of 2 Padding
@@ -9288,7 +9288,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 
 ---
 ### 2025-07-16 - Feature: Double LFO Envelope Resolution
-![](Screenshots/doublelforesolution.gif)
+![](gif/doublelforesolution.gif)
 
 	---
 ### 2025-07-18 - Improvement: "Load Maximizer to Master" will return back to the originally selected Track instead of moving you to Master.
@@ -9303,7 +9303,7 @@ Shortcut that loads LFO in Custom mode with External Editor exposed. If LFO Cust
 
 ---
 ### 2025-07-18 - Feature: "Halve LFO Envelope Resolution"
-![](Screenshots/double-halve.gif)
+![](gif/double-halve.gif)
 
 ---
 ### 2025-07-18 - Improvement: Inspect Device will now also output to Debug Terminal the list of exposed Parameters in Mixer.
@@ -9335,7 +9335,7 @@ yes. you can now script within Notepad and run it.
 
 ---
 ### 2025-07-21 - Feature: Paketti LFO Envelope Editor
-![](Screenshots/paketticustomlfo_dialog.gif)
+![](gif/paketticustomlfo_dialog.gif)
 
 ---
 ### 2025-07-21 - Feature: CustomLFOEnvelope (Preset++)
@@ -9416,7 +9416,7 @@ Closes https://github.com/esaruoho/paketti/issues/881
 ### 2025-07-25 - Improvement: Phrase Looping toggles (global, selected instrument) tweaked to working correctly without errors.
 
 ---
-
+### 2025-07-25 - Improvement: 
 
 ---
 ### under the radar stuff (forthcoming, still under works)

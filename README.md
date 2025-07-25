@@ -459,7 +459,7 @@ Some examples below:
 ![](attachments/modulation_drive.png)
 
 I have created a Stepper switching dialog that lets you visit the stepper of your choice and draw the steps you wish. Here's an example:
-![](Screenshots/pakettistepper_ext_editor_dialog.gif)
+![](gif/pakettistepper_ext_editor_dialog.gif)
 
 
 There are also other shortcuts for directly sending PitchStepper settings to the selected instrument:
