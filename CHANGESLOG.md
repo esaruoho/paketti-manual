@@ -9423,6 +9423,22 @@ Closes https://github.com/esaruoho/paketti/issues/881
 ![](Screenshots/pakettiprefs_sizeoptim.png)
 
 ---
+### 2025-07-25 - Feature: Hack: (V3.5) Play Current Line in Phrase
+
+---
+### 2025-07-25 - Feature: .SFZ Batch Convert to .XRNI 
+This will allow you to both import multiple .SFZs and export them as .XRNI to the folder the .SFZs are on. They are exported Pakettified. Then loaded as Pakettified. - Props to ryrun for the original gist github snippet.
+
+---
+### 2025-07-25 - Improvement: Load Maximizer to Master Track no longer makes the Lower Frame visible if hidden (!)
+
+---
+### 2025-07-25 - Feature: Audition Mode
+This will: Halt playback and disable Follow Pattern - when triggered.  - Stores the Follow Pattern + Row that was playing
+Then enter a mode of, whichever row your cursor is on, that whole row gets played.
+After you disable the Audition Mode, returns back to playing from the Row that was stored and re-enable Follow Pattern.
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
