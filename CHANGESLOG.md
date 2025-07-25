@@ -9413,6 +9413,12 @@ Closes https://github.com/esaruoho/paketti/issues/881
 ![](Screenshots/hardmonoleftright.png)
 
 ---
+### 2025-07-25 - Improvement: Phrase Looping toggles (global, selected instrument) tweaked to working correctly without errors.
+
+---
+
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
