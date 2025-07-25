@@ -6832,7 +6832,7 @@ Improvement: Chordsplus Transposer now has a "Row Only" flavor in addition to th
 ### 2025-02-11 - esaruoho
 Feature: Replace `FCxx` with `0Lxx` across the whole song, for those that need this conversion to be done.
 
-![](Screenshots/FC00_to_0L00_replacer.gif)
+![](gif/FC00_to_0L00_replacer.gif)
 
 ---
 ### 2025-02-12 - esaruoho
@@ -6860,7 +6860,7 @@ Feature: Match EditStep to Notes
 This will change the EditStep so that every time you input a note, it will jump to the row with the next note.
 (Closes https://github.com/esaruoho/paketti/issues/592)
 
-![](Screenshots/match_note_columns_to_note.gif)
+![](gif/match_note_columns_to_note.gif)
 
 ---
 ### 2025-02-12 - esaruoho
@@ -6907,7 +6907,7 @@ Feature: Generate Delay Value on Note Columns
 This will read the amount of Note Columns and fit the delay values so they play evenly.
 
 (Closes https://github.com/esaruoho/paketti/issues/811)
-![](Screenshots/generatedelayvalues.gif)
+![](gif/generatedelayvalues.gif)
 
 ---
 ### 2025-02-13 - esaruoho
@@ -6958,7 +6958,7 @@ Improvement: Both Normalize & Reverse Selected Slice or Sample now correctly rev
 ### 2025-02-14 - esaruoho
 Improvement: Edit Mode Blend Value is now settable via the Paketti Preferences
 (Closes https://github.com/esaruoho/paketti/issues/425)
-![](Screenshots/editmode_blend_paketti_preferences.gif)
+![](gif/editmode_blend_paketti_preferences.gif)
 
 
 ---
@@ -6966,7 +6966,7 @@ Improvement: Edit Mode Blend Value is now settable via the Paketti Preferences
 Feature: Note Off with EditStep
 (Closes https://github.com/esaruoho/paketti/issues/806)
 ![](Screenshots/editstep_withstep.png)
-![](Screenshots/editstep_step.gif)
+![](gif/editstep_step.gif)
 
 ---
 ### 2025-02-14 - esaruoho
@@ -6997,7 +6997,7 @@ Improvement: OctaMED Pick/Put Dialog now reads Selection in Pattern in Selected 
 ### 2025-02-14 - esaruoho
 Feature: Cycle Chord Inversion Down / Up
 This will take either current row, or selection in Pattern, and modify, per each row, the lowest note to be lifted an octave higher - and then re-organizes the notes by ascending order (lowest first, highest last) 
-![](Screenshots/inversion_try_v2.gif)
+![](gif/inversion_try_v2.gif)
 
 ---
 ### 2025-02-15 - esaruoho
@@ -7067,7 +7067,7 @@ Feature: Randomize Note-Offs in Selection
 Feature: Create Group & Move DSPs.. 
 This inserts the current Track into a Group, and moves the Track DSPs of the Track to the Group, and inserts a new Track and selects the new Track within the Group.
 Available in Pattern Editor + Mixer as Shortcut & Menu Entry
-![](Screenshots/group_track_move_dsps.gif)
+![](gif/group_track_move_dsps.gif)
 ![](Screenshots/creategroup_movedsps.png)
 ![](Screenshots/creategroup_movedsps_shortcuts.png)
 
@@ -7076,7 +7076,7 @@ Available in Pattern Editor + Mixer as Shortcut & Menu Entry
 Feature: Move DSPs to Next / Previous Track
 This will move the current track's Track DSP Devices to the Next or the Previous Track.
 Improvement: Can move DSPs between Tracks, Groups, Master.. and Sends. Also remembers Maximized/Minimized status.
-![](Screenshots/movetrackdsps_v2.gif)
+![](gif/movetrackdsps_v2.gif)
 ![](Screenshots/movedsps_adjacent.png)
 
 ---
@@ -7096,7 +7096,7 @@ Improvement: ChordsPlus now has a "Random Chord" Midi Mapping, Menu Entry + Shor
 ---
 ### 2025-02-17 - esaruoho
 Improvement: Move "Selected Track DSP Device" to Next / Previous Track
-![](Screenshots/move_selected_device.gif)
+![](gif/move_selected_device.gif)
 
 ---
 ### 2025-02-17 - esaruoho
@@ -7277,7 +7277,7 @@ Improvement: Added Delay parameters for `Selected Track Dev` - L Delay, L Feedb.
 ### 2025-02-25 - esaruoho
 Feature: Write ZLxx via Midi Mapping to Pattern Selection or Current Row.
 (Closes https://github.com/esaruoho/paketti/issues/795)
-![](Screenshots/midi_lpb_write_v3.gif)
+![](gif/midi_lpb_write_v3.gif)
 
 ---
 ### 2025-02-25 - esaruoho
@@ -7429,7 +7429,7 @@ Improvement: Largest Sample Finder now has a method for showing which samples ar
 ---
 ### 2025-03-04 - Feature: Shortcut that detects where the LFO is, and modifies the Shape:
 ![](Screenshots/lfo-shape-changer.png)
-![](Screenshots/lfoshapechanger.gif)
+![](gif/lfoshapechanger.gif)
 
 ---
 ### 2025-03-04 - Feature: Rename Tracks by Played Samples
@@ -7525,7 +7525,7 @@ Improvement: Added Wipe&Slice 256 slices since FF is the maximum.
 Improvement: Added Formula "Presets" such as:
 "Input Line Quantize" (by danoise, originally), "LFO Beat Sync", "LFO Chaotic", "Mixer Equal Weight" to Formula Dialog presets
 Improvement: Made the correct amount of sliders visible in the Mixer View
-![](Screenshots/formuladevice_mixershow.gif)
+![](gif/formuladevice_mixershow.gif)
 
 
 ---
@@ -7548,7 +7548,7 @@ Improvement: Added "Paketti Fadeout (Instant)" & "Paketti Fadeout (Manual)" to F
 Feature: LFO Automation Parameter Writer WIP
 This takes a specific LFO which is modulated by another LFO's Amp+Freq settings, and writes the LFO Amp to the selected automation parameter.
 ![](Screenshots/lfo-automation-writer-shortcut.png)
-![](Screenshots/lfo-automation-write_20fps.gif)
+![](gif/lfo-automation-write_20fps.gif)
 <div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/17b18654e56742a794e3975b4517a0bc?sid=a6f6db2c-7e9a-4031-8cfb-0ecc9f45feea" loading="lazy" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ---
@@ -7654,7 +7654,7 @@ Improvement: Reinstated Paketti Default Instrument & Drumkit choosers
 ### 2025-03-19 - esaruoho
 Feature: Find Note (Next/Previous) (Track/Pattern)
 (Closes https://github.com/esaruoho/paketti/issues/831)
-![](Screenshots/goto_note.gif)
+![](gif/goto_note.gif)
 
 ---
 ### 2025-03-19 - Improvement: Random AKWF Wavetable Loader now has a Paketti PitchBend Default Instrument ingested.
@@ -7776,7 +7776,7 @@ Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapp
 ### 2025-03-28 - esaruoho
 Feature: Paketti Fuzzy Search Track
 This lets you search for a trackname or a snippet of a trackname, and in case of singular result, it gets selected, and in case of more than one result, use cursor keys + enter to select.
-![](Screenshots/fuzzy_search_names_v354.gif)
+![](gif/fuzzy_search_names_v354.gif)
 
 ---
 ### 2025-03-28 - esaruoho
@@ -8231,7 +8231,7 @@ Improvement: .SF2 import now correctly detects the keyrange, the finetuning and 
 ----
 ### 2025-04-17 - esaruoho
 Feature: Set Pattern Length Dialog
-![](Screenshots/patternsetlengthdialog.gif)
+![](gif/patternsetlengthdialog.gif)
 
 ----
 ### 2025-04-17 - esaruoho
@@ -8250,7 +8250,7 @@ Improvement: Player Pro Transpose Selection or Note Column +1/-1/+12/-12 Shortcu
 ### 2025-04-17 - esaruoho
 Feature: Paketti Keyzone Distributor - this allows for distributing the samples in the instrument by a specific amount of keys, and the basenote can be set to original, lowest note, middle note, highest note. There's also quick set buttons.
 
-![](Screenshots/keyzonedistributor_v2.gif)
+![](gif/keyzonedistributor_v2.gif)
 ![](Screenshots/keyzone_distributor_dialog_update.png)
 
 ----
@@ -8543,7 +8543,7 @@ When you have an Amigo Plugin loaded, and the sample is Embedded (Embed is selec
 ---
 ### 2025-05-18 - Feature: Signed/Unsigned process
 This flips the sample in that very specific "ALT-A Convert Signed to/from Unsigned samples", for that nice little crunchy mayhem. There are three shortcuts + menu entries. One that wrap-signs, one that wrap-unsigns, and one that toggles the signing/unsigning state.
-![](Screenshots/paketti_unsigned_signed_switcher.gif)
+![](gif/paketti_unsigned_signed_switcher.gif)
 
 ---
 ### 2025-05-18 - Feature: .EXE import hook.
@@ -8585,7 +8585,7 @@ Example of whistle sample crossfaded, Before & After:
 
 ---
 ### 2025-05-22 - Improvement: Flood Fill Column with Row by EditStep - this will fill the pattern till the end of the pattern using EditStep for setting when the row repeats.
-![](Screenshots/floodfill_editstep.gif)
+![](gif/floodfill_editstep.gif)
 
 ---
 ### 2025-05-22 - Improvement: Smart Beatsync from Selection now exists as a menu entry.
@@ -8658,7 +8658,7 @@ This is an old Paketti method I wrote for creating a specific type of Body of No
 
 ---
 ### 2025-05-26 - Feature: Set Sample to One-Shot + NNA to Continue
-![](Screenshots/nna-trigger.gif)
+![](gif/nna-trigger.gif)
 
 ---
 ### 2025-05-26 - Feature: Note-Off Paste (from Selection)
@@ -8687,7 +8687,7 @@ Added Notifiers to both Note Dialog & Main Dialog that follow manual Instrument 
 EditStep is now taken into consideration with the 00-80 Volume controls and 00-FF Effect controls.
 Added all Renoise-specific Effect commands to Dropdown menu
 Tweaked the general design and sizes of the dialogs
-![](Screenshots/playerpro_dialog_selection_updates.gif)
+![](gif/playerpro_dialog_selection_updates.gif)
 ![](Screenshots/playerpro_dialogs.png)
 
 ---
@@ -8775,7 +8775,7 @@ Added to Sample Editor Ruler menu entry + shortcut.
 four shortcuts (Decrease, Increase, Next Parameter, Previous Parameter) for controlling exposed-in-Mixer parameters
 MAJOR thanks to ptdc for the original idea, i just did my thing to add additional logic and protections
 ![](Screenshots/parama_param.png)
-![](Screenshots/devicevalues_v2.gif)
+![](gif/devicevalues_v2.gif)
 
 ---
 ### 2025-06-04 - Improvement: "Load .IFF Menu Entry"
@@ -9084,7 +9084,7 @@ This will take a sliced instrument and create a new Instrument where all the sli
 
 ---
 ### 2025-06-29 - Feature: Tuning System
-![](Screenshots/editstep_0_system.gif)
+![](gif/editstep_0_system.gif)
 ![](Screenshots/editstep_tuningsystem.png)
 
 ---
@@ -9210,7 +9210,7 @@ When hitting the Instrument transpose buttons, the C-4 + 0G01 is printed to the 
 
 ---
 ### 2025-07-10 - Feature: Match Effect Column Forward / All Rows
-![](Screenshots/match_note_columns_to_note.gif)
+![](gif/match_note_columns_to_note.gif)
 
 ---
 ### 2025-07-11 - Improvement: Added 4 themes Metal Amber Dread Blue (Garf) Dread Black (Garf) Dread Gray Grey Light (Garf)
@@ -9281,7 +9281,7 @@ There's a dropdown menu with multiple waveforms - there's a randomizer for creat
 
 ---
 ### 2025-07-16 - Feature: Manual Slice: Fit Slices to Longest Slice with Power of 2 Padding
-![](Screenshots/fitslicing.gif)
+![](gif/fitslicing.gif)
 
 ---
 ### 2025-07-16 - Improvement: Fit Slices to Longest Slice with Power of 2 Padding can now handle samples too - so 120 samples all mashed together into a single sample, with 8 extra silent slices so it's max 128 slices.
@@ -9416,7 +9416,11 @@ Closes https://github.com/esaruoho/paketti/issues/881
 ### 2025-07-25 - Improvement: Phrase Looping toggles (global, selected instrument) tweaked to working correctly without errors.
 
 ---
-### 2025-07-25 - Improvement: 
+### 2025-07-25 - Improvement: BPM Randomizer is NOT on by default
+
+---
+### 2025-07-25 - Improvement: Paketti Preferences size optimized slightly
+![](Screenshots/pakettiprefs_sizeoptim.png)
 
 ---
 ### under the radar stuff (forthcoming, still under works)
