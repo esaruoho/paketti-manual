@@ -9439,6 +9439,19 @@ Then enter a mode of, whichever row your cursor is on, that whole row gets playe
 After you disable the Audition Mode, returns back to playing from the Row that was stored and re-enable Follow Pattern.
 
 ---
+### 2025-07-25 - Improvement: Deactivate all Repeaters on all Tracks / Delete all Repeaters on all tracks
+
+---
+### 2025-07-27 - Feature: Slices to Pattern - this writes the Slices of the current Instrument, to the Selected Track. It measures the length of the sample, and then goes "what do I gotta do to make it play till the end, - add delay values if needed"
+
+---
+### 2025-07-27 - Feature: Render Pattern Selection
+This will either.. Render the selection in Pattern, or, do it and mute the original, or, add a new track, or mute and create new track.
+![](Screenshots/renderselectioninpattern.png)
+---
+### 2025-07-27 - Improvement: Protracker 2.3 Teis Theme added ( pt2.3 (tEiS).xrnc )
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
