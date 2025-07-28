@@ -9500,6 +9500,17 @@ Also fixed a crash bug when "Export Wavetable to Sample" while on an Instrument 
 ### 2025-07-28 - Improvement: Paketti Stacker now has -36 -24 -12 +12 +24 +36 buttons for duplicating all samples for extra doubling.
 
 ---
+### 2025-07-28 - Improvement: Paketti Stacker now has volume slider controls for the duplicated samples (-36 to +36) for evening them out better. 
+
+---
+### 2025-07-28 - Improvement: Paketti Stacker now has a v3.5 Canvas (or non-v3.5 users will get a bunch of Sliders) for quickly modifying the volume of all the stacks (-36 -24 -12 0 +12 +24 +36)
+Also modified how the Dialog looks - fitting all the buttons to the current dialog width
+Also added "Loop Half" or "Loop Full" for all the samples.
+![](Screenshots/pakettistacker_newlook.png)
+
+---
+
+---
 ### under the radar stuff (forthcoming, still under works)
 
 ### Feature: Polyend Buddy
