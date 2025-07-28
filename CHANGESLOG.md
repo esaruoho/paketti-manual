@@ -9479,7 +9479,25 @@ Also fixed a crash bug when "Export Wavetable to Sample" while on an Instrument 
 ### 2025-07-28 - Improvement: Pakettify Instrument will update the Pattern data with the newly created Pakettified duplicate instrument.
 
 ---
+### 2025-07-28 - Improvement: Paketti Cheatsheet Minimize can now open the bigger version. Clicking on Mini Cheatsheet will close the bigger version.
 
+---
+### 2025-07-28 - Improvement: Dialog of Dialogs will now correctly update when using Fuzzy Search - and when wiping the searchfield and pressing enter.
+![](gif/dialogofdialogs_fuzzyse.gif)
+
+---
+### 2025-07-28 - Improvement: 0G00 0D00 & 0G00 0U00 will now overwrite the current 0U00 or 0D00 content - setting it to 00.
+
+---
+### 2025-07-28 - Improvement: Groovebox8120 "Browse" button changed to "Load" for easier discoverability.
+
+---
+### 2025-07-28 - Improvement: Paketti Stacker dialog now has the Paketti Steppers dialog hidden within it, expandable.
+![](Screenshots/stackerstepper.png)
+![](Screenshots/stackerstepper2.png)
+
+---
+### 2025-07-28 - Improvement: Paketti Stacker now has -36 -24 -12 +12 +24 +36 buttons for duplicating all samples for extra doubling.
 
 ---
 ### under the radar stuff (forthcoming, still under works)
