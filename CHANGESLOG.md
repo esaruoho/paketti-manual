@@ -9449,7 +9449,37 @@ After you disable the Audition Mode, returns back to playing from the Row that w
 This will either.. Render the selection in Pattern, or, do it and mute the original, or, add a new track, or mute and create new track.
 ![](Screenshots/renderselectioninpattern.png)
 ---
-### 2025-07-27 - Improvement: Protracker 2.3 Teis Theme added ( pt2.3 (tEiS).xrnc )
+### 2025-07-27 - Improvement: Three Teis themes added ( AmigaOS3.1 (tEiS).xrnc, AmigaOS1.0 (tEiS) .xrnc, pt2.3 (tEiS).xrnc) + 1 bitvvig theme ( Bitvvig.xrnc )
+
+---
+### 2025-07-27 - Improvement/Plumbing: Consolidated all Diskwrite/Render functions into a single file and made them more universal / combined
+
+---
+### 2025-07-27 - Feature: Sample Range Flip backwards/forwards - this will flip the samplerange backwards by the selection range. so `123[456]` becomes `[123]456`. And the other will flip the samplerange forwards by selection range.
+![](gif/flipbackforwards.gif)
+
+---
+### 2025-07-27 - Feature: Detect and Select Silence in Zoom Level
+![](gif/detectandselectsilence.gif)
+
+---
+### 2025-07-28 - Improvement: Paketti Unison Generator now has a small amount of settings on the Paketti Preferences dialog
+For setting the maximum minimum detune, and whether the detune fluctuates, or whether it's "hard sync" (surely the wrong term - but meaning if you set the finetune slider to 96, then all unison'd up samples are -96 to 96. And the original sample finetune is taken into consideration and calculated against.
+
+---
+### 2025-07-28 - Improvement: Paketti Single Cycle Wave Writer
+Will now halt "Live Pickup Mode" for the duration of "Morph Sample" generation and "Export Wavetable to Instrument", to evade overwriting.
+
+Also fixed a crash bug when "Export Wavetable to Sample" while on an Instrument that already has a sample.
+
+---
+### 2025-07-28 - Improvement: Unison Generator Renoise crash fixed
+
+---
+### 2025-07-28 - Improvement: Pakettify Instrument will update the Pattern data with the newly created Pakettified duplicate instrument.
+
+---
+
 
 ---
 ### under the radar stuff (forthcoming, still under works)
