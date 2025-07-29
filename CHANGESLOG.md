@@ -9508,7 +9508,14 @@ Also modified how the Dialog looks - fitting all the buttons to the current dial
 Also added "Loop Half" or "Loop Full" for all the samples.
 ![](Screenshots/pakettistacker_newlook.png)
 
+--- 
+### 2025-07-29 - Improvement: Audio Processing dialog (WIP) no longer has duplicate functions (causing confusion) (in the code)
+
 ---
+### 2025-07-29 - Improvement: "Xperimental/Work in Progress" renamed to "Xperimental/WIP" so that the menus are shorter
+
+---
+### 2025-07-29 - Improvement:
 
 ---
 ### under the radar stuff (forthcoming, still under works)
