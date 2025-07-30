@@ -9507,7 +9507,6 @@ Also fixed a crash bug when "Export Wavetable to Sample" while on an Instrument 
 Also modified how the Dialog looks - fitting all the buttons to the current dialog width
 Also added "Loop Half" or "Loop Full" for all the samples.
 ![](Screenshots/pakettistacker_newlook.png)
-
 --- 
 ### 2025-07-29 - Improvement: Audio Processing dialog (WIP) no longer has duplicate functions (causing confusion) (in the code)
 
@@ -9515,17 +9514,9 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 ### 2025-07-29 - Improvement: "Xperimental/Work in Progress" renamed to "Xperimental/WIP" so that the menus are shorter
 
 ---
-### 2025-07-29 - Improvement:
+
 
 ---
-### under the radar stuff (forthcoming, still under works)
-
-### Feature: Polyend Buddy
-This lets you set up a Polyend Tracker path, which, when Refreshed, and the Polyend Tracker is in USB Storage mode, will populate two dropdown menus - one with .PTI instruments listed, one with .WAV files listed. Then you can load a .WAV file or a .PTI file directly. There's also a Save .PTI and Save .WAV which will allow you to save files directly to the Polyend Tracker device. And detection on whether the user-set path is available or not, and then a recommendation to reconnect. There's also a protection for when "Load PTI" or "Load WAV" would fail - i.e., before starting the loading process, verify that the path to the Polyend USB Storage Mode is still valid, if not valid, then show an error in dialog + statusbar. Also added .RX2 -> .PTI export. There's also an Open Path to open .PTI dropdown selected instrument path, and Open Path to open .WAV dropdown selected sample path from Polyend Tracker path. and Open Path for Polyend Root Folder. And a Backup that copies all the files from the Polyend Root Folder (and all subfolders + hidden files too) to a user-specified folder. And a Browse bar for Computer PTI - with Dump button so selected PTI gets dumped from Computer to Polyend, and Analyze for Polyend Tracker PTI and Computer PTI selected files. and Dump to Device which lets you select any PTI from your computer (file browse dialog) and save it anywhere on the Polyend. And a Drumkit (mono) / (stereo) maker that takes 48 samples, sets bitdepth, samplerate and channel to same, merges the files together and outputs a PTI with 48 slices each triggering one of the 48 drums.
-
-Refresh Dropdown Menus when Save WAV, Save PTI, Dump to Device, etc - basically in all sample saving situations, you should refresh the dropdown menus
-Improved the Save to SaveFolder (WAV + PTI) so Statusbar shows where it was saved and what was saved
-Fix the Sorting of Dropdownmenus so "FromRenoise" and "fromRenoise" are shown close to eachother instead of "capital letters first, then lowercase letters" sorting which looks like a bug
 
 
 ---
@@ -9534,7 +9525,7 @@ Fix the Sorting of Dropdownmenus so "FromRenoise" and "fromRenoise" are shown cl
 You are right at the end of this manual now. Welcome!
 
 If you liked what you saw, please consider supporting
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 300€.
+- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 139€ to 236€ to 300€.
 - Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
