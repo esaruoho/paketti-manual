@@ -9517,7 +9517,13 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 ### 2025-07-30 - Feature:  Set Selected Instrument All Loop Off, Forward, PingPong, Reverse.
 
 ---
+### 2025-07-30 - Feature: Reverse All Samples in Selected Instrument
 
+---
+### 2025-07-30 - Feature: Normalize All Samples in Selected Instrument
+
+---
+### 2025-07-30 - Improvement: Normalize All Samples in Selected Instrument / Reverse All Samples in Selected Instrument:  - added logic: if Slice detected, just Normalize or Reverse the first sample.
 
 ---
 # End
