@@ -9514,7 +9514,7 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 ### 2025-07-29 - Improvement: "Xperimental/Work in Progress" renamed to "Xperimental/WIP" so that the menus are shorter
 
 ---
-
+### 2025-07-30 - Feature:  Set Selected Instrument All Loop Off, Forward, PingPong, Reverse.
 
 ---
 
