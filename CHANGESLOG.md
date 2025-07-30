@@ -9526,6 +9526,9 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 ### 2025-07-30 - Improvement: Normalize All Samples in Selected Instrument / Reverse All Samples in Selected Instrument:  - added logic: if Slice detected, just Normalize or Reverse the first sample.
 
 ---
+### 2025-07-30 - Improvement: 
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
