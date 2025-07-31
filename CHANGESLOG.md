@@ -9530,6 +9530,12 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 Benefits: If set to True, and, you have a Plugin on the Instrument, the Plugin is duplicated. If set to True, and you have a bunch of Stepper settings or Volume AHDSR - the content is duplicated. If set to True, and you have the 8 macros set up already with user-preferred settings, all are retained.
 
 ---
+### 2025-08-01 - Improvement: Delete Unused Samples had a regression where deleting unused samples would force a remap of the instrument, thus destroying the pattern. Now it doesn't delete the samples but instead overwrites the sample with silence (of 1 frame length, so minimum sample) and renames to EmptiedUnused.
+
+---
+### 2025-08-01 - Improvement: Fill Empty Sample Slots with Randomized drums will now take the EmptiedUnused into consideration, and make sure the drumkit mappings are not ruined while loading new samples in.
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
