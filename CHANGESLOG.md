@@ -9526,7 +9526,8 @@ Also added "Loop Half" or "Loop Full" for all the samples.
 ### 2025-07-30 - Improvement: Normalize All Samples in Selected Instrument / Reverse All Samples in Selected Instrument:  - added logic: if Slice detected, just Normalize or Reverse the first sample.
 
 ---
-### 2025-07-30 - Improvement: 
+### 2025-07-31 - Improvement: Unison Generator Settings: "Duplicate Instrument before Unison processing" as a On/Off in Paketti Preferences.
+Benefits: If set to True, and, you have a Plugin on the Instrument, the Plugin is duplicated. If set to True, and you have a bunch of Stepper settings or Volume AHDSR - the content is duplicated. If set to True, and you have the 8 macros set up already with user-preferred settings, all are retained.
 
 ---
 # End
