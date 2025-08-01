@@ -9536,6 +9536,19 @@ Benefits: If set to True, and, you have a Plugin on the Instrument, the Plugin i
 ### 2025-08-01 - Improvement: Fill Empty Sample Slots with Randomized drums will now take the EmptiedUnused into consideration, and make sure the drumkit mappings are not ruined while loading new samples in.
 
 ---
+### 2025-08-01 - Improvement: Render Selection will now store and restore the Mute / Solo situation of the track, instead of flipping the Solo on/off causing unforeseen / undesired renders
+
+---
+### 2025-08-01 - Improvement: Single Cycle Waveform Writer will now, when pressing Live Pickup Mode, on an empty instrument, auto-pitch+finetune the empty samplebuffer, so when you start drawing, you're already in 440Hz tune.
+
+---
+### 2025-08-01 - Feature: Experimental Render Sample
+Highly experimental Render with tail - take your sample, run Experimental Render and the Macros, Selected Track TrackDSP and Sample FX Chain content is all rendered to the sample using a throwaway pattern - with extra silence padding added to the end of the sample so the tail is correctly rendered. The output is pakettified by default, so you're ready to go. Also compensates for headroom, and restores the headroom afterwards.
+
+---
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
