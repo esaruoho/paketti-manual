@@ -9569,6 +9569,33 @@ Highly experimental Render with tail - take your sample, run Experimental Render
 ---
 ### 2025-08-02 - Improvement: Paketti Stacker "All" button for creating -36 -24 -12 +12 +24 +36 transpose copies, will now run through Process Slicer so there's no timeout / "script was too busy for too long".
 
+---
+### 2025-08-02 - Improvement: Launch App Selection should now work better with Linux specifically
+
+---
+### 2025-08-02 - Improvement: Paketti Gater Step buttons can now be clicked on to set StepCount
+
+---
+### 2025-08-02 - Improvement: Paketti Gater now also has highlight color as Black, instead of Bright Blue. This matches with Groovebox 8120.
+
+---
+### 2025-08-02 - Improvement: Paketti Stepper dialog will now refresh to the new External Editor for a Stepper when changing instruments, and will no longer force 256 Global on every Stepper change - thus, you can have a 128 step Volume Step, 8 step Cutoff Step and 8 step Resonance Step.
+
+---
+### 2025-08-02 - Improvement: Groovebox 8120 BPM button will now dynamically update if user is changing the BPM from within Renoise. And a tooltip.
+![](Screenshots/groovebox8120_bpm_tooltip.png)
+
+---
+### 2025-08-02 - Improvement: Paketti Gater "Global Receive" will no longer force-print Panning settings from Gater to Pattern.
+
+---
+### 2025-08-02 - Improvement: Paketti Gater will show, with Deep Purple colouring, the selected StepCount.
+![](gif/gater_color.gif)
+
+---
+### 2025-08-02 - Improvement: Groovebox 8120 now has the same Deep Purple StepCount showing
+![](gif/8120_purplehighlight.gif)
+
 
 ---
 # End
