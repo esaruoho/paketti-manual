@@ -9596,6 +9596,9 @@ Highly experimental Render with tail - take your sample, run Experimental Render
 ### 2025-08-02 - Improvement: Groovebox 8120 now has the same Deep Purple StepCount showing
 ![](gif/8120_purplehighlight.gif)
 
+---
+### 2025-08-02 - Improvement: Paketti Gater now supports 16 AND 32 steps and there's global steps control.
+![](Screenshots/gater_32steps.png)
 
 ---
 # End
