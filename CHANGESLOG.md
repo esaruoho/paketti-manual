@@ -9551,6 +9551,23 @@ Highly experimental Render with tail - take your sample, run Experimental Render
 ![](Screenshots/replicateselectedsubcolumn.png)
 
 ---
+### 2025-08-02 - Improvement: Groovebox 8120: Optimized Automation button to be faster at creating the max 512 note Point Automations.
+
+---
+### 2025-08-02 - Improvement: Paketti Pitchbend Drumkit Sample Loader (Random) now loads the Instr Macros Device so you can automate as you go.
+
+---
+### 2025-08-02 - Improvement: Paketti Stacker: Single button that creates -36 -24 -12 +12 +24 +36 pitched duplicate samples in one go.
+
+---
+### 2025-08-02 - Improvement: Normalize All Samples / Slices will no longer error out in high-stress situations
+
+---
+### 2025-08-02 - Improvement: Paketti Stacker now has dynamic Pattern position buttons
+![](gif/stacker_rowjump.gif)
+
+---
+### 2025-08-02 - Improvement: Paketti Stacker "All" button for creating -36 -24 -12 +12 +24 +36 transpose copies, will now run through Process Slicer so there's no timeout / "script was too busy for too long".
 
 
 ---
