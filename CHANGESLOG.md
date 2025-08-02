@@ -9544,6 +9544,11 @@ Benefits: If set to True, and, you have a Plugin on the Instrument, the Plugin i
 ---
 ### 2025-08-01 - Feature: Experimental Render Sample
 Highly experimental Render with tail - take your sample, run Experimental Render and the Macros, Selected Track TrackDSP and Sample FX Chain content is all rendered to the sample using a throwaway pattern - with extra silence padding added to the end of the sample so the tail is correctly rendered. The output is pakettified by default, so you're ready to go. Also compensates for headroom, and restores the headroom afterwards.
+(Closes https://github.com/esaruoho/paketti/issues/709, https://github.com/esaruoho/paketti/issues/248, https://github.com/esaruoho/paketti/issues/356)
+
+---
+### 2025-08-02 - Feature: Replicate Selected Subcolumn (above & above+current)
+![](Screenshots/replicateselectedsubcolumn.png)
 
 ---
 
