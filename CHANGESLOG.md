@@ -9601,6 +9601,50 @@ Highly experimental Render with tail - take your sample, run Experimental Render
 ![](Screenshots/gater_32steps.png)
 
 ---
+### 2025-08-03 - Improvement: Single Cycle Waveform Writer
+You can now use Single Cycle Waveform Writer to create "a type of wavetable" - The newly added "Write A&B" button will create Wave A as Sample Slot 1, Wave B as Sample Slot 2. The Wave A will be in Sample FX Chain 1, the Wave B will be in Sample FX Chain 2. The FX Chain 1 will have a LFO connected to Gainer, and the FX Chain 2 will also have a LFO connected to a Gainer. After the Gainer, for both FX Chains, there will be a Send device to FX Chain 3 - which is the "regular" Paketti FX Chain (followed by FX Chain 4 for Parallel Compression). After this, the Live Pickup Mode is enabled in the Single Cycle Waveform Writer - but with additional tweaks: Now, after this change, the Wave A Waveform drawing will write to Sample Slot 1, and Wave B Waveform drawing will write to Sample Slot 2. The Instrument is configured like so: The Modwheel controls the Reset of both LFO devices in Sample Chain 1 & Sample Chain 2. Both LFOs are set to "Infinite" Frequency - meaning, only the Modwheel will change the location of the LFO step. The Selected Track also gets a LFO, connected to Instr. Macro device's Modwheel. The Selected Track LFO Amplitude, Offset and Frequency, are exposed in the Mixer for easier availability, and the Dialog is automatically updated with three additional sliders - you guessed it, Amplitude, Offset and Frequency. This means that you can automate the LFO on the Selected Track - the device is helpfully renamed to `Wavetable Mod *LFO`, and thusly you can automate the crossfade / oscillation between the Wave A and Wave B waveforms. When the Single Cycle Waveform Writer is opened on an Instrument such as this - the Live Pickup Mode is automatically set, and the Three sliders on the Dialog are shown to the User.
+Additional bonus: Since you now have a FX Chain for Wave A, and a FX Chain for Wave B, the Wave A Chain1 and Wave B Chain2 can have effects loaded in and there will be automatable crossfading between the actual Chain output (such as effects) of the Waves.
+
+
+---
+### 2025-08-04 - Improvement: Tweaked the SlotShow shortcuts to say "SlotShow" for easier discoverability
+
+---
+### 2025-08-04 - Improvement: If running Wipe&Slice on an Instrument that has multiple samples, error out gracefully instead of slicing the first sample.
+
+---
+### 2025-08-04 - Improvement: Paketti Single Cycle Waveform Writer: If in Live Pickup Mode and editing Wave A, clicking on Sample Slot 2 while in WT mode, should switch you to Wave B instead of overwriting Wave A waveform.
+
+---
+### 2025-08-04 - Improvement: When using CTRL-O to render, say "Rendering in progress..." and at the end, state the size of the new Instrument.
+
+---
+### 2025-08-04 - Improvement: Load Devices... dialog will now no longer show the previous list, if closed + reopened, instead revert to Native list. Same for Load Plugins dialog.
+
+---
+### 2025-08-04 - Improvement: Sononymph Instrument Naming regression fixed - correct name now placed.
+
+---
+### 2025-08-04 - Feature: Folder -> Pakettified .XRNI - converts Wavefiles + FLAC files to .XRNI format with Pakettification.
+![](Screenshots/batchpakettify.png)
+
+---
+### 2025-08-04 - Improvement: Paketti Selected Device Parameter Editor now has (Previous Track / Previous Device / Next Device / Next Track) buttons.
+
+---
+### 2025-08-04 - Improvement: Paketti Selected Device Parameter will now read which Device you've selected in Automation Frame, and open to that device.
+
+---
+### 2025-08-04 - Improvement: Paketti Pitchbend Multiple Sample Loader now has process slicing so it will no longer time out if loading hundreds of samples.
+
+---
+### 2025-08-04 - Improvement: "Capture Nearest Instrument & Octave (Jump)" - if you're on Effect Column, it will cycle through the Steppers (Cutoff, Resonance, Pitch, Volume, Pan, Drive) and then back to Pattern Editor.
+
+---
+### 2025-08-04 - Feature: "Open External Editor" / "Open Selected Parameter Dialog" for Renoise Native, AudioUnits, LADSPA/DSSI, VST, VST3 Devices.
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
