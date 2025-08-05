@@ -9643,6 +9643,9 @@ Additional bonus: Since you now have a FX Chain for Wave A, and a FX Chain for W
 ---
 ### 2025-08-04 - Feature: "Open External Editor" / "Open Selected Parameter Dialog" for Renoise Native, AudioUnits, LADSPA/DSSI, VST, VST3 Devices.
 
+---
+### 2025-08-05 - Improvement: Removed some extra files that were causing Paketti Action Selector to bug out badly - i.e. renamed files on the GitHub.
+
 
 ---
 # End
