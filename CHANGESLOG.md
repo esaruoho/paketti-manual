@@ -9652,6 +9652,20 @@ This lets you create a song's sections, pattern row counts and pattern names.
 ![](Screenshots/sectionizer.png)
 
 ---
+### 2025-08-05 - Feature: Paketti EQ30 Experiment
+I’m a big fan of the age-old, 32-bit only, never-made-available for macOS, DiscoDSP EQ30. You can just draw with a mouse and get a bunch of sliders moved around. Hold the left mouse button down and paint → a max of 30 EQ Bands are within your grasp with a single click + drag. So here’s a Renoise v3.5 only hack for making it happen, using 4 EQ10’s. If you have any ideas, do let me know. If you can think of other Renoise Native devices I could tweak and hack like this, do let me know, too.
+![](Screenshots/pakettieq30.png)
+
+---
+### 2025-08-06 - Improvement: Pattern Status Monitor is now a Preference in Paketti Preferences - so you can "always have it on"
+
+---
+### 2025-08-06 - Improvement: PlayerPro Effect Dialog
+So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - meaning, you can write to Pan, Delay, Volume + Sample FX Columns. Enjoy.
+![](gif/playerpro_effectcolumnv2.gif)
+
+
+---
 # End
 
 You are right at the end of this manual now. Welcome!
