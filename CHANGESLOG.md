@@ -9672,7 +9672,7 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ---
 # End
 
-You are right at the end of this manual now. Welcome!
+You are right at the end of this page now. Welcome!
 
 If you liked what you saw, please consider supporting
 - Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 139€ to 236€ to 300€.
