@@ -9667,9 +9667,16 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ---
 ### 2025-08-06 - Improvement: Slices to Pattern was hardcoded to start from `C#0` -> Now it detects the actual slicemarker correctly.
 
-
-
 ----
+### 2025-08-06 - Improvement: Dialog of Dialogs now has Fuzzy Search, cursor keys for opening dialogs (and enter)
+![](Screenshots/dialog_of_dialogs_newlook.png)
+
+---
+### 2025-08-06 - Improvement: Paketti Action Selector no longer erroneously opens up the Experimental "Plugin Position Editor"
+
+---
+### 2025-08-06 - Improvement: Dialog of Dialogs can now be resized per "how many buttons per Column" control.
+![](gif/dialogofdialogs_resize.gif)
 
 
 ---
