@@ -9646,6 +9646,10 @@ Additional bonus: Since you now have a FX Chain for Wave A, and a FX Chain for W
 ---
 ### 2025-08-05 - Improvement: Removed some extra files that were causing Paketti Action Selector to bug out badly - i.e. renamed files on the GitHub.
 
+---
+### 2025-08-05 - Feature: Sectionizer
+This lets you create a song's sections, pattern row counts and pattern names.
+![](Screenshots/sectionizer.png)
 
 ---
 # End
