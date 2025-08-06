@@ -9664,6 +9664,9 @@ I’m a big fan of the age-old, 32-bit only, never-made-available for macOS, Dis
 So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - meaning, you can write to Pan, Delay, Volume + Sample FX Columns. Enjoy.
 ![](gif/playerpro_effectcolumnv2.gif)
 
+---
+### 2025-08-06 - Improvement: Slices to Pattern was hardcoded to start from `C#0` -> Now it detects the actual slicemarker correctly.
+
 
 
 ----
