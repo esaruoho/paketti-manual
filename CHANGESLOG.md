@@ -9678,6 +9678,11 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ### 2025-08-06 - Improvement: Dialog of Dialogs can now be resized per "how many buttons per Column" control.
 ![](gif/dialogofdialogs_resize.gif)
 
+---
+### 2025-08-06 - Improvement: If trying to Unison Generate on a sample with no Sample FX Chain, you would get an error during Pakettification. Fixed.
+
+---
+
 
 ---
 ---
@@ -9686,7 +9691,7 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ---
 ---
 ---
-
+## Bufferzone
 # End
 
 You are right at the end of this page now. Welcome!
