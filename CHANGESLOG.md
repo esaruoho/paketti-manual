@@ -4,6 +4,14 @@
 
 ← [Back to Main Manual](index.html)
 
+If you liked what you're seeing here, please consider supporting. Every bit helps.
+- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 139€ to 236€ to 300€.
+- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
+- Send me a donation via [PayPal](http://paypal.me/esaruoho). 
+- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
+- Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
+- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/).
+
 ## Paketti Updates Changelog
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
@@ -9682,24 +9690,51 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ### 2025-08-06 - Improvement: If trying to Unison Generate on a sample with no Sample FX Chain, you would get an error during Pakettification. Fixed.
 
 ---
+### 2025-08-06 - Improvement: Canvas version of Player Pro Note Dialog.
+
+---
+### 2025-08-06 - Improvement: Canvas Font Library now has `-`, `+`, `#` which were all missing.
+
+---
+### 2025-08-06 - Improvement: Intelligent Player Pro Note / Effect Dialog setting in Paketti Preferences - always open depending on which Column you are on.
+
+---
+### 2025-08-06 - Improvement: Seamless Render will gracefully error out if trying to run it on a larger-than-256 row pattern.
+
+---
+### 2025-08-06 - Improvement: Digitakt Sample Chain prepare samples bugs squashed (plumbing issues due to rearranging functions)
+
+---
+### 2025-08-06 - Improvement: Random 2 AKWF Loader using the same Wavetable technique with `Wavetable Mod *Lfo` on the Selected Track.
+
+---
+### 2025-08-06 - Improvement: Added two dropdown menus for AKWF to Single Cycle Waveform Writer. & Write AKWF A&B button which creates a AKWF Wavetable Instrument.
+![](Screenshots/pcmwriter_akwf.png)
+
+---
+### 2025-08-06 - Improvement: Added `<do nothing>` as an option for the Device Loader, in addition to External Editor / Parameter Editor. in Paketti Preferences.  - so now you can load devices but not have the ExtEditor or Parameter Editor auto-open.
+
+---
+### 2025-08-07 - Improvement: Split Paketti Preferences to three columns so that they can all be seen.
+![](Screenshots/preferences_3columns.png)
+
+---
+### 2025-08-07 - Improvement: Player Pro Always Open Dialog - a setting for always opening Note Dialog or Effect Dialog depending on Note Column or Sub Column or Effect Column
+
+---
+### 2025-08-07 - Improvement: Player Pro Intelligent Dialog - a shortcut that reads if you're on Note Column, Sub Column or Effect Column, and opens accordingly.
+
+---
 
 
----
----
----
----
----
----
----
-## Bufferzone
-# End
 
-You are right at the end of this page now. Welcome!
+---
+---
+---
+---
+---
+---
+---
 
-If you liked what you saw, please consider supporting
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 139€ to 236€ to 300€.
-- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
-- Send me a donation via [PayPal](http://paypal.me/esaruoho). 
-- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
-- Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
-- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/).
+
+
