@@ -9725,16 +9725,9 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ### 2025-08-07 - Improvement: Player Pro Intelligent Dialog - a shortcut that reads if you're on Note Column, Sub Column or Effect Column, and opens accordingly.
 
 ---
+### 2025-08-07 - Improvement: Batch Pakettify will now write the filename to the sample name in addition to instrument name.
 
+---
+### 2025-08-07 - Improvement: Batch Pakettify will now correctly apply Paketti settings (oversampling, interpolation, autofade, autoseek, loop, etc) and use Process Slicing for not timing out during the process of converting 300+ samples.
 
-
 ---
----
----
----
----
----
----
-
-
-
