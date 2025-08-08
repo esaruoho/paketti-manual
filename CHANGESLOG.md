@@ -9731,3 +9731,21 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 ### 2025-08-07 - Improvement: Batch Pakettify will now correctly apply Paketti settings (oversampling, interpolation, autofade, autoseek, loop, etc) and use Process Slicing for not timing out during the process of converting 300+ samples.
 
 ---
+
+### 2025-08-07 - Improvement: Player Pro Effect Column - when hitting "8" on Volume / Panning column - will correctly display & select "0" and when returning back to 7, get back to "original 2nd column number". just a minor tweak.
+![](Screenshots/playerpro_efcolumn2.png)![](Screenshots/playerpro_efcolumn1.png)
+
+------
+### 2025-08-07 - Improvement: Isolate Slices to New Instrument now uses Process Slicer so it doesn't time out on large amounts of slices.
+
+------
+### 2025-08-08 - Improvement: Added "Duplicate Pattern Above & Clear Muted Tracks" & "Duplicate Pattern Below & Clear Muted Tracks" as shortcuts to Pattern Sequencer & Pattern Matrix.
+
+---
+### 2025-08-08 - Improvement: "Note Offs to All Tracks for First Pattern of Song, First Row" & "Note Offs to All Tracks for First Row of Current Pattern" added as shortcuts + menu entries for Pattern Sequencer, Pattern Matrix, Pattern Editor, and Global.
+
+---
+### 2025-08-08 - Improvement: Duplicate Instrument and Select New Instrument" now uses Process Slicing so the duplication process doesn't time out while copying a large Instrument.
+
+---
+### 2025-08-08 - Feature: Set All Samples in Selected Instrument to Full Loop & "End-Half Loop" & "Beginning Half Loop", shortcuts, menu entries
