@@ -9749,3 +9749,9 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 
 ---
 ### 2025-08-08 - Feature: Set All Samples in Selected Instrument to Full Loop & "End-Half Loop" & "Beginning Half Loop", shortcuts, menu entries
+
+---
+### 2025-08-08 - Improvement: Added 4 more themes: to Paketti Theme Selector
+Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
+
+---
