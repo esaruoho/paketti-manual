@@ -9755,3 +9755,31 @@ So now with V3.5 Canvas flavor - and I've added SubColumn improvements too - mea
 Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 
 ---
+### 2025-08-09 - Improvement: Paketti Preferences now has a setting for either only showing the Main Menu -> File -> Paketti submenu, or only showing the Main Menu -> File -> Paketti features, or showing both of them.
+
+---
+### 2025-08-09 - Improvement: Made it possible to (currently in a hardcoded fashion, so let me know) blacklist a device so that it doesn't open in External Editor, instead opens in Parameter Editor. For instance, the crash-prone Schaack Transient Shaper 2 now loads in Parameter Editor automatically instead of the crash-prone External Editor.
+
+---
+### 2025-08-09 - Improvement: Parameter Editor will now default to not loading, but instead showing External Editor, if there's more than 64 parameters to show. This means when you have Paketti Preferences set to "Parameter Editor" - Pro Q-3 is no longer unusable. (It was just a chaotic jumble of hundreds of parameters, no way to see what you're doing)
+
+---
+### 2025-08-10 - Improvement: EQ30 experiment now has Automation writing, automatic parameter updates, and control over Points/Lines/Curves - for those who want to "just step in a bit of EQ here and there"
+
+
+---
+### 2025-08-10 - Improvement: EQ30 can now be loaded as a shortcut. The logic is as follows: Load it - it loads and shows. Already have it? Just show it. EQ30 already displaying? Hide it.
+
+---
+### 2025-08-10 - Improvement: Parameter Editor dialog can now also be set to Points/Lines/Curves for Automation purposes.
+
+---
+### 2025-08-10 - Improvement: Groovebox8120 now follows the track Mute states - so if you mute in Renoise, it shows as muted on the Groovebox 8120, too.
+![](gif/8120_muterfollower.gif)
+
+---
+### 2025-08-10 - Improvement: Groovebox8120 now follows the Instrument slot 01 - 08 Pitch states, so if you change them in the Instrument settings, they change in the interface.
+
+---
+### 2025-08-10 - Improvement: Groovebox8120 now has an addon for being able to enable disable Beatsync, configure Beatsync values and mode and NNA mode, and set NNA and Beatsync globally.
+![](Screenshots/groovebox8120_advparam.png)
