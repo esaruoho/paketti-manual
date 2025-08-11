@@ -9782,4 +9782,13 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 
 ---
 ### 2025-08-10 - Improvement: Groovebox8120 now has an addon for being able to enable disable Beatsync, configure Beatsync values and mode and NNA mode, and set NNA and Beatsync globally.
-![](Screenshots/groovebox8120_advparam.png)
+![](Screenshots/groovebox8120_advparam.png)---
+### 2025-08-10 - Improvement: Groovebox8120 now has a "Initialize EQ30" which adds an EQ30 to every single Groovebox track.
+![](Screenshots/8120_initeq30.png)
+
+---
+### 2025-08-10 - Improvement: Groovebox8120 now has an "EQ30" button for every single Groovebox Row.
+![](Screenshots/8120_eq30_on_every_row.png)
+---
+### 2025-08-11 - Improvement:
+
