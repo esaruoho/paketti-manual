@@ -1,7 +1,6 @@
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
 
- 1. [What](#what)
- 
+ 1. [What](#what) 
  2. [Feedback](#feedback)
  3. [Where](#where)
  4. [Support](#support)
@@ -18,7 +17,7 @@
 
 *Paketti is Finnish for Package*
 
-Paketti - or, Tracker Convergence Project (tm) provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs.
+Paketti - provides over 6000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 110+ dialogs.
 
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
@@ -26,7 +25,8 @@ It introduces features from:
 - the C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
 - the legendary OctaMED by Teijo Kinnunen on the one and only Amiga.
 - the awesome Impulse Tracker by Jeffrey Lim, running on DOS.
-- OpenMPT/MadTracker, Windows..
+- the much-loved OpenMPT/MadTracker, Windows..
+- the name-checked Protracker for only the Amiga makes it possible (tm)
 - and.. PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
 # Feedback
@@ -59,7 +59,7 @@ It introduces features from:
 # Support
 
 You can 
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 10€ to 300€.
+- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 100€ to 300€.
 - Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho).
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
@@ -69,7 +69,7 @@ You can
 # GettingStarted
 
 Yes, there's a learning curve.
-Paketti introduces over 5000 shortcuts, over 1000 menu entries, over 950 midi mappings, and over 77 dialogs.
+Paketti introduces hundreds of new features and thousands of tweaks.
 
 I've often been told, there's too much! I'm only gonna use this or that. 
 

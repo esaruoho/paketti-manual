@@ -9789,6 +9789,27 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ---
 ### 2025-08-10 - Improvement: Groovebox8120 now has an "EQ30" button for every single Groovebox Row.
 ![](Screenshots/8120_eq30_on_every_row.png)
----
-### 2025-08-11 - Improvement:
 
+---
+### 2025-08-11 - Improvement: Paketti Groovebox8120: Tweaked the UI for Advanced Settings (NNA & Beatsync control), added Play position indicators (customizable color), and EQ30 buttons will now focus both track + instrument, so the EQ30 dialog opens for the correct track.
+
+![](Screenshots/8120_advparameters_ui_tweak.png)
+![](gif/8120_playhead_position.gif)
+
+---
+### 2025-08-12 - Improvement: Paketti Groovebox8120: If you closed the dialog and reopened - the Pitch settings might get overwritten. No longer.
+
+---
+### 2025-08-12 - Improvement: Paketti Groovebox8120: Added Volume knob & Solo button
+
+---
+### 2025-08-12 - Improvement: Paketti Groovebox8120: EQ30 button will switch to the new row EQ30 instead of closing
+
+---
+### 2025-08-12 - Improvement: Added PolyPlexMescalia - uglyMatrix to the Paketti Theme Selector
+
+---
+### 2025-08-12 - Improvement: EQ30 visual improvements and optimizations, also, right-clicking on the canvas resets the EQ30 settings.
+
+---
+### 2025-08-12 - Improvement: Groovebox 8120: Focus on row added, Steppers dialog added, EQ30 tweaks, size optimizations
