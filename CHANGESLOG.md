@@ -9797,7 +9797,7 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ![](gif/8120_playhead_position.gif)
 
 ---
-### 2025-08-12 - Improvement: Paketti Groovebox8120: If you closed the dialog and reopened - the Pitch settings might get overwritten. No longer.
+### 2025-08-12 - Improvement: Paketti Groovebox8120: If you closed the dialog and reopened - the Pitch settings would get overwritten. No longer.
 
 ---
 ### 2025-08-12 - Improvement: Paketti Groovebox8120: Added Volume knob & Solo button
@@ -9812,4 +9812,18 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ### 2025-08-12 - Improvement: EQ30 visual improvements and optimizations, also, right-clicking on the canvas resets the EQ30 settings.
 
 ---
-### 2025-08-12 - Improvement: Groovebox 8120: Focus on row added, Steppers dialog added, EQ30 tweaks, size optimizations
+### 2025-08-12 - Improvement: Groovebox8120: Focus on row added, Steppers dialog added, EQ30 tweaks, size optimizations
+
+----
+### 2025-08-13 - Improvement: Groovebox8120: Added Random StepCount Global button, and added 1-16 buttons for Global StepCount, including odd numbers.
+
+---
+### 2025-08-13 - Improvement: Sectionizer now allows you to set BPM & LPB per section for each pattern in the section - they're written to the Master track as Effect changes.
+
+---
+### 2025-08-13 - Feature: Clear All Pattern Names - this will clear all the names of the Patterns.
+
+---
+### 2025-08-13 - Plumbing: Isolated the Paketti Canvas Font to a separate file for better re-usability, added additional characters `äöå!"?#%/()=§` and glyphs for shift, control, option, command, cursor updown left right.
+
+----
