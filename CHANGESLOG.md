@@ -9855,10 +9855,13 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ---
 ### 2025-08-14 - Feature: Distribute All Samples to Separate FX Chains
 
-![](Screenshot%202025-08-14%20at%2016.01.53.png)
+![](Screenshots/distributeallsamples.png)
 
 ---
 ### 2025-08-15 - Improvement: Caps Lock Note Off to All Tracks on Current Row somehow stopped working with Renoise changes, reinstated and fixed.
 
 ---
 ### 2025-08-15 - Improvement: Dialog of Dialogs now has fuzzy search AND you can click on the buttons to start up a dialog again.
+
+---
+
