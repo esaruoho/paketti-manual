@@ -5715,6 +5715,7 @@ Feature: Duplicate Selected Track & Name (Drums01 -> Drums02, f.ex.)
 
 Feature: Hide All Effect Columns - hides all effect columns for each and every track!
 
+---
 ### 2024-12-09 - esaruoho
 
 Improvement: tweaked the naming so `Isolate Slices to New Instrument as Samples` hopefully makes more sense as a naming
@@ -9864,4 +9865,12 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ### 2025-08-15 - Improvement: Dialog of Dialogs now has fuzzy search AND you can click on the buttons to start up a dialog again.
 
 ---
+### 2025-08-15 - Improvement: Paketti Stacker dialog no longer properly proceeded with stacking due to process slicing, fixed.
 
+---
+### 2025-08-15 - Improvement: Quick Load Devices Dialog now accepts up and down and enter to cycle through the results, and has fuzzy search for finding a result.
+
+---
+### 2025-08-15 - Improvement: Added a setting in Paketti Preferences so F8 (Impulse Tracker Stop Playback) will no longer disable (unless wanted) the Pattern Follow. Now there's Do Nothing, Enable, Disable, as settings.
+
+---
