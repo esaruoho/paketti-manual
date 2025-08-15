@@ -4176,14 +4176,10 @@ Feature: Inverter Device. This is a Gainer device with Invert set for both chann
 
 
 ---
-### 2024-10-05 - esaruoho
-
-Improvement: If you add a VST/VST3/AU/LADSPA/DSSI device to Sample Chain, that specific device is selected - allowing for direct randomization or other modifications
+### 2024-10-05 - Improvement: If you add a VST/VST3/AU/LADSPA/DSSI device to Sample Chain, that specific device is selected - allowing for direct randomization or other modifications
 
 ---
-### 2024-10-07 - esaruoho
-
-Improvement: I made the Gainer device load into Sample FX Chain too
+### 2024-10-07 - Improvement: I made the Gainer device load into Sample FX Chain too
 
 ---
 ### 2024-10-07 - esaruoho
@@ -9827,3 +9823,36 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ### 2025-08-13 - Plumbing: Isolated the Paketti Canvas Font to a separate file for better re-usability, added additional characters `äöå!"?#%/()=§` and glyphs for shift, control, option, command, cursor updown left right.
 
 ----
+### 2025-08-14 - Improvement: Hardcoded ValhallaDelay / ValhallaShimmer / ValhallaVintageVerb now boot up in Mixer 0% mode, to evade clicks and pops on initialize.
+
+---
+### 2025-08-14 - Improvement: Paketti Single Cycle Waveform Writer now has PingPong/Forward loop selection integrated
+
+---
+### 2025-08-14 - Improvement: Paketti Gater now has visual step followers, exactly like Groovebox 8120
+
+---
+### 2025-08-14 - Improvement: Row1 Sample Sliders now work headless too - so if 8120 is not open, then still change the selected Sample. And the Sample Editor will show the selected Sample so you can immediately see what it is.
+
+---
+### 2025-08-14 - Improvement: 8120:Added Loop Mode & Loop Range (full, start-half, end-half) control
+
+---
+### 2025-08-14 - Improvement: 8120: Relative & Absolute Global Pitch Midi Control Knob & dialog rotary knob added
+
+---
+### 2025-08-14 - Improvement: Paketti Gater: Added even & odd numbers from 01-16 to dialog.
+
+---
+### 2025-08-14 - Improvement: 8120: Added Paketti Gater button directly into the dialog for better accessibility.
+
+---
+### 2025-08-14 - Feature: Distribute All Samples to Separate Modulation Sets - this takes the samples and creates a Modulation Set per each sample.
+
+---
+### 2025-08-14 - Feature: Distribute All Samples to Separate Mod & FX Chains -- this takes the samples and creates both FX chains and Modulation Sets, one per sample.
+
+---
+### 2025-08-14 - Feature: Distribute All Samples to Separate FX Chains
+
+![](Screenshot%202025-08-14%20at%2016.01.53.png)
