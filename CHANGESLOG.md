@@ -9874,3 +9874,5 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ### 2025-08-15 - Improvement: Added a setting in Paketti Preferences so F8 (Impulse Tracker Stop Playback) will no longer disable (unless wanted) the Pattern Follow. Now there's Do Nothing, Enable, Disable, as settings.
 
 ---
+### 2025-08-15 - Feature: Paketti Slab'o'Patterns - this dialog lets you create custom time signatures, and a section, if so inclined. There's a few presets.
+![](Screenshots/slabopatterns.png)
