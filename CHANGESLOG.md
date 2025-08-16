@@ -9901,4 +9901,4 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ---
 ### 2025-08-16 - Feature: Paketti Capture Last Take
 This will let you have the dialog open, play notes on the Computer Keyboard, press enter and the played notes are saved as a chord, which you can then output anywhere. The Smart Note Off feature is also there, adding a Smart Note Off to the end of the pattern. And if you have 4 or 8 chords put to Dump Slots, then you can also spread them across the pattern. I can think of no method that would be as fast - and as dynamic. If you have a 512 row pattern, and have 8 chords, you can slam them in, automatically, without thinking, every 64 rows. 64 row and 4 chords? every 16 steps. If you made an error, you can always use backspace to remove the newest note, or shift-backspace to wipe the whole Currently Pressed Notes. You can modify the Slot Phrasing (shifting them by octaves randomly) or do the very same thing for the current Selected Track's Pattern content for Selected Pattern. And you can access the Paketti Gater directly.
-![](Screenshot%202025-08-16%20at%2022.49.13.png)
+![](Screenshots/capturelasttake.png)
