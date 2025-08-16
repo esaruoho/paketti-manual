@@ -9876,3 +9876,29 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ---
 ### 2025-08-15 - Feature: Paketti Slab'o'Patterns - this dialog lets you create custom time signatures, and a section, if so inclined. There's a few presets.
 ![](Screenshots/slabopatterns.png)
+
+---
+### 2025-08-15 - Improvement: Switch to Automation Dynamic, will now correctly set the Lower Frame visible if it is not visible.
+
+---
+### 2025-08-15 - Improvement: Added Catppuccin Mocha Sapphire to Paketti Theme Selector.
+
+---
+### 2025-08-16 - Improvement: Added TB03 to CCizer:
+```
+74 Cutoff
+71 Resonance
+75 Decay
+12 EnvMod
+18 DelayTime
+19 DelayFeedback
+17 Overdrive
+16 AccentLevel
+102 SlideStatus
+104 Tuning
+```
+
+---
+### 2025-08-16 - Feature: Paketti Capture Last Take
+This will let you have the dialog open, play notes on the Computer Keyboard, press enter and the played notes are saved as a chord, which you can then output anywhere. The Smart Note Off feature is also there, adding a Smart Note Off to the end of the pattern. And if you have 4 or 8 chords put to Dump Slots, then you can also spread them across the pattern. I can think of no method that would be as fast - and as dynamic. If you have a 512 row pattern, and have 8 chords, you can slam them in, automatically, without thinking, every 64 rows. 64 row and 4 chords? every 16 steps. If you made an error, you can always use backspace to remove the newest note, or shift-backspace to wipe the whole Currently Pressed Notes. You can modify the Slot Phrasing (shifting them by octaves randomly) or do the very same thing for the current Selected Track's Pattern content for Selected Pattern. And you can access the Paketti Gater directly.
+![](Screenshot%202025-08-16%20at%2022.49.13.png)
