@@ -9902,3 +9902,17 @@ Default Pink Auto, Easily Embarrassed type, Neosponge, realp`
 ### 2025-08-16 - Feature: Paketti Capture Last Take
 This will let you have the dialog open, play notes on the Computer Keyboard, press enter and the played notes are saved as a chord, which you can then output anywhere. The Smart Note Off feature is also there, adding a Smart Note Off to the end of the pattern. And if you have 4 or 8 chords put to Dump Slots, then you can also spread them across the pattern. I can think of no method that would be as fast - and as dynamic. If you have a 512 row pattern, and have 8 chords, you can slam them in, automatically, without thinking, every 64 rows. 64 row and 4 chords? every 16 steps. If you made an error, you can always use backspace to remove the newest note, or shift-backspace to wipe the whole Currently Pressed Notes. You can modify the Slot Phrasing (shifting them by octaves randomly) or do the very same thing for the current Selected Track's Pattern content for Selected Pattern. And you can access the Paketti Gater directly.
 ![](Screenshots/capturelasttake.png)
+
+---
+### 2025-08-17 - Improvement: Impulse Tracker Move Forwards / Move Backwards by Track shortcuts would error out if trying to move from an Effect Column -containing track to a track that does have an Effect Column but it isn't visible. No longer. Fixed.
+
+---
+### 2025-08-17 - Improvement: Added "Audition" and a total of 16 slots to the Capture Last Take dialog. Audition lets you play the chord you played again, and click on it again to stop playing. Will let you find what you could play next by audition and then play and then create a new slot.
+![](Screenshots/capturelasttake_audition.png)
+
+---
+### 2025-08-17 - Improvement: If Running Unison Generator on a Single Cycle Waveform Generator generated Wavetable sound, both Wave A & Wave B will be duplicated 5 times for a maximum of 12 samples, and Unison duplicates placed to the right Sample FX Chain, and the Wavetable LFO device will point to the Unison version.
+
+---
+### 2025-08-18 - Feature: Set Sample to End at End of Pattern
+For those Reverse Cymbals - you can now have Paketti calculate the position + delay value for you, so you don't have to think about it. If there's something to tweak, tweak a bit. Enjoy!
