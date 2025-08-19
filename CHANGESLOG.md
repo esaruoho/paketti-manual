@@ -9916,3 +9916,18 @@ This will let you have the dialog open, play notes on the Computer Keyboard, pre
 ---
 ### 2025-08-18 - Feature: Set Sample to End at End of Pattern
 For those Reverse Cymbals - you can now have Paketti calculate the position + delay value for you, so you don't have to think about it. If there's something to tweak, tweak a bit. Enjoy!
+![](Screenshots/riser_placer.png)
+
+---
+### 2025-08-18 - Improvement: Single Cycle Waveform Writer now has Unison A&B and Unison AKWF A&B writing - write a directly Unison Generated Wavetable and start automating the Crossfade between the two (and their unison copies)
+
+---
+### 2025-08-19 - Improvement: Volume/Delay/Pan Slider Controls dialog is slightly more optimized now
+![](Screenshots/voldelaypan_slider_controls_opt.png)
+
+---
+### 2025-08-19 - Improvement: Harmonics 1-11 added to Single Cycle Waveform Writer, with a Drawbar
+
+---
+### 2025-08-19 - Feature: .ITI Import - Impulse Tracker Instrument Import.
+It will import the samples, loop-points and keymappings - including non-continuous keymapping ranges.
