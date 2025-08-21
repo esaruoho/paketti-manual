@@ -9920,14 +9920,38 @@ For those Reverse Cymbals - you can now have Paketti calculate the position + de
 
 ---
 ### 2025-08-18 - Improvement: Single Cycle Waveform Writer now has Unison A&B and Unison AKWF A&B writing - write a directly Unison Generated Wavetable and start automating the Crossfade between the two (and their unison copies)
+![](Screenshots/pcmwriter_unison.png)
 
 ---
 ### 2025-08-19 - Improvement: Volume/Delay/Pan Slider Controls dialog is slightly more optimized now
 ![](Screenshots/voldelaypan_slider_controls_opt.png)
 
 ---
-### 2025-08-19 - Improvement: Harmonics 1-11 added to Single Cycle Waveform Writer, with a Drawbar
+### 2025-08-19 - Improvement: Harmonics 1-11 added to Single Cycle Waveform Writer, with a Drawbar and Amplitude control.
+![](Screenshots/pcmwriter_harmonics.png)
 
 ---
 ### 2025-08-19 - Feature: .ITI Import - Impulse Tracker Instrument Import.
-It will import the samples, loop-points and keymappings - including non-continuous keymapping ranges.
+This feature will import the samples, loop-points and keymappings, for now. More incoming.
+
+---
+### 2025-08-20 - Feature: Hide Unused Effect Columns - this will hide all the Effect Columns that are not used anywhere on any pattern.
+
+---
+### 2025-08-20 - Improvement: Wipe&Slice "Double Slice Count" & "Halve Slice Count" - maintaining "Equal Slice lengths"
+
+---
+### 2025-08-20 - Improvement: Single Cycle Waveform Writer: The H1-H11 data is written to the instrument + sample name, so thus re-opening the dialog will set the Harmonic Drawbars correctly and you can continue.
+
+---
+### 2025-08-20 - Feature: Midi Knob for cycling between Automation Envelopes that have content on them.
+![](gif/midi_dynamic_automationswitch.gif)
+
+---
+### 2025-08-20 - Improvement: Hold-to-Fill will now follow EditStep - if selected, and can accept Midi Notes too. So, hold down a midi note with EditStep and it will fill the rest of the pattern. This is a slightly improved OctaMED feature.
+
+
+---
+
+### 2025-08-21 - Feature: Create New Sample Slot & Select  // Delete Selected Sample & Select. Create New Sample Slot will also use the Paketti Loader settings, so your preferred Autofade,Autoseek,Oversample,Interpolation settings will be applied.
+
