@@ -9955,3 +9955,17 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ### 2025-08-21 - Feature: Create New Sample Slot & Select  // Delete Selected Sample & Select. Create New Sample Slot will also use the Paketti Loader settings, so your preferred Autofade,Autoseek,Oversample,Interpolation settings will be applied.
 
+---
+### 2025-08-21 - Feature: Remove Empty Tracks - if the channel is empty across the whole pattern space, remove it. Also a flavor that only removes channels that are empty across the whole pattern space AND have no Track DSP effects.
+
+---
+### 2025-08-21 - Feature: Wipe all empty patterns from end of Pattern Sequencer. If you tend to create lots of empty patterns and then populate them - here's a method of safely deleting them.
+
+---
+### 2025-08-21 - Feature: Set all Samples in all Instruments to New Note Action: Cut.
+
+---
+### 2025-08-21 - Improvement: Reduced the height of the Paketti Gater dialog by combining Titles and Column Switch rows.
+![](Screenshots/pakettigater_explanation_optim.png)
+
+-------
