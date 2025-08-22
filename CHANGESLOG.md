@@ -9982,8 +9982,19 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ![](Screenshots/capturelasttake_gater.png)
 
 ---
-### 2025-08-22 Improvement: Paketti Function Search will now find results even if the first letter was duplicated ("eexpose" instead of "expose")
+### 2025-08-22 Improvement: Paketti Function Search will now find results even if the first letter was duplicated ("expose" instead of "eexpose", "transpose" instead of "ttranspose")
 ![](Screenshots/functionsearcheexpose.png)
 
 ---
+### 2025-08-22 - Improvement: Paketti Groovebox 8120 will now visually trigger "Global Groove" checkbox enabled, if moving Global Groove sliders.
 
+![](Screenshots/8120_globgroovecheckbox.png)
+
+---
+### 2025-08-22 - Improvement: If you tried to use the Single Cycle Waveform Writer and write an A&B sample (A&B, A&B Unison, A&B AKWF, A&B AKWF Unison) on a Master, Send or Group Track - an error would be shot. Now you're protected from the error with an informative status message telling you to hit a regular track instead.
+
+---
+### 2025-08-22 - Improvement: Groovebox 8120: If you click on a Stepper button while the Paketti Steppers Dialog is open, the Dialog will no longer close, instead switch to that specific track.
+
+---
+### 2025-08-22 - Improvement: Groovebox 8120: SequentialRandomLoadAll, SequentialRandomLoad, Sequential Load buttons now all set the User Preference settings for Autofade, Oversample, Interpolation, Autoseek, etc at the end of loading all the (max 960) samples.
