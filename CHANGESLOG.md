@@ -9969,7 +9969,21 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ![](Screenshots/pakettigater_explanation_optim.png)
 
 -------
-### 2025-08-22 - Improvement: Experimental Render Sample (with TrackFX) will now correectly render the original non-sliced sample, and then recalculate + reapply the Slice markers, and all the Slice settings to each Slice, per Slice.
+### 2025-08-22 - Improvement: Experimental Render Sample (with TrackFX) will now correctly render the original non-sliced sample, and then recalculate + reapply the Slice markers, and all the Slice settings to each Slice, per Slice.
 
 ---
-### 2025-08-22 - Feature: Selected Instrument Transpose shortcuts +12/+1/-1/-12, set to specific Transpose value, or add a relative amount (-120 to +120) 
+### 2025-08-22 - Feature: Selected Instrument Transpose shortcuts +12/+1/-1/-12, set to specific Transpose value, or add a relative amount (-120 to +120)  shortcuts, menu entries and midi mappings. 
+
+---
+### 2025-08-22 - Improvement: Added Behringer Pro-800 to CCizer as a list of CCs.
+
+---
+### 2025-08-22 - Improvement: Capture Last Take now has the Gater built in, and it can be exposed when needed.
+![](Screenshots/capturelasttake_gater.png)
+
+---
+### 2025-08-22 Improvement: Paketti Function Search will now find results even if the first letter was duplicated ("eexpose" instead of "expose")
+![](Screenshots/functionsearcheexpose.png)
+
+---
+
