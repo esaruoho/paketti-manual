@@ -9969,3 +9969,7 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ![](Screenshots/pakettigater_explanation_optim.png)
 
 -------
+### 2025-08-22 - Improvement: Experimental Render Sample (with TrackFX) will now correectly render the original non-sliced sample, and then recalculate + reapply the Slice markers, and all the Slice settings to each Slice, per Slice.
+
+---
+### 2025-08-22 - Feature: Selected Instrument Transpose shortcuts +12/+1/-1/-12, set to specific Transpose value, or add a relative amount (-120 to +120) 
