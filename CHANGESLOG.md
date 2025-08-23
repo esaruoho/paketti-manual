@@ -9998,3 +9998,12 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ---
 ### 2025-08-22 - Improvement: Groovebox 8120: SequentialRandomLoadAll, SequentialRandomLoad, Sequential Load buttons now all set the User Preference settings for Autofade, Oversample, Interpolation, Autoseek, etc at the end of loading all the (max 960) samples.
+
+----
+### 2025-08-23 - Feature: Interpolate BPM Current to Next Pattern - this will create a slow interpolation ramp of BPM changes to slowly move from the current Pattern BPM to the next Pattern's BPM on the current Pattern.
+
+---
+### 2025-08-23 - Feature: Polyend Slice Switcher - Detect imported PTI is in Slice instead of Beat Slice mode, and treat it as a C0-B9 instrument instead of loading it as Slices, set the Selected Slice as 00-7F velocity and the rest as 00-00 velocity and open, if Paketti Preferences set to it, a Slice Selector dialog that lets you set the preferred melodic Slice sample to 00-7F and the rest to 00-00 velocity.
+![](Screenshots/polyendslice.png)
+
+---
