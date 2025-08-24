@@ -10007,3 +10007,11 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ![](Screenshots/polyendslice.png)
 
 ---
+### 2025-08-24 - Improvement: Experimental Render will now 1) store and disable Loop Mode of a Sliced Sample during Render 2) reinstate Loop Mode to original Sliced sample 3) Strip Silence from the end of the Rendered sample (this is a setting in the Paketti Preferences).
+
+---
+### 2025-08-24 - Feature: Swap Pattern Slot with Above / Below - this will swap the content of the above pattern's selected track (note content / effects / automation) with the current pattern's selected track content. Same for Below.
+
+---
+### 2025-08-24 - Feature: Filename-Based Keyzone Mapping - so if your sample is, say, 01_69 to 01_79 - it'll map 00-69 and 79-119 (and everything in-between) to a keymapping setup. 
+![](Screenshots/filenamebased_keyzone_mapping.png)
