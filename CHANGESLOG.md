@@ -10015,3 +10015,12 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ---
 ### 2025-08-24 - Feature: Filename-Based Keyzone Mapping - so if your sample is, say, 01_69 to 01_79 - it'll map 00-69 and 79-119 (and everything in-between) to a keymapping setup. 
 ![](Screenshots/filenamebased_keyzone_mapping.png)
+
+---
+### 2025-08-25 - Improvement: Slices to Pattern will now adopt a more streamlined approach if BeatSync is set to On - and if there are very close slices (think flams) - multiple Note Columns will be used instead of overwriting the current Note Column row.
+
+---
+### 2025-08-25 - Feature: Squeeze Notes (Pattern) / (Song) - this will squeeze notes for a Selected Track, to the minimum available amount of Note Columns - so if you have notes all over the place on multiple Note Columns, they are moved.
+
+---
+### 2025-08-25 - Improvement: Explode Notes to New Tracks will now correctly sort the tracks (first first, last last), and there's a Paketti Preference for auto-naming the newly created tracks to note + instrument.name.
