@@ -10024,3 +10024,14 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ---
 ### 2025-08-25 - Improvement: Explode Notes to New Tracks will now correctly sort the tracks (first first, last last), and there's a Paketti Preference for auto-naming the newly created tracks to note + instrument.name.
+
+---
+### 2025-08-25 - Feature: Send Selected Sample Region to User-Defined App - this lets you use the same Launch App feature to send a sample region to an app of your choice, or a folder of your choice. Same works already for Selected Sample, or for launching a specific app. This means you can send your samples to specific apps of your choice such as Ableton Live, Audacity, or any other app that can handle "app wav.wav" type loading (note well, Bitwig does not support this.)
+![](Screenshots/launchappimprovements.png)
+
+---
+### 2025-08-25 - Improvement: Explode Notes to New Tracks will also explode the Effect Column, Delay, Panning, SampleFX Columns and if there are multiple same-notes on different effect columns with separate Sample FX / Delay / Panning / Velocity - then retain the note column count.
+![](Screenshots/explodenotes_v4.png)
+
+---
+### 2025-08-25 - Improvement: "Fit Slices to Longer Slice with Power of 2 padding" is now protected against going for a larger slice count than the maximum 256 allowed.
