@@ -10035,3 +10035,15 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ---
 ### 2025-08-25 - Improvement: "Fit Slices to Longer Slice with Power of 2 padding" is now protected against going for a larger slice count than the maximum 256 allowed.
+
+---
+### 2025-08-26 - Improvement: Groovebox 8120 now has a Collapse feature
+![](Screenshots/8120_collapse.png)
+
+---
+### 2025-08-26 - Improvement: Groovebox 8120 Collapse state and "Safe Append" (The safe creation of 8 instruments + 9th instrument which is the "Groovebox ends here", and the safe creation of 8 new tracks to the beginning) are in Paketti Preferences now. So if you've got a track on-going, you can just slam the Groovebox 8120 onto it and continue on your merry way.
+
+---
+### 2025-08-26 - Feature: Clear Unused Patterns - this will clear all patterns that are not on the Pattern Sequence.
+
+---
