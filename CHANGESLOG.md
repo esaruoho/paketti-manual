@@ -10047,3 +10047,6 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ### 2025-08-26 - Feature: Clear Unused Patterns - this will clear all patterns that are not on the Pattern Sequence.
 
 ---
+### 2025-08-26 - Feature: Experimental Fill - this Dialog allows you to fill the selection with certain content decided by you by modifying the Dialog settings.
+
+---
