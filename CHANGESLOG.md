@@ -10075,3 +10075,10 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ---
 ### 2025-08-27 - Improvement: MIDI Populator dialog will now inform you as to what specifically the rows / dropdowns are for.
 ![](Screenshots/midipop_header.png)
+
+---
+### 2025-08-27 - Improvement: Polyend Buddy: Save PTI + Save WAV + RX2->PTI will now correctly prompt for a place to save to, if device not connected and not on USB Storage Mode.
+
+---
+### 2025-08-27 - Load RingMod Instrument & Load RingMod Legacy Instrument - these are cheap and cheerful "starters" with keytracker going to RingMod (and DC Offset + Mono devices available but disabled, and parallel compression + cutoff/resonance macro knobs)
+![](Screenshots/ringmod_placeholders.png)
