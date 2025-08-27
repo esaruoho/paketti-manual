@@ -10050,5 +10050,28 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ### 2025-08-26 - Feature: Paketti Fill - this Dialog allows you to fill the selection with certain content decided by you by modifying the Dialog settings.
 ![](Screenshots/pakettifill.png)
 
+---
+
+### 2025-08-27 - Improvement: Paketti Fill now correctly maps the FromSample to ToSample sliders to Slices if there's a sliced sample - and the naming convention is Slice01 to SliceXX. The Min/Max Effect Column sliders are enabled by default, and are used when hitting any Effect from the Effect Dropdown Menu. Panning, Delay, Volume column writing has been enabled for Effect.. And Events is no longer auto-set to 50 when Step Length is, say, 4 - this used to require repetitive user intervention to fix the situation.
 
 ---
+### 2025-08-27 - Improvement: Paketti Stacker "Follow Pattern" button will now move you to the Pattern Editor - if Follow Pattern is on, without toggling Follow Pattern off.
+
+---
+### 2025-08-27 - Improvement: Paketti Stacker the current Instrument Pitch Transpose will be read and the correct Pitch Switch in the dialog will be set (so if you're at +24 Transpose, then +24 Transpose button will be selected.)
+
+---
+### 2025-08-27 - Improvement: Paketti Stacker: When Stacking a Sliced sample, the original sample.name will be used in addition to "Slice 01" for better communication.
+
+---
+### 2025-08-27 - Improvement: Launch App Selection "Send Selected Sample" & "Send Selected Sample Region" now use a valid and informative filename. Such as `PERC WAV [2025-05-14 221922]_16beats_slice25-tmpSave.wav`
+
+---
+### 2025-08-27 - Improvement: Groovebox 8120's Global NNA "Cut" will now set _all_ Instrument Samples to "Cut".
+
+---
+### 2025-08-27 - Improvement: Single Cycle Waveform Writer will now correctly update the Harmonic Drawbars if we're dealing with a Harmonics sample.
+
+---
+### 2025-08-27 - Improvement: MIDI Populator dialog will now inform you as to what specifically the rows / dropdowns are for.
+![](Screenshots/midipop_header.png)
