@@ -10082,3 +10082,33 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ---
 ### 2025-08-27 - Load RingMod Instrument & Load RingMod Legacy Instrument - these are cheap and cheerful "starters" with keytracker going to RingMod (and DC Offset + Mono devices available but disabled, and parallel compression + cutoff/resonance macro knobs)
 ![](Screenshots/ringmod_placeholders.png)
+
+---
+### 2025-08-28 - Improvement: Paketti Steppers dialog will cleanly remove it's own notifiers by checking if they exist first before removing, instead of erroring out.
+
+---
+### 2025-08-28 - Improvement: Paketti Groovebox 8120: If clicking on a Step count button/"playhead" - selects the Instrument Track + Instrument.
+
+---
+### 2025-08-28 - Improvement: Paketti Stacker - if already in Pattern Editor and pressing Follow Pattern and Follow Pattern is On, then turn Follow Pattern off.
+
+---
+### 2025-08-28 - Improvement: Capture Last Take now correctly writes note offs, and correctly fits slots to Pattern again.
+
+---
+### 2025-08-28 - Improvement: Paketti Steppers Offset Slider will now reset to the middle when you let go, after moving the Offset of the selected Stepper.
+
+---
+### 2025-08-28 - Improvement: Paketti Groovebox 8120: Clicking on Automation on a different row will select the previously selected Automation envelope and create it from the macro knob state. But, if nothing is selected, then Pitchbend is created at 0.5 value.
+
+---
+### 2025-08-28 - Improvement: Paketti MIDI Populator will now correctly inject the correct type of Send device ("Keep Original" + "Send Volume at -INF")
+
+---
+### 2025-08-28 - Improvement: Paketti MIDI Populator now has a setting in Paketti Preferences for deciding if the Send or Multiband Send device is loaded when user requests Sends.
+
+---
+### 2025-08-28 - Improvement: Selected Track Dev (MIDI Mappings) will now 1) correctly expose the tweaked parameter on the Mixer, and, if device is not loaded, then load the device.
+
+---
+### 2025-08-28 - Improvement: 
