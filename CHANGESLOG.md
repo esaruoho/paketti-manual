@@ -7701,213 +7701,213 @@ Improvement: Selection in Pattern Matrix to Group now works as expected.
 ---
 ### 2025-03-22 - Feature: Fill Empty Sample Slots (Randomized Folder)
 This will read the current instrument's empty note ranges and fill them with randomly selected samples - prompting the user for a folder.
-Before/After:
-![](Screenshots/fill_empty_sample_slots_before.png)
-![](Screenshots/fill_empty_sample_slots_after.png)
-
----
-### 2025-03-22 - Improvement: Delete Unused Samples
-will now reliably delete the correct amount of unused samples and not wreck the sample mapping order.
-
----
-### 2025-03-22 - esaruoho
-Improvement: Record+Follow Toggle will now automatically detect if you're not-in Pattern Editor, and send you to Pattern Editor with Record = On and Follow = On.
-
----
-### 2025-03-22 - esaruoho
-Feature: Flip Device 1&2 On/Off - if Device1=On, Device2=Off, then it'll flip their active state. If both devices are on, Dev2 will be flipped Off. If both devices are off, Dev1, will be flipped On.
-
----
-### 2025-03-23 - esaruoho
-Improvement: Flip Gainers A/B shortcut
-This will simply switch Gainer A to -INF and Gainer B to 0.0dB - and if run again, it'll switch B to -INF and A to 0.0dB.
-So no longer will your Gainer devices hit maximum volume (too loud).
-
----
-### 2025-03-23 - esaruoho
-Improvement: Gainer Crossfade A/B MidiMapping now also maps between -INF and 0.0dB, instead of -INF + max.
-
----
-### 2025-03-23 - esaruoho
-Improvement: Fill Empty Sample Slots (Randomized Folder) now available as a shortcut too.
-
----
-### 2025-03-23 - Improvement: Replicate Note Column at Cursor added
-![](Screenshots/replicate_note_column.png)
-
----
-### 2025-03-24 - esaruoho
-Improvement: Added "Delete Unused Samples..." to Sample Navigator + Sample Mappings.
-
----
-### 2025-03-25 - esaruoho
-Improvement: Organized Sample Modulation Matrix menu entries to include PitchStepper devices organized in a better way.
-![](Screenshots/sample_modulation_matrix_menu_entry_improvements.png)
-
----
-### 2025-03-26 - Feature: Paketti Preferences setting for Load Device First or Last
-(Closes https://github.com/esaruoho/paketti/issues/670)
-![](Screenshots/PakettiLoaderFirstOrLast.png)
-
----
-### 2025-03-26 - esaruoho
-Feature: Snapshot Device Parameters to Automation
-Feature: FX Column Device Parameter Automation to Automation
-Improvement: Automation Format settings for FX Column + Snapshot, Lines, Points, Curves.
-![](Screenshots/Automation_Points_Lines_Curves_Writing.png)
-Improvement: Automation Wipe after Switch setting: Keep / Clear
-![](Screenshots/automationwipe-or-keep.png)
-<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/ab7e6b01f1744212926fe3ac5b215800?sid=4202c434-d528-47e6-92df-db8933efc853" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
----
-### 2025-03-27 - esaruoho
-Feature: Volume Interpolation Looper dialog
-(Closes [https://github.com/esaruoho/paketti/issues/494](https://github.com/esaruoho/paketti/issues/494 "https://github.com/esaruoho/paketti/issues/494"))
-
-![](Screenshots/volume_interpolation_looper_dialog.png)
-![](Screenshots/volume_interpolation_looper_dialog2.png)
-
----
-### 2025-03-27 - esaruoho
-Improvement: Volume Interpolation Looper is now Value Interpolation Looper - controlling Volume, Panning and Delay.
-![](Screenshots/value_interpolation_looper_dialog.png)
-
----
-### 2025-03-27 - esaruoho
-Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapping to Activate, Release to Deactivate for Native Devices
-(Starts https://github.com/esaruoho/paketti/issues/535)
-
----
-### 2025-03-28 - esaruoho
-Feature: Paketti Fuzzy Search Track
-This lets you search for a trackname or a snippet of a trackname, and in case of singular result, it gets selected, and in case of more than one result, use cursor keys + enter to select.
-![](gif/fuzzy_search_names_v354.gif)
-
----
-### 2025-03-28 - esaruoho
-Improvement: Paketti Groovebox 8120 will now correctly initialize the correct amount of tracks (and no longer, f.ex., sends, if you're not on track1), will name them accordingly (8120_01 to 8120_02), and the tracks will be collapsed.
-![](Screenshots/8120_track_creation_rename.png)
-
----
-### 2025-03-28 - esaruoho
-Improvement: Paketti Groovebox 8120 "Random" button will now also update the Sample Selection Slider - thus easier to continue and control.
-Improvement: "Fill Empty Steps" percentage will no longer resize the Dialog window.
-Improvement: Paketti Groovebox 8120: Output Delay, Random Fill, Probability, Sample Selection mini-arrows left and right on Sliders will now add +1 or -1, thus working as expected.
-Improvement: Added "RandomLoad" for each part, which will prompt the user for a folder, load 120 random samples from the folder and all it's subfolders.
-Improvement: Global Groove percentages are now listed with Bold & Strong font. Same for "Fill Empty Steps"
-Improvement: Heavily optimized Global Step Count modification so the update is much faster. Also added 24, 32, 48, 64 as buttons.
-Improvement: Optimized "Random Gate", "Randomize All" so they run faster.
-Improvement: Renamed "Show Automation" to "Automation"
-Improvement: Added "Macros" for taking you to Sample Editor to view Macros
-Improvement: StepCount maximum is now 512. So 16 steps will only be played once in a 512 row pattern.
-Improvement: Added 128, 192, 256, 384, 512 buttons for setting Global StepCounts
-Improvement: Random Gate will no longer fill the same steps for beat triggering AND probability - instead separated.
-
----
-### 2025-03-29 - esaruoho
-Improvement: Impulse Tracker CTRL-N Dialog will now correctly close, if triggered again while dialog is open.
-
----
-### 2025-03-29 - esaruoho
-Improvement: 8120: Added "Reset Output Delay" which resets all the Output Delays.
-~~Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.~~
-Improvement: 8120: Moved "Random All" / "Randomize All" / "Reverse All" / "Randomize all Yxx" / "Reset Output Delay" to their own separate row.
-Improvement: 8120: Added some spacing between all parts, for better readability. Removed "Print to Pattern" for readability, since nobody uses it :)
-Improvement: 8120: If you're already viewing an Automation Frame, opening the Groovebox no longer kicks you to 1st track and to "some other automation".
-Improvement: 8120: When clicking on Automation, immediately takes you to Pitchbend automation.
-Improvement: 8120: When clicking on Macros, focuses the correct instrument and correct sample.
-![](Screenshots/8120_gui.png)
-
----
-### 2025-03-29 - esaruoho
-Improvement: Tweaked Valhalla VintageVerb Reverb Dry/Wet to be 30.4% instead of 47.4%.
-
----
-### 2025-03-29 - esaruoho
-Improvement: Moved "Show" right next to Automation & Macros, for easier discoverability.
-Improvement: Merged "Show" and "Macros" to "Sample" for better discoverability.
-![](Screenshots/8120_gui_improv.png)
-
----
-### 2025-03-30 - esaruoho
-Improvement: 8120: Sequential Load will let you select max 120 samples per part, manually, instead of Randomly.
-Improvement: 8120: Random & Slider for selecting sample will now select the last sample instead of only the second last.
-Improvement: 8120: Sample Slider will now correctly select the 120th sample too
-Improvement: 8120: Upon opening the Dialog, the Sample Slider will be correctly set to the correct sample.
-Improvement: 8120: Global Groove Control Sliders will now correctly set 99% to 99% in Global Groove settings in the song, instead of 99% = 100%.
-![](Screenshots/8120_sequential_load.png)
-
----
-### 2025-03-30 - esaruoho
-Improvement: 8120: Tweaked the interface once more - reintroduced the missing global steps controls and made sure there is no extra spacer at the end of the interface.
-![](Screenshots/8120_gui_tweak2.png)
-
----
-### 2025-03-30 - esaruoho
-Improvement: Modified "Record+Follow Toggle" so that if playback is on, and follow pattern is on, pressing the shortcut will turn editmode back on.
-
----
-### 2025-03-31 - esaruoho
-Improvement: 8120: When clicking on Sample, the correct Track is selected.
-Improvement: 8120: When changing Stepcounts, the track title is modified - and then, the titles are used to fetch the Stepcounts when opening the dialog. This saves them in the best possible way (simplest way, too)
-Improvement: 8120: When changing a Sample (Slider or Valuebox), the correct Track is selected.
-![](Screenshots/8120_stepcount.png)
-
----
-### 2025-03-31 - esaruoho
-Improvement: Added "Set All Beatsync values for Instrument" & renamed "Set Beatsync Value for Selected Sample"
-
----
-### 2025-03-31 - esaruoho
-Improvement: "Random 12" will now result in an Instrument named "12 Random Samples"
-
----
-### 2025-03-31 - esaruoho
-Improvement: Moved certain WIP/Experimental tools under the Xperimental/Work in Progress -subfolder.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Paketti TimeStretch "Reverse" button no longer overwrites notes, instead only flips the Sxx commands. Even at 512 rows.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Selected Track Dev MidiMappings no longer force the Middle Frame to Pattern Editor.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Retitled the Wipe&Slice numbers so they are 002-256 instead of 2-256. You will need to re-bind your keybinds.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Fixed Track Dater & Titler to correctly open from Dialog.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Added Doofer to Selected Track Dev MidiMappings.
-![](gif/doofer_macros.gif)
-
----
-### 2025-03-31 - esaruoho
-Improvement: EQ10 and Mixer EQ are now automatically set to -9dB to 9dB visualization.
-
----
-### 2025-03-31 - esaruoho
-Improvement: Menu Entries for Transpose Shift -12 to +12 for All Instruments or Current Instrument are now better organized for easier discoverability:
-![](Screenshots/transpose_shift_menu_fix.png)
-
----
-### 2025-03-31 - Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
-
----
-### 2025-03-31 - Improvement: Paketti Pattern Effect Command CheatSheet will no longer error out if you try to randomize values above 80 on Volume and Panning columns.
-
----
-### 2025-03-31 - Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 1...127 knob to control which row of the pattern you are on.
-![](Screenshots/midi_patternrowposition.png)
-
----
-### 2025-03-31 - esaruoho
-Improvement: Paketti Gater will now resume Lxx volume of Selected Track to "Regular volume" if you switch from L00 to C00.
+	Before/After:
+	![](Screenshots/fill_empty_sample_slots_before.png)
+	![](Screenshots/fill_empty_sample_slots_after.png)
+	
+	---
+	### 2025-03-22 - Improvement: Delete Unused Samples
+	will now reliably delete the correct amount of unused samples and not wreck the sample mapping order.
+	
+	---
+	### 2025-03-22 - esaruoho
+	Improvement: Record+Follow Toggle will now automatically detect if you're not-in Pattern Editor, and send you to Pattern Editor with Record = On and Follow = On.
+	
+	---
+	### 2025-03-22 - esaruoho
+	Feature: Flip Device 1&2 On/Off - if Device1=On, Device2=Off, then it'll flip their active state. If both devices are on, Dev2 will be flipped Off. If both devices are off, Dev1, will be flipped On.
+	
+	---
+	### 2025-03-23 - esaruoho
+	Improvement: Flip Gainers A/B shortcut
+	This will simply switch Gainer A to -INF and Gainer B to 0.0dB - and if run again, it'll switch B to -INF and A to 0.0dB.
+	So no longer will your Gainer devices hit maximum volume (too loud).
+	
+	---
+	### 2025-03-23 - esaruoho
+	Improvement: Gainer Crossfade A/B MidiMapping now also maps between -INF and 0.0dB, instead of -INF + max.
+	
+	---
+	### 2025-03-23 - esaruoho
+	Improvement: Fill Empty Sample Slots (Randomized Folder) now available as a shortcut too.
+	
+	---
+	### 2025-03-23 - Improvement: Replicate Note Column at Cursor added
+	![](Screenshots/replicate_note_column.png)
+	
+	---
+	### 2025-03-24 - esaruoho
+	Improvement: Added "Delete Unused Samples..." to Sample Navigator + Sample Mappings.
+	
+	---
+	### 2025-03-25 - esaruoho
+	Improvement: Organized Sample Modulation Matrix menu entries to include PitchStepper devices organized in a better way.
+	![](Screenshots/sample_modulation_matrix_menu_entry_improvements.png)
+	
+	---
+	### 2025-03-26 - Feature: Paketti Preferences setting for Load Device First or Last
+	(Closes https://github.com/esaruoho/paketti/issues/670)
+	![](Screenshots/PakettiLoaderFirstOrLast.png)
+	
+	---
+	### 2025-03-26 - esaruoho
+	Feature: Snapshot Device Parameters to Automation
+	Feature: FX Column Device Parameter Automation to Automation
+	Improvement: Automation Format settings for FX Column + Snapshot, Lines, Points, Curves.
+	![](Screenshots/Automation_Points_Lines_Curves_Writing.png)
+	Improvement: Automation Wipe after Switch setting: Keep / Clear
+	![](Screenshots/automationwipe-or-keep.png)
+	<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/ab7e6b01f1744212926fe3ac5b215800?sid=4202c434-d528-47e6-92df-db8933efc853" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+	
+	---
+	### 2025-03-27 - esaruoho
+	Feature: Volume Interpolation Looper dialog
+	(Closes [https://github.com/esaruoho/paketti/issues/494](https://github.com/esaruoho/paketti/issues/494 "https://github.com/esaruoho/paketti/issues/494"))
+	
+	![](Screenshots/volume_interpolation_looper_dialog.png)
+	![](Screenshots/volume_interpolation_looper_dialog2.png)
+	
+	---
+	### 2025-03-27 - esaruoho
+	Improvement: Volume Interpolation Looper is now Value Interpolation Looper - controlling Volume, Panning and Delay.
+	![](Screenshots/value_interpolation_looper_dialog.png)
+	
+	---
+	### 2025-03-27 - esaruoho
+	Feature: Toggle Native Devices On/Off (Shortcuts / MidiMappings) & Hold MidiMapping to Activate, Release to Deactivate for Native Devices
+	(Starts https://github.com/esaruoho/paketti/issues/535)
+	
+	---
+	### 2025-03-28 - esaruoho
+	Feature: Paketti Fuzzy Search Track
+	This lets you search for a trackname or a snippet of a trackname, and in case of singular result, it gets selected, and in case of more than one result, use cursor keys + enter to select.
+	![](gif/fuzzy_search_names_v354.gif)
+	
+	---
+	### 2025-03-28 - esaruoho
+	Improvement: Paketti Groovebox 8120 will now correctly initialize the correct amount of tracks (and no longer, f.ex., sends, if you're not on track1), will name them accordingly (8120_01 to 8120_02), and the tracks will be collapsed.
+	![](Screenshots/8120_track_creation_rename.png)
+	
+	---
+	### 2025-03-28 - esaruoho
+	Improvement: Paketti Groovebox 8120 "Random" button will now also update the Sample Selection Slider - thus easier to continue and control.
+	Improvement: "Fill Empty Steps" percentage will no longer resize the Dialog window.
+	Improvement: Paketti Groovebox 8120: Output Delay, Random Fill, Probability, Sample Selection mini-arrows left and right on Sliders will now add +1 or -1, thus working as expected.
+	Improvement: Added "RandomLoad" for each part, which will prompt the user for a folder, load 120 random samples from the folder and all it's subfolders.
+	Improvement: Global Groove percentages are now listed with Bold & Strong font. Same for "Fill Empty Steps"
+	Improvement: Heavily optimized Global Step Count modification so the update is much faster. Also added 24, 32, 48, 64 as buttons.
+	Improvement: Optimized "Random Gate", "Randomize All" so they run faster.
+	Improvement: Renamed "Show Automation" to "Automation"
+	Improvement: Added "Macros" for taking you to Sample Editor to view Macros
+	Improvement: StepCount maximum is now 512. So 16 steps will only be played once in a 512 row pattern.
+	Improvement: Added 128, 192, 256, 384, 512 buttons for setting Global StepCounts
+	Improvement: Random Gate will no longer fill the same steps for beat triggering AND probability - instead separated.
+	
+	---
+	### 2025-03-29 - esaruoho
+	Improvement: Impulse Tracker CTRL-N Dialog will now correctly close, if triggered again while dialog is open.
+	
+	---
+	### 2025-03-29 - esaruoho
+	Improvement: 8120: Added "Reset Output Delay" which resets all the Output Delays.
+	~~Improvement: 8120: StepCount is now stored when closing the dialog, and re-fetched when opening the dialog.~~
+	Improvement: 8120: Moved "Random All" / "Randomize All" / "Reverse All" / "Randomize all Yxx" / "Reset Output Delay" to their own separate row.
+	Improvement: 8120: Added some spacing between all parts, for better readability. Removed "Print to Pattern" for readability, since nobody uses it :)
+	Improvement: 8120: If you're already viewing an Automation Frame, opening the Groovebox no longer kicks you to 1st track and to "some other automation".
+	Improvement: 8120: When clicking on Automation, immediately takes you to Pitchbend automation.
+	Improvement: 8120: When clicking on Macros, focuses the correct instrument and correct sample.
+	![](Screenshots/8120_gui.png)
+	
+	---
+	### 2025-03-29 - esaruoho
+	Improvement: Tweaked Valhalla VintageVerb Reverb Dry/Wet to be 30.4% instead of 47.4%.
+	
+	---
+	### 2025-03-29 - esaruoho
+	Improvement: Moved "Show" right next to Automation & Macros, for easier discoverability.
+	Improvement: Merged "Show" and "Macros" to "Sample" for better discoverability.
+	![](Screenshots/8120_gui_improv.png)
+	
+	---
+	### 2025-03-30 - esaruoho
+	Improvement: 8120: Sequential Load will let you select max 120 samples per part, manually, instead of Randomly.
+	Improvement: 8120: Random & Slider for selecting sample will now select the last sample instead of only the second last.
+	Improvement: 8120: Sample Slider will now correctly select the 120th sample too
+	Improvement: 8120: Upon opening the Dialog, the Sample Slider will be correctly set to the correct sample.
+	Improvement: 8120: Global Groove Control Sliders will now correctly set 99% to 99% in Global Groove settings in the song, instead of 99% = 100%.
+	![](Screenshots/8120_sequential_load.png)
+	
+	---
+	### 2025-03-30 - esaruoho
+	Improvement: 8120: Tweaked the interface once more - reintroduced the missing global steps controls and made sure there is no extra spacer at the end of the interface.
+	![](Screenshots/8120_gui_tweak2.png)
+	
+	---
+	### 2025-03-30 - esaruoho
+	Improvement: Modified "Record+Follow Toggle" so that if playback is on, and follow pattern is on, pressing the shortcut will turn editmode back on.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: 8120: When clicking on Sample, the correct Track is selected.
+	Improvement: 8120: When changing Stepcounts, the track title is modified - and then, the titles are used to fetch the Stepcounts when opening the dialog. This saves them in the best possible way (simplest way, too)
+	Improvement: 8120: When changing a Sample (Slider or Valuebox), the correct Track is selected.
+	![](Screenshots/8120_stepcount.png)
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Added "Set All Beatsync values for Instrument" & renamed "Set Beatsync Value for Selected Sample"
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: "Random 12" will now result in an Instrument named "12 Random Samples"
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Moved certain WIP/Experimental tools under the Xperimental/Work in Progress -subfolder.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Paketti TimeStretch "Reverse" button no longer overwrites notes, instead only flips the Sxx commands. Even at 512 rows.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Selected Track Dev MidiMappings no longer force the Middle Frame to Pattern Editor.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Retitled the Wipe&Slice numbers so they are 002-256 instead of 2-256. You will need to re-bind your keybinds.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Fixed Track Dater & Titler to correctly open from Dialog.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Added Doofer to Selected Track Dev MidiMappings.
+	![](gif/doofer_macros.gif)
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: EQ10 and Mixer EQ are now automatically set to -9dB to 9dB visualization.
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Menu Entries for Transpose Shift -12 to +12 for All Instruments or Current Instrument are now better organized for easier discoverability:
+	![](Screenshots/transpose_shift_menu_fix.png)
+	
+	---
+	### 2025-03-31 - Improvement: Toggle Note Offs in 1) All Visible Column 2) All Tracks will no longer overwrite notes that are on the row.
+	
+	---
+	### 2025-03-31 - Improvement: Paketti Pattern Effect Command CheatSheet will no longer error out if you try to randomize values above 80 on Volume and Panning columns.
+	
+	---
+	### 2025-03-31 - Feature: Midi Change Pattern Row Position - this MidiMapping will let you use a 1...127 knob to control which row of the pattern you are on.
+	![](Screenshots/midi_patternrowposition.png)
+	
+	---
+	### 2025-03-31 - esaruoho
+	Improvement: Paketti Gater will now resume Lxx volume of Selected Track to "Regular volume" if you switch from L00 to C00.
 
 ---
 ### 2025-04-01 - esaruoho
@@ -10111,4 +10111,16 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ### 2025-08-28 - Improvement: Selected Track Dev (MIDI Mappings) will now 1) correctly expose the tweaked parameter on the Mixer, and, if device is not loaded, then load the device.
 
 ---
-### 2025-08-28 - Improvement: 
+### 2025-08-29 - Improvement:  Polyend Buddy RX2->PTI button has been improved to also support REX & ITI - so it becomes a RX2/REX/ITI -> PTI button.
+
+---
+### 2025-08-29 - Improvement: CCizer: Added Polyend Performance Mode & Polyend Synth Mode textfiles for quickly setting up Midi Control Devices inside Renoise for automating or controlling these.
+![](Screenshots/ccizer_polyend01.png)
+![](Screenshots/ccizer_polyend02.png)
+![](Screenshots/ccizer_polyend03.png)
+
+---
+### 2025-08-29 - Improvement: Strip Silence & Move Beginning Silence to End now use Process Slicing so no further timeouts due to long processes.
+
+---
+### 2025-08-29 - 
