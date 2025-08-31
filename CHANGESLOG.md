@@ -10123,4 +10123,18 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ### 2025-08-29 - Improvement: Strip Silence & Move Beginning Silence to End now use Process Slicing so no further timeouts due to long processes.
 
 ---
-### 2025-08-29 - 
+### 2025-08-30 - Improvement: When the Parameter Editor is open, pressing space will open up the External Editor. Another space press will hide it.
+
+---
+### 2025-08-30 - Improvement: When Parameter Editor has closed in Automation Sync Mode, a new opening of a Parameter Editor would keep writing to Automation - now it correctly resets.
+
+---
+### 2025-08-30 - Improvement: Paketti Fill will no longer "not write", if EditStep is 0. Will also correctly update EditStep setting when in Notes mode. Will also clear the note column if typing Euclidian notes + effects. Will not clear Note Columns if typing "FX Only".
+
+---
+
+### 2025-08-31 - Improvement: Normalize Selected Sample / Slice will now read the sample region selection and normalize only the selected channel selection, or, if nothing selected, the whole sample or slice.
+
+
+---
+### 2025-08-31 - Feature: Samp
