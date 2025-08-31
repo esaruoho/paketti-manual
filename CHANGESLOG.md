@@ -10137,4 +10137,5 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 
 ---
-### 2025-08-31 - Feature: Samp
+### 2025-08-31 - Feature: Sample Effect Generator - this is a soft take / impression of the Anvil Studio: Audio Lab feature which allows you to draw a waveform, draw a pitch envelope and a volume envelope. Press enter, and you've got a sample.
+![](Screenshots/pakettisampleeffectgenerator.png)
