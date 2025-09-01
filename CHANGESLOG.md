@@ -10139,3 +10139,6 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ---
 ### 2025-08-31 - Feature: Sample Effect Generator - this is a soft take / impression of the Anvil Studio: Audio Lab feature which allows you to draw a waveform, draw a pitch envelope and a volume envelope. Press enter, and you've got a sample.
 ![](Screenshots/pakettisampleeffectgenerator.png)
+
+---
+### 2025-09-01 - Improvement: Sample Effect Generator: Added more waveforms (2 octave steps, 1 octave steps), tweaked the 2X / 1/2X to be less buggy, improved the interface, added Invert button for inverting, added a Live Audition mode, so basically, draw and let go of drawing and it is rendered. Added Paketti Loader Settings (Interpolation, Oversampling, Autofade, other settings).. Added Random Steps for pitch loops, tweaked the Fade out to be less clicky. Also tunes the sample to a440hz so it'll, if using Octave Steps, for instance, match with a plugin played on the same instrument. Also added Process Slicing to the 25 Random samples, and made it less random (not random,random,random for 25 samples - instead, randomly pick something from the dropdown menus for Waveform, Pitch and Volume.)
