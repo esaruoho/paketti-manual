@@ -10153,3 +10153,9 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ![](Screenshots/parametereditor_randomizebyeditstep.png)
 
+---
+### 2025-09-02 - Feature: 0C00 Note Cut Toggle - this shortcut will insert a Note Off 0C00 command to the selected Effect Column, or, if on Note Column, it'll appear on the first Effect Column.
+![](notecut_shortcut.gif)
+
+
+---
