@@ -10159,3 +10159,12 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 
 ---
+### 2025-09-02 - Improvement: Paketti Theme Selector Save Favorites will save "onlynamewritten" as "onlynamewritten.xml" but if you save it as "textfile.txt" it'll save it as "textfile.txt". Just a minor improvement.
+
+---
+### 2025-09-02 - Feature: Paketti Sample Offset / Slice Step Sequencer
+This allows you to pick your favorite 8 slices, or the 8 sample offset values of your choice, and start stepsequencing with them. There's also mute / pitch control for each slice - the pitch is disabled if you hit Sample Offset. And re-enabled when you move back to Slice. It will flood the pattern full (so 16 steps? 512 row pattern? Fills it all). Also you can offset, just like with Paketti Gater + Paketti Groovebox 8120 + Paketti VolDelayPan - them so they keep going against eachother causing all kinds of polyrhythmic fun.
+![](gif/sampleoffset_slice_stepseq.png)
+
+---
+### 2025-09-02 - Improvement: 0C00 to All tracks, 0C00 to Master only (current row)
