@@ -751,15 +751,12 @@ Improvement: There's now a connection between 0G01 loader and Paketti PitchBend 
 closes (https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191)[https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/191]
 
 ---
-### 2024-07-10 - esaruoho
-
-Improvement: Export / Import Convolver IR file feature now offers a GUI for also importing to convolver or exporting from convolver, and the gui allows for using shortcuts while open, so you can select a new sample to be imported to a Convolver of your choice. it also will update when you select a different sample, it allows you to add a Convolver to the start of the Track DSP Chain or the end of it, and you can import or export from any of them.
+### 2024-07-10 - Improvement: Export / Import Convolver IR
+file feature now offers a GUI for also importing to convolver or exporting from convolver, and the gui allows for using shortcuts while open, so you can select a new sample to be imported to a Convolver of your choice. it also will update when you select a different sample, it allows you to add a Convolver to the start of the Track DSP Chain or the end of it, and you can import or export from any of them.
 ![](attachments/2024-07-10_Screenshot_2024-07-10_at_18.25.14.png)
 
 ---
-### 2024-07-10 - esaruoho
-
-Feature: Set Master Track Output Routings 00...32 - this changes the Master Track Output.
+### 2024-07-10 - Feature: Set Master Track Output Routings 00...32 - this changes the Master Track Output.
 
 ![](attachments/2024-07-10_Screenshot_2024-07-10_at_22.36.25.png)
 
@@ -8092,20 +8089,16 @@ Improvement: eSpeak will no longer error out if path to it has spaces in it (loo
 (Closes https://github.com/esaruoho/paketti/issues/825)
 
 ---
-### 2025-04-13 - esaruoho
-Improvement: You can now drag a textfile to Renoise, and eSpeak will render it to a sample.
+### 2025-04-13 - Improvement: You can now drag a textfile to Renoise, and eSpeak will render it to a sample.
 
 ---
-### 2025-04-13 - esaruoho
-Improvement: eSpeak now follows the same taktik process slicer, so no longer asks you to continue the work or stop the work if "script becomes unresponsive" - instead keeps doing it until finished without erroring out.
+### 2025-04-13 - Improvement: eSpeak now follows the same taktik process slicer, so no longer asks you to continue the work or stop the work if "script becomes unresponsive" - instead keeps doing it until finished without erroring out.
 
 ---
-### 2025-04-13 - esaruoho
-Improvement: Normalize Selected Slice or Sample now uses process slicer for better functionality and faster responsetimes.
+### 2025-04-13 - Improvement: Normalize Selected Slice or Sample now uses process slicer for better functionality and faster responsetimes.
 
 ---
-### 2025-04-14 - esaruoho
-Improvement: eSpeak now cleanly deletes the "Placeholder sample" sampleslot from the Instrument.
+### 2025-04-14 - Improvement: eSpeak now cleanly deletes the "Placeholder sample" sampleslot from the Instrument.
 
 ---
 ### 2025-04-14 - Feature: Midi Change Pattern Row Position Direct - this one will not try to fit the pattern length to the knob, instead, if you have a 64 row pattern, only 0..64 will be read, etc.
@@ -10062,28 +10055,34 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ---
 
-### 2025-08-31 - Improvement: Normalize Selected Sample / Slice will now read the sample region selection and normalize only the selected channel selection, or, if nothing selected, the whole sample or slice.
+### 2025-08-31 - Improvement: Normalize Selected Sample / Slice
+will now read the sample region selection and normalize only the selected channel selection, or, if nothing selected, the whole sample or slice.
 
 
 ---
-### 2025-08-31 - Feature: Sample Effect Generator - this is a soft take / impression of the Anvil Studio: Audio Lab feature which allows you to draw a waveform, draw a pitch envelope and a volume envelope. Press enter, and you've got a sample.
+### 2025-08-31 - Feature: Sample Effect Generator
+This is a soft take / impression of the Anvil Studio: Audio Lab feature which allows you to draw a waveform, draw a pitch envelope and a volume envelope. Press enter, and you've got a sample.
 ![](Screenshots/pakettisampleeffectgenerator.png)
 
 ---
-### 2025-09-01 - Improvement: Sample Effect Generator: Added more waveforms (2 octave steps, 1 octave steps), tweaked the 2X / 1/2X to be less buggy, improved the interface, added Invert button for inverting, added a Live Audition mode, so basically, draw and let go of drawing and it is rendered. Added Paketti Loader Settings (Interpolation, Oversampling, Autofade, other settings).. Added Random Steps for pitch loops, tweaked the Fade out to be less clicky. Also tunes the sample to a440hz so it'll, if using Octave Steps, for instance, match with a plugin played on the same instrument. Also added Process Slicing to the 25 Random samples, and made it less random (not random,random,random for 25 samples - instead, randomly pick something from the dropdown menus for Waveform, Pitch and Volume.)
+### 2025-09-01 - Improvement: Sample Effect Generator
+Added more waveforms (2 octave steps, 1 octave steps), tweaked the 2X / 1/2X to be less buggy, improved the interface, added Invert button for inverting, added a Live Audition mode, so basically, draw and let go of drawing and it is rendered. Added Paketti Loader Settings (Interpolation, Oversampling, Autofade, other settings).. Added Random Steps for pitch loops, tweaked the Fade out to be less clicky. Also tunes the sample to a440hz so it'll, if using Octave Steps, for instance, match with a plugin played on the same instrument. Also added Process Slicing to the 25 Random samples, and made it less random (not random,random,random for 25 samples - instead, randomly pick something from the dropdown menus for Waveform, Pitch and Volume.)
 
 ---
-### 2025-09-01 - Improvement: EQ30: Randomize by EditStep - this will clear the current EQ30 automation across all envelopes, and Randomize by EditStep - and set the envelopes to Points so they don't interpolate, but instead step by EditStep.
+### 2025-09-01 - Improvement: EQ30: Randomize by EditStep
+This will clear the current EQ30 automation across all envelopes, and Randomize by EditStep - and set the envelopes to Points so they don't interpolate, but instead step by EditStep.
 
 ![](Screenshots/eq30randomizebyeditstep.png)
 
 ---
-### 2025-09-01 - Improvement: Parameter Editor: Randomize by EditStep. -this will clear the current Selected Device Automation Parameters, read EditStep and randomize Steps to all Parameters of the Device.
+### 2025-09-01 - Improvement: Parameter Editor: Randomize by EditStep. 
+This will clear the current Selected Device Automation Parameters, read EditStep and randomize Steps to all Parameters of the Device.
 
 ![](Screenshots/parametereditor_randomizebyeditstep.png)
 
 ---
-### 2025-09-02 - Feature: 0C00 Note Cut Toggle - this shortcut will insert a Note Off 0C00 command to the selected Effect Column, or, if on Note Column, it'll appear on the first Effect Column.
+### 2025-09-02 - Feature: 0C00 Note Cut Toggle
+This shortcut will insert a Note Off 0C00 command to the selected Effect Column, or, if on Note Column, it'll appear on the first Effect Column.
 ![](gif/notecut_shortcut.gif)
 
 
@@ -10099,3 +10098,16 @@ This allows you to pick your favorite 8 slices, or the 8 sample offset values of
 ### 2025-09-02 - Improvement: 0C00 to All tracks, 0C00 to Master only (current row)
 
 ---
+
+### 2025-09-03 - Improvement: Toggle Solo Tracks will now correctly unsolo the track even if it's within a Group.
+
+---
+### 2025-09-03 - Improvement: PlayerPro Transpose +12 -12 will now correctly transpose each and every note column in the selection.
+
+---
+### 2025-09-03 - Improvement: Paketti Sample Offset / Slice Step Sequencer
+When going from 16 steps to 32 steps, duplicate the content instead of forcing the user to re-do it.
+Switching from using Sample FX Column for ZZ04 for defining StepCount, to. using Note Column naming for defining StepCount.
+Maximum Slice was off by one (C#4 to A#4? - allowed picking B-4 which did nothing), fixed.
+Writing "16step or 32step view?" to first note column (32_32) would mean StepCount 32 and View 32 Steps upon Dialog opening
+Changing tracks will update the Dialog to that track's settings.
