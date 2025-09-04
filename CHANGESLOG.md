@@ -10118,3 +10118,9 @@ Changing tracks will update the Dialog to that track's settings.
 ---
 ### 2025-09-04 - Improvement: Paketti Sample Offset / Slice Step Sequencer
 Sample Editor will now show the Sample Offset you're modifying. Added +1 -1 Octave control for Sample Offset mode.
+
+-----
+### 2025-09-04 - Improvement: Paketti Sample Offset / Slice Step Sequencer
+When opening the dialog with a non-sliced sample, default to Sample Offset. When opening the dialog with a sliced sample, default to Slice mode.
+
+---
