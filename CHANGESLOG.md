@@ -10124,3 +10124,15 @@ Sample Editor will now show the Sample Offset you're modifying. Added +1 -1 Octa
 When opening the dialog with a non-sliced sample, default to Sample Offset. When opening the dialog with a sliced sample, default to Slice mode.
 
 ---
+### 2025-09-04 - Improvement: Distribute Samples to Individual Sample FX Chains now also does the same thing for Slices.
+![](split_slices_to_samplefxchains.png)
+
+---
+### 2025-09-04 - Improvement: Paketti Gater now correctly updates the Retrig Number to the one that was already on the track.
+
+---
+### 2025-09-04 - Improvement: Randomize Selected Automation Device Parameter or Parameters - should no longer error out in certain edgecases.
+
+---
+### 2025-09-04 - Improvement: Paketti Dynamic Views: Added configurations for detaching + reattaching Mixer View & Instrument Editor.
+![](gif/dynamicviews_detach.png)---
