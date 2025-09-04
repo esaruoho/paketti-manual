@@ -10111,3 +10111,10 @@ Switching from using Sample FX Column for ZZ04 for defining StepCount, to. using
 Maximum Slice was off by one (C#4 to A#4? - allowed picking B-4 which did nothing), fixed.
 Writing "16step or 32step view?" to first note column (32_32) would mean StepCount 32 and View 32 Steps upon Dialog opening
 Changing tracks will update the Dialog to that track's settings.
+
+---
+### 2025-09-04 - Improvement: Added Themes: Red Hack V1, Red Console V1, Level10, Level11, Level11 Bright, Level12.
+
+---
+### 2025-09-04 - Improvement: Paketti Sample Offset / Slice Step Sequencer
+Sample Editor will now show the Sample Offset you're modifying. Added +1 -1 Octave control for Sample Offset mode.
