@@ -10125,7 +10125,7 @@ When opening the dialog with a non-sliced sample, default to Sample Offset. When
 
 ---
 ### 2025-09-04 - Improvement: Distribute Samples to Individual Sample FX Chains now also does the same thing for Slices.
-![](split_slices_to_samplefxchains.png)
+![](gif/split_slices_to_samplefxchains.png)
 
 ---
 ### 2025-09-04 - Improvement: Paketti Gater now correctly updates the Retrig Number to the one that was already on the track.
@@ -10135,4 +10135,7 @@ When opening the dialog with a non-sliced sample, default to Sample Offset. When
 
 ---
 ### 2025-09-04 - Improvement: Paketti Dynamic Views: Added configurations for detaching + reattaching Mixer View & Instrument Editor.
-![](gif/dynamicviews_detach.png)---
+![](gif/dynamicviews_detach.png)
+
+---
+### 2025-09-05 - Improvement: Slice detection is now dynamic instead of hardcoded to c-4 c#4 onwards - the correct 8 first slices are automatically mapped to the rows when opening Sample Offset / Slice Step Sequencer.
