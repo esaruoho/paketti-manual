@@ -10147,11 +10147,12 @@ When opening the dialog with a non-sliced sample, default to Sample Offset. When
 ### 2025-09-06 - Feature: "Solo Tracks with Pattern Data" - if you're doing A/B comparisons while arranging a track, and don't want to manually mute the "0 pattern" content, just run it on the previous pattern sequencer pattern and then go to the "0 pattern" and unmute something, then use "Duplicate Pattern Above & Clear Muted Tracks" to keep soft-arranging.
 
 ---
-### 2025-09-06 - Improvement: Paketti Sample Offset / Slice Step Sequencer
+### 2025-09-07 - Improvement: Paketti Sample Offset / Slice Step Sequencer
 Selecting a row will now highlight that, just like with Groovebox 8120
 Selecting a row, while on the Sample Editor, will show the Slice you've selected, so you can easily edit the length of it with other Paketti shortcuts
 Selecting a row, while on the Sample Editor, while in Sample Offset mode, will dynamically show you where the Sample Offset starts the playback from.
 Duplicate Pattern will duplicate the current pattern to a new one and continue playback from that.
 Changing a pattern without changing the track, will result in the stepsequence being updated.
 Show Velocity in an extra area of the dialog.
-
+Velocity Draw 
+![](gif/slicestepseq_velocitydraw.png)
