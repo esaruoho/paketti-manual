@@ -10156,3 +10156,13 @@ Changing a pattern without changing the track, will result in the stepsequence b
 Show Velocity in an extra area of the dialog.
 Velocity Draw 
 ![](gif/slicestepseq_velocitydraw.png)
+
+---
+### 2025-09-08 - Improvement: YT-DLP will now work more stably with Linux - finding the right binary for yt-dlp instead of being hardcoded to macOS settings
+
+---
+### 2025-09-08 - Improvement: Paketti Function Search will now correctly launch Midi functions - instead of doing nothing.
+
+---
+
+
