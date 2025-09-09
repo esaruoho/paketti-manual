@@ -10164,5 +10164,23 @@ Velocity Draw
 ### 2025-09-08 - Improvement: Paketti Function Search will now correctly launch Midi functions - instead of doing nothing.
 
 ---
+### 2025-09-09 - Improvement: Added Paketti Preferences for hiding Parameter Editor content such as "Previous Track" / "Previous Device" / "Next Device" / "Next Track", A/B, Randomize, Automation Points, and for creating a 75% height version of the canvas and for half-size font.
 
+---
+### 2025-09-09 - Improvement: Same Half-size Font Parameter setting for EQ30
 
+---
+### 2025-09-09 - Improvement: Duplicate Track and Instrument will now correctly set the PostFX / PreFX volume and the visible mixer parameters for the duplicated devices.
+
+---
+### 2025-09-09 - Feature: Note Off Delay Nudge -1 +1 
+
+![](gif/note_off_delay_nudge.gif)
+
+---
+### 2025-09-09 - Feature: Wipe by EditStep
+![](Screenshots/wipebyeditstep.png)
+
+---
+### 2025-09-09 - Improvement: Paketti Dynamic Views now gives you the possibility of setting the Instrument Box Slot Size.
+![](Screenshots/dynamicviews_boxslotsize.png)
