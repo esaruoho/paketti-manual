@@ -10184,3 +10184,7 @@ Velocity Draw
 ---
 ### 2025-09-09 - Improvement: Paketti Dynamic Views now gives you the possibility of setting the Instrument Box Slot Size.
 ![](Screenshots/dynamicviews_boxslotsize.png)
+
+---
+### 2025-09-10 - Feature: Select Current Row
+![](Screenshots/selectcurrentrow.png)
