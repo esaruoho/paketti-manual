@@ -10188,3 +10188,9 @@ Velocity Draw
 ---
 ### 2025-09-10 - Feature: Select Current Row
 ![](Screenshots/selectcurrentrow.png)
+
+---
+### 2025-09-10 - Improvement: Parameter Editor will no longer error out, if there is no External Editor to be opened and user tries to open an External Editor.
+
+---
+### 2025-09-11 - Improvement: Isolate Selected Sample to New Instrument will now retain the Loop Start & End points.
