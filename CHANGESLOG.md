@@ -10194,3 +10194,7 @@ Velocity Draw
 
 ---
 ### 2025-09-11 - Improvement: Isolate Selected Sample to New Instrument will now retain the Loop Start & End points.
+
+---
+### 2025-09-13 - Improvement: Polyend Buddy interface tweaks for clarity
+![](Screenshot%202025-09-14%20at%200.13.22.png)---
