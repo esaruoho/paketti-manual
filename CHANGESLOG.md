@@ -10201,3 +10201,7 @@ Velocity Draw
 
 ---
 ### 2025-09-14 - Feature: Set All Automation Envelopes to Points/Lines/Curves
+
+---
+### 2025-09-14 - Feature: Pick & Move - this'll pick the current row content with the same shortcut that can later be used to print it to the selected line.
+![](gif/pickmove.gif)
