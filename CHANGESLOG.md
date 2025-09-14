@@ -10197,4 +10197,7 @@ Velocity Draw
 
 ---
 ### 2025-09-13 - Improvement: Polyend Buddy interface tweaks for clarity
-![](Screenshot%202025-09-14%20at%200.13.22.png)---
+![](gif/polyendbuddy_tweaks.png)
+
+---
+### 2025-09-14 - Feature: Set All Automation Envelopes to Points/Lines/Curves
