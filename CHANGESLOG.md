@@ -10219,3 +10219,4 @@ Velocity Draw
 ![](gif/ccizer_prophet8.png)
 
 ---
+### 2025-09-15 - Feature: Set Oversampling Enabled / Disabled Globally
