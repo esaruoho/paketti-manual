@@ -10219,4 +10219,13 @@ Velocity Draw
 ![](gif/ccizer_prophet8.png)
 
 ---
+### 2025-09-15 - Improvement: Added "al8" theme to Paketti Theme Selector
+
+---
 ### 2025-09-15 - Feature: Set Oversampling Enabled / Disabled Globally
+
+---
+### 2025-09-15 - Feature: PlayerPro / OpenMPT Linear Keyboard Layer - this will let you set your own preferred keys to start from, and advance in a linear fashion. Much like PlayerPro and OpenMPT already do. There's also a Fret mode.
+![](gif/linearkeyboard_fret.png)
+
+---
