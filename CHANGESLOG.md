@@ -9970,7 +9970,8 @@ This feature will import the samples, loop-points and keymappings, for now. More
 
 ---
 ### 2025-08-26 - Feature: Paketti Fill - this Dialog allows you to fill the selection with certain content decided by you by modifying the Dialog settings.
-![](Screenshots/pakettifill.png)
+![](Screenshots/pakettifill_better.png)
+
 
 ---
 
@@ -10092,7 +10093,7 @@ This shortcut will insert a Note Off 0C00 command to the selected Effect Column,
 ---
 ### 2025-09-02 - Feature: Paketti Sample Offset / Slice Step Sequencer
 This allows you to pick your favorite 8 slices, or the 8 sample offset values of your choice, and start stepsequencing with them. There's also mute / pitch control for each slice - the pitch is disabled if you hit Sample Offset. And re-enabled when you move back to Slice. It will flood the pattern full (so 16 steps? 512 row pattern? Fills it all). Also you can offset, just like with Paketti Gater + Paketti Groovebox 8120 + Paketti VolDelayPan - them so they keep going against eachother causing all kinds of polyrhythmic fun.
-![](gif/sampleoffset_slice_stepseq.png)
+![](Screenshots/sampleoffset_slice_stepseq.png)
 
 ---
 ### 2025-09-02 - Improvement: 0C00 to All tracks, 0C00 to Master only (current row)
@@ -10125,7 +10126,7 @@ When opening the dialog with a non-sliced sample, default to Sample Offset. When
 
 ---
 ### 2025-09-04 - Improvement: Distribute Samples to Individual Sample FX Chains now also does the same thing for Slices.
-![](gif/split_slices_to_samplefxchains.png)
+![](Screenshots/split_slices_to_samplefxchains.png)
 
 ---
 ### 2025-09-04 - Improvement: Paketti Gater now correctly updates the Retrig Number to the one that was already on the track.
@@ -10135,7 +10136,7 @@ When opening the dialog with a non-sliced sample, default to Sample Offset. When
 
 ---
 ### 2025-09-04 - Improvement: Paketti Dynamic Views: Added configurations for detaching + reattaching Mixer View & Instrument Editor.
-![](gif/dynamicviews_detach.png)
+![](Screenshots/dynamicviews_detach.png)
 
 ---
 ### 2025-09-05 - Improvement: Slice detection is now dynamic instead of hardcoded to c-4 c#4 onwards - the correct 8 first slices are automatically mapped to the rows when opening Sample Offset / Slice Step Sequencer.
@@ -10155,7 +10156,7 @@ Duplicate Pattern will duplicate the current pattern to a new one and continue p
 Changing a pattern without changing the track, will result in the stepsequence being updated.
 Show Velocity in an extra area of the dialog.
 Velocity Draw 
-![](gif/slicestepseq_velocitydraw.png)
+![](Screenshots/slicestepseq_velocitydraw.png)
 
 ---
 ### 2025-09-08 - Improvement: YT-DLP will now work more stably with Linux - finding the right binary for yt-dlp instead of being hardcoded to macOS settings
@@ -10197,7 +10198,7 @@ Velocity Draw
 
 ---
 ### 2025-09-13 - Improvement: Polyend Buddy interface tweaks for clarity
-![](gif/polyendbuddy_tweaks.png)
+![](Screenshots/polyendbuddy_tweaks.png)
 
 ---
 ### 2025-09-14 - Feature: Set All Automation Envelopes to Points/Lines/Curves
@@ -10209,14 +10210,14 @@ Velocity Draw
 ---
 ### 2025-09-15 - Improvement: Paketti Chebyshev Polynomial Shaper now has multiple sliders to control Harmonics 2-11, and more tweaks and optimizations.
 
-![](gif/chebyshev_impr01.png)
+![](Screenshots/chebyshev_impr01.png)
 
 ---
 ### 2025-09-15 - Improvement: The "Paketti Automation" Doofer tweak/Hack checks / re-loads, are now implemented into F5, F6 and F7 (and F6 has been created.) F5 is ImpulseTracker for "Play Song from the beginning", F6 is "Play Pattern" and F7 is "Play from Selected Row". This means that when you use these shortcuts, after triggering the Paketti Automation hack - you'll be able to keep automating the Global Groove, LPB, BPM, EditMode, Octave, EditStep, Recording, Selected Instrument Pitch, Selected Sample LoopLength, Pattern Length and Selected Phrase LPB.  It will not work during Renoise Rendering, unfortunately. So "Rolling Sampler" or Audio Loopback only.
 
 ---
 ### 2025-09-15 - Improvement: Added an experimental Prophet8 textfile to CCizer:
-![](gif/ccizer_prophet8.png)
+![](Screenshots/ccizer_prophet8.png)
 
 ---
 ### 2025-09-15 - Improvement: Added "al8" theme to Paketti Theme Selector
@@ -10226,6 +10227,10 @@ Velocity Draw
 
 ---
 ### 2025-09-15 - Feature: PlayerPro / OpenMPT Linear Keyboard Layer - this will let you set your own preferred keys to start from, and advance in a linear fashion. Much like PlayerPro and OpenMPT already do. There's also a Fret mode.
-![](gif/linearkeyboard_fret.png)
+![](Screenshots/linearkeyboard_fret.png)
 
 ---
+### 2025-09-17 - Improvement: Place Slices Evenly to Pattern / Slice to Pattern - these will place the Slices so that 16 slices will be put  every 4 rows to a 64 row pattern, for instance.
+
+---
+### 2025-09-17 - Improvement: Added "Sample Offset / Slice Step Sequencer" to Paketti Gadgets submenu for Sample Editor, Pattern Editor and Mixer, and to Tools -> Paketti Gadgets.
