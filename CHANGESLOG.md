@@ -10236,7 +10236,7 @@ Velocity Draw
 ### 2025-09-17 - Improvement: Added "Sample Offset / Slice Step Sequencer" to Paketti Gadgets submenu for Sample Editor, Pattern Editor and Mixer, and to Tools -> Paketti Gadgets.
 
 ---
-### 2025-09-18 - Paketti StemSlicer
+### 2025-09-18 - Feature: Paketti StemSlicer
 Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, decide the beat lengths (64, 32, 16, 8, 4) - Start the Process - and Paketti StemSlicer will do your automatic cutting for you. Afterwards, click on Load as Drumkit - and they appear sorted by original sample and length. The silence ones are skipped from being loaded.
 
 ![](Screenshots/stemslicerB.png)
