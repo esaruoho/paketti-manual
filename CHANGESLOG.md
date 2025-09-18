@@ -10241,3 +10241,6 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 
 ![](Screenshots/stemslicerB.png)
 ![](Screenshots/stemslicerA.png)
+
+---
+### 2025-09-18 - Feature: Midi Mappings for "Jump to Section (Next/Previous)", "Select Pattern within Section", "Jump to Pattern 1-16 within Section" added.
