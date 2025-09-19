@@ -10244,3 +10244,7 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 
 ---
 ### 2025-09-18 - Feature: Midi Mappings for "Jump to Section (Next/Previous)", "Select Pattern within Section", "Jump to Pattern 1-16 within Section" added.
+
+---
+### 2025-09-19 - Improvement: Polyend Buddy can now handle over 37000+ files from the Polyend Device Root.
+
