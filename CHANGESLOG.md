@@ -10248,3 +10248,10 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 ---
 ### 2025-09-19 - Improvement: Polyend Buddy can now handle over 37000+ files from the Polyend Device Root.
 
+---
+### 2025-09-20 - Feature: BPM-Based Beat Slicer - this will take the user-specified BPM, then slice it up to 4, 8, 2, 1, as per your requirements.
+
+![](Screenshots/bpmbased-sampleslicer.png)
+
+---
+### 2025-09-20 - Improvement: Write Notes Ascending / Descending / Random, with EditStep - will now recognize if there are slices and only write the slices, not the original sample AND the slices.
