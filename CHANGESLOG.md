@@ -10255,3 +10255,16 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 
 ---
 ### 2025-09-20 - Improvement: Write Notes Ascending / Descending / Random, with EditStep - will now recognize if there are slices and only write the slices, not the original sample AND the slices.
+
+------
+#### 2025-09-21 - Improvement: BPM-Based Beat Slicer - added End-Half Loop, Forward,Reverse,PingPong buttons, Full Loop, and improved the functionality overall
+![](Screenshots/bpmbasedimprov.png)
+
+---
+### 2025-09-22 - Improvement: Toggle Solo Tracks will now correctly solo all tracks within a Group, and running it again will unmute all the tracks in the song.
+
+---
+### 2025-09-22 - Improvement: Duplicate Pattern Above & Clear Muted Tracks // Duplicate Pattern Below & Clear Muted Tracks will now correctly retain the original pattern length - so a 128 row pattern Duplicated will still be a 128 row pattern, not a 64 row pattern.
+
+---
+### 2025-09-22 - Feature: Resize all patterns to current Pattern Length - so your 512 row pattern, or 128 row pattern, will be used as the pattern length for all the current patterns in the Pattern Sequencer.
