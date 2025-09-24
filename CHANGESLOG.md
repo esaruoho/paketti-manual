@@ -10268,3 +10268,8 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 
 ---
 ### 2025-09-22 - Feature: Resize all patterns to current Pattern Length - so your 512 row pattern, or 128 row pattern, will be used as the pattern length for all the current patterns in the Pattern Sequencer.
+
+---
+### 2025-09-24 - Feature: Create New Instrument + 2nd keybind, Delete Current Instrument + 2nd keybind. Added as Global shortcuts, available everywhere.
+
+---
