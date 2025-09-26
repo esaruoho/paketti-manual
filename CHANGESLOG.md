@@ -10273,3 +10273,6 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 ### 2025-09-24 - Feature: Create New Instrument + 2nd keybind, Delete Current Instrument + 2nd keybind. Added as Global shortcuts, available everywhere.
 
 ---
+
+### 2025-09-25 - Feature: BMP PNG GIF JPEG JPG will now be converted into a waveform and loaded in after evaluation. Just drag them in.
+![](Screenshots/imagetosampleconverter.png)
