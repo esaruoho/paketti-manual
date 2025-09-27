@@ -10299,3 +10299,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-09-27 - Improvement: Pakettify instrument will now correctly inject the Paketti Load Samples Preferences settings (Oversampling, Interpolation, Autoseek, Autofade, etc) to the sample.
 
+
+----
+### 2025-09-28 - Improvement: Added "Distribute All Samples to Separate FX Chains" + MOD Chains + FX/MOD Chains to Sample Navigator for better discoverability.
+
+---
+### 2025-09-29 - Improvement: Paketti StemSlicer - Quick Load will now 1) apply Paketti Load Preferences (Interpolation, Oversampling, Autofade, Autoseek etc) 2) correctly name the sample with the samplename instead of "Placeholder sample" 3) and the order of Quick Load is from 001 to 100, not random 4) and there's 2 Beat + 1 Beat extract.
+
+
+
