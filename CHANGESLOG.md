@@ -10281,3 +10281,9 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 ### 2025-09-26 - Feature: Create New Send / Create New Multiband Send Track
 ![](Screenshots/createnewsend.png)
 ![](Screenshots/createnewsend2.png)
+
+---
+### 2025-09-27 - Improvement: Paketti Parameter Editor now has "Duplicate to Next Pattern" & "Snapshot to Next Pattern" which will duplicate the current automation to the next pattern and select the pattern.
+
+---
+### 2025-09-27 - 
