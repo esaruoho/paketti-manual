@@ -10286,4 +10286,6 @@ Automatic BPM-based Beat-slicing/audio preparing of your remix stens. Set BPM, d
 ### 2025-09-27 - Improvement: Paketti Parameter Editor now has "Duplicate to Next Pattern" & "Snapshot to Next Pattern" which will duplicate the current automation to the next pattern and select the pattern.
 
 ---
-### 2025-09-27 - 
+### 2025-09-27 - Paketti HyperEdit - this allows you to create Looping Automation Sequences, each row can be 1 to 256 steps of length - and the rest of the pattern will be filled with the content that is on the Canvas. 
+and if you're drawing to a canvas and press Space, the external editor will appear.
+
