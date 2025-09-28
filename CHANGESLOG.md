@@ -10306,5 +10306,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-09-29 - Improvement: Paketti StemSlicer - Quick Load will now 1) apply Paketti Load Preferences (Interpolation, Oversampling, Autofade, Autoseek etc) 2) correctly name the sample with the samplename instead of "Placeholder sample" 3) and the order of Quick Load is from 001 to 100, not random 4) and there's 2 Beat + 1 Beat extract.
 
+---
+### 2025-09-29 - Improvement: Added 6 new LotuaStation themes to Paketti Theme Selector
+
+---
+### 2025-09-29 - Feature: Create New Track with Channelstrip - this will take your selected Track DSP Chain .XRNT file and create a new track, select the new track and add the Track DSP Chain.
+![](Screenshots/newtrack_dspchain.png)
+
 
 
