@@ -10313,5 +10313,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-09-29 - Feature: Create New Track with Channelstrip - this will take your selected Track DSP Chain .XRNT file and create a new track, select the new track and add the Track DSP Chain.
 ![](Screenshots/newtrack_dspchain.png)
 
-
+---
+### 2025-09-29 - Improvement: When loading a sample from Disk Browser or dragging it in from outside Renoise, the Paketti Loader settings are automatically applied (NNA, Mute Group, LoopMode, Oversampling, Interpolation, Autofade, Autoseek, etc.)
 
