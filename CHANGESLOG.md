@@ -10316,3 +10316,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-09-29 - Improvement: When loading a sample from Disk Browser or dragging it in from outside Renoise, the Paketti Loader settings are automatically applied (NNA, Mute Group, LoopMode, Oversampling, Interpolation, Autofade, Autoseek, etc.)
 
+---
+### 2025-09-29 - Improvement: Added HyperEdit to Paketti Groovebox 8120
+![](Screenshots/groovebox8120_hyperedit.png)
+
+---
+### 2025-09-29 - Improvement: Quick Device Load Dialog will now detect if you're in the Sample FX Chain view, and offer a way to load the same device to every FX Chain.
+![](Screenshots/quickload_fxchain.png)
