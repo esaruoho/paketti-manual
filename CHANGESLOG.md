@@ -10323,3 +10323,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-09-29 - Improvement: Quick Device Load Dialog will now detect if you're in the Sample FX Chain view, and offer a way to load the same device to every FX Chain.
 ![](Screenshots/quickload_fxchain.png)
+
+---
+### 2025-10-01 - Feature: "Rename Current Track by Selected Instrument"
+
