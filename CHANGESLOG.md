@@ -10335,3 +10335,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-01 - Feature: Song to Line / Pattern to Line frame count as a Paketti Preference setting / Song / Pattern count
+![](Screenshots/framecountdialog.png)
+
+
+---
