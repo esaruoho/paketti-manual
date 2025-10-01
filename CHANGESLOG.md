@@ -10325,5 +10325,13 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/quickload_fxchain.png)
 
 ---
+### 2025-09-30 - Improvement: Paketti Phrase Editor Initialize will now correctly set the Loop mode for a phrase off, or on, instead of always-on.
+
+---
 ### 2025-10-01 - Feature: "Rename Current Track by Selected Instrument"
 
+----
+### 2025-10-01 - Improvement: "Rename Tracks by Played Samples" now available as Global shortcut, and optimized to be faster.
+
+---
+### 2025-10-01 - Feature: Song to Line / Pattern to Line frame count as a Paketti Preference setting / Song / Pattern count
