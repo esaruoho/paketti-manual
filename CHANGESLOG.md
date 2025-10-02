@@ -10337,5 +10337,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-01 - Feature: Song to Line / Pattern to Line frame count as a Paketti Preference setting / Song / Pattern count
 ![](Screenshots/framecountdialog.png)
 
+---
+### 2025-10-02 - Improvement: Paketti Value Interpolation Looper now has a PingPong - so it'll go from, for instance, 00-80-00 within the space of the selected notes.
 
 ---
+### 2025-01-02 - Feature: Rename Current Instrument - a simplistic dialog that lets you rename the current Instrument. Available as a shortcut + as menu entries in Mixer, Pattern Editor, Pattern Matrix.
+![](Screenshots/rename_current_instrument.png)
