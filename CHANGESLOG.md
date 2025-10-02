@@ -10343,3 +10343,13 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-02 - Feature: Rename Current Instrument - a simplistic dialog that lets you rename the current Instrument. Available as a shortcut + as menu entries in Mixer, Pattern Editor, Pattern Matrix.
 ![](Screenshots/rename_current_instrument.png)
+
+---
+### 2025-01-02 - Improvement: Paketti Preferences now has a setting for "Show Oblique Strategies" yep/no. If you disable it, it won't show in the Status Bar anymore.
+
+---
+### 2025-01-02 - Improvement: Some minor tweaks to the Paketti Preferences for better findability and overall look&feel.
+
+---
+### 2025-01-02 - Improvement: Player Pro Smart Dialog Opener will now open the Effect Column Dialog when entering Master Track or Send Tracks, instead of closing the Dialog.
+
