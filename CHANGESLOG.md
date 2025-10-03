@@ -10353,3 +10353,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-02 - Improvement: Player Pro Smart Dialog Opener will now open the Effect Column Dialog when entering Master Track or Send Tracks, instead of closing the Dialog.
 
+---
+### 2025-01-02 - Improvement: Frame Count Dialog now has editmode on by default, so you should be able to just press CTRL-A CTRL-C or CMD-A CMD-C to copy the contents.
+
