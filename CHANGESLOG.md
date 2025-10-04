@@ -1,4 +1,4 @@
-| [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) |
+| [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buymeacoffee Paketti](https://buymeacoffee.com/esaruoho) | 
 
 # Changeslog
 
@@ -9,6 +9,7 @@ If you liked what you're seeing here, please consider supporting. Every bit help
 - Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
 - Send me a donation via [PayPal](http://paypal.me/esaruoho). 
 - Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
+- Send me a one-time donation via [Buymeacoffee](https://buymeacoffee.com/esaruoho)
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
 - Buy my music on [Bandcamp](http://lackluster.bandcamp.com/).
 
@@ -10356,3 +10357,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-02 - Improvement: Frame Count Dialog now has editmode on by default, so you should be able to just press CTRL-A CTRL-C or CMD-A CMD-C to copy the contents.
 
+
+---
+### 2025-01-03 - Improvement: More tweaks for multi-sample loading using Paketti Settings from Disk Browser / Drag'n'Drop.
+
+---
+### 2025-01-04 - 
