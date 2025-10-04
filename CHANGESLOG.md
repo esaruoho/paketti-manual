@@ -10366,4 +10366,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](gif/midipatternjump-loop.gif)
 
 ---
-### 2025-0
+### 2025-01-04 - Improvement: Added a few more Tooltips to Paketti Preferences for informing the user of what they're looking at.
+
+---
+### 2025-01-04 - Feature: Convert Automation to FX & Convert Automation to FX (Move) - this will convert the Automation Envelopes to Effect Columns, and the Move flavor will wipe the max 8 Automation Envelopes.
+
+---
+### 2025-01-04 - Improvement: Convert FX to Automation (Move) implemented - for Convert & Clear.
