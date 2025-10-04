@@ -10364,3 +10364,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-04 - Feature: Play & Loop Pattern 01...16 - These Midi Mappings will jump to a specific pattern, and set it as looping in Pattern Sequencer. The playhead position will be retained. So if you're at Pattern01 row 14 and you trigger Pattern04, you're on Pattern04 row 14.
 ![](gif/midipatternjump-loop.gif)
+
+---
+### 2025-0
