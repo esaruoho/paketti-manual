@@ -10375,4 +10375,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-01-04 - Improvement: Convert FX to Automation (Move) implemented - for Convert & Clear.
 
 ---
-### 2025-01-05 - Improvement: Organized Instrument Box, Mixer, Sample Editor, Sample FX Chain, Automation, Pattern Matrix, Pattern Sequencer, Disk Browser, Main Menu -> Tools -> Paketti menu entries and 
+### 2025-01-05 - Improvement: Organized Instrument Box, Mixer, Sample Editor, Sample FX Chain, Automation, Pattern Matrix, Pattern Sequencer, Disk Browser, Main Menu -> Tools -> Paketti menu entries heavily.
