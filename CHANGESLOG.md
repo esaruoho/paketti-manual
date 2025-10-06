@@ -10380,4 +10380,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-06 - Feature: Paketti Drumkit Loader MuteTrig - this will load 120 random samples from your folder/subfolder structure, then assign each of them to a separate FX Chain, and set it up so that only one FX Chain will play at a time. Meaning, you can have really heavy effects on every drumhit, but everytime you press another one, the heavy processing tail will be cut off immediately.
 
-![](Screenshot%202025-10-06%20at%2015.53.27.png)
+![](Screenshots/mutetrig.png)
