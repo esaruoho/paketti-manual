@@ -10402,3 +10402,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-09 - Improvement: Macro01-08 Midi Mapping Write version that writes to Automation Envelope directly.
 ![](Screenshots/writeautomationmacro.png)
+
+---
+### 2025-01-10 - Improvement: Capture Nearest Instrument will now travel across previous + next patterns too, until it finds the nearest instrument and captures it.
