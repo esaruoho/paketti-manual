@@ -10393,5 +10393,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-09 - Improvement: Paketti Fuzzy Search should better handle 180K+ sample folders+subfolders, instead of timing out. Optimized the dialog width, and contents, and made it remember the folder you were on, and prompt for a folder if you've never been anywhere. Added pagination. Cursor keys let you select, enter will load.
-![](Screenshot%202025-10-09%20at%2017.37.17.png)
+![](Screenshots/fuzzysearch_therewego.png)
+
+---
+### 2025-01-09 - Feature: Total Song Time
+![](Screenshot%202025-10-09%20at%2020.24.58.png)
+
+---
+### 2025-01-09 - Improvement: Macro01-08 Midi Mapping Write version that writes to Automation Envelope directly.
 
