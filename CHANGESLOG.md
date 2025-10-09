@@ -10397,8 +10397,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-09 - Feature: Total Song Time
-![](Screenshot%202025-10-09%20at%2020.24.58.png)
+![](Screenshots/totalsongtime.png)
 
 ---
 ### 2025-01-09 - Improvement: Macro01-08 Midi Mapping Write version that writes to Automation Envelope directly.
-
+![](Screenshots/writeautomationmacro.png)
