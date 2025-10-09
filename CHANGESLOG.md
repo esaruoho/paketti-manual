@@ -10387,3 +10387,11 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-01-06 - Feature: Toggle Automatically Open Selected Sample FX Chain Device External Editors - so, if you're using the Paketti Drumkit Loader MuteTrig - it'll open you the External Editors of devices that are on the FX Chain you trigger.
 
 ![](Screenshots/toggle_automatically_open_selected_sample_fx_chain_device_editors.png)
+
+---
+### 2025-01-07 - Improvement: HyperEdit correctly autoassigns the Instr Automation first 8-32 parameters if track has no automation envelopes in existence. otherwise populates by used envelopes, then populates the unused rows with the devices available
+
+---
+### 2025-01-09 - Improvement: Paketti Fuzzy Search should better handle 180K+ sample folders+subfolders, instead of timing out. Optimized the dialog width, and contents, and made it remember the folder you were on, and prompt for a folder if you've never been anywhere. Added pagination. Cursor keys let you select, enter will load.
+![](Screenshot%202025-10-09%20at%2017.37.17.png)
+
