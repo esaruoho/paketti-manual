@@ -10405,3 +10405,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-10 - Improvement: Capture Nearest Instrument will now travel across previous + next patterns too, until it finds the nearest instrument and captures it.
+
+---
+### 2025-01-10 - Improvement: Macro01-08 Midi Mapping Write version that now detects if you want to write only to the Effect Columns instead of Automation.
+
+-----
+### 2025-01-12 - Improvement: Paketti Single Cycle Waveform Writer will no longer choke up when being used while Auto Pakettify is set to On - will instead correctly set the loopmode, etc.
+
+---
+### 2025-01-12 - Improvement: Paketti Single Cycle Waveform A&B + AKWF A&B writers will now correctly set the Autofade On, if it is configured in the Paketti Preferences.
