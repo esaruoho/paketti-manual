@@ -10414,3 +10414,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-12 - Improvement: Paketti Single Cycle Waveform A&B + AKWF A&B writers will now correctly set the Autofade On, if it is configured in the Paketti Preferences.
+
+---
+### 2025-01-12 - Improvement: Modified the Paketti package so that it is (yet again) able to be uploaded to the Renoise Tools page. (there was an outage of 2,5 months of not being able to upload it since it went above the size limit)
+
+---
+### 2025-01-12 - Improvement: fixed a bug where Macro 8 was set to 0.9959 for no reason, now it is set to 0 (Pitchbend Glide Inertia should start from zero instead of "almost full").
