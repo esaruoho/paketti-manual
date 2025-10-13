@@ -10420,3 +10420,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-12 - Improvement: fixed a bug where Macro 8 was set to 0.9959 for no reason, now it is set to 0 (Pitchbend Glide Inertia should start from zero instead of "almost full").
+
+---
+### 2025
