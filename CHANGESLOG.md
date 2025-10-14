@@ -10422,4 +10422,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-01-12 - Improvement: fixed a bug where Macro 8 was set to 0.9959 for no reason, now it is set to 0 (Pitchbend Glide Inertia should start from zero instead of "almost full").
 
 ---
-### 2025
+### 2025-01-13 - Feature: Toggle Favorited Devices On/Off, Bypass Favorited, Enable Favorited, Toggle VST or VST3 or AU or LADSPA or DSSI On/Off, or Bypass, or Enable. Toggle/Bypass/Enable Native Devices, Toggle/Bypass/Enable Native Meta Devices, Toggle/Bypass/Enable Native Routing Devices.
+
+---
+### 2025-01-14 - Improvement: Added Arturia Microfreak, Korg Minilogue, Korg Monologue, SC88ST, SE02 to CCizer.
+
+
