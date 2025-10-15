@@ -10428,3 +10428,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-01-14 - Improvement: Added Arturia Microfreak, Korg Minilogue, Korg Monologue, SC88ST, SE02 to CCizer.
 
 
+---
+### 2025-01-15 - Improvement: Added the following themes to Paketti Theme Selector:
+![](Screenshots/themeselectorupdate.png)
