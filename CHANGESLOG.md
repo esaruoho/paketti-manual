@@ -10342,92 +10342,102 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-02 - Improvement: Paketti Value Interpolation Looper now has a PingPong - so it'll go from, for instance, 00-80-00 within the space of the selected notes.
 
 ---
-### 2025-01-02 - Feature: Rename Current Instrument - a simplistic dialog that lets you rename the current Instrument. Available as a shortcut + as menu entries in Mixer, Pattern Editor, Pattern Matrix.
+### 2025-10-02 - Feature: Rename Current Instrument - a simplistic dialog that lets you rename the current Instrument. Available as a shortcut + as menu entries in Mixer, Pattern Editor, Pattern Matrix.
 ![](Screenshots/rename_current_instrument.png)
 
 ---
-### 2025-01-02 - Improvement: Paketti Preferences now has a setting for "Show Oblique Strategies" yep/no. If you disable it, it won't show in the Status Bar anymore.
+### 2025-10-02 - Improvement: Paketti Preferences now has a setting for "Show Oblique Strategies" yep/no. If you disable it, it won't show in the Status Bar anymore.
 
 ---
-### 2025-01-02 - Improvement: Some minor tweaks to the Paketti Preferences for better findability and overall look&feel.
+### 2025-10-02 - Improvement: Some minor tweaks to the Paketti Preferences for better findability and overall look&feel.
 
 ---
-### 2025-01-02 - Improvement: Player Pro Smart Dialog Opener will now open the Effect Column Dialog when entering Master Track or Send Tracks, instead of closing the Dialog.
+### 2025-10-02 - Improvement: Player Pro Smart Dialog Opener will now open the Effect Column Dialog when entering Master Track or Send Tracks, instead of closing the Dialog.
 
 ---
-### 2025-01-02 - Improvement: Frame Count Dialog now has editmode on by default, so you should be able to just press CTRL-A CTRL-C or CMD-A CMD-C to copy the contents.
+### 2025-10-02 - Improvement: Frame Count Dialog now has editmode on by default, so you should be able to just press CTRL-A CTRL-C or CMD-A CMD-C to copy the contents.
 
 
 ---
-### 2025-01-03 - Improvement: More tweaks for multi-sample loading using Paketti Settings from Disk Browser / Drag'n'Drop.
+### 2025-10-03 - Improvement: More tweaks for multi-sample loading using Paketti Settings from Disk Browser / Drag'n'Drop.
 
 ---
-### 2025-01-04 - Feature: Play & Loop Pattern 01...16 - These Midi Mappings will jump to a specific pattern, and set it as looping in Pattern Sequencer. The playhead position will be retained. So if you're at Pattern01 row 14 and you trigger Pattern04, you're on Pattern04 row 14.
+### 2025-10-04 - Feature: Play & Loop Pattern 01...16 - These Midi Mappings will jump to a specific pattern, and set it as looping in Pattern Sequencer. The playhead position will be retained. So if you're at Pattern01 row 14 and you trigger Pattern04, you're on Pattern04 row 14.
 ![](gif/midipatternjump-loop.gif)
 
 ---
-### 2025-01-04 - Improvement: Added a few more Tooltips to Paketti Preferences for informing the user of what they're looking at.
+### 2025-10-04 - Improvement: Added a few more Tooltips to Paketti Preferences for informing the user of what they're looking at.
 
 ---
-### 2025-01-04 - Feature: Convert Automation to FX & Convert Automation to FX (Move) - this will convert the Automation Envelopes to Effect Columns, and the Move flavor will wipe the max 8 Automation Envelopes.
+### 2025-10-04 - Feature: Convert Automation to FX & Convert Automation to FX (Move) - this will convert the Automation Envelopes to Effect Columns, and the Move flavor will wipe the max 8 Automation Envelopes.
 
 ---
-### 2025-01-04 - Improvement: Convert FX to Automation (Move) implemented - for Convert & Clear.
+### 2025-10-04 - Improvement: Convert FX to Automation (Move) implemented - for Convert & Clear.
 
 ---
-### 2025-01-05 - Improvement: Organized Instrument Box, Mixer, Sample Editor, Sample FX Chain, Automation, Pattern Matrix, Pattern Sequencer, Disk Browser, Main Menu -> Tools -> Paketti menu entries heavily.
+### 2025-10-05 - Improvement: Organized Instrument Box, Mixer, Sample Editor, Sample FX Chain, Automation, Pattern Matrix, Pattern Sequencer, Disk Browser, Main Menu -> Tools -> Paketti menu entries heavily.
 
 ---
-### 2025-01-06 - Feature: Paketti Drumkit Loader MuteTrig - this will load 120 random samples from your folder/subfolder structure, then assign each of them to a separate FX Chain, and set it up so that only one FX Chain will play at a time. Meaning, you can have really heavy effects on every drumhit, but everytime you press another one, the heavy processing tail will be cut off immediately.
+### 2025-10-06 - Feature: Paketti Drumkit Loader MuteTrig - this will load 120 random samples from your folder/subfolder structure, then assign each of them to a separate FX Chain, and set it up so that only one FX Chain will play at a time. Meaning, you can have really heavy effects on every drumhit, but everytime you press another one, the heavy processing tail will be cut off immediately.
 
 ![](Screenshots/mutetrig.png)
 
 
 ---
-### 2025-01-06 - Feature: Toggle Automatically Open Selected Sample FX Chain Device External Editors - so, if you're using the Paketti Drumkit Loader MuteTrig - it'll open you the External Editors of devices that are on the FX Chain you trigger.
+### 2025-10-06 - Feature: Toggle Automatically Open Selected Sample FX Chain Device External Editors - so, if you're using the Paketti Drumkit Loader MuteTrig - it'll open you the External Editors of devices that are on the FX Chain you trigger.
 
 ![](Screenshots/toggle_automatically_open_selected_sample_fx_chain_device_editors.png)
 
 ---
-### 2025-01-07 - Improvement: HyperEdit correctly autoassigns the Instr Automation first 8-32 parameters if track has no automation envelopes in existence. otherwise populates by used envelopes, then populates the unused rows with the devices available
+### 2025-10-07 - Improvement: HyperEdit correctly autoassigns the Instr Automation first 8-32 parameters if track has no automation envelopes in existence. otherwise populates by used envelopes, then populates the unused rows with the devices available
 
 ---
-### 2025-01-09 - Improvement: Paketti Fuzzy Search should better handle 180K+ sample folders+subfolders, instead of timing out. Optimized the dialog width, and contents, and made it remember the folder you were on, and prompt for a folder if you've never been anywhere. Added pagination. Cursor keys let you select, enter will load.
+### 2025-10-09 - Improvement: Paketti Fuzzy Search should better handle 180K+ sample folders+subfolders, instead of timing out. Optimized the dialog width, and contents, and made it remember the folder you were on, and prompt for a folder if you've never been anywhere. Added pagination. Cursor keys let you select, enter will load.
 ![](Screenshots/fuzzysearch_therewego.png)
 
 ---
-### 2025-01-09 - Feature: Total Song Time
+### 2025-10-09 - Feature: Total Song Time
 ![](Screenshots/totalsongtime.png)
 
 ---
-### 2025-01-09 - Improvement: Macro01-08 Midi Mapping Write version that writes to Automation Envelope directly.
+### 2025-10-09 - Improvement: Macro01-08 Midi Mapping Write version that writes to Automation Envelope directly.
 ![](Screenshots/writeautomationmacro.png)
 
 ---
-### 2025-01-10 - Improvement: Capture Nearest Instrument will now travel across previous + next patterns too, until it finds the nearest instrument and captures it.
+### 2025-10-10 - Improvement: Capture Nearest Instrument will now travel across previous + next patterns too, until it finds the nearest instrument and captures it.
 
 ---
-### 2025-01-10 - Improvement: Macro01-08 Midi Mapping Write version that now detects if you want to write only to the Effect Columns instead of Automation.
+### 2025-10-10 - Improvement: Macro01-08 Midi Mapping Write version that now detects if you want to write only to the Effect Columns instead of Automation.
 
 -----
-### 2025-01-12 - Improvement: Paketti Single Cycle Waveform Writer will no longer choke up when being used while Auto Pakettify is set to On - will instead correctly set the loopmode, etc.
+### 2025-10-12 - Improvement: Paketti Single Cycle Waveform Writer will no longer choke up when being used while Auto Pakettify is set to On - will instead correctly set the loopmode, etc.
 
 ---
-### 2025-01-12 - Improvement: Paketti Single Cycle Waveform A&B + AKWF A&B writers will now correctly set the Autofade On, if it is configured in the Paketti Preferences.
+### 2025-10-12 - Improvement: Paketti Single Cycle Waveform A&B + AKWF A&B writers will now correctly set the Autofade On, if it is configured in the Paketti Preferences.
 
 ---
-### 2025-01-12 - Improvement: Modified the Paketti package so that it is (yet again) able to be uploaded to the Renoise Tools page. (there was an outage of 2,5 months of not being able to upload it since it went above the size limit)
+### 2025-10-12 - Improvement: Modified the Paketti package so that it is (yet again) able to be uploaded to the Renoise Tools page. (there was an outage of 2,5 months of not being able to upload it since it went above the size limit)
 
 ---
-### 2025-01-12 - Improvement: fixed a bug where Macro 8 was set to 0.9959 for no reason, now it is set to 0 (Pitchbend Glide Inertia should start from zero instead of "almost full").
+### 2025-10-12 - Improvement: fixed a bug where Macro 8 was set to 0.9959 for no reason, now it is set to 0 (Pitchbend Glide Inertia should start from zero instead of "almost full").
 
 ---
-### 2025-01-13 - Feature: Toggle Favorited Devices On/Off, Bypass Favorited, Enable Favorited, Toggle VST or VST3 or AU or LADSPA or DSSI On/Off, or Bypass, or Enable. Toggle/Bypass/Enable Native Devices, Toggle/Bypass/Enable Native Meta Devices, Toggle/Bypass/Enable Native Routing Devices.
+### 2025-10-13 - Feature: Toggle Favorited Devices On/Off, Bypass Favorited, Enable Favorited, Toggle VST or VST3 or AU or LADSPA or DSSI On/Off, or Bypass, or Enable. Toggle/Bypass/Enable Native Devices, Toggle/Bypass/Enable Native Meta Devices, Toggle/Bypass/Enable Native Routing Devices.
 
 ---
-### 2025-01-14 - Improvement: Added Arturia Microfreak, Korg Minilogue, Korg Monologue, SC88ST, SE02 to CCizer.
+### 2025-10-14 - Improvement: Added Arturia Microfreak, Korg Minilogue, Korg Monologue, SC88ST, SE02 to CCizer.
 
 
 ---
-### 2025-01-15 - Improvement: Added the following themes to Paketti Theme Selector:
+### 2025-10-15 - Improvement: Added the following themes to Paketti Theme Selector:
 ![](Screenshots/themeselectorupdate.png)
+
+---
+#### 2025-10-16 - Improvement: Added "Load to All Tracks" for Quick Load Device - it will be added to each Renoise Sequencer Track. You can also disable/activate all of them. Paketti Preferences specifies whether loaded as the first, or as the last Track DSP Chain entry. You can also Open the External Editors or hide all of them in one go. This idea is specifically seeded by the HornetPlugins HoRNet HarmoniQ which was on an offer today. And which is supposed to help me reduce the inharmonics and thus I decided to try and ram it on a Renoise track and see what it sounds like. But you could, obviously, load any other device to your Track DSPs wholesale. Enjoy
+
+---
+### 2025-10-18 - Improvement: Added .8svx + .16sv export (and batch conversion of wav + aiff in folders to 8svx / 16sv) for those oldschool PT/OctaMED heads !tta
+
+---
+### 2025-10-18 - Improvement: Added a File -> Paketti Export menu entry that lets you find the IFF 8SVX 16SV OctaTrack Digitakt .WT and Polyend Tracker Export functions.
+![](Screenshot%202025-10-18%20at%2019.28.02.png)
