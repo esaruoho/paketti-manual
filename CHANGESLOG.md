@@ -10440,4 +10440,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-18 - Improvement: Added a File -> Paketti Export menu entry that lets you find the IFF 8SVX 16SV OctaTrack Digitakt .WT and Polyend Tracker Export functions.
-![](Screenshot%202025-10-18%20at%2019.28.02.png)
+![](Screenshots/pakettiexport_menu_entries.png)
