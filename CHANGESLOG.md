@@ -10444,3 +10444,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-18 - Feature: .ITI Export - for those who want to use Renoise to create loop points for a sample and then export it to Impulse Tracker Instrument format, it is now possible to export in .ITI format. Envelopes are not converted, for now.
+
+---
+### 2025-10-19 - Improvement: Paketti Gater now has a setting in Paketti Preferences for changing how hard the hard left hard right pannings are. 
+![](Screenshots/gater_pancontrol.png)
