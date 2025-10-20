@@ -10448,3 +10448,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-19 - Improvement: Paketti Gater now has a setting in Paketti Preferences for changing how hard the hard left hard right pannings are. 
 ![](Screenshots/gater_pancontrol.png)
+
+---
+### 2025-10-20 - Improvement: Paketti Preferences dialog has again been resized / optimized so it takes less height.
+![](Screenshots/pakettipreferences_optimization.png)
