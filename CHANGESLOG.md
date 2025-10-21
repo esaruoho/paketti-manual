@@ -10459,3 +10459,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-21 - Feature: Added Alt-B for selecting StartRange without losing EndRange - to combat [https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622](https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622 "https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622")
 
+---
+### 2025-10-21 - Improvement: Added all Themes from Renoise v3.5.3 to Paketti Theme Selector.
+
+---
+### 2025-10-21 - Improvement: Added 0AXy and 0VXy and 0TXy and 0Dxx and 0Uxx midimappings (00-FF, 00-7F and for the Xy stuff it's F each) - for selection or for current row.
+![](Screenshots/midi_write_0a_0v_0u_0d_0t.png)
