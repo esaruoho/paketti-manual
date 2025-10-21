@@ -10452,3 +10452,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-20 - Improvement: Paketti Preferences dialog has again been resized / optimized so it takes less height.
 ![](Screenshots/pakettipreferences_optimization.png)
+
+---
+### 2025-10-20 - Improvement: Added Replicate at Cursor for Subcolumns
+
+---
+### 2025-10-21 - Feature: Added Alt-B for selecting StartRange without losing EndRange - to combat [https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622](https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622 "https://forum.renoise.com/t/ctrl-b-start-selection-clears-existing-selection-should-it/44622")
+
