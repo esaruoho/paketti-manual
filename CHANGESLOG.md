@@ -10469,3 +10469,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-22 - Improvement: Added shortcuts for the Digitakt Export Chains
 ![](Screenshots/digitakt_exportshortcuts.png)
+
+---
+### 2025-10-22 - Improvement: Tweaked the Digitakt Export Dialog so it is more optimized and also handles instrument changing - i.e. - exporting a Digitakt Sample Chain is not stuck exporting the instrument you had selected before opening the Dialog.
+![](Screenshots/digitakt_sample_chain_dialog_tweaks.png)
