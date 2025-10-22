@@ -10465,3 +10465,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-21 - Improvement: Added 0AXy and 0VXy and 0TXy and 0Dxx and 0Uxx midimappings (00-FF, 00-7F and for the Xy stuff it's F each) - for selection or for current row.
 ![](Screenshots/midi_write_0a_0v_0u_0d_0t.png)
+
+---
+### 2025-10-22 - Improvement: Added shortcuts for the Digitakt Export Chains
+![](Screenshots/digitakt_exportshortcuts.png)
