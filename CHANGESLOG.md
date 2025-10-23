@@ -10482,3 +10482,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-22 - Improvement: Paketti Chebyshev Polynomial Waveshaper Dialog will now update to the next instrument or sample if you select a new instrument or a new sample. Also tweaked the Dialog around and optimized it
 ![](Screenshots/chebyshev_tweaks.png)
 
+---
+### 2025-10-23 - Feature: Render Pattern Matrix Selection to New Instrument - will render multiple slots from Pattern Matrix to a new Instrument.
+![](Screenshots/render_patternmatrixselection.png)
