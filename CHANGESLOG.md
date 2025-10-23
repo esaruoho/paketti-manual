@@ -10479,4 +10479,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/pcmwriter-square-rounded.png)
 
 ---
-### 2025-10-22 - Improvement: Paketti Chebyshev Polynomial Waveshaper Dialog will now update to the next instrument or sample if you select a new instrument or a new sample.
+### 2025-10-22 - Improvement: Paketti Chebyshev Polynomial Waveshaper Dialog will now update to the next instrument or sample if you select a new instrument or a new sample. Also tweaked the Dialog around and optimized it
+![](Screenshots/chebyshev_tweaks.png)
+
