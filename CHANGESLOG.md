@@ -10490,3 +10490,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-23 - Improvement: Paketti Quick Load Device Dialog will now add a slider if you load in a Gainer - default set to 0.00dB - so you can quickly reduce, or increase the volume across all tracks.
 
 ---
+### 2025-10-24 - Improvement: Play & Loop Pattern will now run from 00-64 - So added an extra 48 midi mappings.
+![](Screenshots/playandloop64.png)
