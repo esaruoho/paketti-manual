@@ -10436,7 +10436,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 #### 2025-10-16 - Improvement: Added "Load to All Tracks" for Quick Load Device - it will be added to each Renoise Sequencer Track. You can also disable/activate all of them. Paketti Preferences specifies whether loaded as the first, or as the last Track DSP Chain entry. You can also Open the External Editors or hide all of them in one go. This idea is specifically seeded by the HornetPlugins HoRNet HarmoniQ which was on an offer today. And which is supposed to help me reduce the inharmonics and thus I decided to try and ram it on a Renoise track and see what it sounds like. But you could, obviously, load any other device to your Track DSPs wholesale. Enjoy
 
 ---
-### 2025-10-18 - Improvement: Added .8svx + .16sv export (and batch conversion of wav + aiff in folders to 8svx / 16sv) for those oldschool PT/OctaMED heads !tta
+### 2025-10-18 - Improvement: Added .8svx + .16sv export (and batch conversion of wav + aiff in folders to 8svx / 16sv) for those oldschool PT/OctaMED heads
 
 ---
 ### 2025-10-18 - Improvement: Added a File -> Paketti Export menu entry that lets you find the IFF 8SVX 16SV OctaTrack Digitakt .WT and Polyend Tracker Export functions.
@@ -10485,3 +10485,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-23 - Feature: Render Pattern Matrix Selection to New Instrument - will render multiple slots from Pattern Matrix to a new Instrument.
 ![](Screenshots/render_patternmatrixselection.png)
+
+---
+### 2025-10-23 - Improvement: Paketti Quick Load Device Dialog will now add a slider if you load in a Gainer - default set to 0.00dB - so you can quickly reduce, or increase the volume across all tracks.
+
+---
