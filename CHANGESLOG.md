@@ -10494,3 +10494,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/playandloop64.png)
 
 ---
+
+### 2025-10-25 - Feature: Sample Range Device Loader Toggle - when toggled on, when you load a Native Effect or a VST (VST,AU,LADSPA,DSSI,VST3, etc) device - the region that you had selected in the Sample Editor, is copied, Pakettified, and the effect is copied to that. And if no selection was selected, then it just works as expected (Sample FX Chain, Track DSP Chain.)
+
+---
+### 2025-10-25 - Feature: Destructive Sample Range Repeat - this will take the Sample Buffer Range that you have selected in Sample Editor - and repeat it once, and then select the repeat range, and let you continue onwards.
