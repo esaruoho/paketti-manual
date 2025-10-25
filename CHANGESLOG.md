@@ -10499,3 +10499,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-25 - Feature: Destructive Sample Range Repeat - this will take the Sample Buffer Range that you have selected in Sample Editor - and repeat it once, and then select the repeat range, and let you continue onwards.
+![](gif/samplerange_destructive_repeat_v2.gif)
+
+---
+### 2025-10-25 - Improvement: The Paketti Single Cycle Waveform writer Sliders for Wavetable Modulation now read and update to the  `Wavetable Mod *Lfo` device Slider changes.
