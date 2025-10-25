@@ -10492,3 +10492,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-24 - Improvement: Play & Loop Pattern will now run from 00-64 - So added an extra 48 midi mappings.
 ![](Screenshots/playandloop64.png)
+
+---
