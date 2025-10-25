@@ -10503,3 +10503,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-25 - Improvement: The Paketti Single Cycle Waveform writer Sliders for Wavetable Modulation now read and update to the  `Wavetable Mod *Lfo` device Slider changes.
+
+---
+### 2025-10-25 - Improvement: Next Instrument / Previous Instrument MIDI Mapping now takes both Absolute and Relative Values. Same for Octave 0-8, EditStep 1-64, Change Group Track, Change Selected Track, Change Selected Track DSP Device.
+
+---
+### 2025-10-25 - Feature: MIDI Mapping for Next / Previous Pattern Sequence, and Relative/Absolute Knob control for changing Pattern Sequence.
+![](Screenshots/midi_patternsequence.png)
