@@ -10510,3 +10510,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-25 - Feature: MIDI Mapping for Next / Previous Pattern Sequence, and Relative/Absolute Knob control for changing Pattern Sequence.
 ![](Screenshots/midi_patternsequence.png)
+
+
+
+---
+### 2025-10-26 - Feature: Started pulling together the Menu Entries to Main Menu: Options - and they now show Toggles when they are Toggled on. More incoming.
+![](Screenshots/main-menu-options-v1.png)
