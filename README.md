@@ -17,7 +17,7 @@
 
 *Paketti is Finnish for Package*
 
-Paketti - provides over 6000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 110+ dialogs.
+Paketti - provides thousands of shortcuts, menu entries, midi mappings and around 130+ brand new dialogs.
 
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX**, **Sample Modulation**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 

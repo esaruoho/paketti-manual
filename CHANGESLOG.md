@@ -10516,3 +10516,22 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-10-26 - Feature: Started pulling together the Menu Entries to Main Menu: Options - and they now show Toggles when they are Toggled on. More incoming.
 ![](Screenshots/main-menu-options-v1.png)
+
+---
+### 2025-10-27 - Improvement: Audition Current Line on Pattern Row Change Toggle will now, when toggled Off, halt the Note On notes with a Note Off.
+
+---
+### 2025-10-27 - Improvement: Added more Menu Entries to Main Menu: Options for better discoverability.
+![](Screenshots/options_v2.png)
+
+
+---
+### 2025-10-28 - Improvement: Added Experimental SBx to Menu Entries, in addition to creating a brand new "Open Parameter Editor Upon Selection" feature - which lets you click on a Mixer or Track DSP Chain Device, and immediately open up a Parameter Editor for it. Also added the Phrase Follow Pattern Playback Hack to the Options.
+
+![](Screenshots/options_tweaks_again.png)
+
+---
+### 2025-10-28 - Improvement: Max Amp DC Offset Kick Generator is now Pakettified - so comes with the 8 macros ready to go. Also the instrument transpose is set to -36.
+
+---
+### 2025-10-28 - Improvement: Paketti Function Search will now retain the selection after you press enter on a function, so you can press enter again to run the function again.
