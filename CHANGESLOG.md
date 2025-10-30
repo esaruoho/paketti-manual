@@ -5932,14 +5932,10 @@ Improvement: added Clone Pattern and LPB*2 / LPB/2 to Pattern Matrix for better 
 
 
 ---
-### 2024-12-22 - esaruoho
-
-Improvement: Added OSI-Terminator Theme to Theme Selector
+### 2024-12-22 - Improvement: Added OSI-Terminator Theme to Theme Selector
 
 ---
-### 2024-12-23 - esaruoho
-
-Feature: Pattern Matrix Selection Expand / Shrink - meaning if you Expand 4 tracks in 4 patterns, they are destructively expanded (pattern is not resized)
+### 2024-12-23 - Feature: Pattern Matrix Selection Expand / Shrink - meaning if you Expand 4 tracks in 4 patterns, they are destructively expanded (pattern is not resized)
 
 ---
 ### 2024-12-23 - esaruoho
@@ -10537,4 +10533,16 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-28 - Improvement: Paketti Function Search will now retain the selection after you press enter on a function, so you can press enter again to run the function again.
 
 ---
-### 20
+### 2025-10-29 - Improvement: Load New Instrument with Current Slices has now been fixed so it, again, applies the current slices to the newly loaded instrument.
+
+---
+### 2025-10-30 - Improvement: HyperEdit used to shoot an error if you right-clicked on a parameter that had no envelope. No longer.
+
+---
+### 2025-10-30 - Feature: Duplicate Pattern and Insert Next - a global shortcut for duplicating current Pattern and jumping to the duplicate.
+
+---
+### 2025-10-30 - Improvement: HyperEdit "draw on canvas + press space at the same time" can now be used to hide the External Editor that is already open.
+
+---
+### 2025-10-30 - Feature: Match Automation with all Aliases" - this will take the original pattern slot that you made Aliases out of, and match the automation to the Aliases.
