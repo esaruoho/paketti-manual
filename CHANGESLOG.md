@@ -10546,3 +10546,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-10-30 - Feature: Match Automation with all Aliases" - this will take the original pattern slot that you made Aliases out of, and match the automation to the Aliases.
+
+---
+### 2025-01-11 - Improvement: v3.4.4 Backwards compatibility ensured, by blocking out all the features that can't work without 3.5 api. Verified as working.
