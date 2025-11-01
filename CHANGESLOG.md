@@ -10549,3 +10549,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-01-11 - Improvement: v3.4.4 Backwards compatibility ensured, by blocking out all the features that can't work without 3.5 api. Verified as working.
+
+---
+### 2025-01-11 - Feature: Change Selected Sample Pan / Volume / Pitch -64/+64 -48/+48 -36/+36 -24/+24 -12/+12
+![](Screenshots/midi_change_selected_sample_controls.png)
