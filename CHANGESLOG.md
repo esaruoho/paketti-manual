@@ -10548,11 +10548,16 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-10-30 - Feature: Match Automation with all Aliases" - this will take the original pattern slot that you made Aliases out of, and match the automation to the Aliases.
 
 ---
-### 2025-01-11 - Improvement: v3.4.4 Backwards compatibility ensured, by blocking out all the features that can't work without 3.5 api. Verified as working.
+### 2025-11-01 - Improvement: v3.4.4 Backwards compatibility ensured, by blocking out all the features that can't work without 3.5 api. Verified as working.
 
 ---
-### 2025-01-11 - Feature: Change Selected Sample Pan / Volume / Pitch -64/+64 -48/+48 -36/+36 -24/+24 -12/+12
+### 2025-11-01 - Feature: Change Selected Sample Pan / Volume / Pitch -64/+64 -48/+48 -36/+36 -24/+24 -12/+12
 ![](Screenshots/midi_change_selected_sample_controls.png)
 
 ---
-### 2025-01-12 - Improvement: Capture Last Take will now properly Fit Slots to Pattern even if there is only one slot with notes.
+### 2025-11-02 - Improvement: Capture Last Take will now properly Fit Slots to Pattern even if there is only one slot with notes.
+
+---
+### 2025-11-02 - Improvement: ChordsPlus now has Spread Notes Vertically:
+![](Screenshots/chordsplus_spread1.png)
+![](Screenshots/chordsplus_spread2.png)
