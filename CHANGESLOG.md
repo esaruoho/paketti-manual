@@ -10553,3 +10553,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-01-11 - Feature: Change Selected Sample Pan / Volume / Pitch -64/+64 -48/+48 -36/+36 -24/+24 -12/+12
 ![](Screenshots/midi_change_selected_sample_controls.png)
+
+---
+### 2025-01-12 - Improvement: Capture Last Take will now properly Fit Slots to Pattern even if there is only one slot with notes.
