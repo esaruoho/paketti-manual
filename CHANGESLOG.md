@@ -10565,4 +10565,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-03 - Feature: Move Slice Start / End xKnob - Midi Mappings that allow you to cycle through Slice length (start / End)
-![](Screenshot%202025-11-03%20at%2010.59.37.png)
+![](Screenshots/moveslicestart_end_midi.png)
