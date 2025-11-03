@@ -10561,3 +10561,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-02 - Improvement: ChordsPlus now has Spread Notes Vertically:
 ![](Screenshots/chordsplus_spread1.png)
 ![](Screenshots/chordsplus_spread2.png)
+
+
+---
+### 2025-11-03 - Feature: Move Slice Start / End xKnob - Midi Mappings that allow you to cycle through Slice length (start / End)
+![](Screenshot%202025-11-03%20at%2010.59.37.png)
