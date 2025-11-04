@@ -10566,3 +10566,18 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-03 - Feature: Move Slice Start / End xKnob - Midi Mappings that allow you to cycle through Slice length (start / End)
 ![](Screenshots/moveslicestart_end_midi.png)
+
+---
+### 2025-11-04 - Feature: Real-Time Lazy Slice Creation - this will start the sample playback, and a single shortcut or a midi mapping will create a slice and resume playback from the slice. allows you to quickly map slices to the sample at "detected preferred playback position" manually
+![](gif/lazyslicer.gif)
+
+---
+### 2025-11-04 - Improvement: When using PCM Writer A&B Unison or A&B Wavetable creation - the Parameter Editor will now open with 4 parameters instead of 7:
+![](Screenshots/modwavetablepcmwritertweak.png)
+
+---
+### 2025-11-04 - Improvement: When using PCM Writer A&B Unison - the process is organized correctly, so first the waveforms are created, then Unison Generator is run on it, and then the `Wavetable Mod *LFO` device is loaded, so it points to the correct instrument instead of the non-Unison'd instrument.
+
+---
+### 2025-11-05 - Feature: Show/Hide 1st...16th Plugin Instrument External Editor - this will find the first.. or 16th.. Plugin Instrument, and show or hide the External Editor.
+![](Screenshots/showhideplugininstrument.png)
