@@ -10588,3 +10588,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/floodfillpatternwithphrase.png)
 
 ---
+### 2025-11-05 - Improvement: Paketti About/Donations dialog has been optimized
+![](Screenshots/pakettiaboutdonationssqueeze.png)
+
+---
+### 2025-11-06 - Improvement: Paketti Preferences has been optimized, tweaked, organized, improved - and now fits on the screen instead of requiring moving the dialog to access less accessible bits.
+![](Screenshots/pakettipreferences_squeeze.png)
+---
+### 2025-11-06 - Improvement: Load Plaid Zap .XRNI is now available as a shortcut and a Instrument Box Menu entry.
+![](Screenshots/loadplaidzap.png)
