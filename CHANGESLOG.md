@@ -10581,3 +10581,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-05 - Feature: Show/Hide 1st...16th Plugin Instrument External Editor - this will find the first.. or 16th.. Plugin Instrument, and show or hide the External Editor.
 ![](Screenshots/showhideplugininstrument.png)
+
+
+---
+### 2025-11-05 - Feature: "Flood Fill Pattern with Phrase" - This will calculate the length of the Phrase, and fill the Pattern with the Phrase until end of Pattern.
+![](Screenshots/floodfillpatternwithphrase.png)
+
+---
