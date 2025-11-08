@@ -10604,3 +10604,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-07 - Improvement: .IFF .8SVX .16SV will now resample to 28604Hz instead of 22050Hz.
+
+---
+### 2025-11-08 - Improvement: Added ALT-L to Phrase Editor (Select Current Column, then select the whole Phrase)
+
+---
+### 2025-11-08 - Improvement: Added Transpose +1/-1/+12/-12 to Phrase Editor.
+
+---
+### 2025-11-08 - Improvement: Added "Write Notes Ascending/Descending/Random" to Phrase Editor.
