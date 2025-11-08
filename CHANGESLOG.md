@@ -10597,3 +10597,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-06 - Improvement: Load Plaid Zap .XRNI is now available as a shortcut and an Instrument Box Menu entry.
 ![](Screenshots/loadplaidzap.png)
+
+
+-------
+### 2025-11-07 - Improvement: Pakettify Instrument with no loop ranges set, will no longer result in errors.
+
+---
+### 2025-11-07 - Improvement: .IFF .8SVX .16SV will now resample to 28604Hz instead of 22050Hz.
