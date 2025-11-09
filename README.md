@@ -16,6 +16,7 @@
 
 **Paketti is the Renoise Enhancement Suite (RES)** y'all been looking for.
 
+
 It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX Chains**, **Sample Modulation Chains**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme Management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
 
 It introduces features from:
