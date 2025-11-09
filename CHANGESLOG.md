@@ -10619,3 +10619,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-09 - Improvement: Nudge Up, Nudge Down, Nudge Up with Delay, Nudge Down with Delay are now available on the Phrase Editor, too.
+
+---
+### 2025-11-09 - Feature: Global:Paketti:Play Current Pattern Sequence
+
+---
+### 2025-11-09 - Feature: Sample Editor:Paketti:Process:Truncate 2x, 4x, 8x, 16x, 32x, 64x - will truncate every frame by x amount.
+![](Screenshots/trunk8.png)
