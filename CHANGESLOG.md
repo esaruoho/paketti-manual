@@ -10613,3 +10613,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-08 - Improvement: Added "Write Notes Ascending/Descending/Random" to Phrase Editor.
+
+---
+### 2025-11-09 - Improvement: Corrected the paths for certain shortcuts (Paketti Enhanced Phrase Generator) so they no longer reference Tools, instead Paketti.
+
+---
+### 2025-11-09 - Improvement: Nudge Up, Nudge Down, Nudge Up with Delay, Nudge Down with Delay are now available on the Phrase Editor, too.
