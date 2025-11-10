@@ -16,37 +16,45 @@
 
 **Paketti is the Renoise Enhancement Suite (RES)** y'all been looking for.
 
+It touches on every single area of Renoise.
 
-It touches on the **Pattern Editor**, **Sample Editor**, **Automation**, **Pattern Matrix**, **Mixer**, **Instrument Box**, **Sample FX Chains**, **Sample Modulation Chains**, **Instrument Settings**, **Sample Settings**, **Device & Sample management**, **Theme Management**, **Pattern Sequencer**, **Phrase Editor**, **Sample Navigator**, **Midi Controls** / **Midi Mappings**.. And a multitude of other things.
+If you've used any single area of Renoise, at all, you'll find something new added by Paketti into the mix for that layer, frame or view.
 
-It introduces features from:
+This means Paketti modifies the **Pattern Editor, Mixer, Pattern Matrix, Pattern Sequencer, Phrase Editor, Sample Editor, Instrument Box, Sample FX Chains, Sample Modulation Chains, Automation, Instrument Settings, Sample Settings, Device & Sample Management, Theme Management, Plugin Instruments, Plugin Devices, Sample Navigator, Sample Mappings, MIDI Controls & MIDI Mappings**.. And if that isn't enough, Paketti also introduces a multitude of file formats for importing from and exporting to.
+
+Prior Art is a big deal (see Roadmap) - There are features influenced and inspired by:
 - the C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
 - the legendary OctaMED by Teijo Kinnunen on the one and only Amiga.
 - the awesome Impulse Tracker by Jeffrey Lim, running on DOS.
 - the much-loved OpenMPT/MadTracker, Windows..
 - the name-checked Protracker for only the Amiga makes it possible (tm)
+- Polyend Tracker.
 - and.. PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
-What people say about Paketti:
+People often write me encouraging little snippets of text, as testimonials. Here are a few of them.
 
 - *"It's like it's Renoise+"*
 - *"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
 - *"Your tool is really well thought out - most well thought out Renoise tool I've come across actually. Functions I even didn't think about and it's already inside your tool. Speaking of dedication."*
-- *"I was mostly in awe and started immediately imagining new ways to use renoise"*
+- *"I was mostly in awe and started immediately imagining new ways to use Renoise"*
 - *"This is by far the most thought out tool ever. Why is this not natively implemented?"*
-- *"every renoise user should know and use paketti, without it renoise is not so fun"*
+- *"every Renoise user should know and use paketti, without it Renoise is not so fun"*
 - *"got to be one of the most (if not the most) organized set of tools ive ever seen for Renoise."*
 - *"I found Paketti to be the most versatile and flexible in its development direction. It has made Renoise very useful and enjoyable to use. Thank you."*
 - *"You are essentially writing... a completely new framework over the engine."*
 - *"I have no doubt that you are the most important person in the various Renoise Tools developers."*
 - *"You RULE. Thanks for being so responsive ... and for the massive amount of work into creating this. Really is like Renoise+++"*
 - *"Paketti is like a massive Swiss army knife in the world of Renoise tools."*
-- *"you are really doing what i wanted renoise to do in the first place"*
-- *"Stuff like paketti (as I'm digging in) is really a lifesaver. When you only have 45 minutes to make music, anything that shaves a minute or two is like an eternity. So... thank you. This is truly amazing."*
-- *"paketti itself deserves a lifetime movie about star-crossed lovers who have obscure script needs"*
+- *"you are really doing what i wanted Renoise to do in the first place"*
+- *"Stuff like Paketti (as I'm digging in) is really a lifesaver. When you only have 45 minutes to make music, anything that shaves a minute or two is like an eternity. So... thank you. This is truly amazing."*
+- *"Paketti itself deserves a lifetime movie about star-crossed lovers who have obscure script needs"*
 - *"I just set up Renoise as the Sample Editor for Ableton, got a few breaks up and quantized, THEN used the Paketti save all samples to backup folder. I've been trying for literally YEARS at this point to figure this out, THANK YOU."*
 - *"Man, Paketti is awesome. Been using Renoise for a while but never used your tool. The best thing I learned from the manual: the G01 trick. Finally free from the grid! I never realized that this is possible. That's a true game changer. Thanks a million!"*
 - *"For Paketti you deserve some kind of award, a medal. So many years to keep it alive, constantly adding new features. Respect."*
+- *"Thanks for your commitment to building Paketti into a do-everything enhancement suite to Renoise!"*
+- *"Oh yeah, these tools you've made are essential to how I think about Renoise these days - I use Renoise knowing these tools are available"*
+- *"This is by far the biggest tool for Renoise and as such your are perhaps subconsciously created a centralized, and all encompassing tool. At this point I’d rather not download other tools and simply look to Paketti for my needs. One tool, one massive upgrade to Renoise."*
+- *"Thanks for developing such a useful set of tools that greatly improve Renoise."*
 
 # Where
 

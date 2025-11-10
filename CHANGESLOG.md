@@ -10626,3 +10626,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-09 - Feature: Sample Editor:Paketti:Process:Truncate 2x, 4x, 8x, 16x, 32x, 64x - will truncate every frame by x amount.
 ![](Screenshots/trunk8.png)
+
+---
+### 2025-11-10 - Feature: Start/Stop Playback (Continue) & Start/Stop Playback (First Row) for Phrase Editor, Pattern Editor and Global.
+![](Screenshots/start_stop_playback_everywhere.png)
+
+### 2025-11-10 - Improvement: Impulse Tracker F6 Play Pattern has been optimized to run faster without feeling sluggish.
