@@ -10632,3 +10632,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/start_stop_playback_everywhere.png)
 
 ### 2025-11-10 - Improvement: Impulse Tracker F6 Play Pattern has been optimized to run faster without feeling sluggish.
+
+---
+### 2025-11-10 - Improvement: If trying to install Paketti to a Renoise v3.3.2 - the Canvas-specific API V6.2 only features will no longer error out as they're protected against being installed.
+
+---
+### 2025-11-11 - Improvement: Added Midi Mappings for "Normalize All Samples in Instrument", "Reverse All Samples in Selected Instrument", "Build Sample Variants"
