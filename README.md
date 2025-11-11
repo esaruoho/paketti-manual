@@ -22,16 +22,16 @@ If you've used any single area of Renoise, at all, you'll find something new add
 
 This means Paketti modifies the **Pattern Editor, Mixer, Pattern Matrix, Pattern Sequencer, Phrase Editor, Sample Editor, Instrument Box, Sample FX Chains, Sample Modulation Chains, Automation, Instrument Settings, Sample Settings, Device & Sample Management, Theme Management, Plugin Instruments, Plugin Devices, Sample Navigator, Sample Mappings, MIDI Controls & MIDI Mappings**.. And if that isn't enough, Paketti also introduces a multitude of file formats for importing from and exporting to.
 
-Prior Art is a big deal (see Roadmap) - There are features influenced and inspired by:
+Prior Art is a big deal (see [Roadmap](#roadmap) for an explanation as to what I mean by that) - There are features influenced and inspired by:
 - the C64 trackers created by Aleksi Eeben, JohnPlayer/PollyTracker/Quantum SoundTracker.
 - the legendary OctaMED by Teijo Kinnunen on the one and only Amiga.
 - the awesome Impulse Tracker by Jeffrey Lim, running on DOS.
 - the much-loved OpenMPT/MadTracker, Windows..
 - the name-checked Protracker for only the Amiga makes it possible (tm)
-- Polyend Tracker.
+- the Polyend Tracker hardware tracker device.
 - and.. PlayerPro - the Mac tracker that [Aphex Twin is famous for using](https://www.youtube.com/watch?v=inUOTPt2mLk).
 
-People often write me encouraging little snippets of text, as testimonials. Here are a few of them.
+People often write me encouraging little snippets of text which I recycle into testimonials. Here are a few of them.
 
 - *"It's like it's Renoise+"*
 - *"Your extension has so much to it. I was playing around with it the other day and I feel like I need to spend just a day to learn everything I can do with it. It's like Renoise+"*
@@ -70,7 +70,7 @@ You can
 - Send me a one-time donation / a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
 - Send me a one-time donation / a monthly donation, via [Buy Me a Coffee](https://buymeacoffee.com/esaruoho).
 - Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
-- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/). Or this music here on this [Bandcamp](http://hler.bandcamp.com/)
+- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/). Or this other music here on this [Bandcamp](http://hler.bandcamp.com/)
 
 # Roadmap
 
@@ -82,11 +82,11 @@ It means, that every time I'm using Renoise, I'm thinking of how the workflow co
 
 You figure largely into this. When I do Paketti 1-on-1 calls with people over Google Meet or [Discord](https://discord.gg/Qex7k5j4wG) , or just talk the features out on [Twitch](http://twitch.tv/esaruoho),  I'm always discovering something. Just describing a new feature, might elicit a question, or a "what if..?" - or simply a realization, that helps one understand what the next step might be.
 
-That's why you posting tickets to [GitHub](https://github.com/esaruoho/paketti/issues) (*), asking me questions on Discord, or posting on the [Renoise Forum](http://forum.renoise.com) - is a great way of getting the ol' noodle ticking. When you come in with an idea, a question, a problem, or a "does Paketti have..?" type thing, it really helps me. If you show me a video of how you use Paketti / Renoise, or an age-old old-school method that you've used for decades - I can try and wrap my mind around it and then work out how it could be improved or tweaked or, Pakettified, let's put it like that.
+That's why you posting tickets to [GitHub](https://github.com/esaruoho/paketti/issues) `(*)`, asking me questions on Discord, or posting on the [Renoise Forum](http://forum.renoise.com) - is a great way of getting the ol' noodle ticking. When you come in with an idea, a question, a problem, or a "does Paketti have..?" type thing, it really helps me. If you show me a video of how you use Paketti / Renoise, or an age-old old-school method that you've used for decades - I can try and wrap my mind around it and then work out how it could be improved or tweaked or, Pakettified, let's put it like that.
 
-`(*) You know, Paketti was pretty much laying dormant from 2014 on to around 2024 - it had helped me do what I wanted to do with Renoise - and I never got around to creating the valid and fully functional Renoise v3.0 version of Paketti - up until I somehow noticed that there were tickets created to my GitHub! Needless to say, I was absolutely shocked. Paketti wasn't a userbase of 1. There was a japanese chap who had written tickets, and I took a look at them and decided to start doing them. It felt almost unreal to be getting feedback from another person - suggestions for features, and I started implementing them, fixing all the non-v3.0-supported functions in Paketti and just tuning it up. In or around March-April-May 2024, I got a lot of suggestions for features from an American chap and the Japanese chap and it got me kickstarted. So thanks for that!`
+`(*) You know, Paketti was pretty much lying dormant from 2014 onwards to around 2024 - it had helped me do what I wanted to do with Renoise - and I never got around to creating the valid and fully functional Renoise v3.0 version of Paketti - despite multiple promises and tries at it - up until I suddenly noticed that there were tickets created to my GitHub! Needless to say, I was absolutely shocked. Paketti wasn't a userbase of 1. There was a japanese chap who had written tickets, and I took a look at them and decided to start doing them. It felt almost unreal to be getting feedback from another person - suggestions for features, and I started implementing them, fixing all the non-v3.0-supported functions in Paketti and just tuning it up. In or around March-April-May 2024, I got a lot of suggestions for features from an American chap and the Japanese chap and it got me kickstarted. So thanks for that!`
 
-So, it's been a year and a half, since I downloaded all the 2002-2024 threads from the Renoise forum (Beginner Questions, Ideas & Suggestions, Bugs etc) - all 7000+ of them, and went through them over the course of about half a year. This process of going through the questions and suggestions that people had, was eye-opening.
+So, it's been a year and a half since I downloaded all the 2002-2024 threads from the Renoise forum (Beginner Questions, Ideas & Suggestions, Bugs etc) - all 7000+ of them, and went through them over the course of about half a year. This process of going through the questions and suggestions that people had, was eye-opening.
 
 In a way, I could describe it in three layers. 
 
@@ -122,10 +122,20 @@ If you're able to support this on-going project financially, you're very very we
 
 Be seeing you.
 
-Esa Ruoho.
-
+Yours, Esa Ruoho.
 
 # GettingStarted
+
+Download the newest version from [here](http://github.com/esaruoho/paketti/releases) - there's pretty much daily updates. The auto-updater has not yet been explained to me in such a way that I could have people enjoy auto-updates, yet.
+
+Drag it to your Renoise, or, if you already have Renoise installed, try double-clicking on the Paketti XRNX file that you got from http://github.com/esaruoho/paketti/releases.
+
+After a while, Paketti will be installed.
+
+Now, here's where the complexity lies. You now have hundreds upon hundreds, thousands upon thousands of new shortcuts, midi mappings and menu entries.
+
+You'll find the menu entries by right-clicking on any area on the Pattern Sequencer, Pattern Matrix, Pattern Editor, Phrase Editor, Mixer, Instrument Box, Track DSP, Automation, Main Menu -> Tools, Disk Browser to start with. 
+
 
 Yes, there's a learning curve.
 Paketti introduces hundreds of new features and thousands of tweaks.

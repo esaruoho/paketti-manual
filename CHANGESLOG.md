@@ -10638,3 +10638,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-11 - Improvement: Added Midi Mappings for "Normalize All Samples in Instrument", "Reverse All Samples in Selected Instrument", "Build Sample Variants"
+
+---
