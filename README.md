@@ -126,16 +126,103 @@ Yours, Esa Ruoho.
 
 # GettingStarted
 
-Download the newest version from [here](http://github.com/esaruoho/paketti/releases) - there's pretty much daily updates. The auto-updater has not yet been explained to me in such a way that I could have people enjoy auto-updates, yet.
+Download the newest version from [here](http://github.com/esaruoho/paketti/releases) - there's pretty much daily updates. Auto-updates would be neat, right? I've not yet set them up - it's not a case of just pushing to GitHub and rolling a new build - instead I'd need to do a bit more script magic to push them directly to the Renoise Tools page. This is a TODO.
 
-Drag it to your Renoise, or, if you already have Renoise installed, try double-clicking on the Paketti XRNX file that you got from http://github.com/esaruoho/paketti/releases.
+Drag the tool to your Renoise, or, if you already have Renoise installed, try double-clicking on the Paketti XRNX file that you got from http://github.com/esaruoho/paketti/releases.
 
-After a while, Paketti will be installed.
+After a while, Paketti will finish installing.
 
-Now, here's where the complexity lies. You now have hundreds upon hundreds, thousands upon thousands of new shortcuts, midi mappings and menu entries.
+Now, here's where the complexity lies. You now have hundreds upon hundreds, thousands upon thousands of new Shortcuts, MIDI Mappings, brand new dialogs and Menu Entries. Also a handful of supported file formats (.SF2, .REX, .RX2, .PTI, .OT, .WT, .ITI and more coming soon).
 
-You'll find the menu entries by right-clicking on any area on the Pattern Sequencer, Pattern Matrix, Pattern Editor, Phrase Editor, Mixer, Instrument Box, Track DSP, Automation, Main Menu -> Tools, Disk Browser to start with. 
+Since you can easily grasp that this is very much like grasping the dragon's tail and trying to hang on for dear life, we'll start from a specific area of interest first and then travel elsewhere.
 
+## MenuEntries
+
+You'll find the Menu Entries by right-clicking on any area on the Pattern Sequencer, Pattern Matrix, Pattern Editor, Phrase Editor, Mixer, Instrument Box, Track DSP, Automation, Sample Editor, Sample FX Chain, Sample Navigator, Sample Mappings, Sample Modulation Matrix,  Main Menu -> Tools, Main Menu -> Options and the Disk Browser to begin with.
+
+It's been an ongoing process of making sure the relevant Menu Entries are available in the most intuitive places, and I can always add more Menu Entries to more places - just let me know.
+
+### MainMenuOptions
+
+As an example, the **Main Menu -> Options** context menu has multiple togglable features for better discoverability. The idea here is that you can quickly see if some feature is on, or off, without needing to check the **Paketti Preferences**. I've also added checkmarks to depict whether a feature is on or off. 
+
+NOTE: This screenshot, like many others in this manual, are here only for the purposes of showing that something like this, exists, in this area - by the time you install the newest version of Paketti - there might be 2-5-10-20 more Options in the menu. 
+![](Screenshots/mainmenu_options.png)
+So, what even are all of these? 
+
+#### Automatically Open Selected Track Device Editors
+
+
+#### Open Parameter Editor On Device Selection
+When this is enabled, the Paketti specific Parameter Editor is always opened, when you select a new Device on the Mixer or Track DSP view (such as on the Pattern Editor). Here's an example of what the Parameter Editor can look like.
+![](Screenshots/mainmenuoptions_openparametereditor.png)
+To find out more about the Parameter Editor, look here [ParameterEditor](#parametereditor)
+#### Sample Range Device Loader
+This feature was born in Alicante, Spain, on the 25th of October 2025 - when I attended a masterclass by AZ-Rotator. He showed some of his workflows with Cubase - one of which was the "select a region of sound, paste it to a channel with effects" (such as play a segment of an audio region via a Reverb). I took a look at that, and thought, wait, what if I just flipped the script a little bit, and instead offered a way for the user to highlight a Sample Range in the Sample Editor, then use the Shortcuts that Paketti provides for loading a DSP Device - what happens then is that the Sample Range is copied to a new Instrument, Pakettified, and the Sample FX Chain for the Pakettified Instrument automatically has the Reverb or any other DSP Device you wanted to load. It's pretty neat. This means that you could for instance, highlight a snare of a break, then press a Reverb shortcut, and a new Instrument appears with just the Snare range, and whenever you trigger the Snare Instrument, it is played through a Reverb.
+#### Pattern Status Monitor Toggle
+This was requested by a person looking to move from OpenMPT/ModPlugTracker to Renoise - apparently this specific Prior Art tracker has a method of showing exactly what the cursor is on, i.e., if you're on top of a Pattern Row which has notes, volume/delay/panning/samplefx settings and Effect Column settings. If you're on a row such as this, you immediately see which effect is used, what the number is in both hex and non-hex, and the value data.
+
+Some quick examples:
+![](Screenshots/patternstatusmonitorexample01.png)
+![](Screenshots/patternstatusmonitorexample02.png)
+
+#### Audition Current Line on Pattern Row Change Toggle
+
+
+#### PlayerPro Auto-Open Smart Dialog
+
+
+#### Sononym Auto-Transfer Toggle
+A while back, I was notified of a semi-abandoned tool that was left in an Alpha state - a tool by Danoise, aka Bjørn Nesby - the maker of Sononym. He wrote a tool called Sononymph, which was integrated Renoise with [Sononym](http://sononym.net). I took a heavily slanted Paketti "look" at the tool, and decided to modify, rewrite, simplify, organize, optimize and troubleshoot it. Without delving deeper into the features and improvements I added - suffice to say - it now does exactly what it says on the tin. And the Sononym Auto-Transfer Toggle is so that when you select a sample in Sononym, hey presto, it is automatically transferred to Renoise.
+![](Screenshots/mainmenuoptionsononym.png)
+#### SBx Pattern Loop Follow
+
+
+#### Phrase Follow Pattern Playback Hack
+
+
+#### Automatic Rename Track
+
+
+#### Auto-Zero-Crossing Selection Range
+
+
+#### Auto-samplify Enable Monitoring
+
+
+#### Auto-samplify Pakettify
+
+
+
+
+### PakettiGadgets
+
+This is a separate set of Menu Entries - the concept is that if it is a Dialog - i.e. a LUA-scripted GUI, custom-made for Paketti, then they are available from the **Paketti Gadgets** context menu. These are also grouped from the point of view of intuitive access - such as, those Paketti Gadgets that modify the Sample, are accessible from the Sample Editor, Sample Navigator and Sample Mappings, additionally from the Instrument Box.
+
+## MIDIMappings
+
+
+## Shortcuts
+
+
+## Dialogs
+### Paketti eSpeak Text-to-Speech
+
+
+### Paketti TimeStretcher
+
+
+### Paketti Stacker
+
+
+### Paketti Polyend Buddy .PTI Management
+
+
+
+## File Formats
+
+
+# Old
 
 Yes, there's a learning curve.
 Paketti introduces hundreds of new features and thousands of tweaks.
