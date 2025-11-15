@@ -10666,3 +10666,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-15 - Feature: Nudge up/down by Step, Nudge up/down by delay, added to Phrase Editor and Pattern Editor - these will work if nothing is selected, so the note row you're on, will get nudged.
 
 ---
+### 2025-11-16 - Feature: Pick Up Slices & Apply Slices with Same Relative Positioning - if you're taking a 16bit 44.1khz sample, rendering it with processing to 24bit 96khz or 24bit 48khz - the slices in the sample can be reapplied to match the changed frame count.
