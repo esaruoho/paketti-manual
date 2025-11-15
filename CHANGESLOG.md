@@ -10640,3 +10640,29 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-11 - Improvement: Added Midi Mappings for "Normalize All Samples in Instrument", "Reverse All Samples in Selected Instrument", "Build Sample Variants"
 
 ---
+### 2025-11-11 - Improvement: Continued on Roadmap, GettingStarted and the beginnings of the Paketti Manual.
+
+---
+### 2025-11-13 - Plumbing: Lots of Menu Entries are being shifted around for easier editing + ordering, also updates to GettingStarted and Main Menu -> Options with additional checkmarks and additional configurability
+
+---
+### 2025-11-14 - Feature: Trim Sample by Half / Trim All Samples in Selected Instrument by Half
+![](Screenshots/trimbyhalf.png)
+
+---
+### 2025-11-14 - Improvement: Paketti Pattern Editor Cheatsheet will now write to the Effect Column you are on, instead of defaulting to Effect Column 01, even if you're on Effect Column 08.
+
+---
+### 2025-11-15 - Improvement: Show Largest Samples Dialog now has "Cut in Half" & "Delete" buttons - meaning you don't have to manually delete content, or cut it in half, you can just press the button. The dialog will update with the updated information, also.
+![](Screenshots/showlargestsamples_cutinhalf_trim_delete.png)
+
+---
+### 2025-11-15 - Improvement: Device Load Order "Last" will treat `*Instr. Macros` device with the same care, i.e., minimize it, just like the "First" order device of same name.
+
+---
+### 2025-11-15 - Improvement: Real-Time Slice Insertion Sample Range drawing can be stopped by pressing the Impulse Tracker F8 "Stop" shortcut.
+
+---
+### 2025-11-15 - Feature: Nudge up/down by Step, Nudge up/down by delay, added to Phrase Editor and Pattern Editor - these will work if nothing is selected, so the note row you're on, will get nudged.
+
+---
