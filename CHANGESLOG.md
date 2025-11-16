@@ -10675,3 +10675,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-16 - Improvement: .SF2 Menu Entry for importing now works exactly as well as the drag'n'drop function.
+
+---
+### 2025-11-16 - Improvement: The RX2 Decoder macOS version works on both Intel Macs and Apple Silicon Macs.
+
+---
+### 2025-11-16 - Improvement: Added Slice to Pattern Sequencer Dialog to Pattern Sequencer -> Paketti Gadgets for easier discoverability.
