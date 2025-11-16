@@ -10666,10 +10666,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-15 - Feature: Nudge up/down by Step, Nudge up/down by delay, added to Phrase Editor and Pattern Editor - these will work if nothing is selected, so the note row you're on, will get nudged.
 
 ---
-### 2025-11-15 - Feature: 
-
+### 2025-11-15 - Feature: Create New Rhythmic Slice DrumChain with Current Slices - Normalized versions, XRNI loading, Randomize. The idea here is that if you have a sliced break, or sliced anything, you can use this feature to make a duplicate of that instrument, and replace all the slices with either user-selected drums, load in another sliced xrni, or load a bunch of random samples based on the folder you selected (whereupon it reads your subfolders and all samples, checks how many slices are in the original instrument, and loads that many samples). What happens afterwards is, the samples are converted to matching samplerate, bitdepth and channel amount, and the slice lengths are applied to the samples - basically resulting in an identical length loop but with different sample content, cut to match the slice length per each slice. Usecases: Take your Amen beat and retain the Rhythmic Slices but replace the sounds with the Think beat - or anything at all. It's quite versatile with unexpected results a-plenty.
+![](Screenshots/createnewrhythmicslicedrumchain.png)
 
 ---
 ### 2025-11-16 - Feature: Pick Up Slices & Apply Slices with Same Relative Positioning - if you're taking a 16bit 44.1khz sample, rendering it with processing to 24bit 96khz or 24bit 48khz - the slices in the sample can be reapplied to match the changed frame count.
+![](Screenshots/pickup-apply-relative-slices.png)
 
 ---
+### 2025-11-16 - Improvement: .SF2 Menu Entry for importing now works exactly as well as the drag'n'drop function.
