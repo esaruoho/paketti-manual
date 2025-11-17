@@ -10681,3 +10681,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-16 - Improvement: Added Slice to Pattern Sequencer Dialog to Pattern Sequencer -> Paketti Gadgets for easier discoverability.
+
+---
+### 2025-11-16 - Improvement: Slice to Pattern Sequencer Dialog UI improvements to make it look more polished.
+![](Screenshots/slicetopatterndialog.png)
+
+---
+### 2025-11-17 - Feature: .WAV loader with CUE header extraction to Slices added.
+![](Screenshots/wavcue01.png)
+![](Screenshots/wavcue02.png)
