@@ -10697,3 +10697,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-17 - Improvement: File-> Paketti Import submenu has been introduced for easier discoverability of formats to load / import. Drag'n'drop still works, but maybe this helps people who like looking at menu entries.
 ![](Screenshots/paketti_import.png)
+
+---
+### 2025-11-18 - Feature: Default Pattern Init Dialog - combined both Phrase Init and the newly created Pattern Init Dialog together, so now you can use "Create New Track with Channelstrip" so that you get a specific set of automated settings for your track. Also moved the Channelstrip default selection from Paketti Preferences to Pattern / Phrase Init Dialog for easier configurability. Also added the Channelstrip Device Chain configuration
+![](_todo/patterninitimprovements.png)
+
+---
+### 2025-11-18 - Improvement: Set Selected Sample Transpose or Finetune to 0, or Pan to 1.0 0.5 or 0 or -0.5 or -1.0 - and many others, all have protection against no sample actually being selected, and the "0" settings will work directly.
