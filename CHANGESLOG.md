@@ -10687,6 +10687,13 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/slicetopatterndialog.png)
 
 ---
-### 2025-11-17 - Feature: .WAV loader with CUE header extraction to Slices added.
+### 2025-11-17 - Feature: .WAV loader with CUE header extraction to Slices added. Additionally, .WAV Export with CUE header writing added.
 ![](Screenshots/wavcue01.png)
 ![](Screenshots/wavcue02.png)
+
+---
+### 2025-11-17 - Plumbing: Paketti PTI/REX tool / Import File Formats tool has been renamed Paketti Formats - and has been updated to have all the same Import / Export formats that Paketti already did.
+
+---
+### 2025-11-17 - Improvement: File-> Paketti Import submenu has been introduced for easier discoverability of formats to load / import. Drag'n'drop still works, but maybe this helps people who like looking at menu entries.
+![](Screenshots/paketti_import.png)
