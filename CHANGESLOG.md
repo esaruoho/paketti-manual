@@ -10704,3 +10704,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-18 - Improvement: Set Selected Sample Transpose or Finetune to 0, or Pan to 1.0 0.5 or 0 or -0.5 or -1.0 - and many others, all have protection against no sample actually being selected, and the "0" settings will work directly.
+
+
+---
+
