@@ -10712,3 +10712,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-19 - Improvement: Create New Track with Channelstrip & Pattern/Phrase Init Settings Dialog now no longer error out on adding a Send, and also have an additional setting for Send Effect Column Count - and the naming is switched from `T#` to `S#`if such is set.
+
+---
+### 2025-11-20 - Feature: Nudge and Move Selection for both Pattern and Phrase Editor. This will move the selection range and the content within it, with collision detection (notes, content, start or end of pattern). Can move content within multiple tracks.
+
+---
+
