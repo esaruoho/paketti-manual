@@ -10717,4 +10717,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-20 - Feature: Nudge and Move Selection for both Pattern and Phrase Editor. This will move the selection range and the content within it, with collision detection (notes, content, start or end of pattern). Can move content within multiple tracks.
 
 ---
+### 2025-11-20 - Improvement: Volume AHDSR in Paketti Loader Settings now correctly finds the Volume AHDSR device instead of being hardcoded to device 2.
 
+
+---
