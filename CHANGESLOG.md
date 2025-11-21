@@ -10708,7 +10708,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-19 - Improvement: Select Specific track is now 1-32 instead of 1-16.
-![](_todo/select_specific_track.png)
+![](Screenshots/select_specific_track.png)
 
 ---
 ### 2025-11-19 - Improvement: Create New Track with Channelstrip & Pattern/Phrase Init Settings Dialog now no longer error out on adding a Send, and also have an additional setting for Send Effect Column Count - and the naming is switched from `T#` to `S#`if such is set.
@@ -10721,3 +10721,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-21 - Improvement: 18 other places also now correctly check for Paketti Preferences for Enable AHDSR - and apply it to the loaded samples, instead of ignoring the setting.
+
+---
+### 2025-11-21 - Improvement: Groovebox 8120: Pressing space will start or stop playback.
