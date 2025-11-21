@@ -10719,5 +10719,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-20 - Improvement: Volume AHDSR in Paketti Loader Settings now correctly finds the Volume AHDSR device instead of being hardcoded to device 2.
 
-
 ---
+### 2025-11-21 - Improvement: 18 other places also now correctly check for Paketti Preferences for Enable AHDSR - and apply it to the loaded samples, instead of ignoring the setting.
