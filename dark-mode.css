@@ -3,7 +3,19 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    padding: 10px;
+    padding: clamp(2em, 50px, 10%);
+    margin: 0 !important;
+    text-align: left;
+    line-height: 1.3em;
+    width: 100%;
+}
+
+@media(min-width:1000px){
+    body * {
+        max-width: 1000px !important;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* Table styling for dark theme */
@@ -44,6 +56,63 @@ a:hover {
     text-decoration: underline;
 }
 
+/* List styling */
+ol {
+    margin: 2em auto;
+}
+
+ul {
+    max-width: calc(100% - 40px);
+}
+
+/* Image styling */
+img {
+    max-width: 90%;
+    display: block;
+    padding-block: 1em;
+}
+
+/* Paragraph styling */
+p {
+    max-width: 100%;
+    margin: 0.5em auto 0.1em;
+}
+
+/* Heading spacing */
+h1 {
+    padding-top: 1.3em;
+    padding-bottom: 1em;
+}
+
+h2 {
+    padding-top: 1.1em;
+}
+
+h3 {
+    padding-top: 0.9em;
+}
+
+h4 {
+    padding-top: 0.7em;
+}
+
+/* Mobile link styling */
+@media(max-width:600px){
+    a {
+        display: inline-block;
+        color: red !important;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* MAIN MENU */
+p:first-of-type a {
+    display: inline;
+}
+
 /* ============================
    CODE BLOCK & INLINE-CODE
    ============================ */
@@ -67,6 +136,14 @@ pre {
 code:not(pre code) {
     padding: 0.2em 0.4em;
     border-radius: 4px;
+}
+
+/* Additional code block styling */
+code:not(code:first-of-type) {
+    width: 80%;
+    display: block;
+    padding: 1em !important;
+    margin: 0 auto;
 }
 
 /* 4) Jekyll/Liquid “highlight” -->
