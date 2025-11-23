@@ -99,12 +99,9 @@ h4 {
 /* Mobile link styling */
 @media(max-width:600px){
     a {
-        display: inline-block;
-        color: red !important;
         overflow-wrap: break-word;
+        word-wrap: break-word;
         max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 
