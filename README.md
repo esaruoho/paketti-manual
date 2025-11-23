@@ -9,8 +9,7 @@
  7. [Automation](#automation)
  8. [SampleManagement](#SampleManagement)
  9. [RewriteSoon](#RewriteSoon)
- 10. [Oldabout](#oldabout)
- 11. [Changeslog](CHANGESLOG.html)
+ 10. [Changeslog](CHANGESLOG.html)
 
 # Paketti
 
@@ -520,7 +519,6 @@ Since there are limitations to what the Global View Presets can do - I've opted 
 
 ## Sample Recorder
 
-
 # SampleManagement
 
 Paketti tries to circumvent some of the most painful points of Renoise, and replace them with better, easier, faster, more user-friendly solutions. Quality-of-Life & Workflow improvements over "multiple mouse clicks".
@@ -596,7 +594,6 @@ The reason for adding these, is, so, that when you are on any instrument with th
 The DrumKit loader loads a max of 120 samples into the instrument. Select more? Only loads 120 samples. The drums are mapped automatically from C0 to B9.
 
 ### Saving Samples
-
 There are Midi Mappings, Keyboard Shortcuts and Menu Entries for `Save Selected Sample .WAV` & `Save Selected Sample .FLAC`. There's also `Save Selected Sample Range .WAV` & `Save Selected Sample Range .FLAC`. The Sample Range saving is from Fast Tracker 2.
 
 ![](attachments/383982809-f8090146-e741-4232-b357-8b128608fb71.png)
@@ -610,7 +607,6 @@ The dialog where you get to select the Backup Folders is the "Launch App Selecti
 ![](attachments/launchapp_appselection.png)
 
 ### Sending Samples to other apps
-
 If you carefully look at the same dialog:
 
 ![](attachments/LaunchAppSelection.png)
@@ -751,7 +747,6 @@ there's randomizers for parameters of selected device, a mono-device which can b
 ![](attachments/randomizing_plugins_devices_dialog.png)
 
 the same shortcut + midimapping loader for devices, is also available for plugins, so vst,vst3,audiounit,ladspa,dssi softsynths can be shot to the instrument box with shortcuts + midimappings
-
 
 there's an inverter device which inverts the audio - using the Gainer device. This can be added to both the Sample FX Chain and the Track DSP Chains.
 
@@ -942,35 +937,6 @@ this means you can actually automate when the recording is on or off, when sampl
 the reason why there's LPB + BPM control is that the BPM in Renoise Master track automation is 20-999 (!) and LPB is 1-256, so  just a bit too much, i asked around a lot and 20-300 and 1-32 seemed to be the agreed upon, anything more, just let me know (64?). but to maintain automation resolution and "keeping it making sense", for most uses, these artifiical limitations are alright
 
 i think the reason why i forgot to mention this was that i have had a tough time finding anyone to tell me what else could be done. i did experiments of using automation to change lower frame, middle frame, upper frame views, for instance. basically any script can be run like this. but i couldn't get anyone to talk to me about what they wanted and gave up and forgot about it
-
-# Oldabout
-
-Paketti is a multipurpose Renoise tool. Working like an expansion pack, it delivers hundreds of new functionalities to the app, ranging from Quality-of-Life (QoL) improvements to new advanced features inspired by Impulse Tracker, Schism Tracker, ModPlugTracker, Player Pro, John Player/Quantum SoundTracker/PollyTracker, OctaMED and many others. It also addresses multiple community requests from the Renoise Forum that were not yet considered by the developers. 
-
-It is far too complex to sum up in just a few words. However, some notable changes include:
-
-* Over ~~three~~ ~~four~~ five thousand new keybinds covering multiple areas of Renoise;
-* Default XRNI functionality - each loaded instrument or drumkit has Pitchbend, Glide Amount, Cutoff, Resonance, Cutoff LFO Amount, Cutoff LFO Frequency, Overdrive, Parallel Compression.
-* Automatically load multiple samples into sequential instrument slots;
-* Device parameter randomizer;
-* Plugin parameter randomizer;
-* Change default computer keyboard Velocity with Midi Mapping;
-* Change Global Grooves with Midi Mapping;
-* Freeze & Flatten Track -> Creates a new Track with content playing. Also Records incoming audio if `#Line-in Device` is in the Selected Track;
-* Quick switch autosuspend for Selected Plugin;
-* Bypass all devices in Selected Track;
-* Floating window to insert plugins or Devices and add them as keybinds and MidiMappings;
-* Floating interactable FX column cheat sheet, including sliders to quickly write changes to row or selection in pattern in your pattern;
-* Pattern doubler/halver (duplicates the Pattern content, and the automation);
-* Color/highlight the selected track in Pattern Editor (with EditMode (Record On/Off);
-* Dozens of shortcuts for Pattern AND Phrase editing;
-* Impulse Tracker (.it) key commands (`ALT-D *2`, `ALT-L *2`, `ALT-U`, `ALT-F`, `ALT-G`, `ALT-Y`, `Home *2`, `End *2`, `F2 F3 F4 F5 F6 F8 F12`);
-* Quickly add Automation curves to pattern automation (fade ins/fade outs (linear or exponential), pitchbend/panning);
-* Show/Hide Device parameters as sliders in the Mixer;
-* Control Selected Sample loop start/endpoints with MIDI;
-* Control Automation start / endSelection via MidiMappings
-* Control Sample Buffer start / endSelection via MidiMappings
-* And much much more!
 
 # Changeslog
 
