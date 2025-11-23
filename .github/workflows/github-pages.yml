@@ -82,6 +82,8 @@ jobs:
           sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="GettingStarted">GettingStarted<\/h1>/g' index.html
           sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="ManualOrganization">ManualOrganization<\/h1>/g' index.html
           sed -i 's/<h2>Automation<\/h2>/<h2 id="Automation">Automation<\/h2>/g' index.html
+          sed -i 's/<h2>ParameterEditor<\/h2>/<h2 id="parametereditor">ParameterEditor<\/h2>/g' index.html
+          sed -i 's/<h4>Open Parameter Editor On Device Selection<\/h4>/<h4 id="open-parameter-editor-on-device-selection">Open Parameter Editor On Device Selection<\/h4>/g' index.html
           sed -i 's/<h1>SampleManagement<\/h1>/<h1 id="SampleManagement">SampleManagement<\/h1>/g' index.html
           sed -i 's/<h1>RewriteSoon<\/h1>/<h1 id="RewriteSoon">RewriteSoon<\/h1>/g' index.html
           

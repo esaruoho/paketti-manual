@@ -512,6 +512,16 @@ Also, every Paketti instrument comes in pre-baked with Pitchbend support - so yo
 
 ## Dialogs
 
+## ParameterEditor
+
+The Parameter Editor is a Paketti-specific dialog that provides quick access to device parameters. When enabled via **Main Menu -> Options -> Open Parameter Editor On Device Selection**, it automatically opens whenever you select a new Device on the Mixer or Track DSP view.
+
+The Parameter Editor provides a focused interface for controlling and automating device parameters without cluttering your workspace.
+
+![](Screenshots/mainmenuoptions_openparametereditor.png)
+
+For more details on enabling this feature, see [Open Parameter Editor On Device Selection](#open-parameter-editor-on-device-selection).
+
 ## Global View Presets
 
 Since there are limitations to what the Global View Presets can do - I've opted for creating 8 slots for Dynamic Views. These can be triggered with user-defined shortcuts, and they fully control what is visible or not-visible. Here are the four that I use - note well: you could have a single shortcut that runs through all 8 cycles of the one slot, meaning, it could be anything - going to anything. A single shortcut that jumps from Pattern Editor to Phrase Editor to Mixer to Sample Editor, with all the other frames and information either displayed or not displayed.
