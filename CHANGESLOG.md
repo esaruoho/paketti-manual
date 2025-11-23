@@ -10733,4 +10733,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](_todo/userdefinedappend.png)
 
 ---
-### 2025-11-23 - Improvement: Added SubColumn aware versions of Write Values/Notes Ascending,Descending,Random 
+### 2025-11-23 - Improvement: Added SubColumn aware versions of Write Values/Notes Ascending,Descending,Random - depending on if you're on Delay, Volume, Panning SubColumns, it'll write to those. Also follows selection.
+![](_todo/subcolumn_writer.png)
