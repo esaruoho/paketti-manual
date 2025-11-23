@@ -188,14 +188,6 @@ code:not(pre code) {
     border-radius: 4px;
 }
 
-/* Additional code block styling */
-code:not(code:first-of-type) {
-    width: 80%;
-    display: block;
-    padding: 1em !important;
-    margin: 0 auto;
-}
-
 /* 4) Jekyll/Liquid “highlight” -->
 div.highlight, div.highlight pre,
 .highlight pre, .highlight code {
