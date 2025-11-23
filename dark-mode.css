@@ -17,10 +17,10 @@ body {
 }
 
 @media(min-width:1000px){
-    body * {
+    body > * {
         max-width: 1000px !important;
-        width: 100%;
-        margin: 0 auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 
@@ -126,18 +126,26 @@ h4 {
     h1 {
         padding-top: 1.3em;
         padding-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     h2 {
         padding-top: 1.1em;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     h3 {
         padding-top: 0.9em;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     h4 {
         padding-top: 0.7em;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
