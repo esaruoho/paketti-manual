@@ -76,7 +76,7 @@ jobs:
           
           # Add anchor IDs to headings matching the TOC links exactly
           sed -i 's/<h1>Paketti<\/h1>/<h1 id="Paketti">Paketti<\/h1>/g' index.html
-          sed -i 's/<h2>Where<\/h2>/<h2 id="Where">Where<\/h2>/g' index.html
+          sed -i 's/<h1>Where<\/h1>/<h1 id="Where">Where<\/h1>/g' index.html
           sed -i 's/<h1>Support<\/h1>/<h1 id="Support">Support<\/h1>/g' index.html
           sed -i 's/<h1>Roadmap<\/h1>/<h1 id="Roadmap">Roadmap<\/h1>/g' index.html
           sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="GettingStarted">GettingStarted<\/h1>/g' index.html
