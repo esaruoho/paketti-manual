@@ -10724,3 +10724,13 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-21 - Improvement: Groovebox 8120: Pressing space will start or stop playback.
+
+---
+### 2025-11-22 - Feature: Impulse Tracker Capture Marker Position (CTRL-F7) - this lets you mark a specific pattern row, and the Impulse Tracker F7 "play from line" will start from that pattern row on every F7 press. And if there's no Marker Position stored, then it'll start from where the current line is. 
+
+---
+### 2025-11-23 - Improvement: Added "Append" feature to User-Defined Sample Folders Loader Dialog - this adds random samples to the current Instrument instead of adding new ones.
+![](_todo/userdefinedappend.png)
+
+---
+### 2025-11-23 - Improvement: Added SubColumn aware versions of Write Values/Notes Ascending,Descending,Random 
