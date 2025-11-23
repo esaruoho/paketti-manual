@@ -76,12 +76,12 @@ jobs:
           
           # Add anchor IDs to headings matching the TOC links exactly
           sed -i 's/<h1>Paketti<\/h1>/<h1 id="Paketti">Paketti<\/h1>/g' index.html
-          sed -i 's/<h2>Where<\/h2>/<h2 id="where">Where<\/h2>/g' index.html
-          sed -i 's/<h1>Support<\/h1>/<h1 id="support">Support<\/h1>/g' index.html
-          sed -i 's/<h1>Roadmap<\/h1>/<h1 id="roadmap">Roadmap<\/h1>/g' index.html
-          sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="gettingstarted">GettingStarted<\/h1>/g' index.html
-          sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="manualorganization">ManualOrganization<\/h1>/g' index.html
-          sed -i 's/<h2>Automation<\/h2>/<h2 id="automation">Automation<\/h2>/g' index.html
+          sed -i 's/<h2>Where<\/h2>/<h2 id="Where">Where<\/h2>/g' index.html
+          sed -i 's/<h1>Support<\/h1>/<h1 id="Support">Support<\/h1>/g' index.html
+          sed -i 's/<h1>Roadmap<\/h1>/<h1 id="Roadmap">Roadmap<\/h1>/g' index.html
+          sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="GettingStarted">GettingStarted<\/h1>/g' index.html
+          sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="ManualOrganization">ManualOrganization<\/h1>/g' index.html
+          sed -i 's/<h2>Automation<\/h2>/<h2 id="Automation">Automation<\/h2>/g' index.html
           sed -i 's/<h1>SampleManagement<\/h1>/<h1 id="SampleManagement">SampleManagement<\/h1>/g' index.html
           sed -i 's/<h1>RewriteSoon<\/h1>/<h1 id="RewriteSoon">RewriteSoon<\/h1>/g' index.html
           

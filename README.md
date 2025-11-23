@@ -1,12 +1,12 @@
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
 
  1. [Paketti](#Paketti) 
- 2. [Where](#where)
- 3. [Support](#support)
- 4. [Roadmap](#roadmap)
- 5. [GettingStarted](#gettingstarted)
- 6. [ManualOrganization](#manualorganization)
- 7. [Automation](#automation)
+ 2. [Where](#Where)
+ 3. [Support](#Support)
+ 4. [Roadmap](#Roadmap)
+ 5. [GettingStarted](#GettingStarted)
+ 6. [ManualOrganization](#ManualOrganization)
+ 7. [Automation](#Automation)
  8. [SampleManagement](#SampleManagement)
  9. [RewriteSoon](#RewriteSoon)
  10. [Changeslog](CHANGESLOG.html)
