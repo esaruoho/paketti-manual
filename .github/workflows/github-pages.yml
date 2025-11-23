@@ -71,21 +71,8 @@ jobs:
           <body>
           EOF
           
-          # Convert README.md to HTML and append to index.html
-          npx marked README.md >> index.html
-          
-          # Add anchor IDs to headings with simple sed
-          sed -i 's/<h1>What<\/h1>/<h1 id="what">What<\/h1>/g' index.html
-          sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="gettingstarted">GettingStarted<\/h1>/g' index.html
-          sed -i 's/<h2>Feedback<\/h2>/<h2 id="feedback">Feedback<\/h2>/g' index.html
-          sed -i 's/<h2>Where<\/h2>/<h2 id="where">Where<\/h2>/g' index.html
-          sed -i 's/<h1>Support<\/h1>/<h1 id="support">Support<\/h1>/g' index.html
-          sed -i 's/<h1>Roadmap<\/h1>/<h1 id="roadmap">Roadmap<\/h1>/g' index.html
-          sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="manualorganization">ManualOrganization<\/h1>/g' index.html
-          sed -i 's/<h2>Automation<\/h2>/<h2 id="automation">Automation<\/h2>/g' index.html
-          sed -i 's/<h1>SampleManagement<\/h1>/<h1 id="samplemanagement">SampleManagement<\/h1>/g' index.html
-          sed -i 's/<h1>RewriteSoon<\/h1>/<h1 id="rewritesoon">RewriteSoon<\/h1>/g' index.html
-          sed -i 's/<h1>Oldabout<\/h1>/<h1 id="oldabout">Oldabout<\/h1>/g' index.html
+          # Convert README.md to HTML with header IDs enabled
+          npx marked --gfm --headerIds README.md >> index.html
           
           # Close HTML tags
           echo "</body>" >> index.html
@@ -129,8 +116,8 @@ jobs:
           <body>
           EOF
           
-          # Convert CHANGESLOG.md to HTML and append to CHANGESLOG.html
-          npx marked CHANGESLOG.md >> CHANGESLOG.html
+          # Convert CHANGESLOG.md to HTML with header IDs enabled
+          npx marked --gfm --headerIds CHANGESLOG.md >> CHANGESLOG.html
           
           # Close HTML tags
           echo "</body>" >> CHANGESLOG.html

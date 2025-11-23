@@ -97,53 +97,46 @@ p {
 }
 
 /* Heading spacing */
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 0.5em;
+    margin: 0;
+    word-wrap: break-word;
+    scroll-margin-top: 1em;
+}
+
 h1 {
-    padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin: 0;
-    word-wrap: break-word;
 }
 
-h2 {
-    padding-top: 0.5em;
-    margin: 0;
-    word-wrap: break-word;
-}
-
-h3 {
-    padding-top: 0.5em;
-    margin: 0;
-    word-wrap: break-word;
-}
-
-h4 {
-    padding-top: 0.5em;
-    margin: 0;
-    word-wrap: break-word;
+/* Make headings with IDs look linkable */
+h1[id]:hover,
+h2[id]:hover,
+h3[id]:hover,
+h4[id]:hover,
+h5[id]:hover,
+h6[id]:hover {
+    cursor: pointer;
 }
 
 @media(min-width:600px){
     h1 {
         padding-top: 1.3em;
         padding-bottom: 1em;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     h2 {
         padding-top: 1.1em;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     h3 {
         padding-top: 0.9em;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     h4 {
         padding-top: 0.7em;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
         margin-left: auto;
         margin-right: auto;
     }
