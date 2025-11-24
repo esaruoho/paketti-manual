@@ -62,6 +62,16 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Horizontal rule styling */
+hr {
+    margin-bottom: 2em;
+    margin-top: 2.7em;
+    border-style: dashed;
+    border-width: 1px;
+    border-top: none;
+    border-color: #bb86fc;
+}
+
 /* List styling */
 ol, ul {
     margin: 1em 0;
