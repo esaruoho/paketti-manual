@@ -10757,3 +10757,11 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-11-26 - Improvement: Added "Song Frame Calculator Toggle" as a toggle with a checkbox, to Main Menu: Options.
 ![](_todo/songframecalctoggle.png)
+
+---
+### 2025-11-26 - Feature: Remove all Repeaters - this will cleanly remove all Repeaters from the song, all tracks.
+
+---
+### 2025-11-27 - Improvement: Wipe&Slice: Random Slice Distribution / Running Slice Distribution. These will spread the existing slices to the pattern equally, or equally+randomly.
+
+---
