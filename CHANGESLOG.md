@@ -5,14 +5,13 @@
 ← [Back to Main Manual](index.html)
 
 If you liked what you're seeing here, please consider supporting. Every bit helps.
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 50€ to 139€ to 236€ to 300€.
-- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho)
-- Send me a donation via [PayPal](http://paypal.me/esaruoho). 
-- Send me a one-time donation / or a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
-- Send me a one-time donation via [Buymeacoffee](https://buymeacoffee.com/esaruoho)
-- Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
-- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/).
-
+- [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
+- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Be the first one to become a Paketti GitHub Sponsor.
+- [PayPal](http://paypal.me/esaruoho) - Anything is welcome.
+- [Ko-Fi](https://ko-fi.com/esaruoho) - A one-time donation / a monthly donation
+- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - A one-time donation / a monthly donation
+- [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
+- [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
 ## Paketti Updates Changelog
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
@@ -10730,8 +10729,31 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-23 - Improvement: Added "Append" feature to User-Defined Sample Folders Loader Dialog - this adds random samples to the current Instrument instead of adding new ones.
-![](_todo/userdefinedappend.png)
+![](Screenshots/userdefinedappend.png)
 
 ---
 ### 2025-11-23 - Improvement: Added SubColumn aware versions of Write Values/Notes Ascending,Descending,Random - depending on if you're on Delay, Volume, Panning SubColumns, it'll write to those. Also follows selection.
 ![](_todo/subcolumn_writer.png)
+
+
+---
+### 2025-11-25 - Improvement: Introduced a toggle for modifying Select Specific Track behaviour - if the toggled is set to On, then pressing Select Specific Track 01...16 will actually find out the nearest Instrument, and select that Instrument, in addition to changing the Selected Track.
+![](gif/select_track_select_instrument.gif)
+
+---
+### 2025-11-26 - Improvement: When importing a .txt file into Renoise, eSpeak would open up and, render the .txt file content to a wavefile, but leave the textfield without an update. Now it correctly updates it to the .txt file content.
+
+---
+### 2025-11-26 - Feature: Order Notes Across Track Across Patterns - this will reorganize the notes for the Track across all patterns. Also a Phrase version is available. 
+
+---
+### 2025-11-26 - Improvement: Paketti Dynamic Views now has a total of 9 Dynamic Views, split across three dialogs (1-3, 4-6, 7-9). The reason is that I've added Edit Mode, Play, Pattern Follow and Metronome controls. You can even use these to create your own combined shortcut macros, such as, a shortcut that turns on Metronome, Edit Mode, Play and Pattern Follow (and moves you to Pattern Editor), for instance.
+![](_todo/dynamicviews_macros.png)
+
+---
+### 2025-11-26 - Improvement: Added Default / Precise interpolation for Experimental Render and also Render Pattern or Render Selected Track. They're in Paketti Preferences.
+![](_todo/render_interpolation.png)
+
+---
+### 2025-11-26 - Improvement: Added "Song Frame Calculator Toggle" as a toggle with a checkbox, to Main Menu: Options.
+![](_todo/songframecalctoggle.png)

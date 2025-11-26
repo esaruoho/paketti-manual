@@ -62,15 +62,14 @@ People often write me encouraging little snippets of text which I recycle into t
 - Hit the [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-3-4-paketti-a-suite-of-scripts-for-automation-sample-editor-midi-pattern-editor-phrase-editor-mixer/35848).
 # Support
 
-You can 
-- Join my [Patreon](http://patreon.com/esaruoho) as a monthly supporter. This adds up and would help me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
-- Sponsor me on GitHub at [GitHub Sponsors](https://github.com/sponsors/esaruoho).
-- Send me a donation via [PayPal](http://paypal.me/esaruoho). 
-- Send me a one-time donation / a monthly donation, via [Ko-Fi](https://ko-fi.com/esaruoho).
-- Send me a one-time donation / a monthly donation, via [Buy Me a Coffee](https://buymeacoffee.com/esaruoho).
-- Buy Paketti via [Gumroad](https://lackluster.gumroad.com/l/paketti) for a one time purchase.
-- Buy my music on [Bandcamp](http://lackluster.bandcamp.com/). Or this other music here on this [Bandcamp](http://hler.bandcamp.com/)
-
+You can support me via
+- [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
+- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Be the first one to become a Paketti GitHub Sponsor.
+- [PayPal](http://paypal.me/esaruoho) - Anything is welcome.
+- [Ko-Fi](https://ko-fi.com/esaruoho) - A one-time donation / a monthly donation
+- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - A one-time donation / a monthly donation
+- [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
+- [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
 # Roadmap
 
 Where is Paketti going? Multiple directions and places. Very quickly. [Hop on the ride](http://patreon.com/esaruoho).
