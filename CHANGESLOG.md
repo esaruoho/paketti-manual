@@ -10765,3 +10765,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-27 - Improvement: Wipe&Slice: Random Slice Distribution / Running Slice Distribution. These will spread the existing slices to the pattern equally, or equally+randomly.
 
 ---
+### 2025-11-27 - Feature: Select Next / Previous Phrase, Select Phrase 01...16 added as global shortcuts with "no phrase" protection if Instrument has no phrases.
+
+---
+### 2025-11-27 - Improvement: Wipe & Slice: Random Slice Distribution / Running Slice Distribution will now automatically notice if there are more than 119 slices, and default to using `0Sxx` to trigger the slices - this enables you to have 128-256 slices triggered. If less than 119 slices, then it defaults to using the keymapping notes instead of `0Sxx`.
