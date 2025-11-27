@@ -10769,3 +10769,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-27 - Improvement: Wipe & Slice: Random Slice Distribution / Running Slice Distribution will now automatically notice if there are more than 119 slices, and default to using `0Sxx` to trigger the slices - this enables you to have 128-256 slices triggered. If less than 119 slices, then it defaults to using the keymapping notes instead of `0Sxx`.
+
+---
+### 2025-11-27 - Improvement: Select Next / Previous Phrase, Select Phrase 01...16 now have a version that does push you to Phrase Editor, and a version that doesn't, each.
