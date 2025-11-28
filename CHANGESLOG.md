@@ -10772,3 +10772,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-27 - Improvement: Select Next / Previous Phrase, Select Phrase 01...16 now have a version that does push you to Phrase Editor, and a version that doesn't, each.
+
+---
