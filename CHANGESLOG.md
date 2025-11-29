@@ -10778,3 +10778,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-28 - Feature: Mono/Pan Cycle for Selected Track, and for Master - these cycle through Mono L+R and then PostFX Hard Left -> Hard Right -> Center, then without Mono L+R and only PostFX Hard Left -> Hard Right -> Center. So, 6 steps in total.
+
+---
