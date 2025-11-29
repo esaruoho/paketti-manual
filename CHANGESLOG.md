@@ -10774,3 +10774,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-27 - Improvement: Select Next / Previous Phrase, Select Phrase 01...16 now have a version that does push you to Phrase Editor, and a version that doesn't, each.
 
 ---
+### 2025-11-27 - Improvement: Stem Slicer now has an option to never render silence - instead skip them
+
+---
+### 2025-11-28 - Feature: Mono/Pan Cycle for Selected Track, and for Master - these cycle through Mono L+R and then PostFX Hard Left -> Hard Right -> Center, then without Mono L+R and only PostFX Hard Left -> Hard Right -> Center. So, 6 steps in total.
