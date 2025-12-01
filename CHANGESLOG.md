@@ -10699,7 +10699,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-18 - Feature: Default Pattern Init Dialog - combined both Phrase Init and the newly created Pattern Init Dialog together, so now you can use "Create New Track with Channelstrip" so that you get a specific set of automated settings for your track. Also moved the Channelstrip default selection from Paketti Preferences to Pattern / Phrase Init Dialog for easier configurability. Also added the Channelstrip Device Chain configuration
-![](_todo/patterninitimprovements.png)
+![](Screenshots/patterninitimprovements.png)
 
 ---
 ### 2025-11-18 - Improvement: Set Selected Sample Transpose or Finetune to 0, or Pan to 1.0 0.5 or 0 or -0.5 or -1.0 - and many others, all have protection against no sample actually being selected, and the "0" settings will work directly.
@@ -10733,7 +10733,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-23 - Improvement: Added SubColumn aware versions of Write Values/Notes Ascending,Descending,Random - depending on if you're on Delay, Volume, Panning SubColumns, it'll write to those. Also follows selection.
-![](_todo/subcolumn_writer.png)
+![](Screenshots/subcolumn_writer.png)
 
 
 ---
@@ -10748,15 +10748,15 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-11-26 - Improvement: Paketti Dynamic Views now has a total of 9 Dynamic Views, split across three dialogs (1-3, 4-6, 7-9). The reason is that I've added Edit Mode, Play, Pattern Follow and Metronome controls. You can even use these to create your own combined shortcut macros, such as, a shortcut that turns on Metronome, Edit Mode, Play and Pattern Follow (and moves you to Pattern Editor), for instance.
-![](_todo/dynamicviews_macros.png)
+![](Screenshots/dynamicviews_macros.png)
 
 ---
 ### 2025-11-26 - Improvement: Added Default / Precise interpolation for Experimental Render and also Render Pattern or Render Selected Track. They're in Paketti Preferences.
-![](_todo/render_interpolation.png)
+![](Screenshots/render_interpolation.png)
 
 ---
 ### 2025-11-26 - Improvement: Added "Song Frame Calculator Toggle" as a toggle with a checkbox, to Main Menu: Options.
-![](_todo/songframecalctoggle.png)
+![](Screenshots/songframecalctoggle.png)
 
 ---
 ### 2025-11-26 - Feature: Remove all Repeaters - this will cleanly remove all Repeaters from the song, all tracks.
@@ -10780,6 +10780,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-11-28 - Feature: Mono/Pan Cycle for Selected Track, and for Master - these cycle through Mono L+R and then PostFX Hard Left -> Hard Right -> Center, then without Mono L+R and only PostFX Hard Left -> Hard Right -> Center. So, 6 steps in total.
 
 ---
-### 2025-11-30 - Feature: Midi Select Track 01...32 - these are triggers that let you select Track 01 to 32. So one Midi Mapping per each Track.
-![](_todo/midiselecttrack01.png)
-![](_todo/midiselecttrack02.png)
+### 2025-11-30 - Feature: Midi Select Track 01...32 - these are triggers that let you select Track 01 to 32. So one Midi Mapping per each Track. If no track is found - then it errors out in the status bar, keeping the user safe from errors.
+![](Screenshots/midiselecttrack01.png)
+![](Screenshots/midiselecttrack02.png)
+
+---
+### 2025-12-01: Improvement: Groovebox 8120: Added Global Beatsync Lines dropdown (16,32,64,128,192,256,512) for setting all 8 instruments + selected sample to Beatsync x mode.
+![](Screenshots/groovebox_beatsynclines.png)
