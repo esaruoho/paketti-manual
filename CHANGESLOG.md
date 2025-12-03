@@ -1,5 +1,4 @@
 | [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buymeacoffee Paketti](https://buymeacoffee.com/esaruoho) | 
-
 # Changeslog
 
 ← [Back to Main Manual](index.html)
@@ -10787,3 +10786,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-12-01: Improvement: Groovebox 8120: Added Global Beatsync Lines dropdown (16,32,64,128,192,256,512) for setting all 8 instruments + selected sample to Beatsync x mode.
 ![](Screenshots/groovebox_beatsynclines.png)
+
+---
+### 2025-12-01 - Improvement: Groovebox 8120: SequentialLoad now correctly adds the `*Instr. Macros` device to the tracks that are Sequentially Loaded.
+
+---
+### 2025-12-04 - Improvement: Sononym Linux version path detection for query.json has been improved with failsafes for "if hardcoded link didn't work" -> it'll then consider the appPath and try to find query.json in another way. Hopefully this helps.
