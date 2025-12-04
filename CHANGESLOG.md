@@ -10792,3 +10792,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-04 - Improvement: Sononym Linux version path detection for query.json has been improved with failsafes for "if hardcoded link didn't work" -> it'll then consider the appPath and try to find query.json in another way. Hopefully this helps.
+
+---
+### 2025-12-04 - Feature: Pattern Sequencer: Delete All Above / Delete All Below / Delete All Above & Below - this will work with current Pattern, or a selection of Patterns in the Pattern Sequencer.
