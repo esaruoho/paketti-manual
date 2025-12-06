@@ -10795,3 +10795,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-04 - Feature: Pattern Sequencer: Delete All Above / Delete All Below / Delete All Above & Below - this will work with current Pattern, or a selection of Patterns in the Pattern Sequencer.
+
+---
+### 2025-12-07 - Improvement: "Keep Sequence Sorted" was automatically set to Off by default in Paketti. no longer.
+
+---
+### 2025-12-07 - Improvement: Improvement: "Keep Sequence Sorted" introduced into Paketti Preferences with a dropdown menu for "Do Nothing" / "Set to On" / "Set to Off"
+![](Screenshots/keepsequencesorted.png)
+
+---
