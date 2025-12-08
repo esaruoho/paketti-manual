@@ -1,7 +1,8 @@
-| [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buymeacoffee Paketti](https://buymeacoffee.com/esaruoho) | 
-# Changeslog
+[Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
 
-← [Back to Main Manual](index.html)
+📖 **Navigation:** [Paketti README](README.html) | Changeslog (You are here) | [Experimental](Experimental.html)
+
+# Changeslog
 
 If you liked what you're seeing here, please consider supporting. Every bit helps.
 - [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
@@ -10806,3 +10807,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-12-08 - Improvement: Paketti Effect Command CheatSheet will now detect if you're in the Phrase Editor, and write to the Phrase Editor, and disable the effects that are not available in the Phrase Editor.
 ![](Screenshots/phrase_editorcheatsheet.png)
+
+---

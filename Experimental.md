@@ -1,8 +1,12 @@
+[Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
+
+📖 **Navigation:** [Paketti README](README.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
+
 # Paketti Experimental Documentation
 
 **The comprehensive, all-in-one documentation for Paketti - Renoise Enhancement Suite**
 
-**Last Updated:** 2025-11-29
+**Last Updated:** 2025-12-08
 
 ---
 
@@ -6933,6 +6937,41 @@ Advanced pattern sequencer management with cloning, section management, sorting,
 - Finds patterns not used in any sequence
 - Clears their content (keeps slot)
 - Reclaims memory without breaking sequence
+
+## Delete Sequences
+
+Mass-delete sequences above, below, or around current sequence or selection. Respects pattern sequencer selection range if present.
+
+**Delete All Sequences Above:**
+- `Global:Paketti:Delete All Sequences Above` ⌨️
+- `Pattern Sequencer:Paketti:Delete All Sequences Above` ⌨️ 📋
+- `Pattern Editor:Paketti:Delete All Sequences Above` ⌨️ 📋
+- `Pattern Matrix:Paketti:Delete All Sequences Above` ⌨️ 📋
+
+**Delete All Sequences Below:**
+- `Global:Paketti:Delete All Sequences Below` ⌨️
+- `Pattern Sequencer:Paketti:Delete All Sequences Below` ⌨️ 📋
+- `Pattern Editor:Paketti:Delete All Sequences Below` ⌨️ 📋
+- `Pattern Matrix:Paketti:Delete All Sequences Below` ⌨️ 📋
+
+**Delete All Sequences Above and Below:**
+- `Global:Paketti:Delete All Sequences Above and Below` ⌨️
+- `Pattern Sequencer:Paketti:Delete All Sequences Above and Below` ⌨️ 📋
+- `Pattern Editor:Paketti:Delete All Sequences Above and Below` ⌨️ 📋
+- `Pattern Matrix:Paketti:Delete All Sequences Above and Below` ⌨️ 📋
+
+**Selection-Aware Behavior:**
+- If no selection: Uses current sequence position as reference
+- If selection exists: Uses selection boundaries (start/end)
+- Delete Above: Removes everything above selection start
+- Delete Below: Removes everything below selection end
+- Delete Above and Below: Keeps only the selected range
+
+**Use Cases:**
+- Quickly trim song to specific section
+- Remove intro/outro sequences
+- Isolate selection for rendering
+- Clean up work-in-progress arrangements
 
 ## Pattern Operations
 
@@ -14680,21 +14719,55 @@ Prompts for delay value and applies to all matching notes in track.
 
 ---
 
-# Pattern Effect Command CheatSheet
+# Effect Command CheatSheet
 
 **Source:** `PakettiPatternEditorCheatSheet.lua` | **Features:** 4
 
-Visual reference guides for Renoise effect commands with searchable database and quick reference.
+Visual reference guides for Renoise effect commands with searchable database and quick reference. **Works in both Pattern Editor and Phrase Editor** - automatically detects which editor is active and applies effects to the appropriate context.
 
-## Pattern Effect Command CheatSheet
+## Effect Command CheatSheet
 
 **Keybinding:** `Global:Paketti:Pattern Effect Command CheatSheet` ⌨️
 
 Comprehensive effect command reference with descriptions and examples.
 
-**Dialog Features:**
+### Pattern Editor vs Phrase Editor Mode
 
-### Effect Command Database
+The cheatsheet automatically detects whether you're working in the Pattern Editor or Phrase Editor:
+
+**Pattern Editor Mode:**
+- All effect commands are available
+- Effects apply to pattern selection or current line
+- Full set of track-level and global effects
+
+**Phrase Editor Mode:**
+- Only phrase-valid effects are enabled (sample/note-level effects)
+- Pattern-only effects (track routing, global commands) are visually disabled
+- Effects apply to phrase selection or current phrase line
+- Volume, Panning, Delay, and Sample FX columns are automatically made visible when using their respective sliders
+
+**Phrase-Valid Effects:**
+- **0Axx** - Arpeggio
+- **0Uxx** - Slide Pitch Up
+- **0Dxx** - Slide Pitch Down
+- **0Gxx** - Glide Towards Note
+- **0Ixx** - Fade Volume In
+- **0Oxx** - Fade Volume Out
+- **0Cxx** - Cut Volume
+- **0Qxx** - Delay Note
+- **0Mxx** - Set Note Volume
+- **0Sxx** - Trigger Sample Slice
+- **0Bxx** - Play Sample Backwards
+- **0Rxx** - Retrigger
+- **0Yxx** - Maybe Trigger (Probability)
+- **0Vxx** - Vibrato
+- **0Txx** - Tremolo
+- **0Nxx** - Auto Pan
+- **0Exx** - Set Envelope Position
+
+### Dialog Features
+
+#### Effect Command Database
 All Renoise effect commands documented:
 
 **Volume & Gain:**
@@ -14716,7 +14789,7 @@ All Renoise effect commands documented:
 - **0Uxx** - Slide up
 - **0Dxx** - Slide down
 
-**Pattern Flow:**
+**Pattern Flow (Pattern Editor Only):**
 - **0Bxx** - Jump to pattern
 - **0Dxx** - Pattern break
 - **09xx** - Retrigger
@@ -14732,33 +14805,93 @@ All Renoise effect commands documented:
 - **Qxx** - Retrigger with volume change
 - **Rxx** - Tremolo
 
-### Search Function
+#### Randomization Settings
+
+The cheatsheet includes powerful randomization options for effect values:
+
+**Randomize Checkbox:**
+- Enable/disable randomization when adjusting sliders
+- When enabled, slider movements apply random values within Min/Max range
+
+**Fill Probability Slider (0-100%):**
+- Controls probability that each line receives a value
+- 100% = fill all lines, 50% = fill roughly half
+
+**Randomize Whole Track:**
+- When enabled, randomization applies to entire track/phrase
+- When disabled, only selection or current line is affected
+
+**Randomize Min/Max Only:**
+- Values are randomly chosen between only the Min OR Max value
+- Creates binary switching effect
+
+**Don't Overwrite Existing Data:**
+- Skip lines that already have effect values
+- Preserves manually entered data
+
+**Only Modify Rows With Effects:**
+- Only randomize lines that already contain effects
+- Useful for modifying existing effect patterns
+
+**Only Modify Rows With Notes:**
+- Only randomize lines that contain note data
+- Useful for tying effects to melodic content
+
+**Min/Max Sliders:**
+- Set the range for random values (00-FF)
+- Displayed in hexadecimal
+- Use < > buttons for fine adjustment
+
+#### Note Column Sliders
+
+Sliders for directly setting note column values across selection:
+
+- **Volume Slider** - Set volume values (automatically shows Volume column in Phrase Editor)
+- **Panning Slider** - Set panning values (automatically shows Panning column in Phrase Editor)
+- **Delay Slider** - Set delay values (automatically shows Delay column in Phrase Editor)
+- **Sample FX Slider** - Set sample effect values (automatically shows Sample FX column in Phrase Editor)
+- **Effect Slider** - Set effect amount values
+
+#### Search Function
 - **Filter box** - Type to search
 - **Category filter** - Filter by type
 - **Example filter** - Show only with examples
 
-### Examples Tab
+#### Examples Tab
 Real-world usage examples:
 - **Drum Rolls** - Using 0Rxx
 - **Risers** - Using 01xx
 - **Stutters** - Using 0Sxx + 09xx
 - **Pitch Dives** - Using 02xx
 
-### Copy Function
+#### Copy Function
 - Click effect command
 - Copies to clipboard
-- Ready to paste in pattern
+- Ready to paste in pattern or phrase
+
+#### Additional Buttons
+- **Clear Effects** - Clear all effect columns in selection
+- **Minimize Horizontal** - Switch to compact horizontal view
+- **Minimize Vertical** - Switch to compact vertical view
+- **Close** - Close the dialog
 
 ## Minimize Cheatsheet (Horizontal)
 
 **Keybinding:** `Global:Paketti:Show Minimize Cheatsheet Horizontal` ⌨️
 
-Compact horizontal reference showing most common effects.
+Compact horizontal reference showing most common effects. Includes mode indicator showing whether you're in Pattern or Phrase mode.
 
 **Display:**
 ```
-0C Volume | 0P Pan | 01 SlideUp | 02 SlideDown | 0G Glide | 0S Offset | 0R Retrig | 0D Delay
+[Pattern Mode] or [Phrase Mode]
+Dropdown: Effect selection (filtered by mode)
+Random button | Apply button
 ```
+
+**Features:**
+- Mode indicator updates dynamically
+- Effect dropdown shows only valid effects for current mode
+- Random selection respects mode filtering
 
 **Use Case:** Quick reference without full dialog, stays on screen.
 
@@ -14766,35 +14899,41 @@ Compact horizontal reference showing most common effects.
 
 **Keybinding:** `Global:Paketti:Show Minimize Cheatsheet Vertical` ⌨️
 
-Compact vertical reference for common effects.
+Compact vertical reference for common effects. Includes mode indicator.
 
 **Display:**
 ```
-0C - Volume
-0P - Pan
-01 - Slide Up
-02 - Slide Down
-0G - Glide
-0S - Offset
-0R - Retrig
-0D - Delay
+[Pattern Mode] or [Phrase Mode]
+Effect dropdown
+Random | Apply
 ```
 
-**Use Case:** Side panel reference, doesn't obstruct pattern editor.
+**Features:**
+- Same mode-aware filtering as horizontal version
+- Vertical layout for side panel placement
+
+**Use Case:** Side panel reference, doesn't obstruct pattern or phrase editor.
 
 ## Toggle Pattern Status Monitor
 
 **Keybinding:** `Global:Paketti:Toggle Pattern Status Monitor` ⌨️
 
-Enables/disables real-time pattern statistics in status bar.
+Enables/disables real-time pattern/phrase statistics in status bar. **Context-aware** - displays different information based on active editor.
 
-**Displays:**
+**Pattern Editor Displays:**
 - Current pattern length
 - Pattern number
 - Track count
 - Note count in pattern
 - Effect count
+- Instrument index (I:xx)
 - Updates as cursor moves
+
+**Phrase Editor Displays:**
+- Phrase information with [Phrase] prefix
+- Sample index (S:xx) instead of instrument index
+- Phrase line position
+- Updates as phrase cursor moves
 
 **Use Case:** 
 - Monitor pattern complexity
@@ -19778,6 +19917,7 @@ Opens the comprehensive Paketti Preferences dialog with all settings organized i
 
 **Column 1: Miscellaneous Settings**
 - Global Groove on Startup
+- Keep Sequence Sorted (Do Nothing/False/True) - Control sequencer.keep_sequence_sorted on startup. True = patterns stay sorted, False = patterns can be reordered freely
 - New Song BPM Randomizer (bell curve 60-220, centered at 120)
 - 0G01 Loader (auto-inserts C-4 + 0G01 on new track)
 - Random BPM (write BPM to file)
@@ -19988,3 +20128,18 @@ Opens the comprehensive chord progression editor and player.
 
 **Requirements:** Renoise API 6.2+ (uses `.color` and `tooltip` properties)
 
+---
+
+# Support
+
+If you liked what you're seeing here, please consider supporting. Every bit helps.
+
+- [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
+- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Be the first one to become a Paketti GitHub Sponsor.
+- [PayPal](http://paypal.me/esaruoho) - Anything is welcome.
+- [Ko-Fi](https://ko-fi.com/esaruoho) - A one-time donation / a monthly donation
+- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - A one-time donation / a monthly donation
+- [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
+- [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
+
+📖 **Navigation:** [Paketti README](README.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
