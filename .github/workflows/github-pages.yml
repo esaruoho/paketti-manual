@@ -29,10 +29,27 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install markdown processor
-        run: npm install marked
+        # FALLBACK: If marked-gfm-heading-id causes issues, change to: npm install marked
+        # and then use the commented-out sed commands below instead of the Node.js script
+        run: npm install marked marked-gfm-heading-id
 
       - name: Convert markdown to HTML with metadata injection
         run: |
+          # Create Node.js script for markdown conversion with heading IDs
+          cat > convert-md.js << 'SCRIPT'
+          const { marked } = require('marked');
+          const { gfmHeadingId } = require('marked-gfm-heading-id');
+          const fs = require('fs');
+          
+          // Configure marked with GFM heading ID extension
+          marked.use(gfmHeadingId());
+          
+          const inputFile = process.argv[2];
+          const content = fs.readFileSync(inputFile, 'utf8');
+          const html = marked.parse(content);
+          console.log(html);
+          SCRIPT
+          
           # Create index.html from README.md
           cat > index.html << 'EOF'
           <!DOCTYPE html>
@@ -71,21 +88,23 @@ jobs:
           <body>
           EOF
           
-          # Convert README.md to HTML and append to index.html
-          npx marked README.md >> index.html
+          # Convert README.md to HTML with heading IDs and append to index.html
+          node convert-md.js README.md >> index.html
           
-          # Add anchor IDs to headings matching the TOC links exactly
-          sed -i 's/<h1>Paketti<\/h1>/<h1 id="Paketti">Paketti<\/h1>/g' index.html
-          sed -i 's/<h1>Where<\/h1>/<h1 id="Where">Where<\/h1>/g' index.html
-          sed -i 's/<h1>Support<\/h1>/<h1 id="Support">Support<\/h1>/g' index.html
-          sed -i 's/<h1>Roadmap<\/h1>/<h1 id="Roadmap">Roadmap<\/h1>/g' index.html
-          sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="GettingStarted">GettingStarted<\/h1>/g' index.html
-          sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="ManualOrganization">ManualOrganization<\/h1>/g' index.html
-          sed -i 's/<h2>Automation<\/h2>/<h2 id="Automation">Automation<\/h2>/g' index.html
-          sed -i 's/<h2>ParameterEditor<\/h2>/<h2 id="parametereditor">ParameterEditor<\/h2>/g' index.html
-          sed -i 's/<h4>Open Parameter Editor On Device Selection<\/h4>/<h4 id="open-parameter-editor-on-device-selection">Open Parameter Editor On Device Selection<\/h4>/g' index.html
-          sed -i 's/<h1>SampleManagement<\/h1>/<h1 id="SampleManagement">SampleManagement<\/h1>/g' index.html
-          sed -i 's/<h1>RewriteSoon<\/h1>/<h1 id="RewriteSoon">RewriteSoon<\/h1>/g' index.html
+          # LEGACY: Old sed-based anchor ID injection (commented out - kept as fallback)
+          # If the marked-gfm-heading-id approach doesn't work, uncomment these and
+          # replace "node convert-md.js README.md" with "npx marked README.md"
+          # sed -i 's/<h1>Paketti<\/h1>/<h1 id="Paketti">Paketti<\/h1>/g' index.html
+          # sed -i 's/<h1>Where<\/h1>/<h1 id="Where">Where<\/h1>/g' index.html
+          # sed -i 's/<h1>Support<\/h1>/<h1 id="Support">Support<\/h1>/g' index.html
+          # sed -i 's/<h1>Roadmap<\/h1>/<h1 id="Roadmap">Roadmap<\/h1>/g' index.html
+          # sed -i 's/<h1>GettingStarted<\/h1>/<h1 id="GettingStarted">GettingStarted<\/h1>/g' index.html
+          # sed -i 's/<h1>ManualOrganization<\/h1>/<h1 id="ManualOrganization">ManualOrganization<\/h1>/g' index.html
+          # sed -i 's/<h2>Automation<\/h2>/<h2 id="Automation">Automation<\/h2>/g' index.html
+          # sed -i 's/<h2>ParameterEditor<\/h2>/<h2 id="parametereditor">ParameterEditor<\/h2>/g' index.html
+          # sed -i 's/<h4>Open Parameter Editor On Device Selection<\/h4>/<h4 id="open-parameter-editor-on-device-selection">Open Parameter Editor On Device Selection<\/h4>/g' index.html
+          # sed -i 's/<h1>SampleManagement<\/h1>/<h1 id="SampleManagement">SampleManagement<\/h1>/g' index.html
+          # sed -i 's/<h1>RewriteSoon<\/h1>/<h1 id="RewriteSoon">RewriteSoon<\/h1>/g' index.html
           
           # Close HTML tags
           echo "</body>" >> index.html
@@ -129,8 +148,8 @@ jobs:
           <body>
           EOF
           
-          # Convert CHANGESLOG.md to HTML and append to CHANGESLOG.html
-          npx marked CHANGESLOG.md >> CHANGESLOG.html
+          # Convert CHANGESLOG.md to HTML with heading IDs and append to CHANGESLOG.html
+          node convert-md.js CHANGESLOG.md >> CHANGESLOG.html
           
           # Close HTML tags
           echo "</body>" >> CHANGESLOG.html
@@ -174,12 +193,15 @@ jobs:
           <body>
           EOF
           
-          # Convert Experimental.md to HTML and append to Experimental.html
-          npx marked Experimental.md >> Experimental.html
+          # Convert Experimental.md to HTML with heading IDs and append to Experimental.html
+          node convert-md.js Experimental.md >> Experimental.html
           
           # Close HTML tags
           echo "</body>" >> Experimental.html
           echo "</html>" >> Experimental.html
+          
+          # Clean up the temporary script
+          rm convert-md.js
           
           # Ensure .nojekyll exists to disable Jekyll processing
           touch .nojekyll
