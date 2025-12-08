@@ -14746,64 +14746,88 @@ The cheatsheet automatically detects whether you're working in the Pattern Edito
 - Effects apply to phrase selection or current phrase line
 - Volume, Panning, Delay, and Sample FX columns are automatically made visible when using their respective sliders
 
-**Phrase-Valid Effects:**
-- **0Axx** - Arpeggio
-- **0Uxx** - Slide Pitch Up
-- **0Dxx** - Slide Pitch Down
-- **0Gxx** - Glide Towards Note
-- **0Ixx** - Fade Volume In
-- **0Oxx** - Fade Volume Out
-- **0Cxx** - Cut Volume
-- **0Qxx** - Delay Note
-- **0Mxx** - Set Note Volume
-- **0Sxx** - Trigger Sample Slice
-- **0Bxx** - Play Sample Backwards
-- **0Rxx** - Retrigger
-- **0Yxx** - Maybe Trigger (Probability)
-- **0Vxx** - Vibrato
-- **0Txx** - Tremolo
-- **0Nxx** - Auto Pan
-- **0Exx** - Set Envelope Position
+**Phrase-Valid Effects (17 effects):**
+- **0Axy** - Set arpeggio, x/y = first/second note offset in semitones
+- **0Uxx** - Slide Pitch up by xx 1/16ths of a semitone
+- **0Dxx** - Slide Pitch down by xx 1/16ths of a semitone
+- **0Gxx** - Glide towards given note by xx 1/16ths of a semitone
+- **0Ixx** - Fade Volume in by xx volume units
+- **0Oxx** - Fade Volume out by xx volume units
+- **0Cxy** - Cut volume to x after y ticks (x = volume factor: 0=0%, F=100%)
+- **0Qxx** - Delay note by xx ticks
+- **0Mxx** - Set note volume to xx
+- **0Sxx** - Trigger sample slice number xx or offset xx
+- **0Bxx** - Play Sample Backwards (B00) or forwards again (B01)
+- **0Rxy** - Retrigger line every y ticks with volume factor x
+- **0Yxx** - Maybe trigger line with probability xx, 00 = mutually exclusive note columns
+- **0Vxy** - Set Vibrato x = speed, y = depth; x=(0-F); y=(0-F)
+- **0Txy** - Set Tremolo x = speed, y = depth
+- **0Nxy** - Set Auto Pan, x = speed, y = depth
+- **0Exx** - Set Active Sample Envelope's Position to Offset XX
+
+**Pattern-Only Effects (12 effects - disabled in Phrase Editor):**
+- **0Zxx** - Trigger Phrase (01-7E = phrase number, 00 = none, 7F = keymap)
+- **0Lxx** - Set Track Volume Level (00 = -INF, FF = +3dB)
+- **0Pxx** - Set Track Pan (00 = full left, 80 = center, FF = full right)
+- **0Wxx** - Set Track Surround Width (00 = Min, FF = Max)
+- **0Jxx** - Set Track Routing (01 upwards = hardware, FF downwards = parent groups)
+- **0Xxx** - Stop all notes and FX (00), or only effect xx (>00)
+- **ZTxx** - Set tempo to xx BPM (14-FF, 00 = stop song)
+- **ZLxx** - Set Lines Per Beat (LPB) to xx lines
+- **ZKxx** - Set Ticks Per Line (TPL) to xx ticks (01-10)
+- **ZGxx** - Enable (01) or disable (00) Groove
+- **ZBxx** - Break pattern and jump to line xx in next
+- **ZDxx** - Delay (pause) pattern for xx lines
 
 ### Dialog Features
 
-#### Effect Command Database
-All Renoise effect commands documented:
+#### Complete Effect Command List (29 Effects)
 
-**Volume & Gain:**
-- **0Cxx** - Volume (00=silent, 40=full, 80=+12dB)
-- **Vxx** - Set volume
-- **Gxx** - Glide
-- **Ixx** - Fade in
-- **Oxx** - Fade out
+All effect commands available in the cheatsheet, organized by category:
 
-**Panning:**
-- **0Pxx** - Panning (00=left, 40=center, 80=right)
-- **Mxx** - Set panning
+**Sample/Note Effects (✓ Work in both Pattern and Phrase Editor):**
 
-**Pitch:**
-- **01xx** - Pitch slide up
-- **02xx** - Pitch slide down
-- **03xx** - Portamento
-- **0Gxx** - Glide (smooth pitch)
-- **0Uxx** - Slide up
-- **0Dxx** - Slide down
+| Code | Syntax | Description |
+|------|--------|-------------|
+| 0A | -Axy | Set arpeggio, x/y = first/second note offset in semitones |
+| 0U | -Uxx | Slide Pitch up by xx 1/16ths of a semitone |
+| 0D | -Dxx | Slide Pitch down by xx 1/16ths of a semitone |
+| 0G | -Gxx | Glide towards given note by xx 1/16ths of a semitone |
+| 0I | -Ixx | Fade Volume in by xx volume units |
+| 0O | -Oxx | Fade Volume out by xx volume units |
+| 0C | -Cxy | Cut volume to x after y ticks (x = volume factor: 0=0%, F=100%) |
+| 0Q | -Qxx | Delay note by xx ticks |
+| 0M | -Mxx | Set note volume to xx |
+| 0S | -Sxx | Trigger sample slice number xx or offset xx |
+| 0B | -Bxx | Play Sample Backwards (B00) or forwards again (B01) |
+| 0R | -Rxy | Retrigger line every y ticks with volume factor x |
+| 0Y | -Yxx | Maybe trigger line with probability xx, 00 = mutually exclusive note columns |
+| 0V | -Vxy | Set Vibrato x = speed, y = depth; x=(0-F); y=(0-F) |
+| 0T | -Txy | Set Tremolo x = speed, y = depth |
+| 0N | -Nxy | Set Auto Pan, x = speed, y = depth |
+| 0E | -Exx | Set Active Sample Envelope's Position to Offset XX |
 
-**Pattern Flow (Pattern Editor Only):**
-- **0Bxx** - Jump to pattern
-- **0Dxx** - Pattern break
-- **09xx** - Retrigger
+**Track Effects (Pattern Editor Only - disabled in Phrase Editor):**
 
-**Sample Control:**
-- **0Sxx** - Sample offset
-- **0Rxx** - Retrigger note
-- **0Kxx** - Keyoff
-- **Zxx** - Delay effect
+| Code | Syntax | Description |
+|------|--------|-------------|
+| 0Z | -Zxx | Trigger Phrase xx (Phrase Number 01-7E, 00 = none, 7F = keymap) |
+| 0L | -Lxx | Set Track Volume Level, 00 = -INF, FF = +3dB |
+| 0P | -Pxx | Set Track Pan, 00 = full left, 80 = center, FF = full right |
+| 0W | -Wxx | Set Track Surround Width, 00 = Min, FF = Max |
+| 0J | -Jxx | Set Track Routing, 01 upwards = hardware channels, FF downwards = parent groups |
+| 0X | -Xxx | Stop all notes and FX (xx = 00), or only effect xx (xx > 00) |
 
-**Timing:**
-- **0Dxx** - Delay column (fine timing)
-- **Qxx** - Retrigger with volume change
-- **Rxx** - Tremolo
+**Global/Song Effects (Pattern Editor Only - disabled in Phrase Editor):**
+
+| Code | Syntax | Description |
+|------|--------|-------------|
+| ZT | ZTxx | Set tempo to xx BPM (14-FF, 00 = stop song) |
+| ZL | ZLxx | Set Lines Per Beat (LPB) to xx lines |
+| ZK | ZKxx | Set Ticks Per Line (TPL) to xx ticks (01-10) |
+| ZG | ZGxx | Enable (xx = 01) or disable (xx = 00) Groove |
+| ZB | ZBxx | Break pattern and jump to line xx in next |
+| ZD | ZDxx | Delay (pause) pattern for xx lines |
 
 #### Randomization Settings
 
