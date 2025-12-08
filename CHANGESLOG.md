@@ -10804,3 +10804,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/keepsequencesorted.png)
 
 ---
+### 2025-12-08 - Improvement: Paketti Effect Command CheatSheet will now detect if you're in the Phrase Editor, and write to the Phrase Editor, and disable the effects that are not available in the Phrase Editor.
+![](Screenshots/phrase_editorcheatsheet.png)
