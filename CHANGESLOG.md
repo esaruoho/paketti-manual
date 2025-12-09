@@ -10809,3 +10809,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/phrase_editorcheatsheet.png)
 
 ---
+### 2025-12-09 - Improvement: Paketti Effect Command CheatSheet can now write directly to the Sample FX Columns, if selected.
+![](Screenshots/cheatsheet_samplefx.png)
