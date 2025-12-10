@@ -6,12 +6,13 @@
 
 **The comprehensive, all-in-one documentation for Paketti - Renoise Enhancement Suite**
 
-**Last Updated:** 2025-12-08
+**Last Updated:** 2025-12-09
 
 ---
 
 ## 📚 Complete Table of Contents
 
+### Core Features
 1. [Phrase Selection Features](#phrase-selection-features-new)
 2. [BPM Features](#bpm-features)
 3. [Recording Features](#recording-features)
@@ -19,7 +20,7 @@
 5. [Routing Features](#routing-features)
 6. [Chords & Harmony](#chords--harmony)
 7. [Workflow Controls](#workflow-controls)
-8. [Impulse Tracker Features](#impulse-tracker-features)
+8. [Tracker Emulation](#tracker-emulation) *(Impulse Tracker, PlayerPro, OctaMED, OpenMPT)*
 9. [Instrument Management](#instrument-management)
 10. [Rendering Features](#rendering-features)
 11. [Column Visibility](#column-visibility)
@@ -28,25 +29,154 @@
 14. [Phrase Editor](#phrase-editor)
 15. [Automation Features](#automation-features)
 16. [Pattern Editor Advanced](#pattern-editor-advanced)
+
+### Sample Management
 17. [Sample Loading & Management](#sample-loading--management)
-18. [Sample Normalization](#sample-normalization--channelbit-depth-conversion)
-19. [Sample Processing](#sample-processing--manipulation)
-20. [Audio Processing & Effects](#audio-processing--effects)
-21. [Slicing Features](#slicing-features)
-22. [Samples and Instruments](#samples-and-instruments)
-23. [Pattern Editor Features](#pattern-editor-features)
-24. [Pattern Sequencer & Sections](#pattern-sequencer--section-management)
-25. [Generative Tools](#generative-tools)
-26. [Sample Processing Tools](#sample-processing-tools)
-27. [Pattern Sequencer Utilities](#pattern-sequencer-utilities)
-28. [Utility Features](#utility-features)
+18. [Sample Normalization & Channel/Bit Depth Conversion](#sample-normalization--channelbit-depth-conversion)
+19. [Sample Processing & Manipulation](#sample-processing--manipulation)
+20. [Sample Processing Suite](#sample-processing-suite)
+21. [Sample Processing Tools](#sample-processing-tools)
+22. [Sample Cycle Tuning (RePitch)](#sample-cycle-tuning-repitch)
+23. [Sample Effect Generator](#sample-effect-generator)
+24. [Sample Loop MIDI Control](#sample-loop-midi-control)
+25. [Sample Range Device Loader](#sample-range-device-loader)
+
+### Audio & Effects
+26. [Audio Processing & Effects](#audio-processing--effects)
+27. [Audio Processing Tools](#audio-processing-tools)
+28. [Chebyshev Polynomial Waveshaper](#chebyshev-polynomial-waveshaper)
+29. [Custom LFO Presets & Device XML Control](#custom-lfo-presets--device-xml-control)
+
+### Slicing & Samples
+30. [Slicing Features](#slicing-features)
+31. [Slicing Tools](#slicing-tools)
+32. [Manual Slicer (Power of 2 Padding)](#manual-slicer-power-of-2-padding)
+33. [Zero Crossings System](#zero-crossings-system)
+34. [Oldschool Slice Pitch Workflow](#oldschool-slice-pitch-workflow)
+35. [Samples and Instruments](#samples-and-instruments)
+
+### Pattern Editor
+36. [Pattern Editor Features](#pattern-editor-features)
+37. [Effect Command CheatSheet](#effect-command-cheatsheet)
+38. [Pattern Delay Viewer](#pattern-delay-viewer)
+39. [Sub-Column Modifier](#sub-column-modifier)
+40. [HyperEdit (8-Row Step Sequencer)](#hyperedit-8-row-step-sequencer)
+
+### Pattern Sequencer
+41. [Pattern Sequencer & Section Management](#pattern-sequencer--section-management)
+42. [Pattern Sequencer](#pattern-sequencer)
+43. [Slab'o'Patterns (Time Signature Generator)](#slabopatterns-time-signature-generator)
+44. [Pattern Sequencer Utilities](#pattern-sequencer-utilities)
+45. [Pattern/Phrase Length Control](#patternphrase-length-control)
+
+### Generative & Creative Tools
+46. [Generative Tools](#generative-tools)
+47. [Paketti Wonkify](#paketti-wonkify)
+48. [Tuplet Generator](#tuplet-generator)
+49. [Unison Generator](#unison-generator)
+50. [Paketti Gater](#paketti-gater)
+51. [Hotelsinus Step Sequencer](#hotelsinus-step-sequencer)
+52. [Paketti 8120 Groovebox](#paketti-8120-groovebox)
+53. [Global Groove to Delay](#global-groove-to-delay)
+54. [Metric Modulation](#metric-modulation)
+
+### Chord & Harmony
+55. [Chord Progression Player](#chord-progression-player)
+56. [Switcharoo (Chord Reharmonization)](#switcharoo-chord-reharmonization)
+
+### Import/Export
+57. [Import/Export Suite](#importexport-suite)
+58. [FastTracker II XI Export](#fasttracker-ii-xi-export)
+59. [ProTracker MOD Sample Import](#protracker-mod-sample-import)
+60. [WAV CUE Marker Import/Export](#wav-cue-marker-importexport)
+61. [Drag & Drop Import Hooks](#drag--drop-import-hooks-comprehensive-list)
+
+### Elektron Integration
+62. [Elektron Octatrack Export Suite](#elektron-octatrack-export-suite)
+63. [Elektron Digitakt Export Suite](#elektron-digitakt-export-suite)
+64. [Octatrack OctaCycle Generator](#octatrack-octacycle-generator)
+
+### Polyend Integration
+65. [Polyend Pattern Data Suite](#polyend-pattern-data-suite)
+66. [Polyend Buddy (PTI File Browser)](#polyend-buddy-pti-file-browser)
+67. [Melodic Slice Switching (Polyend)](#melodic-slice-switching-polyend)
+68. [Melodic Slice Export (Polyend)](#melodic-slice-export-polyend)
+
+### Device & Plugin Management
+69. [Plugin Loader](#plugin-loader)
+70. [Device Chain Presets](#device-chain-presets)
+71. [Quick Load Device Dialog](#quick-load-device-dialog)
+72. [Device Parameter Control (Parama Param)](#device-parameter-control-parama-param)
+73. [Preset++ (Advanced Device Presets)](#preset-advanced-device-presets)
+74. [CCizer Loader](#ccizer-loader)
+
+### Instruments & Keyzones
+75. [Keyzone Distributor](#keyzone-distributor)
+76. [Merge Instruments](#merge-instruments)
+77. [Instrument Transpose System](#instrument-transpose-system)
+78. [XRNIT (Track/Instrument Preset Loader)](#xrnit-trackinstrument-preset-loader)
+
+### Tuning & Pitch
+79. [Tuning Display & Microtonal Control](#tuning-display--microtonal-control)
+80. [Pitch & BPM Control Suite](#pitch--bpm-control-suite)
+81. [Transpose Blocks](#transpose-blocks)
+
+### Automation
+82. [Automation Stack](#automation-stack)
+
+### Views & Navigation
+83. [Dynamic View Cycling](#dynamic-view-cycling)
+84. [Theme Selector](#theme-selector)
+85. [PlayerPro Waveform Viewer](#playerpro-waveform-viewer)
+
+### Utilities
+86. [Utility Features](#utility-features)
+87. [Utility Tools](#utility-tools)
+88. [Paketti Utilities](#paketti-utilities)
+89. [Clearance (Cleanup Utilities)](#clearance-cleanup-utilities)
+90. [Volume Delay Pan Equation Calculator](#volume-delay-pan-equation-calculator)
+91. [Frame Calculator](#frame-calculator)
+92. [Multi-File Raw Loader](#multi-file-raw-loader)
+
+### Search & Tools
+93. [Paketti Function Search (Autocomplete)](#paketti-function-search-autocomplete)
+94. [Action Selector](#action-selector)
+95. [XRNS Probe (Song File Inspector)](#xrns-probe-song-file-inspector)
+96. [Notepad Device Code Runner](#notepad-device-code-runner)
+
+### Recording & Capture
+97. [Capture Last Take & EditStep MIDI Gate](#capture-last-take--editstep-midi-gate)
+98. [OctaMED Hold-to-Fill Mode](#octamed-hold-to-fill-mode)
+99. [New Sample Auto-Settings](#new-sample-auto-settings)
+
+### MIDI & Keybindings
+100. [MIDI Mapping Utilities](#midi-mapping-utilities)
+101. [KeyBindings Management](#keybindings-management)
+
+### External Integration
+102. [Sononymph Integration](#sononymph-integration)
+103. [YT-DLP Downloader](#yt-dlp-downloader)
+104. [Execute Applications](#execute-applications)
+105. [Launch App & Smart Folders](#launch-app--smart-folders)
+
+### Advanced & Experimental
+106. [Advanced Features](#advanced-features)
+107. [Renoise 3.5+ Features (API 6.2+)](#renoise-35-features-api-62)
+108. [Experimental & Verify Features](#experimental--verify-features)
+109. [Sandbox (Experimental Features)](#sandbox-experimental-features)
+
+### System & Preferences
+110. [Paketti Preferences System](#paketti-preferences-system)
+
+### Documentation & Support
+111. [The Paketti Story](#the-paketti-story)
+112. [Support](#support)
 
 ---
 
 # Phrase Selection Features (NEW)
 
-**Source File:** `PakettiPhraseEditor.lua`  
-**Added:** 2025-11-28
+**Source File:** `PakettiPhraseEditor.lua`
 
 Comprehensive phrase navigation and selection features with both standard and phrase-editor-focused variants.
 
@@ -416,19 +546,23 @@ Collection of Paketti's workflow control shortcuts for editing, playback, naviga
 
 ---
 
-# Impulse Tracker Features
+# Tracker Emulation
 
-Comprehensive guide to Paketti's Impulse Tracker-style keyboard workflow - bringing the legendary DOS tracker interface to Renoise!
+Paketti emulates workflow features from classic trackers including Impulse Tracker (DOS), PlayerPro (Mac), OctaMED (Amiga), and OpenMPT (Windows). These provide familiar keyboard shortcuts, dialogs, and note entry systems for users coming from other tracker platforms.
+
+## Impulse Tracker Suite
 
 **Source:** `PakettiImpulseTracker.lua` | **Keybindings:** 200+ | **MIDI:** 30+ | **Menu:** 4
 
-## What is Impulse Tracker Mode?
+Comprehensive Impulse Tracker-style keyboard workflow - bringing the legendary DOS tracker interface to Renoise!
+
+### What is Impulse Tracker Mode?
 
 Impulse Tracker (IT) was a legendary DOS tracker created by Jeffrey Lim in the 1990s. Paketti recreates IT's iconic keyboard workflow in Renoise with extensive keyboard shortcuts, MIDI mappings, and workflow enhancements.
 
-## F-Key Screen Switching
+### F-Key Screen Switching
 
-### F2 - Pattern Editor
+#### F2 - Pattern Editor
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F2 Pattern Editor` ⌨️
 - `Global:Paketti:Impulse Tracker F2 Pattern Editor ONLY` ⌨️
@@ -440,14 +574,14 @@ Impulse Tracker (IT) was a legendary DOS tracker created by Jeffrey Lim in the 1
 **F2 Mini** - Pattern Editor only, no frames
 **Mixer → F2** - Jump from Mixer to Pattern Editor
 
-### F3 - Sample Editor
+#### F3 - Sample Editor
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F3 Sample Editor` ⌨️
 - `Global:Paketti:Impulse Tracker F3 Sample Editor Only` ⌨️
 
 Switches to Sample Editor with various frame configurations. Intelligent switching between Instrument tabs (MIDI/Plugin/Phrase → Sample Editor).
 
-### F4 - Instrument Editor
+#### F4 - Instrument Editor
 **Shortcut:** `Global:Paketti:Impulse Tracker F4 Instrument Editor` ⌨️
 
 Cycles between MIDI Editor → Plugin Editor → Phrase Editor.
@@ -457,21 +591,21 @@ Cycles between MIDI Editor → Plugin Editor → Phrase Editor.
 
 Switches to Mixer, toggles Pattern Matrix and Automation frame. Double press cycles views.
 
-### F12 - Master
+#### F12 - Master
 **Shortcut:** `Global:Paketti:Impulse Tracker F12 Master` ⌨️
 
 Jumps to Master track, cycles between Track DSPs and Track Automation when pressed repeatedly.
 
-## Playback Control
+### Playback Control
 
-### F5 - Start Playback (Song)
+#### F5 - Start Playback (Song)
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F5 Start Playback` ⌨️
 - `Global:Paketti:Impulse Tracker F5 Start Playback (2nd)` ⌨️
 
 Starts playback from sequence 1, line 1. Disables follow player, edit mode, metronome, loop block, and loop pattern. Includes 0.225s delay after panic for plugin stability.
 
-### F6 - Start Playback Pattern
+#### F6 - Start Playback Pattern
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F6 Start Playback Pattern` ⌨️
 - `Global:Paketti:Impulse Tracker F6 Start Playback Pattern (2nd)` ⌨️
@@ -482,14 +616,14 @@ Starts playback from sequence 1, line 1. Disables follow player, edit mode, metr
 
 Loops current pattern - starts from current sequence index, line 1, enables loop pattern. Reduced 30ms delay (vs F5's 225ms).
 
-### F7 - Start Playback from Cursor Row
+#### F7 - Start Playback from Cursor Row
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F7 Start Playback from Cursor Row` ⌨️
 - `Global:Paketti:Impulse Tracker F7 Start Playback from Cursor Row (2nd)` ⌨️
 
 Starts playback from cursor position OR from captured marker (if CTRL-F7 was used). Validates marker position, enables edit mode.
 
-### CTRL-F7 - Capture Marker Position
+#### CTRL-F7 - Capture Marker Position
 **Shortcut:** `Global:Paketti:Impulse Tracker Capture Marker Position (CTRL-F7)` ⌨️
 
 **Menu:** `Main Menu:Tools:Paketti:Impulse Tracker:Toggle Marker Position (CTRL-F7)` 📋
@@ -501,7 +635,7 @@ Starts playback from cursor position OR from captured marker (if CTRL-F7 was use
 
 Marker is saved in preferences and persists across sessions.
 
-### F8 - Stop Playback (Panic)
+#### F8 - Stop Playback (Panic)
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker F8 Stop Playback (Panic)` ⌨️
 - `Global:Paketti:Impulse Tracker F8 Stop Playback (Panic) (2nd)` ⌨️
@@ -533,9 +667,9 @@ Marker is saved in preferences and persists across sessions.
 **Continue:** Toggles playback from current position
 **First Row:** Toggles playback from pattern start
 
-## Pattern Navigation
+### Pattern Navigation
 
-### Next/Previous Pattern
+#### Next/Previous Pattern
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker Pattern (Next)` ⌨️
 - `Global:Paketti:Impulse Tracker Pattern (Previous)` ⌨️
@@ -544,9 +678,9 @@ Marker is saved in preferences and persists across sessions.
 
 Jumps to next/previous sequence. Enables follow player if disabled. When playing, triggers sequence change. Wraps at song boundaries.
 
-## Selection Operations
+### Selection Operations
 
-### ALT-D - Double Select
+#### ALT-D - Double Select
 **Pattern Editor:**
 - `Pattern Editor:Paketti:Impulse Tracker ALT-D Double Select` ⌨️
 - `Pattern Editor:Paketti:Impulse Tracker ALT-D Double Select W/ Automation` ⌨️
@@ -588,7 +722,7 @@ Jumps to next/previous sequence. Enables follow player if disabled. When playing
 **Expand Twice:** Applies expand operation twice
 **Expand Replicate:** Expands then flood-fills with selection
 
-### ALT-G - Shrink Selection
+#### ALT-G - Shrink Selection
 **Pattern Editor:**
 - `Pattern Editor:Paketti:Impulse Tracker ALT-G Shrink Selection` ⌨️
 - `Pattern Editor:Paketti:Impulse Tracker ALT-G Shrink Selection Twice` ⌨️
@@ -607,12 +741,12 @@ Jumps to next/previous sequence. Enables follow player if disabled. When playing
 **Shrink Twice:** Applies shrink operation twice
 **Shrink Replicate:** Shrinks then flood-fills
 
-### ALT-S - Set Selection to Instrument
+#### ALT-S - Set Selection to Instrument
 **Shortcut:** `Pattern Editor:Paketti:Impulse Tracker ALT-S Set Selection to Instrument` ⌨️
 
 Changes all instrument numbers in selection to currently selected instrument. Only affects lines with notes.
 
-### ALT-L - Mark Track/Mark Pattern
+#### ALT-L - Mark Track/Mark Pattern
 **Shortcut:** `Pattern Editor:Selection:Impulse Tracker ALT-L Mark Track/Mark Pattern` ⌨️
 
 **Smart Marking:**
@@ -620,7 +754,7 @@ Changes all instrument numbers in selection to currently selected instrument. On
 2. **Second press:** Selects entire pattern (all tracks)
 3. Also updates automation selection if automation frame visible
 
-### SHIFT-ALT-L - Mark Note Column/Mark Pattern
+#### SHIFT-ALT-L - Mark Note Column/Mark Pattern
 **Shortcut:** `Pattern Editor:Selection:Impulse Tracker SHIFT-ALT-L Mark Note Column/Mark Pattern` ⌨️
 
 **For Phrase Editor:** `Phrase Editor:Paketti:Impulse Tracker ALT-L Mark Note Column/Mark Phrase` ⌨️
@@ -629,7 +763,7 @@ Changes all instrument numbers in selection to currently selected instrument. On
 1. **First press:** Selects current note/effect column for entire pattern/phrase
 2. **Second press:** Selects all columns
 
-### ALT-B - Modify Selection Start (Keep End)
+#### ALT-B - Modify Selection Start (Keep End)
 **Shortcut:** `Pattern Editor:Selection:Impulse Tracker ALT-B Modify Selection Start (Keep End)` ⌨️
 
 Extends selection from current END point to new cursor position. End stays fixed, start moves to cursor.
@@ -646,21 +780,21 @@ Extends selection from current END point to new cursor position. End stays fixed
 
 Clears pattern selection. Also clears automation envelope selection if automation frame is active.
 
-### ALT-Y - Swap Block
+#### ALT-Y - Swap Block
 **Shortcut:** `Global:Paketti:Impulse Tracker ALT-Y Swap Block` ⌨️
 
 Swaps selection with block at cursor position. Automatically adjusts column visibility on target track if needed.
 
-## Selection Utilities
+### Selection Utilities
 
-### Select Current Row
+#### Select Current Row
 **Shortcut:** `Pattern Editor:Paketti:Select Current Row` ⌨️
 
 Selects current row across all visible note/effect columns in current track.
 
-## Navigation
+### Navigation
 
-### Home *2 Behaviour
+#### Home *2 Behaviour
 **Shortcuts:**
 - `Pattern Editor:Paketti:Impulse Tracker Home *2 behaviour` ⌨️
 - `Pattern Editor:Paketti:Impulse Tracker Home *2 behaviour (2nd)` ⌨️
@@ -675,7 +809,7 @@ Selects current row across all visible note/effect columns in current track.
 
 Works in both Pattern Editor and Phrase Editor.
 
-### End *2 Behaviour
+#### End *2 Behaviour
 **Shortcuts:**
 - `Pattern Editor:Paketti:Impulse Tracker End *2 behaviour` ⌨️
 - `Pattern Editor:Paketti:Impulse Tracker End *2 behaviour (2nd)` ⌨️
@@ -687,16 +821,16 @@ Works in both Pattern Editor and Phrase Editor.
 1. **First press:** Jump to last line, current column
 2. **Second press:** Jump to last track
 
-### PageUp/PageDown Jump Lines
+#### PageUp/PageDown Jump Lines
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker PageUp Jump Lines` ⌨️
 - `Global:Paketti:Impulse Tracker PageDown Jump Lines` ⌨️
 
 Jumps by (LPB × 2) lines. Disables follow player when jumping. Clamps to pattern boundaries.
 
-## Track Navigation
+### Track Navigation
 
-### ALT-Right/Left - Move Between Tracks
+#### ALT-Right/Left - Move Between Tracks
 **Pattern Editor:**
 - `Pattern Editor:Paketti:Impulse Tracker Alt-Right Move Forwards One Channel (Wrap)` ⌨️
 - `Pattern Editor:Paketti:Impulse Tracker Alt-Left Move Backwards One Channel (Wrap)` ⌨️
@@ -720,9 +854,9 @@ Jumps by (LPB × 2) lines. Disables follow player when jumping. Clamps to patter
 
 Maintains column type (note column vs effect column) when switching tracks.
 
-## Note Operations
+### Note Operations
 
-### Set Note to Octave (0-9)
+#### Set Note to Octave (0-9)
 **Shortcuts (with EditStep):**
 - `Pattern Editor:Paketti:Set Note to Octave 0-9 with EditStep` ⌨️ (10 shortcuts)
 
@@ -731,7 +865,7 @@ Maintains column type (note column vs effect column) when switching tracks.
 
 Changes note at cursor to specified octave, preserving note value (C/C#/D/etc). **with EditStep** advances cursor by edit step amount.
 
-### 8 - Play Current Line
+#### 8 - Play Current Line
 **Shortcuts:**
 - `Global:Paketti:Impulse Tracker 8 Play Current Line & Advance by EditStep` ⌨️
 - `Global:Paketti:Impulse Tracker 8 Play Current Line Only` ⌨️
@@ -759,9 +893,9 @@ Triggers current line's notes. **& Advance** moves cursor forward by edit step.
 - Sample Effect (sub-columns 6-7)
 - Effect (sub-columns 8-9)
 
-## File Operations
+### File Operations
 
-### CTRL-N - New Song Dialog
+#### CTRL-N - New Song Dialog
 **Shortcut:** `Global:Paketti:Impulse Tracker CTRL-N New Song Dialog...` ⌨️
 
 Comprehensive new song dialog with Keep/Clear options for:
@@ -776,7 +910,7 @@ Comprehensive new song dialog with Keep/Clear options for:
 **Set all to:** Quick toggle for all sections
 **Smart defaults:** If all set to Clear, performs standard New Song
 
-### CTRL-O - Pattern to Sample
+#### CTRL-O - Pattern to Sample
 **Shortcut:** `Global:Paketti:Impulse Tracker CTRL-O Pattern to Sample` ⌨️
 
 **Menu:** `Pattern Editor:Paketti:Impulse Tracker CTRL-O Pattern to Sample` 📋
@@ -791,26 +925,26 @@ Renders current pattern to new sample:
 5. Names instrument "Pattern XX Render"
 6. Cleans up temp file
 
-## Utilities
+### Utilities
 
-### ALT-F10 - Solo Toggle
+#### ALT-F10 - Solo Toggle
 **Shortcut:** `Global:Paketti:Impulse Tracker ALT-F10 (Solo Toggle)` ⌨️
 
 Toggles solo on current track. If not in Pattern Editor or Mixer, switches to Pattern Editor first.
 
-### Select First Instrument
+#### Select First Instrument
 **Shortcut:** `Global:Paketti:Select First Instrument Box Slot` ⌨️
 
 Jumps to instrument 01, displays instrument name in status.
 
-### Speed and Tempo to BPM Dialog
+#### Speed and Tempo to BPM Dialog
 **Shortcut:** `Global:Paketti:Paketti Speed and Tempo to BPM Dialog...` ⌨️
 
 Interactive calculator for Speed/Tempo → BPM conversion. Shows real BPM based on formula: `BPM = Tempo / (Speed / 6)`. Validates BPM range (20-999), can apply BPM to song.
 
-## Sample Processing (Signed/Unsigned)
+### Sample Processing (Signed/Unsigned)
 
-### Wrap/Unwrap Operations
+#### Wrap/Unwrap Operations
 **Shortcuts:**
 - `Sample Editor:Paketti:Wrap Signed as Unsigned` ⌨️
 - `Sample Editor:Paketti:Unwrap Unsigned to Signed` ⌨️
@@ -821,6 +955,244 @@ Interactive calculator for Speed/Tempo → BPM conversion. Shows real BPM based 
 **Toggle:** Automatically detects and applies correct operation
 
 **Use Cases:** Experimental sound design, bit-manipulation effects, recreating vintage sampler artifacts.
+
+---
+
+## PlayerPro Suite
+
+**Source:** `PakettiPlayerProSuite.lua` | **Features:** 51 (transpose, note grid, tools, effects)
+
+Complete PlayerPro (Mac tracker) workflow emulation with intelligent dialogs, transpose operations, and note entry system.
+
+### Main Dialog
+
+**Shortcuts:**
+- `Pattern Editor:Paketti:Open Player Pro Tools Dialog...` ⌨️ - Main tools interface
+- `Global:Paketti:Player Pro Intelligent Dialog...` ⌨️ - Context-aware dialog
+- `Global:Paketti:Open Player Pro Note Column Dialog...` ⌨️ - Note entry grid
+
+**Menu:** Dynamic note dropdown menus for all note ranges (Pattern Editor:Paketti:Other Trackers:Note Dropdown)
+
+### Transpose Operations
+
+**Pattern Editor & Phrase Editor Support:**
+
+**Row/Selection Transpose:**
+- +1/-1 semitone
+- +12/-12 octave
+- With/without playback preview
+- Selection or row mode
+
+**Note Column Transpose:**
+- +1/-1 semitone  
+- +12/-12 octave
+- With/without playback preview
+- Affects only current note column
+
+**All Instruments Transpose:**
+- Transpose with Play (All Instruments) variants
+- +1/-1/-12/+12 for row and note column
+- Changes instrument assignment while transposing
+
+**Keybindings (Pattern Editor):**
+- `Player Pro Transpose Selection or Row +1/-1/+12/-12` ⌨️
+- `Player Pro Transpose Selection or Note Column +1/-1/+12/-12` ⌨️
+- `Player Pro Transpose ... with Play` variants ⌨️
+- `Player Pro Transpose ... with Play (All Instruments)` variants ⌨️
+
+**Keybindings (Phrase Editor):**
+- `Player Pro Transpose Selection or Row +1/-1/+12/-12` ⌨️
+- `Player Pro Transpose Selection or Note Column +1/-1/+12/-12` ⌨️
+- `Player Pro Transpose ... with Play` variants ⌨️
+
+### Effect Dialog
+
+**Shortcut:** `Pattern Editor:Paketti:Player Pro Effect Dialog...` ⌨️
+
+Quick access dialog for inserting PlayerPro-style effects into pattern. Maps PlayerPro effect commands to Renoise equivalents.
+
+### Scanner
+
+**Shortcut:** `Pattern Editor:Paketti:Player Pro Scanner (Start/Stop)` ⌨️
+
+Pattern scanner tool - analyze and visualize pattern data, PlayerPro-style scrolling display.
+
+### Note Grid
+
+Context-aware note entry system with octave selection, note dropdowns, and quick entry shortcuts.
+
+**Phrase Editor Support:**
+- `Phrase Editor:Paketti:Player Pro Note Grid Dialog` ⌨️
+- `Phrase Editor:Paketti:Player Pro Intelligent Dialog` ⌨️
+- `Phrase Editor:Paketti:Player Pro Effect Dialog` ⌨️
+
+### Workflow
+
+**PlayerPro-Style Features:**
+- Transpose with immediate playback preview
+- Context-sensitive note entry
+- Effect command quick access
+- Phrase editor full integration
+- All Instruments transpose mode
+
+---
+
+## OctaMED Suite
+
+**Source:** `PakettiOctaMEDSuite.lua` | **Features:** 15
+
+OctaMED (Amiga tracker) workflow features including Pick/Put, Note Spread, Note Echo, and track mute operations.
+
+### Pick/Put System
+
+**Shortcut:** `Pattern Editor:Paketti:OctaMED Pick/Put Dialog...` ⌨️
+
+Visual dialog for Pick/Put note/instrument operations - OctaMED's clipboard system for rapid note entry.
+
+**Pick Shortcuts (01-16):**
+- `Pattern Editor:Paketti:OctaMED Pick Slot 01` through `16` ⌨️
+- Captures note + instrument at cursor
+- Stores in numbered slot
+
+**Put Shortcuts (01-16):**
+- `Pattern Editor:Paketti:OctaMED Put Slot 01` through `16` ⌨️
+- Pastes stored note + instrument
+- Advances by edit step
+
+### Note Spread
+
+**Shortcuts:**
+- `Global:Paketti:OctaMED Note Spread 01` through `64` ⌨️
+- `Pattern Editor:Paketti:OctaMED Note Spread 01` through `64` ⌨️
+- `Global:Paketti:OctaMED Note Spread Increment/Decrement` ⌨️
+
+**Menu:** `Pattern Editor:Paketti:Other Trackers:OctaMED Note Spread 01-64` 📋
+
+**Note Spread Effect:**
+- Duplicates current note across pattern
+- Spacing = spread value (lines between notes)
+- Creates instant drum patterns
+- Increment/decrement adjusts spread value
+
+**Example:** Spread 04 = note every 4 lines (16th notes at LPB 4)
+
+### Note Echo
+
+**Shortcut:** `Pattern Editor:Paketti:OctaMED Note Echo Dialog...` ⌨️
+
+Creates echo/delay patterns from current note. Configurable:
+- Echo count (repeats)
+- Echo spacing (lines)
+- Volume decay
+- Transpose per echo
+
+### Track Mute (01-64)
+
+**Shortcuts:**
+- `Global:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
+- `Pattern Editor:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
+- `Mixer:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
+- `Phrase Editor:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
+
+Direct track mute shortcuts by track number - instant mute/unmute without navigating.
+
+### Workflow
+
+**OctaMED-Style Features:**
+- Pick/Put for rapid note entry
+- Note Spread for rhythmic patterns
+- Note Echo for delay effects
+- Direct track muting (1-64)
+
+---
+
+## OpenMPT Linear Keyboard Layer
+
+**Source:** `PakettiOpenMPTLinearKeyboardLayer.lua` | **Features:** 1
+
+**Shortcut:** `Global:Paketti:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` ⌨️
+
+**Menu:**
+- `Main Menu:Tools:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` 📋
+- `Pattern Editor:Paketti Gadgets:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` 📋
+
+Advanced keyboard-to-MIDI mapper with OpenMPT-style linear keyboard layout. Transform your QWERTY keyboard into a chromatic instrument with independent octave controls per row.
+
+### Linear Keyboard Layout
+
+**Four keyboard rows become linear octaves:**
+- **1-row:** `1234567890+=´` (13 keys) - Octave 1
+- **Q-row:** `QWERTYUIOP` (10+ keys) - Octave 2  
+- **A-row:** `ASDFGHJKL` (9+ keys) - Octave 3
+- **Z-row:** `ZXCVBNM,.-` (10+ keys) - Octave 4
+
+Each key triggers a semitone in sequence (C, C#, D, D#, E, F, F#, G, G#, A, A#, B, C+).
+
+### Per-Row Octave Control
+
+**Independent octave dropdowns (C-0 through B-9):**
+- **1-row base note:** Configurable (default: C-3)
+- **Q-row base note:** Configurable (default: C-4)
+- **A-row base note:** Configurable (default: C-5)
+- **Z-row base note:** Configurable (default: C-6)
+
+Change any row's starting octave independently - perfect for chords across ranges or bassline + melody split.
+
+### Special Modes
+
+**Follow Transport Checkbox:**
+When enabled, all row base notes automatically follow `renoise.song().transport.octave`:
+- **1-row** = transport.octave - 1
+- **Q-row** = transport.octave
+- **A-row** = transport.octave + 1
+- **Z-row** = transport.octave + 2
+
+Change Renoise's octave (< / > keys), all rows shift together.
+
+**Fret Mode Checkbox:**
+Guitar-style layout with overlapping ranges (like guitar strings):
+- **Z-row:** E-2 base (low E string)
+- **A-row:** A-2 base (A string)
+- **Q-row:** D-3 base (D string)  
+- **1-row:** G-3 base (G string)
+
+Emulates guitar fretting - adjacent keys = adjacent frets.
+
+### Features
+
+**Real-time MIDI Triggering:**
+- Direct note triggering (bypasses Pattern Editor)
+- Polyphonic (play multiple keys simultaneously)
+- Note-off on key release
+- Auto-cleanup for stuck notes (5s timeout)
+
+**Visual Feedback:**
+- Shows currently playing notes
+- Displays active octave ranges per row
+- Preset indicator
+- Minimize/maximize dialog
+
+**Integration:**
+- Uses current instrument
+- Respects instrument's MIDI/sample properties
+- Works alongside normal pattern editing
+
+### Use Cases
+
+**Live Performance:**
+- Play melodies with QWERTY keyboard
+- Trigger samples during live sets
+- Record performances into pattern
+
+**Composition:**
+- Quick melody sketching
+- Chord voicing exploration
+- Bass + melody layering (different rows)
+
+**Learning Tool:**
+- Visualize linear note layout
+- Understand chromatic relationships
+- Practice without MIDI keyboard
 
 ---
 
@@ -1173,762 +1545,6 @@ Smart column navigation and selection features.
 
 ## Advanced Operations
 Advanced pattern operations, transformations, and workflow enhancements.
-
----
-
-# Documentation Sessions
-
-## Session 1: Initial Exploration
-- Explored existing documentation structure
-- Identified 8 existing documentation files
-- Set up documentation tracking system
-
-## Session 2: Round 1 - Major Features
-**Result:** 10 new documentation files, 800+ features
-
-Created: PatternEditorAdvanced.md, AutomationFeatures.md, PhraseEditorFeatures.md, DeviceAndPluginLoaders.md, PatternMatrixFeatures.md, ColumnVisibilityFeatures.md, RenderingFeatures.md, InstrumentManagement.md, ImpulseTrackerFeatures.md, WorkflowControls.md
-
-## Session 3: Round 2 - Extended Features
-**Result:** 5 new documentation files, 128+ features
-
-Created: BPMFeatures.md, RecordingFeatures.md, MIDIControl.md, RoutingFeatures.md, ChordsAndHarmony.md
-
-## Session 4: Phrase Selection Features
-**Result:** 38+ new phrase selection commands
-
-Added comprehensive phrase navigation system with standard and phrase-editor-focused variants.
-
----
-
-# Documentation Status
-
-## Fully Documented Files (22 files)
-
-**Recently Completed:**
-- PakettiPatternEditor.lua ✅
-- PakettiAutomation.lua ✅
-- PakettiPhraseEditor.lua ✅ (+ NEW phrase selection features)
-- PakettiLoaders.lua ✅
-- PakettiPatternMatrix.lua ✅
-- PakettiViews.lua ✅
-- PakettiRender.lua ✅
-- PakettiInstrumentBox.lua ✅
-- PakettiImpulseTracker.lua ✅
-- PakettiControls.lua ✅
-- PakettiBPM.lua ✅
-- PakettiRecorder.lua ✅
-- PakettiMidi.lua ✅
-- PakettiRoutings.lua ✅
-- PakettiChordsPlus.lua ✅
-
-**Previously Completed:**
-- PakettiProcess.lua ✅
-- PakettiAudioProcessing.lua ✅
-- PakettiTkna.lua ✅
-- PakettiSlice.lua ✅
-- PakettiSamples.lua ✅
-- PakettiRequests.lua ✅
-
-## Not Yet Documented (70+ files)
-
-**High Priority:**
-- Paketti0G01_Loader.lua (G01 loading system)
-- Import/Export Loaders (AKAI, OctaMED, PlayerPro, Polyend, M8, OP-1, etc.)
-- Generative Tools (Arpeggiator, Gater, Phrase Generator)
-- Sample Processing (Wavetable, Stretch, RePitch)
-- And 60+ more Lua files!
-
-**Estimated remaining features:** 150-270
-
----
-
-# Menu Entry Gaps
-
-Analysis identifying which keybindings have menu entries and which don't.
-
-## Features WITH Menu Entries
-- Pattern Resizing
-- Pattern Transformation (Reverse Notes, Flood Fill)
-- Interpolation (Volume, Delay, Panning, Sample FX)
-- Effect Column Operations (Wipe All Effect Columns)
-- Track & Group Management
-
-## Features WITHOUT Menu Entries (Candidates for Adding)
-
-**Priority 1 (HIGH):**
-- Time Signatures (3/4, 7/8, 6/8)
-- Humanization (dialog, quick variants)
-- Selection to Group (Pattern Editor context)
-
-**Priority 2 (MEDIUM):**
-- Column Operations (wipe/clear/adjust)
-- Track Group Navigation
-- Populate Send Tracks
-- Pattern Transformation (rotate, interpolate notes)
-
-**Priority 3 (LOW):**
-- Automation Operations
-- Note Operations
-- Navigation (random playback)
-- Quick adjustments
-
----
-
-# Final Statistics
-
-**Total Features Documented:** 966+ (928 base + 38 phrase selection)
-**Total Documentation Files Created:** 23
-**Total Keyboard Shortcuts:** 850+
-**Total MIDI Mappings:** 140+
-**Lines of Documentation:** 6,500+
-**Lines of Code Analyzed:** 25,000+
-**Lua Files Fully Documented:** 22 ✅
-**Lua Files Remaining:** 70+ ❌
-**Overall Progress:** ~25% complete
-
----
-
-# The Paketti Story
-
-**Paketti** represents **11 years of continuous development** (2014-2025) by esaruoho, inspired by:
-- **Impulse Tracker** by Jeffrey Lim
-- **dBlue's** Renoise tools
-- **OctaMED** by Teijo Kinnunen
-- **Protracker, FastTracker, ModPlug**
-- The entire **tracker music community**
-
-This documentation effort honors that legacy by making these powerful tools accessible to everyone!
-
----
-
-**Last Updated:** 2025-11-28  
-**Session Progress:** Round 3 - Added Generative Tools, Processing Tools, Pattern Sequencer Utilities
-
-**"Explore Everything. Do Everything."**
-
----
-
-# Documentation Progress Report
-
-**Total Keybindings/Menu Entries in Paketti:** 5,155 across 128 Lua files
-
-**Fully Documented Files (30+):**
-- ✅ PakettiArpeggiator.lua (Musical Chord Progression Arpeggiator)
-- ✅ PakettiGater.lua (16/32-step gate sequencer)
-- ✅ PakettiPhraseGenerator.lua (Enhanced phrase generator with 28 scales)
-- ✅ Paketti0G01_Loader.lua (Preferences system)
-- ✅ PakettiWavetabler.lua (AKWF wavetable generator)
-- ✅ PakettiStretch.lua (Time stretching)
-- ✅ PakettiRePitch.lua (Sample cycle tuning)
-- ✅ PakettiPatternSequencer.lua (34 sequencer utilities)
-- ✅ PakettiEightOneTwenty.lua (810 grid sequencer)
-- ✅ PakettiTreeStructure.lua (Hierarchical browser)
-- ✅ PakettiCaptureLastTake.lua (Recording take management)
-- ✅ PakettiThemeSelector.lua (Theme switching)
-- ✅ PakettiGlobalGrooveToDelayValues.lua (Groove converter)
-- ✅ PakettiFill.lua (Pattern fill)
-- Plus all previously documented files (15+ from earlier rounds)
-
-**High-Priority Remaining Files (Not Yet Documented):**
-- PakettiExperimental_Verify.lua (79 features)
-- PakettiPresetPlusPlus.lua (79 features)
-- PakettiForeignSnippets.lua (66 features)
-- PakettiZeroCrossings.lua (59 features)
-- PakettiPlayerProSuite.lua (51 features - PlayerPro import)
-- Paketti35.lua (35 features)
-- PakettiFrameCalculator.lua (32 features)
-- PakettiLaunchApp.lua (28 features)
-- PakettiXMLizer.lua (27 features)
-- PakettiOTExport.lua (24 features - Octatrack export)
-- PakettiPolyendPatternData.lua (18 features)
-- PakettiWavCueExtract.lua (18 features)
-- PakettiCCizerLoader.lua (17 features)
-- PakettiDigitakt.lua (16 features - Elektron Digitakt export)
-- PakettiOctaMEDSuite.lua (15 features - OctaMED import)
-- PakettiOP1Export.lua (10 features - Teenage Engineering OP-1)
-- PakettiM8Export.lua (8 features - Dirtywave M8)
-- PakettiIFFLoader.lua (10 features - Amiga IFF)
-
-**Import/Export Loaders (Partially Covered):**
-- AKAI family (MPC2000, S900, S1000, S3000, Programs)
-- OctaMED Suite
-- PlayerPro Suite
-- Polyend Suite (Tracker, Play)
-- Teenage Engineering (OP-1, OP-Z)
-- Dirtywave M8
-- Elektron (Octatrack, Digitakt)
-- REX/RX2 loaders
-- SF2 loader
-- MOD loader
-- PTI loader
-- IFF loader
-- XM/XI import/export
-- ITI import/export
-
-**Advanced/Experimental Features (Not Yet Covered):**
-- Zero Crossings (59 features)
-- Foreign Snippets (66 features)
-- Preset++ (79 features)
-- Experimental Verify (79 features)
-- Pattern Iterator
-- Automation Stack (11 features)
-- Sample FX Chain Slicer
-- Slice Effect Step Sequencer
-- Manual Slicer
-- Stem Slicer
-- Stacker (6 features)
-- Beat Detect
-- Beat Structure Editor
-- Hyperclick
-- Chebyshev Waveshaper
-- EQ30
-- Equation Calculator
-- Image To Sample
-- Metric Modulation
-- Transpose Block
-- Tuplet Generator
-- Unison Generator
-
-**Estimated Coverage:** ~35% of total Paketti features documented
-**Estimated Remaining Features:** 3,000+ across 90+ Lua files
-
----
-
-# Import/Export Tools
-
-## Polyend Tracker/Play Integration
-
-**Source:** `PakettiPolyendSuite.lua` | **Features:** 1 main + extensive PTI system
-
-### Polyend Buddy (PTI File Browser)
-
-**Shortcut:** `Global:Paketti:Polyend Buddy (PTI File Browser)` ⌨️
-
-Comprehensive PTI (Polyend Tracker Instrument) file browser and manager. Navigate, preview, and load Polyend Tracker instruments into Renoise.
-
-**Features:**
-- Browse PTI files from Polyend Tracker library
-- Preview samples before loading
-- Convert PTI to XRNI format
-- Batch operations
-- Favorites system
-- Search/filter capabilities
-
-**PTI Format Support:**
-- Sample data import
-- Slice marker preservation
-- Modulation settings transfer
-- FX chain conversion
-- Envelope mapping
-
-**Use Cases:**
-- Transfer Polyend Tracker projects to Renoise
-- Share instruments between platforms
-- Build hybrid workflows (Polyend + Renoise)
-- Access Polyend sample library
-
----
-
-## PlayerPro Suite
-
-**Source:** `PakettiPlayerProSuite.lua` | **Features:** 51 (transpose, note grid, tools, effects)
-
-Complete PlayerPro (Amiga tracker) workflow emulation with intelligent dialogs, transpose operations, and note entry system.
-
-### Main Dialog
-
-**Shortcuts:**
-- `Pattern Editor:Paketti:Open Player Pro Tools Dialog...` ⌨️ - Main tools interface
-- `Global:Paketti:Player Pro Intelligent Dialog...` ⌨️ - Context-aware dialog
-- `Global:Paketti:Open Player Pro Note Column Dialog...` ⌨️ - Note entry grid
-
-**Menu:** Dynamic note dropdown menus for all note ranges (Pattern Editor:Paketti:Other Trackers:Note Dropdown)
-
-### Transpose Operations
-
-**Pattern Editor & Phrase Editor Support:**
-
-**Row/Selection Transpose:**
-- +1/-1 semitone
-- +12/-12 octave
-- With/without playback preview
-- Selection or row mode
-
-**Note Column Transpose:**
-- +1/-1 semitone  
-- +12/-12 octave
-- With/without playback preview
-- Affects only current note column
-
-**All Instruments Transpose:**
-- Transpose with Play (All Instruments) variants
-- +1/-1/-12/+12 for row and note column
-- Changes instrument assignment while transposing
-
-**Keybindings (Pattern Editor):**
-- `Player Pro Transpose Selection or Row +1/-1/+12/-12` ⌨️
-- `Player Pro Transpose Selection or Note Column +1/-1/+12/-12` ⌨️
-- `Player Pro Transpose ... with Play` variants ⌨️
-- `Player Pro Transpose ... with Play (All Instruments)` variants ⌨️
-
-**Keybindings (Phrase Editor):**
-- `Player Pro Transpose Selection or Row +1/-1/+12/-12` ⌨️
-- `Player Pro Transpose Selection or Note Column +1/-1/+12/-12` ⌨️
-- `Player Pro Transpose ... with Play` variants ⌨️
-
-### Effect Dialog
-
-**Shortcut:** `Pattern Editor:Paketti:Player Pro Effect Dialog...` ⌨️
-
-Quick access dialog for inserting PlayerPro-style effects into pattern. Maps PlayerPro effect commands to Renoise equivalents.
-
-### Scanner
-
-**Shortcut:** `Pattern Editor:Paketti:Player Pro Scanner (Start/Stop)` ⌨️
-
-Pattern scanner tool - analyze and visualize pattern data, PlayerPro-style scrolling display.
-
-### Note Grid
-
-Context-aware note entry system with octave selection, note dropdowns, and quick entry shortcuts.
-
-**Phrase Editor Support:**
-- `Phrase Editor:Paketti:Player Pro Note Grid Dialog` ⌨️
-- `Phrase Editor:Paketti:Player Pro Intelligent Dialog` ⌨️
-- `Phrase Editor:Paketti:Player Pro Effect Dialog` ⌨️
-
-### Workflow
-
-**PlayerPro-Style Features:**
-- Transpose with immediate playback preview
-- Context-sensitive note entry
-- Effect command quick access
-- Phrase editor full integration
-- All Instruments transpose mode
-
----
-
-## OpenMPT Linear Keyboard Layer
-
-**Source:** `PakettiOpenMPTLinearKeyboardLayer.lua` | **Features:** 1
-
-**Shortcut:** `Global:Paketti:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` ⌨️
-
-**Menu:**
-- `Main Menu:Tools:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` 📋
-- `Pattern Editor:Paketti Gadgets:Paketti PlayerPro OpenMPT Linear Keyboard Layer...` 📋
-
-Advanced keyboard-to-MIDI mapper with OpenMPT-style linear keyboard layout. Transform your QWERTY keyboard into a chromatic instrument with independent octave controls per row.
-
-### Linear Keyboard Layout
-
-**Four keyboard rows become linear octaves:**
-- **1-row:** `1234567890+=´` (13 keys) - Octave 1
-- **Q-row:** `QWERTYUIOP` (10+ keys) - Octave 2  
-- **A-row:** `ASDFGHJKL` (9+ keys) - Octave 3
-- **Z-row:** `ZXCVBNM,.-` (10+ keys) - Octave 4
-
-Each key triggers a semitone in sequence (C, C#, D, D#, E, F, F#, G, G#, A, A#, B, C+).
-
-### Per-Row Octave Control
-
-**Independent octave dropdowns (C-0 through B-9):**
-- **1-row base note:** Configurable (default: C-3)
-- **Q-row base note:** Configurable (default: C-4)
-- **A-row base note:** Configurable (default: C-5)
-- **Z-row base note:** Configurable (default: C-6)
-
-Change any row's starting octave independently - perfect for chords across ranges or bassline + melody split.
-
-### Special Modes
-
-**Follow Transport Checkbox:**
-When enabled, all row base notes automatically follow `renoise.song().transport.octave`:
-- **1-row** = transport.octave - 1
-- **Q-row** = transport.octave
-- **A-row** = transport.octave + 1
-- **Z-row** = transport.octave + 2
-
-Change Renoise's octave (< / > keys), all rows shift together.
-
-**Fret Mode Checkbox:**
-Guitar-style layout with overlapping ranges (like guitar strings):
-- **Z-row:** E-2 base (low E string)
-- **A-row:** A-2 base (A string)
-- **Q-row:** D-3 base (D string)  
-- **1-row:** G-3 base (G string)
-
-Emulates guitar fretting - adjacent keys = adjacent frets.
-
-### Features
-
-**Real-time MIDI Triggering:**
-- Direct note triggering (bypasses Pattern Editor)
-- Polyphonic (play multiple keys simultaneously)
-- Note-off on key release
-- Auto-cleanup for stuck notes (5s timeout)
-
-**Visual Feedback:**
-- Shows currently playing notes
-- Displays active octave ranges per row
-- Preset indicator
-- Minimize/maximize dialog
-
-**Integration:**
-- Uses current instrument
-- Respects instrument's MIDI/sample properties
-- Works alongside normal pattern editing
-
-### Use Cases
-
-**Live Performance:**
-- Play melodies with QWERTY keyboard
-- Trigger samples during live sets
-- Record performances into pattern
-
-**Composition:**
-- Quick melody sketching
-- Chord voicing exploration
-- Bass + melody layering (different rows)
-
-**Learning Tool:**
-- Visualize linear note layout
-- Understand chromatic relationships
-- Practice without MIDI keyboard
-
----
-
-## Slab'o'Patterns
-
-**Source:** `PakettiSlabOPatterns.lua` | **Features:** 2
-
-**Shortcuts:**
-- `Pattern Editor:Paketti:Paketti Slab'o'Patterns...` ⌨️
-- `Global:Paketti:Paketti Slab'o'Patterns...` ⌨️
-
-**Menu:**
-- `Main Menu:Tools:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
-- `Pattern Sequencer:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
-- `Pattern Matrix:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
-- `Pattern Editor:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
-
-**Beat-based pattern generation system** for creating complex time signature sequences. Define pattern lengths in beats (not lines), automatically adapts to any LPB.
-
-### Core Concept
-
-Instead of thinking in "64 lines" or "48 lines", think in **musical beats:**
-- **"4"** = 4 beats using current song LPB (e.g., at LPB 4 = 16 lines, at LPB 8 = 32 lines)
-- **"7"** = 7 beats = 7/4 time signature
-- **"3.5"** = 3.5 beats = fractional measures
-- **"4:8"** = 4 beats at LPB 8 (force specific LPB via ZL command in pattern)
-
-Beat-based approach maintains rhythmic structure regardless of LPB changes.
-
-### Preset Time Signatures
-
-**Built-in Presets:**
-- **7/4** - 7 beats
-- **5/4** - 5 beats
-- **14/8** - 4 beats, 3 beats alternating
-- **15/8** - 4 beats, 3.5 beats
-- **14/8 - 15/8** - Four-pattern cycle
-- **14/8 - 15/8 - 15/8 - 14/8** - Eight-pattern progressive cycle
-- **6/4 8/4** - 3, 3, 4, 4 beats
-- **8/4 6/4** - 4, 4, 3, 3 beats
-
-Click preset button to apply. Toggle "Append Preset" checkbox to add preset to existing list (instead of replacing).
-
-### Custom Sequences
-
-**Build your own:**
-1. Enter beat values in rows (e.g., "4", "7", "3.5")
-2. **+** button duplicates current seed pattern
-3. **-** button removes selected row
-4. **↑/↓** arrows move rows
-5. **Section Name** text field labels the sequence
-
-**Generate Patterns button:**
-- Creates patterns in sequence for each beat value
-- Names patterns with section name
-- Applies LPB if specified (via ZL command)
-- Updates sequencer
-
-### Advanced Features
-
-**Seed Pattern Duplication:**
-When you click **+**, duplicates the entire current pattern list. Example:
-- Start: `[4, 7]`
-- After +: `[4, 7, 4, 7]`
-- After + again: `[4, 7, 4, 7, 4, 7, 4, 7]`
-
-Perfect for building extended sections quickly.
-
-**LPB Control:**
-- Use `beats:lpb` format (e.g., "7:5") to force specific LPB
-- Writes ZL command to pattern master track
-- Overrides song global LPB for that pattern
-
-**Section Naming:**
-- Enter section name (e.g., "Verse", "Chorus", "Bridge")
-- Toggle "Append preset name" to add preset label to section
-- Generated patterns named: "Section 01", "Section 02", etc.
-
-### Configuration Persistence
-
-Pattern list saved to `slab_o_patterns.txt` in tool bundle path. Configuration persists across sessions.
-
-### Use Cases
-
-**Progressive Metal/Jazz:**
-- Complex time signature progressions
-- Polyrhythmic sections
-- Metric modulation
-
-**Film Scoring:**
-- Match video timing with beat-accurate patterns
-- Quick time signature experiments
-
-**Electronic Music:**
-- Asymmetric loop lengths
-- Phase-shifting patterns
-- Generative structures
-
-**Workflow Efficiency:**
-- Pre-plan song structure by beats
-- Bulk-create pattern skeleton
-- Experiment with rhythm without manual pattern resizing
-
----
-
-## Elektron Octatrack Integration
-
-**Source:** `PakettiOTExport.lua` | **Features:** 24
-
-Export Renoise samples to Elektron Octatrack format (.ot metadata files) with drumkit generation and slice support.
-
-### Export Functions
-
-**Shortcuts:**
-- `Sample Editor:Paketti:Export to Octatrack (.WAV+.ot)` ⌨️ - Exports both WAV and OT metadata
-- `Sample Editor:Paketti:Export to Octatrack (.ot)` ⌨️ - Exports OT metadata only
-
-**Menu:**
-- `Sample Editor:Paketti:Octatrack:Export (.WAV+.ot)` 📋
-- `Sample Editor:Paketti:Octatrack:Export (.ot only)` 📋
-- `Sample Mappings:Paketti:Octatrack:Export to Octatrack (.WAV+.OT)` 📋
-
-**.OT File Format:**
-- Contains slice markers
-- Loop points
-- Trim settings
-- Playback properties
-- Tempo/BPM info
-
-### Import Functions
-
-**Shortcuts:**
-- `Sample Editor:Paketti:Import Octatrack (.ot)` ⌨️
-
-**Menu:**
-- `Sample Editor:Paketti:Octatrack:Import (.ot)` 📋
-- `Sample Mappings:Paketti:Octatrack:Import Octatrack (.ot)` 📋
-
-Reads .ot files and applies slice markers, loop points, and properties to Renoise samples.
-
-### Drumkit Generation
-
-**Shortcuts:**
-- `Sample Editor:Paketti:Octatrack Generate Drumkit (Smart Mono/Stereo)` ⌨️
-- `Sample Editor:Paketti:Octatrack Generate Drumkit (Force Mono)` ⌨️
-- `Sample Editor:Paketti:Octatrack Generate Drumkit (Play to End)` ⌨️
-
-**Menu:**
-- `Sample Editor:Paketti:Octatrack:Generate Drumkit (Smart Mono/Stereo)` 📋
-- `Sample Editor:Paketti:Octatrack:Generate Drumkit (Force Mono)` 📋
-- `Sample Editor:Paketti:Octatrack:Generate Drumkit (Play to End)` 📋
-
-**Smart Mono/Stereo:**
-- Analyzes samples
-- Exports mono as mono, stereo as stereo
-- Optimizes for Octatrack memory
-
-**Force Mono:**
-- Converts all to mono
-- Maximum sample count per project
-- Smaller file sizes
-
-**Play to End:**
-- Sets all samples to play to completion
-- Disables slice looping
-- One-shot mode for all slices
-
-### Slice Operations
-
-**Shortcut:** `Sample Editor:Paketti:Octatrack Set .ot Loop to Slice` ⌨️
-
-**Menu:** `Sample Editor:Paketti:Octatrack:Set Loop to Slice` 📋
-
-Sets sample loop points to match selected slice boundaries - perfect for per-slice looping on Octatrack.
-
-### Debug Dialog
-
-**Shortcut:** `Sample Editor:Paketti:Debug Octatrack (.ot)` ⌨️
-
-**Menu:** `Sample Editor:Paketti:Octatrack:Debug (.ot)` 📋
-
-Displays .ot file contents in human-readable format. Debug slice markers, loop points, and metadata.
-
-### Workflow
-
-1. **Prepare in Renoise:** Slice, loop, process samples
-2. **Export with .ot:** Generate .ot metadata files
-3. **Transfer to Octatrack:** Copy WAV + .ot files to CF card
-4. **Load in Octatrack:** Slices and settings preserved
-
----
-
-## Elektron Digitakt Integration
-
-**Source:** `PakettiDigitakt.lua` | **Features:** 16
-
-Export sample chains to Elektron Digitakt with automatic pad mapping and stereo/mono conversion.
-
-### Export Dialog
-
-**Shortcuts:**
-- `Global:Paketti:Export Digitakt Sample Chain...` ⌨️
-- `Sample Editor:Paketti:Digitakt Export Sample Chain...` ⌨️
-
-**Menu:**
-- `Sample Editor:Paketti:Digitakt:Export Sample Chain...` 📋
-- `Instrument Box:Paketti:Digitakt:Export Sample Chain...` 📋
-- `DSP Device:Paketti:Digitakt:Export Sample Chain...` 📋
-- `Mixer:Paketti:Digitakt:Export Sample Chain...` 📋
-
-Opens comprehensive export dialog with options for:
-- Sample chain length (up to 128 samples)
-- Mono/Stereo mode
-- Pad assignment
-- File naming
-- Export location
-
-### Quick Export Modes
-
-**Shortcuts:**
-- `Global:Paketti:Export Digitakt Quick Export (Digitakt Mono)` ⌨️
-- `Global:Paketti:Export Digitakt Quick Export (Digitakt 2 Stereo)` ⌨️
-- `Global:Paketti:Export Digitakt Quick Export (Chain Mode)` ⌨️
-
-**Menu:**
-- `Sample Editor:Paketti:Digitakt:Quick Export (Digitakt Mono)` 📋
-- `Sample Editor:Paketti:Digitakt:Quick Export (Digitakt 2 Stereo)` 📋
-- `Sample Editor:Paketti:Digitakt:Quick Export (Chain Mode)` 📋
-
-**Digitakt Mono:**
-- Converts all samples to mono
-- Maximum compatibility
-- 128 samples per chain
-
-**Digitakt 2 Stereo:**
-- Preserves stereo samples
-- Optimized for Digitakt 2
-- Stereo sample support
-
-**Chain Mode:**
-- Creates single long sample chain
-- Slice markers for each sample
-- One sample = entire kit
-
-### Sample Chain Format
-
-**Automatic Features:**
-- Concatenates samples into single file
-- Generates slice markers
-- Creates start point list
-- Mono/stereo conversion
-- Normalization (optional)
-- Pad mapping (01-128)
-
-### Use Cases
-
-**Drumkit Creation:**
-- Export Renoise instrument as Digitakt kit
-- Preserves individual sample playback
-- One slice per pad
-
-**Pattern Transfer:**
-- Export pattern sequences
-- Transfer beats to Digitakt
-- Hybrid live performance setup
-
----
-
-## OctaMED Suite
-
-**Source:** `PakettiOctaMEDSuite.lua` | **Features:** 15
-
-OctaMED (Amiga tracker) workflow features including Pick/Put, Note Spread, Note Echo, and track mute operations.
-
-### Pick/Put System
-
-**Shortcut:** `Pattern Editor:Paketti:OctaMED Pick/Put Dialog...` ⌨️
-
-Visual dialog for Pick/Put note/instrument operations - OctaMED's clipboard system for rapid note entry.
-
-**Pick Shortcuts (01-16):**
-- `Pattern Editor:Paketti:OctaMED Pick Slot 01` through `16` ⌨️
-- Captures note + instrument at cursor
-- Stores in numbered slot
-
-**Put Shortcuts (01-16):**
-- `Pattern Editor:Paketti:OctaMED Put Slot 01` through `16` ⌨️
-- Pastes stored note + instrument
-- Advances by edit step
-
-### Note Spread
-
-**Shortcuts:**
-- `Global:Paketti:OctaMED Note Spread 01` through `64` ⌨️
-- `Pattern Editor:Paketti:OctaMED Note Spread 01` through `64` ⌨️
-- `Global:Paketti:OctaMED Note Spread Increment/Decrement` ⌨️
-
-**Menu:** `Pattern Editor:Paketti:Other Trackers:OctaMED Note Spread 01-64` 📋
-
-**Note Spread Effect:**
-- Duplicates current note across pattern
-- Spacing = spread value (lines between notes)
-- Creates instant drum patterns
-- Increment/decrement adjusts spread value
-
-**Example:** Spread 04 = note every 4 lines (16th notes at LPB 4)
-
-### Note Echo
-
-**Shortcut:** `Pattern Editor:Paketti:OctaMED Note Echo Dialog...` ⌨️
-
-Creates echo/delay patterns from current note. Configurable:
-- Echo count (repeats)
-- Echo spacing (lines)
-- Volume decay
-- Transpose per echo
-
-### Track Mute (01-64)
-
-**Shortcuts:**
-- `Global:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
-- `Pattern Editor:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
-- `Mixer:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
-- `Phrase Editor:Paketti:OctaMED Toggle Mute Track 01` through `64` ⌨️
-
-Direct track mute shortcuts by track number - instant mute/unmute without navigating.
-
-### Workflow
-
-**OctaMED-Style Features:**
-- Pick/Put for rapid note entry
-- Note Spread for rhythmic patterns
-- Note Echo for delay effects
-- Direct track muting (1-64)
 
 ---
 
@@ -3047,16 +2663,6 @@ Complete guide to Paketti's audio processing, silence removal, channel inversion
 
 ---
 
-## Documentation Source Files
-
-**Last Updated:** 2025-11-28
-
-| File | Keybindings | MIDI Mappings | Menu Entries | Coverage |
-|------|-------------|---------------|--------------|----------|
-| `PakettiAudioProcessing.lua` | 14 | 2 | 0 | ✅ Complete |
-
----
-
 ## Table of Contents
 1. [Silence Processing](#silence-processing)
 2. [Channel Inversion](#channel-inversion)
@@ -3474,37 +3080,6 @@ Combines modulation with audio diff.
 # Pattern Editor Features
 
 This section covers Pattern Editor features including time signatures, keyboard velocity, BPM control, and pattern organization.
-
----
-
-## Documentation Source Files
-
-**Last Updated:** 2025-11-28
-
-This documentation was generated by analyzing the following Paketti Lua source files:
-
-| File | Bindings Found | Coverage | Notes |
-|------|----------------|----------|-------|
-| `PakettiRequests.lua` | 470 bindings | ✅ Complete | All pattern editor features documented |
-| `PakettiTkna.lua` | ~150 bindings | ✅ Complete | Sample controls documented in SamplesAndInstruments.md |
-
-**Features Documented:**
-- Time signature shortcuts (3/4, 6/8, 7/8)
-- Keyboard velocity controls (±16)
-- BPM controls (±5)
-- Pattern resizing (batch + individual)
-- Pattern transformation (rotate, reverse, flip, interpolate)
-- Column operations (wipe, adjust, squeeze, invert)
-- Automation deletion (track/pattern/song scope)
-- Effect column operations (wipe by scope)
-- Humanization (dialog + quick presets)
-- Note-Off randomization
-- Flood fill operations
-- Group navigation
-- Send track population
-- Random playback position
-
-**Re-scraping Guide:** Search for `jenokiSystem`, `resize_all_non_empty_patterns`, `interpolat`, `humanize`, `wipe_`, `delete_automation`, `flood`, `squeeze` patterns.
 
 ---
 
@@ -4136,30 +3711,6 @@ This section covers all Paketti features related to Pattern Sequencer, Sequence 
 
 ---
 
-## Documentation Source Files
-
-**Last Updated:** 2025-11-28
-
-This documentation was generated by analyzing the following Paketti Lua source files:
-
-| File | Bindings Found | Coverage | Notes |
-|------|----------------|----------|-------|
-| `PakettiTkna.lua` | ~320 bindings | ✅ Complete | All sequence/section features documented |
-| `PakettiRequests.lua` | 470 bindings | ⚠️ Partial | Pattern Matrix/Editor integration covered |
-
-**Features Documented:**
-- 65 section shortcuts by name (00-64) with Trigger/Schedule/Add variations
-- 32 section shortcuts by position (01-32) with Trigger/Schedule/Add variations
-- 32 sequence shortcuts (00-31) for direct access
-- 16 pattern-within-section shortcuts
-- Sequence selection, looping, and expansion features
-- Performance lock MIDI control
-- "Continue from Same Line" workflows
-
-**Re-scraping Guide:** Search for `Toggle Sequence`, `Section`, `Loop`, `Schedule`, `Trigger` patterns in function names.
-
----
-
 ## Table of Contents
 1. [Sequence Selection](#sequence-selection)
 2. [Sequence Looping](#sequence-looping)
@@ -4635,16 +4186,6 @@ Comprehensive guide to Paketti's sample loading, drumkit creation, and sample ma
 
 ---
 
-## Documentation Source Files
-
-**Last Updated:** 2025-11-28
-
-| File | Coverage |
-|------|----------|
-| `PakettiSamples.lua` | ✅ Sample loading section complete |
-
----
-
 ## Table of Contents
 1. [PitchBend Sample Loaders](#pitchbend-sample-loaders)
 2. [Sample Slot Management](#sample-slot-management)
@@ -4816,16 +4357,6 @@ Opens Finder/Explorer to save the currently selected sample. Much faster than na
 ← [Back to Main Manual](README.md)
 
 Complete guide to Paketti's advanced normalization, channel conversion, and bit depth processing features.
-
----
-
-## Documentation Source Files
-
-**Last Updated:** 2025-11-28
-
-| File | Keybindings | MIDI Mappings | Menu Entries | Coverage |
-|------|-------------|---------------|--------------|----------|
-| `PakettiProcess.lua` | 58 | 12 | 1 | ✅ Complete |
 
 ---
 
@@ -6614,11 +6145,13 @@ Central configuration dialog for all Paketti features. Contains hundreds of pref
 - Define device paths
 - Organize favorites
 
-**Filter Presets:**
-- 22 filter types available
-- LP Clean, LP K35, LP Moog, LP Diode
-- HP variants, Bandpass, Comb
-- Decimator, Distortion, AM modulators
+**Filter Presets (22 types):**
+- **Low-Pass:** LP Clean, LP K35, LP Moog, LP Diode
+- **High-Pass:** HP Clean, HP K35, HP Moog, HP SVF
+- **Band-Pass:** BP 2 Pole, BP 4 Pole, BP Moog, BP SVF
+- **Notch:** Notch
+- **Comb:** Comb+, Comb-, Comb+ Flt, Comb- Flt
+- **Effects:** Decimator, Distortion, Ringmod, AM Sine, AM Triangle
 
 ### Integration
 
@@ -6634,13 +6167,198 @@ Central configuration dialog for all Paketti features. Contains hundreds of pref
 
 ---
 
+## Paketti Wonkify
+
+**Source:** `PakettiWonkify.lua`
+
+Advanced pattern variation generator with reproducible randomization. Creates "wonky" variations of patterns by applying controlled random modifications to timing, pitch, velocity, and note density. Supports multi-pattern chain generation for creating evolving arrangements.
+
+### Opening Wonkify
+
+**Shortcuts:**
+- `Global:Paketti:Wonkify Dialog` ⌨️
+- `Pattern Editor:Paketti:Wonkify Dialog` ⌨️
+- `Pattern Sequencer:Paketti:Wonkify Dialog` ⌨️
+- `Pattern Matrix:Paketti:Wonkify Dialog` ⌨️
+
+**MIDI:** `Paketti:Wonkify Dialog` 🎹
+
+**Menu:**
+- `Pattern Editor:Paketti:Pattern:Wonkify Settings...` 📋
+- `Pattern Matrix:Paketti:Wonkify Settings...` 📋
+- `Pattern Sequencer:Paketti:Wonkify Settings...` 📋
+- `Main Menu:Tools:Paketti:Pattern Editor:Wonkify Settings...` 📋
+
+### Core Operations
+
+**Wonkify Current Pattern:**
+- Applies modifications to the current pattern in-place
+- All enabled effects are applied based on percentage settings
+- `Global:Paketti:Wonkify Current Pattern` ⌨️
+- `Paketti:Wonkify Current Pattern` 🎹
+
+**Duplicate and Wonkify:**
+- Creates a new pattern (finds first empty pattern not in sequence)
+- Copies current pattern content to new pattern
+- Applies wonkification to the duplicate
+- Jumps to the new pattern
+- `Global:Paketti:Duplicate & Wonkify Pattern` ⌨️
+- `Paketti:Duplicate & Wonkify Pattern` 🎹
+
+**Generate Chain:**
+- Creates multiple wonkified patterns in sequence
+- Each new pattern is a variation of the previous one
+- Uses incrementing random seeds for different variations
+- Pattern count configurable (1-16)
+- `Global:Paketti:Wonkify Generate Chain` ⌨️
+- `Paketti:Wonkify Generate Chain` 🎹
+
+### Random Seed System
+
+**Reproducible Results:**
+- Set a numeric seed (1-999999) for consistent "random" variations
+- Same seed + same settings = identical output every time
+- Enable/disable seed usage with checkbox
+- "New" button generates a fresh random seed
+
+**Use Cases:**
+- Share exact variations with collaborators
+- Return to a specific variation you liked
+- A/B compare different seed values
+- Chain generation auto-increments seed for variety
+
+### Rhythm Modifications
+
+**Delay Drift (Micro-timing):**
+- Shifts notes within the same row using delay column (0-255 ticks)
+- Percentage: How many notes to affect (0-100%)
+- Max Ticks: Maximum drift amount (+/-)
+- Automatically shows delay column when used
+
+**Row Drift (Position Swap):**
+- Swaps note positions between different rows
+- Creates rhythmic displacement
+- Percentage: How many notes to move (0-100%)
+- Max Rows: Maximum rows to shift (+/-)
+
+### Pitch and Velocity
+
+**Pitch Drift:**
+- Shifts notes by semitones (+/-)
+- Percentage: How many notes to affect
+- Max Semitones: Maximum shift amount (1-12)
+- Track Selection: Comma-separated track numbers, or empty for all tracks
+- Useful for melodic variation while preserving drums
+
+**Velocity Variation:**
+- Changes note volume by percentage of original value
+- Percentage: How many notes to affect
+- Max Change: Maximum variation (+/- percent)
+- Creates humanized dynamics
+- Automatically shows volume column
+
+### Note Density
+
+**Add Notes:**
+- Randomly adds notes to empty positions
+- Notes are copied from existing notes in the pattern
+- Preserves instrument assignments
+- Percentage: Chance to add a note to each empty cell
+
+**Remove Notes:**
+- Randomly removes existing notes
+- Percentage: Chance to remove each note
+- Creates sparser patterns
+- Good for breakdown/buildup sections
+
+### Ghost Notes (Rolls)
+
+**Roll Creation:**
+- Adds velocity-faded ghost notes before or after existing notes
+- Creates drum rolls, note trails, and build-ups
+
+**Settings:**
+- Ghost Count: Number of ghost notes per original (1-4)
+- Direction: Build-up (before) or Trail-off (after)
+- Volume Start: Starting velocity percentage
+- Volume End: Ending velocity percentage
+- Linear interpolation between start and end
+
+**Build-up Mode:**
+- Places ghosts on rows before the note
+- Volume increases toward the original note
+- Creates anticipation/tension
+
+**Trail-off Mode:**
+- Places ghosts on rows after the note
+- Volume decreases from the original note
+- Creates echo/decay effect
+
+### Retrig Effects
+
+**0Rxx Command Insertion:**
+- Randomly adds retrigger effects to notes
+- Percentage: Chance to add retrig
+- Min/Max: Range of retrig values
+- Column Choice: Effect Column or Sample FX Column
+
+### Preferences
+
+All settings are saved in Paketti preferences:
+- Enable/disable each effect type independently
+- All percentage and range values persist
+- Random seed is remembered between sessions
+- Pattern count for chain generation
+
+### Dialog Interface
+
+**Organized Sections:**
+1. Generation Settings (seed, pattern count)
+2. Rhythm (delay drift, row drift)
+3. Pitch (with track selector)
+4. Velocity
+5. Density (add/remove)
+6. Ghost Notes
+7. Retrig
+
+**Action Buttons:**
+- Wonkify Current - Apply to current pattern
+- Duplicate and Wonkify - Create new pattern with variations
+- Generate Chain - Create multiple chained variations
+
+### Creative Uses
+
+**Drum Variations:**
+- Use delay drift for humanized timing
+- Ghost notes for fills and rolls
+- Velocity variation for dynamics
+- Disable pitch drift on drum tracks
+
+**Melodic Evolution:**
+- Pitch drift for subtle note changes
+- Row drift for rhythmic variation
+- Chain generation for song sections
+
+**Breakdown/Buildup:**
+- Density remove for sparse breakdowns
+- Density add for busy sections
+- Ghost trail-off for decay effects
+- Ghost build-up for tension
+
+**Sound Design:**
+- High drift values for glitchy effects
+- Retrig for stuttering textures
+- Combine all effects for chaos
+
+---
+
 # Sample Processing Tools
 
 ## AKWF Wavetable Generator
 
 **Source:** `PakettiWavetabler.lua`
 
-Creates random wavetables from Adventure Kid Waveforms (AKWF) library - 4,000+ single-cycle waveforms combined into seamless wavetables.
+Creates random wavetables from Adventure Kid Waveforms (AKWF) library - 4,000+ single-cycle waveforms combined into seamless wavetables. This library is actually included inside Paketti, so you don't need to install it. The loading is hardcoded to access the AKWF library from within Paketti.
 
 ### Random Wavetable Creation
 
@@ -6853,6 +6571,108 @@ Automatic pitch detection and correction for single-cycle waveforms. Analyzes wa
 - Single-cycle waveform tuning
 - Oscillator calibration
 - Synthesis preparation
+
+---
+
+# Slab'o'Patterns (Time Signature Generator)
+
+**Source:** `PakettiSlabOPatterns.lua` | **Features:** 2
+
+**Shortcuts:**
+- `Pattern Editor:Paketti:Paketti Slab'o'Patterns...` ⌨️
+- `Global:Paketti:Paketti Slab'o'Patterns...` ⌨️
+
+**Menu:**
+- `Main Menu:Tools:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
+- `Pattern Sequencer:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
+- `Pattern Matrix:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
+- `Pattern Editor:Paketti Gadgets:Paketti Slab'o'Patterns...` 📋
+
+**Beat-based pattern generation system** for creating complex time signature sequences. Define pattern lengths in beats (not lines), automatically adapts to any LPB.
+
+## Core Concept
+
+Instead of thinking in "64 lines" or "48 lines", think in **musical beats:**
+- **"4"** = 4 beats using current song LPB (e.g., at LPB 4 = 16 lines, at LPB 8 = 32 lines)
+- **"7"** = 7 beats = 7/4 time signature
+- **"3.5"** = 3.5 beats = fractional measures
+- **"4:8"** = 4 beats at LPB 8 (force specific LPB via ZL command in pattern)
+
+Beat-based approach maintains rhythmic structure regardless of LPB changes.
+
+## Preset Time Signatures
+
+**Built-in Presets:**
+- **7/4** - 7 beats
+- **5/4** - 5 beats
+- **14/8** - 4 beats, 3 beats alternating
+- **15/8** - 4 beats, 3.5 beats
+- **14/8 - 15/8** - Four-pattern cycle
+- **14/8 - 15/8 - 15/8 - 14/8** - Eight-pattern progressive cycle
+- **6/4 8/4** - 3, 3, 4, 4 beats
+- **8/4 6/4** - 4, 4, 3, 3 beats
+
+Click preset button to apply. Toggle "Append Preset" checkbox to add preset to existing list (instead of replacing).
+
+## Custom Sequences
+
+**Build your own:**
+1. Enter beat values in rows (e.g., "4", "7", "3.5")
+2. **+** button duplicates current seed pattern
+3. **-** button removes selected row
+4. **↑/↓** arrows move rows
+5. **Section Name** text field labels the sequence
+
+**Generate Patterns button:**
+- Creates patterns in sequence for each beat value
+- Names patterns with section name
+- Applies LPB if specified (via ZL command)
+- Updates sequencer
+
+## Advanced Features
+
+**Seed Pattern Duplication:**
+When you click **+**, duplicates the entire current pattern list. Example:
+- Start: `[4, 7]`
+- After +: `[4, 7, 4, 7]`
+- After + again: `[4, 7, 4, 7, 4, 7, 4, 7]`
+
+Perfect for building extended sections quickly.
+
+**LPB Control:**
+- Use `beats:lpb` format (e.g., "7:5") to force specific LPB
+- Writes ZL command to pattern master track
+- Overrides song global LPB for that pattern
+
+**Section Naming:**
+- Enter section name (e.g., "Verse", "Chorus", "Bridge")
+- Toggle "Append preset name" to add preset label to section
+- Generated patterns named: "Section 01", "Section 02", etc.
+
+## Configuration Persistence
+
+Pattern list saved to `slab_o_patterns.txt` in tool bundle path. Configuration persists across sessions.
+
+## Use Cases
+
+**Progressive Metal/Jazz:**
+- Complex time signature progressions
+- Polyrhythmic sections
+- Metric modulation
+
+**Film Scoring:**
+- Match video timing with beat-accurate patterns
+- Quick time signature experiments
+
+**Electronic Music:**
+- Asymmetric loop lengths
+- Phase-shifting patterns
+- Generative structures
+
+**Workflow Efficiency:**
+- Pre-plan song structure by beats
+- Bulk-create pattern skeleton
+- Experiment with rhythm without manual pattern resizing
 
 ---
 
@@ -7885,6 +7705,47 @@ Imports ReCycle 2.x format loops using external decoder (rex2decoder).
 - Checks output file existence (even on non-zero exit)
 - Prevents multiple simultaneous imports
 - Restores sample selection after import
+
+### Batch RX2 to Octatrack Converter
+
+**Source:** `PakettiRX2Loader.lua`
+
+Batch converts a folder of RX2 files to Octatrack-compatible WAV + .ot files.
+
+**Keybindings:**
+- `Global:Paketti:Batch Convert RX2 to Octatrack (WAV+.ot)` ⌨️
+
+**Menu:**
+- `Main Menu:Tools:Paketti:RX2 Loader:Batch Convert RX2 to Octatrack (WAV+.ot)` 📋
+- `Sample Editor:Paketti:Batch Convert RX2 to Octatrack (WAV+.ot)` 📋
+
+**How it Works:**
+1. Select input folder containing RX2 files
+2. Select output folder for WAV+.ot files
+3. For each RX2 file:
+   - Uses rex2decoder to extract audio and slice data
+   - Parses slice marker positions from decoder output
+   - Generates Octatrack-compatible .ot file with slice info
+   - Copies WAV to output folder
+4. Reports success/failure count
+
+**Features:**
+- **Recursive search** - Finds RX2 files in subfolders
+- **Alphabetical processing** - Files processed in sorted order
+- **64 slice limit** - Octatrack maximum, extras truncated
+- **BPM from song** - Uses current Renoise BPM for tempo calculation
+- **Cross-platform** - macOS, Windows, Linux (Wine)
+- **Progress reporting** - Status bar updates during conversion
+- **Detailed console log** - Full processing info in scripting terminal
+
+**Output:**
+- `filename.wav` - Audio file
+- `filename.ot` - Octatrack slice metadata (832 bytes)
+
+**Use Cases:**
+- Convert legacy ReCycle sample packs to Octatrack format
+- Batch prepare sliced loops for Elektron hardware
+- Migrate REX library to modern hardware sampler format
 
 ---
 
@@ -10953,6 +10814,59 @@ Embeds binary CUE chunk in RIFF WAV header with:
 - Sample library creation
 - Single-file archiving
 - Cross-DAW compatibility
+
+## Batch OT to CUE Converter
+
+**Source:** `PakettiWavCueExtract.lua`
+
+Batch converts a folder of Octatrack .ot files to CUE files for use with audio players, CD burning software, and other DAWs.
+
+**Keybindings:**
+- `Global:Paketti:Batch Convert .ot to CUE Files` ⌨️
+
+**Menu:**
+- `Main Menu:Tools:Paketti:Octatrack:Batch Convert .ot to CUE Files` 📋
+- `Sample Editor:Paketti:Octatrack:Batch Convert .ot to CUE Files` 📋
+
+**How it Works:**
+1. Select folder containing .ot files (matching WAV files must be in same folder)
+2. For each .ot file:
+   - Finds matching WAV file (same name, .wav extension)
+   - Reads slice data from .ot file
+   - Reads WAV header for sample rate (needed for timing)
+   - Generates .cue file with track entries for each slice
+3. Reports results (created, skipped, missing WAV, failed)
+
+**Features:**
+- **Recursive search** - Finds .ot files in subfolders
+- **Auto WAV matching** - Locates WAV files by base name
+- **CD frame timing** - Proper 75 fps for CUE format
+- **Skip existing** - Won't overwrite existing CUE files
+- **Missing WAV detection** - Reports when no matching audio found
+- **Detailed console log** - Full processing info in scripting terminal
+
+**Output:**
+- `filename.cue` - CUE sheet with track entries for each slice
+
+**CUE File Format:**
+```
+FILE "sample.wav" WAVE
+
+  TRACK 01 AUDIO
+    TITLE "Slice 01"
+    INDEX 01 00:00:00
+
+  TRACK 02 AUDIO
+    TITLE "Slice 02"
+    INDEX 01 00:01:25
+...
+```
+
+**Use Cases:**
+- Convert Octatrack sliced samples for other DAWs
+- Create CD-compatible track sheets from OT samples
+- Archive OT slice data in portable text format
+- Share sliced samples with non-Elektron users
 
 ## Supported Applications
 
@@ -14721,9 +14635,9 @@ Prompts for delay value and applies to all matching notes in track.
 
 # Effect Command CheatSheet
 
-**Source:** `PakettiPatternEditorCheatSheet.lua` | **Features:** 4
+**Source:** `PakettiPatternEditorCheatSheet.lua` | **Features:** 5
 
-Visual reference guides for Renoise effect commands with searchable database and quick reference. **Works in both Pattern Editor and Phrase Editor** - automatically detects which editor is active and applies effects to the appropriate context.
+Visual reference guides for Renoise effect commands with searchable database and quick reference. **Works in both Pattern Editor and Phrase Editor** - automatically detects which editor is active and applies effects to the appropriate context. **Now includes Sample FX mode** for writing effects directly to note column sample effect sub-columns.
 
 ## Effect Command CheatSheet
 
@@ -14778,6 +14692,72 @@ The cheatsheet automatically detects whether you're working in the Pattern Edito
 - **ZGxx** - Enable (01) or disable (00) Groove
 - **ZBxx** - Break pattern and jump to line xx in next
 - **ZDxx** - Delay (pause) pattern for xx lines
+
+### Write Mode: Effect Columns vs Sample FX
+
+The cheatsheet includes a **Write Mode Switch** that lets you choose where effects are written:
+
+**Switch Options:**
+- **Effect Columns** (Default) - Writes to the track's effect columns (standard behavior)
+- **Sample FX** - Writes to the Sample FX sub-column of note columns
+
+#### Effect Columns Mode
+
+The default mode that writes effects to the track's effect columns:
+- All 29 effect commands are available (filtered by Pattern/Phrase context)
+- Effects are written to effect columns at the right side of the track
+- Supports selection-based writing across multiple effect columns
+- Makes effect columns visible automatically
+
+#### Sample FX Mode
+
+Writes effects directly to the Sample FX sub-column within note columns:
+
+**How it works:**
+- Effects are written to the per-note-column sample effects area (the small FX column after Volume/Panning/Delay)
+- Automatically makes the sample effects column visible
+- Requires cursor to be in a note column (not an effect column)
+- If there's a selection, writes to all selected note columns
+
+**Sample FX-Valid Effects (13 effects):**
+
+| Code | Syntax | Description |
+|------|--------|-------------|
+| 0A | -Axy | Set arpeggio, x/y = first/second note offset in semitones |
+| 0U | -Uxx | Slide pitch up by xx 1/16ths of a semitone |
+| 0D | -Dxx | Slide pitch down by xx 1/16ths of a semitone |
+| 0G | -Gxx | Glide towards given note by xx 1/16ths of a semitone |
+| 0V | -Vxy | Set vibrato, x = speed, y = depth |
+| 0I | -Ixx | Fade volume in by xx volume units |
+| 0O | -Oxx | Fade volume out by xx volume units |
+| 0T | -Txy | Set tremolo, x = speed, y = depth |
+| 0C | -Cxy | Cut volume to x after y ticks |
+| 0S | -Sxx | Trigger sample slice number xx or offset xx |
+| 0B | -Bxx | Play sample backwards (00) or forwards (01) |
+| 0E | -Exx | Set envelope position to offset xx |
+| 0N | -Nxy | Set auto pan, x = speed, y = depth |
+
+**Effects NOT available in Sample FX mode:**
+- Track effects (0L, 0P, 0W, 0J, 0X, 0Z)
+- Global effects (ZT, ZL, ZK, ZG, ZB, ZD)
+- Note column sub-commands (0Q, 0M, 0R, 0Y)
+
+**Button States:**
+When switching to Sample FX mode, buttons for invalid effects are automatically disabled/grayed out.
+
+**Clear Button:**
+The Clear button changes based on mode:
+- **Effect Columns mode:** "Clear Effects" - clears effect columns
+- **Sample FX mode:** "Clear Sample FX" - clears sample effects from note columns
+
+**Use Cases:**
+- Adding per-note pitch slides without using effect columns
+- Writing vibrato/tremolo directly to specific notes
+- Randomizing sample slices across multiple note columns
+- Keeping effect columns free for track-level automation
+
+**Works in both Pattern Editor and Phrase Editor:**
+Sample FX mode works identically in both editors - it detects the current context and writes to the appropriate note columns.
 
 ### Dialog Features
 
@@ -15941,221 +15921,13 @@ Opens master dialog listing all Paketti dialogs.
 Opens Paketti about dialog with version info and donation links.
 
 **Display:**
-- Paketti version
-- Author info
-- Feature count
-- Changelog highlights
-- Donation links (Patreon, Ko-fi, etc.)
-- License information
 - Credits
+- List of thanks (ideas, suggestions)
+- Donation links (Patreon, Ko-fi, Buymeacoffee, PayPal, etc)
+- List of sent donations with URLs
+- License information
 
-**Use Case:** Support development, check version, view credits.
-
----
-
-
----
-
-# 🎉 Paketti Manual - Comprehensive Documentation
-
-**Version:** 2025-11-30  
-**Total Features Documented:** 600+  
-**Total Lines:** 15,800+  
-**Files Covered:** 60+
-
-## Documentation Coverage
-
-### ✅ Fully Documented Categories
-
-**Pattern & Phrase Editing:**
-- Pattern Editor (373 keybindings)
-- Phrase Editor (49 keybindings)
-- Pattern Matrix (8 keybindings)
-- Column Visibility (23 keybindings)
-- Pattern Length Control (8 keybindings)
-- Pattern Delay Viewer (3 keybindings)
-- Pattern Effect CheatSheet (4 features)
-
-**Sample & Instrument Management:**
-- Sample Processing Suite (49 features)
-- Audio Processing Tools (28 features)
-- Sample Normalization (multiple modes)
-- Stereo/Mono Conversion (11 variations)
-- Bit Depth Conversion (3 modes)
-- Keyzone Distributor (4 features)
-- Fuzzy Sample Search (1 feature)
-
-**Slicing Features:**
-- Real-Time Slice Monitoring
-- Slice to Pattern Sequencer
-- BPM-Based Sample Slicer
-- Zero-Crossing Slicer (64 bindings)
-- Oldschool Slice Pitch (49 bindings)
-- Manual Slicer (Power of 2)
-- Hex Slice Loop Control
-
-**Automation & Device Control:**
-- Automation Features (49 keybindings)
-- Device & Plugin Loaders (79+ keybindings)
-- Selected Device Parameter Editor
-- Device Chain Loaders (9 features)
-- Automation Stack (11 features)
-
-**Workflow & Productivity:**
-- Impulse Tracker Features (430+ keybindings)
-- Workflow Controls (100 keybindings)
-- PlayerPro Suite (51 features)
-- OctaMED Suite (15 features)
-- OpenMPT Linear Keyboard
-- Action Selector (command palette)
-- KeyBindings Management (5 features)
-
-**Creative Tools:**
-- HyperEdit (8-Row Step Sequencer)
-- Paketti Fill (Advanced Pattern Filler)
-- Beat Structure Editor
-- Beat Detector
-- EQ30/EQ64 Visual Equalizer
-- Slice Effect Step Sequencer
-- Stacker
-- Multitap Delay Experiment
-
-**Import/Export:**
-- REX/RX2 Import
-- PTI/MTI Import
-- ITI Import/Export
-- SF2 Loader
-- Octatrack (.ot, .strd, .work)
-- Digitakt Export
-- IFF/8SVX/16SV Loader
-- AKWF Wavetable Generator
-- WAV Cue Import/Export
-- Polyend Tracker (18 bindings)
-- MOD Loader
-- Image to Sample Converter
-- CSV/PCM Writer
-- Zyklus MPS1
-- Multi-File Raw Loader
-
-**Advanced Features:**
-- Metric Modulation (9 bindings)
-- Tuning Display (8 bindings)
-- Theme Selector (3 bindings)
-- Transpose Block (3 bindings)
-- Instrument Transpose (15 bindings)
-- MIDI Mappings Manager (14 bindings)
-- MIDI Populator
-- Clearance Tools (7 features)
-- Execute Applications (11 bindings)
-
-**Experimental/WIP:**
-- Experimental Verify (104 bindings)
-- Pitch Control (19 bindings)
-- CCizer Loader (17 bindings)
-- PlayerPro Waveform Viewer (16 bindings)
-- Autocomplete (12 bindings)
-- Dynamic Views (9 bindings)
-- Sub-Column Modifier (11 bindings)
-- XRNIT Loader (11 bindings)
-- Sample FX Chain Slicer (3 bindings)
-- Equation Calculator (2 bindings)
-- Chebyshev Waveshaper (2 bindings)
-- Auto-Samplify (1 binding)
-- Hold-to-Fill (1 binding)
-- Canvas Font Preview
-- XRNS Probe
-
-**Rendering & Recording:**
-- Rendering Features (24 keybindings)
-- Recording Features (19 keybindings)
-
-**BPM & Tempo:**
-- BPM Features (14 keybindings)
-- BPM Calculation & Conversion
-
-**MIDI & Control:**
-- MIDI Control (14 mappings)
-- MIDI Instrument Transpose
-- MIDI Output Management
-
-**Routing & Mixing:**
-- Routing Features (9 keybindings)
-- Track Management
-
-**Chords & Harmony:**
-- Chords & Harmony (72 keybindings)
-
-**Instrument Management:**
-- Instrument Box (22 keybindings)
-- Instrument Info
-- Merge Instruments
-
-**Dialogs & Utilities:**
-- Dialog of Dialogs
-- About Paketti/Donations
-- Notepad Code Runner
-
-**Drag & Drop Support:**
-- 20+ file formats supported
-- Complete import hook documentation
-
----
-
-## Feature Statistics
-
-**By Category:**
-- Pattern Editing: 430+ features
-- Sample Processing: 150+ features
-- Slicing: 130+ features
-- Automation: 80+ features
-- Import/Export: 70+ features
-- Workflow: 200+ features
-- Experimental: 100+ features
-
-**By Interface:**
-- Keybindings: 2000+
-- MIDI Mappings: 300+
-- Menu Entries: 200+
-- Dialogs: 50+
-
-**By Complexity:**
-- Simple Commands: 1500+
-- Dialogs: 50+
-- Generators: 20+
-- Analyzers: 15+
-
----
-
-## Usage Guide
-
-**Finding Features:**
-1. Use Ctrl+F to search this document
-2. Look for ⌨️ (keybindings), 🎹 (MIDI), 📋 (menu entries)
-3. Check category headers
-4. Use Action Selector in Paketti
-
-**Learning Workflow:**
-1. Start with basic sample processing
-2. Learn pattern editing shortcuts
-3. Explore slicing features
-4. Discover workflow enhancements
-5. Experiment with creative tools
-
-**Best Practices:**
-- Map frequently-used features to MIDI
-- Create custom keybindings for your workflow
-- Use dialogs for complex operations
-- Leverage Action Selector for discovery
-
----
-
-**Manual Created By:** AI Assistant + User Collaboration  
-**Last Updated:** 2025-11-30  
-**Paketti Version:** Latest  
-**Status:** Comprehensive & Production-Ready
-
-This manual represents over 15,000 lines of detailed documentation covering virtually every aspect of the Paketti tool suite for Renoise!
-
+**Use Case:** Support development, view credits.
 
 ---
 
@@ -20151,6 +19923,19 @@ Opens the comprehensive chord progression editor and player.
 - Musical sketching and arrangement
 
 **Requirements:** Renoise API 6.2+ (uses `.color` and `tooltip` properties)
+
+---
+
+# The Paketti Story
+
+**Paketti** represents **14 years of continuous development** (2011-2025) by esaruoho, taking notes of:
+- **Impulse Tracker** by Jeffrey Lim
+- **dBlue's** Renoise tools
+- **Martblek's** Renoise tools
+- **Joule's** Renoise tools
+- **OctaMED** by Teijo Kinnunen
+- **Protracker, FastTracker 2, ModPlug Tracker (OpenMPT)**
+- The entire **tracker music community**
 
 ---
 
