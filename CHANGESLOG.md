@@ -10811,3 +10811,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-12-09 - Improvement: Paketti Effect Command CheatSheet can now write directly to the Sample FX Columns, if selected.
 ![](Screenshots/cheatsheet_samplefx.png)
+
+---
+### 2025-12-10 - Improvement: Auto-Samplify / Pakettify will now no longer try to pakettify/samplify a sample that is an alias.
+
+---
+### 2025-12-10 - Improvement: Added 3 OctaMED themes to Paketti Theme Selector created by CeOH/NPC1
