@@ -7716,8 +7716,8 @@ Batch converts a folder of RX2 files to Octatrack-compatible WAV + .ot files.
 - `Global:Paketti:Batch Convert RX2 to Octatrack (WAV+.ot)` ⌨️
 
 **Menu:**
-- `Main Menu:Tools:Paketti:RX2 Loader:Batch Convert RX2 to Octatrack (WAV+.ot)` 📋
-- `Sample Editor:Paketti:Batch Convert RX2 to Octatrack (WAV+.ot)` 📋
+- `Main Menu:File:Paketti Export:Octatrack Batch Convert RX2 to OT (WAV+.ot)...` 📋
+- `Sample Editor:Paketti:Octatrack:Batch Convert RX2 to OT (WAV+.ot)...` 📋
 
 **How it Works:**
 1. Select input folder containing RX2 files
@@ -10825,8 +10825,8 @@ Batch converts a folder of Octatrack .ot files to CUE files for use with audio p
 - `Global:Paketti:Batch Convert .ot to CUE Files` ⌨️
 
 **Menu:**
-- `Main Menu:Tools:Paketti:Octatrack:Batch Convert .ot to CUE Files` 📋
-- `Sample Editor:Paketti:Octatrack:Batch Convert .ot to CUE Files` 📋
+- `Main Menu:File:Paketti Export:Octatrack Batch Convert .ot to CUE Files...` 📋
+- `Sample Editor:Paketti:Octatrack:Batch Convert .ot to CUE Files...` 📋
 
 **How it Works:**
 1. Select folder containing .ot files (matching WAV files must be in same folder)
