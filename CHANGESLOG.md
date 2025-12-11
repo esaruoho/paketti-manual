@@ -10821,3 +10821,11 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2025-12-11 - Feature: Create New Instrument from Sample Range and retain slices - this will duplicate the current sample range selection, all it's settings + slices, and recreate the slices to the new sample buffer / instrument, then apply the Slice settings.
 
+---
+### 2025-12-11 - Improvement: Added "RX2 to .OT+.WAV" & ".OT to WAV Cue Header" export entries to File -> Paketti Export for easier discoverability
+![](Screenshots/rx2otwav.png)
+
+
+---
+
+
