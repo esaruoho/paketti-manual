@@ -10825,7 +10825,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-11 - Improvement: Added "RX2 to .OT+.WAV" & ".OT to WAV Cue Header" export entries to File -> Paketti Export for easier discoverability
 ![](Screenshots/rx2otwav.png)
 
+---
+### 2025-12-12 - Feature: Single-shot shortcut that 1. creates a new track (navigates to it) 2. creates a new instrument (navigates to it), 3. opens sample recorder 4. starts sampling.. and when you 5. press the shortcut again, it stops sampling, and sets the track volume to -30.0dB so you can slowly start triggering the sample and increasing the volume. it also adds the paketti loader settings to the mix.
+![](Screenshots/quicksample.png)
 
 ---
-
-
