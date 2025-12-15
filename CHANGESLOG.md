@@ -10830,3 +10830,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](Screenshots/quicksample.png)
 
 ---
+### 2025-12-14 - Improvement: Quick Sample to New Track & Instrument (Toggle) now has additional features - turns pattern sync Off, or follows pattern sync - and when turning pattern sync recording off, adds C-4 instrumentname and 0G01 to effect column automatically, allowing for multiple long-form recordings to be played.
+
+---
+### 2025-12-15 - Feature: Pattern Name Loop - this triggers Sequence Selection Loops using the `[` and `]` format, so if you want to loop `[]` single pattern, that's what gets looped, if you have a multiple bunch of patterns, start with `[`  in the name and finish with `]` in the name somewhere else.
