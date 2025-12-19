@@ -10834,3 +10834,25 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-15 - Feature: Pattern Name Loop - this triggers Sequence Selection Loops using the `[` and `]` format, so if you want to loop `[]` single pattern, that's what gets looped, if you have a multiple bunch of patterns, start with `[`  in the name and finish with `]` in the name somewhere else.
+
+-----
+### 2025-12-17 - Improvement: Fixed a few free-running observables that might result in Renoise slowing down during Paketti usage - this should improve performance measurably. Also the groundwork for being able to disable any menu entry, or keybinding or midimappings, has been laid down.
+
+---
+### 2025-12-18 - Improvement: StemSlicer has been updated to recognize, if there's a numberBPM in the folder that has been picked for StemSlicing - and it'll set the dialog's Slicing BPM value to the value specified in the folder structure.
+
+---
+### 2025-12-18 - Feature: Paketti Stem Loader - this will take the stems you provide it, and create new tracks, rename the new tracks accordingly, load the instruments in pakettified, introduce `*Instr. Macros` devices for each track, and read the BPM from the Wavefile header, or read the BPM from the folder the files are in, then calculate the length of the samples, and add the correct amount of patterns to the pattern sequence, and print, automatically, `C-4 (instrumentnumber) 0G01` to every track that has been created, and enable Autoseek for each of the tracks.
+
+
+---
+### 2025-12-19 - Improvement: for "Digitakt Export with equal length slices based on longest slice" & Octatrack feature - i've added .WAV Cue Header writing for the slices - so that the slices will be written to the wav cue header + and to the .ot file.
+
+---
+### 2025-12-19 - Feature: Digitakt Export with Equal Length Slices based on Shorter Slice implemented - same as with "Longest Slice" but each of the longer-than-the-shortest audio gets faded out to evade clicks.
+
+---
+### 2025-12-19 - Feature: Octatrack Export with Equal Length Slices based on Shortest Slice - .OT format + wav cue headers.
+
+---
+### 2025-12-19 - Paketti Stem Loader has been updated to do the "Slices per pattern", i.e. when loading stems, the correct amount of patterns will be created, and each pattern will trigger a slice on the first row. And corrected so that if the last slice in the stem is actually not completely full - it'll still correctly line up.
