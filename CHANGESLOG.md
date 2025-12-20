@@ -10856,3 +10856,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-19 - Paketti Stem Loader has been updated to do the "Slices per pattern", i.e. when loading stems, the correct amount of patterns will be created, and each pattern will trigger a slice on the first row. And corrected so that if the last slice in the stem is actually not completely full - it'll still correctly line up.
+
+---
