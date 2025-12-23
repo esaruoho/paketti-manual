@@ -10861,7 +10861,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-20 - Improvement: Paketti Stem Loader now has shortcuts for randomizing the slice triggers, either by every row, 2nd row, 4th row, 8th row or 16th row.
 
 ---
-### 2025-12-21 - Improvement: Paketti Stem Loader Randomizer Dialog for slicing independently (every stem instrument will have a separate slice), or synchronized (all stems follow the same slice - or, portion of the song).  Can do 1,2,4,8,16,32 hits, and duplicate to a new pattern. 
+### 2025-12-21 - Improvement: Paketti Stem Slice Randomizer Dialog for slicing independently (every stem instrument will have a separate slice), or synchronized (all stems follow the same slice - or, portion of the song).  Can do 1,2,4,8,16,32 hits, and duplicate to a new pattern.  This is wild for creating stem loaded variations. Do look into it.
 ![](Screenshots/stemslicedialog.png)
 
 
