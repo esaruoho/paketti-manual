@@ -10858,3 +10858,17 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-19 - Paketti Stem Loader has been updated to do the "Slices per pattern", i.e. when loading stems, the correct amount of patterns will be created, and each pattern will trigger a slice on the first row. And corrected so that if the last slice in the stem is actually not completely full - it'll still correctly line up.
 
 ---
+### 2025-12-20 - Improvement: Paketti Stem Loader now has shortcuts for randomizing the slice triggers, either by every row, 2nd row, 4th row, 8th row or 16th row.
+
+---
+### 2025-12-21 - Improvement: Paketti Stem Loader Randomizer Dialog for slicing independently (every stem instrument will have a separate slice), or synchronized (all stems follow the same slice - or, portion of the song).  Can do 1,2,4,8,16,32 hits, and duplicate to a new pattern. 
+![](Screenshots/stemslicedialog.png)
+
+
+---
+### 2025-12-22 - Feature: Duplicate Track and Instrument (Clean) - this will duplicate the track and the instrument, but without the Track DSP Devices - and without the Automation.
+
+---
+### 2025-12-22 - Improvement: Duplicate Track and Instrument (Clean&Jump) - this will duplicate the track + instrument, clean Track DSP Devices and ditch the Automation, but jump you to the Sample Editor, and if a Plugin Instrument exists, then opens the External Editor. And, if you've got both a Sample and a Plugin in the Instrument, it opens both the Sample Editor and the External Editor.
+
+---
