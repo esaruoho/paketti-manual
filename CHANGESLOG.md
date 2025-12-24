@@ -10872,3 +10872,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-22 - Improvement: Duplicate Track and Instrument (Clean&Jump) - this will duplicate the track + instrument, clean Track DSP Devices and ditch the Automation, but jump you to the Sample Editor, and if a Plugin Instrument exists, then opens the External Editor. And, if you've got both a Sample and a Plugin in the Instrument, it opens both the Sample Editor and the External Editor.
 
 ---
+### 2025-12-24 - Improvement: Midi Select Track 01 ... 32 will now follow the Main Menu -> Options setting "Select Track Selects Instrument Toggle" - so therefore, they will set the Selected Instrument to be the one that's in use on that track.
