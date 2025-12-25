@@ -10873,3 +10873,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-24 - Improvement: Midi Select Track 01 ... 32 will now follow the Main Menu -> Options setting "Select Track Selects Instrument Toggle" - so therefore, they will set the Selected Instrument to be the one that's in use on that track.
+
+---
+### 2025-12-25 - Feature: Control Mixer Shown Parameter 01...16 - these midi mappings will control the visible-in-mixer parameters.
+![](Screenshots/visibleinmixer_parameters.png)
+
+---
+### 2025-12-25 - Improvement: Control Mixer Shown Parameter 01...16 Relative value control, too.
