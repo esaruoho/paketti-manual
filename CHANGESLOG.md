@@ -10880,3 +10880,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-25 - Improvement: Control Mixer Shown Parameter 01...16 Relative value control, too.
+
+---
+### 2025-12-25 - Improvement: "Duplicate Track, Set to Selected Instrument" now correctly sets the parameters to be visible in Mixer, that were visible on the original track.
+
+---
+### 2025-12-26 - Improvement: "Duplicate Track and Instrument (Clean) & Clean&Jump" now both add the `*Instr. Automation` device to the newly created track, assigned to the newly created instrument.
+
+---
+### 2025-12-26 - Improvement: The "Load Plugin(s)" shortcut / midi mapping generator will now correctly add `*Instr. Automation` to the end of the Track DSP Chain for directly automating the device.
