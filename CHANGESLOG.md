@@ -10892,3 +10892,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-26 - Feature: Favorited Plugin Instruments (Paketti) - this will read the currently is_favorited Plugin Instruments, and then load them, opening the External Editor, and adding a renamed `*Instr. Automation` Track DSP Device for editing + automating.
+
+---
+### 2025-12-27 - Feature: Toggle Track Solo Mute 01 ... 32 - for toggling Pattern Matrix Slot muting. Shortcuts + MidiMappings available.
