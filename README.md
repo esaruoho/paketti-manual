@@ -51,10 +51,13 @@ People often write me encouraging little snippets of text which I recycle into t
 - *"I just set up Renoise as the Sample Editor for Ableton, got a few breaks up and quantized, THEN used the Paketti save all samples to backup folder. I've been trying for literally YEARS at this point to figure this out, THANK YOU."*
 - *"Man, Paketti is awesome. Been using Renoise for a while but never used your tool. The best thing I learned from the manual: the G01 trick. Finally free from the grid! I never realized that this is possible. That's a true game changer. Thanks a million!"*
 - *"For Paketti you deserve some kind of award, a medal. So many years to keep it alive, constantly adding new features. Respect."*
+- _"Paketti has way more tools & functions ( overall ) than i previously realized - way to go man"_
 - *"Thanks for your commitment to building Paketti into a do-everything enhancement suite to Renoise!"*
+- _"may I point one thing: your work on renoise is light years further in advance than 3.5 update."_
 - *"Oh yeah, these tools you've made are essential to how I think about Renoise these days - I use Renoise knowing these tools are available"*
 - *"This is by far the biggest tool for Renoise and as such your are perhaps subconsciously created a centralized, and all encompassing tool. At this point I’d rather not download other tools and simply look to Paketti for my needs. One tool, one massive upgrade to Renoise."*
-- *"Thanks for developing such a useful set of tools that greatly improve Renoise."*
+- *"Thanks for developing such a useful set of tools that greatly improve Renoise."
+- *"I genuinely think that I can't use Renoise without Paketti anymore"**
 
 # Where
 
