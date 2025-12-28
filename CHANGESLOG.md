@@ -10900,3 +10900,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-28 - Improvement: Toggle Match EditStep with Note Placement (Note Columns) improved so that it ignores subcolumn content (volume, delay, panning, samplefx) and only focuses on Notes or Note Offs.
 
 ---
+### 2025-12-28 - Improvement: Toggle Pattern Sequence (All Patterns) Track Slot Mute 01...32
+
+---
+### 2025-12-28 - Feature: Unmute all Pattern Sequence Track Slots KeyBinding added.
