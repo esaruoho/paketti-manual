@@ -10895,3 +10895,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2025-12-27 - Feature: Toggle Track Solo Mute 01 ... 32 - for toggling Pattern Matrix Slot muting. Shortcuts + MidiMappings available.
+
+---
+### 2025-12-28 - Improvement: Toggle Match EditStep with Note Placement (Note Columns) improved so that it ignores subcolumn content (volume, delay, panning, samplefx) and only focuses on Notes or Note Offs.
+
+---
