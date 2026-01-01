@@ -10919,3 +10919,15 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-01 - Improvement: Auto-Samplify would clash with Sample Recorder - fixed.
+
+---
+### 2026-01-01 - Improvement: "Midi Program Change -1 / +1" now no longer shoots a Panic / Hard stop.
+
+---
+### 2026-01-01 - "Render Pattern Matrix Selection to New Instrument" now appears in the Pattern Sequencer, too.
+
+---
+### 2026-01-01 - Feature: Advance Cursor Forward by 01 Steps ... 32 Steps and Advance Cursor Backward by 01 Steps ... 32 Steps added to Midi Mappings & Shortcuts. For those that are working with EditStep set to 0, this is pretty ideal. Same flavor for Advancing forwards+backwards added for Phrase Editor.
+
+---
+### 2026-01-01 - Improvement: Added Wipe&Slice, Curve slice + Oldschool Slice & Slice to Pattern features to SlicePro.
