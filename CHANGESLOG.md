@@ -10931,3 +10931,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-01 - Improvement: Added Wipe&Slice, Curve slice + Oldschool Slice & Slice to Pattern features to SlicePro.
+
+---
+### 2026-01-01 - Improvement: Save Song added as a Midi Mapping.
+![](Screenshots/savesongmidi.png)
