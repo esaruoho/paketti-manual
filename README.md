@@ -637,7 +637,7 @@ There are additional configuration steps in the Paketti Preferences dialog:
 ![](attachments/pakettipreferences_wipeslice_settings.png)
 
 
-The BeatSync Mode can be set, also, and if, for instance, you set a 256 BeatSync Line setting for the sample, and chop it in 16 pieces, then each Slice will play at 16 BeatSync - maintaining the pitch and speed that you would expect. All this is taken care of behing the scenes.
+The Beatsync Mode can be set, also, and if, for instance, you set a 256 Beatsync Line setting for the sample, and chop it in 16 pieces, then each Slice will play at 16 Beatsync - maintaining the pitch and speed that you would expect. All this is taken care of behing the scenes.
 
 ### MPC-like Slice start + end alteration with Shortcuts / MidiMappings
 

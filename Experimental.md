@@ -4917,7 +4917,7 @@ Complete guide to Paketti's sample slicing, slice manipulation, and slice marker
 4. [Slice Marker Management](#slice-marker-management)
 5. [Slice Transient Detection](#slice-transient-detection)
 6. [Slice Extraction](#slice-extraction)
-7. [BeatSync & Slice Processing](#beatsync--slice-processing)
+7. [Beatsync & Slice Processing](#beatsync--slice-processing)
 8. [Slice Randomization](#slice-randomization)
 9. [Auto-Slice & Kit Creation](#auto-slice--kit-creation)
 
@@ -5004,7 +5004,7 @@ Intelligent slicer that creates slice markers based on BPM and beat divisions. P
 2. Choose beats per slice
 3. Click "Slice" button
 4. Markers created at exact beat positions
-5. BeatSync automatically configured
+5. Beatsync automatically configured
 
 **Calculations:**
 - **Frames per beat** = (Sample Rate × 60) / BPM
@@ -5157,8 +5157,8 @@ Removes all slice markers from the selected sample.
 **Shortcut:** `Sample Editor:Paketti:Slice (Auto-Detect Transients)` ⌨️ 📋
 
 **Smart Transient Detection:**
-- No BeatSync: Uses default threshold
-- BeatSync Enabled: Analyzes BeatSync Lines for optimal threshold
+- No Beatsync: Uses default threshold
+- Beatsync Enabled: Analyzes Beatsync Lines for optimal threshold
 
 Perfect for drum loops, breaks, vocals, any rhythmic material.
 
@@ -5182,16 +5182,16 @@ Creates a new instrument for each slice.
 
 Converts all slices to separate samples within the same instrument with keyzones.
 
-## BeatSync & Slice Processing
+## Beatsync & Slice Processing
 
-### Slice & Set BeatSync Values
-**Shortcut:** `Sample Editor:Paketti:Slice & Set BeatSync Values` ⌨️ 📋 🎹
-**MIDI:** `Paketti:Slice & Set BeatSync Values` 🎹
+### Slice & Set Beatsync Values
+**Shortcut:** `Sample Editor:Paketti:Slice & Set Beatsync Values` ⌨️ 📋 🎹
+**MIDI:** `Paketti:Slice & Set Beatsync Values` 🎹
 
-All-in-one BeatSync slicer:
+All-in-one Beatsync slicer:
 1. Auto-detects transients
-2. Enables BeatSync
-3. Calculates and sets BeatSync Lines
+2. Enables Beatsync
+3. Calculates and sets Beatsync Lines
 4. Configures slices for optimal playback
 
 ## Slice Randomization
@@ -5414,7 +5414,7 @@ Batch slicing workflow:
 1. Select folder of audio files
 2. Load each file as instrument
 3. Auto-detect transients and create slices
-4. Configure BeatSync for each instrument
+4. Configure Beatsync for each instrument
 
 # Samples and Instruments
 
@@ -5427,7 +5427,7 @@ This section covers all Paketti features related to Sample and Instrument manage
 2. [Sample Transpose & Pitch](#sample-transpose--pitch)
 3. [Sample Panning & Volume](#sample-panning--volume)
 4. [Sample Playback Quality](#sample-playback-quality)
-5. [Sample BeatSync](#sample-beatsync)
+5. [Sample Beatsync](#sample-beatsync)
 6. [Sample Behavior Settings](#sample-behavior-settings)
 7. [Sample New Note Action](#sample-new-note-action-nna)
 8. [Sample Mute Groups](#sample-mute-groups)
@@ -5510,24 +5510,24 @@ Range: 0.0 to 4.0 (0.0dB = 1.0).
 - `Global:Paketti:Set Selected Sample Oversample Off`
 - `Global:Paketti:Set Selected Sample Oversample On/Off` - Toggle
 
-## Sample BeatSync
+## Sample Beatsync
 
-### BeatSync Mode
+### Beatsync Mode
 **Shortcuts:**
 - `Global:Paketti:Set Selected Sample Beatsync 1 (Repitch)`
 - `Global:Paketti:Set Selected Sample Beatsync 2 (Time-Stretch Percussion)`
 - `Global:Paketti:Set Selected Sample Beatsync 3 (Time-Stretch Texture)`
 
-### BeatSync Mode with Toggle
+### Beatsync Mode with Toggle
 **Shortcuts:**
 - `Global:Paketti:Set Selected Sample Beatsync On/Off 1 (Repitch)`
 - `Global:Paketti:Set Selected Sample Beatsync On/Off 2 (Time-Stretch Percussion)`
 - `Global:Paketti:Set Selected Sample Beatsync On/Off 3 (Time-Stretch Texture)`
 
-### BeatSync Enable/Disable
+### Beatsync Enable/Disable
 **Shortcut:** `Global:Paketti:Set Selected Sample Beatsync On/Off`
 
-### BeatSync Lines
+### Beatsync Lines
 **Shortcuts:**
 - `Global:Paketti:Set Selected Sample Beatsync Line (+1)` ⌨️
 - `Global:Paketti:Set Selected Sample Beatsync Line (-1)` ⌨️
@@ -5569,12 +5569,12 @@ Range: 1-512 lines.
 ### Slice Drumkit (Percussion)
 **Shortcut:** `Sample Editor:Paketti:Slice Drumkit (Percussion)` ⌨️
 
-Optimized settings: BeatSync enabled (Percussion), Forward loop, Mute group 1, Autoseek on.
+Optimized settings: Beatsync enabled (Percussion), Forward loop, Mute group 1, Autoseek on.
 
 ### Slice Drumkit (Texture)
 **Shortcut:** `Sample Editor:Paketti:Slice Drumkit (Texture)` ⌨️
 
-Optimized settings: BeatSync enabled (Texture), Forward loop, Mute group 1, Autoseek on.
+Optimized settings: Beatsync enabled (Texture), Forward loop, Mute group 1, Autoseek on.
 
 ## Instrument-Level Operations
 
@@ -16478,7 +16478,7 @@ Opens the main 8120 Groovebox interface - an 8-row x 16/32-step sequencer with c
 - Per-row pattern controls
 - Per-row sample recording
 - Global and per-row pitch controls
-- Advanced BeatSync + NNA integration
+- Advanced Beatsync + NNA integration
 
 **Main Interface Sections:**
 
@@ -16521,7 +16521,7 @@ Per-row operations:
 - **BPM Display** (live updating)
 - **Instruments List** dropdown
 - **Select Row** buttons (01-08)
-- **Show Advanced** toggle (BeatSync + NNA panel)
+- **Show Advanced** toggle (Beatsync + NNA panel)
 
 **Global Actions:**
 - **Write All 8 Rows** - Write entire pattern
@@ -16530,12 +16530,12 @@ Per-row operations:
 - **Clear All Rows** - Reset all patterns
 - **Close** button
 
-### 5. Advanced Panel (BeatSync + NNA)
+### 5. Advanced Panel (Beatsync + NNA)
 
-Per-row BeatSync controls:
-- **BeatSync Checkbox** - Enable/disable beat sync
-- **BeatSync Lines** - Number of lines (1-512)
-- **BeatSync Mode** popup:
+Per-row Beatsync controls:
+- **Beatsync Checkbox** - Enable/disable beat sync
+- **Beatsync Lines** - Number of lines (1-512)
+- **Beatsync Mode** popup:
   - Percussive
   - Repitch
   - Texture
@@ -16633,7 +16633,7 @@ Two modes for global pitch adjustment:
 - Clears all steps in row
 - Resets visual state
 
-### 10. BeatSync Integration
+### 10. Beatsync Integration
 
 **Real-Time Observation:**
 - Attaches to sample observables
@@ -16644,7 +16644,7 @@ Two modes for global pitch adjustment:
 **Primary Sample Detection:**
 - Finds sample with velocity range 00-7F
 - Falls back to sample 1 if not found
-- Updates BeatSync controls for correct sample
+- Updates Beatsync controls for correct sample
 
 **Observable Management:**
 - `beat_sync_enabled_observable`
@@ -16704,7 +16704,7 @@ Two modes for global pitch adjustment:
 **Observable Cleanup:**
 - BPM observer (updates display)
 - Instruments list observer (refreshes dropdown)
-- BeatSync observers per row
+- Beatsync observers per row
 - All properly detached on dialog close
 
 **Sample Mapping:**
@@ -18314,7 +18314,7 @@ Visual sample synthesizer with 3 canvas-based drawing interfaces for waveform, p
 
 **Processing Options:**
 - **Fade Out** - Apply 1000-frame fade at end (prevents clicks)
-- **BeatSync** - Enable beatsync with 32 lines, Stretch-Texture mode
+- **Beatsync** - Enable beatsync with 32 lines, Stretch-Texture mode
 - **Waveform Override** - Use drawn waveform instead of preset
 
 ## Live Pickup Mode
@@ -19719,7 +19719,7 @@ Opens the comprehensive Paketti Preferences dialog with all settings organized i
 - Random BPM (write BPM to file)
 - Always Open Track DSPs
 - Always Open Sample FX Chain Devices
-- Selected Sample BeatSync Lines
+- Selected Sample Beatsync Lines
 - Replace Current Instrument (pakettification)
 - Instrument Properties (Do Nothing/Hide/Show)
 - Disk Browser Control (API 6.2+)

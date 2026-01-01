@@ -1858,7 +1858,7 @@ Improvement: Autoseek + Oneshot added to Paketti Loader Settings.
 ### 2024-08-14 - esaruoho
 
 Improvement: Renamed "Enable Pitchbend Loader Envelope" to "Enable AHDSR Envelope" (as witnessed with the two screenshots above
-also some additional tweaks like having the Note text be on the next row, matching "One-Shot" text everywhere (not "One-Shot" somewhere and "Oneshot" somewhere else. also increased the BeatSync Mode Switch width so the text is better displayed.
+also some additional tweaks like having the Note text be on the next row, matching "One-Shot" text everywhere (not "One-Shot" somewhere and "Oneshot" somewhere else. also increased the Beatsync Mode Switch width so the text is better displayed.
 Paketti Preferences dialog can now be closed with the same shortcut that opens it.
 and it is now less wide. and other minor look'n'feel tweaks
 ![](attachments/2024-08-14_Screenshot_2024-08-14_at_22.41.12.png)
@@ -2060,7 +2060,7 @@ Improvement: Added Default Filter Type to Paketti Loader settings. - from now on
 ---
 ### 2024-08-17 - esaruoho
 
-Feature: Added Midi Mapping for controlling BeatSync value 1-128. If BeatSync Mode is Off - it turns it On.
+Feature: Added Midi Mapping for controlling Beatsync value 1-128. If Beatsync Mode is Off - it turns it On.
 (closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/409)
 ![](attachments/2024-08-17_beatsync_midi_value_control.gif)
 
@@ -3353,7 +3353,7 @@ and if Playing is Off and Record is On, it will write to Automation.
 ---
 ### 2024-09-13 - esaruoho
 
-Improvement: If using Wipe&Slice while there was no BeatSyncLines set - it would shoot an error. no more.
+Improvement: If using Wipe&Slice while there was no BeatsyncLines set - it would shoot an error. no more.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/547)
 
 ---
@@ -3488,8 +3488,8 @@ Improvement: There's now two flavors of "Replicate at Cursor". one that replicat
 
 Feature: Loop Set Texture, Loop Set Percussion.
 This takes the current sample
-- Enables BeatSync
-- Sets BeatSync to either Texture or Percussion
+- Enables Beatsync
+- Sets Beatsync to either Texture or Percussion
 - Enables Forward Loop
 - Enables AutoSeek.
 
@@ -3556,10 +3556,10 @@ Improvement: eSpeak now has "Generate Row 00-32" shortcuts. 00 will generate all
 ---
 ### 2024-09-17 - esaruoho
 
-Feature: Smart BeatSync from Selection
+Feature: Smart Beatsync from Selection
 This reads selection in pattern and imprints it on selected sample beatsync.
-meaning: select 4 rows, run shortcut - sample BeatSync lines is now 4.
-select 64 rows, run shortcut - sample BeatSync line is now 64.
+meaning: select 4 rows, run shortcut - sample Beatsync lines is now 4.
+select 64 rows, run shortcut - sample Beatsync line is now 64.
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/561)
 
 ---
@@ -3706,7 +3706,7 @@ Feature: Double Double LPB & Halve Halve LPB.
 ---
 ### 2024-09-22 - esaruoho
 
-Feature: Double Double BeatSync, Halve Halve BeatSync (Selected Sample or All)
+Feature: Double Double Beatsync, Halve Halve Beatsync (Selected Sample or All)
 (Closes https://github.com/esaruoho/org.lackluster.Paketti.xrnx/issues/582)
 ![](attachments/2024-09-22_Screenshot_2024-09-22_at_21.48.05.png)
 
@@ -6887,14 +6887,14 @@ Improvement: PlayerPro Effect Column Dialog now shows both the hexadecimal and t
 Feature: Slice DrumKit (Percussion) / Slice DrumKit (Texture)
 These shortcuts + menu entries do the following thing:
 Original Sample:
-1. Set BeatSync On
-2. Set BeatSync Mode to Percussion OR Texture
+1. Set Beatsync On
+2. Set Beatsync Mode to Percussion OR Texture
 3. Set Forward Loop On
 4. Set Autoseek On
 5. Set Mute Group 1
 
 Slices:
-1. Disable BeatSync
+1. Disable Beatsync
 2. Enable One-Shot
 3. Set Autofade on
 4. Set Mute Group 1
@@ -7634,7 +7634,7 @@ Improvement: Load Random AKWF Samples features now obey the Paketti Loader setti
 ---
 ### 2025-03-21 - esaruoho
 Improvement: AutoFade -> Autofade everywhere.
-Improvement: Beatsync -> BeatSync everywhere.
+Improvement: Beatsync -> Beatsync everywhere.
 This might mean that you need to re-bind some shortcuts.
 
 ---
@@ -8297,7 +8297,7 @@ They are now identical and organized in the same way - with no sample processes 
 for better discoverability
 
 ---
-### 2025-04-26 - Improvement: All mentions of BeatSync renamed to Beatsync. Same for AutoSeek -> Autoseek
+### 2025-04-26 - Improvement: All mentions of Beatsync renamed to Beatsync. Same for AutoSeek -> Autoseek
 
 ---
 ### 2025-04-26 - Improvement: More Column Visibility content added to View -> Paketti.. -> Visible Columns.. submenu
@@ -9935,7 +9935,7 @@ This feature will import the samples, loop-points and keymappings, for now. More
 ![](Screenshots/filenamebased_keyzone_mapping.png)
 
 ---
-### 2025-08-25 - Improvement: Slices to Pattern will now adopt a more streamlined approach if BeatSync is set to On - and if there are very close slices (think flams) - multiple Note Columns will be used instead of overwriting the current Note Column row.
+### 2025-08-25 - Improvement: Slices to Pattern will now adopt a more streamlined approach if Beatsync is set to On - and if there are very close slices (think flams) - multiple Note Columns will be used instead of overwriting the current Note Column row.
 
 ---
 ### 2025-08-25 - Feature: Squeeze Notes (Pattern) / (Song) - this will squeeze notes for a Selected Track, to the minimum available amount of Note Columns - so if you have notes all over the place on multiple Note Columns, they are moved.
@@ -10906,3 +10906,16 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2025-12-28 - Feature: Unmute all Pattern Sequence Track Slots KeyBinding added.
 
 ---
+### 2025-12-30 - Improvement: Step By EditStep (wheel) MidiMapping, so 0-64 go backwards by EditStep and 65-127 go forwards by EditStep
+
+---
+### 2025-12-30 - Improvement: SlicePro Config dialog optimized to show more slices and have less padding / spacing.
+
+---
+### 2025-12-31 - Improvement: "Duplicate Selection in Pattern" now available as MidiMapping.
+
+---
+### 2026-01-01 - Improvement: Capture Nearest Track with Midi Mapping would capture "no notes" and still set the keyboard octave to 8 - fixed.
+
+---
+### 2026-01-01 - Improvement: Auto-Samplify would clash with Sample Recorder - fixed.
