@@ -10935,3 +10935,6 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2026-01-01 - Improvement: Save Song added as a Midi Mapping.
 ![](Screenshots/savesongmidi.png)
+
+---
+### 2026-01-02 - Improvement: OctaMED Pick / Put Dialog will now correctly unmark a single row selection, and advance by EditStep - if you are trying to "Put" with EditStep.
