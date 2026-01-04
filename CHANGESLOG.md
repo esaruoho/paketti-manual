@@ -10938,3 +10938,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-02 - Improvement: OctaMED Pick / Put Dialog will now correctly unmark a single row selection, and advance by EditStep - if you are trying to "Put" with EditStep.
+
+---
+### 2026-01-04 - Improvement: Sononymph Detect will now Automatically Apply the newest version - and tell you - so you can leave it as auto-selected, or pick a different version yourself
+
+---
+### 2026-01-04 - Improvement: Added Schedule Next Pattern in Section / Previous Pattern in Section, Next Pattern, Previous Pattern, and a version of each without the "Select the Sequence".
