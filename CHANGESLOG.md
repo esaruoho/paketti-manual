@@ -10944,3 +10944,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-04 - Improvement: Added Schedule Next Pattern in Section / Previous Pattern in Section, Next Pattern, Previous Pattern, and a version of each without the "Select the Sequence".
+
+---
+### 2026-01-04 - Improvement: Added a Progressive ALT-L (originally from ImpulseTracker). First will select the current Note or Effect Column, second press will select the whole track, and third press will select the whole pattern.
+![](gif/alt-L-multicolumn.gif)
+
+---
