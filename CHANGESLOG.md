@@ -10954,4 +10954,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-05 - Improvement: Added "Selection Only" to Stem Loader, and "Quick Select till End of Pattern" as checkboxes.
+![](Screenshots/stemloader_selections.png)
 
+---
+### 2026-01-05 - Improvement: Added Yamaha TG-33 to CCizer
