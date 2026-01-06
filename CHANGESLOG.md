@@ -10958,3 +10958,12 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-05 - Improvement: Added Yamaha TG-33 to CCizer
+
+---
+### 2026-01-05 - Improvement: Added Machinedrum MK2 to CCizer
+
+---
+
+### 2026-01-06 - Feature: Replicate Above Into Selection Only added to Pattern Editor + Phrase Editor
+
+---
