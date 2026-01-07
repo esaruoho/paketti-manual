@@ -1,6 +1,6 @@
 [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
 
-📖 **Navigation:** [Paketti README](README.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
+📖 **Navigation:** [Paketti README](index.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
 
 # Paketti Experimental Documentation
 
@@ -19951,4 +19951,4 @@ If you liked what you're seeing here, please consider supporting. Every bit help
 - [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
 - [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
 
-📖 **Navigation:** [Paketti README](README.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
+📖 **Navigation:** [Paketti README](index.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)

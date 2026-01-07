@@ -1,6 +1,6 @@
 [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
 
-📖 **Navigation:** [Paketti README](README.html) | Changeslog (You are here) | [Experimental](Experimental.html)
+📖 **Navigation:** [Paketti README](index.html) | Changeslog (You are here) | [Experimental](Experimental.html)
 
 # Changeslog
 
@@ -10967,3 +10967,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-06 - Feature: Replicate Above Into Selection Only added to Pattern Editor + Phrase Editor
 
 ---
+### 2026-01-07 - Improvement: Paketti Stem Loader will now, when failing to find BPM from folder name structure, or from WAV Header, also observe if there's a BPM mentioned in the filename itself and set accordingly.
