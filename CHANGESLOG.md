@@ -10973,3 +10973,4 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-07 - Improvement: Write Current BPM/LPB to Master has been added as a shortcut
 
 ---
+### 2026-01-07 - Feature: Clipboard Wonkify - a method of using the Paketti specific Clipboard to paste content, but wonkified - have a look at the Paketti Wonkify dialog feature for details.
