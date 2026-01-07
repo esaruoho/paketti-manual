@@ -10968,3 +10968,8 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-07 - Improvement: Paketti Stem Loader will now, when failing to find BPM from folder name structure, or from WAV Header, also observe if there's a BPM mentioned in the filename itself and set accordingly.
+
+---
+### 2026-01-07 - Improvement: Write Current BPM/LPB to Master has been added as a shortcut
+
+---
