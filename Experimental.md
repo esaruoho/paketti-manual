@@ -6352,6 +6352,132 @@ All settings are saved in Paketti preferences:
 
 ---
 
+## Wonkify Clipboard
+
+**Source:** `PakettiClipboard.lua`
+
+Wonkify Clipboard applies the same humanization and variation effects as Wonkify Pattern, but operates on Paketti's internal clipboard system during paste operations rather than modifying patterns directly. This provides a non-destructive workflow where you can paste the same clipboard content multiple times with different transformations applied each time.
+
+### How It Works
+
+1. **Copy pattern data** to a Paketti clipboard slot (Slots 01-20)
+2. **Choose a Wonkify preset** when pasting
+3. **Transformations are applied on-the-fly** during the paste operation
+4. The original clipboard data remains unchanged for reuse
+
+### Wonkify Clipboard vs Wonkify Pattern
+
+| Feature | Wonkify Pattern | Wonkify Clipboard |
+|---------|-----------------|-------------------|
+| **Operation** | Modifies patterns directly | Transforms during paste |
+| **Source** | Current pattern or selection | Clipboard slot data |
+| **Destructive** | Yes (changes pattern in-place) | No (clipboard unchanged) |
+| **Undo** | Standard undo | Don't paste if unwanted |
+| **Settings** | Full dialog with all parameters | Preset-based (7 presets) |
+| **Chain Generation** | Yes (multiple pattern variations) | No |
+| **Best For** | Comprehensive editing, chains | Quick variations, experimentation |
+
+### Available Presets
+
+All seven presets match the built-in Wonkify Pattern presets:
+
+| Preset | Description | Effects Applied |
+|--------|-------------|-----------------|
+| **Humanized** | Subtle, natural feel | Light delay drift (25%), velocity variation (40%) |
+| **Drunk** | Loose, wobbly timing | Heavy delay drift (50%), velocity variation, row drift |
+| **Lo-Fi** | Gritty, degraded feel | Delay drift (20%), heavy velocity variation (60%) |
+| **Glitchy** | Stuttered, broken timing | Row drift only (35%), position swapping |
+| **Chaos** | Maximum variation | All effects: delay, velocity, pitch, row drift |
+| **Jazz** | Swung, dynamic feel | Delay drift (30%), velocity variation (45%) |
+| **Tight** | Minimal micro-timing | Small delay drift only (8 ticks max) |
+
+### Pattern Editor Keybindings
+
+**Wonkify Paste from Slot 01:**
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Humanized (Slot 01)` - Paste with subtle humanization
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Drunk (Slot 01)` - Paste with drunk groove
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Lo-Fi (Slot 01)` - Paste with lo-fi grit
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Glitchy (Slot 01)` - Paste with glitchy timing
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Chaos (Slot 01)` - Paste with maximum chaos
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Jazz (Slot 01)` - Paste with jazz feel
+- `Pattern Editor:Paketti:Clipboard:Wonkify:Tight (Slot 01)` - Paste with tight micro-timing
+
+### Phrase Editor Keybindings
+
+The same Wonkify presets are available when pasting into phrases:
+
+- `Phrase Editor:Paketti:Clipboard Wonkify Humanized` - Paste with humanization
+- `Phrase Editor:Paketti:Clipboard Wonkify Drunk` - Paste with drunk groove
+- `Phrase Editor:Paketti:Clipboard Wonkify Lo-Fi` - Paste with lo-fi grit
+- `Phrase Editor:Paketti:Clipboard Wonkify Glitchy` - Paste with glitchy timing
+- `Phrase Editor:Paketti:Clipboard Wonkify Chaos` - Paste with chaos
+- `Phrase Editor:Paketti:Clipboard Wonkify Jazz` - Paste with jazz feel
+- `Phrase Editor:Paketti:Clipboard Wonkify Tight` - Paste with tight timing
+
+### MIDI Mappings
+
+All seven presets have corresponding MIDI mappings:
+
+- `Paketti:Clipboard Wonkify Humanized` - Trigger humanized paste
+- `Paketti:Clipboard Wonkify Drunk` - Trigger drunk groove paste
+- `Paketti:Clipboard Wonkify Lo-Fi` - Trigger lo-fi paste
+- `Paketti:Clipboard Wonkify Glitchy` - Trigger glitchy paste
+- `Paketti:Clipboard Wonkify Chaos` - Trigger chaos paste
+- `Paketti:Clipboard Wonkify Jazz` - Trigger jazz feel paste
+- `Paketti:Clipboard Wonkify Tight` - Trigger tight timing paste
+
+### Transformations Applied
+
+**Delay Drift:**
+- Shifts note timing using the delay column (0-255 ticks)
+- Each preset defines percentage chance and maximum drift amount
+- Creates micro-timing variations for humanization
+
+**Velocity Variation:**
+- Randomizes note velocity based on percentage of original value
+- Adds dynamic variation to otherwise static patterns
+- Preserves relative loud/soft relationships
+
+**Pitch Drift (Chaos preset only):**
+- Shifts notes by semitones
+- Only enabled in the Chaos preset for maximum variation
+- Keeps notes within valid MIDI range (0-119)
+
+**Row Drift:**
+- Swaps note positions between different rows
+- Creates rhythmic displacement and shuffling
+- Enabled in Drunk, Glitchy, and Chaos presets
+
+### Creative Workflow
+
+**Build Variations Quickly:**
+1. Copy a drum pattern to Slot 01
+2. Paste with "Humanized" for verse
+3. Paste with "Drunk" for breakdown
+4. Paste with "Chaos" for climax
+5. Each paste creates a unique variation from the same source
+
+**A/B Testing:**
+- Copy your pattern
+- Paste with different presets to adjacent tracks
+- Compare and choose the best variation
+- Delete unwanted variations
+
+**Layered Humanization:**
+- Paste the same content multiple times with "Humanized"
+- Each paste applies fresh random values
+- Build up subtle variations across sections
+
+### Technical Details
+
+- Transformations use time-based random seeds for variety
+- Original clipboard data is deep-copied before transformation
+- Effect columns are preserved without modification
+- Empty notes and OFF notes are not transformed
+- Works with multi-track clipboard content
+
+---
+
 # Sample Processing Tools
 
 ## AKWF Wavetable Generator

@@ -10984,3 +10984,5 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2026-01-08 - Improvement: CTRL-O pattern render would first render a temporary file to the Paketti tool folder - instead of using a TMP folder. This would result in stray wavefiles appearing in the Paketti package. fixed.
 
+---
+### 2026-01-08 - Improvement: Paketti Wonkify Dialog split to two columns for less height usage.
