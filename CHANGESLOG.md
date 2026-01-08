@@ -10974,3 +10974,13 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-07 - Feature: Clipboard Wonkify - a method of using the Paketti specific Clipboard to paste content, but wonkified - have a look at the Paketti Wonkify dialog feature for details.
+
+---
+### 2026-01-07 - Improvement: Paketti Clipboard will now, in the case of nothing being selected, also cut or copy the current row current note column.
+
+---
+### 2026-01-07 - Improvement: Paketti Clipboard will no longer overwrite notes, if pasting effect column data, and no longer overwrite effects, if pasting note column data.
+
+---
+### 2026-01-08 - Improvement: CTRL-O pattern render would first render a temporary file to the Paketti tool folder - instead of using a TMP folder. This would result in stray wavefiles appearing in the Paketti package. fixed.
+
