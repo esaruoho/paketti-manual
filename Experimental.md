@@ -6,7 +6,7 @@
 
 **The comprehensive, all-in-one documentation for Paketti - Renoise Enhancement Suite**
 
-**Last Updated:** 2025-12-09
+**Last Updated:** 2026-01-09
 
 ---
 
@@ -50,10 +50,11 @@
 ### Slicing & Samples
 30. [Slicing Features](#slicing-features)
 31. [Slicing Tools](#slicing-tools)
-32. [Manual Slicer (Power of 2 Padding)](#manual-slicer-power-of-2-padding)
-33. [Zero Crossings System](#zero-crossings-system)
-34. [Oldschool Slice Pitch Workflow](#oldschool-slice-pitch-workflow)
-35. [Samples and Instruments](#samples-and-instruments)
+32. [Stem Loader](#stem-loader) *(NEW - Dec 2025)*
+33. [Manual Slicer (Power of 2 Padding)](#manual-slicer-power-of-2-padding)
+34. [Zero Crossings System](#zero-crossings-system)
+35. [Oldschool Slice Pitch Workflow](#oldschool-slice-pitch-workflow)
+36. [Samples and Instruments](#samples-and-instruments)
 
 ### Pattern Editor
 36. [Pattern Editor Features](#pattern-editor-features)
@@ -64,19 +65,21 @@
 
 ### Pattern Sequencer
 41. [Pattern Sequencer & Section Management](#pattern-sequencer--section-management)
-42. [Pattern Sequencer](#pattern-sequencer)
-43. [Slab'o'Patterns (Time Signature Generator)](#slabopatterns-time-signature-generator)
-44. [Pattern Sequencer Utilities](#pattern-sequencer-utilities)
-45. [Pattern/Phrase Length Control](#patternphrase-length-control)
+42. [Pattern Name Loop](#pattern-name-loop-new---dec-2025) *(NEW - Dec 2025)*
+43. [Pattern Sequencer](#pattern-sequencer)
+44. [Slab'o'Patterns (Time Signature Generator)](#slabopatterns-time-signature-generator)
+45. [Pattern Sequencer Utilities](#pattern-sequencer-utilities)
+46. [Pattern/Phrase Length Control](#patternphrase-length-control)
 
 ### Generative & Creative Tools
 46. [Generative Tools](#generative-tools)
-47. [Paketti Wonkify](#paketti-wonkify)
-48. [Tuplet Generator](#tuplet-generator)
-49. [Unison Generator](#unison-generator)
-50. [Paketti Gater](#paketti-gater)
-51. [Hotelsinus Step Sequencer](#hotelsinus-step-sequencer)
-52. [Paketti 8120 Groovebox](#paketti-8120-groovebox)
+47. [Paketti Clipboard](#paketti-clipboard) *(NEW - Jan 2026)*
+48. [Paketti Wonkify](#paketti-wonkify)
+49. [Tuplet Generator](#tuplet-generator)
+50. [Unison Generator](#unison-generator)
+51. [Paketti Gater](#paketti-gater)
+52. [Hotelsinus Step Sequencer](#hotelsinus-step-sequencer)
+53. [Paketti 8120 Groovebox](#paketti-8120-groovebox)
 53. [Global Groove to Delay](#global-groove-to-delay)
 54. [Metric Modulation](#metric-modulation)
 
@@ -107,8 +110,11 @@
 70. [Device Chain Presets](#device-chain-presets)
 71. [Quick Load Device Dialog](#quick-load-device-dialog)
 72. [Device Parameter Control (Parama Param)](#device-parameter-control-parama-param)
-73. [Preset++ (Advanced Device Presets)](#preset-advanced-device-presets)
-74. [CCizer Loader](#ccizer-loader)
+73. [Canvas Parameter Editor](#canvas-parameter-editor) *(NEW - Jan 2026)*
+74. [Mixer Parameter Exposer](#mixer-parameter-exposer) *(NEW - Jan 2026)*
+75. [Favorited Plugin Instruments](#favorited-plugin-instruments-new---dec-2025) *(NEW - Dec 2025)*
+76. [Preset++ (Advanced Device Presets)](#preset-advanced-device-presets)
+77. [CCizer Loader](#ccizer-loader)
 
 ### Instruments & Keyzones
 75. [Keyzone Distributor](#keyzone-distributor)
@@ -151,7 +157,8 @@
 
 ### MIDI & Keybindings
 100. [MIDI Mapping Utilities](#midi-mapping-utilities)
-101. [KeyBindings Management](#keybindings-management)
+101. [Control Mixer Shown Parameters](#control-mixer-shown-parameters-new---dec-2025) *(NEW - Dec 2025)*
+102. [KeyBindings Management](#keybindings-management)
 
 ### External Integration
 102. [Sononymph Integration](#sononymph-integration)
@@ -207,6 +214,10 @@ Navigate through phrases with wrapping (last→first, first→last), works from 
 - `Main Menu:Tools:Paketti..:Phrases:Select Previous Phrase` 📋
 - `Main Menu:Tools:Paketti..:Phrases:Select Next Phrase (Phrase Editor)` 📋
 - `Main Menu:Tools:Paketti..:Phrases:Select Previous Phrase (Phrase Editor)` 📋
+
+**MIDI Mappings (NEW - Jan 2026):**
+- `Paketti:Next Phrase` 🎹 - Navigate to next phrase with wrap-around
+- `Paketti:Previous Phrase` 🎹 - Navigate to previous phrase with wrap-around
 
 ## Design
 - **Standard versions** - Select phrase without view switching (workflow continuity)
@@ -1543,6 +1554,47 @@ Various BPM adjustment shortcuts.
 ## Column Navigation
 Smart column navigation and selection features.
 
+## Advance Cursor Forward/Backward (NEW - Jan 2026)
+
+**Source:** `PakettiPatternEditor.lua`
+
+Fixed-step cursor advancement for pattern editing without relying on EditStep.
+
+**Pattern Editor Shortcuts (01-32 Steps):**
+- `Pattern Editor:Paketti:Advance Cursor Forward 01 Steps` through `32 Steps` ⌨️
+- `Pattern Editor:Paketti:Advance Cursor Backward 01 Steps` through `32 Steps` ⌨️
+
+**Phrase Editor Shortcuts (01-32 Steps):**
+- `Phrase Editor:Paketti:Advance Cursor Forward 01 Steps` through `32 Steps` ⌨️
+- `Phrase Editor:Paketti:Advance Cursor Backward 01 Steps` through `32 Steps` ⌨️
+
+**MIDI Mappings:**
+- `Paketti:Advance Cursor Forward 01 Steps` through `32 Steps` 🎹
+- `Paketti:Advance Cursor Backward 01 Steps` through `32 Steps` 🎹
+
+**How It Works:**
+- Forward advancement moves cursor down by specified steps
+- Backward advancement moves cursor up by specified steps
+- Independent of EditStep setting (EditStep can be 0)
+- Wraps at pattern boundaries
+
+**Use Cases:**
+
+**EditStep = 0 Workflow:**
+- Keep EditStep at 0 for note preview
+- Use Advance shortcuts for precise movement
+- Combine with note entry for controlled input
+
+**Fixed Navigation:**
+- Jump exactly 4, 8, or 16 rows
+- Consistent movement regardless of EditStep
+- Good for grid-based editing
+
+**MIDI Controller Integration:**
+- Assign pads to common step amounts
+- Hardware-based pattern navigation
+- Works alongside EditStep controls
+
 ## Advanced Operations
 Advanced pattern operations, transformations, and workflow enhancements.
 
@@ -2147,6 +2199,132 @@ Opens folder containing last stem separation output. Quick access to:
 - Create instant acapellas
 - Extract drum breaks
 - Build mashup stems
+
+---
+
+## Stem Loader
+
+**Source:** `PakettiStemLoader.lua` | **Features:** 20+
+
+Comprehensive stem loading system that imports multiple audio files (stems) into separate tracks with automatic BPM detection, pattern creation, slice triggering, and advanced randomization features.
+
+### Main Loader
+
+**Shortcuts:**
+- `Global:Paketti:Paketti Stem Loader` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Normalize)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (No Preset)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (No Preset + Normalize)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Slice to Patterns)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Slice to Patterns + Normalize)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Slice to Patterns + No Preset)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Slice to Patterns + No Preset + Normalize)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Forwards+Reverse)` ⌨️
+- `Global:Paketti:Paketti Stem Loader (Forwards+Reverse + Normalize)` ⌨️
+
+**Menu Entries:**
+- `Main Menu:File:Paketti StemLoader...` 📋
+- `Main Menu:File:Paketti StemLoader (Slice to Patterns)...` 📋
+
+**Core Features:**
+- Load multiple audio files, each into its own instrument on its own track
+- Automatic track naming based on filename
+- C-4 triggers with 0G01 glide command written to patterns
+- Automatic BPM detection from:
+  - WAV file ACID chunk header
+  - Folder name patterns (e.g., "146BPM", "BPM_120", "song_90bpm")
+  - Filename patterns
+- Pattern sequence creation based on sample length
+- `*Instr. Macros` device added to each track
+
+**Loading Modes:**
+
+1. **Autoseek Mode (Default):**
+   - Simple C-4 trigger with autoseek ON
+   - Stems play synchronized with pattern
+
+2. **Slice to Patterns Mode:**
+   - Creates slices based on pattern length
+   - Writes slice notes across patterns
+   - Each pattern triggers corresponding slice
+
+3. **Forwards+Reverse Mode:**
+   - Creates two tracks per stem (forward + reversed)
+   - Useful for tape-style effects and creative mixing
+
+**BPM Detection Priority:**
+1. WAV ACID chunk metadata
+2. Folder name in path (checks all folders, deepest first)
+3. Filename patterns
+4. Majority vote if multiple stems have different BPM values
+
+### Stem Slice Randomizer Dialog
+
+**Shortcut:** `Global:Paketti:Stem Slice Randomizer Dialog...` ⌨️
+
+Opens comprehensive dialog for randomizing slice triggers across loaded stems.
+
+**Randomization Modes:**
+
+1. **Independent Randomization:**
+   - Each stem gets different random slices
+   - Creates polyrhythmic/chaotic variations
+   - Step sizes: 1, 2, 4, 8, 16, 32
+
+2. **Synchronized Randomization:**
+   - All stems trigger same slice number
+   - Preserves song structure while randomizing position
+   - Step sizes: 1, 2, 4, 8, 16, 32
+
+3. **Odd Step Sizes:**
+   - Independent Odd: 3, 5, 7, 9, 11, 13
+   - Synchronized Odd: 3, 5, 7, 9, 11, 13
+
+**Dialog Controls:**
+- **Pattern Mode:** Current pattern only, or all patterns
+- **Selection Only:** Randomize only within pattern editor selection
+- **Quick Select till End:** Auto-select from cursor to pattern end
+- **Carry Selection:** Preserve row range when changing tracks
+- **Step Size Sliders:** Visual control for step granularity
+- **Duplicate to New Pattern:** Create variation in new pattern
+
+**MIDI Mappings:**
+- `Paketti:Midi Knob Stem Slice Randomizer (Independent)` 🎹
+- `Paketti:Midi Knob Stem Slice Randomizer (Synchronized)` 🎹
+- `Paketti:Midi Knob Stem Slice Randomizer Odd (Independent)` 🎹
+- `Paketti:Midi Knob Stem Slice Randomizer Odd (Synchronized)` 🎹
+
+### Additional Stem Loader Shortcuts
+
+**Randomization Shortcuts:**
+- `Global:Paketti:Stem Loader Randomize Independent 1-Step` through `32-Step` ⌨️
+- `Global:Paketti:Stem Loader Randomize Synchronized 1-Step` through `32-Step` ⌨️
+- `Global:Paketti:Stem Loader Randomize Odd Independent 3-Step` through `13-Step` ⌨️
+- `Global:Paketti:Stem Loader Randomize Odd Synchronized 3-Step` through `13-Step` ⌨️
+- `Global:Paketti:Stem Loader Sequential 1-Step` through `32-Step` ⌨️
+- `Global:Paketti:Stem Loader Create Phrases from Slices` ⌨️
+
+### Use Cases
+
+**Multi-track Production:**
+- Load stems from DAW exports (drums, bass, vocals, synths)
+- Each stem gets its own track with proper routing
+- BPM automatically detected and applied
+
+**Live Performance:**
+- Randomize slice positions for instant variations
+- Independent mode for polyrhythmic chaos
+- Synchronized mode for structured remixing
+
+**Remix Work:**
+- Load separated stems
+- Create new arrangements with slice randomization
+- Forwards+Reverse for tape-style effects
+
+**Sample Pack Organization:**
+- Batch load related samples
+- Auto-create patterns and triggers
+- Quickly audition and arrange
 
 ---
 
@@ -3813,6 +3991,59 @@ Creates a loop range from the current loop position (or creates a new one) to th
 **Menu:** `Pattern Sequencer:Paketti:Sequences/Sections:Sequence Loop Selection (Previous)` 📋
 
 Incrementally expand the loop range by adding one more sequence in either direction. If no loop exists, starts with the current sequence.
+
+---
+
+### Pattern Name Loop (NEW - Dec 2025)
+
+**Keybinding:** `Global:Paketti:Pattern Name Loop` ⌨️
+
+**Menu:** `Pattern Sequencer:Paketti:Pattern Name Loop` 📋
+
+Uses pattern naming convention to define loop ranges with `[` and `]` markers.
+
+**Naming Convention:**
+- `[` in pattern name = Loop start marker
+- `]` in pattern name = Loop end marker
+- `[]` in single pattern = Loop that single pattern
+
+**How It Works:**
+1. Name patterns with bracket markers
+2. Trigger Pattern Name Loop
+3. Paketti finds patterns with markers
+4. Sets loop range accordingly
+
+**Examples:**
+
+**Single Pattern Loop:**
+```
+Pattern 05: "[Verse]"
+Result: Loops pattern 05 only
+```
+
+**Multi-Pattern Loop:**
+```
+Pattern 03: "[Intro"
+Pattern 04: "Intro cont"
+Pattern 05: "Intro end]"
+Result: Loops patterns 03-05
+```
+
+**Nested Sections:**
+```
+Pattern 01: "[Verse A"
+Pattern 02: "Verse A]"
+Pattern 03: "[Chorus"
+Pattern 04: "Chorus]"
+```
+- Trigger on pattern 01 or 02 = Loops 01-02
+- Trigger on pattern 03 or 04 = Loops 03-04
+
+**Use Cases:**
+- Quick section looping without manual selection
+- Visual indication of song structure
+- Performance-friendly navigation
+- Works with existing pattern naming
 
 ---
 
@@ -6349,6 +6580,123 @@ All settings are saved in Paketti preferences:
 - High drift values for glitchy effects
 - Retrig for stuttering textures
 - Combine all effects for chaos
+
+---
+
+## Paketti Clipboard
+
+**Source:** `PakettiClipboard.lua` | **Features:** 20+
+
+Multi-slot clipboard system for Renoise with Cut, Copy, Paste, Flood Fill, and advanced operations. Supports both Pattern Editor and Phrase Editor with 10 numbered clipboard slots.
+
+### Main Dialog
+
+**Keybinding:** `Global:Paketti:Clipboard Dialog...` ⌨️
+
+Opens the Paketti Clipboard dialog with visual slot management, status display, and operation buttons.
+
+### Core Operations
+
+**Copy to Slot (01-10):**
+- `Pattern Editor:Paketti:Clipboard:Copy to Slot 01` through `10` ⌨️
+- Copies selection or current row (if no selection) to numbered slot
+- Preserves note columns, effect columns, and all data
+- Works in Pattern Editor and Phrase Editor
+
+**Cut to Slot (01-10):**
+- `Pattern Editor:Paketti:Clipboard:Cut to Slot 01` through `10` ⌨️
+- Copies selection to slot and clears original content
+- Uses proper empty values (---, .., 00)
+
+**Paste from Slot (01-10):**
+- `Pattern Editor:Paketti:Clipboard:Paste from Slot 01` through `10` ⌨️
+- Pastes slot content at cursor position
+- Respects visible column settings
+
+### Smart Paste Behavior (NEW - Jan 2026)
+
+**Preserve Notes on Effects-Only Paste:**
+- When pasting clipboard that contains only effects (no notes)
+- Existing notes are NOT overwritten
+- Only effect column data is pasted
+- Allows layering effects onto existing patterns
+
+**Preserve Effects on Notes-Only Paste:**
+- Similar logic in reverse
+- Only writes note data when clipboard has notes
+- Existing effect data preserved
+
+### Flood Fill
+
+**Paste & Flood Fill (01-10):**
+- `Pattern Editor:Paketti:Clipboard:Paste & Flood Fill from Slot 01` through `10` ⌨️
+- Pastes content repeatedly from cursor to end of pattern/selection
+- Useful for quick drum pattern generation
+- Respects selection boundaries if active
+
+### Inverse Cut (Solo Selection) (NEW - Jan 2026)
+
+**Keybinding:** `Pattern Editor:Paketti:Clipboard:Inverse Cut (Solo Selection)` ⌨️
+
+Cuts all content from OTHER tracks while preserving the selected track's content.
+
+**How It Works:**
+1. Select content on a track (or make a selection)
+2. Trigger Inverse Cut
+3. All OTHER tracks within the same row range are cut
+4. Preserved tracks remain untouched
+5. Cut content stored for later restoration
+
+**Inverse Paste:**
+- `Pattern Editor:Paketti:Clipboard:Inverse Paste` ⌨️
+- Restores previously inverse-cut content
+- Returns other tracks to their original state
+
+**Use Cases:**
+- Quickly solo a track for breakdown sections
+- Create variations with isolated elements
+- Non-destructive with restore capability
+
+### Cursor Row Operations
+
+**If No Selection:**
+- Copy/Cut operations work on current row, current note column
+- Allows single-note clipboard operations
+- Quick capture without making selections
+
+### Phrase Editor Support
+
+All clipboard operations work in Phrase Editor:
+- Same slot system (01-10)
+- Same copy/cut/paste logic
+- Same flood fill behavior
+- Wonkify presets also work in phrases
+
+### MIDI Mappings
+
+- `Paketti:Clipboard Copy Slot 01` through `10` 🎹
+- `Paketti:Clipboard Cut Slot 01` through `10` 🎹
+- `Paketti:Clipboard Paste Slot 01` through `10` 🎹
+- `Paketti:Clipboard Paste & Flood Fill Slot 01` through `10` 🎹
+
+### Use Cases
+
+**Quick Pattern Building:**
+1. Copy a bar of drums to Slot 01
+2. Flood fill to create 8-bar pattern
+3. Copy variation to Slot 02
+4. Mix and match slots
+
+**Live Sampling:**
+1. Copy interesting sections as they play
+2. Paste and rearrange in real-time
+3. Use multiple slots for different elements
+
+**Phrase Construction:**
+1. Copy pattern data to slot
+2. Switch to Phrase Editor
+3. Paste into phrase
+4. Apply Wonkify for variation
 
 ---
 
@@ -13315,6 +13663,194 @@ Direct keyboard selection of device slots in DSP chain.
 
 ---
 
+# Canvas Parameter Editor
+
+**Source:** `PakettiCanvasExperiments.lua` | **Features:** 10+
+
+Visual canvas-based device parameter editor with Edit A/B comparison, crossfade morphing, automation sync, and real-time parameter visualization.
+
+## Main Features
+
+**Keybinding:** `Global:Paketti:Canvas Parameter Editor...` ⌨️
+
+**Menu Entry:** `Main Menu:Tools:Paketti..:Canvas Parameter Editor...` 📋
+
+Opens a visual editor displaying all parameters of the selected device as vertical bars on a canvas.
+
+### Visual Parameter Display
+
+**Canvas Layout:**
+- Each device parameter shown as vertical bar
+- Bar height represents current value (0-100%)
+- Parameter names displayed below bars
+- CC parameter names cleaned (removes "CC XX " prefix)
+- Real-time updates as parameters change
+
+**Interaction:**
+- Click and drag on bars to adjust values
+- Visual feedback during adjustment
+- Status text shows current parameter being edited
+- Mouse position tracked for precise control
+
+### Edit A/B System
+
+Inspired by hardware synthesizers, allows comparison between two parameter states:
+
+**Edit A Button:**
+- Stores current parameter values in "A" memory
+- Purple bar overlay shows Edit A values
+
+**Edit B Button:**
+- Stores current parameter values in "B" memory
+- Yellow bar overlay shows Edit B values
+
+**Crossfade Slider:**
+- Morphs between Edit A and Edit B values
+- 0% = full Edit A
+- 100% = full Edit B
+- Real-time interpolation between states
+- Green outline shows crossfade position
+
+### Automation Sync
+
+**Follow Automation Toggle:**
+- When enabled, canvas reads automation envelope values
+- Displays current automation state at playhead position
+- Auto-updates as playback progresses
+
+**Auto-Show Automation:**
+- Automatically switches to automation view when sync enabled
+
+**Auto-Show Mixer Params:**
+- Shows exposed mixer parameters when automation sync enabled
+
+### Navigation Controls
+
+**Track Navigation:**
+- Previous/Next Track buttons
+- Wraps at beginning/end of track list
+
+**Device Navigation:**
+- Previous/Next Device buttons
+- Wraps within track's device chain
+
+### Randomization
+
+**Randomize Button:**
+- Applies random values to all parameters
+- Strength slider controls intensity (0-100%)
+- Hidden in "Randomize" text label
+
+### Parameter Name Cleaning
+
+**Clean CC Names Toggle:**
+- Removes "CC XX " prefix from parameter names
+- Removes surrounding parentheses
+- "CC 54 (Cutoff)" becomes "Cutoff"
+
+### Use Cases
+
+**Sound Design:**
+- Visual overview of all device parameters
+- Quick comparison between A/B settings
+- Crossfade morphing for transitions
+
+**Live Performance:**
+- Real-time parameter visualization
+- A/B switching for song sections
+- Crossfade for smooth transitions
+
+**Mixing:**
+- See all plugin parameters at once
+- Compare different mix settings
+- Gradual parameter morphing
+
+---
+
+# Mixer Parameter Exposer
+
+**Source:** `PakettiMixerParameterExposer.lua` | **Features:** 6
+
+Dialog for viewing and toggling `show_in_mixer` property for all device parameters on the selected track, with humanize and MIDI control features.
+
+## Main Dialog
+
+**Keybinding:** `Global:Paketti:Mixer Parameter Exposer...` ⌨️
+
+Opens dialog showing all devices and parameters on current track with checkbox toggles for mixer visibility.
+
+### Parameter Visibility Control
+
+**Display:**
+- One column per device on track
+- Checkboxes for each parameter
+- Parameter names listed with device context
+- Checked = visible in mixer, Unchecked = hidden
+
+**Bulk Operations:**
+- **Show All:** Makes all parameters visible in mixer
+- **Hide All:** Hides all parameters from mixer
+- **Make Automated Visible:** Shows only parameters with automation
+
+### Humanize Feature
+
+**Humanize Button:**
+- Applies random variation to all exposed parameters
+- Percentage slider controls intensity (0-100%)
+- If parameter has automation: humanizes envelope points
+- If no automation: humanizes current parameter value
+
+**Algorithm:**
+- Random deviation within percentage of parameter range
+- Bipolar variation (positive and negative)
+- Respects parameter min/max bounds
+
+### Bipolar Offset Control
+
+**Offset Slider:**
+- Center position (0) = no change
+- Positive values = increase all exposed parameters
+- Negative values = decrease all exposed parameters
+- Relative offset based on parameter range
+- Spring-back to center on release
+
+**Original Values:**
+- Values stored when interaction begins
+- Offset applied relative to stored values
+- Allows experimentation without losing original
+
+### MIDI Control
+
+**MIDI Mapping:** `Paketti:Mixer Parameter Exposer Control [Knob]` 🎹
+
+- Absolute MIDI CC control (0-127)
+- 64 = center position (store values)
+- 0-63 = negative offset
+- 65-127 = positive offset
+
+### Track Following
+
+**Auto-Rebuild:**
+- Dialog automatically rebuilds when track changes
+- Shows devices and parameters for new track
+- Maintains open state across track changes
+
+### Use Cases
+
+**Mixing Workflow:**
+- Quickly expose key parameters to mixer
+- Hide unneeded parameters for cleaner view
+- Bulk show/hide for different mix stages
+
+**Live Performance:**
+- Control exposed parameters via MIDI
+- Humanize for organic variation
+- Offset for global parameter sweeps
+
+**Automation Setup:**
+- Make automated parameters visible
+- Visual overview of what's automated
+- Quick toggle for automation display
 
 ---
 
@@ -13823,6 +14359,94 @@ Rebuilds MIDI mapping cache from source files.
 - After adding new MIDI mappings
 - After editing mapping names
 - If dialog shows stale data
+
+---
+
+# Control Mixer Shown Parameters (NEW - Dec 2025)
+
+**Source:** `PakettiMidi.lua` | **Features:** 32
+
+MIDI control for device parameters that are exposed in the mixer (show_in_mixer = true).
+
+## Individual Parameter Control (01-16)
+
+**MIDI Mappings:**
+- `Paketti:Control Mixer Shown Parameter 01` through `16` 🎹 (Absolute)
+- `Paketti:Control Mixer Shown Parameter 01 Relative` through `16 Relative` 🎹 (Relative)
+
+Controls individual exposed parameters on the selected track.
+
+**How It Works:**
+1. Expose device parameters to mixer using show_in_mixer
+2. Parameters are numbered 01-16 based on order exposed
+3. Use MIDI CC to control each parameter directly
+4. Works with absolute (0-127) or relative (increments) values
+
+**Absolute Mode:**
+- MIDI CC 0 = minimum parameter value
+- MIDI CC 127 = maximum parameter value
+- Linear mapping across full range
+
+**Relative Mode:**
+- Positive deltas increase value
+- Negative deltas decrease value
+- Respects parameter min/max bounds
+
+## Use Cases
+
+**Performance Control:**
+- Expose key synth parameters to mixer
+- Assign MIDI knobs to parameters 01-16
+- Real-time control without mouse
+
+**Mixing Workflow:**
+- Expose volume/pan parameters
+- Control multiple tracks via MIDI controller
+- Hardware integration for mixing
+
+**Automation Alternative:**
+- Direct parameter control
+- Bypasses automation system
+- Immediate response
+
+---
+
+# Favorited Plugin Instruments (NEW - Dec 2025)
+
+**Source:** `PakettiLoadPlugins.lua`
+
+Load favorited plugin instruments with automatic External Editor display and *Instr. Automation device.
+
+## Load Favorited Plugin Instruments
+
+**Keybinding:** `Global:Paketti:Load Favorited Plugin Instruments (Paketti)` ⌨️
+
+Loads all currently favorited plugin instruments into the song.
+
+**Process:**
+1. Reads currently favorited plugin instruments
+2. Creates new instrument for each favorite
+3. Opens External Editor for visual feedback
+4. Adds *Instr. Automation device to track DSP chain
+5. Renames *Instr. Automation to identify source instrument
+
+**Device Setup:**
+- *Instr. Automation device automatically linked to new instrument
+- Ready for automation in pattern editor
+- External Editor visible for parameter access
+
+**Use Cases:**
+
+**Quick Session Setup:**
+- Mark favorite synths in Renoise preferences
+- One shortcut loads all of them
+- External Editors open automatically
+- Ready to play and automate immediately
+
+**Template Building:**
+- Create instrument templates with favorites
+- Consistent device chains per instrument
+- Faster project startup
 
 ---
 

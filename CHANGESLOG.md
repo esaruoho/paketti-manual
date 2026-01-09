@@ -10986,3 +10986,38 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-08 - Improvement: Paketti Wonkify Dialog split to two columns for less height usage.
+
+---
+### 2026-01-08 - Improvement: Added Waldorf Blofeld to CCizer
+
+---
+### 2026-01-08 - Improvement: Mixer Parameter Exposer - added "Make all Automated Parameters visible in Mixer", Hide All & Show All buttons.
+
+---
+### 2026-01-08 - Improvement: Added "odd" slider control for individual or synchronized slice randomizer
+![](Screenshots/stemslicerandomizerodd.png)
+
+---
+### 2026-01-08 - Improvement: Updated Dialog of Dialogs with newly created dialogs such as Stem Slice Randomizer, Mixer Parameter Exposer, Clipboard, Automation Curve Fill, SlicePro Config, SliceSafely, MPC Cycler, Slab'o'Patterns, Paketti Toggler, Wonkify Quick / Advanced, Phrase Grid / Phrase Grid Performance..
+
+----
+### 2026-01-08 - Improvement: When using LFO Writer to write to Automation, the automated parameter is automatically exposed on the Mixer view.
+
+---
+### 2026-01-08 - Feature: Added "Make Automated Parameters Visible on Mixer"
+
+----
+### 2026-01-08 - Improvement: Paketti Clipboard now has "Inverse cut" - pick a track with selection, and cut all the other tracks to "Off" for every step. Then paste the inverted cut back in.
+
+---
+### 2026-01-08 - Improvement: Paketti Parameter Editor now has a Randomizer button hidden in the "Randomize" text - click on it to randomize all parameters.
+
+---
+### 2026-01-09 - Improvement: Added "Next Phrase" / "Previous Phrase" with wrap-around, as Midi Mappings.
+
+---
+### 2026-01-09 - Improvement: Added "Selected Device Parameter Editor" to Mixer -> Paketti Gadgets for easier discoverability.
+
+---
+### 2026-01-09 - Improvement: Paketti Parameter Editor now has a checkbox for turning "Auto-Expose Automated Parameter on Mixer" on&off - meaning, you draw with Automation Sync, and since you drew to the automation envelopes for those parameters, those parameters are automatically exposed on the mixer
+![](Screenshots/parametereditor_to_mixer.png)
