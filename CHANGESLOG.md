@@ -11021,3 +11021,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2026-01-09 - Improvement: Paketti Parameter Editor now has a checkbox for turning "Auto-Expose Automated Parameter on Mixer" on&off - meaning, you draw with Automation Sync, and since you drew to the automation envelopes for those parameters, those parameters are automatically exposed on the mixer
 ![](Screenshots/parametereditor_to_mixer.png)
+
+---
+### 2026-01-10 - Improvement: Lots of tweaks to the Casiino Metasynth, included in Paketti
+
+---
+### 2026-01-13 - Improvement: Paketti eSpeak TTS improvements for helping the user, on macOS, install Homebrew and alternative path searches for espeak or espeak-ng.
