@@ -11057,4 +11057,16 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-19 - Improvement: Added MuteTrig Loader to Sample Navigator
 
 ---
-### 2026-01-19 - Feature: Added Selected Sample FX Chain Device Randomize 10% 20% 50% 100% so that it hits all the other 
+### 2026-01-19 - Feature: Added Selected Sample FX Chain Device Randomize 10% 20% 50% 100% so that it hits all the other same devices in the other Sample FX Chains
+
+---
+### 2026-01-19 - Feature: Selected Modulation Set Volume,Pitch,Pan,Cutoff,Resonance,Distortion duplication to all the other Modulation Sets
+
+---
+### 2026-01-19 - Multiplier keyboard control for Enhanced Automation for switching between 1x to 8x with +/-
+
+---
+### 2026-01-19 - Metasynth Process Slicing so can create 50 or 200 instruments in one go without Tool becoming unresponsive
+
+---
+
