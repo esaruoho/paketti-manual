@@ -11027,3 +11027,34 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ---
 ### 2026-01-13 - Improvement: Paketti eSpeak TTS improvements for helping the user, on macOS, install Homebrew and alternative path searches for espeak or espeak-ng.
+
+---
+### 2026-01-16 - Improvement: Additional Metasynth Improvements
+
+---
+### 2026-01-16 - Improvement: Automatic Parameter Grab tweaks
+
+---
+### 2026-01-17 - Improvement: Metasynth improvements
+
+---
+### 2026-01-17 - Automatic Parameter Grab Tweaks
+
+---
+### 2026-01-19 - Improvement: Automatic Parameter Grab Tweaks and quickly moving you to Automation Frame Layer.
+
+---
+### 2026-01-19 - Feature: Paketti Enhanced Curve Dialog - this'll let you draw automation and make it loop or fill the selection. 
+
+---
+### 2026-01-19 - Improvement: Various Metasynth bugs squashed, including now can create a random amount of instruments and manually save the instruments you like listening to.
+
+
+---
+### 2026-01-19 - Improvement: Selection to Follow End Toggle will now also select the Automation.
+
+---
+### 2026-01-19 - Improvement: Added MuteTrig Loader to Sample Navigator
+
+---
+### 2026-01-19 - Feature: Added Selected Sample FX Chain Device Randomize 10% 20% 50% 100% so that it hits all the other 
