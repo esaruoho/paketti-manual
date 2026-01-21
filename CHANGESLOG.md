@@ -11069,4 +11069,17 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-19 - Metasynth Process Slicing so can create 50 or 200 instruments in one go without Tool becoming unresponsive
 
 ---
+### 2026-01-21 - Improvement: MuteTrig back into working order - respecting the chassis of the instrument for creating the proper muting format.
 
+---
+### 2026-01-21 - Improvement: Image to Sample - dialog now correctly displays the right resolution of the original image, uses sips or imagemagick to convert to BMP and then loads that as audio, or falls back to Raw Data loading. If ImageMagick is missing JPG dependencies, prints helpful message suggesting how to install them for Linux or Windows.
+
+
+---
+### 2026-01-21 - LFOEnvelopePan (Preset++) no longer errors out when adding this Preset++ to a Sample FX Chain.
+
+---
+### 2026-01-21 - LFO Custom Waveform Writer added to Automation Curve Dialog.
+
+
+---
