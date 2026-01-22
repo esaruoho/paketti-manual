@@ -1,4 +1,4 @@
-[Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
+**[Support on Patreon](http://patreon.com/esaruoho)** | [GitHub](https://github.com/esaruoho/paketti) | [Discord](https://discord.gg/xNT6eH7W) | [README](index.html) | [Changeslog](CHANGESLOG.html) 
 
 📖 **Navigation:** [Paketti README](index.html) | [Changeslog](CHANGESLOG.html) | Experimental (You are here)
 
@@ -7,6 +7,9 @@
 **The comprehensive, all-in-one documentation for Paketti - Renoise Enhancement Suite**
 
 **Last Updated:** 2026-01-09
+
+> *Thousands of shortcuts. Hundreds of dialogs. Daily updates. All free.*
+> **[Support the development on Patreon →](http://patreon.com/esaruoho)**
 
 ---
 

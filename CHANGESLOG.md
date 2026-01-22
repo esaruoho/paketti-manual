@@ -1,17 +1,12 @@
-[Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
+**[Support on Patreon](http://patreon.com/esaruoho)** | [GitHub](https://github.com/esaruoho/paketti) | [Discord](https://discord.gg/xNT6eH7W) | [README](index.html) | [Experimental](Experimental.html) 
 
 📖 **Navigation:** [Paketti README](index.html) | Changeslog (You are here) | [Experimental](Experimental.html)
 
 # Changeslog
 
-If you liked what you're seeing here, please consider supporting. Every bit helps.
-- [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
-- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Be the first one to become a Paketti GitHub Sponsor.
-- [PayPal](http://paypal.me/esaruoho) - Anything is welcome.
-- [Ko-Fi](https://ko-fi.com/esaruoho) - A one-time donation / a monthly donation
-- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - A one-time donation / a monthly donation
-- [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
-- [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
+Every changelog entry below represents hours of development time. Paketti is free, but building it isn't.
+
+**[Join 18 supporters keeping Paketti growing →](http://patreon.com/esaruoho)** | [Other options](index.html#keep-paketti-growing)
 ## Paketti Updates Changelog
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">

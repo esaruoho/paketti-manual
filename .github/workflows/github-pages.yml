@@ -58,7 +58,7 @@ jobs:
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Paketti Manual - Tool/Firmware update for Renoise</title>
-              <meta name="description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
+              <meta name="description" content="Paketti provides thousands of shortcuts, thousands of menu entries, thousands of MIDI mappings, and hundreds of dialogs for Renoise. Features from C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
               <meta name="keywords" content="Renoise, Paketti, Tracker, Music Production, Shortcuts, MIDI, Automation, Sample Editor, Pattern Editor">
               <meta name="author" content="esaruoho">
               
@@ -66,14 +66,14 @@ jobs:
               <meta property="og:type" content="website">
               <meta property="og:url" content="https://esaruoho.github.io/paketti-manual/">
               <meta property="og:title" content="Paketti Manual - Tool/Firmware update for Renoise">
-              <meta property="og:description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from legendary trackers including C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
+              <meta property="og:description" content="Paketti provides thousands of shortcuts, thousands of menu entries, thousands of MIDI mappings, and hundreds of dialogs for Renoise. Features from legendary trackers including C64 trackers, OctaMED, Impulse Tracker, OpenMPT, and PlayerPro.">
               <meta property="og:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
               
               <!-- Twitter -->
               <meta property="twitter:card" content="summary_large_image">
               <meta property="twitter:url" content="https://esaruoho.github.io/paketti-manual/">
               <meta property="twitter:title" content="Paketti Manual - Tool/Firmware update for Renoise">
-              <meta property="twitter:description" content="Paketti provides over 5000 shortcuts, 3000+ menu entries, 1000+ midi mappings and 70+ dialogs for Renoise. Features from legendary trackers.">
+              <meta property="twitter:description" content="Paketti provides thousands of shortcuts, thousands of menu entries, thousands of MIDI mappings, and hundreds of dialogs for Renoise. Features from legendary trackers.">
               <meta property="twitter:image" content="https://esaruoho.github.io/paketti-manual/Screenshots/PakettiCheatsheet.png">
               
               <!-- Favicon -->

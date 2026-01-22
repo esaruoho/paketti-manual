@@ -1,4 +1,4 @@
-| [Patreon Paketti](http://patreon.com/esaruoho) | [GitHub Paketti](https://github.com/esaruoho/paketti) | [Discord Paketti](https://discord.gg/xNT6eH7W) | [Gumroad Paketti](http://lackluster.gumroad.com/l/paketti) | [GitHub Sponsors](http://github.com/sponsors/esaruoho) | [Ko-Fi Paketti](http://ko-fi.com/esaruoho) | [Buy Me a Coffee Paketti](https://buymeacoffee.com/esaruoho) | 
+| **[Support on Patreon](http://patreon.com/esaruoho)** | [GitHub](https://github.com/esaruoho/paketti) | [Discord](https://discord.gg/xNT6eH7W) | [Changeslog](CHANGESLOG.html) | [Experimental](Experimental.html) 
 
  1. [Paketti](#paketti) 
  2. [Where](#where)
@@ -59,24 +59,49 @@ People often write me encouraging little snippets of text which I recycle into t
 - *"Thanks for developing such a useful set of tools that greatly improve Renoise."
 - *"I genuinely think that I can't use Renoise without Paketti anymore"**
 
+---
+*These features exist because of supporters who believe in making Renoise better. [Join them →](http://patreon.com/esaruoho)*
+
+---
+
 # Where
 
 - Join the [Paketti Discord](https://discord.gg/Qex7k5j4wG).
 - Leave issues here on [GitHub](https://github.com/esaruoho/paketti/issues).
 - Hit the [Renoise Forum Paketti thread](https://forum.renoise.com/t/new-tool-3-1-3-4-paketti-a-suite-of-scripts-for-automation-sample-editor-midi-pattern-editor-phrase-editor-mixer/35848).
-# Support
+# Keep Paketti Growing
 
-You can support me via
-- [Patreon](http://patreon.com/esaruoho) - Join as a monthly supporter - it really adds up and helps me. There are different level tiers from 3€ to 7€ to 10€ to 20€ to 30€ to 50€ to 100€ to 300€.
-- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Be the first one to become a Paketti GitHub Sponsor.
-- [PayPal](http://paypal.me/esaruoho) - Anything is welcome.
-- [Ko-Fi](https://ko-fi.com/esaruoho) - A one-time donation / a monthly donation
-- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - A one-time donation / a monthly donation
-- [Gumroad](https://lackluster.gumroad.com/l/paketti) - I've listed Paketti up on Gumroad so you can make a one-time purchase.
-- [Bandcamp](http://lackluster.bandcamp.com/) and [Bandcamp](http://hler.bandcamp.com/) - You can just buy the music from these.
+Paketti is free. Always will be. But building it isn't.
+
+Every feature you see here—thousands of shortcuts, hundreds of dialogs, daily updates—comes from hundreds of hours of development time.
+
+When you become a Patreon supporter:
+- **You fund the next feature.** Your €7/month means I can dedicate real time to the BlockedByAPI list, Prior Art research, and user-requested features.
+- **You shape what comes next.** Patrons get to vote on feature priorities and see what's coming before anyone else.
+- **You keep the lights on.** Literally. This is how I afford to keep doing this instead of contract work.
+
+**[Join 18 supporters on Patreon →](http://patreon.com/esaruoho)**
+
+<details>
+<summary><strong>Other ways to support</strong></summary>
+
+- [GitHub Sponsors](https://github.com/sponsors/esaruoho) - Monthly sponsorship
+- [Gumroad](https://lackluster.gumroad.com/l/paketti) - One-time purchase
+- [Ko-Fi](https://ko-fi.com/esaruoho) - One-time or monthly
+- [Buy Me a Coffee](https://buymeacoffee.com/esaruoho) - One-time or monthly
+- [PayPal](http://paypal.me/esaruoho) - Direct donation
+- [Bandcamp](http://lackluster.bandcamp.com/) / [hler](http://hler.bandcamp.com/) - Buy the music
+
+</details>
 # Roadmap
 
-Where is Paketti going? Multiple directions and places. Very quickly. [Hop on the ride](http://patreon.com/esaruoho).
+Where is Paketti going? Multiple directions. Very quickly.
+
+**But here's the honest truth:** I can only work on Paketti in the gaps between paying work. Some months that's 40 hours. Some months it's 4.
+
+[Patreon supporters](http://patreon.com/esaruoho) directly buy me time. More supporters = more hours on Paketti = faster features for everyone.
+
+Right now, there are [features blocked by API limitations](https://github.com/esaruoho/paketti/issues?q=is%3Aissue+label%3AblockedByAPI) and dozens of user-requested features waiting in the queue. The pace they get done depends on whether I'm doing Paketti or client work this month.
 
 But, ultimately, what does that even mean?
 
@@ -120,7 +145,7 @@ I'm drowning in todo-lists and lists of tools to look at, little snippets of "ma
 
 It feels like I'll be here for multiple years, studying Prior Art - talking to people, trying to reach Renoise-using producers, rouse up some oldschoolers and have them describe what they liked about, say, OctaMED, or just flat out develop features from other sequencers.
 
-If you're able to support this on-going project financially, you're very very welcome. [Patreon](http://patreon.com/esaruoho).
+**Want to see what's next get built faster?** [Join 18 Patreon supporters →](http://patreon.com/esaruoho)
 
 Be seeing you.
 
