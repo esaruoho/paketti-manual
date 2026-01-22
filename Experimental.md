@@ -2327,6 +2327,11 @@ Opens comprehensive dialog for randomizing slice triggers across loaded stems.
 **Sample Pack Organization:**
 - Batch load related samples
 - Auto-create patterns and triggers
+
+---
+> *AI-powered stem separation and intelligent slice randomization — features like these take serious development time.*
+> *If Paketti saves you hours, consider [supporting on Patreon →](http://patreon.com/esaruoho)*
+---
 - Quickly audition and arrange
 
 ---
@@ -6246,6 +6251,11 @@ Comprehensive phrase creation tool with 28 musical scales, multiple rhythm patte
 - Multiple rhythm patterns
 - Copy/paste patterns
 
+---
+> *28 scales, modal interchange, arpeggiators, gaters, phrase generators — these generative tools exist because of community support.*
+> *[Join supporters on Patreon →](http://patreon.com/esaruoho)*
+---
+
 ### Phrase Creation
 
 **Auto-Initialization:**
@@ -8742,6 +8752,9 @@ Sets Octatrack loop points to match slice boundaries.
 3. Creates .ot file with loop = slice range
 4. Useful for isolating specific slices in Octatrack
 
+---
+> *Deep hardware integration like Octatrack/Digitakt export takes serious development time.*
+> *If Paketti improves your workflow, consider [supporting on Patreon →](http://patreon.com/esaruoho)*
 ---
 
 ## Digitakt Export Suite
@@ -17480,6 +17493,9 @@ Two modes for global pitch adjustment:
 - Applied per note when writing
 - Automatically shows delay column if hidden
 
+---
+> *The Paketti 8120 Groovebox — 150+ features that rival hardware costing hundreds of euros.*
+> *Built and maintained through community support. [Join on Patreon →](http://patreon.com/esaruoho)*
 ---
 
 # Merge Instruments

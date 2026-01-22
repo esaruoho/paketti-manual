@@ -7,6 +7,21 @@
 Every changelog entry below represents hours of development time. Paketti is free, but building it isn't.
 
 **[Join 18 supporters keeping Paketti growing →](http://patreon.com/esaruoho)** | [Other options](index.html#keep-paketti-growing)
+
+### Recent Highlights: January 2026
+
+What supporters funded this month:
+
+- **Stem Slice Randomizer** — Independent/synchronized stem variations with multi-hit options
+- **Image-to-Sample Converter** — Drag images, get audio with intelligent format detection
+- **Enhanced Automation Curves** — Custom LFO waveform writer + looping automation
+- **Metasynth Integration** — Casiino Metasynth with GUI refinements
+- **MuteTrig Overhaul** — Now respects instrument chassis across Sample FX Chains
+
+[Full changelog below ↓]
+
+---
+
 ## Paketti Updates Changelog
 
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240,240,240,0.7); border-radius: 5px; border: 1px solid #ddd;">
@@ -11078,3 +11093,28 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](gif/enhautolfo.gif)
 
 ---
+
+## You Made This Possible
+
+Every entry above represents real development time — design, testing, debugging, refinement.
+
+Paketti's continued development is sustained by **18 supporters** who believe in open-source music tools.
+
+### Support Paketti
+
+- **[Patreon](http://patreon.com/esaruoho)** — Monthly support from €3.50 (keeps development moving)
+- **[GitHub Sponsors](https://github.com/sponsors/esaruoho)** — Sponsor through GitHub
+- **[Gumroad](https://lackluster.gumroad.com/l/paketti)** — One-time purchase
+- **[Ko-Fi](https://ko-fi.com/esaruoho)** — One-time or monthly
+- **[Buy Me a Coffee](https://buymeacoffee.com/esaruoho)** — One-time or monthly
+- **[PayPal](http://paypal.me/esaruoho)** — Direct donation
+
+### Other Ways to Help
+
+- **[Report issues on GitHub](https://github.com/esaruoho/paketti/issues)** — Bug reports and feature requests
+- **[Join the Discord](https://discord.gg/xNT6eH7W)** — Community discussion and feedback
+- **Share Paketti** — Tell other Renoise users
+
+Thank you for using Paketti.
+
+— Esa
