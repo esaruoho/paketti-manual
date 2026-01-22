@@ -11079,7 +11079,7 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-21 - LFOEnvelopePan (Preset++) no longer errors out when adding this Preset++ to a Sample FX Chain.
 
 ---
-### 2026-01-21 - LFO Custom Waveform Writer added to Automation Curve Dialog.
-
+### 2026-01-21 - LFO Custom Waveform Writer added to Automation Curve Dialog. Implemented +/- control for switching between 1x and 8x.
+![](gif/enhautolfo.gif)
 
 ---
