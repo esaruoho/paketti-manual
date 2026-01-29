@@ -11093,6 +11093,9 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ![](gif/enhautolfo.gif)
 
 ---
+### 2026-01-23 - Feature: Automation Clipboard - Copy, Cut, Paste Automation, with shortcuts, or with menu entries. copy any automation envelope to another automation envelope. 
+
+---
 
 ## You Made This Possible
 
