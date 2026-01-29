@@ -56,8 +56,9 @@ People often write me encouraging little snippets of text which I recycle into t
 - _"may I point one thing: your work on renoise is light years further in advance than 3.5 update."_
 - *"Oh yeah, these tools you've made are essential to how I think about Renoise these days - I use Renoise knowing these tools are available"*
 - *"This is by far the biggest tool for Renoise and as such your are perhaps subconsciously created a centralized, and all encompassing tool. At this point I’d rather not download other tools and simply look to Paketti for my needs. One tool, one massive upgrade to Renoise."*
-- *"Thanks for developing such a useful set of tools that greatly improve Renoise."
-- *"I genuinely think that I can't use Renoise without Paketti anymore"**
+- *"Thanks for developing such a useful set of tools that greatly improve Renoise."*
+- *"I genuinely think that I can't use Renoise without Paketti anymore"*
+- *"Your toolset is a game changer. Not the first to say I'm sure and won't be the last."*
 
 ---
 *These features exist because of supporters who believe in making Renoise better. [Join them →](http://patreon.com/esaruoho)*
