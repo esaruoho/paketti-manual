@@ -11096,6 +11096,38 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-01-23 - Feature: Automation Clipboard - Copy, Cut, Paste Automation, with shortcuts, or with menu entries. copy any automation envelope to another automation envelope. 
 
 ---
+### 2026-01-27 - Improvement: I've taken what's in Paketti Clipboard work, and contributed them to the Renoise-CopyPaste repository, just so the research is there, too. This was another one of those projects which I agreed to support and assist in, a while back. Good to keep the same knowledge around in multiple places.
+
+---
+### 2026-01-27 - Improvement: Automation Clipboard is now fully integrated into the Advanced Automation Curve dialog, you can directly use cmd-x cmd-c cmd-v
+
+---
+### 2026-01-27 - Improvement: Tweaked the Paketti About / Donations dialog into a three column system to better show the donations, in an optimized way.
+
+---
+### 2026-01-31 - Update: I've been reverse-engineering the Renoise Instrument, Renoise Song, Renoise Track DSP Device Presets, Renoise Device Chains and Renoise Midi Mappings formats to write better documentation for them, in order to be able to make even cooler stuf
+
+---
+### 2026-01-31 - Improvement: Tweaked MuteTrig so it doesn't mess up with less-than-120 samples being loaded.
+
+----
+### 2026-01-31 - Feature: SF2 Sample Extract, added to 
+  - Main Menu:File:Paketti Import:Extract .SF2 Samples (Chromatic)
+  - Main Menu:File:Paketti Import:Extract .SF2 Samples (Original Pitch)
+  - Main Menu:Tools:Paketti:Instruments:File Formats:Extract .SF2 Samples (Chromatic)
+  - Main Menu:Tools:Paketti:Instruments:File Formats:Extract .SF2 Samples (Original Pitch)
+  - Disk Browser Files:Paketti:Import/Export:Extract .SF2 Samples (Chromatic)
+  - Disk Browser Files:Paketti:Import/Export:Extract .SF2 Samples (Original Pitch)
+
+---
+### 2026-01-31 - Feature: Default Midi Mapping File. -added to Paketti Preferences. Set up your Default Midi Mapping File (XRNM) - use a shortcut, menu entry or midi mapping to load it to any song (append mode) - and another shortcut, menu entry or midi mapping, to save it.
+---
+### 2026-02-01 - Feature: Select Next Instrument & Select Previous Instrument. When using Prev Instrument - it wraps from first to last. When using Next Instrument, if at the last instrument.. It creates some more Instruments and selects them.
+![](gif/select-next-instrument-creates-instrument.gif)
+
+
+
+---
 
 ## You Made This Possible
 
