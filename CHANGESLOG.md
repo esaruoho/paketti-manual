@@ -11125,6 +11125,11 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-02-01 - Feature: Select Next Instrument & Select Previous Instrument. When using Prev Instrument - it wraps from first to last. When using Next Instrument, if at the last instrument.. It creates some more Instruments and selects them.
 ![](gif/select-next-instrument-creates-instrument.gif)
 
+---
+### 2026-02-02 - Improvement: Paketti Default XRNI instrument will now correctly work with XRNI instruments that are outside of the Presets folder within the tool.
+
+---
+
 
 
 ---
