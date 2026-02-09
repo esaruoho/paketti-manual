@@ -8,15 +8,15 @@ Every changelog entry below represents hours of development time. Paketti is fre
 
 **[Join 18 supporters keeping Paketti growing →](http://patreon.com/esaruoho)** | [Other options](index.html#keep-paketti-growing)
 
-### Recent Highlights: January 2026
+### Recent Highlights: February 2026
 
 What supporters funded this month:
 
-- **Stem Slice Randomizer** — Independent/synchronized stem variations with multi-hit options
-- **Image-to-Sample Converter** — Drag images, get audio with intelligent format detection
-- **Enhanced Automation Curves** — Custom LFO waveform writer + looping automation
-- **Metasynth Integration** — Casiino Metasynth with GUI refinements
-- **MuteTrig Overhaul** — Now respects instrument chassis across Sample FX Chains
+- **22 issues addressed in a single session** — Pattern fractions, clever note-offs, interpolation, FX fills, and more
+- **Step Sequencer FX Randomizer** — Full dialog with step checkboxes, FX command dropdown, min/max sliders
+- **Linked EditStep & Quantization** — Set both simultaneously with direct values, +/- increment, power-of-two jumps
+- **Smart Mute/Unmute with Memory** — Remember which tracks were unmuted, restore on toggle
+- **Pattern-Level Mute/Solo via 0Lxx** — Write effect commands for muting/soloing directly into patterns
 
 [Full changelog below ↓]
 
@@ -11139,6 +11139,177 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ---
 ### 2026-02-04 - Feature: Block Loop Follows Edit Cursor toggle.
 ![](gif/blockloopfollow.gif)
+
+---
+### 2026-02-09 - Feature: Toggle Metronome Precount. Toggles Renoise's metronome precount on or off, with status bar feedback.
+- Keybinding: `Global:Paketti:Toggle Metronome Precount`
+- MIDI Mapping: `Paketti:Toggle Metronome Precount`
+
+---
+### 2026-02-09 - Feature: Enable/Disable Metronome Precount. Dedicated on/off shortcuts for metronome precount, no toggle ambiguity.
+- Keybinding: `Global:Paketti:Enable Metronome Precount`
+- Keybinding: `Global:Paketti:Disable Metronome Precount`
+- MIDI Mapping: `Paketti:Enable Metronome Precount`
+- MIDI Mapping: `Paketti:Disable Metronome Precount`
+
+---
+### 2026-02-09 - Feature: Toggle Mute/Unmute All Tracks. Mutes all sequencer tracks. If any are already muted, unmutes all instead.
+- Keybinding: `Global:Paketti:Toggle Mute/Unmute All Tracks`
+- MIDI Mapping: `Paketti:Toggle Mute/Unmute All Tracks`
+
+---
+### 2026-02-09 - Feature: Toggle Mute/Unmute Remembered Tracks. Remembers which tracks were unmuted before muting all. On second press, restores only the previously unmuted tracks. Smart mute/unmute toggle with memory.
+- Keybinding: `Global:Paketti:Toggle Mute/Unmute Remembered Tracks`
+- MIDI Mapping: `Paketti:Toggle Mute/Unmute Remembered Tracks`
+
+---
+### 2026-02-09 - Feature: Linked EditStep & Quantization Controls. Sets both EditStep and Record Quantization simultaneously. Includes direct value setting (0-32), +1/-1 increment, and power-of-two jumps.
+- Keybinding: `Global:Paketti:Set EditStep & Quantization to 00` through `...to 32`
+- Keybinding: `Global:Paketti:Increase EditStep & Quantization by 1`
+- Keybinding: `Global:Paketti:Decrease EditStep & Quantization by 1`
+- Keybinding: `Global:Paketti:EditStep & Quantization Power of Two Above`
+- Keybinding: `Global:Paketti:EditStep & Quantization Power of Two Below`
+- MIDI Mapping: `Paketti:Set EditStep & Quantization to 00` through `...to 32`
+- MIDI Mapping: `Paketti:Increase EditStep & Quantization by 1`
+- MIDI Mapping: `Paketti:Decrease EditStep & Quantization by 1`
+- MIDI Mapping: `Paketti:EditStep & Quantization Power of Two Above`
+- MIDI Mapping: `Paketti:EditStep & Quantization Power of Two Below`
+
+---
+### 2026-02-09 - Feature: Dynamic Quick Jumps / Pattern Fractions. Jump cursor to fractional positions within a pattern (1/2, 1/4, 1/8, 1/16 etc). Automatically saves cursor position before jumping so you can jump back.
+- Keybinding: `Pattern Editor:Paketti:Jump to Pattern Fraction 01/02` through `16/16`
+- MIDI Mapping: `Paketti:Jump to Pattern Fraction 01/02` through `16/16`
+
+---
+### 2026-02-09 - Feature: Jump Back to Previous Position. After jumping anywhere (fraction jumps, navigation), jump back to where you were. Works as a toggle: jump back, then jump forward again. Remembers sequence and line position.
+- Keybinding: `Pattern Editor:Paketti:Save Cursor Position`
+- Keybinding: `Pattern Editor:Paketti:Jump to Previous Position`
+- Keybinding: `Global:Paketti:Jump to Previous Position`
+- MIDI Mapping: `Paketti:Save Cursor Position`
+- MIDI Mapping: `Paketti:Jump to Previous Position`
+
+---
+### 2026-02-09 - Feature: Move Section Loop Next/Previous. Moves the entire loop range to the next or previous section in the pattern sequencer. Different from the existing Section Loop (Next/Previous) which expands the loop range.
+- Keybinding: `Global:Paketti:Move Section Loop (Next)`
+- Keybinding: `Global:Paketti:Move Section Loop (Previous)`
+- MIDI Mapping: `Paketti:Move Section Loop (Next)`
+- MIDI Mapping: `Paketti:Move Section Loop (Previous)`
+
+---
+### 2026-02-09 - Feature: Note Off on All Columns in Group. Writes Note Off (OFF) on the current line across all note columns for all tracks within the selected group. Useful for silencing an entire group at once.
+- Keybinding: `Pattern Editor:Paketti:Note Off All Columns in Group`
+- MIDI Mapping: `Paketti:Note Off All Columns in Group`
+
+---
+### 2026-02-09 - Feature: Mute Playing Note. At the current cursor position, writes a Note Off to silence whatever note is currently ringing in that column.
+- Keybinding: `Pattern Editor:Paketti:Mute Playing Note (Insert Note Off)`
+- MIDI Mapping: `Paketti:Mute Playing Note (Insert Note Off)`
+
+---
+### 2026-02-09 - Feature: Clone Sequence Without Automation. Clones the current sequence/pattern but strips all automation data from the clone. Useful when you want to reuse note data but start fresh with automation.
+- Keybinding: `Global:Paketti:Clone Sequence Without Automation`
+- Keybinding: `Pattern Sequencer:Paketti:Clone Sequence Without Automation`
+- Keybinding: `Pattern Matrix:Paketti:Clone Sequence Without Automation`
+- MIDI Mapping: `Paketti:Clone Sequence Without Automation`
+
+---
+### 2026-02-09 - Feature: Wipe Drumkit Sample FX Assignments. Resets all sample effect column assignments across all samples in the current drumkit instrument. Quick cleanup shortcut.
+- Keybinding: `Global:Paketti:Wipe Drumkit Sample FX Assignments`
+- MIDI Mapping: `Paketti:Wipe Drumkit Sample FX Assignments`
+
+---
+### 2026-02-09 - Feature: Invert Specific Subcolumns Only. Inverts only the specified subcolumn (volume, panning, delay, or sample FX) within a selection, instead of inverting everything at once.
+- Keybinding: `Pattern Editor:Paketti:Invert Volume Only`
+- Keybinding: `Pattern Editor:Paketti:Invert Panning Only`
+- Keybinding: `Pattern Editor:Paketti:Invert Delay Only`
+- Keybinding: `Pattern Editor:Paketti:Invert Sample FX Only`
+- MIDI Mapping: `Paketti:Invert Volume Only`
+- MIDI Mapping: `Paketti:Invert Panning Only`
+- MIDI Mapping: `Paketti:Invert Delay Only`
+- MIDI Mapping: `Paketti:Invert Sample FX Only`
+
+---
+### 2026-02-09 - Feature: BPM Switcher. Opens a dialog to write a ZTxx (Set Tempo) command on the Master Track at the current cursor line. Quick way to insert BPM changes into patterns.
+- Keybinding: `Pattern Editor:Paketti:BPM Switcher Dialog...`
+- MIDI Mapping: `Paketti:BPM Switcher Dialog`
+
+---
+### 2026-02-09 - Feature: Mute/Solo via 0L00 Track Volume Commands. Writes 0Lxx effect commands into the pattern for pattern-level muting and soloing. 0L00 = mute, 0L80 = unmute. Solo writes 0L00 on all other tracks.
+- Keybinding: `Pattern Editor:Paketti:Write Track Mute (0L00)`
+- Keybinding: `Pattern Editor:Paketti:Write Track Unmute (0L80)`
+- Keybinding: `Pattern Editor:Paketti:Write Track Solo via 0L00 (Mute All Others)`
+- Keybinding: `Pattern Editor:Paketti:Write Track Unsolo via 0L80 (Unmute All)`
+- MIDI Mapping: `Paketti:Write Track Mute (0L00)`
+- MIDI Mapping: `Paketti:Write Track Unmute (0L80)`
+- MIDI Mapping: `Paketti:Write Track Solo via 0L00`
+- MIDI Mapping: `Paketti:Write Track Unsolo via 0L80`
+
+---
+### 2026-02-09 - Feature: Step Sequencer FX Randomizer. Full dialog with up to 64 step checkboxes, FX command dropdown, min/max value sliders, quick-select buttons (None, All, Every 2nd/3rd/4th/8th), shift buttons, step count presets, and options. Randomizes effect values on checked steps and writes them to the pattern.
+- Keybinding: `Global:Paketti:Step Sequencer FX Randomizer Dialog...`
+- MIDI Mapping: `Paketti:Pattern Editor:Step Sequencer FX Randomizer`
+- Menu: `Main Menu:Tools:Paketti:Pattern Editor:Step Sequencer FX Randomizer...`
+- Menu: `Pattern Editor:Paketti:Step Sequencer FX Randomizer...`
+
+---
+### 2026-02-09 - Feature: Interpolate Current Subcolumn. One-key interpolation that auto-detects which subcolumn the cursor is on (Volume, Panning, Delay, Sample FX, or Effect Column) and runs the appropriate interpolation on the selection. Also added new Effect Column Interpolation for track effect columns.
+- Keybinding: `Pattern Editor:Paketti:Interpolate Current Subcolumn Values`
+- Keybinding: `Pattern Editor:Paketti:Interpolate Column Values (Effect Column)`
+- MIDI Mapping: `Paketti:Interpolate Current Subcolumn Values`
+- MIDI Mapping: `Paketti:Interpolate Column Values (Effect Column)`
+
+---
+### 2026-02-09 - Feature: Fill Effect Column Between Notes. Scans the pattern for note positions and copies each note's effect column command downward through all empty rows until the next note. Only fills empty rows. Also includes a version for sample effect columns.
+- Keybinding: `Pattern Editor:Paketti:Fill Effect Column Between Notes`
+- Keybinding: `Pattern Editor:Paketti:Fill Sample Effects Between Notes`
+- MIDI Mapping: `Paketti:Fill Effect Column Between Notes`
+- MIDI Mapping: `Paketti:Fill Sample Effects Between Notes`
+
+---
+### 2026-02-09 - Feature: Play Next/Previous Note Line. Scans forward (or backward) from the current cursor position to find the next line containing a note, jumps the cursor there, and triggers playback of that line. Wraps around the pattern.
+- Keybinding: `Pattern Editor:Paketti:Play Next Note Line`
+- Keybinding: `Pattern Editor:Paketti:Play Previous Note Line`
+- MIDI Mapping: `Paketti:Play Next Note Line`
+- MIDI Mapping: `Paketti:Play Previous Note Line`
+
+---
+### 2026-02-09 - Feature: Clever Note Off - Wipe & Replace. Wipes ALL existing Note Offs in the track, then applies Clever Note Off with the chosen placement mode (Right After, Right Before, Half Before). Clean slate approach to note-off placement.
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Wipe & Replace (Right After)`
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Wipe & Replace (Right Before)`
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Wipe & Replace (Half Before)`
+- MIDI Mapping: `Paketti:Clever Note Off Wipe & Replace (Right After)`
+- MIDI Mapping: `Paketti:Clever Note Off Wipe & Replace (Right Before)`
+- MIDI Mapping: `Paketti:Clever Note Off Wipe & Replace (Half Before)`
+
+---
+### 2026-02-09 - Feature: Clever Note Off - Delay Adjustment. Adjusts the delay value on ALL Note Offs in the track by a specified amount. Auto-enables the delay column if not visible. Fine-tune when note-offs actually trigger.
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Delay +1`
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Delay -1`
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Delay +10`
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Delay -10`
+- MIDI Mapping: `Paketti:Clever Note Off Delay +1`
+- MIDI Mapping: `Paketti:Clever Note Off Delay -1`
+- MIDI Mapping: `Paketti:Clever Note Off Delay +10`
+- MIDI Mapping: `Paketti:Clever Note Off Delay -10`
+
+---
+### 2026-02-09 - Feature: Clever Note Off - Reset Delay. Resets the delay value to 0 on ALL Note Offs in the track.
+- Keybinding: `Pattern Editor:Paketti:Clever Note Off Reset Delay`
+- MIDI Mapping: `Paketti:Clever Note Off Reset Delay`
+
+---
+### 2026-02-09 - Improvement: Mix+Paste Redundancy Removal. Removed ~400 lines of redundant old mix-paste code from PakettiExperimental_Verify.lua. The comprehensive PakettiClipboard.lua system (10 clipboard slots, multi-track, phrase editor support) already covers this fully.
+
+---
+### 2026-02-09 - Feature: OctaMED Note Echo - Echo to Next Track / Next Note Column / Optional Echo Instrument. Rewrote the Note Echo dialog with three echo target modes: Same Column (original), Next Note Column (auto-expands visible columns), or Next Track. Added Echo Instrument option to use a different instrument for echoes (e.g. a 100% wet reverb version). All settings persist in preferences.
+- Keybinding: `Pattern Editor:Paketti:OctaMED Note Echo Dialog...`
+- MIDI Mapping: `Paketti:OctaMED Note Echo Dialog`
+
+---
+### 2026-02-09 - Improvement: Mix+Paste Redundancy Removal. Removed ~400 lines of redundant old mix-paste code from PakettiExperimental_Verify.lua. The comprehensive PakettiClipboard.lua system (10 clipboard slots, multi-track, phrase editor support) already covers this fully.
+
+---
+### 2026-02-09 - Fix: Duplicate Keybinding Crash. Fixed duplicate keybinding "Global:Paketti:Section Loop (Next/Previous)" that prevented Renoise from loading. Renamed new keybindings to "Move Section Loop (Next/Previous)".
 
 ---
 
