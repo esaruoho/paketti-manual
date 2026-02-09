@@ -11312,6 +11312,105 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-02-09 - Fix: Duplicate Keybinding Crash. Fixed duplicate keybinding "Global:Paketti:Section Loop (Next/Previous)" that prevented Renoise from loading. Renamed new keybindings to "Move Section Loop (Next/Previous)".
 
 ---
+### 2026-02-09 - Fix: EditStep & Quantization Preserves Quantize State. Fixed `PakettiSetEditStepAndQuantization()` forcing quantize enabled when changing values. Now saves and restores the `record_quantize_enabled` state so changing EditStep/Quantization values no longer toggles quantize on/off. Status bar shows enabled state: `EditStep: 8, Quantize: 8 (On)` or `(Off)`.
+- Keybindings: `Global:Paketti:Increase EditStep & Quantization by 1`, `Global:Paketti:Decrease EditStep & Quantization by 1`, `Global:Paketti:EditStep & Quantization Power of Two Above/Below`, `Global:Paketti:Set EditStep & Quantization to 00` through `32`
+
+---
+### 2026-02-09 - Fix: Nudge with Delay Makes Delay Column Visible for All Selected Tracks. `nudge_with_delay()` now sets `delay_column_visible = true` for ALL tracks in the selection, not just the currently selected track.
+- Keybindings: `Pattern Editor:Paketti:Nudge with Delay (Down)`, `Pattern Editor:Paketti:Nudge with Delay (Up)`
+
+---
+### 2026-02-09 - Feature: Exponential Interpolation. Added exponential interpolation (t^2 curve: slow start, fast end) for all column types. Complements the existing linear interpolation. Works on Volume, Panning, Delay, Sample FX, and Effect Columns. Includes unified auto-detect function that reads cursor subcolumn position.
+- Keybindings: `Pattern Editor:Paketti:Interpolate Column Values Exponential (Volume)`, `Pattern Editor:Paketti:Interpolate Column Values Exponential (Panning)`, `Pattern Editor:Paketti:Interpolate Column Values Exponential (Delay)`, `Pattern Editor:Paketti:Interpolate Column Values Exponential (Sample FX)`, `Pattern Editor:Paketti:Interpolate Column Values Exponential (Effect Column)`, `Pattern Editor:Paketti:Interpolate Current Subcolumn Values Exponential`
+- MIDI Mappings: All of the above also as MIDI mappings under `Paketti:Interpolate Column Values Exponential (...)`
+
+---
+### 2026-02-09 - Feature: Jump to Pattern Position Dialog. Dialog with offset valuebox (-512 to +512) to jump forward/backward within the current pattern. Quick jump buttons (-64, -32, -16, +16, +32, +64), Go to Start/End/Middle. Saves cursor position for Jump Back feature.
+- Keybinding: `Pattern Editor:Paketti:Jump to Pattern Position Dialog...`
+- MIDI Mapping: `Paketti:Jump to Pattern Position Dialog`
+
+---
+### 2026-02-09 - Feature: Split and Expand Pattern for >256 Rows. When expanding a pattern that would exceed 512 lines (pattern has >256 rows), the function now splits into two patterns instead of refusing. First half and second half are each expanded into separate patterns, named "(1/2)" and "(2/2)". LPB is doubled. Example: a 512-line pattern becomes two 512-line expanded patterns.
+- Keybinding: `Global:Paketti:Clone and Expand Pattern to LPB*2` (existing, now handles large patterns)
+
+---
+### 2026-02-09 - Feature: Remove Unused Note Columns. Scans ALL patterns in the sequence, finds the highest actually-used note column per track, and reduces `visible_note_columns` to match (minimum 1). Cleans up tracks with excess empty columns.
+- Keybinding: `Global:Paketti:Remove Unused Note Columns`
+- MIDI Mapping: `Paketti:Remove Unused Note Columns`
+- Menu: `Main Menu:Tools:Paketti:Pattern Editor:Remove Unused Note Columns`
+
+---
+### 2026-02-09 - Feature: Remove Unused Effect Columns. Same as above but for effect columns. Works on sequencer, master, and send tracks.
+- Keybinding: `Global:Paketti:Remove Unused Effect Columns`
+- MIDI Mapping: `Paketti:Remove Unused Effect Columns`
+- Menu: `Main Menu:Tools:Paketti:Pattern Editor:Remove Unused Effect Columns`
+
+---
+### 2026-02-09 - Feature: Remove Unused Columns (Note + Effect). Runs both unused note column and unused effect column removal at once.
+- Keybinding: `Global:Paketti:Remove Unused Columns (Note + Effect)`
+- MIDI Mapping: `Paketti:Remove Unused Columns (Note + Effect)`
+- Menu: `Main Menu:Tools:Paketti:Pattern Editor:Remove Unused Columns (Note + Effect)`
+
+---
+### 2026-02-09 - Feature: Clear Unreferenced Patterns. Clears content of patterns not referenced by any sequence entry. Frees up pattern data without removing pattern slots.
+- Keybinding: `Global:Paketti:Clear Unreferenced Patterns`
+- MIDI Mapping: `Paketti:Clear Unreferenced Patterns`
+- Menu: `Main Menu:Tools:Paketti:Pattern Editor:Clear Unreferenced Patterns`
+
+### 2026-02-09 - Feature: Contract Section Loop (Remove Last Section). Shrinks the current section loop by removing the last section from the loop range. If only one section remains, clears the loop entirely. The subtraction counterpart to expanding the section loop.
+- Keybinding: `Global:Paketti:Contract Section Loop (Remove Last Section)`
+- MIDI Mapping: `Paketti:Contract Section Loop (Remove Last Section)`
+- Menu: `Main Menu:Tools:Paketti:Pattern Sequencer:Contract Section Loop (Remove Last Section)`
+
+### 2026-02-09 - Feature: Contract Section Loop (Remove First Section). Shrinks the current section loop by removing the first section from the loop range. If only one section remains, clears the loop entirely. The subtraction counterpart to expanding the section loop.
+- Keybinding: `Global:Paketti:Contract Section Loop (Remove First Section)`
+- MIDI Mapping: `Paketti:Contract Section Loop (Remove First Section)`
+- Menu: `Main Menu:Tools:Paketti:Pattern Sequencer:Contract Section Loop (Remove First Section)`
+
+### 2026-02-09 - Improvement: Direction-Aware Sequence Selection (Next/Previous). Rewrote Sequence Selection to be direction-aware. Next expands the selection forward one sequence at a time, Previous contracts from the end. At a single position, Previous clears, then re-selects, then expands backward. Cursor follows the expanding/contracting edge. Tracks anchor point and direction so contracting always undoes the last expansion.
+- Keybinding: `Global:Paketti:Sequence Selection (Next)`
+- Keybinding: `Global:Paketti:Sequence Selection (Previous)`
+- MIDI Mapping: `Paketti:Sequence Selection (Next)`
+- MIDI Mapping: `Paketti:Sequence Selection (Previous)`
+
+### 2026-02-09 - Improvement: Direction-Aware Sequence Loop Selection (Next/Previous). Rewrote Sequence Loop Selection with the same direction-aware behavior as Sequence Selection but for the loop range. Next expands loop forward, Previous contracts from end, clears at single, re-selects, then expands backward. Cursor follows the edge.
+- Keybinding: `Global:Paketti:Sequence Loop Selection (Next)`
+- Keybinding: `Global:Paketti:Sequence Loop Selection (Previous)`
+- MIDI Mapping: `Paketti:Sequence Loop Selection (Next)`
+- MIDI Mapping: `Paketti:Sequence Loop Selection (Previous)`
+
+### 2026-02-09 - Feature: Section Sequence Selection (Next/Previous). Direction-aware section-level selection. Each press adds or removes an entire section from the sequencer selection range. First press selects entire current section. Next expands to include next section. Previous contracts by removing the last section, clears at single, re-selects, then expands backward. Cursor moves to the boundary.
+- Keybinding: `Global:Paketti:Section Sequence Selection (Next)`
+- Keybinding: `Global:Paketti:Section Sequence Selection (Previous)`
+- MIDI Mapping: `Paketti:Section Sequence Selection (Next)`
+- MIDI Mapping: `Paketti:Section Sequence Selection (Previous)`
+
+### 2026-02-09 - Feature: Schedule Entire Section. New variant of "Select, Add to Schedule and Loop" that schedules ALL sequences in a section, not just the first pattern. Useful for completing playback of an entire section before switching to the next. Available for sections 00-64.
+- Keybinding: `Global:Paketti:Select, Add Entire Section to Schedule and Loop Section XX`
+- MIDI Mapping: `Paketti:Select&Add Entire Section to Schedule&Loop Section XX`
+- Menu: `Pattern Sequencer:Paketti:Sequences/Sections:Select, Add Entire Section to Schedule and Loop:Select, Add Entire Section to Schedule and Loop Section XX`
+
+### 2026-02-09 - Feature: Shift Selection Left/Right in Sample Editor. Moves the current sample buffer selection left or right by exactly its own length. Useful for stepping through a sample in fixed-size chunks, e.g. selecting one bar then shifting to the next bar.
+- Keybinding: `Sample Editor:Paketti:Sample Buffer Selection Shift Left`
+- Keybinding: `Sample Editor:Paketti:Sample Buffer Selection Shift Right`
+- MIDI Mapping: `Sample Editor:Paketti:Sample Buffer Selection Shift Left`
+- MIDI Mapping: `Sample Editor:Paketti:Sample Buffer Selection Shift Right`
+
+### 2026-02-09 - Feature: Rotate Audio in Selection. Rotates the audio data within the current sample buffer selection by its midpoint — the second half becomes the first half and vice versa. Operates on all channels. Useful for creating variations or shifting rhythmic content within a selection.
+- Keybinding: `Sample Editor:Paketti:Rotate Audio in Selection`
+- MIDI Mapping: `Sample Editor:Paketti:Rotate Audio in Selection`
+
+### 2026-02-09 - Feature: Select Bars in Sample Editor (1/2/4/8 Bars). Selects a musical-length portion of the sample based on the current song BPM and sample rate. Calculates the exact number of frames for the requested number of bars and sets the selection starting from the current selection start (or frame 1). Available in 1, 2, 4, and 8 bar variants.
+- Keybinding: `Sample Editor:Paketti:Select 1 Bar`
+- Keybinding: `Sample Editor:Paketti:Select 2 Bars`
+- Keybinding: `Sample Editor:Paketti:Select 4 Bars`
+- Keybinding: `Sample Editor:Paketti:Select 8 Bars`
+- MIDI Mapping: `Sample Editor:Paketti:Select 1 Bar`
+- MIDI Mapping: `Sample Editor:Paketti:Select 2 Bars`
+- MIDI Mapping: `Sample Editor:Paketti:Select 4 Bars`
+- MIDI Mapping: `Sample Editor:Paketti:Select 8 Bars`
+
+---
 
 ## You Made This Possible
 
