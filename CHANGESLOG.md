@@ -11129,8 +11129,16 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 ### 2026-02-02 - Improvement: Paketti Default XRNI instrument will now correctly work with XRNI instruments that are outside of the Presets folder within the tool.
 
 ---
+### 2026-02-03 - Feature: Follow Page Pattern Toggle - this allows you to "be on the same page" as the song playback. It's not the same thing as Follow Pattern.
+
+---
+### 2026-02-04 - Improvement: Instrument Note Switcher Dialog now updates dynamically.
+![](gif/switchdialog.gif)
 
 
+---
+### 2026-02-04 - Feature: Block Loop Follows Edit Cursor toggle.
+![](gif/blockloopfollow.gif)
 
 ---
 
