@@ -11410,6 +11410,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 - MIDI Mapping: `Sample Editor:Paketti:Select 4 Bars`
 - MIDI Mapping: `Sample Editor:Paketti:Select 8 Bars`
 
+### 2026-02-10 - Fix: MetaSynth Quick Apply Profile Crash on Pitch AHDSR. Fixed a crash when applying MetaSynth profiles that include pitch AHDSR envelopes. The code was trying to set an `amplitude` property that doesn't exist on AHDSR devices (it only exists on LFO devices). AHDSR envelope shape is fully defined by its Attack/Hold/Duration/Sustain/Release parameters.
+
+### 2026-02-10 - Fix: Device Chain & Instrument Dialog Crash on Reopen. Fixed a crash when reopening the Device Chain & Instrument dialog. The ViewBuilder was created once at module level and reused across dialog opens, causing a "view ID already registered" error on the second open. ViewBuilder is now recreated fresh each time the dialog opens.
+
 ---
 
 ## You Made This Possible
