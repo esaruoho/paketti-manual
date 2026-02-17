@@ -11414,6 +11414,11 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 
 ### 2026-02-10 - Fix: Device Chain & Instrument Dialog Crash on Reopen. Fixed a crash when reopening the Device Chain & Instrument dialog. The ViewBuilder was created once at module level and reused across dialog opens, causing a "view ID already registered" error on the second open. ViewBuilder is now recreated fresh each time the dialog opens.
 
+### 2026-02-17 - Feature: Batch Convert RX2 to XRNI. Select a folder of RX2 loop files and an output folder — Paketti converts each RX2 into a fully slice-marked Renoise instrument (.xrni), one file per RX2. Uses the bundled rex2decoder binary to extract WAV audio and slice marker positions, loads each into a fresh instrument slot, applies up to 255 slice markers, saves the XRNI, then removes the temporary instrument and cleans up temp files. Reports success/fail counts at the end. Fully protected against missing decoder, missing output, empty folders, failed WAV loads, and save errors — failed files are skipped and logged to the console without aborting the batch.
+- Keybinding: `Global:Paketti:Batch Convert RX2 to XRNI`
+- Menu: `Sample Editor:Paketti:Batch Convert RX2 to XRNI...`
+- Menu: `Main Menu:File:Paketti Import:Batch Convert RX2 to XRNI...`
+
 ---
 
 ## You Made This Possible
