@@ -11419,6 +11419,10 @@ and if you're drawing to a canvas and press Space, the external editor will appe
 - Menu: `Sample Editor:Paketti:Batch Convert RX2 to XRNI...`
 - Menu: `Main Menu:File:Paketti Import:Batch Convert RX2 to XRNI...`
 
+### 2026-02-19 - Improvement: Batch Convert SF2 to XRNI (Per Preset) is now also accessible from **Main Menu → File → Paketti Export..** in addition to the Sample Editor context menu, making it easier to find without having to be in the Sample Editor first.
+- Menu: `Sample Editor:Paketti:Batch Convert SF2 to XRNI (Per Preset)...`
+- Menu: `Main Menu:File:Paketti Export..:Batch Convert SF2 to XRNI (Per Preset)...`
+
 ---
 
 ## You Made This Possible
